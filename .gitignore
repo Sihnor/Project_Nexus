@@ -184,7 +184,7 @@ fabric.properties
 /Plugins/Wwise/.validationcache
 /Plugins/Wwise/.wsettings
 
-!Plugins\Wwise\ThirdParty\x64_vc160\Profile\lib
+!Plugins/Wwise/ThirdParty/x64_vc160/Profile/lib/*
 
 
 
