@@ -30,6 +30,8 @@
 #######################
 !Plugins/Wwise/**
 
+*.a
+
 # Executables
 *.exe
 *.out
