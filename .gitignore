@@ -184,6 +184,7 @@ fabric.properties
 /Plugins/Wwise/.validationcache
 /Plugins/Wwise/.wsettings
 
+!/Plugins\Wwise\Source\WwiseSoundEngine\..\..\ThirdParty\x64_vc160\Profile\lib\AkSoundEngine.lib
 
 
 
