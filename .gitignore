@@ -25,6 +25,11 @@
 *.a
 *.lib
 
+#######################
+# Wwiser
+#######################
+!Plugins/Wwise/**
+
 # Executables
 *.exe
 *.out
