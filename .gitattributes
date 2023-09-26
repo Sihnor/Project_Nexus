@@ -1,0 +1,14 @@
+Plugins/Wwise/Binaries filter=lfs diff=lfs merge=lfs -text
+Plugins/Wwise/Content filter=lfs diff=lfs merge=lfs -text
+Plugins/Wwise/LauncherInfo.json filter=lfs diff=lfs merge=lfs -text
+Plugins/Wwise/Resources filter=lfs diff=lfs merge=lfs -text
+Plugins/Wwise/Wwise.uplugin filter=lfs diff=lfs merge=lfs -text
+Plugins/Wwise/Wwise_UE_Integration.chm filter=lfs diff=lfs merge=lfs -text
+Plugins/Wwise/Wwise_UE_Integration_ko.chm filter=lfs diff=lfs merge=lfs -text
+Plugins/Wwise/Config filter=lfs diff=lfs merge=lfs -text
+Plugins/Wwise/Intermediate filter=lfs diff=lfs merge=lfs -text
+Plugins/Wwise/Source filter=lfs diff=lfs merge=lfs -text
+Plugins/Wwise/ThirdParty filter=lfs diff=lfs merge=lfs -text
+Plugins/Wwise/Wwise_UE_Integration_ja.chm filter=lfs diff=lfs merge=lfs -text
+Plugins/Wwise/Wwise_UE_Integration_zh.chm filter=lfs diff=lfs merge=lfs -text
+Plugins/Wwise filter=lfs diff=lfs merge=lfs -text
