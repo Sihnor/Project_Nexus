@@ -172,7 +172,7 @@ fabric.properties
 #######################
 
 #########################
-Wwise Generated Files
+#  Wwise Generated Files
 #########################
 
 */Plugins/Wwise/IncrementalSoundBankData.xml
@@ -183,3 +183,7 @@ Wwise Generated Files
 /Plugins/Wwise/.prof
 /Plugins/Wwise/.validationcache
 /Plugins/Wwise/.wsettings
+
+
+
+
