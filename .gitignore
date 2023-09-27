@@ -184,7 +184,21 @@ fabric.properties
 /Plugins/Wwise/.validationcache
 /Plugins/Wwise/.wsettings
 
-!Plugins/Wwise/ThirdParty/x64_vc160/Profile/lib/*
 
-
+!Plugins/Wwise/ThirdParty/include/**
+#Plugins/Wwise/ThirdParty/iOS       # ignored because files are to big to upload to github
+#Plugins/Wwise/ThirdParty/Mac       # ignored because files are to big to upload to github
+#Plugins/Wwise/ThirdParty/tvOS      # ignored because files are to big to upload to github
+!Plugins/Wwise/ThirdParty/Linux_x64/**
+!Plugins/Wwise/ThirdParty/UWP_ARM64_vc150/**
+!Plugins/Wwise/ThirdParty/UWP_ARM64_vc160/**
+!Plugins/Wwise/ThirdParty/UWP_ARM64_vc170/**
+!Plugins/Wwise/ThirdParty/Win32_vc150/**
+!Plugins/Wwise/ThirdParty/Win32_vc160/**
+!Plugins/Wwise/ThirdParty/Win32_vc170/**
+!Plugins/Wwise/ThirdParty/WinGC_vc160/**
+!Plugins/Wwise/ThirdParty/WinGC_vc170/**
+!Plugins/Wwise/ThirdParty/x64_vc150/**
+!Plugins/Wwise/ThirdParty/x64_vc160/**
+!Plugins/Wwise/ThirdParty/x64_vc170/**
 
