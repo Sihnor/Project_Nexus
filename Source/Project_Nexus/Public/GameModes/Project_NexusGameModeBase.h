@@ -17,12 +17,12 @@ class PROJECT_NEXUS_API AProject_NexusGameModeBase : public AGameModeBase
 	AProject_NexusGameModeBase();
 
 	void CountDown();
-	void BeginPlay() override;
+	virtual void BeginPlay() override;
 	
-public:
-	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+private:
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, meta=(AllowPrivateAccess = "true"))
 	int32 GameDurationInSeconds;
 
-	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	UPROPERTY()
 	FTimerHandle TH_CountDown;
 };
