@@ -10,8 +10,18 @@ ANexus_GameMode::ANexus_GameMode() {
 
 	this->GameState = this->GetGameState<ANexus_GameState>();
 
-	this->GameState->ReductionOfLifeEvent.AddUObject(this, &ANexus_GameMode::CheckIfDeath);
 	
+	
+}
+
+void ANexus_GameMode::BeginPlay()
+{
+	Super::BeginPlay();
+
+	if (this->GameState)
+	{
+		this->GameState->ReductionOfLifeEvent.AddUObject(this, &ANexus_GameMode::CheckIfDeath);
+	}
 }
 
 void ANexus_GameMode::StartMatch() {
