@@ -38,7 +38,7 @@ void ANexus_GameMode::StartMatch() {
 void ANexus_GameMode::CountDown() {
 	if (this->GameState->GetRemainingTime() == 0) {
 		this->GetWorldTimerManager().ClearTimer(this->TH_CountDown);
-		return;s
+		return;
 	}
 
 	this->GameState->DecrementRemainingTime();
