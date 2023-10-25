@@ -24,13 +24,13 @@ void ANexus_GameMode::BeginPlay()
 	}
 }
 
-void ANexus_GameMode::StartMatch() {
+/*void ANexus_GameMode::StartMatch() {
 	Super::StartMatch();
 
 	this->GameState->SetRemainingTime(150);
 	
 	this->GetWorldTimerManager().SetTimer(this->TH_CountDown, this, &ANexus_GameMode::CountDown, 1.0f, true, 1.0f);
-}
+}*/
 
 void ANexus_GameMode::CountDown() {
 	if (this->GameState->GetRemainingTime() == 0) {
