@@ -19,7 +19,7 @@ class PROJECT_NEXUS_API ANexus_GameMode : public AGameMode
 	ANexus_GameMode();
 virtual void BeginPlay() override;
 	
-	virtual void StartMatch() override;
+	//virtual void StartMatch() override;
 	void CountDown();
 
 	//class ANexus_GameState* GameState;
