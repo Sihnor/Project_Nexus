@@ -26,6 +26,5 @@ void ANexus_GameState::DecrementRemainingTime() {
 
 void ANexus_GameState::RefreshHealth(EPlayerEnum HitEnemy) {
 
-	
 	this->ReductionOfLifeEvent.Broadcast(HitEnemy);
 }
