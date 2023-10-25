@@ -7,10 +7,7 @@
 		{
 			"Name": "Project_Nexus",
 			"Type": "Runtime",
-			"LoadingPhase": "Default",
-			"AdditionalDependencies": [
-				"CommonUI"
-			]
+			"LoadingPhase": "Default"
 		}
 	],
 	"Plugins": [
@@ -20,10 +17,6 @@
 			"TargetAllowList": [
 				"Editor"
 			]
-		},
-		{
-			"Name": "CommonUI",
-			"Enabled": true
 		}
 	]
 }
