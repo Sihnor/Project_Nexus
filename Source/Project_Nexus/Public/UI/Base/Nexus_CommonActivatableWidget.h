@@ -4,14 +4,19 @@
 
 #include "CoreMinimal.h"
 #include "CommonActivatableWidget.h"
-#include "UI/Base/Initializable.h"
 #include "Nexus_CommonActivatableWidget.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class PROJECT_NEXUS_API UNexus_CommonActivatableWidget : public UCommonActivatableWidget, public IInitializable
+class PROJECT_NEXUS_API UNexus_CommonActivatableWidget : public UCommonActivatableWidget
 {
 	GENERATED_BODY()
+	
+	UPROPERTY(meta = (BindWidget))
+	class UCanvasPanel* CanvasPanel;
+
+	UPROPERTY(meta = (BindWidget))
+	class UCommonBorder* Border;
 };
