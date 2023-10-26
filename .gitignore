@@ -170,3 +170,6 @@ fabric.properties
 #######################
 #     Rider - End     #
 #######################
+
+
+!Plugins/Wwise/ThirdParty/x64_vc170/**
