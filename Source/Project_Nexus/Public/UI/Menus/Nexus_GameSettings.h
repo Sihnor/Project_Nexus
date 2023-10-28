@@ -4,29 +4,25 @@
 
 #include "CoreMinimal.h"
 #include "UI/Base/Nexus_CommonActivatableWidget.h"
-#include "Nexus_GraphicSettingsMenu.generated.h"
+#include "Nexus_GameSettings.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class PROJECT_NEXUS_API UNexus_GraphicSettingsMenu : public UNexus_CommonActivatableWidget
+class PROJECT_NEXUS_API UNexus_GameSettings : public UNexus_CommonActivatableWidget
 {
 	GENERATED_BODY()
 
 	UPROPERTY(meta = (BindWidget))
-	FText SceenModeText;
+	FText NumberOfRoundText;
 
 	UPROPERTY(meta = (BindWidget))
-	FText ResolutionText;
+	FText TimeLimitText;
 
 	UPROPERTY(meta = (BindWidget))
-	FText VSyncText;
+	FText ControllerVibrationsText;
 
 	UPROPERTY(meta = (BindWidget))
-	FText DisplayFPSText;
-
-
-	// HIER SOLLEN NOCH VIELLEICH DIE HUD SETTINGS REIN
-	
+	FText RestoreDefaultGameSettingText;
 };
