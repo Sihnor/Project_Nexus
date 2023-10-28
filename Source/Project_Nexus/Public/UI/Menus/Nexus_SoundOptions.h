@@ -13,4 +13,23 @@ UCLASS()
 class PROJECT_NEXUS_API UNexus_SoundOptions : public UNexus_CommonActivatableWidget
 {
 	GENERATED_BODY()
+
+	// Online Multiplayer
+	UPROPERTY(meta = (BindWidget))
+	class UNexus_CommonButtonBase* OnlineButton;
+
+	UPROPERTY(meta = (BindWidget))	
+	class USlider* MasterVolumeSlider;
+
+	UPROPERTY(meta = (BindWidget))	
+	class USlider* BackgroundMusicSlider;
+
+	UPROPERTY(meta = (BindWidget))	
+	class USlider* SFXVolumeSlider;
+
+	UPROPERTY(meta = (BindWidget))	
+	class USlider* VoiceSlider;
+
+	UPROPERTY(meta = (BindWidget))
+	class UNexus_CommonButtonBase* DefaultSoundButton;
 };
