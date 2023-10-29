@@ -31,7 +31,6 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 		UInputMappingContext* GameplayMappingContext;	
 
@@ -65,7 +64,7 @@ private:
 	
 	//void SideStep(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 
-	//Wvoid Jump(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
+	//void Jump(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 	
 	void Duck(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 	
@@ -85,7 +84,10 @@ private:
 		bool IsCrouching;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
-		bool IsGrounded;
+		bool IsJumping;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool IsCombatReady;
 
 	/*UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GeneralMovement", meta = (AllowPrivateAccess = "true"))
 		float MovementSpeed;

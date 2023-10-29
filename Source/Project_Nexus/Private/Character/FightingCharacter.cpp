@@ -19,8 +19,8 @@ AFightingCharacter::AFightingCharacter()
 	CameraComp = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
 	CameraComp->SetupAttachment(SpringArmComp);
 
-	SpringArmComp->TargetArmLength = 500.f;
-	SpringArmComp->SetRelativeLocation(FVector(0.f, 0.f, 50.f));
+	SpringArmComp->TargetArmLength = 250.f;
+	SpringArmComp->SetRelativeLocation(FVector(0.f, 0.f, 30.f));
 	SpringArmComp->SetRelativeRotation(FRotator(0.f,-90.f,0.f));
 
 }
@@ -55,9 +55,10 @@ void AFightingCharacter::Movement(const FInputActionValue& Value){
 
 
 
-	if (GetController()) {
+	if (GetController() && IsCombatReady) {
 		//UE_LOG(LogTemp, Warning, TEXT("Moving"));
-		UE_LOG(LogTemp, Warning, TEXT("Move X: %f Move Y: %f"), MoveValue.X, MoveValue.Y);
+		//UE_LOG(LogTemp, Warning, TEXT("Move X: %f Move Y: %f"), MoveValue.X, MoveValue.Y);
+		UE_LOG(LogTemp, Warning, TEXT("Forward X: %f Foward Y: %f Forward Z: %f"), Forward.X, Forward.Y, Forward.Z);
 		AddMovementInput(Forward, MoveValue.X);
 		//UE_LOG(LogTemp, Warning, TEXT("Move X: %f\nMove Y: %f\nMove Z:"), MoveValue.X, MoveValue.Y, MoveValue.Z);
 		//AddMovementInput(Forward, MoveValue.Y);
@@ -67,31 +68,32 @@ void AFightingCharacter::Movement(const FInputActionValue& Value){
 
 void AFightingCharacter::LightAttack(const FInputActionValue& Value){
 	
-	if (GetController()) {
+	if (GetController() && IsCombatReady) {
 		UE_LOG(LogTemp, Warning, TEXT("Light Attack"));
 	}
 }
 
 void AFightingCharacter::HeavyAttack(const FInputActionValue& Value){
-	if (GetController()) {
+	if (GetController() && IsCombatReady) {
 		UE_LOG(LogTemp, Warning, TEXT("Heavy Attack"));
 	}
 }
 
 void AFightingCharacter::Block(const FInputActionValue& Value){
-	if (GetController()) {
+	if (GetController() && IsCombatReady) {
 		UE_LOG(LogTemp, Warning, TEXT("Block"));
 	}
 }
 
 /*void AFightingCharacter::Jump(const FInputActionValue& Value){
-	if (GetController()) {
+	if (GetController() && IsCombatReady) {
+		IsJumping = true;
 		UE_LOG(LogTemp, Warning, TEXT("Jump"));
 	}
 }*/
 
 void AFightingCharacter::Duck(const FInputActionValue& Value){
-	if (GetController()) {
+	if (GetController() && IsCombatReady) {
 		UE_LOG(LogTemp, Warning, TEXT("Duck"));
 	}
 }
