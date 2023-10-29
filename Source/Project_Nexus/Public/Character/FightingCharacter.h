@@ -65,7 +65,7 @@ private:
 	
 	//void SideStep(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 
-	void Jump(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
+	//Wvoid Jump(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 	
 	void Duck(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 	
@@ -74,4 +74,25 @@ private:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components", meta = (AllowPrivateAccess = "true"))
 		class UCameraComponent* CameraComp;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool MoveFwd;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool MoveBwd;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool IsCrouching;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool IsGrounded;
+
+	/*UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GeneralMovement", meta = (AllowPrivateAccess = "true"))
+		float MovementSpeed;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GeneralMovement", meta = (AllowPrivateAccess = "true"))
+		float JumpValue;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GeneralMovement", meta = (AllowPrivateAccess = "true"))
+		float Gravity;*/
 };

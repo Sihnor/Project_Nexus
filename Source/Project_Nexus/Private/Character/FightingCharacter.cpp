@@ -84,11 +84,11 @@ void AFightingCharacter::Block(const FInputActionValue& Value){
 	}
 }
 
-void AFightingCharacter::Jump(const FInputActionValue& Value){
+/*void AFightingCharacter::Jump(const FInputActionValue& Value){
 	if (GetController()) {
 		UE_LOG(LogTemp, Warning, TEXT("Jump"));
 	}
-}
+}*/
 
 void AFightingCharacter::Duck(const FInputActionValue& Value){
 	if (GetController()) {
