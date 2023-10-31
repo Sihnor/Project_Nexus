@@ -7,7 +7,7 @@
             "cppStandard": "c++17",
             "intelliSenseMode": "msvc-x64",
             "configurationProvider": "epic.ue",
-            "compileCommands": "F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\.vscode\\compileCommands_Project_Nexus.json"
+            "compileCommands": "D:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\.vscode\\compileCommands_Project_Nexus.json"
         },
         {
             "name": "Win32",
@@ -16,7 +16,7 @@
             "cppStandard": "c++17",
             "intelliSenseMode": "msvc-x64",
             "configurationProvider": "epic.ue",
-            "compileCommands": "F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\.vscode\\compileCommands_Default.json"
+            "compileCommands": "D:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\.vscode\\compileCommands_Default.json"
         }
     ],
     "version": 4

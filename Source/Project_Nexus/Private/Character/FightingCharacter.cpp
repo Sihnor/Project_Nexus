@@ -43,6 +43,11 @@ void AFightingCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	if(IsCombatReady){
+		UE_LOG(LogTemp, Warning, TEXT("Ready"));
+		//this->JumpMaxCount
+	}
+
 }
 
 void AFightingCharacter::Movement(const FInputActionValue& Value){
@@ -57,8 +62,8 @@ void AFightingCharacter::Movement(const FInputActionValue& Value){
 
 	if (GetController() && IsCombatReady) {
 		//UE_LOG(LogTemp, Warning, TEXT("Moving"));
-		//UE_LOG(LogTemp, Warning, TEXT("Move X: %f Move Y: %f"), MoveValue.X, MoveValue.Y);
-		UE_LOG(LogTemp, Warning, TEXT("Forward X: %f Foward Y: %f Forward Z: %f"), Forward.X, Forward.Y, Forward.Z);
+		UE_LOG(LogTemp, Warning, TEXT("Move X: %f Move Y: %f"), MoveValue.X, MoveValue.Y);
+		//UE_LOG(LogTemp, Warning, TEXT("Forward X: %f Foward Y: %f Forward Z: %f"), Forward.X, Forward.Y, Forward.Z);
 		AddMovementInput(Forward, MoveValue.X);
 		//UE_LOG(LogTemp, Warning, TEXT("Move X: %f\nMove Y: %f\nMove Z:"), MoveValue.X, MoveValue.Y, MoveValue.Z);
 		//AddMovementInput(Forward, MoveValue.Y);
@@ -92,6 +97,14 @@ void AFightingCharacter::Block(const FInputActionValue& Value){
 	}
 }*/
 
+/*bool AFightingCharacter::CanJump() const {
+	if(GetCharacterMovement()->IsMovingOnGround() && IsCombatReady) {
+		return true;
+	}
+
+	return false;
+}*/
+
 void AFightingCharacter::Duck(const FInputActionValue& Value){
 	if (GetController() && IsCombatReady) {
 		UE_LOG(LogTemp, Warning, TEXT("Duck"));
@@ -108,8 +121,8 @@ void AFightingCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 		EnhancedInputComp->BindAction(LightAttackAction, ETriggerEvent::Triggered, this, &AFightingCharacter::LightAttack);
 		EnhancedInputComp->BindAction(HeavyAttackAction, ETriggerEvent::Triggered, this, &AFightingCharacter::HeavyAttack);
 		EnhancedInputComp->BindAction(BlockAction, ETriggerEvent::Triggered, this, &AFightingCharacter::Block);
-		EnhancedInputComp->BindAction(JumpAction, ETriggerEvent::Triggered, this, &AFightingCharacter::Jump);
 		EnhancedInputComp->BindAction(DuckAction, ETriggerEvent::Triggered, this, &AFightingCharacter::Duck);
+		EnhancedInputComp->BindAction(JumpAction, ETriggerEvent::Triggered, this, &AFightingCharacter::Jump);
 	}
 
 }

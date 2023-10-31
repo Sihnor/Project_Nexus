@@ -97,4 +97,7 @@ private:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GeneralMovement", meta = (AllowPrivateAccess = "true"))
 		float Gravity;*/
+
+	/*protected:
+		virtual bool CanJump() const override;*/
 };
