@@ -7,7 +7,7 @@
 void UNexus_CommonButtonBase::NativeOnCurrentTextStyleChanged()
 {
 	Super::NativeOnCurrentTextStyleChanged();
-	this->Text->SetStyle(GetCurrentTextStyleClass());
+	this->ButtonTextBlock->SetStyle(GetCurrentTextStyleClass());
 	
 }
 
@@ -21,14 +21,13 @@ void UNexus_CommonButtonBase::NativeConstruct()
 void UNexus_CommonButtonBase::SynchronizeProperties()
 {
 	Super::SynchronizeProperties();
-	if (this->Text != nullptr)
+	if (this->ButtonTextBlock != nullptr)
 	{
-		this->Text->SetText(this->ButtonText);
+		this->ButtonTextBlock->SetText(this->ButtonText);
 	}
 }
 
 void UNexus_CommonButtonBase::OnButtonClickedCallback(UCommonButtonBase* ButtonBase) 
 {
-	UE_LOG(LogTemp, Warning, TEXT("DAS IST DDIE FUNKTION VOM BUTTON"))
 	this->OnButtonClicked.Broadcast();
 }

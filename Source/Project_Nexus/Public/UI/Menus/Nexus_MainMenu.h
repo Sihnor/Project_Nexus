@@ -3,7 +3,6 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "CommonActivatableWidget.h"
 #include "UI/Base/Nexus_CommonActivatableWidget.h"
 #include "Nexus_MainMenu.generated.h"
 
@@ -22,6 +21,18 @@ public:
 	
 	//UPROPERTY(meta = (BindWidget))
 	//class UNexus_CommonButtonBase* StoryButton;
+
+	UPROPERTY(meta = (BindWidget))
+	class USizeBox* PanelWidthSB;
+
+	UPROPERTY(meta = (BindWidget))
+	class UImage* SettingsImage;
+
+	UPROPERTY(meta = (BindWidget))
+	class UBorder* MenuBorder;
+
+	UPROPERTY(meta = (BindWidget))
+	class UVerticalBox* ButtonBox;
 
 	// Online Multiplayer
 	UPROPERTY(meta = (BindWidget))
