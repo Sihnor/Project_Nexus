@@ -43,10 +43,11 @@ void AFightingCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if(IsCombatReady){
+	/*if(IsCombatReady){
+		//Jump();
 		UE_LOG(LogTemp, Warning, TEXT("Ready"));
 		//this->JumpMaxCount
-	}
+	}*/
 
 }
 
@@ -58,17 +59,60 @@ void AFightingCharacter::Movement(const FInputActionValue& Value){
 	//const FVector Forward = GetActorForwardVector();
 	//const FVector Strafe = GetActorRightVector();
 
-
-
 	if (GetController() && IsCombatReady) {
+		if(MoveValue.X>0 && !MoveBwd){
+			MoveFwd = true;
+		}
+		
+		if(MoveValue.X<0 && !MoveFwd) {
+			MoveBwd = true;
+		}
+
+		UE_LOG(LogTemp, Warning, TEXT("MoveFwd: %d MoveBwd: %d"), MoveFwd, MoveBwd);
+		
+		/*AddMovementInput(Forward, MoveValue.X);*/
+
+		//UE_LOG(LogTemp, Warning, TEXT("MoveFwd: %d MoveBwd: %d"), MoveFwd, MoveBwd);
+		
 		//UE_LOG(LogTemp, Warning, TEXT("Moving"));
-		UE_LOG(LogTemp, Warning, TEXT("Move X: %f Move Y: %f"), MoveValue.X, MoveValue.Y);
+
+		//UE_LOG(LogTemp, Warning, TEXT("Move X: %f Move Y: %f"), MoveValue.X, MoveValue.Y);
+		
 		//UE_LOG(LogTemp, Warning, TEXT("Forward X: %f Foward Y: %f Forward Z: %f"), Forward.X, Forward.Y, Forward.Z);
-		AddMovementInput(Forward, MoveValue.X);
+		
+		
 		//UE_LOG(LogTemp, Warning, TEXT("Move X: %f\nMove Y: %f\nMove Z:"), MoveValue.X, MoveValue.Y, MoveValue.Z);
 		//AddMovementInput(Forward, MoveValue.Y);
 		//AddMovementInput(Strafe, MoveValue.X);
 	}
+}
+
+void AFightingCharacter::MoveForward(const FInputActionValue& Value){
+	const FVector Forward = GetActorForwardVector();
+	//MoveBwd = false;
+	if (GetController() && IsCombatReady && MoveBwd == false) {
+		UE_LOG(LogTemp, Warning, TEXT("Move X: %f"), Value.Get<float>());
+		MoveFwd= true;
+		//UE_LOG(LogTemp, Warning, TEXT("MoveFwd: %d MoveBwd: %d"), MoveFwd, MoveBwd);
+	}
+}
+
+void AFightingCharacter::MoveBackward(const FInputActionValue& Value){
+	const FVector Forward = GetActorForwardVector();
+	//MoveFwd = false;
+	if (GetController() && IsCombatReady && MoveFwd == false) {
+		UE_LOG(LogTemp, Warning, TEXT("Move X: %f"), Value.Get<float>());
+		MoveBwd = true;
+		//UE_LOG(LogTemp, Warning, TEXT("MoveFwd: %d MoveBwd: %d"), MoveFwd, MoveBwd);
+	}
+}
+
+
+void AFightingCharacter::ClearMoveValue(){
+	MoveFwd = false;
+	MoveBwd = false;
+
+	UE_LOG(LogTemp, Warning, TEXT("MoveFwd: %d MoveBwd: %d"), MoveFwd, MoveBwd);
 }
 
 void AFightingCharacter::LightAttack(const FInputActionValue& Value){
@@ -90,12 +134,12 @@ void AFightingCharacter::Block(const FInputActionValue& Value){
 	}
 }
 
-/*void AFightingCharacter::Jump(const FInputActionValue& Value){
-	if (GetController() && IsCombatReady) {
-		IsJumping = true;
+void AFightingCharacter::DoJump(const FInputActionValue& Value){
+	if (GetController() && IsCombatReady && this->CanJump()) {
 		UE_LOG(LogTemp, Warning, TEXT("Jump"));
+		this->Jump();
 	}
-}*/
+}
 
 /*bool AFightingCharacter::CanJump() const {
 	if(GetCharacterMovement()->IsMovingOnGround() && IsCombatReady) {
@@ -104,6 +148,7 @@ void AFightingCharacter::Block(const FInputActionValue& Value){
 
 	return false;
 }*/
+
 
 void AFightingCharacter::Duck(const FInputActionValue& Value){
 	if (GetController() && IsCombatReady) {
@@ -118,11 +163,25 @@ void AFightingCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 
 	if (UEnhancedInputComponent* EnhancedInputComp = CastChecked<UEnhancedInputComponent>(PlayerInputComponent)) {
 		EnhancedInputComp->BindAction(MovementAction, ETriggerEvent::Triggered, this, &AFightingCharacter::Movement);
+		EnhancedInputComp->BindAction(MovementAction, ETriggerEvent::Completed, this, &AFightingCharacter::ClearMoveValue);
+		
+		/*EnhancedInputComp->BindAction(MoveForwardAction, ETriggerEvent::Triggered, this, &AFightingCharacter::MoveForward);
+		EnhancedInputComp->BindAction(MoveBackwardAction, ETriggerEvent::Triggered, this, &AFightingCharacter::MoveBackward);
+
+		EnhancedInputComp->BindAction(MoveForwardAction, ETriggerEvent::Completed, this, &AFightingCharacter::ClearMoveValue);
+		EnhancedInputComp->BindAction(MoveBackwardAction, ETriggerEvent::Completed, this, &AFightingCharacter::ClearMoveValue);*/
+
+		//EnhancedInputComp->BindAction(MoveForwardAction, ETriggerEvent::Completed, this, &AFightingCharacter::ClearMoveValue);
+		//EnhancedInputComp->BindAction(MoveBackwardAction, ETriggerEvent::Completed, this, &AFightingCharacter::ClearMoveValue);
+
+		//EnhancedInputComp->BindAction(MoveForwardAction, ETriggerEvent::Completed, this, &AFightingCharacter::MoveForward);
+		
+		//EnhancedInputComp->BindAction(MovementAction, ETriggerEvent::Completed, this, &AFightingCharacter::Movement);
 		EnhancedInputComp->BindAction(LightAttackAction, ETriggerEvent::Triggered, this, &AFightingCharacter::LightAttack);
 		EnhancedInputComp->BindAction(HeavyAttackAction, ETriggerEvent::Triggered, this, &AFightingCharacter::HeavyAttack);
 		EnhancedInputComp->BindAction(BlockAction, ETriggerEvent::Triggered, this, &AFightingCharacter::Block);
 		EnhancedInputComp->BindAction(DuckAction, ETriggerEvent::Triggered, this, &AFightingCharacter::Duck);
-		EnhancedInputComp->BindAction(JumpAction, ETriggerEvent::Triggered, this, &AFightingCharacter::Jump);
+		EnhancedInputComp->BindAction(JumpAction, ETriggerEvent::Triggered, this, &AFightingCharacter::DoJump);
 	}
 
 }

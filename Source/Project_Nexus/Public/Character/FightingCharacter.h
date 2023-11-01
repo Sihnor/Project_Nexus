@@ -38,6 +38,12 @@ protected:
 		UInputAction* MovementAction;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+		UInputAction* MoveForwardAction;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+		UInputAction* MoveBackwardAction;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 		UInputAction* LightAttackAction;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
@@ -56,15 +62,23 @@ private:
 
 	void Movement(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 
+	void MoveForward(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
+
+	void MoveBackward(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
+
 	void LightAttack(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 
 	void HeavyAttack(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 
 	void Block(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
+
+	void ClearMoveValue();
 	
 	//void SideStep(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 
 	//void Jump(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
+
+	void DoJump(const FInputActionValue& Value);
 	
 	void Duck(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 	
