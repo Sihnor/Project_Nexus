@@ -64,9 +64,9 @@ private:
 	/*Check later*/
 	//void Movement(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 
-	void DoForward(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
+	void DoMoveFwd(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 
-	void DoBackward(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
+	void DoMoveBwd(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 
 	void LightAttack(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 

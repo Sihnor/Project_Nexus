@@ -1,10 +1,10 @@
 /.git
 /Content
 /Project_Nexus_WwiseProject
-/Saved
-/Intermediate
 /.vscode
 /DerivedDataCache
+/Intermediate
+/Saved
 /Plugins/CommonUser/Intermediate
 /Plugins/Wwise/Content
 /Plugins/Wwise/ThirdParty

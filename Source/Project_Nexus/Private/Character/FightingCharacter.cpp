@@ -81,8 +81,10 @@ void AFightingCharacter::Tick(float DeltaTime)
 	}
 }*/
 
-void AFightingCharacter::DoForward(const FInputActionValue& Value){
+void AFightingCharacter::DoMoveFwd(const FInputActionValue& Value){
 	const FVector Forward = GetActorForwardVector();
+
+	UE_LOG(LogTemp, Warning, TEXT("Forward IN"));
 
 	//MoveFwd = false;
 	if (GetController() && IsCombatReady) {
@@ -94,8 +96,10 @@ void AFightingCharacter::DoForward(const FInputActionValue& Value){
 	}
 }
 
-void AFightingCharacter::DoBackward(const FInputActionValue& Value){
+void AFightingCharacter::DoMoveBwd(const FInputActionValue& Value){
 	const FVector Forward = GetActorForwardVector();
+
+	UE_LOG(LogTemp, Warning, TEXT("Backward IN"));
 
 	//MoveFwd = false;
 	if (GetController() && IsCombatReady) {
@@ -160,10 +164,13 @@ void AFightingCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 		/*EnhancedInputComp->BindAction(MovementAction, ETriggerEvent::Triggered, this, &AFightingCharacter::Movement);
 		EnhancedInputComp->BindAction(MovementAction, ETriggerEvent::Completed, this, &AFightingCharacter::ClearMoveValue);*/
 		
-		EnhancedInputComp->BindAction(MoveForwardAction, ETriggerEvent::Triggered, this, &AFightingCharacter::DoForward);
+		/*EnhancedInputComp->BindAction(MoveForwardAction, ETriggerEvent::Triggered, this, &AFightingCharacter::DoForward);
 		EnhancedInputComp->BindAction(MoveBackwardAction, ETriggerEvent::Triggered, this, &AFightingCharacter::DoBackward);
 		EnhancedInputComp->BindAction(MoveForwardAction, ETriggerEvent::Completed, this, &AFightingCharacter::ClearMoveValue);
-		EnhancedInputComp->BindAction(MoveBackwardAction, ETriggerEvent::Completed, this, &AFightingCharacter::ClearMoveValue);
+		EnhancedInputComp->BindAction(MoveBackwardAction, ETriggerEvent::Completed, this, &AFightingCharacter::ClearMoveValue);*/
+
+		EnhancedInputComp->BindAction(MoveForwardAction, ETriggerEvent::Triggered, this, &AFightingCharacter::DoMoveFwd);
+		EnhancedInputComp->BindAction(MoveBackwardAction, ETriggerEvent::Triggered, this, &AFightingCharacter::DoMoveBwd);
 
 		EnhancedInputComp->BindAction(LightAttackAction, ETriggerEvent::Triggered, this, &AFightingCharacter::LightAttack);
 		EnhancedInputComp->BindAction(HeavyAttackAction, ETriggerEvent::Triggered, this, &AFightingCharacter::HeavyAttack);
