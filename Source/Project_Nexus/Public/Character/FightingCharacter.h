@@ -34,8 +34,9 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 		UInputMappingContext* GameplayMappingContext;	
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
-		UInputAction* MovementAction;
+	/*Check Later*/
+	/*UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+		UInputAction* MovementAction;*/
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 		UInputAction* MoveForwardAction;
@@ -60,11 +61,12 @@ protected:
 
 private:
 
-	void Movement(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
+	/*Check later*/
+	//void Movement(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 
-	void MoveForward(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
+	void DoForward(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 
-	void MoveBackward(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
+	void DoBackward(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 
 	void LightAttack(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 
@@ -75,8 +77,6 @@ private:
 	void ClearMoveValue();
 	
 	//void SideStep(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
-
-	//void Jump(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 
 	void DoJump(const FInputActionValue& Value);
 	
@@ -111,7 +111,4 @@ private:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GeneralMovement", meta = (AllowPrivateAccess = "true"))
 		float Gravity;*/
-
-	/*protected:
-		virtual bool CanJump() const override;*/
 };
