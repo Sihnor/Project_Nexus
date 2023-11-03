@@ -84,13 +84,12 @@ void AFightingCharacter::Tick(float DeltaTime)
 void AFightingCharacter::DoMoveFwd(const FInputActionValue& Value){
 	const FVector Forward = GetActorForwardVector();
 
-	UE_LOG(LogTemp, Warning, TEXT("Forward IN"));
-
 	//MoveFwd = false;
 	if (GetController() && IsCombatReady) {
 		AddMovementInput(Forward, Value.Get<float>());
 		UE_LOG(LogTemp, Warning, TEXT("Move X: %f"), Value.Get<float>());
 
+		UE_LOG(LogTemp, Warning, TEXT("This is the Mesh: %s"), this->GetMesh()->GetName());
 		MoveFwd= true;
 		//UE_LOG(LogTemp, Warning, TEXT("MoveFwd: %d MoveBwd: %d"), MoveFwd, MoveBwd);
 	}
@@ -98,8 +97,6 @@ void AFightingCharacter::DoMoveFwd(const FInputActionValue& Value){
 
 void AFightingCharacter::DoMoveBwd(const FInputActionValue& Value){
 	const FVector Forward = GetActorForwardVector();
-
-	UE_LOG(LogTemp, Warning, TEXT("Backward IN"));
 
 	//MoveFwd = false;
 	if (GetController() && IsCombatReady) {
