@@ -34,10 +34,6 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 		UInputMappingContext* GameplayMappingContext;	
 
-	/*Check Later*/
-	/*UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
-		UInputAction* MovementAction;*/
-
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 		UInputAction* MoveForwardAction;
 
@@ -61,9 +57,6 @@ protected:
 
 private:
 
-	/*Check later*/
-	//void Movement(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
-
 	void DoMoveFwd(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 
 	void DoMoveBwd(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
@@ -73,10 +66,6 @@ private:
 	void HeavyAttack(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 
 	void Block(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
-
-	void ClearMoveValue();
-	
-	//void SideStep(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 
 	void DoJump(const FInputActionValue& Value);
 	
@@ -102,13 +91,4 @@ private:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
 		bool IsCombatReady;
-
-	/*UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GeneralMovement", meta = (AllowPrivateAccess = "true"))
-		float MovementSpeed;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GeneralMovement", meta = (AllowPrivateAccess = "true"))
-		float JumpValue;
-	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GeneralMovement", meta = (AllowPrivateAccess = "true"))
-		float Gravity;*/
 };

@@ -22,7 +22,6 @@ AFightingCharacter::AFightingCharacter()
 	SpringArmComp->TargetArmLength = 250.f;
 	SpringArmComp->SetRelativeLocation(FVector(0.f, 0.f, 30.f));
 	SpringArmComp->SetRelativeRotation(FRotator(0.f,-90.f,0.f));
-
 }
 
 // Called when the game starts or when spawned
@@ -35,87 +34,30 @@ void AFightingCharacter::BeginPlay()
 			Subsystem->AddMappingContext(GameplayMappingContext, 0);
 		}
 	}
-	
 }
 
 // Called every frame
 void AFightingCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 }
-
-/*void AFightingCharacter::Movement(const FInputActionValue& Value){
-	const FVector2D MoveValue = Value.Get<FVector2D>();
-	const FVector Forward = GetActorForwardVector();
-
-	//const FVector Forward = GetActorForwardVector();
-	//const FVector Forward = GetActorForwardVector();
-	//const FVector Strafe = GetActorRightVector();
-
-	if (GetController() && IsCombatReady) {
-		if(MoveValue.X>0 && !MoveBwd){
-			MoveFwd = true;
-		}
-		
-		if(MoveValue.X<0 && !MoveFwd) {
-			MoveBwd = true;
-		}
-
-		UE_LOG(LogTemp, Warning, TEXT("MoveFwd: %d MoveBwd: %d"), MoveFwd, MoveBwd);
-		
-		AddMovementInput(Forward, MoveValue.X);
-
-		//UE_LOG(LogTemp, Warning, TEXT("MoveFwd: %d MoveBwd: %d"), MoveFwd, MoveBwd);
-		
-		//UE_LOG(LogTemp, Warning, TEXT("Moving"));
-
-		//UE_LOG(LogTemp, Warning, TEXT("Move X: %f Move Y: %f"), MoveValue.X, MoveValue.Y);
-		
-		//UE_LOG(LogTemp, Warning, TEXT("Forward X: %f Foward Y: %f Forward Z: %f"), Forward.X, Forward.Y, Forward.Z);
-		
-		
-		//UE_LOG(LogTemp, Warning, TEXT("Move X: %f\nMove Y: %f\nMove Z:"), MoveValue.X, MoveValue.Y, MoveValue.Z);
-		//AddMovementInput(Forward, MoveValue.Y);
-		//AddMovementInput(Strafe, MoveValue.X);
-	}
-}*/
 
 void AFightingCharacter::DoMoveFwd(const FInputActionValue& Value){
 	const FVector Forward = GetActorForwardVector();
 
-	//MoveFwd = false;
 	if (GetController() && IsCombatReady) {
 		AddMovementInput(Forward, Value.Get<float>());
-		UE_LOG(LogTemp, Warning, TEXT("Move X: %f"), Value.Get<float>());
-
-		UE_LOG(LogTemp, Warning, TEXT("This is the Mesh: %s"), this->GetMesh()->GetName());
-		MoveFwd= true;
-		//UE_LOG(LogTemp, Warning, TEXT("MoveFwd: %d MoveBwd: %d"), MoveFwd, MoveBwd);
+		//UE_LOG(LogTemp, Warning, TEXT("Move X: %f"), Value.Get<float>());
 	}
 }
 
 void AFightingCharacter::DoMoveBwd(const FInputActionValue& Value){
 	const FVector Forward = GetActorForwardVector();
 
-	//MoveFwd = false;
 	if (GetController() && IsCombatReady) {
 		AddMovementInput(Forward, Value.Get<float>());
-		UE_LOG(LogTemp, Warning, TEXT("Move X: %f"), Value.Get<float>());
-
-		MoveBwd= true;
-		//UE_LOG(LogTemp, Warning, TEXT("MoveFwd: %d MoveBwd: %d"), MoveFwd, MoveBwd);
+		//UE_LOG(LogTemp, Warning, TEXT("Move X: %f"), Value.Get<float>());
 	}
-}
-
-void AFightingCharacter::ClearMoveValue(){
-
-	if (GetController() && IsCombatReady) {
-		MoveFwd = false;
-		MoveBwd = false;
-	}
-
-	//UE_LOG(LogTemp, Warning, TEXT("MoveFwd: %d MoveBwd: %d"), MoveFwd, MoveBwd);
 }
 
 void AFightingCharacter::LightAttack(const FInputActionValue& Value){
@@ -156,16 +98,8 @@ void AFightingCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 	if (UEnhancedInputComponent* EnhancedInputComp = CastChecked<UEnhancedInputComponent>(PlayerInputComponent)) {
-		
-		/*Check later*/
-		/*EnhancedInputComp->BindAction(MovementAction, ETriggerEvent::Triggered, this, &AFightingCharacter::Movement);
-		EnhancedInputComp->BindAction(MovementAction, ETriggerEvent::Completed, this, &AFightingCharacter::ClearMoveValue);*/
-		
-		/*EnhancedInputComp->BindAction(MoveForwardAction, ETriggerEvent::Triggered, this, &AFightingCharacter::DoForward);
-		EnhancedInputComp->BindAction(MoveBackwardAction, ETriggerEvent::Triggered, this, &AFightingCharacter::DoBackward);
-		EnhancedInputComp->BindAction(MoveForwardAction, ETriggerEvent::Completed, this, &AFightingCharacter::ClearMoveValue);
-		EnhancedInputComp->BindAction(MoveBackwardAction, ETriggerEvent::Completed, this, &AFightingCharacter::ClearMoveValue);*/
 
+		/*Maybe Change Function Name*/
 		EnhancedInputComp->BindAction(MoveForwardAction, ETriggerEvent::Triggered, this, &AFightingCharacter::DoMoveFwd);
 		EnhancedInputComp->BindAction(MoveBackwardAction, ETriggerEvent::Triggered, this, &AFightingCharacter::DoMoveBwd);
 
