@@ -87,8 +87,16 @@ void AFightingCharacter::DoJump(const FInputActionValue& Value){
 }
 
 void AFightingCharacter::Duck(const FInputActionValue& Value){
-	if (GetController() && IsCombatReady) {
+	if (GetController() && IsCombatReady && this->CanCrouch()) {
 		UE_LOG(LogTemp, Warning, TEXT("Duck"));
+		this->Crouch();
+	}
+}
+
+void AFightingCharacter::UnDuck(const FInputActionValue& Value){
+	if (GetController() && IsCombatReady && !this->CanCrouch()) {
+		UE_LOG(LogTemp, Warning, TEXT("UnDuck"));
+		this->UnCrouch();
 	}
 }
 
@@ -103,11 +111,13 @@ void AFightingCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 		EnhancedInputComp->BindAction(MoveForwardAction, ETriggerEvent::Triggered, this, &AFightingCharacter::DoMoveFwd);
 		EnhancedInputComp->BindAction(MoveBackwardAction, ETriggerEvent::Triggered, this, &AFightingCharacter::DoMoveBwd);
 
+		EnhancedInputComp->BindAction(DuckAction, ETriggerEvent::Triggered, this, &AFightingCharacter::Duck);
+		EnhancedInputComp->BindAction(DuckAction, ETriggerEvent::Completed, this, &AFightingCharacter::UnDuck);
+		EnhancedInputComp->BindAction(JumpAction, ETriggerEvent::Triggered, this, &AFightingCharacter::DoJump);
+
 		EnhancedInputComp->BindAction(LightAttackAction, ETriggerEvent::Triggered, this, &AFightingCharacter::LightAttack);
 		EnhancedInputComp->BindAction(HeavyAttackAction, ETriggerEvent::Triggered, this, &AFightingCharacter::HeavyAttack);
 		EnhancedInputComp->BindAction(BlockAction, ETriggerEvent::Triggered, this, &AFightingCharacter::Block);
-		EnhancedInputComp->BindAction(DuckAction, ETriggerEvent::Triggered, this, &AFightingCharacter::Duck);
-		EnhancedInputComp->BindAction(JumpAction, ETriggerEvent::Triggered, this, &AFightingCharacter::DoJump);
 	}
 
 }
