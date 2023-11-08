@@ -45,7 +45,7 @@ void AFightingCharacter::Tick(float DeltaTime)
 void AFightingCharacter::DoMoveFwd(const FInputActionValue& Value){
 	const FVector Forward = GetActorForwardVector();
 
-	if (GetController() && IsCombatReady) {
+	if (GetController() && IsCombatReady && !IsBlocking) {
 		AddMovementInput(Forward, Value.Get<float>());
 		//UE_LOG(LogTemp, Warning, TEXT("Move X: %f"), Value.Get<float>());
 	}
@@ -54,7 +54,7 @@ void AFightingCharacter::DoMoveFwd(const FInputActionValue& Value){
 void AFightingCharacter::DoMoveBwd(const FInputActionValue& Value){
 	const FVector Forward = GetActorForwardVector();
 
-	if (GetController() && IsCombatReady) {
+	if (GetController() && IsCombatReady && !IsBlocking) {
 		AddMovementInput(Forward, Value.Get<float>());
 		//UE_LOG(LogTemp, Warning, TEXT("Move X: %f"), Value.Get<float>());
 	}
@@ -63,39 +63,58 @@ void AFightingCharacter::DoMoveBwd(const FInputActionValue& Value){
 void AFightingCharacter::LightAttack(const FInputActionValue& Value){
 	
 	if (GetController() && IsCombatReady) {
-		UE_LOG(LogTemp, Warning, TEXT("Light Attack"));
+		if(!WasFirstLightAttackUsed){
+			WasFirstLightAttackUsed = true;
+		}
+		//UE_LOG(LogTemp, Warning, TEXT("Light Attack"));
+		//UE_LOG(LogTemp, Warning, TEXT("LA: %d"), WasFirstLightAttackUsed);
 	}
 }
 
 void AFightingCharacter::HeavyAttack(const FInputActionValue& Value){
 	if (GetController() && IsCombatReady) {
-		UE_LOG(LogTemp, Warning, TEXT("Heavy Attack"));
+		if(!WasFirstHeavyAttackUsed){
+			WasFirstHeavyAttackUsed = true;
+		}
+		//UE_LOG(LogTemp, Warning, TEXT("Heavy Attack"));
+		//UE_LOG(LogTemp, Warning, TEXT("HA: %d"), WasFirstHeavyAttackUsed);
 	}
 }
 
 void AFightingCharacter::Block(const FInputActionValue& Value){
+	if (GetController() && IsCombatReady && !this->bIsCrouched) {
+			IsBlocking = true;
+			UE_LOG(LogTemp, Warning, TEXT("Block"));
+	}else {
+		IsBlocking = false;
+	}
+}
+
+
+void AFightingCharacter::UnBlock(const FInputActionValue& Value){
 	if (GetController() && IsCombatReady) {
-		UE_LOG(LogTemp, Warning, TEXT("Block"));
+			IsBlocking = false;
+			UE_LOG(LogTemp, Warning, TEXT("UnBlock"));
 	}
 }
 
 void AFightingCharacter::DoJump(const FInputActionValue& Value){
 	if (GetController() && IsCombatReady && this->CanJump()) {
-		UE_LOG(LogTemp, Warning, TEXT("Jump"));
+		//UE_LOG(LogTemp, Warning, TEXT("Jump"));
 		this->Jump();
 	}
 }
 
 void AFightingCharacter::Duck(const FInputActionValue& Value){
 	if (GetController() && IsCombatReady && this->CanCrouch()) {
-		UE_LOG(LogTemp, Warning, TEXT("Duck"));
+		//UE_LOG(LogTemp, Warning, TEXT("Duck"));
 		this->Crouch();
 	}
 }
 
 void AFightingCharacter::UnDuck(const FInputActionValue& Value){
 	if (GetController() && IsCombatReady && !this->CanCrouch()) {
-		UE_LOG(LogTemp, Warning, TEXT("UnDuck"));
+		//UE_LOG(LogTemp, Warning, TEXT("UnDuck"));
 		this->UnCrouch();
 	}
 }
@@ -115,9 +134,13 @@ void AFightingCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 		EnhancedInputComp->BindAction(DuckAction, ETriggerEvent::Completed, this, &AFightingCharacter::UnDuck);
 		EnhancedInputComp->BindAction(JumpAction, ETriggerEvent::Triggered, this, &AFightingCharacter::DoJump);
 
-		EnhancedInputComp->BindAction(LightAttackAction, ETriggerEvent::Triggered, this, &AFightingCharacter::LightAttack);
-		EnhancedInputComp->BindAction(HeavyAttackAction, ETriggerEvent::Triggered, this, &AFightingCharacter::HeavyAttack);
+		EnhancedInputComp->BindAction(LightAttackAction, ETriggerEvent::Started, this, &AFightingCharacter::LightAttack);
+		//EnhancedInputComp->BindAction(LightAttackAction, ETriggerEvent::Completed, this, &AFightingCharacter::LightAttack);
+		EnhancedInputComp->BindAction(HeavyAttackAction, ETriggerEvent::Started, this, &AFightingCharacter::HeavyAttack);
+		//EnhancedInputComp->BindAction(HeavyAttackAction, ETriggerEvent::Completed, this, &AFightingCharacter::HeavyAttack);
+
 		EnhancedInputComp->BindAction(BlockAction, ETriggerEvent::Triggered, this, &AFightingCharacter::Block);
+		EnhancedInputComp->BindAction(BlockAction, ETriggerEvent::Completed, this, &AFightingCharacter::UnBlock);
 	}
 
 }

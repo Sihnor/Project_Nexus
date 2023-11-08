@@ -67,6 +67,8 @@ private:
 
 	void Block(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 
+	void UnBlock(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
+
 	void DoJump(const FInputActionValue& Value);
 	
 	void Duck(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
@@ -83,15 +85,18 @@ private:
 		bool MoveFwd;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
-		bool MoveBwd;
+		bool MoveBwd;*/
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
-		bool IsCrouching;
+		bool IsCombatReady = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
-		bool IsJumping;*/
+		bool IsBlocking;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
-		bool IsCombatReady;
+		bool WasFirstLightAttackUsed;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool WasFirstHeavyAttackUsed;
 
 };
