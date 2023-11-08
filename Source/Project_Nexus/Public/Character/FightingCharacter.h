@@ -55,11 +55,21 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 		UInputAction* DuckAction;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+		UInputAction* SideStepPositiveYAction;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+		UInputAction* SideStepNegativeYAction;
+
 private:
 
 	void DoMoveFwd(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 
 	void DoMoveBwd(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
+
+	void SideStepPY(const FInputActionValue& Value);
+
+	void SideStepNY(const FInputActionValue& Value);
 
 	void LightAttack(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 
@@ -91,12 +101,12 @@ private:
 		bool IsCombatReady = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
-		bool IsBlocking;
+		bool IsBlocking = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
-		bool WasFirstLightAttackUsed;
+		bool WasFirstLightAttackUsed = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
-		bool WasFirstHeavyAttackUsed;
+		bool WasFirstHeavyAttackUsed = false;
 
 };

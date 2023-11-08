@@ -40,6 +40,8 @@ void AFightingCharacter::BeginPlay()
 void AFightingCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	//UE_LOG(LogTemp, Warning, TEXT("Was Jumping: %d"), bWasJumping);
 }
 
 void AFightingCharacter::DoMoveFwd(const FInputActionValue& Value){
@@ -61,7 +63,6 @@ void AFightingCharacter::DoMoveBwd(const FInputActionValue& Value){
 }
 
 void AFightingCharacter::LightAttack(const FInputActionValue& Value){
-	
 	if (GetController() && IsCombatReady) {
 		if(!WasFirstLightAttackUsed){
 			WasFirstLightAttackUsed = true;
@@ -84,17 +85,16 @@ void AFightingCharacter::HeavyAttack(const FInputActionValue& Value){
 void AFightingCharacter::Block(const FInputActionValue& Value){
 	if (GetController() && IsCombatReady && !this->bIsCrouched) {
 			IsBlocking = true;
-			UE_LOG(LogTemp, Warning, TEXT("Block"));
+			//UE_LOG(LogTemp, Warning, TEXT("Block"));
 	}else {
 		IsBlocking = false;
 	}
 }
 
-
 void AFightingCharacter::UnBlock(const FInputActionValue& Value){
 	if (GetController() && IsCombatReady) {
 			IsBlocking = false;
-			UE_LOG(LogTemp, Warning, TEXT("UnBlock"));
+			//UE_LOG(LogTemp, Warning, TEXT("UnBlock"));
 	}
 }
 
@@ -119,6 +119,19 @@ void AFightingCharacter::UnDuck(const FInputActionValue& Value){
 	}
 }
 
+void AFightingCharacter::SideStepNY(const FInputActionValue& Value){
+	if (GetController() && IsCombatReady) {
+		UE_LOG(LogTemp, Warning, TEXT("SideStep Negative Y"));
+	}
+}
+
+void AFightingCharacter::SideStepPY(const FInputActionValue& Value){
+	if (GetController() && IsCombatReady) {
+		UE_LOG(LogTemp, Warning, TEXT("SideStep Postive Y"));
+	}
+}
+
+
 // Called to bind functionality to input
 void AFightingCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
@@ -135,12 +148,13 @@ void AFightingCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 		EnhancedInputComp->BindAction(JumpAction, ETriggerEvent::Triggered, this, &AFightingCharacter::DoJump);
 
 		EnhancedInputComp->BindAction(LightAttackAction, ETriggerEvent::Started, this, &AFightingCharacter::LightAttack);
-		//EnhancedInputComp->BindAction(LightAttackAction, ETriggerEvent::Completed, this, &AFightingCharacter::LightAttack);
 		EnhancedInputComp->BindAction(HeavyAttackAction, ETriggerEvent::Started, this, &AFightingCharacter::HeavyAttack);
-		//EnhancedInputComp->BindAction(HeavyAttackAction, ETriggerEvent::Completed, this, &AFightingCharacter::HeavyAttack);
 
 		EnhancedInputComp->BindAction(BlockAction, ETriggerEvent::Triggered, this, &AFightingCharacter::Block);
 		EnhancedInputComp->BindAction(BlockAction, ETriggerEvent::Completed, this, &AFightingCharacter::UnBlock);
+
+		EnhancedInputComp->BindAction(SideStepPositiveYAction, ETriggerEvent::Triggered, this, &AFightingCharacter::SideStepPY);
+		EnhancedInputComp->BindAction(SideStepNegativeYAction, ETriggerEvent::Triggered, this, &AFightingCharacter::SideStepNY);
 	}
 
 }
