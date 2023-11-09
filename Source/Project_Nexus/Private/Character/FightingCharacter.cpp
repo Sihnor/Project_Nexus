@@ -120,17 +120,24 @@ void AFightingCharacter::UnDuck(const FInputActionValue& Value){
 }
 
 void AFightingCharacter::SideStepNY(const FInputActionValue& Value){
-	if (GetController() && IsCombatReady) {
-		UE_LOG(LogTemp, Warning, TEXT("SideStep Negative Y"));
-	}
+    const FVector SideStep = GetActorRightVector();
+
+    if (GetController() && IsCombatReady) {
+		AddMovementInput(SideStep, Value.Get<float>());
+        UE_LOG(LogTemp, Warning, TEXT("Move Value: %f"), Value.Get<float>());
+        UE_LOG(LogTemp, Warning, TEXT("SideStep Negative Y"));
+    }
 }
 
 void AFightingCharacter::SideStepPY(const FInputActionValue& Value){
-	if (GetController() && IsCombatReady) {
-		UE_LOG(LogTemp, Warning, TEXT("SideStep Postive Y"));
-	}
-}
+    const FVector SideStep = GetActorRightVector();
 
+    if (GetController() && IsCombatReady) {
+		AddMovementInput(SideStep, Value.Get<float>());
+        UE_LOG(LogTemp, Warning, TEXT("Move Value: %f"), Value.Get<float>());
+        UE_LOG(LogTemp, Warning, TEXT("SideStep Positive Y"));
+    }
+}
 
 // Called to bind functionality to input
 void AFightingCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)

@@ -108,5 +108,7 @@ private:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
 		bool WasFirstHeavyAttackUsed = false;
+	
+
 
 };
