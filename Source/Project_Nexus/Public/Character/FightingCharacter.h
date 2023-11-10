@@ -25,8 +25,6 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	//void 
-
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -61,6 +59,7 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 		UInputAction* SideStepNegativeYAction;
 
+
 private:
 
 	void DoMoveFwd(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
@@ -84,6 +83,8 @@ private:
 	void Duck(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 
 	void UnDuck(const FInputActionValue& Value);
+
+	void ClearSideStep(const FInputActionValue& Value);
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components", meta = (AllowPrivateAccess = "true"))
 		class USpringArmComponent* SpringArmComp;
@@ -108,7 +109,10 @@ private:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
 		bool WasFirstHeavyAttackUsed = false;
-	
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool IsSideStepNY = false;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool IsSideStepPY = false;
 };

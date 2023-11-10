@@ -34,6 +34,8 @@ void AFightingCharacter::BeginPlay()
 			Subsystem->AddMappingContext(GameplayMappingContext, 0);
 		}
 	}
+	
+
 }
 
 // Called every frame
@@ -41,13 +43,12 @@ void AFightingCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	//UE_LOG(LogTemp, Warning, TEXT("Was Jumping: %d"), bWasJumping);
 }
 
 void AFightingCharacter::DoMoveFwd(const FInputActionValue& Value){
 	const FVector Forward = GetActorForwardVector();
 
-	if (GetController() && IsCombatReady && !IsBlocking) {
+	if (GetController() && IsCombatReady && !IsBlocking && GetVelocity().Y == 0 && GetVelocity().Y == 0 && !WasFirstHeavyAttackUsed && !WasFirstLightAttackUsed) {
 		AddMovementInput(Forward, Value.Get<float>());
 		//UE_LOG(LogTemp, Warning, TEXT("Move X: %f"), Value.Get<float>());
 	}
@@ -56,7 +57,7 @@ void AFightingCharacter::DoMoveFwd(const FInputActionValue& Value){
 void AFightingCharacter::DoMoveBwd(const FInputActionValue& Value){
 	const FVector Forward = GetActorForwardVector();
 
-	if (GetController() && IsCombatReady && !IsBlocking) {
+	if (GetController() && IsCombatReady && !IsBlocking && GetVelocity().Y == 0 && GetVelocity().Y == 0 && !WasFirstHeavyAttackUsed && !WasFirstLightAttackUsed) {
 		AddMovementInput(Forward, Value.Get<float>());
 		//UE_LOG(LogTemp, Warning, TEXT("Move X: %f"), Value.Get<float>());
 	}
@@ -121,22 +122,31 @@ void AFightingCharacter::UnDuck(const FInputActionValue& Value){
 
 void AFightingCharacter::SideStepNY(const FInputActionValue& Value){
     const FVector SideStep = GetActorRightVector();
-
-    if (GetController() && IsCombatReady) {
-		AddMovementInput(SideStep, Value.Get<float>());
-        UE_LOG(LogTemp, Warning, TEXT("Move Value: %f"), Value.Get<float>());
-        UE_LOG(LogTemp, Warning, TEXT("SideStep Negative Y"));
+    if (GetController() && IsCombatReady && !IsBlocking && !IsSideStepPY && GetVelocity().X == 0.f && !this->bIsCrouched && GetVelocity().Z == 0) {
+		IsSideStepNY = true;
+		//this->LaunchCharacter(FVector(0.f,-250.f, 0.f), true, true);
+        //UE_LOG(LogTemp, Warning, TEXT("Move Value: %f"), Value.Get<float>());
+        //UE_LOG(LogTemp, Warning, TEXT("SideStep Negative Y"));
     }
 }
 
 void AFightingCharacter::SideStepPY(const FInputActionValue& Value){
     const FVector SideStep = GetActorRightVector();
 
-    if (GetController() && IsCombatReady) {
-		AddMovementInput(SideStep, Value.Get<float>());
-        UE_LOG(LogTemp, Warning, TEXT("Move Value: %f"), Value.Get<float>());
-        UE_LOG(LogTemp, Warning, TEXT("SideStep Positive Y"));
+    if (GetController() && IsCombatReady && !IsBlocking && !IsSideStepNY && GetVelocity().X == 0.f && !this->bIsCrouched && GetVelocity().Z == 0) {	
+		IsSideStepPY = true;	
+		//this->LaunchCharacter(FVector(0.f,250.f, 0.f), true, true);
+		//AddMovementInput(SideStep, Value.Get<float>());
+        //UE_LOG(LogTemp, Warning, TEXT("Move Value: %f"), Value.Get<float>());
+        //UE_LOG(LogTemp, Warning, TEXT("SideStep Positive Y"));
     }
+}
+
+void AFightingCharacter::ClearSideStep(const FInputActionValue& Value){
+	if (GetController() && IsCombatReady) {
+		IsSideStepNY = false;
+		IsSideStepPY = false;
+	}
 }
 
 // Called to bind functionality to input
@@ -162,6 +172,8 @@ void AFightingCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 
 		EnhancedInputComp->BindAction(SideStepPositiveYAction, ETriggerEvent::Triggered, this, &AFightingCharacter::SideStepPY);
 		EnhancedInputComp->BindAction(SideStepNegativeYAction, ETriggerEvent::Triggered, this, &AFightingCharacter::SideStepNY);
+		//EnhancedInputComp->BindAction(SideStepPositiveYAction, ETriggerEvent::Completed, this, &AFightingCharacter::ClearSideStep);
+		//EnhancedInputComp->BindAction(SideStepNegativeYAction, ETriggerEvent::Completed, this, &AFightingCharacter::ClearSideStep);
 	}
 
 }
