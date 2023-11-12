@@ -17,6 +17,7 @@ class PROJECT_NEXUS_API ANexus_GameMode : public AGameMode
 	GENERATED_BODY()
 
 	ANexus_GameMode();
+
 virtual void BeginPlay() override;
 	
 	virtual void StartMatch() override;

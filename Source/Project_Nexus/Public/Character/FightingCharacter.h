@@ -25,6 +25,8 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	//FTimerHandle TimerHandle;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -59,6 +61,9 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 		UInputAction* SideStepNegativeYAction;
 
+	// Expose OtherPlayerCharacter to Blueprint
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats")
+    	AFightingCharacter* OtherPlayerCharacter;
 
 private:
 
@@ -85,12 +90,18 @@ private:
 	void UnDuck(const FInputActionValue& Value);
 
 	void ClearSideStep(const FInputActionValue& Value);
+
+	// Custom function for updating character rotation
+    void UpdateCharacterRotation();
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components", meta = (AllowPrivateAccess = "true"))
 		class USpringArmComponent* SpringArmComp;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components", meta = (AllowPrivateAccess = "true"))
 		class UCameraComponent* CameraComp;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats" ,meta = (AllowPrivateAccess = "true"))
+		AFightingCharacter* OtherCharacter;
 
 	/*UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
 		bool MoveFwd;
@@ -115,4 +126,15 @@ private:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
 		bool IsSideStepPY = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats", meta = (AllowPrivateAccess = "true"))
+		int PlayerIndex;
+
+    // Whether to rotate the character based on input
+	/*UPROPERTY(EditAnywhere, Category = "Custom Character Rotation")
+    	bool bRotateToFacePlayer;*/
+
+	// Sensitivity for rotating the character
+    UPROPERTY(EditAnywhere, Category = "Custom Character Rotation")
+    	float RotationRate;
 };

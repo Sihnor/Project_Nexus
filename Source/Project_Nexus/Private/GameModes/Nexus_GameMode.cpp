@@ -4,13 +4,10 @@
 #include "GameModes/Nexus_GameMode.h"
 #include "GameState/Nexus_GameState.h"
 
-
 ANexus_GameMode::ANexus_GameMode() {
 	this->GameDurationInSeconds = 150;
 
 	this->GameState = this->GetGameState<ANexus_GameState>();
-
-	
 	
 }
 
@@ -22,6 +19,7 @@ void ANexus_GameMode::BeginPlay()
 	{
 		this->GameState->ReductionOfLifeEvent.AddUObject(this, &ANexus_GameMode::CheckIfDeath);
 	}
+	
 }
 
 void ANexus_GameMode::StartMatch() {
@@ -47,5 +45,4 @@ void ANexus_GameMode::CountDown() {
 void ANexus_GameMode::CheckIfDeath(EPlayerEnum Player) {
 	
 }
-
 
