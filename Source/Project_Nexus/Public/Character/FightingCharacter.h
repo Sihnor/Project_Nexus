@@ -92,6 +92,7 @@ private:
 	void ClearSideStep(const FInputActionValue& Value);
 
 	// Custom function for updating character rotation
+	UFUNCTION(BlueprintCallable, Category = "Custom Character Rotation", meta = (AllowPrivateAccess = "true"))
     void UpdateCharacterRotation();
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components", meta = (AllowPrivateAccess = "true"))
@@ -103,11 +104,11 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats" ,meta = (AllowPrivateAccess = "true"))
 		AFightingCharacter* OtherCharacter;
 
-	/*UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
 		bool MoveFwd;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
-		bool MoveBwd;*/
+		bool MoveBwd;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
 		bool IsCombatReady = false;
@@ -137,4 +138,7 @@ private:
 	// Sensitivity for rotating the character
     UPROPERTY(EditAnywhere, Category = "Custom Character Rotation")
     	float RotationRate;
+
+	UPROPERTY(EditAnywhere, Category = "Custom Character Rotation")
+    	bool bShowRotation;
 };
