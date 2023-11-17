@@ -132,7 +132,7 @@ private:
 
 	void StartWorkerIfNeeded();
 	void Work();
-	bool StopWorkerIfDone();
+	bool KeepWorking();
 	void ProcessWork();
 	bool TrySetStoppedWorkerToRunning();
 	bool TrySetRunningWorkerToStopped();

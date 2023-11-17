@@ -421,12 +421,14 @@ FString FWaapiDataSource::GetItemWorkUnitPath(FWwiseTreeItemPtr InItem)
 		UE_LOG(LogAudiokineticTools, Log, TEXT("Call Failed to get %s's Work Unit Path"), *InItem->DisplayName);
 		return {};
 	}
-#endif
 
 	FString Path = outJsonResult->GetArrayField(WwiseWaapiHelper::RETURN)[0]->AsObject()->GetStringField(
 		WwiseWaapiHelper::FILEPATH);
 
 	return Path;
+#else
+	return {};
+#endif
 }
 
 FWwiseTreeItemPtr FWaapiDataSource::GetRootItem(EWwiseItemType::Type RootType)
@@ -708,9 +710,8 @@ FString FWaapiDataSource::LoadProjectName()
 			return {};
 		}
 	}
-
-	return {};
 #endif
+	return {};
 }
 
 void FWaapiDataSource::HandleFindWwiseItemInProjectExplorerCommandExecute(

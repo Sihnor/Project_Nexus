@@ -174,7 +174,7 @@ public class ak
 				public const string getInclusions = "ak.wwise.core.soundbank.getInclusions";
 				/// <summary>Modifies a SoundBank's inclusion list. The 'operation' argument determines how the 'inclusions' argument modifies the SoundBank's inclusion list; 'inclusions' may be added to / removed from / replace the SoundBank's inclusion list.</summary>
 				public const string setInclusions = "ak.wwise.core.soundbank.setInclusions";
-				/// <summary>Generate a list of SoundBank with import definition defined in the WAAPI request. If you choose to not write the SoundBanks to disk, subscribe to \ref ak_wwise_core_soundbank_generated to get SoundBank structure info and the bank data as base64.</summary>
+				/// <summary>Generate a list of SoundBanks with the import definition specified in the WAAPI request. If you do not write the SoundBanks to disk, subscribe to \ref ak_wwise_core_soundbank_generated to receive SoundBank structure info and the bank data as base64. Note: This is a synchronous operation.</summary>
 				public const string generate = "ak.wwise.core.soundbank.generate";
 				/// <summary>Imports SoundBank definitions from the specified file. Multiple files can be specified. See the WAAPI log for status messages.</summary>
 				public const string processDefinitionFiles = "ak.wwise.core.soundbank.processDefinitionFiles";
@@ -182,7 +182,7 @@ public class ak
 				public const string convertExternalSources = "ak.wwise.core.soundbank.convertExternalSources";
 				/// <summary>Sent when a single SoundBank is generated. This could be sent multiple times during SoundBank generation, for every SoundBank generated and for every platform. To generate SoundBanks, refer to \ref ak_wwise_core_soundbank_generate or \ref ak_wwise_ui_commands_execute with one of the SoundBank generation commands. Refer to \ref globalcommandsids for the list of commands.</summary>
 				public const string generated = "ak.wwise.core.soundbank.generated";
-				/// <summary>Sent when all SoundBanks are generated.</summary>
+				/// <summary>Sent when all SoundBanks are generated. Note: This notification is only sent when SoundBanks have been generated, it is not a reliable way to determine when \ref ak_wwise_core_soundbank_generate has completed.</summary>
 				public const string generationDone = "ak.wwise.core.soundbank.generationDone";
 			}
 			public class sound
@@ -192,7 +192,7 @@ public class ak
 			}
 			public class log
 			{
-				/// <summary>Retrieves the latest log for a specific channel. Refer to \ref ak_wwise_core_log_itemadded to be notified when a item is added to the log.</summary>
+				/// <summary>Retrieves the latest log for a specific channel. Refer to \ref ak_wwise_core_log_itemadded to be notified when an item is added to the log. The log is empty when used in WwiseConsole.</summary>
 				public const string get = "ak.wwise.core.log.get";
 				/// <summary>Sent when an item is added to the log. This could be used to retrieve items added to the SoundBank generation log. To retrieve the complete log, refer to \ref ak_wwise_core_log_get.</summary>
 				public const string itemAdded = "ak.wwise.core.log.itemAdded";

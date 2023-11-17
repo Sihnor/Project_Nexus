@@ -21,7 +21,7 @@ Copyright (c) 2023 Audiokinetic Inc.
 #include "Wwise/WwiseExecutionQueue.h"
 #include <atomic>
 
-TEST_CASE("Audio::Wwise::Concurrency::ExecutionQueue_Smoke", "[ApplicationContextMask][SmokeFilter]")
+WWISE_TEST_CASE(Concurrency_ExecutionQueue_Smoke, "Wwise::Concurrency::ExecutionQueue_Smoke", "[ApplicationContextMask][SmokeFilter]")
 {
 	SECTION("Static")
 	{
@@ -113,12 +113,79 @@ TEST_CASE("Audio::Wwise::Concurrency::ExecutionQueue_Smoke", "[ApplicationContex
 		}
 		CHECK(Value.load() == LoopCount);
 	}
+}
+
+WWISE_TEST_CASE(Concurrency_ExecutionQueue_Perf, "Wwise::Concurrency::ExecutionQueue_Perf", "[ApplicationContextMask][PerfFilter]")
+{
+	SECTION("AsyncAddingOpPerf")
+	{
+		const bool bReduceLogVerbosity = FWwiseExecutionQueue::Test::bReduceLogVerbosity;
+		FWwiseExecutionQueue::Test::bReduceLogVerbosity = true;
+		ON_SCOPE_EXIT { FWwiseExecutionQueue::Test::bReduceLogVerbosity = bReduceLogVerbosity; };
+
+		constexpr const int LoopCount = 1000000;
+		constexpr const int ExpectedUS = 600000;
+		std::atomic<int> Value{ 0 };
+
+		{
+			FWwiseExecutionQueue ExecutionQueue;
+
+			FDateTime StartTime = FDateTime::UtcNow();
+			for (int i = 0; i < LoopCount; ++i)
+			{
+				ExecutionQueue.Async([&Value]
+				{
+					++Value;
+				});
+			}
+			FTimespan Duration = FDateTime::UtcNow() - StartTime;
+			WWISE_TEST_LOG("AsyncAddingOpPerf %dus < %dus", (int)Duration.GetTotalMicroseconds(), ExpectedUS);
+			CHECK(Duration.GetTotalMicroseconds() < ExpectedUS);
+		}
+		CHECK(Value.load() == LoopCount);
+	}
+
+	SECTION("AsyncExecutionPerf")
+	{
+		const bool bReduceLogVerbosity = FWwiseExecutionQueue::Test::bReduceLogVerbosity;
+		FWwiseExecutionQueue::Test::bReduceLogVerbosity = true;
+		ON_SCOPE_EXIT { FWwiseExecutionQueue::Test::bReduceLogVerbosity = bReduceLogVerbosity; };
+		
+		constexpr const int LoopCount = 1000000;
+		constexpr const int ExpectedUS = 400000;
+		std::atomic<int> Value{ 0 };
+
+		FDateTime StartTime;
+		{
+			FWwiseExecutionQueue ExecutionQueue;
+
+			ExecutionQueue.AsyncWait([&ExecutionQueue, LoopCount, &Value]
+			{
+				for (int i = 0; i < LoopCount; ++i)
+				{
+					ExecutionQueue.Async([&Value]
+					{
+						++Value;
+					});
+				}
+			});
+			StartTime = FDateTime::UtcNow();
+		}
+		FTimespan Duration = FDateTime::UtcNow() - StartTime;
+		WWISE_TEST_LOG("AsyncExecutionPerf %dus < %dus", (int)Duration.GetTotalMicroseconds(), ExpectedUS);
+		CHECK(Value.load() == LoopCount);
+		CHECK(Duration.GetTotalMicroseconds() < ExpectedUS);
+	}
+}
+
+WWISE_TEST_CASE(Concurrency_ExecutionQueue, "Wwise::Concurrency::ExecutionQueue", "[ApplicationContextMask][ProductFilter]")
+{
 
 	SECTION("Close")
 	{
 		std::atomic<int> Value{ 0 };
 		std::atomic<int> OpenedQueues{ 0 };
-		constexpr const int RepeatLoop = 4;
+		constexpr const int RepeatLoop = 2;
 		constexpr const int MainLoopCount = 2;
 		constexpr const int SubLoopCount = 2;
 		constexpr const int FinalLoopCount = 2;
@@ -164,7 +231,6 @@ TEST_CASE("Audio::Wwise::Concurrency::ExecutionQueue_Smoke", "[ApplicationContex
 		CHECK(Value.load() == LoopCount);
 		CHECK(OpenedQueues.load() == 0);
 	}
-
 
 	SECTION("Sleep on State Update")
 	{
@@ -277,70 +343,7 @@ TEST_CASE("Audio::Wwise::Concurrency::ExecutionQueue_Smoke", "[ApplicationContex
 	}
 }
 
-TEST_CASE("Audio::Wwise::Concurrency::ExecutionQueue_Perf", "[ApplicationContextMask][PerfFilter]")
-{
-	SECTION("AsyncAddingOpPerf")
-	{
-		const bool bReduceLogVerbosity = FWwiseExecutionQueue::Test::bReduceLogVerbosity;
-		FWwiseExecutionQueue::Test::bReduceLogVerbosity = true;
-		ON_SCOPE_EXIT { FWwiseExecutionQueue::Test::bReduceLogVerbosity = bReduceLogVerbosity; };
-
-		constexpr const int LoopCount = 1000000;
-		constexpr const int ExpectedUS = 600000;
-		std::atomic<int> Value{ 0 };
-
-		{
-			FWwiseExecutionQueue ExecutionQueue;
-
-			FDateTime StartTime = FDateTime::UtcNow();
-			for (int i = 0; i < LoopCount; ++i)
-			{
-				ExecutionQueue.Async([&Value]
-				{
-					++Value;
-				});
-			}
-			FTimespan Duration = FDateTime::UtcNow() - StartTime;
-			WWISETEST_LOG("AsyncAddingOpPerf %dus < %dus", (int)Duration.GetTotalMicroseconds(), ExpectedUS);
-			CHECK(Duration.GetTotalMicroseconds() < ExpectedUS);
-		}
-		CHECK(Value.load() == LoopCount);
-	}
-
-	SECTION("AsyncExecutionPerf")
-	{
-		const bool bReduceLogVerbosity = FWwiseExecutionQueue::Test::bReduceLogVerbosity;
-		FWwiseExecutionQueue::Test::bReduceLogVerbosity = true;
-		ON_SCOPE_EXIT { FWwiseExecutionQueue::Test::bReduceLogVerbosity = bReduceLogVerbosity; };
-		
-		constexpr const int LoopCount = 1000000;
-		constexpr const int ExpectedUS = 400000;
-		std::atomic<int> Value{ 0 };
-
-		FDateTime StartTime;
-		{
-			FWwiseExecutionQueue ExecutionQueue;
-
-			ExecutionQueue.AsyncWait([&ExecutionQueue, LoopCount, &Value]
-			{
-				for (int i = 0; i < LoopCount; ++i)
-				{
-					ExecutionQueue.Async([&Value]
-					{
-						++Value;
-					});
-				}
-			});
-			StartTime = FDateTime::UtcNow();
-		}
-		FTimespan Duration = FDateTime::UtcNow() - StartTime;
-		WWISETEST_LOG("AsyncExecutionPerf %dus < %dus", (int)Duration.GetTotalMicroseconds(), ExpectedUS);
-		CHECK(Value.load() == LoopCount);
-		CHECK(Duration.GetTotalMicroseconds() < ExpectedUS);
-	}
-}
-
-TEST_CASE("Audio::Wwise::Concurrency::ExecutionQueue_Stress", "[ApplicationContextMask][StressFilter]")
+WWISE_TEST_CASE(Concurrency_ExecutionQueue_Stress, "Wwise::Concurrency::ExecutionQueue_Stress", "[ApplicationContextMask][StressFilter]")
 {
 	SECTION("AsyncStress")
 	{
@@ -389,7 +392,7 @@ TEST_CASE("Audio::Wwise::Concurrency::ExecutionQueue_Stress", "[ApplicationConte
 			SubExecutionQueue.Close();
 		}
 		FTimespan Duration = FDateTime::UtcNow() - StartTime;
-		WWISETEST_LOG("AsyncAddingOpPerf %dus < %dus", (int)Duration.GetTotalMicroseconds(), ExpectedUS);
+		WWISE_TEST_LOG("AsyncAddingOpPerf %dus < %dus", (int)Duration.GetTotalMicroseconds(), ExpectedUS);
 		CHECK(Duration.GetTotalMicroseconds() < ExpectedUS);
 	}
 
@@ -446,7 +449,7 @@ TEST_CASE("Audio::Wwise::Concurrency::ExecutionQueue_Stress", "[ApplicationConte
 			SubExecutionQueue.Close();
 		}
 		FTimespan Duration = FDateTime::UtcNow() - StartTime;
-		WWISETEST_LOG("AsyncAddingOpPerf %dus < %dus", (int)Duration.GetTotalMicroseconds(), ExpectedUS);
+		WWISE_TEST_LOG("AsyncAddingOpPerf %dus < %dus", (int)Duration.GetTotalMicroseconds(), ExpectedUS);
 		CHECK(Duration.GetTotalMicroseconds() < ExpectedUS);
 	}
 
@@ -518,7 +521,7 @@ TEST_CASE("Audio::Wwise::Concurrency::ExecutionQueue_Stress", "[ApplicationConte
 		}
 
 		FTimespan Duration = FDateTime::UtcNow() - StartTime;
-		WWISETEST_LOG("AsyncAddingOpPerf %dus < %dus", (int)Duration.GetTotalMicroseconds(), ExpectedUS);
+		WWISE_TEST_LOG("AsyncAddingOpPerf %dus < %dus", (int)Duration.GetTotalMicroseconds(), ExpectedUS);
 		CHECK(Duration.GetTotalMicroseconds() < ExpectedUS);
 	}
 }

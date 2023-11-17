@@ -17,6 +17,8 @@ Copyright (c) 2023 Audiokinetic Inc.
 
 #pragma once
 
+#include "Wwise/WwiseProjectDatabaseModule.h"
+
 DECLARE_MULTICAST_DELEGATE(FOnDatabaseUpdateCompletedDelegate);
 
 #define DEFINE_WWISE_DATABASE_DELEGATE(DelegateType) \
@@ -25,14 +27,18 @@ DECLARE_MULTICAST_DELEGATE(FOnDatabaseUpdateCompletedDelegate);
 
 class WWISEPROJECTDATABASE_API FWwiseProjectDatabaseDelegates
 {
-
 	DEFINE_WWISE_DATABASE_DELEGATE(OnDatabaseUpdateCompletedDelegate);
 
 public:
-	static FWwiseProjectDatabaseDelegates& Get()
+	static FWwiseProjectDatabaseDelegates* Get()
 	{
-		// return the singleton object
-		static FWwiseProjectDatabaseDelegates Singleton;
-		return Singleton;
+		IWwiseProjectDatabaseModule* ProjectDatabaseModule = IWwiseProjectDatabaseModule::GetModule();
+
+		if (UNLIKELY(!ProjectDatabaseModule))
+		{
+			return nullptr;
+		}
+
+		return ProjectDatabaseModule->GetProjectDatabaseDelegates();
 	}
 };

@@ -110,7 +110,7 @@ public:
 	void OnPropertyChanged(UObject* ObjectBeingModified, FPropertyChangedEvent& PropertyChangedEvent);
 
 	void SchedulePolysUpdate();
-	void UpdatePolys(bool bPreserveTextures = false);
+	void UpdatePolys();
 	void UpdateText(bool Visible);
 	/** Align all of the text components (1 for each face) along one of the edges on the face */
 	void UpdateTextPositions() const;
@@ -169,7 +169,7 @@ private:
 	/* Recalculate the normals for the face at FaceIndex, taking world scaling into account. */
 	void UpdateFaceNormals(int FaceIndex);
 	/** Identify the edges in the brush geometry and store in EdgeMap */
-	void UpdateEdgeMap(bool bUpdateTextures);
+	void UpdateEdgeMap();
 	/* Compare AcousticPolys to PreviousPolys, carrying over the acoustic properties from PreviousPolys for those faces whose edges and normals have not changed. */
 	void EdgeMapChanged();
 	void AlignTextWithEdge(int FaceIndex) const;

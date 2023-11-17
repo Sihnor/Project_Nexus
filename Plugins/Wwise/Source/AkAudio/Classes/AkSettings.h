@@ -150,6 +150,7 @@ public:
 	UPROPERTY()
 	FDirectoryPath WwiseSoundDataFolder;
 
+	// The location of the folder that contains the Wwise project metadata. This should be the same as the Root Output Path in the Wwise Project Settings.
 	UPROPERTY(Config, EditAnywhere, Category="Installation", meta=( AbsolutePath))
 	FDirectoryPath RootOutputPath;
 

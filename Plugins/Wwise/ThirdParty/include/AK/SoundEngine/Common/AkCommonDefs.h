@@ -324,7 +324,7 @@ struct AkAudioObject
 	struct CustomMetadata
 	{
 		AkPluginID pluginID;		///< Full plugin ID, including company ID and plugin type. See AKMAKECLASSID macro.
-		AK::IAkPluginParam* pParam;	///< Custom, pluggable medata.
+		AK::IAkPluginParam* pParam;	///< Custom, pluggable medata.  Note: any custom metadata is expected to exist for only the current sound engine render tick, and persistent references to it should not be stored.
 		AkUniqueID contextID;		///< (Profiling) ID of the sound or bus from which the custom metadata was fetched.
 	};
 
@@ -345,7 +345,7 @@ struct AkAudioObject
 		}
 	};
 
-	ArrayCustomMetadata arCustomMetadata;	///< Array of custom metadata, gathered from visited objects.
+	ArrayCustomMetadata arCustomMetadata;	///< Array of custom metadata, gathered from visited objects. Note: any custom metadata is expected to exist for only the current sound engine render tick, and persistent references to it should not be stored.
 
 	AkPipelineID instigatorID;		///< Profiling ID of the node from which the object stems (typically the voice, instance of an actor-mixer).
 

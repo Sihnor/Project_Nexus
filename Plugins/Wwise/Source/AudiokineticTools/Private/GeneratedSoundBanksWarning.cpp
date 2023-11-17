@@ -37,8 +37,6 @@ Copyright (c) 2023 Audiokinetic Inc.
 
 #define LOCTEXT_NAMESPACE "AkAudio"
 
-TSharedPtr<SNotificationItem> FGeneratedSoundBanksWarning::GeneratedSoundBanksWarning;
-
 FGeneratedSoundBanksWarning::FGeneratedSoundBanksWarning()
 {
 }
@@ -84,7 +82,7 @@ void FGeneratedSoundBanksWarning::HideGeneratedSoundBanksNotification()
 {
 	AsyncTask(ENamedThreads::Type::GameThread, [this]
 	{
-		if (GeneratedSoundBanksWarning)
+		if (GeneratedSoundBanksWarning.IsValid())
 		{
 			GeneratedSoundBanksWarning->Fadeout();
 		}

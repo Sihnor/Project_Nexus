@@ -633,7 +633,7 @@ void FAudiokineticToolsModule::StartupModule()
 
 	if (FAkAudioModule::AkAudioModuleInstance && FAkAudioModule::AkAudioModuleInstance->bModuleInitialized)
 	{
-		OnAkAudioInit();	
+		OnAkAudioInit();
 	}
 	else
 	{
@@ -643,31 +643,57 @@ void FAudiokineticToolsModule::StartupModule()
 
 	//Project Database initial parse occurs before AudiokineticTools' Initialization. Call it here manually.
 	SetStaticPluginsInformation();
-	FWwiseProjectDatabaseDelegates::Get().GetOnDatabaseUpdateCompletedDelegate().AddLambda(
-		[this]()
-		{
-			SetStaticPluginsInformation();
-		}
-	);
-	
+	auto* ProjectDatabaseDelegates = FWwiseProjectDatabaseDelegates::Get();
+
+	if (UNLIKELY(!ProjectDatabaseDelegates))
+	{
+		UE_LOG(LogAudiokineticTools, Warning, TEXT("FAudiokineticToolsModule::StartupModule: ProjectDatabase Delegates not initialized, could not subscribe to OnDatabaseUpdateCompleted"))
+	}
+
+	else
+	{
+		ProjectDatabaseDelegates->GetOnDatabaseUpdateCompletedDelegate().AddLambda(
+			[this]()
+			{
+				SetStaticPluginsInformation();
+			}
+		);
+	}
+
+
 	FEditorDelegates::BeginPIE.AddRaw(this, &FAudiokineticToolsModule::BeginPIE);
 }
 
 void FAudiokineticToolsModule::OnAkAudioInit()
 {
 	FAkAudioStyle::Initialize();
+	
+	auto* ProjectDatabaseDelegates = FWwiseProjectDatabaseDelegates::Get();
+
+	if (UNLIKELY(!ProjectDatabaseDelegates))
+	{
+		UE_LOG(LogAudiokineticTools, Warning,
+		       TEXT("FAudiokineticToolsModule::OnAkAudioInit: ProjectDatabase Delegates not initialized, could not subscribe to OnDatabaseUpdateCompleted"))
+	}
 
 	if (UAkSettings* Settings = GetMutableDefault<UAkSettings>())
 	{
 		Settings->OnGeneratedSoundBanksPathChanged.AddRaw(this, &FAudiokineticToolsModule::OnSoundBanksFolderChanged);
-		OnDatabaseUpdateTextureHandle = FWwiseProjectDatabaseDelegates::Get().GetOnDatabaseUpdateCompletedDelegate().AddRaw(this, &FAudiokineticToolsModule::RefreshAndUpdateTextureParams);
+		if (LIKELY(ProjectDatabaseDelegates))
+		{
+			OnDatabaseUpdateTextureHandle = ProjectDatabaseDelegates->GetOnDatabaseUpdateCompletedDelegate().AddRaw(this, &FAudiokineticToolsModule::RefreshAndUpdateTextureParams);
+		}
 	}
 	if (UAkSettingsPerUser* UserSettings = GetMutableDefault<UAkSettingsPerUser>())
 	{
 		UserSettings->OnGeneratedSoundBanksPathChanged.AddRaw(this, &FAudiokineticToolsModule::OnSoundBanksFolderChanged);
 	}
-	OnDatabaseUpdateCompleteHandle = FWwiseProjectDatabaseDelegates::Get().GetOnDatabaseUpdateCompletedDelegate().AddRaw(this, &FAudiokineticToolsModule::AssetReloadPrompt);
-	
+
+	if (LIKELY(ProjectDatabaseDelegates))
+	{
+		OnDatabaseUpdateCompleteHandle = ProjectDatabaseDelegates->GetOnDatabaseUpdateCompletedDelegate().AddRaw(this, &FAudiokineticToolsModule::AssetReloadPrompt);
+	}
+
 #if AK_SUPPORT_WAAPI
 	if (!IsRunningCommandlet())
 	{
@@ -693,6 +719,12 @@ void FAudiokineticToolsModule::BeginPIE(const bool bIsSimulating)
 	if(Settings && !Settings->GeneratedSoundBanksPathExists() && FAkAudioModule::AkAudioModuleInstance)
 	{
 		DisplayGeneratedSoundBanksWarning();
+	}
+
+	UAkSettingsPerUser* UserSettings = GetMutableDefault<UAkSettingsPerUser>();
+	if(UserSettings && !UserSettings->RootOutputPathOverride.Path.IsEmpty())
+	{
+		UE_LOG(LogAkAudio, Warning, TEXT("Using Root Output Path Override: %s"), *AkUnrealHelper::GetSoundBankDirectory());
 	}
 }
 
@@ -822,7 +854,17 @@ void FAudiokineticToolsModule::ShutdownModule()
 
 	if (OnDatabaseUpdateTextureHandle.IsValid())
 	{
-		FWwiseProjectDatabaseDelegates::Get().GetOnDatabaseUpdateCompletedDelegate().Remove(OnDatabaseUpdateTextureHandle);
+		auto* ProjectDatabaseDelegates = FWwiseProjectDatabaseDelegates::Get();
+
+		if (UNLIKELY(!ProjectDatabaseDelegates))
+		{
+			UE_LOG(LogWwiseProjectDatabase, Warning, TEXT("FAudiokineticToolsModule::ShutdownModule: ProjectDatabase Delegates not initialized, could not unsubscribe from OnDatabaseUpdated."))
+		}
+
+		else
+		{
+			ProjectDatabaseDelegates->GetOnDatabaseUpdateCompletedDelegate().Remove(OnDatabaseUpdateTextureHandle);
+		}
 		OnDatabaseUpdateTextureHandle.Reset();
 	}
 

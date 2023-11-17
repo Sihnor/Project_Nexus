@@ -55,6 +55,7 @@ public:
 	void Serialize(FArchive& Ar) override;
 	void PostLoad() override;
 	void BeginDestroy() override;
+	void FinishDestroy() override;
 
 	UFUNCTION(BlueprintCallable, Category = "Audiokinetic|AkAudioType")
 	virtual void LoadData()   {}

@@ -2003,23 +2003,28 @@ AKRESULT FWwiseSoundEngineAPI_2022_1::FQuery::GetListeners(
 }
 
 AKRESULT FWwiseSoundEngineAPI_2022_1::FQuery::GetListenerPosition(
-	AkGameObjectID in_uIndex,
+	AkGameObjectID in_uListenerID,
 	AkListenerPosition& out_rPosition
 )
 {
 	SCOPE_CYCLE_COUNTER(STAT_WwiseSoundEngineAPI_2022_1);
-	return AK::SoundEngine::Query::GetListenerPosition(in_uIndex, out_rPosition);
+	return AK::SoundEngine::Query::GetListenerPosition(in_uListenerID, out_rPosition);
 }
 
 AKRESULT FWwiseSoundEngineAPI_2022_1::FQuery::GetListenerSpatialization(
-	AkUInt32 in_uIndex,
+	AkGameObjectID in_uListenerID,				///< Listener game object ID. 
 	bool& out_rbSpatialized,
 	AK::SpeakerVolumes::VectorPtr& out_pVolumeOffsets,
 	AkChannelConfig& out_channelConfig
 )
 {
 	SCOPE_CYCLE_COUNTER(STAT_WwiseSoundEngineAPI_2022_1);
-	return AK::SoundEngine::Query::GetListenerSpatialization(in_uIndex, out_rbSpatialized, out_pVolumeOffsets, out_channelConfig);
+#if AK_WWISESDK_VERSION_MAJOR == 2022 && AK_WWISESDK_VERSION_MINOR == 1 && AK_WWISESDK_VERSION_SUBMINOR <= 7
+	const auto uIndex = static_cast<uint32_t>(in_uListenerID);
+	return AK::SoundEngine::Query::GetListenerSpatialization(uIndex, out_rbSpatialized, out_pVolumeOffsets, out_channelConfig);
+#else
+	return AK::SoundEngine::Query::GetListenerSpatialization(in_uListenerID, out_rbSpatialized, out_pVolumeOffsets, out_channelConfig);
+#endif
 }
 
 AKRESULT FWwiseSoundEngineAPI_2022_1::FQuery::GetRTPCValue(

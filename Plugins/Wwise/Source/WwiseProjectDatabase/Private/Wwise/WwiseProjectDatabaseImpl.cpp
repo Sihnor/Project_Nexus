@@ -127,7 +127,17 @@ void FWwiseProjectDatabaseImpl::UpdateDataStructure(const FDirectoryPath* InUpda
 	}
 	if (Get() == this)		// Only broadcast database updates on main project.
 	{
-		FWwiseProjectDatabaseDelegates::Get().GetOnDatabaseUpdateCompletedDelegate().Broadcast();
+		auto* ProjectDatabaseDelegates = FWwiseProjectDatabaseDelegates::Get();
+
+		if (UNLIKELY(!ProjectDatabaseDelegates))
+		{
+			UE_LOG(LogWwiseProjectDatabase, Warning, TEXT("FWwiseProjectDatabaseImpl::UpdateDataStructure: ProjectDatabase Delegates not initialized, cannot broadcast updates."))
+		}
+
+		else
+		{
+			ProjectDatabaseDelegates->GetOnDatabaseUpdateCompletedDelegate().Broadcast();
+		}
 	}
 }
 

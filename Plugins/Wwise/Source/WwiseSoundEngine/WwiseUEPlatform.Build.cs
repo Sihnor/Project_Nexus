@@ -112,6 +112,8 @@ public abstract class WwiseUEPlatform
 			}
 
 		}
+
+		ret.Sort();
 		return ret;
 	}
 

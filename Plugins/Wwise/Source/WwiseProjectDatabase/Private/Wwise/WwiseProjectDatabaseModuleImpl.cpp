@@ -16,6 +16,8 @@ Copyright (c) 2023 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "Wwise/WwiseProjectDatabaseModuleImpl.h"
+
+#include "Wwise/WwiseProjectDatabaseDelegates.h"
 #include "Wwise/WwiseProjectDatabaseImpl.h"
 #include "Wwise/Stats/ProjectDatabase.h"
 #include "AkUnrealHelper.h"
@@ -84,6 +86,22 @@ bool FWwiseProjectDatabaseModule::CanHaveDefaultInstance()
 	return true;
 }
 
+FWwiseProjectDatabaseDelegates* FWwiseProjectDatabaseModule::GetProjectDatabaseDelegates()
+{
+	if (!ProjectDatabaseDelegates)
+	{
+		ProjectDatabaseDelegates = InstantiateProjectDatabaseDelegates();
+	}
+
+	return ProjectDatabaseDelegates;
+}
+
+FWwiseProjectDatabaseDelegates* FWwiseProjectDatabaseModule::InstantiateProjectDatabaseDelegates()
+{
+	SCOPED_WWISEPROJECTDATABASE_EVENT(TEXT("InstantiateProjectDatabaseDelegates"));
+	return new FWwiseProjectDatabaseDelegates;
+}
+
 void FWwiseProjectDatabaseModule::ShutdownModule()
 {
 	SCOPED_WWISEPROJECTDATABASE_EVENT(TEXT("ShutdownModule"));
@@ -94,5 +112,11 @@ void FWwiseProjectDatabaseModule::ShutdownModule()
 		ProjectDatabase.Reset();
 	}
 	Lock.WriteUnlock();
+	
+	if (ProjectDatabaseDelegates)
+	{
+		delete ProjectDatabaseDelegates;
+	}
+	
 	IWwiseProjectDatabaseModule::ShutdownModule();
 }

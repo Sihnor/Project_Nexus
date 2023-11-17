@@ -35,6 +35,8 @@ public:
 
 	~AkXMLErrorMessageTranslator();
 
+	void Init();
+
 	virtual void Term() override;
 
 	/**

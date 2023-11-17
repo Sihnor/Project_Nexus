@@ -83,7 +83,7 @@ void FWwiseAudioLinkInputClient::Start(UWwiseAudioLinkComponent* InAkComponent)
 
 	const auto StartEvent = Settings->GetStartEvent();		// Might not be loaded at this point, only the pointer should be valid.
 	
-	IsLoadedHandle = Settings->CallOnEventLoaded([this, StartEvent, InAkComponent]() mutable
+	IsLoadedHandle = Settings->CallOnEventLoaded([this, SelfSP = AsShared(), StartEvent, InAkComponent]() mutable
 	{
         if (UNLIKELY(ObjectId == UINT64_MAX))
         {
@@ -102,8 +102,6 @@ void FWwiseAudioLinkInputClient::Start(UWwiseAudioLinkComponent* InAkComponent)
 			UE_LOG(LogWwiseAudioLink, Log, TEXT("FWwiseAudioLinkInputClient::Start (OnEventLoaded): Reusing an already playing %" PRIu32 " Component %" PRIu64 " (%s). Stopping previous instance."), PlayId.load(), InAkComponent->GetAkGameObjectID(), *InAkComponent->GetName());
 			Stop();
 		}
-
-		const auto SelfSP = AsShared();
 
 		PlayId = FAkAudioInputManager::PostAudioInputEvent(
 			StartEvent.Get(),
@@ -145,7 +143,7 @@ void FWwiseAudioLinkInputClient::Start()
 
 	const auto StartEvent = Settings->GetStartEvent();		// Might not be loaded at this point, only the pointer should be valid.
 	
-	IsLoadedHandle = Settings->CallOnEventLoaded([this, StartEvent]() mutable
+	IsLoadedHandle = Settings->CallOnEventLoaded([this, SelfSP = AsShared(), StartEvent]() mutable
 	{
 		if (UNLIKELY(ObjectId == UINT64_MAX))
 		{
@@ -164,8 +162,6 @@ void FWwiseAudioLinkInputClient::Start()
 			UE_LOG(LogWwiseAudioLink, Log, TEXT("FWwiseAudioLinkInputClient::Start (OnEventLoaded): Reusing an already playing %" PRIu32 " ObjectID %" PRIu64 " (%s). Stopping previous instance."), PlayId.load(), this, *ProducerName.ToString());
 			Stop();
 		}
-
-		const auto SelfSP = AsShared();
 
 		PlayId = FAkAudioInputManager::PostAudioInputEvent(
 			StartEvent.Get(),

@@ -179,7 +179,7 @@ export const ak = {
                 getInclusions: "ak.wwise.core.soundbank.getInclusions",
                 /** Modifies a SoundBank's inclusion list. The 'operation' argument determines how the 'inclusions' argument modifies the SoundBank's inclusion list; 'inclusions' may be added to / removed from / replace the SoundBank's inclusion list. */
                 setInclusions: "ak.wwise.core.soundbank.setInclusions",
-                /** Generate a list of SoundBank with import definition defined in the WAAPI request. If you choose to not write the SoundBanks to disk, subscribe to \ref ak_wwise_core_soundbank_generated to get SoundBank structure info and the bank data as base64. */
+                /** Generate a list of SoundBanks with the import definition specified in the WAAPI request. If you do not write the SoundBanks to disk, subscribe to \ref ak_wwise_core_soundbank_generated to receive SoundBank structure info and the bank data as base64. Note: This is a synchronous operation. */
                 generate: "ak.wwise.core.soundbank.generate",
                 /** Imports SoundBank definitions from the specified file. Multiple files can be specified. See the WAAPI log for status messages. */
                 processDefinitionFiles: "ak.wwise.core.soundbank.processDefinitionFiles",
@@ -187,7 +187,7 @@ export const ak = {
                 convertExternalSources: "ak.wwise.core.soundbank.convertExternalSources",
                 /** Sent when a single SoundBank is generated. This could be sent multiple times during SoundBank generation, for every SoundBank generated and for every platform. To generate SoundBanks, refer to \ref ak_wwise_core_soundbank_generate or \ref ak_wwise_ui_commands_execute with one of the SoundBank generation commands. Refer to \ref globalcommandsids for the list of commands. */
                 generated: "ak.wwise.core.soundbank.generated",
-                /** Sent when all SoundBanks are generated. */
+                /** Sent when all SoundBanks are generated. Note: This notification is only sent when SoundBanks have been generated, it is not a reliable way to determine when \ref ak_wwise_core_soundbank_generate has completed. */
                 generationDone: "ak.wwise.core.soundbank.generationDone"
             },
             sound: {
@@ -195,7 +195,7 @@ export const ak = {
                 setActiveSource: "ak.wwise.core.sound.setActiveSource"
             },
             log: {
-                /** Retrieves the latest log for a specific channel. Refer to \ref ak_wwise_core_log_itemadded to be notified when a item is added to the log. */
+                /** Retrieves the latest log for a specific channel. Refer to \ref ak_wwise_core_log_itemadded to be notified when an item is added to the log. The log is empty when used in WwiseConsole. */
                 get: "ak.wwise.core.log.get",
                 /** Sent when an item is added to the log. This could be used to retrieve items added to the SoundBank generation log. To retrieve the complete log, refer to \ref ak_wwise_core_log_get. */
                 itemAdded: "ak.wwise.core.log.itemAdded"

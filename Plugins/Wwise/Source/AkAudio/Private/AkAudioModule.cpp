@@ -89,7 +89,11 @@ namespace AkUnrealHelper
 		FString SoundBankDirectory;
 		if (UserSettings && !UserSettings->RootOutputPathOverride.Path.IsEmpty())
 		{
-			SoundBankDirectory = FPaths::Combine(GetContentDirectory(), UserSettings->RootOutputPathOverride.Path);
+			SoundBankDirectory = UserSettings->RootOutputPathOverride.Path;
+			if(FPaths::IsRelative(UserSettings->RootOutputPathOverride.Path))
+			{
+				SoundBankDirectory = FPaths::Combine(GetContentDirectory(), UserSettings->RootOutputPathOverride.Path);
+			}
 		}
 		else if (const UAkSettings* AkSettings = GetDefault<UAkSettings>())
 		{
@@ -97,7 +101,11 @@ namespace AkUnrealHelper
 			{
 				return {};
 			}
-			SoundBankDirectory = FPaths::Combine(GetContentDirectory(), AkSettings->RootOutputPath.Path);
+			SoundBankDirectory = AkSettings->RootOutputPath.Path;
+			if(FPaths::IsRelative(AkSettings->RootOutputPath.Path))
+			{
+				SoundBankDirectory = FPaths::Combine(GetContentDirectory(), AkSettings->RootOutputPath.Path);	
+			}
 		}
 		else
 		{

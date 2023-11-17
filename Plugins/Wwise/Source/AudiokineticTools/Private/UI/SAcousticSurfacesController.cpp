@@ -282,11 +282,6 @@ FAkSurfacePoly& SAcousticSurfacesController::GetAcousticSurfaceChecked(UAkSurfac
 
 void SAcousticSurfacesController::RefreshEditor(bool reinitVisualizers /*= false*/) const
 {
-	if (!LayoutBuilder.IsValid())
-	{
-		return;
-	}
-
 	FEditorSupportDelegates::RedrawAllViewports.Broadcast();
 
 	for (auto elem : ReflectorSetsFacesToEdit)
@@ -304,6 +299,16 @@ void SAcousticSurfacesController::RefreshEditor(bool reinitVisualizers /*= false
 				ReflectorSetComponent->SurfacePropertiesChanged();
 			}
 		}
+	}
+
+	RefreshLayout();
+}
+
+void SAcousticSurfacesController::RefreshLayout() const
+{
+	if (!LayoutBuilder.IsValid())
+	{
+		return;
 	}
 
 	IDetailLayoutBuilder* Layout = nullptr;
@@ -351,10 +356,18 @@ void SAcousticSurfacesController::OnPropertyChanged(UObject* ObjectBeingModified
 		UAkSurfaceReflectorSetComponent* ReflectorSetComponent = elem.Key;
 		if (ObjectBeingModified == ReflectorSetComponent)
 		{
-			const FName memberPropertyName = (PropertyChangedEvent.MemberProperty != nullptr) ? PropertyChangedEvent.MemberProperty->GetFName() : NAME_None;
-			if (memberPropertyName == GET_MEMBER_NAME_CHECKED(UAkSurfaceReflectorSetComponent, AcousticPolys))
+			if (PropertyChangedEvent.MemberProperty == nullptr)
 			{
-				UpdateCurrentValues();
+				// OnPropertyChanged is called with a null MemberProperty when undoing
+				RefreshLayout();
+			}
+			else
+			{
+				const FName memberPropertyName = PropertyChangedEvent.MemberProperty->GetFName();
+				if (memberPropertyName == GET_MEMBER_NAME_CHECKED(UAkSurfaceReflectorSetComponent, AcousticPolys))
+				{
+					UpdateCurrentValues();
+				}
 			}
 			return;
 		}

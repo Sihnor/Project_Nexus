@@ -150,7 +150,7 @@ void FWwiseInMemorySoundBankFileState::UnloadFromSoundEngine(FUnloadFromSoundEng
 	if (UNLIKELY(!SoundEngine))
 	{
 		UE_LOG(LogWwiseFileHandler, Log, TEXT("FWwiseInMemorySoundBankFileState::UnloadFromSoundEngine %" PRIu32 " (%s): Failed unloading without a SoundEngine."), SoundBankId, *DebugName.ToString());
-		return CloseFileDone(MoveTemp(InCallback));
+		return UnloadFromSoundEngineToClosedFile(MoveTemp(InCallback));
 	}
 
 	BankUnloadCookie* Cookie = new BankUnloadCookie(this);
@@ -158,7 +158,7 @@ void FWwiseInMemorySoundBankFileState::UnloadFromSoundEngine(FUnloadFromSoundEng
 	if(!Cookie)
 	{
 		UE_LOG(LogWwiseFileHandler, Log, TEXT("FWwiseInMemorySoundBankFileState::UnloadFromSoundEngine %" PRIu32 " (%s): Could not allocate cookie for unload operation."), SoundBankId, *DebugName.ToString());
-		return CloseFileDone(MoveTemp(InCallback));
+		return UnloadFromSoundEngineToClosedFile(MoveTemp(InCallback));
 	}
 
 	Cookie->Callback = MoveTemp(InCallback);
@@ -168,7 +168,7 @@ void FWwiseInMemorySoundBankFileState::UnloadFromSoundEngine(FUnloadFromSoundEng
 		UE_LOG(LogWwiseFileHandler, Log, TEXT("FWwiseInMemorySoundBankFileState::UnloadFromSoundEngine %" PRIu32 " (%s): Call to SoundEngine failed with result %s"), SoundBankId, *DebugName.ToString(), AkUnrealHelper::GetResultString(Result));
 		auto Callback = MoveTemp(Cookie->Callback);
 		delete Cookie;
-		CloseFileDone(MoveTemp(Callback));
+		UnloadFromSoundEngineToClosedFile(MoveTemp(Callback));
 		return;
 	}
 }

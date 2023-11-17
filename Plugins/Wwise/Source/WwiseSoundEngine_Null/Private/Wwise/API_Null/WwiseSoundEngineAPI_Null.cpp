@@ -1967,7 +1967,7 @@ AKRESULT FWwiseSoundEngineAPI_Null::FQuery::GetListeners(
 }
 
 AKRESULT FWwiseSoundEngineAPI_Null::FQuery::GetListenerPosition(
-	AkGameObjectID in_uIndex,
+	AkGameObjectID in_uListenerID,
 	AkListenerPosition& out_rPosition
 )
 {
@@ -1976,7 +1976,7 @@ AKRESULT FWwiseSoundEngineAPI_Null::FQuery::GetListenerPosition(
 }
 
 AKRESULT FWwiseSoundEngineAPI_Null::FQuery::GetListenerSpatialization(
-	AkUInt32 in_uIndex,
+	AkGameObjectID in_uListenerID,
 	bool& out_rbSpatialized,
 	AK::SpeakerVolumes::VectorPtr& out_pVolumeOffsets,
 	AkChannelConfig& out_channelConfig

@@ -4106,7 +4106,7 @@ public:
 		/// \sa 
 		/// - \ref soundengine_listeners_settingpos
 		AKRESULT GetListenerPosition(
-			AkGameObjectID in_uIndex, 						///< Listener index (0: first listener, 7: 8th listener)
+			AkGameObjectID in_uListenerID,				///< Listener game object ID.
 			AkListenerPosition& out_rPosition			///< Position set
 			) override;
 
@@ -4116,7 +4116,7 @@ public:
 		/// - AK::SoundEngine::SetListenerSpatialization().
 		/// - \ref soundengine_listeners_spatial
 		AKRESULT GetListenerSpatialization(
-			AkUInt32 in_uIndex,							///< Listener index (0: first listener, 7: 8th listener)
+			AkGameObjectID in_uListenerID,				///< Listener game object ID.
 			bool& out_rbSpatialized,					///< Spatialization enabled
 			AK::SpeakerVolumes::VectorPtr& out_pVolumeOffsets,	///< Per-speaker vector of volume offsets, in decibels. Use the functions of AK::SpeakerVolumes::Vector to interpret it.
 			AkChannelConfig& out_channelConfig			///< Channel configuration associated with out_rpVolumeOffsets. 

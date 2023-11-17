@@ -77,9 +77,22 @@ void FAkMixerPlatform::OnAkAudioModuleInit()
 	StartAudioStream();
 }
 
+void FAkMixerPlatform::WriteSilence(uint32 NumChannels, uint32 NumSamples, float** OutBufferToFill)
+{
+	for (uint32 Channel = 0; Channel < NumChannels; Channel++)
+	{
+		for (uint32 Sample = 0; Sample < NumSamples; Sample++)
+		{
+			OutBufferToFill[Channel][Sample] = 0;
+		}
+	}
+
+}
+
 bool FAkMixerPlatform::OnNextBuffer(uint32 NumChannels, uint32 NumSamples, float** OutBufferToFill)
 {
 	static auto bFailureShown = false;
+	const auto RequestedOutBufferByteLength = NumChannels * NumSamples * sizeof(float);
 	if (UNLIKELY(!bIsDeviceInitialized))
 	{
 		UE_CLOG(!bFailureShown, LogAkAudioMixer, Verbose, TEXT("FAkMixerPlatform::OnNextBuffer failed: Not initialized; State: %s. Skipping buffer. (Showing warning once)"),
@@ -91,6 +104,7 @@ bool FAkMixerPlatform::OnNextBuffer(uint32 NumChannels, uint32 NumSamples, float
 
 		bFailureShown = true;
 		OutputBuffer = nullptr;
+		WriteSilence(NumChannels, NumSamples, OutBufferToFill);
 		ReadNextBuffer();
 		return true;
 	}
@@ -106,6 +120,7 @@ bool FAkMixerPlatform::OnNextBuffer(uint32 NumChannels, uint32 NumSamples, float
 
 		bFailureShown = true;
 		OutputBuffer = nullptr;
+		WriteSilence(NumChannels, NumSamples, OutBufferToFill);
 		ReadNextBuffer();
 		return true;
 	}
@@ -113,6 +128,7 @@ bool FAkMixerPlatform::OnNextBuffer(uint32 NumChannels, uint32 NumSamples, float
 	if (UNLIKELY(NumChannels != AudioStreamInfo.DeviceInfo.NumChannels))
 	{
 		UE_LOG(LogAkAudioMixer, Error, TEXT("FAkMixerPlatform::OnNextBuffer: Invalid number of channels: %d requested when %d were used on initialization. Failing permanently."), (int)NumChannels, (int)AudioStreamInfo.DeviceInfo.NumChannels);
+		WriteSilence(NumChannels, NumSamples, OutBufferToFill);
 		return false;
 	}
 	bFailureShown = false;
@@ -120,6 +136,7 @@ bool FAkMixerPlatform::OnNextBuffer(uint32 NumChannels, uint32 NumSamples, float
 	if (UNLIKELY(NumChannels != AudioStreamInfo.DeviceInfo.NumChannels))
 	{
 		UE_LOG(LogAkAudioMixer, Error, TEXT("FAkMixerPlatform::OnNextBuffer: Invalid number of channels: %d requested when %d were used on initialization. Failing permanently."), (int)NumChannels, (int)AudioStreamInfo.DeviceInfo.NumChannels);
+		WriteSilence(NumChannels, NumSamples, OutBufferToFill);
 		return false;
 	}
 	if (UNLIKELY(NumSamples != AudioStreamInfo.NumOutputFrames))
@@ -127,12 +144,13 @@ bool FAkMixerPlatform::OnNextBuffer(uint32 NumChannels, uint32 NumSamples, float
 		UE_LOG(LogAkAudioMixer, Error, TEXT("FAkMixerPlatform::OnNextBuffer: Invalid number of frames per buffer: %d requested when %d were used on initialization. Failing permanently."), (int)NumSamples, (int)AudioStreamInfo.NumOutputFrames);
 		UE_LOG(LogWwiseHints, Log, TEXT("Ensure that Wwise \"Samples per frame\" initialization setting matches the Unreal Audio \"Callback Buffer Size\" setting for the current platform."));
 		UE_LOG(LogWwiseHints, Log, TEXT("This can also happen when the requested buffer size changes after initialization, for example when Wwise initialization's bRoundFrameSizeToHWSize parameter is activated."));
+		WriteSilence(NumChannels, NumSamples, OutBufferToFill);
 		return false;
 	}
-	const auto RequestedOutBufferByteLength = NumChannels * NumSamples * sizeof(float);
 	if (UNLIKELY(OutputBufferByteLength != RequestedOutBufferByteLength))
 	{
 		UE_LOG(LogAkAudioMixer, Error, TEXT("FAkMixerPlatform::OnNextBuffer: Invalid output buffer byte length: %d requested when %d was calculated on initialization. Failing permanently."), (int)RequestedOutBufferByteLength, (int)OutputBufferByteLength);
+		WriteSilence(NumChannels, NumSamples, OutBufferToFill);
 		return false;
 	}
 

@@ -65,7 +65,20 @@ void GeneratedSoundBanksDirectoryWatcher::CheckIfCachePathChanged()
 
 void GeneratedSoundBanksDirectoryWatcher::Initialize()
 {
-	ProjectParsedHandle = FWwiseProjectDatabaseDelegates::Get().GetOnDatabaseUpdateCompletedDelegate().AddRaw(this, &GeneratedSoundBanksDirectoryWatcher::CheckIfCachePathChanged);
+	auto* ProjectDatabaseDelegates = FWwiseProjectDatabaseDelegates::Get();
+
+	if (UNLIKELY(!ProjectDatabaseDelegates))
+	{
+		UE_LOG(LogAudiokineticTools, Warning,
+		       TEXT("GeneratedSoundBanksDirectoryWatcher::Initialize: ProjectDatabase Delegates not initialized, could not subscribe to OnDatabaseUpdateCompleted"))
+	}
+
+	else
+	{
+		ProjectParsedHandle = ProjectDatabaseDelegates->GetOnDatabaseUpdateCompletedDelegate().AddRaw(
+			this, &GeneratedSoundBanksDirectoryWatcher::CheckIfCachePathChanged);
+	}
+
 	if (UAkSettings* AkSettings = GetMutableDefault<UAkSettings>())
 	{
 		// When GeneratedSoundbanks folder changes we need to reset the watcher
@@ -383,11 +396,17 @@ void GeneratedSoundBanksDirectoryWatcher::Uninitialize(const bool bIsModuleShutd
 {
 	StopWatchers();
 
-	if (ProjectParsedHandle.IsValid())
-	{
-		FWwiseProjectDatabaseDelegates::Get().GetOnDatabaseUpdateCompletedDelegate().Remove(ProjectParsedHandle);
-		ProjectParsedHandle.Reset();
-	}
+		auto* ProjectDatabaseDelegates = FWwiseProjectDatabaseDelegates::Get();
+
+		if (UNLIKELY(!ProjectDatabaseDelegates))
+		{
+			UE_LOG(LogAudiokineticTools, Warning, TEXT("GeneratedSoundBanksDirectoryWatcher::Uninitialize: ProjectDatabase Delegates not initialized, could not unsubscribe to OnDatabaseUpdateCompleted"))
+		}
+
+		else
+		{
+			ProjectDatabaseDelegates->GetOnDatabaseUpdateCompletedDelegate().Remove(ProjectParsedHandle);
+		}
 
 	//Can't access settings while module is being shutdown
 	if (!bIsModuleShutdown)

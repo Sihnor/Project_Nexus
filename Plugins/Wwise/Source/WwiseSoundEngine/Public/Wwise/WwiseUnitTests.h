@@ -43,9 +43,17 @@ Copyright (c) 2023 Audiokinetic Inc.
 
 // Add logging facilities when running in Automation
 #if defined(WITH_AUTOMATION_TESTS) && WITH_AUTOMATION_TESTS
-#define WWISETEST_LOG(Format, ...) FAutomationTestFramework::Get().GetCurrentTest()->AddInfo(FString::Printf(TEXT(Format), __VA_ARGS__));
+#define WWISE_TEST_LOG(Format, ...) FAutomationTestFramework::Get().GetCurrentTest()->AddInfo(FString::Printf(TEXT(Format), __VA_ARGS__));
 #else
-#define WWISETEST_LOG(Format, ...) (void)0
+#define WWISE_TEST_LOG(Format, ...) (void)0
+#endif
+
+#if WITH_LOW_LEVEL_TESTS
+#define WWISE_TEST_CASE(ClassName, PrettyName, Flags) TEST_CASE(PrettyName, Flags)
+#elif UE_5_3_OR_LATER
+#define WWISE_TEST_CASE(ClassName, PrettyName, Flags) TEST_CASE_NAMED(FWwiseTest ## ClassName, PrettyName, Flags)
+#else
+#define WWISE_TEST_CASE(ClassName, PrettyName, Flags) TEST_CASE_NAMED(FWwiseTest ## ClassName, LLT_STR_EXPAND(FWwiseTest ## ClassName), PrettyName, Flags)
 #endif
 
 #endif // WWISE_UNIT_TESTS

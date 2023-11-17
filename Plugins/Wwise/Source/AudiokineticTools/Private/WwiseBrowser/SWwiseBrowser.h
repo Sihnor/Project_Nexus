@@ -198,6 +198,7 @@ private:
 
 	FText GetConnectionStatusText() const;
 	FText GetSoundBanksLocationText() const;
+	FSlateColor GetSoundBanksLocationTextColor() const;
 
 	/** Used by the search filter */
 	void PopulateSearchStrings( const FString& FolderName, OUT TArray< FString >& OutSearchStrings ) const;

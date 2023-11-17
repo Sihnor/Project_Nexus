@@ -117,6 +117,10 @@ void UAkLateReverbComponent::InitializeParent()
 		if (Parent)
 		{
 			ReverbDescriptor.SetReverbComponent(this);
+
+			RecalculateDecay();
+			RecalculatePredelay();
+
 			UBodySetup* bodySetup = Parent->GetBodySetup();
 			if (bodySetup == nullptr || !AkComponentHelpers::HasSimpleCollisionGeometry(bodySetup))
 			{
@@ -217,9 +221,6 @@ void UAkLateReverbComponent::ParentChanged()
 			AssociateAkTextureSetComponent(geometryComponent);
 		}
 	}
-
-	DecayEstimationNeedsUpdate = true;
-	PredelayEstimationNeedsUpdate = true;
 }
 
 void UAkLateReverbComponent::EndPlay(const EEndPlayReason::Type EndPlayReason)

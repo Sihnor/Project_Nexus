@@ -662,6 +662,7 @@ void SWwiseBrowser::Construct(const FArguments& InArgs)
 					[
 						SNew(STextBlock)
 						.Text(this, &SWwiseBrowser::GetSoundBanksLocationText)
+						.ColorAndOpacity(this, &SWwiseBrowser::GetSoundBanksLocationTextColor)
 					]
 				]
 			]
@@ -1023,7 +1024,23 @@ FText SWwiseBrowser::GetConnectionStatusText() const
 
 FText SWwiseBrowser::GetSoundBanksLocationText() const
 {
-	return FText::Format(LOCTEXT("RootOutputPath", "Root Output Path: {0}"), FText::FromString(AkUnrealHelper::GetSoundBankDirectory()));
+	FString RootOutputPath = TEXT("Root Output Path");
+	UAkSettingsPerUser* UserSettings = GetMutableDefault<UAkSettingsPerUser>();
+	if(UserSettings && !UserSettings->RootOutputPathOverride.Path.IsEmpty())
+	{
+		RootOutputPath = TEXT("Root Output Path Override");
+	}
+	return FText::Format(LOCTEXT("RootOutputPath", "{0}: {1}"), FText::FromString(RootOutputPath), FText::FromString(AkUnrealHelper::GetSoundBankDirectory()));
+}
+
+FSlateColor SWwiseBrowser::GetSoundBanksLocationTextColor() const
+{
+	UAkSettingsPerUser* UserSettings = GetMutableDefault<UAkSettingsPerUser>();
+	if(UserSettings && !UserSettings->RootOutputPathOverride.Path.IsEmpty())
+	{
+		return FLinearColor(1.f, 0.33f, 0);
+	}
+	return FLinearColor::Gray;
 }
 
 FReply SWwiseBrowser::OnOpenSettingsClicked()
@@ -1314,7 +1331,7 @@ void SWwiseBrowser::RestoreTreeExpansion(const TArray< FWwiseTreeItemPtr >& Item
 	}
 }
 
-void SWwiseBrowser::TreeSelectionChanged( FWwiseTreeItemPtr TreeItem, ESelectInfo::Type /*SelectInfo*/ )
+void SWwiseBrowser::TreeSelectionChanged( FWwiseTreeItemPtr TreeItem, ESelectInfo::Type SelectInfo )
 {
 	if (AllowTreeViewDelegates)
 	{
@@ -1331,7 +1348,8 @@ void SWwiseBrowser::TreeSelectionChanged( FWwiseTreeItemPtr TreeItem, ESelectInf
 		}
 
 		const UAkSettingsPerUser* AkSettingsPerUser = GetDefault<UAkSettingsPerUser>();
-		if (AkSettingsPerUser && AkSettingsPerUser->AutoSyncSelection && DataSource->GetWaapiConnectionStatus() == Connected)
+		if (AkSettingsPerUser && AkSettingsPerUser->AutoSyncSelection &&
+			DataSource->GetWaapiConnectionStatus() == Connected && SelectInfo != ESelectInfo::Direct)
 		{
 			DataSource->HandleFindWwiseItemInProjectExplorerCommandExecute(SelectedItems);
 		}

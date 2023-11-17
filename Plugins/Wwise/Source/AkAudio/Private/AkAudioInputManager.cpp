@@ -119,9 +119,12 @@ namespace FAkAudioInputHelpers
 		if (SamplesCallback.IsBound())
 		{
 			UpdateDataPointers(BufferToFill);
-			if (SamplesCallback.Execute((int)NumChannels, (int)NumFrames, AudioData.GetData()))
+			if(auto AudioDataPtr = AudioData.GetData())
 			{
-				BufferToFill->eState = AK_DataReady;
+				if (SamplesCallback.Execute((int)NumChannels, (int)NumFrames, AudioDataPtr))
+				{
+					BufferToFill->eState = AK_DataReady;
+				}
 			}
 		}
 		else

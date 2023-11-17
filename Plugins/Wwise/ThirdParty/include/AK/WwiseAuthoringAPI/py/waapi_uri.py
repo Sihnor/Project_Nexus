@@ -188,7 +188,7 @@ class WAAPI_URI:
     ak_wwise_core_soundbank_getinclusions = u"ak.wwise.core.soundbank.getInclusions"
     # Modifies a SoundBank's inclusion list. The 'operation' argument determines how the 'inclusions' argument modifies the SoundBank's inclusion list; 'inclusions' may be added to / removed from / replace the SoundBank's inclusion list.
     ak_wwise_core_soundbank_setinclusions = u"ak.wwise.core.soundbank.setInclusions"
-    # Generate a list of SoundBank with import definition defined in the WAAPI request. If you choose to not write the SoundBanks to disk, subscribe to \ref ak_wwise_core_soundbank_generated to get SoundBank structure info and the bank data as base64.
+    # Generate a list of SoundBanks with the import definition specified in the WAAPI request. If you do not write the SoundBanks to disk, subscribe to \ref ak_wwise_core_soundbank_generated to receive SoundBank structure info and the bank data as base64. Note: This is a synchronous operation.
     ak_wwise_core_soundbank_generate = u"ak.wwise.core.soundbank.generate"
     # Imports SoundBank definitions from the specified file. Multiple files can be specified. See the WAAPI log for status messages.
     ak_wwise_core_soundbank_processdefinitionfiles = u"ak.wwise.core.soundbank.processDefinitionFiles"
@@ -220,7 +220,7 @@ class WAAPI_URI:
     ak_wwise_cli_movemediaidstoworkunits = u"ak.wwise.cli.moveMediaIdsToWorkUnits"
     # Loads the project and updates the contents of <project-name>.mediaid, if it exists.
     ak_wwise_cli_updatemediaidsinsinglefile = u"ak.wwise.cli.updateMediaIdsInSingleFile"
-    # Retrieves the latest log for a specific channel. Refer to \ref ak_wwise_core_log_itemadded to be notified when a item is added to the log.
+    # Retrieves the latest log for a specific channel. Refer to \ref ak_wwise_core_log_itemadded to be notified when an item is added to the log. The log is empty when used in WwiseConsole.
     ak_wwise_core_log_get = u"ak.wwise.core.log.get"
     # Creates a transport object for the given Wwise object. The return transport object can be used to play, stop, pause and resume the Wwise object via the other transport functions.
     ak_wwise_core_transport_create = u"ak.wwise.core.transport.create"
@@ -294,7 +294,7 @@ class WAAPI_URI:
     ak_wwise_core_object_propertychanged = u"ak.wwise.core.object.propertyChanged"
     # Sent when a single SoundBank is generated. This could be sent multiple times during SoundBank generation, for every SoundBank generated and for every platform. To generate SoundBanks, refer to \ref ak_wwise_core_soundbank_generate or \ref ak_wwise_ui_commands_execute with one of the SoundBank generation commands. Refer to \ref globalcommandsids for the list of commands.
     ak_wwise_core_soundbank_generated = u"ak.wwise.core.soundbank.generated"
-    # Sent when all SoundBanks are generated.
+    # Sent when all SoundBanks are generated. Note: This notification is only sent when SoundBanks have been generated, it is not a reliable way to determine when \ref ak_wwise_core_soundbank_generate has completed.
     ak_wwise_core_soundbank_generationdone = u"ak.wwise.core.soundbank.generationDone"
     # Sent when an item is added to the log. This could be used to retrieve items added to the SoundBank generation log. To retrieve the complete log, refer to \ref ak_wwise_core_log_get.
     ak_wwise_core_log_itemadded = u"ak.wwise.core.log.itemAdded"

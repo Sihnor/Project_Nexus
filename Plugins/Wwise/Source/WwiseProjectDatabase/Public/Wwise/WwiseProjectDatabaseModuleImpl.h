@@ -26,10 +26,13 @@ public:
 	FWwiseProjectDatabase* GetProjectDatabase() override;
 	FWwiseProjectDatabase* InstantiateProjectDatabase() override;
 	bool CanHaveDefaultInstance() override;
+	FWwiseProjectDatabaseDelegates* GetProjectDatabaseDelegates() override;
+	FWwiseProjectDatabaseDelegates* InstantiateProjectDatabaseDelegates() override;
 
 	void ShutdownModule() override;
 
 protected:
 	FRWLock Lock;
 	TUniquePtr<FWwiseProjectDatabase> ProjectDatabase;
+	FWwiseProjectDatabaseDelegates* ProjectDatabaseDelegates;
 };

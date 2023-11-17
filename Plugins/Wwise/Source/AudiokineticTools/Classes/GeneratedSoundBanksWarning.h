@@ -28,7 +28,7 @@ Copyright (c) 2023 Audiokinetic Inc.
 ------------------------------------------------------------------------------------*/
 class FGeneratedSoundBanksWarning
 {
-	static TSharedPtr<SNotificationItem> GeneratedSoundBanksWarning;
+	TSharedPtr<SNotificationItem> GeneratedSoundBanksWarning;
 public:
 	FGeneratedSoundBanksWarning();
 	void DisplayGeneratedSoundBanksWarning();

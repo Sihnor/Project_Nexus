@@ -233,7 +233,7 @@ void AAkSpatialAudioVolume::PostRebuildBrush()
 
 	if (SurfaceReflectorSet != nullptr)
 	{
-		SurfaceReflectorSet->UpdatePolys(true);
+		SurfaceReflectorSet->UpdatePolys();
 		SurfaceReflectorSet->UpdateSurfaceReflectorSet();
 	}
 

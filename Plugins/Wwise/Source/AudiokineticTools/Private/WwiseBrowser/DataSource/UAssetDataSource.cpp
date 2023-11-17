@@ -185,11 +185,6 @@ void FUAssetDataSource::GetAssetsInfo(FGuid ItemId, uint32 ShortId, FString Name
 	FGuid FoundKey = FGuid();
 	for(auto& Item : OrphanedItems)
 	{
-		if(Item.Value.Type != ItemType)
-		{
-			continue;
-		}
-
 		if(GuidExistsInProjectDatabase(Item.Key, ItemType))
 		{
 			continue;

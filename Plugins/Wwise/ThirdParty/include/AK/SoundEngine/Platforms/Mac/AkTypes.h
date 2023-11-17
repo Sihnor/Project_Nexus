@@ -37,8 +37,13 @@ the specific language governing permissions and limitations under the License.
 
 #define AK_APPLE								///< Compiling for an Apple platform
 
-#if TARGET_OS_IPHONE || TARGET_OS_TV
-	#define AK_IOS								///< Compiling for iOS or tvOS (iPhone, iPad, iPod, Apple TV...)
+#if TARGET_OS_IPHONE || TARGET_OS_TV || (defined(TARGET_OS_VISION) && TARGET_OS_VISION)
+	#define AK_IOS								///< Compiling for iOS family (iPhone, iPad, iPod, Apple TV, Apple Vision...)
+	#if TARGET_OS_TV
+		#define AK_TVOS
+	#elif (defined(TARGET_OS_VISION) && TARGET_OS_VISION)
+		#define AK_VISIONOS
+	#endif
 #elif !TARGET_OS_EMBEDDED
 	#define AK_MAC_OS_X							///< Compiling for Mac OS X
 #endif

@@ -43,19 +43,19 @@ the specific language governing permissions and limitations under the License.
 #define AK_WWISESDK_VERSION_MINOR				1
 
 /// Wwise SDK sub-minor version
-#define AK_WWISESDK_VERSION_SUBMINOR			7
+#define AK_WWISESDK_VERSION_SUBMINOR			8
 
 /// Wwise SDK build number
-#define AK_WWISESDK_VERSION_BUILD				8290
+#define AK_WWISESDK_VERSION_BUILD				8316
 
 /// Wwise SDK build date (year)
 #define AK_WWISESDK_BUILD_YEAR					2023
 
 /// Wwise SDK build date (month)
-#define AK_WWISESDK_BUILD_MONTH					8
+#define AK_WWISESDK_BUILD_MONTH					9
 
 /// Wwise SDK build date (day)
-#define AK_WWISESDK_BUILD_DAY					23
+#define AK_WWISESDK_BUILD_DAY					27
 
 //@}
 

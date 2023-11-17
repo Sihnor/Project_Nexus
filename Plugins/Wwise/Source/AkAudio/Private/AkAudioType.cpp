@@ -73,12 +73,25 @@ void UAkAudioType::BeginDestroy()
 	{
 		return Super::BeginDestroy();
 	}
-	
-	SCOPED_AKAUDIO_EVENT_F_2(TEXT("UAkAudioType::BeginDestroy %s"), *GetClass()->GetName());
-	UE_LOG(LogAkAudio, Verbose, TEXT("UAkAudioType::BeginDestroy %s %s"), *GetClass()->GetName(), *GetName());
 
-	UnloadData(true);
+	{
+		SCOPED_AKAUDIO_EVENT_F_2(TEXT("UAkAudioType::BeginDestroy %s"), *GetClass()->GetName());
+		UE_LOG(LogAkAudio, Verbose, TEXT("UAkAudioType::BeginDestroy[%p] %s %s"), this, *GetClass()->GetName(), *GetName());
+
+		UnloadData(true);
+	}
 	Super::BeginDestroy();
+}
+
+void UAkAudioType::FinishDestroy()
+{
+	{
+		SCOPED_AKAUDIO_EVENT_2(TEXT("UAkAudioType::FinishDestroy"));
+		UE_LOG(LogAkAudio, VeryVerbose, TEXT("UAkAudioType::FinishDestroy[%p]"), this);
+
+		ResourceUnload.Wait();
+	}
+	Super::FinishDestroy();
 }
 
 void UAkAudioType::LogSerializationState(const FArchive& Ar)

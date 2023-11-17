@@ -1716,7 +1716,10 @@ namespace AK
 		/// Sets multiple positions to a single game object.
 		/// Setting multiple positions on a single game object is a way to simulate multiple emission sources while using the resources of only one voice.
 		/// This can be used to simulate wall openings, area sounds, or multiple objects emitting the same sound in the same area.
-		/// \aknote Calling <tt>AK::SoundEngine::SetMultiplePositions()</tt> with only one position is the same as calling <tt>AK::SoundEngine::SetPosition()</tt> \endaknote
+		/// \aknote
+		/// - Calling <tt>AK::SoundEngine::SetMultiplePositions()</tt> with only one position is the same as calling <tt>AK::SoundEngine::SetPosition()</tt> 
+		/// - If a sound has diffraction enabled, it is treated as <tt>MultiPositionType_MultiDirections</tt>. <tt>MultiPositionType_MultiSources</tt> is not supported in this case.
+		/// \endaknote
 		/// \return 
 		/// - \c AK_Success when successful
 		/// - \c AK_CommandTooLarge if the number of positions is too large for the command queue. Reduce the number of positions.

@@ -536,7 +536,7 @@ void UAkSurfaceReflectorSetComponent::SchedulePolysUpdate()
 	}
 }
 
-void UAkSurfaceReflectorSetComponent::UpdatePolys(bool bPreserveTextures /*= false*/)
+void UAkSurfaceReflectorSetComponent::UpdatePolys()
 {
 	if (!ParentBrush || HasAnyFlags(RF_Transient) || UserInteractionInProgress)
 	{
@@ -576,7 +576,7 @@ void UAkSurfaceReflectorSetComponent::UpdatePolys(bool bPreserveTextures /*= fal
 		}
 	}
 
-	UpdateEdgeMap(!bPreserveTextures);
+	UpdateEdgeMap();
 	UpdateText(GetOwner() && GetOwner()->IsSelected());
 	RegisterAllTextureParamCallbacks();
 	DampingEstimationNeedsUpdate = true;
@@ -667,7 +667,7 @@ void UAkSurfaceReflectorSetComponent::UpdateFaceNormals(int FaceIndex)
 	}
 }
 
-void UAkSurfaceReflectorSetComponent::UpdateEdgeMap(bool bUpdateTextures)
+void UAkSurfaceReflectorSetComponent::UpdateEdgeMap()
 {
 	EdgeMap.Empty();
 	const AAkSpatialAudioVolume* SpatialAudioVolume = Cast<const AAkSpatialAudioVolume>(GetOwner());
@@ -734,8 +734,8 @@ void UAkSurfaceReflectorSetComponent::UpdateEdgeMap(bool bUpdateTextures)
 			// taking scaling into account.
 			UpdateFaceNormals(NodeIdx);
 		}
-		if (bUpdateTextures)
-			EdgeMapChanged();
+
+		EdgeMapChanged();
 	}
 	CacheLocalSpaceSurfaceGeometry();
 }
@@ -751,9 +751,6 @@ void UAkSurfaceReflectorSetComponent::EdgeMapChanged()
 		if (Face.Edges.Num() == 0)
 			continue;
 
-		Face.Texture = nullptr;
-		Face.Occlusion = 0.0f;
-		Face.EnableSurface = true;
 		FVector ComponentNormal = Face.Normal;
 		ComponentNormal.Normalize();
 		const float Thresh = AkSurfaceReflectorUtils::EQUALITY_THRESHOLD;
@@ -974,8 +971,7 @@ void UAkSurfaceReflectorSetComponent::TickComponent(float DeltaTime, enum ELevel
 	const bool bNumBrushNodesChanged = (ParentBrush && ParentBrush->Nodes.Num() != AcousticPolys.Num());
 	if (PolysNeedUpdate || bNumBrushNodesChanged)
 	{
-		const bool bPreserveTextures = !bNumBrushNodesChanged;
-		UpdatePolys(bPreserveTextures);
+		UpdatePolys();
 	}
 
 	if (GetOwner()->IsSelected() && !WasSelected)
@@ -1012,7 +1008,7 @@ void UAkSurfaceReflectorSetComponent::OnUpdateTransform(EUpdateTransformFlags Up
 	Super::OnUpdateTransform(UpdateTransformFlags, Teleport);
 	UpdateSurfaceReflectorSet();
 #if WITH_EDITOR
-	UpdateEdgeMap(false);
+	UpdateEdgeMap();
 	UpdateText(GetOwner() && GetOwner()->IsSelected());
 #endif
 }

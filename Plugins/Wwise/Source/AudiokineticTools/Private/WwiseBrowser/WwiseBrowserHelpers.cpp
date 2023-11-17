@@ -30,7 +30,7 @@ Copyright (c) 2023 Audiokinetic Inc.
 #include "AkInitBank.h"
 #include "AkUnrealHelper.h"
 #include "AkAssetFactories.h"
-#include "AudiokineticTools/Private/AssetManagement/AkAssetDatabase.h"
+#include "AssetManagement/AkAssetDatabase.h"
 #include "IAudiokineticTools.h"
 
 #include "AssetRegistry/AssetRegistryModule.h"

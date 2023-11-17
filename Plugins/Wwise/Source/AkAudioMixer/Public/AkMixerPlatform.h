@@ -70,6 +70,7 @@ private:
 	FDelegateHandle AkAudioModuleInitHandle;
 
 	void OnAkAudioModuleInit();
+	void WriteSilence(uint32 NumChannels, uint32 NumSamples, float** OutBufferToFill);
 	bool OnNextBuffer(uint32 NumChannels, uint32 NumSamples, float** OutBufferToFill);
 	int32 GetAudioStreamChannelSize() { return sizeof(float); }
 

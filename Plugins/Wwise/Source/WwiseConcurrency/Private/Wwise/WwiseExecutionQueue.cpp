@@ -98,7 +98,6 @@ FWwiseExecutionQueue::~FWwiseExecutionQueue()
 
 void FWwiseExecutionQueue::Async(FBasicFunction&& InFunction)
 {
-	TrySetRunningWorkerToAddOp();
 	UE_CLOG(Test::IsExtremelyVerbose(), LogWwiseConcurrency, VeryVerbose, TEXT("FWwiseExecutionQueue::Async (%p) [%" PRIi32 "]: Enqueuing async function %p"), this, FPlatformTLS::GetCurrentThreadId(), (intptr_t&)InFunction);
 	if (UNLIKELY(IsBeingClosed() || !OpQueue.Enqueue(MoveTemp(InFunction))))
 	{
@@ -134,7 +133,6 @@ void FWwiseExecutionQueue::AsyncAlways(FBasicFunction&& InFunction)
 void FWwiseExecutionQueue::AsyncWait(FBasicFunction&& InFunction)
 {
 	SCOPED_WWISECONCURRENCY_EVENT_4(TEXT("FWwiseExecutionQueue::AsyncWait"));
-	TrySetRunningWorkerToAddOp();
 	UE_CLOG(Test::IsExtremelyVerbose(), LogWwiseConcurrency, VeryVerbose, TEXT("FWwiseExecutionQueue::AsyncWait (%p) [%" PRIi32 "]: Enqueuing async wait function %p"), this, FPlatformTLS::GetCurrentThreadId(), (intptr_t&)InFunction);
 	FEventRef Event(EEventMode::ManualReset);
 	if (UNLIKELY(IsBeingClosed() || !OpQueue.Enqueue([this, &Event, &InFunction] {
@@ -155,22 +153,24 @@ void FWwiseExecutionQueue::AsyncWait(FBasicFunction&& InFunction)
 void FWwiseExecutionQueue::Close()
 {
 	UE_CLOG(Test::IsExtremelyVerbose(), LogWwiseConcurrency, VeryVerbose, TEXT("FWwiseExecutionQueue::Close (%p) [%" PRIi32 "]: Closing"), this, FPlatformTLS::GetCurrentThreadId());
-	auto State = WorkerState.Load(EMemoryOrder::Relaxed);
-	if (State != EWorkerState::Closing && State != EWorkerState::Closed)
+	if (IsBeingClosed())
 	{
-		AsyncWait([this]
-		{
-			TrySetRunningWorkerToClosing();
-		});
-		State = WorkerState.Load(EMemoryOrder::Relaxed);
+		return;
 	}
+
+	AsyncWait([this]
+	{
+		TrySetRunningWorkerToClosing();
+	});
+
+	auto State = WorkerState.Load(EMemoryOrder::Relaxed);
 	if (State != EWorkerState::Closed)
 	{
 		SCOPED_WWISECONCURRENCY_EVENT_4(TEXT("FWwiseExecutionQueue::Close Waiting"));
 		UE_CLOG(Test::IsExtremelyVerbose(), LogWwiseConcurrency, VeryVerbose, TEXT("FWwiseExecutionQueue::Close (%p) [%" PRIi32 "]: Waiting for Closed"), this, FPlatformTLS::GetCurrentThreadId());
 		while (State != EWorkerState::Closed)
 		{
-			FPlatformProcess::Sleep(0.01);
+			FPlatformProcess::Yield();
 			State = WorkerState.Load(EMemoryOrder::Relaxed);
 		}
 	}
@@ -181,11 +181,25 @@ void FWwiseExecutionQueue::CloseAndDelete()
 {
 	UE_CLOG(Test::IsExtremelyVerbose(), LogWwiseConcurrency, VeryVerbose, TEXT("FWwiseExecutionQueue::Close (%p) [%" PRIi32 "]: Closing and Request Deleting"), this, FPlatformTLS::GetCurrentThreadId());
 	bDeleteOnceClosed = true;
-	auto State = WorkerState.Load(EMemoryOrder::Relaxed);
-	Async([this]
+	FEvent* CloseAndDeleteFunctionReturned = FPlatformProcess::GetSynchEventFromPool();		// We must wait for the Async to be done before the Worker thread can "delete this".
+	
+	Async([CloseAndDeleteFunctionReturned, this]
 	{
+		if (CloseAndDeleteFunctionReturned)
+		{
+			CloseAndDeleteFunctionReturned->Wait();
+			FPlatformProcess::ReturnSynchEventToPool(CloseAndDeleteFunctionReturned);
+		}
+		else
+		{
+			FPlatformProcess::Yield();
+		}
 		TrySetRunningWorkerToClosing();
 	});
+	if (CloseAndDeleteFunctionReturned)
+	{
+		CloseAndDeleteFunctionReturned->Trigger();
+	}
 }
 
 bool FWwiseExecutionQueue::IsBeingClosed() const
@@ -212,7 +226,7 @@ FQueuedThreadPool* FWwiseExecutionQueue::GetDefaultThreadPool()
 
 void FWwiseExecutionQueue::StartWorkerIfNeeded()
 {
-	if (TrySetStoppedWorkerToRunning())
+	if (!TrySetRunningWorkerToAddOp() && TrySetStoppedWorkerToRunning())
 	{
 		if (UNLIKELY(!IWwiseConcurrencyModule::GetModule() || Test::bMockEngineDeletion || Test::bMockEngineDeleted))
 		{
@@ -258,63 +272,20 @@ void FWwiseExecutionQueue::Work()
 	{
 		ProcessWork();
 	}
-	while (!StopWorkerIfDone());
+	while (KeepWorking());
 }
 
-bool FWwiseExecutionQueue::StopWorkerIfDone()
+bool FWwiseExecutionQueue::KeepWorking()
 {
-	if (!OpQueue.IsEmpty())
-	{
-		TrySetAddOpWorkerToRunning();
-		return false;
-	}
-
 	const auto CurrentThreadId = FPlatformTLS::GetCurrentThreadId();
-
-	if (TrySetAddOpWorkerToRunning())
-	{
-		// We have a new operation in the queue.
-		if (LIKELY(!OpQueue.IsEmpty()))
-		{
-			// Keep on chugging...
-			return false;
-		}
-
-		if (UNLIKELY(!IWwiseConcurrencyModule::GetModule()))
-		{
-			UE_CLOG(Test::IsExtremelyVerbose(), LogWwiseConcurrency, VeryVerbose, TEXT("FWwiseExecutionQueue::StartWorkerIfNeeded (%p) [%" PRIi32 "]: Concurrency is not available. Starting new worker thread on Task Graph to replace this thread"), this, CurrentThreadId);
-			FFunctionGraphTask::CreateAndDispatchWhenReady([this]
-			{
-				Work();
-			});
-		}
-		else if (ThreadPool)
-		{
-			UE_CLOG(Test::IsExtremelyVerbose(), LogWwiseConcurrency, VeryVerbose, TEXT("FWwiseExecutionQueue::StartWorkerIfNeeded (%p) [%" PRIi32 "]: Starting new worker thread on thread pool %p to replace this thread"), this, CurrentThreadId, ThreadPool);
-			ThreadPool->AddQueuedWork(new ExecutionQueuePoolTask([this]
-			{
-				Work();
-			}));
-		}
-		else
-		{
-			UE_CLOG(Test::IsExtremelyVerbose(), LogWwiseConcurrency, VeryVerbose, TEXT("FWwiseExecutionQueue::StartWorkerIfNeeded (%p) [%" PRIi32 "]: Starting new task on named thread %d to replace this thread"), this, CurrentThreadId, (int)NamedThread);
-			FFunctionGraphTask::CreateAndDispatchWhenReady([this]
-			{
-				Work();
-			}, TStatId{}, nullptr, NamedThread);
-		}
-		return true;		// This precise worker thread is done, we tagged teamed it to a new one.
-	}
-
 	const auto bDeleteOnceClosedCopy = this->bDeleteOnceClosed;
 
 	if (LIKELY(TrySetRunningWorkerToStopped()))
 	{
-		UE_CLOG(Test::IsExtremelyVerbose(), LogWwiseConcurrency, VeryVerbose, TEXT("FWwiseExecutionQueue::StopWorkerIfDone (%p) [%" PRIi32 "]: Stopped worker."), this, CurrentThreadId);
+		UE_CLOG(Test::IsExtremelyVerbose(), LogWwiseConcurrency, VeryVerbose, TEXT("FWwiseExecutionQueue::KeepWorking (%p) [%" PRIi32 "]: Stopped worker."), this, CurrentThreadId);
 		// We don't have any more operations queued. Done.
 		// Don't execute operations here, as the Execution Queue might be deleted here.
-		return true;
+		return false;
 	}
 	else if (LIKELY(TrySetClosingWorkerToClosed()))
 	{
@@ -325,34 +296,35 @@ bool FWwiseExecutionQueue::StopWorkerIfDone()
 		{
 			FFunctionGraphTask::CreateAndDispatchWhenReady([this]
 			{
-				SCOPED_WWISECONCURRENCY_EVENT_4(TEXT("FWwiseExecutionQueue::StopWorkerIfDone DeleteOnceClosed"));
-				UE_CLOG(Test::IsExtremelyVerbose(), LogWwiseConcurrency, VeryVerbose, TEXT("FWwiseExecutionQueue::StopWorkerIfDone (%p) [%" PRIi32 "]: Auto deleting on Any Thread"), this, FPlatformTLS::GetCurrentThreadId());
+				SCOPED_WWISECONCURRENCY_EVENT_4(TEXT("FWwiseExecutionQueue::KeepWorking DeleteOnceClosed"));
+				UE_CLOG(Test::IsExtremelyVerbose(), LogWwiseConcurrency, VeryVerbose, TEXT("FWwiseExecutionQueue::KeepWorking (%p) [%" PRIi32 "]: Auto deleting on Any Thread"), this, FPlatformTLS::GetCurrentThreadId());
 				delete this;
 			}, TStatId{}, nullptr, ENamedThreads::GameThread);
 		}
-		return true;
-	}
-	else if (LIKELY(WorkerState.Load() == EWorkerState::Closed))
-	{
-		// We were already closed, and we had some extra operations to do somehow.
-		return true;
-	}
-	else if (LIKELY(WorkerState.Load() == EWorkerState::Stopped))
-	{
-		UE_LOG(LogWwiseConcurrency, Error, TEXT("FWwiseExecutionQueue::StopWorkerIfDone (%p) [%" PRIi32 "]: Worker is stopped, but we haven't stopped it ourselves."), this, CurrentThreadId);
-		return true;
-	}
-	else
-	{
-		// Reiterate because we got changed midway
 		return false;
 	}
+
+	// Error cases
+	else if (UNLIKELY(WorkerState.Load() == EWorkerState::Closed))
+	{
+		UE_LOG(LogWwiseConcurrency, Error, TEXT("FWwiseExecutionQueue::KeepWorking (%p) [%" PRIi32 "]: Worker is closed, but we are still looping."), this, CurrentThreadId);
+		return false;
+	}
+	else if (UNLIKELY(WorkerState.Load() == EWorkerState::Stopped))
+	{
+		UE_LOG(LogWwiseConcurrency, Error, TEXT("FWwiseExecutionQueue::KeepWorking (%p) [%" PRIi32 "]: Worker is stopped, but we haven't stopped it ourselves."), this, CurrentThreadId);
+		return false;
+	}
+
+	// Keep running (AddOp)
+	return true;
 }
 
 void FWwiseExecutionQueue::ProcessWork()
 {
+	TrySetAddOpWorkerToRunning();
 	FBasicFunction Op;
-	if (OpQueue.Dequeue(Op))
+	while (OpQueue.Dequeue(Op))
 	{
 		Op();
 	}

@@ -419,14 +419,24 @@ public:
 		/* When SoundBanks are loaded, we need to update the section's source info, in case Event assets or metdata have changed */
 		if (FAkAudioDevice::Get())
 		{
-			SoundbanksLoadedHandle = FWwiseProjectDatabaseDelegates::Get().GetOnDatabaseUpdateCompletedDelegate().AddLambda([this]()
+			auto* ProjectDatabaseDelegates = FWwiseProjectDatabaseDelegates::Get();
+
+			if (UNLIKELY(!ProjectDatabaseDelegates))
 			{
-				if (Section != nullptr && Section->EventTracker.IsValid())
+				UE_LOG(LogAudiokineticTools, Warning, TEXT("FMovieSceneAkAudioEventSection::FMovieSceneAkAudioEventSection: ProjectDatabase Delegates not initialized, could not subscribe to OnDatabaseUpdated."))
+			}
+
+			else
+			{
+				SoundbanksLoadedHandle = ProjectDatabaseDelegates->GetOnDatabaseUpdateCompletedDelegate().AddLambda([this]()
 				{
-					Section->UpdateAudioSourceInfo();
-					StoredEventName = Section->GetEventName();
-				}
-			});
+					if (Section != nullptr && Section->EventTracker.IsValid())
+					{
+						Section->UpdateAudioSourceInfo();
+						StoredEventName = Section->GetEventName();
+					}
+				});
+			}
 		}
 	}
 
@@ -448,7 +458,17 @@ public:
 		}
 		if (SoundbanksLoadedHandle.IsValid())
 		{
-			FWwiseProjectDatabaseDelegates::Get().GetOnDatabaseUpdateCompletedDelegate().Remove(SoundbanksLoadedHandle);
+			auto* ProjectDatabaseDelegates = FWwiseProjectDatabaseDelegates::Get();
+
+			if (UNLIKELY(!ProjectDatabaseDelegates))
+			{
+				UE_LOG(LogAudiokineticTools, Warning, TEXT("FMovieSceneAkAudioEventSection::~FMovieSceneAkAudioEventSection: ProjectDatabase Delegates not initialized, could not unsubscribe from OnDatabaseUpdated."))
+			}
+
+			else
+			{
+				ProjectDatabaseDelegates->GetOnDatabaseUpdateCompletedDelegate().Remove(SoundbanksLoadedHandle);
+			}
 		}
 
 		// Wait for any get peak tasks to finish.

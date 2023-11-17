@@ -78,6 +78,7 @@ private:
 	FAkSurfacePoly& GetAcousticSurfaceChecked(UAkSurfaceReflectorSetComponent* reflectorSet, int faceIndex);
 	/** Refresh the viewport and details panel in the editor. If reinitVisualizers = true, update the edge map and recreate the text visualizers on the selected USurfaceReflectorSetComponents */
 	void RefreshEditor(bool reinitVisualizers = false) const;
+	void RefreshLayout() const;
 	void BeginModify(FText TransactionText);
 	void EndModify();
 

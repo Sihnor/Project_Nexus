@@ -93,7 +93,8 @@ namespace AkUnrealAssetDataHelper
 
 	bool IsAssetAkAudioType(const FAssetData& AssetData)
 	{
-		return Cast<UAkAudioType>(AssetData.GetAsset()) != nullptr;
+		auto Value = AssetData.TagsAndValues.FindTag(FName("WwiseGuid"));
+		return Value.IsSet();
 	}
 
 	bool IsAssetTransient(const FAssetData& AssetData)

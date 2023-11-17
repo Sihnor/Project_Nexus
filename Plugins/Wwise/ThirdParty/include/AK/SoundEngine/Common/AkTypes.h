@@ -1134,6 +1134,9 @@ namespace AK
 		// If you modify MultiPositionType, don't forget to modify WAAPI validation schema accordingly.
 
 		/// MultiPositionType.
+		/// \aknote
+		/// - If a sound has diffraction enabled, it is treated as <tt>MultiPositionType_MultiDirections</tt>. <tt>MultiPositionType_MultiSources</tt> is not supported in this case.
+		/// \endaknote
 		/// \sa
 		/// - AK::SoundEngine::SetMultiplePosition()
 		/// - \ref soundengine_3dpositions_multiplepos

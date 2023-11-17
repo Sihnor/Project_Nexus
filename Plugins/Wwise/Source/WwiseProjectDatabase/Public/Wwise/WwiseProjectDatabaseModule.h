@@ -25,6 +25,7 @@ Copyright (c) 2023 Audiokinetic Inc.
 #endif
 
 class FWwiseProjectDatabase;
+class FWwiseProjectDatabaseDelegates;
 
 class IWwiseProjectDatabaseModule : public IModuleInterface
 {
@@ -106,6 +107,9 @@ public:
 	virtual FWwiseProjectDatabase* GetProjectDatabase() { return nullptr; }
 	virtual FWwiseProjectDatabase* InstantiateProjectDatabase() { return nullptr; }
 	virtual bool CanHaveDefaultInstance() {return false;}
+	virtual FWwiseProjectDatabaseDelegates* GetProjectDatabaseDelegates() = 0;
+	virtual FWwiseProjectDatabaseDelegates* InstantiateProjectDatabaseDelegates() = 0;
+
 
 private:
 	static FName GetModuleNameFromConfig()

@@ -88,8 +88,10 @@ void FAkBlueprintDelegateEventCallbackPackage::HandleAction(AkCallbackType in_eT
 			}
 
 			UAkComponent* akComponent = (UAkComponent*)cbInfoCopy->gameObjID;
-			if (!IsValid(akComponent))
+
+			if (cbInfoCopy->gameObjID != DUMMY_GAMEOBJ && !IsValid(akComponent))
 			{
+				UE_LOG(LogAkAudio, Log, TEXT("FAkBlueprintDelegateEventCallbackPackage::HandleAction: Could not get valid AkComponent, callback will be ignored."));
 				return;
 			}
 
