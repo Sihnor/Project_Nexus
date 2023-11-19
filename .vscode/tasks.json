@@ -9,13 +9,13 @@
 				"Project_Nexus",
 				"Win64",
 				"Debug",
-				"D:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.2"
+				"cwd": "D:\\EpicGames\\UE_5.2"
 			}
 		},
 		{
@@ -26,7 +26,7 @@
 				"Project_Nexus",
 				"Win64",
 				"Debug",
-				"D:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -35,7 +35,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.2"
+				"cwd": "D:\\EpicGames\\UE_5.2"
 			}
 		},
 		{
@@ -46,13 +46,13 @@
 				"Project_Nexus",
 				"Win64",
 				"Debug",
-				"D:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.2"
+				"cwd": "D:\\EpicGames\\UE_5.2"
 			}
 		},
 		{
@@ -63,13 +63,13 @@
 				"Project_Nexus",
 				"Win64",
 				"DebugGame",
-				"D:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.2"
+				"cwd": "D:\\EpicGames\\UE_5.2"
 			}
 		},
 		{
@@ -80,7 +80,7 @@
 				"Project_Nexus",
 				"Win64",
 				"DebugGame",
-				"D:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -89,7 +89,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.2"
+				"cwd": "D:\\EpicGames\\UE_5.2"
 			}
 		},
 		{
@@ -100,13 +100,13 @@
 				"Project_Nexus",
 				"Win64",
 				"DebugGame",
-				"D:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.2"
+				"cwd": "D:\\EpicGames\\UE_5.2"
 			}
 		},
 		{
@@ -117,13 +117,13 @@
 				"Project_Nexus",
 				"Win64",
 				"Development",
-				"D:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.2"
+				"cwd": "D:\\EpicGames\\UE_5.2"
 			}
 		},
 		{
@@ -134,7 +134,7 @@
 				"Project_Nexus",
 				"Win64",
 				"Development",
-				"D:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -143,7 +143,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.2"
+				"cwd": "D:\\EpicGames\\UE_5.2"
 			}
 		},
 		{
@@ -154,13 +154,13 @@
 				"Project_Nexus",
 				"Win64",
 				"Development",
-				"D:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.2"
+				"cwd": "D:\\EpicGames\\UE_5.2"
 			}
 		},
 		{
@@ -171,13 +171,13 @@
 				"Project_Nexus",
 				"Win64",
 				"Test",
-				"D:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.2"
+				"cwd": "D:\\EpicGames\\UE_5.2"
 			}
 		},
 		{
@@ -188,7 +188,7 @@
 				"Project_Nexus",
 				"Win64",
 				"Test",
-				"D:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -197,7 +197,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.2"
+				"cwd": "D:\\EpicGames\\UE_5.2"
 			}
 		},
 		{
@@ -208,13 +208,13 @@
 				"Project_Nexus",
 				"Win64",
 				"Test",
-				"D:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.2"
+				"cwd": "D:\\EpicGames\\UE_5.2"
 			}
 		},
 		{
@@ -225,13 +225,13 @@
 				"Project_Nexus",
 				"Win64",
 				"Shipping",
-				"D:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.2"
+				"cwd": "D:\\EpicGames\\UE_5.2"
 			}
 		},
 		{
@@ -242,7 +242,7 @@
 				"Project_Nexus",
 				"Win64",
 				"Shipping",
-				"D:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -251,7 +251,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.2"
+				"cwd": "D:\\EpicGames\\UE_5.2"
 			}
 		},
 		{
@@ -262,13 +262,553 @@
 				"Project_Nexus",
 				"Win64",
 				"Shipping",
-				"D:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.2"
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus Linux Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Project_Nexus",
+				"Linux",
+				"Debug",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Project_Nexus",
+				"Linux",
+				"Debug",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Project_Nexus Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus Linux Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Project_Nexus",
+				"Linux",
+				"Debug",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Project_Nexus",
+				"Linux",
+				"DebugGame",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Project_Nexus",
+				"Linux",
+				"DebugGame",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Project_Nexus Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Project_Nexus",
+				"Linux",
+				"DebugGame",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus Linux Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Project_Nexus",
+				"Linux",
+				"Development",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Project_Nexus",
+				"Linux",
+				"Development",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Project_Nexus Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus Linux Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Project_Nexus",
+				"Linux",
+				"Development",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus Linux Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Project_Nexus",
+				"Linux",
+				"Test",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Project_Nexus",
+				"Linux",
+				"Test",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Project_Nexus Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus Linux Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Project_Nexus",
+				"Linux",
+				"Test",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus Linux Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Project_Nexus",
+				"Linux",
+				"Shipping",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Project_Nexus",
+				"Linux",
+				"Shipping",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Project_Nexus Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Project_Nexus",
+				"Linux",
+				"Shipping",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus LinuxArm64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Project_Nexus",
+				"LinuxArm64",
+				"Debug",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus LinuxArm64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Project_Nexus",
+				"LinuxArm64",
+				"Debug",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Project_Nexus LinuxArm64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus LinuxArm64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Project_Nexus",
+				"LinuxArm64",
+				"Debug",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus LinuxArm64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Project_Nexus",
+				"LinuxArm64",
+				"DebugGame",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus LinuxArm64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Project_Nexus",
+				"LinuxArm64",
+				"DebugGame",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Project_Nexus LinuxArm64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus LinuxArm64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Project_Nexus",
+				"LinuxArm64",
+				"DebugGame",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus LinuxArm64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Project_Nexus",
+				"LinuxArm64",
+				"Development",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus LinuxArm64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Project_Nexus",
+				"LinuxArm64",
+				"Development",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Project_Nexus LinuxArm64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus LinuxArm64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Project_Nexus",
+				"LinuxArm64",
+				"Development",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus LinuxArm64 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Project_Nexus",
+				"LinuxArm64",
+				"Test",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus LinuxArm64 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Project_Nexus",
+				"LinuxArm64",
+				"Test",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Project_Nexus LinuxArm64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus LinuxArm64 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Project_Nexus",
+				"LinuxArm64",
+				"Test",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus LinuxArm64 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Project_Nexus",
+				"LinuxArm64",
+				"Shipping",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus LinuxArm64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Project_Nexus",
+				"LinuxArm64",
+				"Shipping",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Project_Nexus LinuxArm64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_Nexus LinuxArm64 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Project_Nexus",
+				"LinuxArm64",
+				"Shipping",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
 			}
 		},
 		{
@@ -279,13 +819,13 @@
 				"Project_NexusEditor",
 				"Win64",
 				"Debug",
-				"D:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.2"
+				"cwd": "D:\\EpicGames\\UE_5.2"
 			}
 		},
 		{
@@ -296,7 +836,7 @@
 				"Project_NexusEditor",
 				"Win64",
 				"Debug",
-				"D:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -305,7 +845,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.2"
+				"cwd": "D:\\EpicGames\\UE_5.2"
 			}
 		},
 		{
@@ -316,13 +856,13 @@
 				"Project_NexusEditor",
 				"Win64",
 				"Debug",
-				"D:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.2"
+				"cwd": "D:\\EpicGames\\UE_5.2"
 			}
 		},
 		{
@@ -333,13 +873,13 @@
 				"Project_NexusEditor",
 				"Win64",
 				"DebugGame",
-				"D:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.2"
+				"cwd": "D:\\EpicGames\\UE_5.2"
 			}
 		},
 		{
@@ -350,7 +890,7 @@
 				"Project_NexusEditor",
 				"Win64",
 				"DebugGame",
-				"D:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -359,7 +899,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.2"
+				"cwd": "D:\\EpicGames\\UE_5.2"
 			}
 		},
 		{
@@ -370,13 +910,13 @@
 				"Project_NexusEditor",
 				"Win64",
 				"DebugGame",
-				"D:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.2"
+				"cwd": "D:\\EpicGames\\UE_5.2"
 			}
 		},
 		{
@@ -387,13 +927,13 @@
 				"Project_NexusEditor",
 				"Win64",
 				"Development",
-				"D:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.2"
+				"cwd": "D:\\EpicGames\\UE_5.2"
 			}
 		},
 		{
@@ -404,7 +944,7 @@
 				"Project_NexusEditor",
 				"Win64",
 				"Development",
-				"D:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -413,7 +953,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.2"
+				"cwd": "D:\\EpicGames\\UE_5.2"
 			}
 		},
 		{
@@ -424,13 +964,175 @@
 				"Project_NexusEditor",
 				"Win64",
 				"Development",
-				"D:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.2"
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_NexusEditor Linux Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Project_NexusEditor",
+				"Linux",
+				"Debug",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_NexusEditor Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Project_NexusEditor",
+				"Linux",
+				"Debug",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Project_NexusEditor Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_NexusEditor Linux Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Project_NexusEditor",
+				"Linux",
+				"Debug",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_NexusEditor Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Project_NexusEditor",
+				"Linux",
+				"DebugGame",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_NexusEditor Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Project_NexusEditor",
+				"Linux",
+				"DebugGame",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Project_NexusEditor Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_NexusEditor Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Project_NexusEditor",
+				"Linux",
+				"DebugGame",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_NexusEditor Linux Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Project_NexusEditor",
+				"Linux",
+				"Development",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_NexusEditor Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Project_NexusEditor",
+				"Linux",
+				"Development",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Project_NexusEditor Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
+			}
+		},
+		{
+			"label": "Project_NexusEditor Linux Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Project_NexusEditor",
+				"Linux",
+				"Development",
+				"F:\\Education\\SAE\\3em\\AbschlussProject\\Project\\Project_Nexus\\Project_Nexus.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_5.2"
 			}
 		}
 	]

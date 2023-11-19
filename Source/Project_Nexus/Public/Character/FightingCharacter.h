@@ -5,10 +5,12 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "InputActionValue.h"
+#include "Components/TimelineComponent.h"
 #include "FightingCharacter.generated.h"
 
 class UInputMappingContext;
 class UInputAction;
+class UCurveFloat;
 
 UCLASS()
 class PROJECT_NEXUS_API AFightingCharacter : public ACharacter
@@ -24,8 +26,6 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
-	//FTimerHandle TimerHandle;
 
 protected:
 	// Called when the game starts or when spawned
@@ -65,6 +65,24 @@ protected:
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats")
     	AFightingCharacter* OtherPlayerCharacter;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+        UTimelineComponent* TimelineComp;
+
+	//Delegate signature for the function which will handle our Finished event.
+	
+   	FOnTimelineFloat TimelineProgressEvent;
+
+	FOnTimelineEvent TimelineFinishedEvent;
+
+    UFUNCTION(BlueprintCallable, Category = "Timeline")
+        void TimelineProgressFunction(float Value);
+
+	UFUNCTION(BlueprintCallable, Category = "Timeline")
+        void TimelineFinishedFunction();
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Timeline")
+    	UCurveFloat* FloatCurve;
+
 private:
 
 	void DoMoveFwd(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
@@ -93,13 +111,13 @@ private:
 
 	// Custom function for updating character rotation
 	UFUNCTION(BlueprintCallable, Category = "Custom Character Rotation", meta = (AllowPrivateAccess = "true"))
-    void UpdateCharacterRotation();
-	
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components", meta = (AllowPrivateAccess = "true"))
+    	void UpdateCharacterRotation();
+
+	/*UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components", meta = (AllowPrivateAccess = "true"))
 		class USpringArmComponent* SpringArmComp;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components", meta = (AllowPrivateAccess = "true"))
-		class UCameraComponent* CameraComp;
+		class UCameraComponent* CameraComp;*/
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats" ,meta = (AllowPrivateAccess = "true"))
 		AFightingCharacter* OtherCharacter;
@@ -140,5 +158,9 @@ private:
     	float RotationRate;
 
 	UPROPERTY(EditAnywhere, Category = "Custom Character Rotation")
+		float RotationMultiplier;
+
+	UPROPERTY(EditAnywhere, Category = "Custom Character Rotation")
     	bool bShowRotation;
+
 };

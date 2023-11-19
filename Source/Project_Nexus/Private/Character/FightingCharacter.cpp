@@ -4,11 +4,14 @@
 #include "Character/FightingCharacter.h"
 #include "EnhancedInputSubsystems.h"
 #include "EnhancedInputComponent.h"
-#include "GameFramework/SpringArmComponent.h"
-#include "Camera/CameraComponent.h"
+//#include "GameFramework/SpringArmComponent.h"
+//#include "Camera/CameraComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "Math/UnrealMathUtility.h"
+#include "Curves/CurveFloat.h"
+#include "Character/FightingCharacter.h"
 
 
 // Sets default values
@@ -17,17 +20,20 @@ AFightingCharacter::AFightingCharacter()
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	SpringArmComp = CreateDefaultSubobject<USpringArmComponent>(TEXT("Spring Arm"));
+	/*SpringArmComp = CreateDefaultSubobject<USpringArmComponent>(TEXT("Spring Arm"));
 	SpringArmComp->SetupAttachment(RootComponent);
 
 	CameraComp = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
-	CameraComp->SetupAttachment(SpringArmComp);
+	CameraComp->SetupAttachment(SpringArmComp);*/
 
-	SpringArmComp->TargetArmLength = 250.f;
+	TimelineComp = CreateDefaultSubobject<UTimelineComponent>(TEXT("TimelineComponent"));
+
+	/*SpringArmComp->TargetArmLength = 250.f;
 	SpringArmComp->SetRelativeLocation(FVector(0.f, 0.f, 30.f));
-	SpringArmComp->SetRelativeRotation(FRotator(0.f,-90.f,0.f));
+	SpringArmComp->SetRelativeRotation(FRotator(0.f,-90.f,0.f));*/
 
 	OtherCharacter = nullptr;
+
 }
 
 // Called when the game starts or when spawned
@@ -41,8 +47,14 @@ void AFightingCharacter::BeginPlay()
 		}
 
 	}
+
+	if (FloatCurve != nullptr){
+		TimelineProgressEvent.BindUFunction(this, FName("TimelineProgressFunction"));
+		TimelineFinishedEvent.BindUFunction(this, FName("TimelineFinishedFunction"));
+		TimelineComp->AddInterpFloat(FloatCurve, TimelineProgressEvent);
+        TimelineComp->SetTimelineFinishedFunc(TimelineFinishedEvent);
+	}
 	
-	//GetWorldTimerManager().SetTimer(TimerHandle, this, &AFightingCharacter::UpdateCharacterRotation, 1.0f, false);
 }
 
 // Called every frame
@@ -59,8 +71,8 @@ void AFightingCharacter::DoMoveFwd(const FInputActionValue& Value){
 
 	if (GetController() && IsCombatReady && !IsBlocking && !WasFirstHeavyAttackUsed && !WasFirstLightAttackUsed && !IsSideStepNY && !IsSideStepPY) {
 		UpdateCharacterRotation();
-		MoveFwd = true;
 		AddMovementInput(Forward, Value.Get<float>());
+		MoveFwd = true;
 
 		//UE_LOG(LogTemp, Warning, TEXT("Move Value X: %f"), Value.Get<float>());
 		//UE_LOG(LogTemp, Warning, TEXT("Forwar Value: %f %f %f"), Forward.X, Forward.Y, Forward.Z);
@@ -71,21 +83,19 @@ void AFightingCharacter::DoMoveFwd(const FInputActionValue& Value){
 void AFightingCharacter::DoMoveBwd(const FInputActionValue& Value){
 	const FVector Forward = GetActorForwardVector();
 
-	if (GetController() && IsCombatReady && !IsBlocking && !WasFirstHeavyAttackUsed && !WasFirstLightAttackUsed && !IsSideStepNY && !IsSideStepPY) {
+	if (GetController() && IsCombatReady && !IsBlocking && !WasFirstHeavyAttackUsed && !WasFirstLightAttackUsed && !IsSideStepNY && !IsSideStepPY && !this->bIsCrouched) {
 		UpdateCharacterRotation();
-		MoveBwd = true;
 		AddMovementInput(Forward, Value.Get<float>());
+		MoveBwd = true;
 		//UE_LOG(LogTemp, Warning, TEXT("Move X: %f"), Value.Get<float>());
 	}
 }
 
 void AFightingCharacter::LightAttack(const FInputActionValue& Value){
 	if (GetController() && IsCombatReady) {
+		UpdateCharacterRotation();
 		WasFirstLightAttackUsed = true;
-		if(!WasFirstLightAttackUsed){
-			UpdateCharacterRotation();
-			//WasFirstLightAttackUsed = true;
-		}
+
 		//UE_LOG(LogTemp, Warning, TEXT("Light Attack"));
 		//UE_LOG(LogTemp, Warning, TEXT("LA: %d"), WasFirstLightAttackUsed);
 	}
@@ -93,11 +103,9 @@ void AFightingCharacter::LightAttack(const FInputActionValue& Value){
 
 void AFightingCharacter::HeavyAttack(const FInputActionValue& Value){
 	if (GetController() && IsCombatReady) {
+		UpdateCharacterRotation();
 		WasFirstHeavyAttackUsed = true;
-		if(!WasFirstHeavyAttackUsed){
-			UpdateCharacterRotation();
-			//WasFirstHeavyAttackUsed = true;
-		}
+		
 		//UE_LOG(LogTemp, Warning, TEXT("Heavy Attack"));
 		//UE_LOG(LogTemp, Warning, TEXT("HA: %d"), WasFirstHeavyAttackUsed);
 	}
@@ -130,20 +138,23 @@ void AFightingCharacter::DoJump(const FInputActionValue& Value){
 
 void AFightingCharacter::Duck(const FInputActionValue& Value){
 	if (GetController() && IsCombatReady && this->CanCrouch()) {
-		//UE_LOG(LogTemp, Warning, TEXT("Duck"));
 		this->Crouch();
+
+		//UE_LOG(LogTemp, Warning, TEXT("Duck"));
 	}
 }
 
 void AFightingCharacter::UnDuck(const FInputActionValue& Value){
 	if (GetController() && IsCombatReady && !this->CanCrouch()) {
-		//UE_LOG(LogTemp, Warning, TEXT("UnDuck"));
 		this->UnCrouch();
+
+		//UE_LOG(LogTemp, Warning, TEXT("UnDuck"));
 	}
 }
 
 void AFightingCharacter::SideStepNY(const FInputActionValue& Value){
     const FVector SideStep = GetActorRightVector();
+
     if (GetController() && IsCombatReady && !IsBlocking && !IsSideStepPY && !this->bIsCrouched && GetVelocity().Z == 0 && !MoveFwd && !MoveBwd && !WasFirstHeavyAttackUsed && !WasFirstLightAttackUsed) {
 		UpdateCharacterRotation();	
 		IsSideStepNY = true;
@@ -181,20 +192,46 @@ void AFightingCharacter::ClearSideStep(const FInputActionValue& Value){
 // Custom function for updating character rotation
 void AFightingCharacter::UpdateCharacterRotation()
 {
-	
 	if(OtherCharacter != nullptr){
-		//UE_LOG(LogTemp, Warning, TEXT("found %f"), OtherCharacter->GetActorLocation().X);
-		FRotator PlayerSetRotaion = FMath::RInterpTo(
-			GetActorRotation(),
-			UKismetMathLibrary::FindLookAtRotation(GetActorLocation(),
-			OtherCharacter->GetActorLocation()),
-			UGameplayStatics::GetWorldDeltaSeconds(GetWorld()), 
-			RotationRate
-		);
+		float TempRotaionRate;
 
-		SetActorRotation(FRotator(0.f, PlayerSetRotaion.Yaw, 0.f));
+		if(IsSideStepNY || IsSideStepPY){
+			TempRotaionRate= RotationRate*RotationMultiplier;
+		}else{
+			TempRotaionRate=RotationRate;
+		}
+		
+		if (TimelineComp != nullptr){
+			TimelineComp->Play();
+		}
+
+		//UE_LOG(LogTemp, Warning, TEXT("found %f"), OtherCharacter->GetActorLocation().X);
+		/*FRotator PlayerSetRotaion = FMath::RInterpTo(
+			GetActorRotation(),
+			UKismetMathLibrary::FindLookAtRotation(GetActorLocation(),OtherCharacter->GetActorLocation()),
+			UGameplayStatics::GetWorldDeltaSeconds(GetWorld()), 
+			TempRotaionRate
+		);*/
+
+		//UE_LOG(LogTemp, Warning, TEXT("Rotation Rate %f"), TempRotaionRate);
+
+		//SetActorRotation(FRotator(0.f, PlayerSetRotaion.Yaw, 0.f));
 	}
 
+}
+
+void AFightingCharacter::TimelineProgressFunction(float Value){
+	FRotator NewPlayerRot= FMath::Lerp(GetActorRotation(),UKismetMathLibrary::FindLookAtRotation(GetActorLocation(),OtherCharacter->GetActorLocation()), Value);
+	
+	//UE_LOG(LogTemp, Warning, TEXT("Progress Value: %f"), Value);
+	//UE_LOG(LogTemp, Warning, TEXT("Yaw Value: %f"),NewPlayerRot.Yaw);
+	SetActorRotation(FRotator(0.f, NewPlayerRot.Yaw, 0.f));
+}
+
+void AFightingCharacter::TimelineFinishedFunction()
+{
+	TimelineComp->Stop();
+	TimelineComp->SetPlaybackPosition(0.f, false);
 }
 
 // Called to bind functionality to input
@@ -214,8 +251,8 @@ void AFightingCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 		EnhancedInputComp->BindAction(DuckAction, ETriggerEvent::Completed, this, &AFightingCharacter::UnDuck);
 		EnhancedInputComp->BindAction(JumpAction, ETriggerEvent::Triggered, this, &AFightingCharacter::DoJump);
 
-		EnhancedInputComp->BindAction(LightAttackAction, ETriggerEvent::Triggered, this, &AFightingCharacter::LightAttack);
-		EnhancedInputComp->BindAction(HeavyAttackAction, ETriggerEvent::Triggered, this, &AFightingCharacter::HeavyAttack);
+		EnhancedInputComp->BindAction(LightAttackAction, ETriggerEvent::Started, this, &AFightingCharacter::LightAttack);
+		EnhancedInputComp->BindAction(HeavyAttackAction, ETriggerEvent::Started, this, &AFightingCharacter::HeavyAttack);
 
 		EnhancedInputComp->BindAction(BlockAction, ETriggerEvent::Triggered, this, &AFightingCharacter::Block);
 		EnhancedInputComp->BindAction(BlockAction, ETriggerEvent::Completed, this, &AFightingCharacter::UnBlock);
@@ -225,6 +262,6 @@ void AFightingCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 		//EnhancedInputComp->BindAction(SideStepPositiveYAction, ETriggerEvent::Completed, this, &AFightingCharacter::ClearSideStep);
 		//EnhancedInputComp->BindAction(SideStepNegativeYAction, ETriggerEvent::Completed, this, &AFightingCharacter::ClearSideStep);
 	}
-
 }
+
 
