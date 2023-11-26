@@ -2,3 +2,8 @@
 
 
 #include "UI/Base/Nexus_CommonActivatableWidget.h"
+
+void UNexus_CommonActivatableWidget::PassStackVariable(UNexus_WidgetContainerStack* MenuStack)
+{
+	this->MenuStackRef = MenuStack;
+}

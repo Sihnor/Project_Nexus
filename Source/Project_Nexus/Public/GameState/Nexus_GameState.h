@@ -14,7 +14,7 @@ enum class EPlayerEnum :uint8;
 
 
 DECLARE_MULTICAST_DELEGATE_OneParam(FReductionOfLifeEvent, EPlayerEnum);
-
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnDecrementTimer, int32, remainingTime);
 
 UCLASS()
 class PROJECT_NEXUS_API ANexus_GameState : public AGameState {
@@ -27,6 +27,8 @@ public:
 	
 	int32 GetRemainingTime() const;
 	void SetRemainingTime(const int32 Duration);
+
+	FOnDecrementTimer OnCounterTick;
 	void DecrementRemainingTime();
 	
 	FReductionOfLifeEvent ReductionOfLifeEvent;
