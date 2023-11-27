@@ -22,6 +22,8 @@ void ANexus_GameState::SetRemainingTime(const int32 Duration) {
 
 void ANexus_GameState::DecrementRemainingTime() {
 	this->RemainingGameTime--;
+
+	this->OnCounterTick.Broadcast(this->RemainingGameTime);
 }
 
 void ANexus_GameState::RefreshHealth(EPlayerEnum HitEnemy) {
