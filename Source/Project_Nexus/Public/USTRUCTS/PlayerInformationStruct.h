@@ -1,6 +1,5 @@
-#pragma once
+﻿#pragma once
 #include "CoreMinimal.h"
-//#include "UENUMS/ActualPlayer.h"
 #include "PlayerInformationStruct.generated.h"
 
 enum class EPlayerEnum : uint8;

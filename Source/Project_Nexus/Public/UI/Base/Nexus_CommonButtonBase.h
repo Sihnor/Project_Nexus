@@ -12,7 +12,7 @@
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnButtonClicked);
 
-UCLASS()
+UCLASS(Abstract, BlueprintType, Blueprintable)
 class PROJECT_NEXUS_API UNexus_CommonButtonBase : public UCommonButtonBase
 {
 	GENERATED_BODY()
@@ -22,9 +22,12 @@ public:
 	virtual void SynchronizeProperties() override;
 
 	UPROPERTY(meta = (BindWidget))
-	class UCommonTextBlock* Text;
+	class UOverlay* TextOverlay;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(meta = (BindWidget))
+	class UCommonTextBlock* ButtonTextBlock;
+
+	UPROPERTY(EditAnywhere, Category="Button")
 	FText ButtonText;
 
 	FOnButtonClicked OnButtonClicked;
