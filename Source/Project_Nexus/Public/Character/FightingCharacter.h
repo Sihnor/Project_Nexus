@@ -5,10 +5,12 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "InputActionValue.h"
+#include "Components/TimelineComponent.h"
 #include "FightingCharacter.generated.h"
 
 class UInputMappingContext;
 class UInputAction;
+class UCurveFloat;
 
 UCLASS()
 class PROJECT_NEXUS_API AFightingCharacter : public ACharacter
@@ -25,18 +27,18 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	//void 
-
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 		UInputMappingContext* GameplayMappingContext;	
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
-		UInputAction* MovementAction;
+		UInputAction* MoveForwardAction;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+		UInputAction* MoveBackwardAction;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 		UInputAction* LightAttackAction;
@@ -53,25 +55,112 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 		UInputAction* DuckAction;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+		UInputAction* SideStepPositiveYAction;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+		UInputAction* SideStepNegativeYAction;
+
+	// Expose OtherPlayerCharacter to Blueprint
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats")
+    	AFightingCharacter* OtherPlayerCharacter;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+        UTimelineComponent* TimelineComp;
+
+	//Delegate signature for the function which will handle our Finished event.
+	
+   	FOnTimelineFloat TimelineProgressEvent;
+
+	FOnTimelineEvent TimelineFinishedEvent;
+
+    UFUNCTION(BlueprintCallable, Category = "Timeline")
+        void TimelineProgressFunction(float Value);
+
+	UFUNCTION(BlueprintCallable, Category = "Timeline")
+        void TimelineFinishedFunction();
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Timeline")
+    	UCurveFloat* FloatCurve;
+
 private:
 
-	void Movement(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
+	void DoMoveFwd(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
+
+	void DoMoveBwd(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
+
+	void SideStepPY(const FInputActionValue& Value);
+
+	void SideStepNY(const FInputActionValue& Value);
 
 	void LightAttack(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 
 	void HeavyAttack(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 
 	void Block(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
-	
-	//void SideStep(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
 
-	void Jump(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
+	void UnBlock(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
+
+	void DoJump(const FInputActionValue& Value);
 	
 	void Duck(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
-	
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components", meta = (AllowPrivateAccess = "true"))
+
+	void UnDuck(const FInputActionValue& Value);
+
+	void ClearSideStep(const FInputActionValue& Value);
+
+	// Custom function for updating character rotation
+	UFUNCTION(BlueprintCallable, Category = "Custom Character Rotation", meta = (AllowPrivateAccess = "true"))
+    	void UpdateCharacterRotation();
+
+	/*UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components", meta = (AllowPrivateAccess = "true"))
 		class USpringArmComponent* SpringArmComp;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components", meta = (AllowPrivateAccess = "true"))
-		class UCameraComponent* CameraComp;
+		class UCameraComponent* CameraComp;*/
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats" ,meta = (AllowPrivateAccess = "true"))
+		AFightingCharacter* OtherCharacter;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool MoveFwd;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool MoveBwd;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool IsCombatReady = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool IsBlocking = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool WasFirstLightAttackUsed = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool WasFirstHeavyAttackUsed = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool IsSideStepNY = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool IsSideStepPY = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats", meta = (AllowPrivateAccess = "true"))
+		int PlayerIndex;
+
+    // Whether to rotate the character based on input
+	/*UPROPERTY(EditAnywhere, Category = "Custom Character Rotation")
+    	bool bRotateToFacePlayer;*/
+
+	// Sensitivity for rotating the character
+    UPROPERTY(EditAnywhere, Category = "Custom Character Rotation")
+    	float RotationRate;
+
+	UPROPERTY(EditAnywhere, Category = "Custom Character Rotation")
+		float RotationMultiplier;
+
+	UPROPERTY(EditAnywhere, Category = "Custom Character Rotation")
+    	bool bShowRotation;
+
 };
