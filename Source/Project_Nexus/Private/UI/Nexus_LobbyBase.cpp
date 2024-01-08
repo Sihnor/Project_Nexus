@@ -36,7 +36,7 @@ void UNexus_LobbyBase::StartGame()
 {
 	this->SelectionStack->ClearWidgets();
 
-	FString MapName = "IzmirTest";
+	FString MapName = "GameplayLevelTest";
 
 	UGameplayStatics::OpenLevel(this, *MapName, true);
 }
