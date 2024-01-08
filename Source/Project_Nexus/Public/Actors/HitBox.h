@@ -42,7 +42,8 @@ public:
 	//Draw hitbox to visualize it (for ddebugging or practice mode)
 	//void VisualHitbox();
 
-
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
+		float HitboxDamage;
 
 	//Hitbox enum instance
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
@@ -51,6 +52,10 @@ public:
 	//location to spawn hitbox
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
 		FVector HitboxLocation;
+
+	//location to spawn hitbox
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
+		FRotator HitboxRotation;
 
 protected:
 	// Called when the game starts or when spawned
