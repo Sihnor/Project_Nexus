@@ -19,7 +19,7 @@ void UNexus_LobbyBase::OpenChampSelection()
 {
 	this->ChampionMenu = this->SelectionStack->AddWidget<UNexus_ChampionSelection>(this->ChampionMenuClass);
 	this->ChampionMenu->COMPLETED->OnButtonClicked.AddUniqueDynamic(this, &UNexus_LobbyBase::StartGame);
-	this->ChampionMenu->CANCELED->OnButtonClicked.AddUniqueDynamic(this, &UNexus_LobbyBase::CloseChampSelection);
+	this->ChampionMenu->OnCanceledChampSelect.AddUniqueDynamic(this, &UNexus_LobbyBase::CloseChampSelection);
 	this->ChampionMenu->SetIsFocusable(true);
 }
 
