@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameState.h"
-#include "USTRUCTS/PlayerInformationStruct.h"
+#include "UENUMS/ActualPlayer.h"
 #include "Nexus_GameState.generated.h"
 
 /**
@@ -40,8 +40,8 @@ private:
 	int32 RemainingGameTime;
 
 	UPROPERTY()
-	FPlayerInformationStruct PlayerOne;
+	EPlayerEnum PlayerOne;
 	
 	UPROPERTY()
-	FPlayerInformationStruct PlayerTwo;
+	EPlayerEnum PlayerTwo;
 };
