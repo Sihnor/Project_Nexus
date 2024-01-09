@@ -29,15 +29,22 @@ public:
 	UPROPERTY(meta = (BindWidget), Blueprintable, BlueprintReadWrite)
 	class UNexus_CommonButtonBase* ChampionRandom;
 
-	UPROPERTY(meta = (BindWidget))
-	class UNexus_CommonButtonBase* COMPLETED;
-	UPROPERTY(meta = (BindWidget))
-	class UNexus_CommonButtonBase* CANCELED;
-	
-	UFUNCTION() void COMPLETEDEVENT();
-	UFUNCTION() void CANCELEDEVENT();
+	UPROPERTY(meta = (BindWidget), Blueprintable, BlueprintReadWrite)
+	class UNexus_CommonButtonBase* EscapeButton;
 
-	FOnCompletedChampions OnCompletedChampions;
+	UFUNCTION(BlueprintCallable)
+	void OnEscapeButton();
+	
+	UFUNCTION(BlueprintCallable)
+	void QuitChampSelection();
+
+	UPROPERTY(meta = (BindWidget), Blueprintable, BlueprintReadWrite)
+	class UNexus_CommonButtonBase* SelectButton;
+	
+	
+	UFUNCTION(BlueprintCallable) void StartGame();
+
+	FOnCompletedChampions OnCompletedChampSelect;
 	FOnCanceledChampSelect OnCanceledChampSelect;
 
 	/*

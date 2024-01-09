@@ -40,8 +40,9 @@ private:
 	int32 RemainingGameTime;
 
 	UPROPERTY()
-	EPlayerEnum  PlayerOne;
+	EPlayerEnum PlayerOne;
 	
 	UPROPERTY()
-	EPlayerEnum  PlayerTwo;
+	EPlayerEnum PlayerTwo;
+
 };

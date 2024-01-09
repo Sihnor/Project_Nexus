@@ -4,23 +4,25 @@
 #include "UI/Menus/Nexus_ChampionSelection.h"
 
 #include "UI/Base/Nexus_CommonButtonBase.h"
-#include "UI/Base/Nexus_WidgetContainerStack.h"
 
 void UNexus_ChampionSelection::NativeConstruct()
 {
 	Super::NativeConstruct();
 
-	this->COMPLETED->OnButtonClicked.AddUniqueDynamic(this, &UNexus_ChampionSelection::COMPLETEDEVENT);
-	this->CANCELED->OnButtonClicked.AddUniqueDynamic(this, &UNexus_ChampionSelection::CANCELEDEVENT);
+	this->EscapeButton->OnButtonClicked.AddUniqueDynamic(this, &UNexus_ChampionSelection::OnEscapeButton);
 }
 
-void UNexus_ChampionSelection::COMPLETEDEVENT()
+void UNexus_ChampionSelection::OnEscapeButton()
 {
-	this->OnCompletedChampions.Broadcast();
+	this->DeactivateWidget();
 }
 
-void UNexus_ChampionSelection::CANCELEDEVENT()
+void UNexus_ChampionSelection::QuitChampSelection()
 {
 	this->OnCanceledChampSelect.Broadcast();
 }
 
+void UNexus_ChampionSelection::StartGame()
+{
+	this->OnCompletedChampSelect.Broadcast();
+}
