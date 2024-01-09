@@ -38,13 +38,13 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void QuitChampSelection();
 
-	UPROPERTY(meta = (BindWidget))
-	class UNexus_CommonButtonBase* COMPLETED;
+	UPROPERTY(meta = (BindWidget), Blueprintable, BlueprintReadWrite)
+	class UNexus_CommonButtonBase* SelectButton;
 	
 	
-	UFUNCTION() void COMPLETEDEVENT();
+	UFUNCTION(BlueprintCallable) void StartGame();
 
-	FOnCompletedChampions OnCompletedChampions;
+	FOnCompletedChampions OnCompletedChampSelect;
 	FOnCanceledChampSelect OnCanceledChampSelect;
 
 	/*

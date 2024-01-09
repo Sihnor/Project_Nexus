@@ -9,7 +9,6 @@ void UNexus_ChampionSelection::NativeConstruct()
 {
 	Super::NativeConstruct();
 
-	this->COMPLETED->OnButtonClicked.AddUniqueDynamic(this, &UNexus_ChampionSelection::COMPLETEDEVENT);
 	this->EscapeButton->OnButtonClicked.AddUniqueDynamic(this, &UNexus_ChampionSelection::OnEscapeButton);
 }
 
@@ -23,7 +22,7 @@ void UNexus_ChampionSelection::QuitChampSelection()
 	this->OnCanceledChampSelect.Broadcast();
 }
 
-void UNexus_ChampionSelection::COMPLETEDEVENT()
+void UNexus_ChampionSelection::StartGame()
 {
-	this->OnCompletedChampions.Broadcast();
+	this->OnCompletedChampSelect.Broadcast();
 }
