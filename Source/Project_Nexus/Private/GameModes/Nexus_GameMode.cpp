@@ -57,7 +57,9 @@ void ANexus_GameMode::CountDown() {
 	this->GameState->DecrementRemainingTime();
 }
 
-void ANexus_GameMode::CheckIfDeath(EPlayerEnum Player) {
-	
+void ANexus_GameMode::CheckIfDeath(EPlayerEnum Player, float DamageValue) {
+	if (GEngine) {
+    	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("%f"), DamageValue));
+	}
 }
 

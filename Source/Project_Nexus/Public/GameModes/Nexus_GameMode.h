@@ -28,7 +28,7 @@ public:
 
 	TObjectPtr<class ANexus_GameState> GameState;
 
-	void CheckIfDeath(EPlayerEnum Player);
+	void CheckIfDeath(EPlayerEnum Player, float DamageValue);
 
 private:
 	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, meta=(AllowPrivateAccess = "true"))

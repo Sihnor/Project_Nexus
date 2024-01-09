@@ -13,7 +13,7 @@
 enum class EPlayerEnum :uint8;
 
 
-DECLARE_MULTICAST_DELEGATE_OneParam(FReductionOfLifeEvent, EPlayerEnum);
+DECLARE_MULTICAST_DELEGATE_TwoParams(FReductionOfLifeEvent, EPlayerEnum, float);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnDecrementTimer, int32, remainingTime);
 
 UCLASS()
@@ -33,8 +33,8 @@ public:
 	
 	FReductionOfLifeEvent ReductionOfLifeEvent;
 
-
-	void RefreshHealth(EPlayerEnum HitEnemy);
+	UFUNCTION(BlueprintCallable)
+	void RefreshHealth(EPlayerEnum HitEnemy, float DamageValue);
 
 private:
 	int32 RemainingGameTime;
@@ -44,4 +44,5 @@ private:
 	
 	UPROPERTY()
 	EPlayerEnum PlayerTwo;
+
 };

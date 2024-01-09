@@ -68,6 +68,9 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
         UTimelineComponent* TimelineComp;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitboxs")
+		AActor* Hurtbox;	
+
 	//Delegate signature for the function which will handle our Finished event.
 	
    	FOnTimelineFloat TimelineProgressEvent;
