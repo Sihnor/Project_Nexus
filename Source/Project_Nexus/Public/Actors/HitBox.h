@@ -57,6 +57,18 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
 		FRotator HitboxRotation;
 
+	//Amount of distance to push the character back
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
+		float PushbackDsitance;
+
+	//Amount of distance to launch the player
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
+		float LaunchDistance;
+
+	//Should Hitbox be attached to the Player
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
+		bool ShouldAttach;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
