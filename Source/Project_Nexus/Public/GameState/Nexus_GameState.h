@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameState.h"
-#include "USTRUCTS/PlayerInformationStruct.h"
+#include "UENUMS/ActualPlayer.h"
 #include "Nexus_GameState.generated.h"
 
 /**
@@ -13,8 +13,8 @@
 enum class EPlayerEnum :uint8;
 
 
-DECLARE_MULTICAST_DELEGATE_OneParam(FReductionOfLifeEvent, EPlayerEnum);
-
+DECLARE_MULTICAST_DELEGATE_TwoParams(FReductionOfLifeEvent, EPlayerEnum, float);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnDecrementTimer, int32, remainingTime);
 
 UCLASS()
 class PROJECT_NEXUS_API ANexus_GameState : public AGameState {
@@ -27,19 +27,22 @@ public:
 	
 	int32 GetRemainingTime() const;
 	void SetRemainingTime(const int32 Duration);
+
+	FOnDecrementTimer OnCounterTick;
 	void DecrementRemainingTime();
 	
 	FReductionOfLifeEvent ReductionOfLifeEvent;
 
-
-	void RefreshHealth(EPlayerEnum HitEnemy);
+	UFUNCTION(BlueprintCallable)
+	void RefreshHealth(EPlayerEnum HitEnemy, float DamageValue);
 
 private:
 	int32 RemainingGameTime;
 
 	UPROPERTY()
-	FPlayerInformationStruct PlayerOne;
+	EPlayerEnum PlayerOne;
 	
 	UPROPERTY()
-	FPlayerInformationStruct PlayerTwo;
+	EPlayerEnum PlayerTwo;
+
 };
