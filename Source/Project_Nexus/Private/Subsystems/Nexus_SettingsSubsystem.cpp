@@ -50,10 +50,6 @@ int32 UNexus_SettingsSubsystem::GetTimeLimitIndexSetting()
 
 int32 UNexus_SettingsSubsystem::GetTimeLimitSetting()
 {
-	if (GEngine) {
-		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("TimeLimitIndex: %d"), this->TimeLimitIndex));
-	}
-	
 	switch (this->TimeLimitIndex)
 	{
 		case 0: return 50;
