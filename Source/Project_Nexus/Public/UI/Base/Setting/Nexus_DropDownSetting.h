@@ -26,4 +26,6 @@ public:
 	
 	UPROPERTY(EditAnywhere, Category="Variable")
 	FText SettingText;
+
+	int GetSelectedOption() const;
 };

@@ -57,7 +57,7 @@ void UNexus_GameSettings::NativeOnDeactivated()
 		if (UNexus_SettingsSubsystem* SettingsSubsystem = GameInstance->GetSubsystem<UNexus_SettingsSubsystem>())
 		{
 			SettingsSubsystem->SetNumberOfRoundsSetting(this->NumberOfRoundsSetting->Counter);
-			SettingsSubsystem->SetTimeLimitSetting(this->TimeLimitSetting->ComboBox->GetSelectedIndex());
+			SettingsSubsystem->SetTimeLimitSetting(this->TimeLimitSetting->GetSelectedOption());
 			SettingsSubsystem->SetControllerVibrationSetting(this->ControllerVibrationsSetting->CheckBox->GetCheckedState());
 		}
 	}

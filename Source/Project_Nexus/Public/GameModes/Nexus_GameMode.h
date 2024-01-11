@@ -30,6 +30,11 @@ public:
 
 	void CheckIfDeath(EPlayerEnum Player, float DamageValue);
 
+	UFUNCTION(BlueprintNativeEvent)
+	void OnCountDown(int RemainingTime);
+	virtual void OnCountDown_Implementation(int RemainingTime);
+
+
 private:
 	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, meta=(AllowPrivateAccess = "true"))
 	int32 GameDurationInSeconds;
@@ -40,6 +45,6 @@ private:
 	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, meta=(AllowPrivateAccess = "true"))
 	int32 WinCondition;
 
-	UPROPERTY()
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, meta=(AllowPrivateAccess = "true"))
 	FTimerHandle TH_CountDown;
 };

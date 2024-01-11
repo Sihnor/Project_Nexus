@@ -27,13 +27,15 @@ void ANexus_GameMode::BeginPlay()
 	{
 		this->GameState->ReductionOfLifeEvent.AddUObject(this, &ANexus_GameMode::CheckIfDeath);
 	}
+
+
 	
 }
 
 void ANexus_GameMode::StartMatch() {
 	Super::StartMatch();
-
-	if(GameState){
+	
+	if(this->GameState){
 		if (UNexus_GameInstance* GameInstance = Cast<UNexus_GameInstance>(GetGameInstance()))
 		{
 			if (UNexus_SettingsSubsystem* SettingsSubsystem = GameInstance->GetSubsystem<UNexus_SettingsSubsystem>())
@@ -51,8 +53,15 @@ void ANexus_GameMode::StartMatch() {
 void ANexus_GameMode::CountDown() {
 	if (this->GameState->GetRemainingTime() == 0) {
 		this->GetWorldTimerManager().ClearTimer(this->TH_CountDown);
+
+		if (GEngine) {
+			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("EndMatch")));
+		}
+		
 		return;
 	}
+
+	OnCountDown(this->GameState->GetRemainingTime());
 	
 	this->GameState->DecrementRemainingTime();
 }
@@ -61,5 +70,10 @@ void ANexus_GameMode::CheckIfDeath(EPlayerEnum Player, float DamageValue) {
 	if (GEngine) {
     	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("%f"), DamageValue));
 	}
+}
+
+void ANexus_GameMode::OnCountDown_Implementation(int RemainingTime)
+{
+	
 }
 
