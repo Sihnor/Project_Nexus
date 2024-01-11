@@ -41,10 +41,6 @@ void UNexus_GameSettings::NativeOnActivated()
 			this->NumberOfRoundsSetting->LoadCounterValue(SettingsSubsystem->GetNumberOfRoundsSetting());
 			this->TimeLimitSetting->ComboBox->SetSelectedIndex((SettingsSubsystem->GetTimeLimitIndexSetting()));
 			this->ControllerVibrationsSetting->LoadCheckBoxValue(SettingsSubsystem->GetControllerVibrationSetting());
-
-			if (GEngine) {
-				GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("TimeLimitIndex: %d"), SettingsSubsystem->GetTimeLimitIndexSetting()));
-			}
 		}
 	}
 }
