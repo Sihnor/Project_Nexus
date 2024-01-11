@@ -16,7 +16,7 @@ void ANexus_GameMode::BeginPlay()
 	{
 		if (UNexus_SettingsSubsystem* SettingsSubsystem = GameInstance->GetSubsystem<UNexus_SettingsSubsystem>())
 		{
-			this->GameDurationInSeconds = SettingsSubsystem->GetTimeLimitSetting();
+			this->GameDurationInSeconds = SettingsSubsystem->GetTimeLimitIndexSetting();
 			this->MaxRounds = SettingsSubsystem->GetNumberOfRoundsSetting();
 		}
 	}
