@@ -1,9 +1,10 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+#include "Actors/CameraFocusActor.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
 #include "Components/StaticMeshComponent.h"
-#include "Actors/CameraFocusActor.h"
+
 
 // Sets default values
 ACameraFocusActor::ACameraFocusActor()
