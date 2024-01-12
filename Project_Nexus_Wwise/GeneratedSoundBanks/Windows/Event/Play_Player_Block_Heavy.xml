@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="3586072739" Type="Event" GUID="{683A1ECC-1199-45F8-A261-2323D2B70EFD}" Language="SFX" Hash="{E40A395A-0C30-7738-F355-87FB880AC90C}">
+			<ObjectPath>Play_Player_Block_Heavy</ObjectPath>
+			<ShortName>Play_Player_Block_Heavy</ShortName>
+			<Path>Event/Play_Player_Block_Heavy.bnk</Path>
+			<Media>
+				<File Id="5381631" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_blocking_heavy_03.wav</ShortName>
+					<Path>Media/5381631.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_blocking_heavy_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="400315865" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_blocking_heavy_04.wav</ShortName>
+					<Path>Media/400315865.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_blocking_heavy_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="550444828" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_blocking_heavy_06.wav</ShortName>
+					<Path>Media/550444828.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_blocking_heavy_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="816558127" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_blocking_heavy_02.wav</ShortName>
+					<Path>Media/816558127.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_blocking_heavy_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="831203608" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_blocking_heavy_05.wav</ShortName>
+					<Path>Media/831203608.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_blocking_heavy_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="986418821" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_blocking_heavy_01.wav</ShortName>
+					<Path>Media/986418821.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_blocking_heavy_01_DCCB649D.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3586072739" Name="Play_Player_Block_Heavy" ObjectPath="\Events\Player\PlayerCombat\Play_Player_Block_Heavy" GUID="{683A1ECC-1199-45F8-A261-2323D2B70EFD}" DurationType="OneShot" DurationMin="0.22027083" DurationMax="0.24925">
+					<MediaRefs>
+						<MediaRef Id="5381631"/>
+						<MediaRef Id="400315865"/>
+						<MediaRef Id="550444828"/>
+						<MediaRef Id="816558127"/>
+						<MediaRef Id="831203608"/>
+						<MediaRef Id="986418821"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{A5DC8913-BCAA-B9D5-04D7-CE468D9FE136}</FileHash>
+</SoundBanksInfo>

@@ -1,4 +1,4 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
+// Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 
@@ -15,7 +15,7 @@ class PROJECT_NEXUS_API UNexus_ActionWidget : public UCommonActionWidget
 public:
 
 	//~ Begin UCommonActionWidget interface
-	virtual FSlateBrush GetIcon() const override;
+	//virtual FSlateBrush GetIcon() const override;
 	//~ End of UCommonActionWidget interface
 
 	/** The Enhanced Input Action that is associated with this Common Input action. */

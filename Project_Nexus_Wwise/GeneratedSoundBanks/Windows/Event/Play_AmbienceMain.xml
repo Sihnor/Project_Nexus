@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="903081441" Type="Event" GUID="{A5135C10-7237-4528-BB2B-2CF6187A56A9}" Language="SFX" Hash="{E0D24ED7-A40A-03CB-741F-094FBD675D12}">
+			<ObjectPath>Play_AmbienceMain</ObjectPath>
+			<ShortName>Play_AmbienceMain</ShortName>
+			<Path>Event/Play_AmbienceMain.bnk</Path>
+			<Events>
+				<Event Id="903081441" Name="Play_AmbienceMain" ObjectPath="\Events\Ambience_sani\Play_AmbienceMain" GUID="{A5135C10-7237-4528-BB2B-2CF6187A56A9}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{7495E039-7F25-8D5E-9357-8B6B0801F8FB}</FileHash>
+</SoundBanksInfo>

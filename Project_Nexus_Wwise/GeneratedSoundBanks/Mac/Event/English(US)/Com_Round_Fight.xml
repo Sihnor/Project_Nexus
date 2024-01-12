@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="3618896010" Type="Event" GUID="{4DDF616B-CE7F-4803-9C49-4378BAFA5BD4}" Language="English(US)" Hash="{B7A5898C-052E-C265-A706-34959B584E61}">
+			<ObjectPath>Com_Round_Fight</ObjectPath>
+			<ShortName>Com_Round_Fight</ShortName>
+			<Path>Event/English(US)/Com_Round_Fight.bnk</Path>
+			<Media>
+				<File Id="747517666" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>Fight!_01-19.wav</ShortName>
+					<Path>Media/English(US)/747517666.wem</Path>
+					<CachePath>Voices/English(US)/Fight!_01-19_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3618896010" Name="Com_Round_Fight" ObjectPath="\Events\Commentator_Voices\Com_Round_Fight" GUID="{4DDF616B-CE7F-4803-9C49-4378BAFA5BD4}" DurationType="OneShot" DurationMin="0.9661717" DurationMax="0.9661717">
+					<MediaRefs>
+						<MediaRef Id="747517666"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{3989BA28-D5EF-3B34-F3DB-5C89845AC69D}</FileHash>
+</SoundBanksInfo>

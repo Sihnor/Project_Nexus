@@ -1,0 +1,37 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "1349836090",
+    "Type": "Bus",
+    "GUID": "{91B1DC06-C7F6-4B39-A874-9B796197EE5B}",
+    "Language": "SFX",
+    "Hash": "{84B7DEA6-D7BF-64CD-8DF9-39FE3873FD24}",
+    "ObjectPath": "BetweenBuildings",
+    "ShortName": "BetweenBuildings",
+    "Path": "Bus/BetweenBuildings.bnk",
+    "AuxBusses": [
+     {
+      "Id": "1349836090",
+      "Name": "BetweenBuildings",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverbs\\BetweenBuildings",
+      "GUID": "{91B1DC06-C7F6-4B39-A874-9B796197EE5B}",
+      "AuxBusRefs": [
+       {
+        "Id": "3545700988",
+        "Name": "Reverbs",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverbs",
+        "GUID": "{6BE3BED4-0EDC-4674-80E4-B77F6F0EDD9B}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{EE7B507F-5E67-C27E-5CFB-C0899F42235B}"
+ }
+}
