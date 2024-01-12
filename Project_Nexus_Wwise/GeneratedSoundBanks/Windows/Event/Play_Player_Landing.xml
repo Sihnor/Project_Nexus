@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="725346841" Type="Event" GUID="{BD4FEB80-88A8-45D8-9FBF-7EF06D02BC15}" Language="SFX" Hash="{797021BB-91E1-83F7-CEF0-6A67ECFD568F}">
+			<ObjectPath>Play_Player_Landing</ObjectPath>
+			<ShortName>Play_Player_Landing</ShortName>
+			<Path>Event/Play_Player_Landing.bnk</Path>
+			<Media>
+				<File Id="606884774" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_landing__06.wav</ShortName>
+					<Path>Media/606884774.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_landing__06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="616693563" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_landing__02.wav</ShortName>
+					<Path>Media/616693563.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_landing__02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="653697011" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_landing__01.wav</ShortName>
+					<Path>Media/653697011.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_landing__01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="691248896" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_landing__05.wav</ShortName>
+					<Path>Media/691248896.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_landing__05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="774956098" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_landing__04.wav</ShortName>
+					<Path>Media/774956098.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_landing__04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="982992959" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_landing__03.wav</ShortName>
+					<Path>Media/982992959.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_landing__03_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="725346841" Name="Play_Player_Landing" ObjectPath="\Events\Player\PlayerLocomotion\Play_Player_Landing" GUID="{BD4FEB80-88A8-45D8-9FBF-7EF06D02BC15}" DurationType="OneShot" DurationMin="0.20616615" DurationMax="0.42318013">
+					<MediaRefs>
+						<MediaRef Id="606884774"/>
+						<MediaRef Id="616693563"/>
+						<MediaRef Id="653697011"/>
+						<MediaRef Id="691248896"/>
+						<MediaRef Id="774956098"/>
+						<MediaRef Id="982992959"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{4F57D8FE-37F9-6EDC-F6A0-C0EC52860BBC}</FileHash>
+</SoundBanksInfo>

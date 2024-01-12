@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="880454473" Type="Event" GUID="{5A6C30F2-2944-40B2-A4D9-1A142FBE1444}" Language="SFX" Hash="{42B01F05-EF82-4EA4-3CDB-878A9DCEEEE8}">
+			<ObjectPath>Play_Select_Button</ObjectPath>
+			<ShortName>Play_Select_Button</ShortName>
+			<Path>Event/Play_Select_Button.bnk</Path>
+			<Media>
+				<File Id="807290476" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_menu_button_select.wav</ShortName>
+					<Path>Media/807290476.wem</Path>
+					<CachePath>SFX/sfx_menu_button_select_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="880454473" Name="Play_Select_Button" ObjectPath="\Events\UI\Play_Select_Button" GUID="{5A6C30F2-2944-40B2-A4D9-1A142FBE1444}" DurationType="OneShot" DurationMin="0.42941666" DurationMax="0.42941666">
+					<MediaRefs>
+						<MediaRef Id="807290476"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{D0D2FA77-7BF4-13D4-A9FA-6617CDC82671}</FileHash>
+</SoundBanksInfo>

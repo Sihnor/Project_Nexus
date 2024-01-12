@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "1955951874",
+    "Type": "Event",
+    "GUID": "{D09020C2-8A1F-43E3-84A6-67EB0B1E108E}",
+    "Language": "SFX",
+    "Hash": "{F512F3E1-F33B-BAD4-C96E-A9003BC564A8}",
+    "ObjectPath": "Play_TestBeep",
+    "ShortName": "Play_TestBeep",
+    "Path": "Event/Play_TestBeep.bnk",
+    "Media": [
+     {
+      "Id": "759261552",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "TestFiles\\sfx_test_beep_short.wav",
+      "Path": "Media/759261552.wem",
+      "CachePath": "SFX/TestFiles/sfx_test_beep_short_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1955951874",
+      "Name": "Play_TestBeep",
+      "ObjectPath": "\\Events\\TestEvents\\Play_TestBeep",
+      "GUID": "{D09020C2-8A1F-43E3-84A6-67EB0B1E108E}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.07419501",
+      "DurationMax": "0.07419501",
+      "MediaRefs": [
+       {
+        "Id": "759261552"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{EC77EFBA-1DF0-17D5-1598-DB34015CD136}"
+ }
+}

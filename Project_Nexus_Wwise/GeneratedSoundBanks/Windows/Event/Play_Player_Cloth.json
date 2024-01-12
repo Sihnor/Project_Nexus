@@ -1,0 +1,70 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "1830121012",
+    "Type": "Event",
+    "GUID": "{AAC9A511-42FF-4C09-9324-E39E4DA787AC}",
+    "Language": "SFX",
+    "Hash": "{2DCE8770-B355-2454-084A-A5EF7BB34B80}",
+    "ObjectPath": "Play_Player_Cloth",
+    "ShortName": "Play_Player_Cloth",
+    "Path": "Event/Play_Player_Cloth.bnk",
+    "Media": [
+     {
+      "Id": "220455491",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_loop_03.wav",
+      "Path": "Media/220455491.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_loop_03_D79FB2B7.wem"
+     },
+     {
+      "Id": "513187626",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_loop_02.wav",
+      "Path": "Media/513187626.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_loop_02_D79FB2B7.wem"
+     },
+     {
+      "Id": "717159586",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_loop_01.wav",
+      "Path": "Media/717159586.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_loop_01_D79FB2B7.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1830121012",
+      "Name": "Play_Player_Cloth",
+      "ObjectPath": "\\Events\\Player\\PlayerLocomotion\\Play_Player_Cloth",
+      "GUID": "{AAC9A511-42FF-4C09-9324-E39E4DA787AC}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "220455491"
+       },
+       {
+        "Id": "513187626"
+       },
+       {
+        "Id": "717159586"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{801FE735-E137-D77D-85B3-0A79B58E79C8}"
+ }
+}

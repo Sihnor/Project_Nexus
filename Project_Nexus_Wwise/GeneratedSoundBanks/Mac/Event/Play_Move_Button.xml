@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="2963316176" Type="Event" GUID="{E001864B-1F09-432D-9769-CAA8112B432A}" Language="SFX" Hash="{E564DEF2-9B7B-82FA-5EDD-F3AE0B64C4D0}">
+			<ObjectPath>Play_Move_Button</ObjectPath>
+			<ShortName>Play_Move_Button</ShortName>
+			<Path>Event/Play_Move_Button.bnk</Path>
+			<Media>
+				<File Id="888749076" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_menu_move.wav</ShortName>
+					<Path>Media/888749076.wem</Path>
+					<CachePath>SFX/sfx_menu_move_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2963316176" Name="Play_Move_Button" ObjectPath="\Events\UI\Play_Move_Button" GUID="{E001864B-1F09-432D-9769-CAA8112B432A}" DurationType="OneShot" DurationMin="0.14860417" DurationMax="0.14860417">
+					<MediaRefs>
+						<MediaRef Id="888749076"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{77BB1185-9953-09A1-4E7F-C58969BA6679}</FileHash>
+</SoundBanksInfo>

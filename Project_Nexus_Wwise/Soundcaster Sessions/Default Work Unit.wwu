@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{800DADDB-7E46-409B-A780-5C4CBCF77A49}" SchemaVersion="110">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{800DADDB-7E46-409B-A780-5C4CBCF77A49}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{496E7BA1-0474-45E8-8576-BC5D17A72873}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Player_Cloth" ID="{AAC9A511-42FF-4C09-9324-E39E4DA787AC}" WorkUnitID="{1B758815-EC6C-4816-9AC1-38ECF233BB07}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Player_Cloth" ID="{74313079-6B9A-47A5-A030-881C27AB662E}" WorkUnitID="{1B758815-EC6C-4816-9AC1-38ECF233BB07}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Concrete" ID="{E812C4B3-3DB5-42FD-9C23-3A9B3A798CE7}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="New Soundcaster Session_01" ID="{5C9C3097-E0B7-4E5D-9AAA-940C2E8F7D64}">
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Concrete" ID="{E812C4B3-3DB5-42FD-9C23-3A9B3A798CE7}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

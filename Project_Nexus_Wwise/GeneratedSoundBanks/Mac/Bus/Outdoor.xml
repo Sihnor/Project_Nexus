@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="144697359" Type="Bus" GUID="{63E5214B-7ED3-4AD2-998D-C05ECC909F3A}" Language="SFX" Hash="{4C2D4338-445A-B4CD-A527-C8B3729F7C32}">
+			<ObjectPath>Outdoor</ObjectPath>
+			<ShortName>Outdoor</ShortName>
+			<Path>Bus/Outdoor.bnk</Path>
+			<AuxBusses>
+				<AuxBus Id="144697359" Name="Outdoor" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\Outdoor" GUID="{63E5214B-7ED3-4AD2-998D-C05ECC909F3A}">
+					<AuxBusRefs>
+						<AuxBusRef Id="3545700988" Name="Reverbs" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs" GUID="{6BE3BED4-0EDC-4674-80E4-B77F6F0EDD9B}"/>
+					</AuxBusRefs>
+				</AuxBus>
+			</AuxBusses>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{81D70AE1-49BF-C25E-745A-C81E98F521D4}</FileHash>
+</SoundBanksInfo>

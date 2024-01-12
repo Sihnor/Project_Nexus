@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0A39D232-7C31-4FD2-8E4E-26A8E3E5EA62}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Ambience" ID="{0A39D232-7C31-4FD2-8E4E-26A8E3E5EA62}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Ambi_Start" ID="{94E2900C-95E9-4512-81AE-22994C942721}">
+					<ChildrenList>
+						<Action Name="" ID="{026EA87C-3A65-426D-AF41-702A942DA9D9}" ShortID="946745232">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience_test_2" ID="{F486C71A-44CE-4D0B-909C-7985FF7A1682}" WorkUnitID="{280C661E-8D38-45E4-A69C-E27294EBCD77}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Ambi_Stop" ID="{0CC81BF0-10CA-47AF-B55E-1EA9838D45AF}">
+					<ChildrenList>
+						<Action Name="" ID="{F480928D-36B4-47BD-8C5F-A2159242261C}" ShortID="379954896">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience_test_2" ID="{F486C71A-44CE-4D0B-909C-7985FF7A1682}" WorkUnitID="{280C661E-8D38-45E4-A69C-E27294EBCD77}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="2092733163" Type="Event" GUID="{82FCA46E-6E59-4873-9785-CC8165F421C1}" Language="SFX" Hash="{483DACAC-6E9A-8E69-43D7-50D98BF82F54}">
+			<ObjectPath>Play_Settings_Slider</ObjectPath>
+			<ShortName>Play_Settings_Slider</ShortName>
+			<Path>Event/Play_Settings_Slider.bnk</Path>
+			<Media>
+				<File Id="765111185" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_menu_settings_slider.wav</ShortName>
+					<Path>Media/765111185.wem</Path>
+					<CachePath>SFX/sfx_menu_settings_slider_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2092733163" Name="Play_Settings_Slider" ObjectPath="\Events\UI\Play_Settings_Slider" GUID="{82FCA46E-6E59-4873-9785-CC8165F421C1}" DurationType="OneShot" DurationMin="0.34983334" DurationMax="0.34983334">
+					<MediaRefs>
+						<MediaRef Id="765111185"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{892A1350-CE2B-40EC-ECE4-C3FF9A98ED73}</FileHash>
+</SoundBanksInfo>
