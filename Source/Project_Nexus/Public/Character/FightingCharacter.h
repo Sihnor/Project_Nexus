@@ -11,6 +11,7 @@
 class UInputMappingContext;
 class UInputAction;
 class UCurveFloat;
+class AHitBox;
 
 UCLASS()
 class PROJECT_NEXUS_API AFightingCharacter : public ACharacter
@@ -68,8 +69,19 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
         UTimelineComponent* TimelineComp;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitboxs")
-		AActor* Hurtbox;	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hurtboxes")
+		AActor* Hurtbox;
+
+	//Simple Hurtbox Array
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hurtboxes")
+		TArray<AHitBox*> SimpleHurtboxArray;
+
+	//Complex Hurtbox Array
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hurtboxes")
+		TArray<UStaticMeshComponent*> ComplexHurtboxArray;	
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hurtboxes")
+    	bool bUsingComplexHurtboxes;
 
 	//Delegate signature for the function which will handle our Finished event.
 	

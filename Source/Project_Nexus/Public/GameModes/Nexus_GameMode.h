@@ -21,6 +21,7 @@ class PROJECT_NEXUS_API ANexus_GameMode : public AGameMode
 public:
 	virtual void BeginPlay() override;
 	virtual void StartMatch() override;
+	virtual void EndMatch() override;
 	
 	void CountDown();
 
@@ -28,7 +29,28 @@ public:
 
 	TObjectPtr<class ANexus_GameState> GameState;
 
-	void CheckIfDeath(EPlayerEnum Player, float DamageValue);
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable)
+	void OnStartMatch();
+	virtual void OnStartMatch_Implementation();
+
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable)
+	void OnEndMatch();
+	virtual void OnEndMatch_Implementation();
+	
+	UFUNCTION(BlueprintNativeEvent)
+	void UpdateHealthBar(EPlayerEnum HitEnemy, float DamageValue);
+	virtual void UpdateHealthBar_Implementation(EPlayerEnum HitEnemy, float DamageValue);
+
+	UFUNCTION(BlueprintNativeEvent)
+	void OnPlayerIsDead(EPlayerEnum Player);
+	virtual void OnPlayerIsDead_Implementation(EPlayerEnum Player);
+	
+	void PlayerIsDead(EPlayerEnum Player);
+
+	UFUNCTION(BlueprintNativeEvent)
+	void OnCountDown(int RemainingTime);
+	virtual void OnCountDown_Implementation(int RemainingTime);
+
 
 private:
 	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, meta=(AllowPrivateAccess = "true"))
@@ -40,6 +62,20 @@ private:
 	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, meta=(AllowPrivateAccess = "true"))
 	int32 WinCondition;
 
-	UPROPERTY()
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, meta=(AllowPrivateAccess = "true"))
 	FTimerHandle TH_CountDown;
+
+	UPROPERTY(BlueprintReadOnly, meta=(AllowPrivateAccess = "true"))
+	int CurrentRound;
+
+	UPROPERTY(BlueprintReadOnly, meta=(AllowPrivateAccess = "true"))
+	int PlayerOneRoundWon;
+	UPROPERTY(BlueprintReadOnly, meta=(AllowPrivateAccess = "true"))
+	int PlayerTwoRoundWon;
+
+	UFUNCTION(BlueprintCallable, BlueprintPure, meta=(AllowPrivateAccess = "true"))
+	bool CheckIfGameIsWon();
+	
 };
+
+

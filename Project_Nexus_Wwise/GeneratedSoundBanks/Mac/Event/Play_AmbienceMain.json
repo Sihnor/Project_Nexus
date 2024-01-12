@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "903081441",
+    "Type": "Event",
+    "GUID": "{A5135C10-7237-4528-BB2B-2CF6187A56A9}",
+    "Language": "SFX",
+    "Hash": "{E0D24ED7-A40A-03CB-741F-094FBD675D12}",
+    "ObjectPath": "Play_AmbienceMain",
+    "ShortName": "Play_AmbienceMain",
+    "Path": "Event/Play_AmbienceMain.bnk",
+    "Events": [
+     {
+      "Id": "903081441",
+      "Name": "Play_AmbienceMain",
+      "ObjectPath": "\\Events\\Ambience_sani\\Play_AmbienceMain",
+      "GUID": "{A5135C10-7237-4528-BB2B-2CF6187A56A9}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{99608E7E-E640-0428-8616-26A53411A644}"
+ }
+}

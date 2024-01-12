@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="2313976826" Type="Event" GUID="{74313079-6B9A-47A5-A030-881C27AB662E}" Language="SFX" Hash="{ABFC1A12-62C0-36D3-30C4-FCA0B8F23E0D}">
+			<ObjectPath>Stop_Player_Cloth</ObjectPath>
+			<ShortName>Stop_Player_Cloth</ShortName>
+			<Path>Event/Stop_Player_Cloth.bnk</Path>
+			<Events>
+				<Event Id="2313976826" Name="Stop_Player_Cloth" ObjectPath="\Events\Player\PlayerLocomotion\Stop_Player_Cloth" GUID="{74313079-6B9A-47A5-A030-881C27AB662E}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{406DE9EC-EC5A-58CC-2301-03A93B9FBB08}</FileHash>
+</SoundBanksInfo>

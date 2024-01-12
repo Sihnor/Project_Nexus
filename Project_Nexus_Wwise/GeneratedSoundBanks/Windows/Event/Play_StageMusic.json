@@ -1,0 +1,46 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "1362654913",
+    "Type": "Event",
+    "GUID": "{22E52904-E216-485D-A917-E19F5A57449D}",
+    "Language": "SFX",
+    "Hash": "{B0BB0C77-98F6-A7CA-A354-0855C5459964}",
+    "ObjectPath": "Play_StageMusic",
+    "ShortName": "Play_StageMusic",
+    "Path": "Event/Play_StageMusic.bnk",
+    "Media": [
+     {
+      "Id": "595978771",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Nexus 2_V2.wav",
+      "Path": "Media/595978771.wem",
+      "CachePath": "SFX/Nexus 2_V2_B3FA1263.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1362654913",
+      "Name": "Play_StageMusic",
+      "ObjectPath": "\\Events\\Music\\Play_StageMusic",
+      "GUID": "{22E52904-E216-485D-A917-E19F5A57449D}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "595978771"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{AE68A047-AF56-C6A5-4CA6-C9F5A7570E6E}"
+ }
+}

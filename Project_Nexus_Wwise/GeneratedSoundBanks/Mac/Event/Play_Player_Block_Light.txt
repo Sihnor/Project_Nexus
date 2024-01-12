@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1376358074	Play_Player_Block_Light			\Player\PlayerCombat\Play_Player_Block_Light	
+

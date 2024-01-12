@@ -34,6 +34,7 @@ AFightingCharacter::AFightingCharacter()
 
 	OtherCharacter = nullptr;
 	Hurtbox= nullptr;
+	bUsingComplexHurtboxes = false;
 
 }
 

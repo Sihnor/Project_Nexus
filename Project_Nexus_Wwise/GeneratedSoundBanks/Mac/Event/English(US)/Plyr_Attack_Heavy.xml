@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="2644649371" Type="Event" GUID="{99EBE9DA-2D4B-4E25-A1FD-CC1C387CC0C5}" Language="English(US)" Hash="{382E1DA7-2745-5404-4402-59143E327218}">
+			<ObjectPath>Plyr_Attack_Heavy</ObjectPath>
+			<ShortName>Plyr_Attack_Heavy</ShortName>
+			<Path>Event/English(US)/Plyr_Attack_Heavy.bnk</Path>
+			<Media>
+				<File Id="163125014" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>Male_V_Heavy_Kick_01-33.wav</ShortName>
+					<Path>Media/English(US)/163125014.wem</Path>
+					<CachePath>Voices/English(US)/Male_V_Heavy_Kick_01-33_A979C1F1.wem</CachePath>
+				</File>
+				<File Id="301906351" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>Male_V_Heavy_Kick_01-96.wav</ShortName>
+					<Path>Media/English(US)/301906351.wem</Path>
+					<CachePath>Voices/English(US)/Male_V_Heavy_Kick_01-96_8677B3D8.wem</CachePath>
+				</File>
+				<File Id="430777336" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>Male_V_Heavy_Kick_01-49.wav</ShortName>
+					<Path>Media/English(US)/430777336.wem</Path>
+					<CachePath>Voices/English(US)/Male_V_Heavy_Kick_01-49_836B4CDF.wem</CachePath>
+				</File>
+				<File Id="556005930" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>Male_V_Heavy_Kick_01-24.wav</ShortName>
+					<Path>Media/English(US)/556005930.wem</Path>
+					<CachePath>Voices/English(US)/Male_V_Heavy_Kick_01-24_42A45A80.wem</CachePath>
+				</File>
+				<File Id="633489352" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>Male_V_Heavy_Kick_01-60.wav</ShortName>
+					<Path>Media/English(US)/633489352.wem</Path>
+					<CachePath>Voices/English(US)/Male_V_Heavy_Kick_01-60_3689EA76.wem</CachePath>
+				</File>
+				<File Id="986590399" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>Male_V_Heavy_Kick_01-52.wav</ShortName>
+					<Path>Media/English(US)/986590399.wem</Path>
+					<CachePath>Voices/English(US)/Male_V_Heavy_Kick_01-52_89DB2E65.wem</CachePath>
+				</File>
+				<File Id="1070016745" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>Male_V_Heavy_Kick_01-64.wav</ShortName>
+					<Path>Media/English(US)/1070016745.wem</Path>
+					<CachePath>Voices/English(US)/Male_V_Heavy_Kick_01-64_00437C27.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2644649371" Name="Plyr_Attack_Heavy" ObjectPath="\Events\Player_Voices\Plyr_Attack_Heavy" GUID="{99EBE9DA-2D4B-4E25-A1FD-CC1C387CC0C5}" DurationType="OneShot" DurationMin="0.28671977" DurationMax="0.80051285">
+					<MediaRefs>
+						<MediaRef Id="163125014"/>
+						<MediaRef Id="301906351"/>
+						<MediaRef Id="430777336"/>
+						<MediaRef Id="556005930"/>
+						<MediaRef Id="633489352"/>
+						<MediaRef Id="986590399"/>
+						<MediaRef Id="1070016745"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{80647CAE-512A-DD8D-13C5-4C00471842CA}</FileHash>
+</SoundBanksInfo>

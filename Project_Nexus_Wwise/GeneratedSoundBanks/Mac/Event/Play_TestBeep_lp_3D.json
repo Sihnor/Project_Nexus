@@ -1,0 +1,47 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "161393517",
+    "Type": "Event",
+    "GUID": "{A854F97E-93DC-455A-B406-D6C171EA282D}",
+    "Language": "SFX",
+    "Hash": "{87F63879-5229-B51B-87A1-44B8F666A600}",
+    "ObjectPath": "Play_TestBeep_lp_3D",
+    "ShortName": "Play_TestBeep_lp_3D",
+    "Path": "Event/Play_TestBeep_lp_3D.bnk",
+    "Media": [
+     {
+      "Id": "572018551",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "TestFiles\\sfx_test_beep_long.wav",
+      "Path": "Media/572018551.wem",
+      "CachePath": "SFX/TestFiles/sfx_test_beep_long_D79FB2B7.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "161393517",
+      "Name": "Play_TestBeep_lp_3D",
+      "ObjectPath": "\\Events\\TestEvents\\Play_TestBeep_lp_3D",
+      "GUID": "{A854F97E-93DC-455A-B406-D6C171EA282D}",
+      "MaxAttenuation": "50",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "572018551"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{48E9AB23-9BAB-E240-9995-3EB08CC9AE18}"
+ }
+}

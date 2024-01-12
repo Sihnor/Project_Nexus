@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "2518864784",
+    "Type": "Event",
+    "GUID": "{5B16E403-94D2-446D-9060-3E385BA132ED}",
+    "Language": "SFX",
+    "Hash": "{F3F03F35-3D5C-DE65-78F5-165DBF51DAD8}",
+    "ObjectPath": "Play_Select_Fighter",
+    "ShortName": "Play_Select_Fighter",
+    "Path": "Event/Play_Select_Fighter.bnk",
+    "Media": [
+     {
+      "Id": "908855246",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_menu_select_fighter.wav",
+      "Path": "Media/908855246.wem",
+      "CachePath": "SFX/sfx_menu_select_fighter_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2518864784",
+      "Name": "Play_Select_Fighter",
+      "ObjectPath": "\\Events\\UI\\Play_Select_Fighter",
+      "GUID": "{5B16E403-94D2-446D-9060-3E385BA132ED}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.9851458",
+      "DurationMax": "0.9851458",
+      "MediaRefs": [
+       {
+        "Id": "908855246"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{83E1DEDA-6878-0082-6DC8-024D48FB6273}"
+ }
+}

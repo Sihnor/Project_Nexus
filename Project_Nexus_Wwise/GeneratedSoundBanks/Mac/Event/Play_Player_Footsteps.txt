@@ -1,0 +1,14 @@
+Event	ID	Name			Wwise Object Path	Notes
+	98439365	Play_Player_Footsteps			\Player\PlayerLocomotion\Play_Player_Footsteps	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1044534455	GroundMaterialSwitch			\Default Work Unit\GroundMaterialSwitch	
+
+Switch	ID	Name	Switch Group			Notes
+	841620460	Concrete	GroundMaterialSwitch			
+	1216965916	Stone	GroundMaterialSwitch			
+	2003927601	Puddle	GroundMaterialSwitch			
+	2185786256	Gravel	GroundMaterialSwitch			
+	2195636714	Dirt	GroundMaterialSwitch			
+	2654748154	Water	GroundMaterialSwitch			
+
