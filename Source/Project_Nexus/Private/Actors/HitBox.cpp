@@ -17,6 +17,12 @@ AHitBox::AHitBox()
 
 	static ConstructorHelpers::FObjectFinder<UStaticMesh>CubeMeshAsset(TEXT("StaticMesh'/Engine/BasicShapes/Cube.Cube'"));
 	HitboxDisplay->SetStaticMesh(CubeMeshAsset.Object);
+
+	HitboxDamage = 0.f;
+	PushbackDsitance = 0.f;
+	LaunchDistance = 0.f;
+
+	ShouldAttach = false;
 }
 
 // Called when the game starts or when spawned
