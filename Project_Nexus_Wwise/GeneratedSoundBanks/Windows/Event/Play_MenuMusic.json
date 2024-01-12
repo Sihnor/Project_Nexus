@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "Nexus-Menu.wav",
       "Path": "Media/68506720.wem",
-      "CachePath": "SFX/Nexus-Menu_26FE13D1.wem"
+      "CachePath": "SFX/Nexus-Menu_E48F3E35.wem"
      }
     ],
     "Events": [
@@ -41,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{DD112F2A-9673-BE41-C235-E41CFB544116}"
+  "FileHash": "{83DCC897-CF74-9E59-B01C-0CFC7D95A9CD}"
  }
 }
