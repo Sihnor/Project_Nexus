@@ -37,11 +37,14 @@ public:
 	void OnEndMatch();
 	virtual void OnEndMatch_Implementation();
 	
-
 	UFUNCTION(BlueprintNativeEvent)
 	void UpdateHealthBar(EPlayerEnum HitEnemy, float DamageValue);
 	virtual void UpdateHealthBar_Implementation(EPlayerEnum HitEnemy, float DamageValue);
 
+	UFUNCTION(BlueprintNativeEvent)
+	void OnPlayerIsDead(EPlayerEnum Player);
+	virtual void OnPlayerIsDead_Implementation(EPlayerEnum Player);
+	
 	void PlayerIsDead(EPlayerEnum Player);
 
 	UFUNCTION(BlueprintNativeEvent)
@@ -70,6 +73,7 @@ private:
 	UPROPERTY(BlueprintReadOnly, meta=(AllowPrivateAccess = "true"))
 	int PlayerTwoRoundWon;
 
+	UFUNCTION(BlueprintCallable, BlueprintPure, meta=(AllowPrivateAccess = "true"))
 	bool CheckIfGameIsWon();
 	
 };

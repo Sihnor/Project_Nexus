@@ -46,22 +46,32 @@ void ANexus_GameState::DecrementRemainingTime()
 }
 
 void ANexus_GameState::RefreshHealth(EPlayerEnum HitEnemy, float DamageValue)
-{	
+{
+	if (DamageValue <= 0.0f)
+	{
+		return;
+	}
+	
 	if (HitEnemy == EPlayerEnum::PlayerOne)
 	{
 		this->PlayerOne.CurrentPoint -= DamageValue;
 		this->PlayerGotDamage.Broadcast(HitEnemy, this->PlayerOne.CurrentPoint);
-		
-		if (!(this->PlayerOne.CurrentPoint <= 0.0f)) return;
+
+		if (this->PlayerOne.CurrentPoint > 0.0f) return;
 		this->PlayerReachedZeroHealth.Broadcast(HitEnemy);
 	}
 
 	if (HitEnemy == EPlayerEnum::PlayerTwo)
 	{
-		this->PlayerTwo.CurrentPoint -= DamageValue;
+		this->PlayerTwo.CurrentPoint -= DamageValue;			
 		this->PlayerGotDamage.Broadcast(HitEnemy, this->PlayerTwo.CurrentPoint);
-		
-		if (!(this->PlayerTwo.CurrentPoint <= 0.0f)) return;
+
+		if (this->PlayerTwo.CurrentPoint > 0.0f) return;
 		this->PlayerReachedZeroHealth.Broadcast(HitEnemy);
 	}
+	
+	
+
+	
+	
 }

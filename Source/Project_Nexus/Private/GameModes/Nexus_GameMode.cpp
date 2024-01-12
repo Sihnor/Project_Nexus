@@ -104,6 +104,13 @@ void ANexus_GameMode::CountDown()
 
 void ANexus_GameMode::UpdateHealthBar_Implementation(EPlayerEnum HitEnemy, float DamageValue)
 {
+	if (GEngine) {
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("->PlayerTwo.CurrentPoint %f"), DamageValue));
+	}
+}
+
+void ANexus_GameMode::OnPlayerIsDead_Implementation(EPlayerEnum Player)
+{
 }
 
 void ANexus_GameMode::PlayerIsDead(EPlayerEnum Player)
@@ -120,21 +127,23 @@ void ANexus_GameMode::PlayerIsDead(EPlayerEnum Player)
 		break;
 	}
 
-	if (!this->CheckIfGameIsWon())
-	{
-		this->CurrentRound++;
-		this->EndMatch();
-		this->StartMatch();
-		return;
-	}
+	OnPlayerIsDead(Player);
 
-	FString MapName = "UserInterfaceLevel";
-
-	UGameplayStatics::OpenLevel(this, *MapName, true);
-
-	if (GEngine) {
-		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("WAS LOS %d")));
-	}
+	//if (!this->CheckIfGameIsWon())
+	//{
+	//	this->CurrentRound++;
+	//	this->EndMatch();
+	//	this->StartMatch();
+	//	return;
+	//}
+	//
+	//FString MapName = "UserInterfaceLevel";
+	//
+	//UGameplayStatics::OpenLevel(this, *MapName, true);
+	//
+	//if (GEngine) {
+	//	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("WAS LOS %d")));
+	//}
 }
 
 void ANexus_GameMode::OnCountDown_Implementation(int RemainingTime)
