@@ -1,0 +1,1461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="98439365" Type="Event" GUID="{27E85706-E807-4F1E-A42D-5B83ED9D03A3}" Language="SFX" Hash="{5BF56D77-975D-81A5-EDC5-FA3D56CE84C1}">
+			<ObjectPath>Play_Player_Footsteps</ObjectPath>
+			<ShortName>Play_Player_Footsteps</ShortName>
+			<Path>Event/Play_Player_Footsteps.bnk</Path>
+			<Media>
+				<File Id="29994990" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_footsteps_puddle__01.wav</ShortName>
+					<Path>Media/29994990.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_footsteps_puddle__01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="149012600" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_footsteps_puddle__04.wav</ShortName>
+					<Path>Media/149012600.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_footsteps_puddle__04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="285670170" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_footsteps_concrete__05.wav</ShortName>
+					<Path>Media/285670170.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_footsteps_concrete__05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="381863405" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_footsteps_concrete__01.wav</ShortName>
+					<Path>Media/381863405.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_footsteps_concrete__01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="466432269" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_footsteps_puddle__03.wav</ShortName>
+					<Path>Media/466432269.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_footsteps_puddle__03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="473753266" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_footsteps_puddle__02.wav</ShortName>
+					<Path>Media/473753266.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_footsteps_puddle__02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="549571819" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_footsteps_puddle__06.wav</ShortName>
+					<Path>Media/549571819.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_footsteps_puddle__06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="620540260" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_footsteps_puddle__05.wav</ShortName>
+					<Path>Media/620540260.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_footsteps_puddle__05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="753767965" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_footsteps_concrete__03.wav</ShortName>
+					<Path>Media/753767965.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_footsteps_concrete__03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="914402793" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_footsteps_concrete__06.wav</ShortName>
+					<Path>Media/914402793.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_footsteps_concrete__06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="944425952" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_footsteps_concrete__02.wav</ShortName>
+					<Path>Media/944425952.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_footsteps_concrete__02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="983701975" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_footsteps_concrete__04.wav</ShortName>
+					<Path>Media/983701975.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_footsteps_concrete__04_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="98439365" Name="Play_Player_Footsteps" ObjectPath="\Events\Player\PlayerLocomotion\Play_Player_Footsteps" GUID="{27E85706-E807-4F1E-A42D-5B83ED9D03A3}" DurationType="OneShot" DurationMin="0.17385939" DurationMax="0.451485">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1044534455" Id="2003927601" GUID="{1EA3450A-CCE0-4188-A244-C7704C707E90}"/>
+							<MediaRefs>
+								<MediaRef Id="29994990"/>
+								<MediaRef Id="149012600"/>
+								<MediaRef Id="466432269"/>
+								<MediaRef Id="473753266"/>
+								<MediaRef Id="549571819"/>
+								<MediaRef Id="620540260"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1044534455" Id="841620460" GUID="{E812C4B3-3DB5-42FD-9C23-3A9B3A798CE7}" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="285670170"/>
+								<MediaRef Id="381863405"/>
+								<MediaRef Id="753767965"/>
+								<MediaRef Id="914402793"/>
+								<MediaRef Id="944425952"/>
+								<MediaRef Id="983701975"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="1044534455" Name="GroundMaterialSwitch" ObjectPath="\Switches\Default Work Unit\GroundMaterialSwitch" GUID="{837C1AB4-47B2-4EFB-B32C-0C393B49C2F7}">
+					<Switches>
+						<Switch Id="841620460" Name="Concrete" ObjectPath="\Switches\Default Work Unit\GroundMaterialSwitch\Concrete" GUID="{E812C4B3-3DB5-42FD-9C23-3A9B3A798CE7}"/>
+						<Switch Id="1216965916" Name="Stone" ObjectPath="\Switches\Default Work Unit\GroundMaterialSwitch\Stone" GUID="{3C15D331-3AD8-4BFA-BA9A-E01D9D580F12}"/>
+						<Switch Id="2003927601" Name="Puddle" ObjectPath="\Switches\Default Work Unit\GroundMaterialSwitch\Puddle" GUID="{1EA3450A-CCE0-4188-A244-C7704C707E90}"/>
+						<Switch Id="2185786256" Name="Gravel" ObjectPath="\Switches\Default Work Unit\GroundMaterialSwitch\Gravel" GUID="{9464961A-39D2-4071-82AB-1C7E868448AA}"/>
+						<Switch Id="2195636714" Name="Dirt" ObjectPath="\Switches\Default Work Unit\GroundMaterialSwitch\Dirt" GUID="{8BBE48CE-F73E-4AA9-B1FA-E4F009E5DEBD}"/>
+						<Switch Id="2654748154" Name="Water" ObjectPath="\Switches\Default Work Unit\GroundMaterialSwitch\Water" GUID="{87606646-0DDD-4539-8AC3-7DD81A1DC005}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+		<SoundBank Id="144697359" Type="Bus" GUID="{63E5214B-7ED3-4AD2-998D-C05ECC909F3A}" Language="SFX" Hash="{4C2D4338-445A-B4CD-A527-C8B3729F7C32}">
+			<ObjectPath>Outdoor</ObjectPath>
+			<ShortName>Outdoor</ShortName>
+			<Path>Bus/Outdoor.bnk</Path>
+			<AuxBusses>
+				<AuxBus Id="144697359" Name="Outdoor" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\Outdoor" GUID="{63E5214B-7ED3-4AD2-998D-C05ECC909F3A}">
+					<AuxBusRefs>
+						<AuxBusRef Id="3545700988" Name="Reverbs" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs" GUID="{6BE3BED4-0EDC-4674-80E4-B77F6F0EDD9B}"/>
+					</AuxBusRefs>
+				</AuxBus>
+			</AuxBusses>
+		</SoundBank>
+		<SoundBank Id="161393517" Type="Event" GUID="{A854F97E-93DC-455A-B406-D6C171EA282D}" Language="SFX" Hash="{87F63879-5229-B51B-87A1-44B8F666A600}">
+			<ObjectPath>Play_TestBeep_lp_3D</ObjectPath>
+			<ShortName>Play_TestBeep_lp_3D</ShortName>
+			<Path>Event/Play_TestBeep_lp_3D.bnk</Path>
+			<Media>
+				<File Id="572018551" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>TestFiles\sfx_test_beep_long.wav</ShortName>
+					<Path>Media/572018551.wem</Path>
+					<CachePath>SFX/TestFiles/sfx_test_beep_long_D79FB2B7.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="161393517" Name="Play_TestBeep_lp_3D" ObjectPath="\Events\TestEvents\Play_TestBeep_lp_3D" GUID="{A854F97E-93DC-455A-B406-D6C171EA282D}" MaxAttenuation="50" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="572018551"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="182415898" Type="Event" GUID="{B62D6C1F-687C-48B5-81B8-7924344A1746}" Language="SFX" Hash="{1B443DC7-4A74-B0F9-33C5-EC3CD56C871C}">
+			<ObjectPath>Play_Back_Button</ObjectPath>
+			<ShortName>Play_Back_Button</ShortName>
+			<Path>Event/Play_Back_Button.bnk</Path>
+			<Media>
+				<File Id="892179397" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_menu_button_back.wav</ShortName>
+					<Path>Media/892179397.wem</Path>
+					<CachePath>SFX/sfx_menu_button_back_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="182415898" Name="Play_Back_Button" ObjectPath="\Events\UI\Play_Back_Button" GUID="{B62D6C1F-687C-48B5-81B8-7924344A1746}" DurationType="OneShot" DurationMin="0.5339792" DurationMax="0.5339792">
+					<MediaRefs>
+						<MediaRef Id="892179397"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="562256996" Type="Event" GUID="{237BD721-40C9-4B31-BDC1-78F59500DF4D}" Language="SFX" Hash="{D53DC19D-56E4-A53D-253F-924A6C6ABF0B}">
+			<ObjectPath>Play_Player_Jump</ObjectPath>
+			<ShortName>Play_Player_Jump</ShortName>
+			<Path>Event/Play_Player_Jump.bnk</Path>
+			<Media>
+				<File Id="44536699" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_jump__04.wav</ShortName>
+					<Path>Media/44536699.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_jump__04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="169644528" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_jump__05.wav</ShortName>
+					<Path>Media/169644528.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_jump__05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="262497759" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_jump__02.wav</ShortName>
+					<Path>Media/262497759.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_jump__02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="567642391" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_jump__06.wav</ShortName>
+					<Path>Media/567642391.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_jump__06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="615857249" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_jump__03.wav</ShortName>
+					<Path>Media/615857249.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_jump__03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="724190295" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_jump__01.wav</ShortName>
+					<Path>Media/724190295.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_jump__01_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="562256996" Name="Play_Player_Jump" ObjectPath="\Events\Player\PlayerLocomotion\Play_Player_Jump" GUID="{237BD721-40C9-4B31-BDC1-78F59500DF4D}" DurationType="OneShot" DurationMin="0.33138883" DurationMax="0.52998096">
+					<MediaRefs>
+						<MediaRef Id="44536699"/>
+						<MediaRef Id="169644528"/>
+						<MediaRef Id="262497759"/>
+						<MediaRef Id="567642391"/>
+						<MediaRef Id="615857249"/>
+						<MediaRef Id="724190295"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="577991234" Type="Event" GUID="{26AB0E9E-6FC9-4D4C-98BC-CDD120436275}" Language="English(US)" Hash="{67B5E9D0-3A90-7E69-7ABE-BAC60F822703}">
+			<ObjectPath>Plyr_Attack_Light</ObjectPath>
+			<ShortName>Plyr_Attack_Light</ShortName>
+			<Path>Event/English(US)/Plyr_Attack_Light.bnk</Path>
+			<Media>
+				<File Id="438478283" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>Male_V_Light_Punch_01-61.wav</ShortName>
+					<Path>Media/English(US)/438478283.wem</Path>
+					<CachePath>Voices/English(US)/Male_V_Light_Punch_01-61_4BC29963.wem</CachePath>
+				</File>
+				<File Id="500668444" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>Male_V_Light_Punch_01-14.wav</ShortName>
+					<Path>Media/English(US)/500668444.wem</Path>
+					<CachePath>Voices/English(US)/Male_V_Light_Punch_01-14_4C041960.wem</CachePath>
+				</File>
+				<File Id="919958799" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>Male_V_Light_Punch_01-77.wav</ShortName>
+					<Path>Media/English(US)/919958799.wem</Path>
+					<CachePath>Voices/English(US)/Male_V_Light_Punch_01-77_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1041453826" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>Male_V_Light_Punch_01-97.wav</ShortName>
+					<Path>Media/English(US)/1041453826.wem</Path>
+					<CachePath>Voices/English(US)/Male_V_Light_Punch_01-97_2340D8AA.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="577991234" Name="Plyr_Attack_Light" ObjectPath="\Events\Player_Voices\Plyr_Attack_Light" GUID="{26AB0E9E-6FC9-4D4C-98BC-CDD120436275}" DurationType="OneShot" DurationMin="0.20462652" DurationMax="0.47689202">
+					<MediaRefs>
+						<MediaRef Id="438478283"/>
+						<MediaRef Id="500668444"/>
+						<MediaRef Id="919958799"/>
+						<MediaRef Id="1041453826"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="597741315" Type="Event" GUID="{D209308F-B533-4A51-849A-30A2F7A262C4}" Language="English(US)" Hash="{5CEC6E0B-B7CD-9F55-7947-D05D325C59AB}">
+			<ObjectPath>Plyr_Movement_Jump</ObjectPath>
+			<ShortName>Plyr_Movement_Jump</ShortName>
+			<Path>Event/English(US)/Plyr_Movement_Jump.bnk</Path>
+			<Media>
+				<File Id="90036059" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>Mov_Jump_02-121.wav</ShortName>
+					<Path>Media/English(US)/90036059.wem</Path>
+					<CachePath>Voices/English(US)/Mov_Jump_02-121_7F20BEB0.wem</CachePath>
+				</File>
+				<File Id="204099209" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>Mov_Jump_01-08.wav</ShortName>
+					<Path>Media/English(US)/204099209.wem</Path>
+					<CachePath>Voices/English(US)/Mov_Jump_01-08_565C881F.wem</CachePath>
+				</File>
+				<File Id="318930592" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>Mov_Jump_02-28.wav</ShortName>
+					<Path>Media/English(US)/318930592.wem</Path>
+					<CachePath>Voices/English(US)/Mov_Jump_02-28_8BC23090.wem</CachePath>
+				</File>
+				<File Id="482099551" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>Mov_Jump_02-24.wav</ShortName>
+					<Path>Media/English(US)/482099551.wem</Path>
+					<CachePath>Voices/English(US)/Mov_Jump_02-24_93C6C239.wem</CachePath>
+				</File>
+				<File Id="487322753" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>Mov_Jump_01-50.wav</ShortName>
+					<Path>Media/English(US)/487322753.wem</Path>
+					<CachePath>Voices/English(US)/Mov_Jump_01-50_3DAF23D8.wem</CachePath>
+				</File>
+				<File Id="628149815" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>Mov_Jump_01-12.wav</ShortName>
+					<Path>Media/English(US)/628149815.wem</Path>
+					<CachePath>Voices/English(US)/Mov_Jump_01-12_EC4A5D54.wem</CachePath>
+				</File>
+				<File Id="869457211" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>Mov_Jump_02-96.wav</ShortName>
+					<Path>Media/English(US)/869457211.wem</Path>
+					<CachePath>Voices/English(US)/Mov_Jump_02-96_CEC159FB.wem</CachePath>
+				</File>
+				<File Id="934193837" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>Mov_Jump_01-67.wav</ShortName>
+					<Path>Media/English(US)/934193837.wem</Path>
+					<CachePath>Voices/English(US)/Mov_Jump_01-67_FBBCCF55.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="597741315" Name="Plyr_Movement_Jump" ObjectPath="\Events\Player_Voices\Plyr_Movement_Jump" GUID="{D209308F-B533-4A51-849A-30A2F7A262C4}" DurationType="OneShot" DurationMin="0.27573663" DurationMax="0.5884256">
+					<MediaRefs>
+						<MediaRef Id="90036059"/>
+						<MediaRef Id="204099209"/>
+						<MediaRef Id="318930592"/>
+						<MediaRef Id="482099551"/>
+						<MediaRef Id="487322753"/>
+						<MediaRef Id="628149815"/>
+						<MediaRef Id="869457211"/>
+						<MediaRef Id="934193837"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="606831743" Type="Event" GUID="{2C86464F-2577-4636-99EE-045C1778A0B0}" Language="SFX" Hash="{7AC866C3-80C2-5EB7-61E7-9DAC91E996A0}">
+			<ObjectPath>Play_Player_Bodyfall</ObjectPath>
+			<ShortName>Play_Player_Bodyfall</ShortName>
+			<Path>Event/Play_Player_Bodyfall.bnk</Path>
+			<Media>
+				<File Id="377947128" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_bodyfall_05.wav</ShortName>
+					<Path>Media/377947128.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_bodyfall_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="399584824" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_bodyfall_03.wav</ShortName>
+					<Path>Media/399584824.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_bodyfall_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="756064182" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_bodyfall_04.wav</ShortName>
+					<Path>Media/756064182.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_bodyfall_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="769452454" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_bodyfall_01.wav</ShortName>
+					<Path>Media/769452454.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_bodyfall_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="808568048" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_bodyfall_06.wav</ShortName>
+					<Path>Media/808568048.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_bodyfall_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="948080380" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_bodyfall_02.wav</ShortName>
+					<Path>Media/948080380.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_bodyfall_02_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="606831743" Name="Play_Player_Bodyfall" ObjectPath="\Events\Player\PlayerLocomotion\Play_Player_Bodyfall" GUID="{2C86464F-2577-4636-99EE-045C1778A0B0}" DurationType="OneShot" DurationMin="0.4156916" DurationMax="0.60136056">
+					<MediaRefs>
+						<MediaRef Id="377947128"/>
+						<MediaRef Id="399584824"/>
+						<MediaRef Id="756064182"/>
+						<MediaRef Id="769452454"/>
+						<MediaRef Id="808568048"/>
+						<MediaRef Id="948080380"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="725346841" Type="Event" GUID="{BD4FEB80-88A8-45D8-9FBF-7EF06D02BC15}" Language="SFX" Hash="{797021BB-91E1-83F7-CEF0-6A67ECFD568F}">
+			<ObjectPath>Play_Player_Landing</ObjectPath>
+			<ShortName>Play_Player_Landing</ShortName>
+			<Path>Event/Play_Player_Landing.bnk</Path>
+			<Media>
+				<File Id="606884774" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_landing__06.wav</ShortName>
+					<Path>Media/606884774.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_landing__06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="616693563" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_landing__02.wav</ShortName>
+					<Path>Media/616693563.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_landing__02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="653697011" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_landing__01.wav</ShortName>
+					<Path>Media/653697011.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_landing__01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="691248896" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_landing__05.wav</ShortName>
+					<Path>Media/691248896.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_landing__05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="774956098" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_landing__04.wav</ShortName>
+					<Path>Media/774956098.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_landing__04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="982992959" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_landing__03.wav</ShortName>
+					<Path>Media/982992959.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_landing__03_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="725346841" Name="Play_Player_Landing" ObjectPath="\Events\Player\PlayerLocomotion\Play_Player_Landing" GUID="{BD4FEB80-88A8-45D8-9FBF-7EF06D02BC15}" DurationType="OneShot" DurationMin="0.20616615" DurationMax="0.42318013">
+					<MediaRefs>
+						<MediaRef Id="606884774"/>
+						<MediaRef Id="616693563"/>
+						<MediaRef Id="653697011"/>
+						<MediaRef Id="691248896"/>
+						<MediaRef Id="774956098"/>
+						<MediaRef Id="982992959"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="858506084" Type="Event" GUID="{BB6429FE-6011-4472-9010-9CAF484600A7}" Language="SFX" Hash="{283A0480-5A07-BF7C-D167-B7C43B030ED9}">
+			<ObjectPath>Play_Settings_Select</ObjectPath>
+			<ShortName>Play_Settings_Select</ShortName>
+			<Path>Event/Play_Settings_Select.bnk</Path>
+			<Media>
+				<File Id="848092222" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_menu_settings_select.wav</ShortName>
+					<Path>Media/848092222.wem</Path>
+					<CachePath>SFX/sfx_menu_settings_select_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="858506084" Name="Play_Settings_Select" ObjectPath="\Events\UI\Play_Settings_Select" GUID="{BB6429FE-6011-4472-9010-9CAF484600A7}" DurationType="OneShot" DurationMin="0.1779375" DurationMax="0.1779375">
+					<MediaRefs>
+						<MediaRef Id="848092222"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="858964037" Type="Event" GUID="{5C14B9D2-5B11-44D1-9EAF-3D6225FA3912}" Language="SFX" Hash="{3C837870-C4B3-87EA-6959-C9A403E21A19}">
+			<ObjectPath>Play_TestBeep_lp</ObjectPath>
+			<ShortName>Play_TestBeep_lp</ShortName>
+			<Path>Event/Play_TestBeep_lp.bnk</Path>
+			<Media>
+				<File Id="572018551" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>TestFiles\sfx_test_beep_long.wav</ShortName>
+					<Path>Media/572018551.wem</Path>
+					<CachePath>SFX/TestFiles/sfx_test_beep_long_D79FB2B7.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="858964037" Name="Play_TestBeep_lp" ObjectPath="\Events\TestEvents\Play_TestBeep_lp" GUID="{5C14B9D2-5B11-44D1-9EAF-3D6225FA3912}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="572018551"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="880454473" Type="Event" GUID="{5A6C30F2-2944-40B2-A4D9-1A142FBE1444}" Language="SFX" Hash="{42B01F05-EF82-4EA4-3CDB-878A9DCEEEE8}">
+			<ObjectPath>Play_Select_Button</ObjectPath>
+			<ShortName>Play_Select_Button</ShortName>
+			<Path>Event/Play_Select_Button.bnk</Path>
+			<Media>
+				<File Id="807290476" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_menu_button_select.wav</ShortName>
+					<Path>Media/807290476.wem</Path>
+					<CachePath>SFX/sfx_menu_button_select_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="880454473" Name="Play_Select_Button" ObjectPath="\Events\UI\Play_Select_Button" GUID="{5A6C30F2-2944-40B2-A4D9-1A142FBE1444}" DurationType="OneShot" DurationMin="0.42941666" DurationMax="0.42941666">
+					<MediaRefs>
+						<MediaRef Id="807290476"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="903081441" Type="Event" GUID="{A5135C10-7237-4528-BB2B-2CF6187A56A9}" Language="SFX" Hash="{E0D24ED7-A40A-03CB-741F-094FBD675D12}">
+			<ObjectPath>Play_AmbienceMain</ObjectPath>
+			<ShortName>Play_AmbienceMain</ShortName>
+			<Path>Event/Play_AmbienceMain.bnk</Path>
+			<Events>
+				<Event Id="903081441" Name="Play_AmbienceMain" ObjectPath="\Events\Ambience_sani\Play_AmbienceMain" GUID="{A5135C10-7237-4528-BB2B-2CF6187A56A9}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="986664061" Type="Event" GUID="{D586571B-518E-44CF-8A2E-6B68BFDB5D01}" Language="SFX" Hash="{17352C94-6167-FB9E-D030-6B74E06F2B62}">
+			<ObjectPath>Play_Pause_Out</ObjectPath>
+			<ShortName>Play_Pause_Out</ShortName>
+			<Path>Event/Play_Pause_Out.bnk</Path>
+			<Media>
+				<File Id="658970362" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_menu_pause_deactivate.wav</ShortName>
+					<Path>Media/658970362.wem</Path>
+					<CachePath>SFX/sfx_menu_pause_deactivate_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="986664061" Name="Play_Pause_Out" ObjectPath="\Events\UI\Play_Pause_Out" GUID="{D586571B-518E-44CF-8A2E-6B68BFDB5D01}" DurationType="OneShot" DurationMin="0.40908334" DurationMax="0.40908334">
+					<MediaRefs>
+						<MediaRef Id="658970362"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1349836090" Type="Bus" GUID="{91B1DC06-C7F6-4B39-A874-9B796197EE5B}" Language="SFX" Hash="{84B7DEA6-D7BF-64CD-8DF9-39FE3873FD24}">
+			<ObjectPath>BetweenBuildings</ObjectPath>
+			<ShortName>BetweenBuildings</ShortName>
+			<Path>Bus/BetweenBuildings.bnk</Path>
+			<AuxBusses>
+				<AuxBus Id="1349836090" Name="BetweenBuildings" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\BetweenBuildings" GUID="{91B1DC06-C7F6-4B39-A874-9B796197EE5B}">
+					<AuxBusRefs>
+						<AuxBusRef Id="3545700988" Name="Reverbs" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs" GUID="{6BE3BED4-0EDC-4674-80E4-B77F6F0EDD9B}"/>
+					</AuxBusRefs>
+				</AuxBus>
+			</AuxBusses>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{FB946122-EFD6-E4EA-CA9B-F53D9B85742A}">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" ObjectPath="\Audio Devices\Default Work Unit\No_Output" GUID="{DE921BA9-08FB-44B1-8F67-91783C2AE17F}" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" ObjectPath="\Audio Devices\Default Work Unit\System" GUID="{8324AC08-7ADF-46A8-966C-246CDF6632D2}" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="309309195" Name="2DAmbience" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AmbientMaster\2DAmbience" GUID="{625E54FC-7A02-4118-9EA5-17FA49C27404}"/>
+				<Bus Id="566574112" Name="PlayerSpezial" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerCombat\PlayerSpezial" GUID="{3443A831-6283-43A2-8E63-533005D2478D}"/>
+				<Bus Id="765206498" Name="PlayerCloth" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerLocomotion\PlayerCloth" GUID="{5DD5958D-EE04-4AE9-8FA6-B7C695C871A3}"/>
+				<Bus Id="1182634443" Name="AmbientBeds" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AmbientMaster\AmbientBeds" GUID="{19F64812-7AAC-49A2-A0D9-C17C6460A0C2}"/>
+				<Bus Id="1301074112" Name="3DAmbience" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AmbientMaster\3DAmbience" GUID="{3BAD13F3-4615-4B9B-9BB5-3F7EDC0B4EB5}"/>
+				<Bus Id="1459460693" Name="AmbientMaster" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AmbientMaster" GUID="{A7D3F28C-C5E2-4AE3-8C5F-2BB0336E260E}"/>
+				<Bus Id="1634810678" Name="PlayerCombat" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerCombat" GUID="{BF74B898-6CAC-462D-A863-E2386C0EFC18}"/>
+				<Bus Id="1681012287" Name="PlayerFootsteps" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerLocomotion\PlayerFootsteps" GUID="{912D3752-5879-4854-ACC9-FC450A090313}"/>
+				<Bus Id="1992125169" Name="UIMaster" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\UIMaster" GUID="{6999EF9D-06E8-4CC5-A3FD-2F338FD5E40E}"/>
+				<Bus Id="2343802269" Name="PlayerLocomotion" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerLocomotion" GUID="{453EB9EF-EA94-4320-8D14-C6DB0F33C43A}"/>
+				<Bus Id="2425977305" Name="PlayerBlock" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerCombat\PlayerBlock" GUID="{D1004883-D187-4A07-B28D-C4B26AC308FB}"/>
+				<Bus Id="2715294761" Name="PlayerFall" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerLocomotion\PlayerFall" GUID="{34647CC3-D420-4A96-A135-3DAD56D9A2C2}"/>
+				<Bus Id="2966196035" Name="PlayerNeutral" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerCombat\PlayerNeutral" GUID="{FC88B0CE-8278-4DB5-AE33-451776F429D8}"/>
+				<Bus Id="3434944236" Name="PlayerHits" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerCombat\PlayerHits" GUID="{4679ABF7-6223-437B-8BDE-B28CF2DBBB2B}"/>
+				<Bus Id="3538689948" Name="PlayerMaster" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster" GUID="{03CFB648-6D0F-4B7C-95EF-2EBB6477C3DE}"/>
+				<Bus Id="3803692087" Name="Master Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus" GUID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
+				<Bus Id="4008126242" Name="PlayerJump" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerLocomotion\PlayerJump" GUID="{7959892C-0F68-4920-830A-3C20DBCA71FA}"/>
+				<Bus Id="4152869693" Name="2DAmbientBeds" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AmbientMaster\AmbientBeds\2DAmbientBeds" GUID="{7652968F-D60E-4F94-8FDF-070121F0C4D5}"/>
+			</Busses>
+			<AuxBusses>
+				<AuxBus Id="144697359" Name="Outdoor" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\Outdoor" GUID="{63E5214B-7ED3-4AD2-998D-C05ECC909F3A}">
+					<AuxBusRefs>
+						<AuxBusRef Id="3545700988" Name="Reverbs" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs" GUID="{6BE3BED4-0EDC-4674-80E4-B77F6F0EDD9B}"/>
+					</AuxBusRefs>
+				</AuxBus>
+				<AuxBus Id="1349836090" Name="BetweenBuildings" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\BetweenBuildings" GUID="{91B1DC06-C7F6-4B39-A874-9B796197EE5B}">
+					<AuxBusRefs>
+						<AuxBusRef Id="3545700988" Name="Reverbs" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs" GUID="{6BE3BED4-0EDC-4674-80E4-B77F6F0EDD9B}"/>
+					</AuxBusRefs>
+				</AuxBus>
+				<AuxBus Id="3545700988" Name="Reverbs" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs" GUID="{6BE3BED4-0EDC-4674-80E4-B77F6F0EDD9B}"/>
+			</AuxBusses>
+			<GameParameters>
+				<GameParameter Id="257272959" Name="RTPC_TimeOfDay" ObjectPath="\Game Parameters\Default Work Unit\RTPC_TimeOfDay" GUID="{ADA1D5E4-66D8-4D2C-9157-29FC9CF7C308}"/>
+				<GameParameter Id="262290038" Name="RTPC_Distance" ObjectPath="\Game Parameters\Default Work Unit\RTPC_Distance" GUID="{75B24472-D755-486A-9F02-2525D1FCA7E6}"/>
+				<GameParameter Id="822163944" Name="SS_Air_RPM" ObjectPath="\Game Parameters\Factory Soundseed Air Game Syncs\SS_Air_RPM" GUID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}"/>
+				<GameParameter Id="870672907" Name="RTPC_GroundWetness" ObjectPath="\Game Parameters\Default Work Unit\RTPC_GroundWetness" GUID="{F64D8A87-F4C6-4010-991D-9CB345215B42}"/>
+				<GameParameter Id="1029930033" Name="SS_Air_Fury" ObjectPath="\Game Parameters\Factory Soundseed Air Game Syncs\SS_Air_Fury" GUID="{A2AE79DC-CA3A-46BA-9652-9986C322A87B}"/>
+				<GameParameter Id="1294084109" Name="RTPC_RainAmount" ObjectPath="\Game Parameters\Default Work Unit\RTPC_RainAmount" GUID="{E9C91E4D-218F-4108-A03F-65A311CDAB0D}"/>
+				<GameParameter Id="1318719891" Name="RTPC_FlyCount" ObjectPath="\Game Parameters\Default Work Unit\RTPC_FlyCount" GUID="{E2EC7037-357E-415B-A03B-DB1273A8821A}"/>
+				<GameParameter Id="1351367891" Name="SS_Air_Fear" ObjectPath="\Game Parameters\Factory Soundseed Air Game Syncs\SS_Air_Fear" GUID="{F72E0659-4346-4E1C-A1B1-DAB46A05101E}"/>
+				<GameParameter Id="2648548617" Name="SS_Air_Month" ObjectPath="\Game Parameters\Factory Soundseed Air Game Syncs\SS_Air_Month" GUID="{09E2B445-C4A3-447F-B3CA-818A1D925EF7}"/>
+				<GameParameter Id="2653406601" Name="RTPC_PlayerSpeed" ObjectPath="\Game Parameters\Default Work Unit\RTPC_PlayerSpeed" GUID="{570AB48B-3EE4-434D-9402-4FE11B958715}"/>
+				<GameParameter Id="3002758120" Name="SS_Air_Freefall" ObjectPath="\Game Parameters\Factory Soundseed Air Game Syncs\SS_Air_Freefall" GUID="{2F2DFE37-4F9E-4D94-83D8-53CCA39781AD}"/>
+				<GameParameter Id="3074696722" Name="SS_Air_Size" ObjectPath="\Game Parameters\Factory Soundseed Air Game Syncs\SS_Air_Size" GUID="{1329EBEF-A193-472E-A38C-64668B494879}"/>
+				<GameParameter Id="3203397129" Name="SS_Air_TimeOfDay" ObjectPath="\Game Parameters\Factory Soundseed Air Game Syncs\SS_Air_TimeOfDay" GUID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>
+				<GameParameter Id="3715662592" Name="SS_Air_Storm" ObjectPath="\Game Parameters\Factory Soundseed Air Game Syncs\SS_Air_Storm" GUID="{E93F8CDB-06D1-4737-ACAF-7CD44BBED783}"/>
+				<GameParameter Id="3847924954" Name="SS_Air_Presence" ObjectPath="\Game Parameters\Factory Soundseed Air Game Syncs\SS_Air_Presence" GUID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}"/>
+				<GameParameter Id="3989928153" Name="RTPC_GroundWetness_Slow" ObjectPath="\Game Parameters\Default Work Unit\RTPC_GroundWetness_Slow" GUID="{0A58F8B7-62E3-42DD-A00F-CED2A81BB2BC}"/>
+				<GameParameter Id="4160247818" Name="SS_Air_Turbulence" ObjectPath="\Game Parameters\Factory Soundseed Air Game Syncs\SS_Air_Turbulence" GUID="{EDA87B19-73AA-40A0-9F19-2073606DB710}"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="185713839" Name="RoomState" ObjectPath="\States\Default Work Unit\RoomState" GUID="{981EFFBC-F876-4DA9-8559-01E593C558E8}">
+					<States>
+						<State Id="144697359" Name="Outdoor" ObjectPath="\States\Default Work Unit\RoomState\Outdoor" GUID="{8F58E33B-D1D7-47EB-AF64-A0FB57A98B5D}"/>
+						<State Id="340398852" Name="Indoor" ObjectPath="\States\Default Work Unit\RoomState\Indoor" GUID="{D327C4E8-D16B-45D6-AEA8-743161FCFF9F}"/>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\RoomState\None" GUID="{710B5614-FAD5-4CEC-B896-A04F7C335438}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="1045871717" Name="GameStatus" ObjectPath="\States\Default Work Unit\GameStatus" GUID="{50248CF3-9F57-4899-AC14-C84041A85F80}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\GameStatus\None" GUID="{498DFAC2-5E5C-49A3-89B8-287BAA9FB042}"/>
+						<State Id="984691642" Name="InGame" ObjectPath="\States\Default Work Unit\GameStatus\InGame" GUID="{D8347C9D-9FF6-4F52-9895-067BDF26519C}"/>
+						<State Id="3374585465" Name="InMenu" ObjectPath="\States\Default Work Unit\GameStatus\InMenu" GUID="{CBC14E1A-A9FF-4612-B33C-4773DCCBECFC}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3285234865" Name="PlayerState" ObjectPath="\States\Default Work Unit\PlayerState" GUID="{BC8F0EDB-4F94-4A39-952B-82866EDFCAC5}">
+					<States>
+						<State Id="655265632" Name="Alive" ObjectPath="\States\Default Work Unit\PlayerState\Alive" GUID="{C24D1D65-1AE8-4890-9D0D-FD563B67BE38}"/>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\PlayerState\None" GUID="{5D96045D-526E-4743-9859-81861B14CE0A}"/>
+						<State Id="2044049779" Name="Dead" ObjectPath="\States\Default Work Unit\PlayerState\Dead" GUID="{63909D73-AF2E-4347-8149-25F29FD529A0}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="151362964" Name="PlayerHealth" ObjectPath="\Switches\Default Work Unit\PlayerHealth" GUID="{1C0EB68C-CAB0-490B-A8F3-F32DCF54A143}">
+					<Switches>
+						<Switch Id="898449699" Name="NearDeath" ObjectPath="\Switches\Default Work Unit\PlayerHealth\NearDeath" GUID="{E6842C2B-2085-4D89-BB37-2B7D5EE35C75}"/>
+						<Switch Id="1017222595" Name="LowHealth" ObjectPath="\Switches\Default Work Unit\PlayerHealth\LowHealth" GUID="{97AFB493-EF12-4838-A034-2D4F722141D5}"/>
+						<Switch Id="2429688720" Name="FullHealth" ObjectPath="\Switches\Default Work Unit\PlayerHealth\FullHealth" GUID="{C2EECFEF-501B-41B6-A9DF-CB9AB6D7437E}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="524731881" Name="AmbBiomeType" ObjectPath="\Switches\AmbienceSwitches\AmbBiomeType" GUID="{AAA9D6C1-62D8-4809-96FA-FD4C1FB37737}">
+					<Switches>
+						<Switch Id="513139656" Name="Mountain" ObjectPath="\Switches\AmbienceSwitches\AmbBiomeType\Mountain" GUID="{74EBEB17-764C-48F2-A9FA-B5A8C6237A95}"/>
+						<Switch Id="760316600" Name="Forrest" ObjectPath="\Switches\AmbienceSwitches\AmbBiomeType\Forrest" GUID="{049A7E08-DD9E-4D60-B716-F3EDBAD4E1B7}"/>
+						<Switch Id="1199171794" Name="Grassland" ObjectPath="\Switches\AmbienceSwitches\AmbBiomeType\Grassland" GUID="{0534633D-AF3C-4495-A2CC-547C1AF77721}"/>
+						<Switch Id="2907906111" Name="Swamp" ObjectPath="\Switches\AmbienceSwitches\AmbBiomeType\Swamp" GUID="{24994C10-E56E-4BE1-82F1-F32621503E68}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="1044534455" Name="GroundMaterialSwitch" ObjectPath="\Switches\Default Work Unit\GroundMaterialSwitch" GUID="{837C1AB4-47B2-4EFB-B32C-0C393B49C2F7}">
+					<Switches>
+						<Switch Id="841620460" Name="Concrete" ObjectPath="\Switches\Default Work Unit\GroundMaterialSwitch\Concrete" GUID="{E812C4B3-3DB5-42FD-9C23-3A9B3A798CE7}"/>
+						<Switch Id="1216965916" Name="Stone" ObjectPath="\Switches\Default Work Unit\GroundMaterialSwitch\Stone" GUID="{3C15D331-3AD8-4BFA-BA9A-E01D9D580F12}"/>
+						<Switch Id="2003927601" Name="Puddle" ObjectPath="\Switches\Default Work Unit\GroundMaterialSwitch\Puddle" GUID="{1EA3450A-CCE0-4188-A244-C7704C707E90}"/>
+						<Switch Id="2185786256" Name="Gravel" ObjectPath="\Switches\Default Work Unit\GroundMaterialSwitch\Gravel" GUID="{9464961A-39D2-4071-82AB-1C7E868448AA}"/>
+						<Switch Id="2195636714" Name="Dirt" ObjectPath="\Switches\Default Work Unit\GroundMaterialSwitch\Dirt" GUID="{8BBE48CE-F73E-4AA9-B1FA-E4F009E5DEBD}"/>
+						<Switch Id="2654748154" Name="Water" ObjectPath="\Switches\Default Work Unit\GroundMaterialSwitch\Water" GUID="{87606646-0DDD-4539-8AC3-7DD81A1DC005}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="2051106367" Name="PlayerSpeedSwitch" ObjectPath="\Switches\Default Work Unit\PlayerSpeedSwitch" GUID="{EABF3707-EEB7-4796-9D74-5DCE002BEC7C}">
+					<GameParameterRef Id="2653406601"/>
+					<Switches>
+						<Switch Id="712161704" Name="Run" ObjectPath="\Switches\Default Work Unit\PlayerSpeedSwitch\Run" GUID="{DF8FE08F-44A0-4A8B-A49A-5818CCB69312}"/>
+						<Switch Id="2108779966" Name="Walk" ObjectPath="\Switches\Default Work Unit\PlayerSpeedSwitch\Walk" GUID="{85C595E1-7E07-4DC8-855C-A5AFA22A0C5D}"/>
+						<Switch Id="2884887403" Name="Sneak" ObjectPath="\Switches\Default Work Unit\PlayerSpeedSwitch\Sneak" GUID="{56FAAB5F-C968-4EC2-A3F2-E99F13D13C92}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="2569417515" Name="RainTypeSwitch" ObjectPath="\Switches\Default Work Unit\RainTypeSwitch" GUID="{C99C5E29-9A49-4459-BB4B-1CC275D290B6}">
+					<GameParameterRef Id="1294084109"/>
+					<Switches>
+						<Switch Id="614284249" Name="Stormy" ObjectPath="\Switches\Default Work Unit\RainTypeSwitch\Stormy" GUID="{30958687-9B30-478E-A70C-BE9B5631B3C5}"/>
+						<Switch Id="991379416" Name="FullRain" ObjectPath="\Switches\Default Work Unit\RainTypeSwitch\FullRain" GUID="{103C57B0-CA37-4D32-BC4A-3F6B2545FFD9}"/>
+						<Switch Id="1278453130" Name="MediumRain" ObjectPath="\Switches\Default Work Unit\RainTypeSwitch\MediumRain" GUID="{07458362-55E4-4082-8064-AE61BF88F699}"/>
+						<Switch Id="2789071989" Name="LightRain" ObjectPath="\Switches\Default Work Unit\RainTypeSwitch\LightRain" GUID="{2EAE409C-BB0C-40B3-9F66-9379D54D7CCC}"/>
+						<Switch Id="3569642402" Name="Sunny" ObjectPath="\Switches\Default Work Unit\RainTypeSwitch\Sunny" GUID="{241FEE86-2448-4DB8-8969-18546359D7A7}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="2897384735" Name="AmbThunderSwitch" ObjectPath="\Switches\AmbienceSwitches\AmbThunderSwitch" GUID="{F670F14B-D71B-4A85-A35E-C97C37DC739D}">
+					<GameParameterRef Id="262290038"/>
+					<Switches>
+						<Switch Id="1472920151" Name="ThunderClose" ObjectPath="\Switches\AmbienceSwitches\AmbThunderSwitch\ThunderClose" GUID="{7FFE2C5F-AD35-4484-B17D-C1E12BE938E5}"/>
+						<Switch Id="2069415960" Name="ThunderDistance" ObjectPath="\Switches\AmbienceSwitches\AmbThunderSwitch\ThunderDistance" GUID="{926F835F-386D-4FA8-AC03-C4F5A27A5DA4}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3968804893" Name="GroundWetnessSwitch" ObjectPath="\Switches\Default Work Unit\GroundWetnessSwitch" GUID="{8013AB7B-3A81-452C-9437-9B04037A1145}">
+					<GameParameterRef Id="870672907"/>
+					<Switches>
+						<Switch Id="630539344" Name="Dry" ObjectPath="\Switches\Default Work Unit\GroundWetnessSwitch\Dry" GUID="{BDCBA5AB-2E7D-4800-81BB-CC31AC17BF98}"/>
+						<Switch Id="1181096339" Name="Wet" ObjectPath="\Switches\Default Work Unit\GroundWetnessSwitch\Wet" GUID="{D8BEE27C-AE53-4783-A513-3859C7940042}"/>
+						<Switch Id="1842026663" Name="Damp" ObjectPath="\Switches\Default Work Unit\GroundWetnessSwitch\Damp" GUID="{5F699B44-0891-4594-901A-049FD93E38EE}"/>
+						<Switch Id="1905651656" Name="Soaked" ObjectPath="\Switches\Default Work Unit\GroundWetnessSwitch\Soaked" GUID="{358010A4-6EBA-431D-A8AB-0164BAB32F98}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="4280509423" Name="AmbTimeOfDay" ObjectPath="\Switches\AmbienceSwitches\AmbTimeOfDay" GUID="{401EE9DA-FC0E-48B4-9F06-284E78FBB970}">
+					<GameParameterRef Id="257272959"/>
+					<Switches>
+						<Switch Id="390531879" Name="Afternoon" ObjectPath="\Switches\AmbienceSwitches\AmbTimeOfDay\Afternoon" GUID="{6D896250-5D83-486B-886A-F41E5ADE49A6}"/>
+						<Switch Id="1011622525" Name="Night" ObjectPath="\Switches\AmbienceSwitches\AmbTimeOfDay\Night" GUID="{5A20F4C9-BD67-43FF-AD84-684F762C63E2}"/>
+						<Switch Id="1211181101" Name="Midday" ObjectPath="\Switches\AmbienceSwitches\AmbTimeOfDay\Midday" GUID="{BA4CB024-A733-44BE-B55C-1F629EB3E872}"/>
+						<Switch Id="1844596514" Name="EarlyMorning" ObjectPath="\Switches\AmbienceSwitches\AmbTimeOfDay\EarlyMorning" GUID="{0C347D84-F409-4125-A4AC-E1950DAB67DF}"/>
+						<Switch Id="2009803003" Name="Dawn" ObjectPath="\Switches\AmbienceSwitches\AmbTimeOfDay\Dawn" GUID="{13912C2F-E470-4DF1-8C9D-E5755E25D8B7}"/>
+						<Switch Id="2348606646" Name="Dusk" ObjectPath="\Switches\AmbienceSwitches\AmbTimeOfDay\Dusk" GUID="{C5FF0F1E-E93D-4EB1-97B1-B70F7B06A92D}"/>
+						<Switch Id="2905060079" Name="Evening" ObjectPath="\Switches\AmbienceSwitches\AmbTimeOfDay\Evening" GUID="{3A693EDA-AAEB-4D21-AF69-4B0EB283A958}"/>
+						<Switch Id="3789021730" Name="Nightfall" ObjectPath="\Switches\AmbienceSwitches\AmbTimeOfDay\Nightfall" GUID="{E74E90B6-4FCB-4CEA-88FA-2E8253EF403C}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+			<AcousticTextures>
+				<AcousticTexture Id="504532776" Name="Brick" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Brick" GUID="{B086A5A9-F204-4C53-A838-BDB18B18F6D6}">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="12"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="18"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="23"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="513139656" Name="Mountain" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Mountain" GUID="{C5933731-001A-4AB4-98DD-9B033A8C8EAB}">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="841620460" Name="Concrete" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Concrete" GUID="{5CF81C00-2896-4AE0-AF7C-3080BDABA682}">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="14"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1755085759" Name="Wood_Deep" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Wood_Deep" GUID="{5246478E-C5DA-4E0C-A0DE-C98D1479529A}">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="1"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="8"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1873957695" Name="Anechoic" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Anechoic" GUID="{8B0AC232-02E2-4EDE-BEAC-FDD1A900E3ED}">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1970351858" Name="Fabric" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Fabric" GUID="{8381D532-DB6E-4EED-A7A3-BC7B0A0B8BA8}">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="3"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="13"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="48"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="72"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2058049674" Name="Wood" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Wood" GUID="{1FFFBC96-6FE7-489E-BA6C-7C14A71391AE}">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2412606308" Name="Carpet" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Carpet" GUID="{34227589-DC56-4260-96C4-B9F4B669092B}">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="46"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="45"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="76"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2637588553" Name="Tile" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Tile" GUID="{A882DAC4-132A-47B7-BA9D-B9907BA29CC0}">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="67"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="41"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="12"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2928161104" Name="Curtains" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Curtains" GUID="{F8E69E33-5C97-4968-B508-A1535F2D66E8}">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="7"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="60"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="84"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="3195498748" Name="Cork_Tiles" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Cork_Tiles" GUID="{30D2C919-925F-4143-8906-3DBB3C4AE5E2}">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="14"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="30"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="73"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="3670307564" Name="Drywall" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Drywall" GUID="{68A4E3F4-4C0B-4687-A8B8-A84DB93DBC8F}">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="2"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="4168643977" Name="Acoustic_Banner" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Acoustic_Banner" GUID="{2F2D53F2-DACC-408E-8B88-98B1B52A26D6}">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="37"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="4262522749" Name="Wood_Bright" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Wood_Bright" GUID="{7B85D1E5-C1A2-4E63-9A13-CEC54B641ADC}">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="10"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="9"/>
+					</Properties>
+				</AcousticTexture>
+			</AcousticTextures>
+		</SoundBank>
+		<SoundBank Id="1362654913" Type="Event" GUID="{22E52904-E216-485D-A917-E19F5A57449D}" Language="SFX" Hash="{B0BB0C77-98F6-A7CA-A354-0855C5459964}">
+			<ObjectPath>Play_StageMusic</ObjectPath>
+			<ShortName>Play_StageMusic</ShortName>
+			<Path>Event/Play_StageMusic.bnk</Path>
+			<Media>
+				<File Id="595978771" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Nexus 2_V2.wav</ShortName>
+					<Path>Media/595978771.wem</Path>
+					<CachePath>SFX/Nexus 2_V2_B3FA1263.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1362654913" Name="Play_StageMusic" ObjectPath="\Events\Music\Play_StageMusic" GUID="{22E52904-E216-485D-A917-E19F5A57449D}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="595978771"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1376358074" Type="Event" GUID="{D23E66E6-43DA-4114-901C-C8A2B0828697}" Language="SFX" Hash="{FC6DF7CD-2E58-B73A-4C76-6CCFC9E6C107}">
+			<ObjectPath>Play_Player_Block_Light</ObjectPath>
+			<ShortName>Play_Player_Block_Light</ShortName>
+			<Path>Event/Play_Player_Block_Light.bnk</Path>
+			<Media>
+				<File Id="27748016" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_blocking_light_01.wav</ShortName>
+					<Path>Media/27748016.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_blocking_light_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="76329243" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_blocking_light_04.wav</ShortName>
+					<Path>Media/76329243.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_blocking_light_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="176246137" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_blocking_light_02.wav</ShortName>
+					<Path>Media/176246137.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_blocking_light_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="202002167" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_blocking_light_05.wav</ShortName>
+					<Path>Media/202002167.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_blocking_light_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="591698946" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_blocking_light_03.wav</ShortName>
+					<Path>Media/591698946.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_blocking_light_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="788773747" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_blocking_light_06.wav</ShortName>
+					<Path>Media/788773747.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_blocking_light_06_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1376358074" Name="Play_Player_Block_Light" ObjectPath="\Events\Player\PlayerCombat\Play_Player_Block_Light" GUID="{D23E66E6-43DA-4114-901C-C8A2B0828697}" DurationType="OneShot" DurationMin="0.20314583" DurationMax="0.28066668">
+					<MediaRefs>
+						<MediaRef Id="27748016"/>
+						<MediaRef Id="76329243"/>
+						<MediaRef Id="176246137"/>
+						<MediaRef Id="202002167"/>
+						<MediaRef Id="591698946"/>
+						<MediaRef Id="788773747"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1619838726" Type="Event" GUID="{12E562B3-F440-40CE-912E-3B5E11D0E0E4}" Language="SFX" Hash="{88270D22-5861-8D60-5974-7992B52590B6}">
+			<ObjectPath>Play_Stop_TestBeep_lp_3D</ObjectPath>
+			<ShortName>Play_Stop_TestBeep_lp_3D</ShortName>
+			<Path>Event/Play_Stop_TestBeep_lp_3D.bnk</Path>
+			<Events>
+				<Event Id="1619838726" Name="Play_Stop_TestBeep_lp_3D" ObjectPath="\Events\TestEvents\Play_Stop_TestBeep_lp_3D" GUID="{12E562B3-F440-40CE-912E-3B5E11D0E0E4}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1681067324" Type="Event" GUID="{4DEEC41B-B46A-428D-BC1E-14F8277A4A26}" Language="SFX" Hash="{4440A18B-B745-79FB-AF3F-CB90FF484BA4}">
+			<ObjectPath>Play_TestBeep_3D</ObjectPath>
+			<ShortName>Play_TestBeep_3D</ShortName>
+			<Path>Event/Play_TestBeep_3D.bnk</Path>
+			<Media>
+				<File Id="759261552" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>TestFiles\sfx_test_beep_short.wav</ShortName>
+					<Path>Media/759261552.wem</Path>
+					<CachePath>SFX/TestFiles/sfx_test_beep_short_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1681067324" Name="Play_TestBeep_3D" ObjectPath="\Events\TestEvents\Play_TestBeep_3D" GUID="{4DEEC41B-B46A-428D-BC1E-14F8277A4A26}" MaxAttenuation="50" DurationType="OneShot" DurationMin="0.07419501" DurationMax="0.07419501">
+					<MediaRefs>
+						<MediaRef Id="759261552"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1830121012" Type="Event" GUID="{AAC9A511-42FF-4C09-9324-E39E4DA787AC}" Language="SFX" Hash="{2DCE8770-B355-2454-084A-A5EF7BB34B80}">
+			<ObjectPath>Play_Player_Cloth</ObjectPath>
+			<ShortName>Play_Player_Cloth</ShortName>
+			<Path>Event/Play_Player_Cloth.bnk</Path>
+			<Media>
+				<File Id="220455491" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_clothes_loop_03.wav</ShortName>
+					<Path>Media/220455491.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_clothes_loop_03_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="513187626" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_clothes_loop_02.wav</ShortName>
+					<Path>Media/513187626.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_clothes_loop_02_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="717159586" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_clothes_loop_01.wav</ShortName>
+					<Path>Media/717159586.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_clothes_loop_01_D79FB2B7.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1830121012" Name="Play_Player_Cloth" ObjectPath="\Events\Player\PlayerLocomotion\Play_Player_Cloth" GUID="{AAC9A511-42FF-4C09-9324-E39E4DA787AC}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="220455491"/>
+						<MediaRef Id="513187626"/>
+						<MediaRef Id="717159586"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1955951874" Type="Event" GUID="{D09020C2-8A1F-43E3-84A6-67EB0B1E108E}" Language="SFX" Hash="{F512F3E1-F33B-BAD4-C96E-A9003BC564A8}">
+			<ObjectPath>Play_TestBeep</ObjectPath>
+			<ShortName>Play_TestBeep</ShortName>
+			<Path>Event/Play_TestBeep.bnk</Path>
+			<Media>
+				<File Id="759261552" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>TestFiles\sfx_test_beep_short.wav</ShortName>
+					<Path>Media/759261552.wem</Path>
+					<CachePath>SFX/TestFiles/sfx_test_beep_short_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1955951874" Name="Play_TestBeep" ObjectPath="\Events\TestEvents\Play_TestBeep" GUID="{D09020C2-8A1F-43E3-84A6-67EB0B1E108E}" DurationType="OneShot" DurationMin="0.07419501" DurationMax="0.07419501">
+					<MediaRefs>
+						<MediaRef Id="759261552"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2072064337" Type="Event" GUID="{94E2900C-95E9-4512-81AE-22994C942721}" Language="SFX" Hash="{C324FEA7-1D39-FC68-6ED2-AAE74CC8997B}">
+			<ObjectPath>Ambi_Start</ObjectPath>
+			<ShortName>Ambi_Start</ShortName>
+			<Path>Event/Ambi_Start.bnk</Path>
+			<Media>
+				<File Id="187874616" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Ambience_test_2.wav</ShortName>
+					<Path>Media/187874616.wem</Path>
+					<CachePath>SFX/Ambience_test_2_89747CCB.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2072064337" Name="Ambi_Start" ObjectPath="\Events\Ambience\Ambi_Start" GUID="{94E2900C-95E9-4512-81AE-22994C942721}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="187874616"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2092733163" Type="Event" GUID="{82FCA46E-6E59-4873-9785-CC8165F421C1}" Language="SFX" Hash="{483DACAC-6E9A-8E69-43D7-50D98BF82F54}">
+			<ObjectPath>Play_Settings_Slider</ObjectPath>
+			<ShortName>Play_Settings_Slider</ShortName>
+			<Path>Event/Play_Settings_Slider.bnk</Path>
+			<Media>
+				<File Id="765111185" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_menu_settings_slider.wav</ShortName>
+					<Path>Media/765111185.wem</Path>
+					<CachePath>SFX/sfx_menu_settings_slider_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2092733163" Name="Play_Settings_Slider" ObjectPath="\Events\UI\Play_Settings_Slider" GUID="{82FCA46E-6E59-4873-9785-CC8165F421C1}" DurationType="OneShot" DurationMin="0.34983334" DurationMax="0.34983334">
+					<MediaRefs>
+						<MediaRef Id="765111185"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2313976826" Type="Event" GUID="{74313079-6B9A-47A5-A030-881C27AB662E}" Language="SFX" Hash="{ABFC1A12-62C0-36D3-30C4-FCA0B8F23E0D}">
+			<ObjectPath>Stop_Player_Cloth</ObjectPath>
+			<ShortName>Stop_Player_Cloth</ShortName>
+			<Path>Event/Stop_Player_Cloth.bnk</Path>
+			<Events>
+				<Event Id="2313976826" Name="Stop_Player_Cloth" ObjectPath="\Events\Player\PlayerLocomotion\Stop_Player_Cloth" GUID="{74313079-6B9A-47A5-A030-881C27AB662E}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2334765685" Type="Event" GUID="{F110A2AB-C527-4CD6-956A-320E06655E4E}" Language="SFX" Hash="{F96893BC-6251-F831-E209-AB0C55742371}">
+			<ObjectPath>Play_Player_Punch_Light</ObjectPath>
+			<ShortName>Play_Player_Punch_Light</ShortName>
+			<Path>Event/Play_Player_Punch_Light.bnk</Path>
+			<Media>
+				<File Id="20389258" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_light_02.wav</ShortName>
+					<Path>Media/20389258.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_light_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="161303902" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_light_01.wav</ShortName>
+					<Path>Media/161303902.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_light_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="543785188" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_light_05.wav</ShortName>
+					<Path>Media/543785188.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_light_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="588301371" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_light_04.wav</ShortName>
+					<Path>Media/588301371.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_light_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="670658824" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_light_06.wav</ShortName>
+					<Path>Media/670658824.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_light_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="996432136" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_light_03.wav</ShortName>
+					<Path>Media/996432136.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_light_03_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2334765685" Name="Play_Player_Punch_Light" ObjectPath="\Events\Player\PlayerCombat\Play_Player_Punch_Light" GUID="{F110A2AB-C527-4CD6-956A-320E06655E4E}" DurationType="OneShot" DurationMin="0.44264585" DurationMax="0.54541665">
+					<MediaRefs>
+						<MediaRef Id="20389258"/>
+						<MediaRef Id="161303902"/>
+						<MediaRef Id="543785188"/>
+						<MediaRef Id="588301371"/>
+						<MediaRef Id="670658824"/>
+						<MediaRef Id="996432136"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2369679144" Type="Event" GUID="{52806D64-28C9-4DBD-9FA9-B19EFC1D9D2B}" Language="SFX" Hash="{444C3E35-1814-E93F-ECC0-38396FC8D84C}">
+			<ObjectPath>Play_Player_Crouch_In</ObjectPath>
+			<ShortName>Play_Player_Crouch_In</ShortName>
+			<Path>Event/Play_Player_Crouch_In.bnk</Path>
+			<Media>
+				<File Id="126319256" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_crouch_in_03.wav</ShortName>
+					<Path>Media/126319256.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_crouch_in_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="427230100" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_crouch_in_02.wav</ShortName>
+					<Path>Media/427230100.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_crouch_in_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="507215868" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_crouch_in_01.wav</ShortName>
+					<Path>Media/507215868.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_crouch_in_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="537328825" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_crouch_in_05.wav</ShortName>
+					<Path>Media/537328825.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_crouch_in_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="546080245" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_crouch_in_04.wav</ShortName>
+					<Path>Media/546080245.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_crouch_in_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="827760532" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_crouch_in_06.wav</ShortName>
+					<Path>Media/827760532.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_crouch_in_06_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2369679144" Name="Play_Player_Crouch_In" ObjectPath="\Events\Player\PlayerLocomotion\Play_Player_Crouch_In" GUID="{52806D64-28C9-4DBD-9FA9-B19EFC1D9D2B}" DurationType="OneShot" DurationMin="0.3373956" DurationMax="0.626091">
+					<MediaRefs>
+						<MediaRef Id="126319256"/>
+						<MediaRef Id="427230100"/>
+						<MediaRef Id="507215868"/>
+						<MediaRef Id="537328825"/>
+						<MediaRef Id="546080245"/>
+						<MediaRef Id="827760532"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2518864784" Type="Event" GUID="{5B16E403-94D2-446D-9060-3E385BA132ED}" Language="SFX" Hash="{F3F03F35-3D5C-DE65-78F5-165DBF51DAD8}">
+			<ObjectPath>Play_Select_Fighter</ObjectPath>
+			<ShortName>Play_Select_Fighter</ShortName>
+			<Path>Event/Play_Select_Fighter.bnk</Path>
+			<Media>
+				<File Id="908855246" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_menu_select_fighter.wav</ShortName>
+					<Path>Media/908855246.wem</Path>
+					<CachePath>SFX/sfx_menu_select_fighter_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2518864784" Name="Play_Select_Fighter" ObjectPath="\Events\UI\Play_Select_Fighter" GUID="{5B16E403-94D2-446D-9060-3E385BA132ED}" DurationType="OneShot" DurationMin="0.9851458" DurationMax="0.9851458">
+					<MediaRefs>
+						<MediaRef Id="908855246"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2555223343" Type="Event" GUID="{756383C1-840D-41DF-B7D5-98E46E2560D4}" Language="SFX" Hash="{6453CA21-6791-2F9C-4F2A-627E1B600F8F}">
+			<ObjectPath>Play_Player_Crouch_Out</ObjectPath>
+			<ShortName>Play_Player_Crouch_Out</ShortName>
+			<Path>Event/Play_Player_Crouch_Out.bnk</Path>
+			<Media>
+				<File Id="242429337" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_crouch_out_06.wav</ShortName>
+					<Path>Media/242429337.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_crouch_out_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="408344611" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_crouch_out_03.wav</ShortName>
+					<Path>Media/408344611.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_crouch_out_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="475058918" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_crouch_out_01.wav</ShortName>
+					<Path>Media/475058918.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_crouch_out_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="703951287" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_crouch_out_04.wav</ShortName>
+					<Path>Media/703951287.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_crouch_out_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1016905659" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_crouch_out_02.wav</ShortName>
+					<Path>Media/1016905659.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_crouch_out_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1037379880" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_crouch_out_05.wav</ShortName>
+					<Path>Media/1037379880.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_crouch_out_05_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2555223343" Name="Play_Player_Crouch_Out" ObjectPath="\Events\Player\PlayerLocomotion\Play_Player_Crouch_Out" GUID="{756383C1-840D-41DF-B7D5-98E46E2560D4}" DurationType="OneShot" DurationMin="0.3327285" DurationMax="0.56416494">
+					<MediaRefs>
+						<MediaRef Id="242429337"/>
+						<MediaRef Id="408344611"/>
+						<MediaRef Id="475058918"/>
+						<MediaRef Id="703951287"/>
+						<MediaRef Id="1016905659"/>
+						<MediaRef Id="1037379880"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2570041344" Type="Event" GUID="{7763077C-B319-4174-8788-5FBF581263D8}" Language="SFX" Hash="{C86C9965-712D-998C-89A1-0903A71F86EA}">
+			<ObjectPath>Play_MenuMusic</ObjectPath>
+			<ShortName>Play_MenuMusic</ShortName>
+			<Path>Event/Play_MenuMusic.bnk</Path>
+			<Media>
+				<File Id="68506720" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Nexus-Menu.wav</ShortName>
+					<Path>Media/68506720.wem</Path>
+					<CachePath>SFX/Nexus-Menu_26FE13D1.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2570041344" Name="Play_MenuMusic" ObjectPath="\Events\Music\Play_MenuMusic" GUID="{7763077C-B319-4174-8788-5FBF581263D8}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="68506720"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2611482463" Type="Event" GUID="{814FA06B-28E6-4FED-A38E-2F5C065D05FD}" Language="SFX" Hash="{6C6B7379-1AC5-E290-038C-17290BC65FF6}">
+			<ObjectPath>Stop_StageMusic</ObjectPath>
+			<ShortName>Stop_StageMusic</ShortName>
+			<Path>Event/Stop_StageMusic.bnk</Path>
+			<Events>
+				<Event Id="2611482463" Name="Stop_StageMusic" ObjectPath="\Events\Music\Stop_StageMusic" GUID="{814FA06B-28E6-4FED-A38E-2F5C065D05FD}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2644649371" Type="Event" GUID="{99EBE9DA-2D4B-4E25-A1FD-CC1C387CC0C5}" Language="English(US)" Hash="{382E1DA7-2745-5404-4402-59143E327218}">
+			<ObjectPath>Plyr_Attack_Heavy</ObjectPath>
+			<ShortName>Plyr_Attack_Heavy</ShortName>
+			<Path>Event/English(US)/Plyr_Attack_Heavy.bnk</Path>
+			<Media>
+				<File Id="163125014" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>Male_V_Heavy_Kick_01-33.wav</ShortName>
+					<Path>Media/English(US)/163125014.wem</Path>
+					<CachePath>Voices/English(US)/Male_V_Heavy_Kick_01-33_A979C1F1.wem</CachePath>
+				</File>
+				<File Id="301906351" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>Male_V_Heavy_Kick_01-96.wav</ShortName>
+					<Path>Media/English(US)/301906351.wem</Path>
+					<CachePath>Voices/English(US)/Male_V_Heavy_Kick_01-96_8677B3D8.wem</CachePath>
+				</File>
+				<File Id="430777336" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>Male_V_Heavy_Kick_01-49.wav</ShortName>
+					<Path>Media/English(US)/430777336.wem</Path>
+					<CachePath>Voices/English(US)/Male_V_Heavy_Kick_01-49_836B4CDF.wem</CachePath>
+				</File>
+				<File Id="556005930" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>Male_V_Heavy_Kick_01-24.wav</ShortName>
+					<Path>Media/English(US)/556005930.wem</Path>
+					<CachePath>Voices/English(US)/Male_V_Heavy_Kick_01-24_42A45A80.wem</CachePath>
+				</File>
+				<File Id="633489352" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>Male_V_Heavy_Kick_01-60.wav</ShortName>
+					<Path>Media/English(US)/633489352.wem</Path>
+					<CachePath>Voices/English(US)/Male_V_Heavy_Kick_01-60_3689EA76.wem</CachePath>
+				</File>
+				<File Id="986590399" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>Male_V_Heavy_Kick_01-52.wav</ShortName>
+					<Path>Media/English(US)/986590399.wem</Path>
+					<CachePath>Voices/English(US)/Male_V_Heavy_Kick_01-52_89DB2E65.wem</CachePath>
+				</File>
+				<File Id="1070016745" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>Male_V_Heavy_Kick_01-64.wav</ShortName>
+					<Path>Media/English(US)/1070016745.wem</Path>
+					<CachePath>Voices/English(US)/Male_V_Heavy_Kick_01-64_00437C27.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2644649371" Name="Plyr_Attack_Heavy" ObjectPath="\Events\Player_Voices\Plyr_Attack_Heavy" GUID="{99EBE9DA-2D4B-4E25-A1FD-CC1C387CC0C5}" DurationType="OneShot" DurationMin="0.28671977" DurationMax="0.80051285">
+					<MediaRefs>
+						<MediaRef Id="163125014"/>
+						<MediaRef Id="301906351"/>
+						<MediaRef Id="430777336"/>
+						<MediaRef Id="556005930"/>
+						<MediaRef Id="633489352"/>
+						<MediaRef Id="986590399"/>
+						<MediaRef Id="1070016745"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2663982528" Type="Event" GUID="{6909B8C2-6D58-49AD-9B0C-ECB42CC550E2}" Language="SFX" Hash="{FFBE3B18-059D-40BB-ABA3-A35C52864EED}">
+			<ObjectPath>Play_Player_Punch_Heavy</ObjectPath>
+			<ShortName>Play_Player_Punch_Heavy</ShortName>
+			<Path>Event/Play_Player_Punch_Heavy.bnk</Path>
+			<Media>
+				<File Id="56341530" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_heavy_04.wav</ShortName>
+					<Path>Media/56341530.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_heavy_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="63453727" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_heavy_02.wav</ShortName>
+					<Path>Media/63453727.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_heavy_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="65131504" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_heavy_06.wav</ShortName>
+					<Path>Media/65131504.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_heavy_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="873340468" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_heavy_03.wav</ShortName>
+					<Path>Media/873340468.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_heavy_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="910147547" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_heavy_05.wav</ShortName>
+					<Path>Media/910147547.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_heavy_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1015996428" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_heavy_01.wav</ShortName>
+					<Path>Media/1015996428.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_heavy_01_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2663982528" Name="Play_Player_Punch_Heavy" ObjectPath="\Events\Player\PlayerCombat\Play_Player_Punch_Heavy" GUID="{6909B8C2-6D58-49AD-9B0C-ECB42CC550E2}" DurationType="OneShot" DurationMin="0.583875" DurationMax="0.68789583">
+					<MediaRefs>
+						<MediaRef Id="56341530"/>
+						<MediaRef Id="63453727"/>
+						<MediaRef Id="65131504"/>
+						<MediaRef Id="873340468"/>
+						<MediaRef Id="910147547"/>
+						<MediaRef Id="1015996428"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2753202630" Type="Event" GUID="{0973E8E1-EE17-444F-B575-849EB0A94CA7}" Language="SFX" Hash="{FA978EBF-25FD-548D-1069-6B7E25DF2688}">
+			<ObjectPath>Stop_MenuMusic</ObjectPath>
+			<ShortName>Stop_MenuMusic</ShortName>
+			<Path>Event/Stop_MenuMusic.bnk</Path>
+			<Events>
+				<Event Id="2753202630" Name="Stop_MenuMusic" ObjectPath="\Events\Music\Stop_MenuMusic" GUID="{0973E8E1-EE17-444F-B575-849EB0A94CA7}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2963316176" Type="Event" GUID="{E001864B-1F09-432D-9769-CAA8112B432A}" Language="SFX" Hash="{E564DEF2-9B7B-82FA-5EDD-F3AE0B64C4D0}">
+			<ObjectPath>Play_Move_Button</ObjectPath>
+			<ShortName>Play_Move_Button</ShortName>
+			<Path>Event/Play_Move_Button.bnk</Path>
+			<Media>
+				<File Id="888749076" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_menu_move.wav</ShortName>
+					<Path>Media/888749076.wem</Path>
+					<CachePath>SFX/sfx_menu_move_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2963316176" Name="Play_Move_Button" ObjectPath="\Events\UI\Play_Move_Button" GUID="{E001864B-1F09-432D-9769-CAA8112B432A}" DurationType="OneShot" DurationMin="0.14860417" DurationMax="0.14860417">
+					<MediaRefs>
+						<MediaRef Id="888749076"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2963813288" Type="Event" GUID="{A9A40CEC-4EF1-4D1A-8CB5-6FA8E96D85AB}" Language="SFX" Hash="{BD73CB33-5D25-E152-E109-83D30E91A21A}">
+			<ObjectPath>Play_Stop_TestBeep_lp</ObjectPath>
+			<ShortName>Play_Stop_TestBeep_lp</ShortName>
+			<Path>Event/Play_Stop_TestBeep_lp.bnk</Path>
+			<Events>
+				<Event Id="2963813288" Name="Play_Stop_TestBeep_lp" ObjectPath="\Events\TestEvents\Play_Stop_TestBeep_lp" GUID="{A9A40CEC-4EF1-4D1A-8CB5-6FA8E96D85AB}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3021177893" Type="Event" GUID="{DC4135FD-87EC-41A5-84C3-E1F70FC2699C}" Language="SFX" Hash="{A7C8507A-A2A2-1300-7ACF-620081ABBB36}">
+			<ObjectPath>Play_Player_Punsh_Woosh</ObjectPath>
+			<ShortName>Play_Player_Punsh_Woosh</ShortName>
+			<Path>Event/Play_Player_Punsh_Woosh.bnk</Path>
+			<Media>
+				<File Id="266191415" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_woosh_01.wav</ShortName>
+					<Path>Media/266191415.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_woosh_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="505491373" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_woosh_02.wav</ShortName>
+					<Path>Media/505491373.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_woosh_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="761483195" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_woosh_06.wav</ShortName>
+					<Path>Media/761483195.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_woosh_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="761832300" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_woosh_03.wav</ShortName>
+					<Path>Media/761832300.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_woosh_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1029515323" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_woosh_04.wav</ShortName>
+					<Path>Media/1029515323.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_woosh_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1072389693" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_woosh_05.wav</ShortName>
+					<Path>Media/1072389693.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_woosh_05_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3021177893" Name="Play_Player_Punsh_Woosh" ObjectPath="\Events\Player\PlayerCombat\Play_Player_Punsh_Woosh" GUID="{DC4135FD-87EC-41A5-84C3-E1F70FC2699C}" DurationType="OneShot" DurationMin="0.25119513" DurationMax="0.47743717">
+					<MediaRefs>
+						<MediaRef Id="266191415"/>
+						<MediaRef Id="505491373"/>
+						<MediaRef Id="761483195"/>
+						<MediaRef Id="761832300"/>
+						<MediaRef Id="1029515323"/>
+						<MediaRef Id="1072389693"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3050477643" Type="Event" GUID="{0CC81BF0-10CA-47AF-B55E-1EA9838D45AF}" Language="SFX" Hash="{8A9046F5-37A1-1BD8-3FF9-8CB995FC2FC0}">
+			<ObjectPath>Ambi_Stop</ObjectPath>
+			<ShortName>Ambi_Stop</ShortName>
+			<Path>Event/Ambi_Stop.bnk</Path>
+			<Events>
+				<Event Id="3050477643" Name="Ambi_Stop" ObjectPath="\Events\Ambience\Ambi_Stop" GUID="{0CC81BF0-10CA-47AF-B55E-1EA9838D45AF}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3545700988" Type="Bus" GUID="{6BE3BED4-0EDC-4674-80E4-B77F6F0EDD9B}" Language="SFX" Hash="{CE46620C-58DD-93B1-6318-AA7CD5C7C39D}">
+			<ObjectPath>Reverbs</ObjectPath>
+			<ShortName>Reverbs</ShortName>
+			<Path>Bus/Reverbs.bnk</Path>
+			<AuxBusses>
+				<AuxBus Id="3545700988" Name="Reverbs" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs" GUID="{6BE3BED4-0EDC-4674-80E4-B77F6F0EDD9B}"/>
+			</AuxBusses>
+		</SoundBank>
+		<SoundBank Id="3586072739" Type="Event" GUID="{683A1ECC-1199-45F8-A261-2323D2B70EFD}" Language="SFX" Hash="{E40A395A-0C30-7738-F355-87FB880AC90C}">
+			<ObjectPath>Play_Player_Block_Heavy</ObjectPath>
+			<ShortName>Play_Player_Block_Heavy</ShortName>
+			<Path>Event/Play_Player_Block_Heavy.bnk</Path>
+			<Media>
+				<File Id="5381631" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_blocking_heavy_03.wav</ShortName>
+					<Path>Media/5381631.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_blocking_heavy_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="400315865" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_blocking_heavy_04.wav</ShortName>
+					<Path>Media/400315865.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_blocking_heavy_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="550444828" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_blocking_heavy_06.wav</ShortName>
+					<Path>Media/550444828.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_blocking_heavy_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="816558127" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_blocking_heavy_02.wav</ShortName>
+					<Path>Media/816558127.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_blocking_heavy_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="831203608" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_blocking_heavy_05.wav</ShortName>
+					<Path>Media/831203608.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_blocking_heavy_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="986418821" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_blocking_heavy_01.wav</ShortName>
+					<Path>Media/986418821.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_blocking_heavy_01_DCCB649D.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3586072739" Name="Play_Player_Block_Heavy" ObjectPath="\Events\Player\PlayerCombat\Play_Player_Block_Heavy" GUID="{683A1ECC-1199-45F8-A261-2323D2B70EFD}" DurationType="OneShot" DurationMin="0.22027083" DurationMax="0.24925">
+					<MediaRefs>
+						<MediaRef Id="5381631"/>
+						<MediaRef Id="400315865"/>
+						<MediaRef Id="550444828"/>
+						<MediaRef Id="816558127"/>
+						<MediaRef Id="831203608"/>
+						<MediaRef Id="986418821"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3618896010" Type="Event" GUID="{4DDF616B-CE7F-4803-9C49-4378BAFA5BD4}" Language="English(US)" Hash="{B7A5898C-052E-C265-A706-34959B584E61}">
+			<ObjectPath>Com_Round_Fight</ObjectPath>
+			<ShortName>Com_Round_Fight</ShortName>
+			<Path>Event/English(US)/Com_Round_Fight.bnk</Path>
+			<Media>
+				<File Id="747517666" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>Fight!_01-19.wav</ShortName>
+					<Path>Media/English(US)/747517666.wem</Path>
+					<CachePath>Voices/English(US)/Fight!_01-19_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3618896010" Name="Com_Round_Fight" ObjectPath="\Events\Commentator_Voices\Com_Round_Fight" GUID="{4DDF616B-CE7F-4803-9C49-4378BAFA5BD4}" DurationType="OneShot" DurationMin="0.9661717" DurationMax="0.9661717">
+					<MediaRefs>
+						<MediaRef Id="747517666"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3761336386" Type="Event" GUID="{40E09523-C912-41B2-8E87-1A5554483779}" Language="SFX" Hash="{6AA53D9A-A110-B222-945D-8179D905FB22}">
+			<ObjectPath>Play_Pause_In</ObjectPath>
+			<ShortName>Play_Pause_In</ShortName>
+			<Path>Event/Play_Pause_In.bnk</Path>
+			<Media>
+				<File Id="372519095" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_menu_pause_activate.wav</ShortName>
+					<Path>Media/372519095.wem</Path>
+					<CachePath>SFX/sfx_menu_pause_activate_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3761336386" Name="Play_Pause_In" ObjectPath="\Events\UI\Play_Pause_In" GUID="{40E09523-C912-41B2-8E87-1A5554483779}" DurationType="OneShot" DurationMin="0.5322292" DurationMax="0.5322292">
+					<MediaRefs>
+						<MediaRef Id="372519095"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{04D8E478-7964-BF4C-8D37-C60D43ABC5B7}</FileHash>
+</SoundBanksInfo>

@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1830121012	Play_Player_Cloth			\Player\PlayerLocomotion\Play_Player_Cloth	
+

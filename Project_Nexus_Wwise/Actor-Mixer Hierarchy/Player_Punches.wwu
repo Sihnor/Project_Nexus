@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E397D207-C94B-410A-9F84-64FF39F595DA}" SchemaVersion="110" RootDocumentID="{7C43A499-F954-4315-B89C-49E000EF9DAD}" ParentDocumentID="{7C43A499-F954-4315-B89C-49E000EF9DAD}">
+	<AudioObjects>
+		<WorkUnit Name="Player_Punches" ID="{E397D207-C94B-410A-9F84-64FF39F595DA}" OwnerID="{7C43A499-F954-4315-B89C-49E000EF9DAD}" PersistMode="Nested">
+			<ChildrenList>
+				<RandomSequenceContainer Name="Player_Punches_Light" ID="{551B8C8E-B18F-4218-9437-8426C7EB66FF}" ShortID="787238428">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_fighter1_combat_punch_light_01" ID="{57786236-B126-46C6-96BC-2E92C33B977A}" ShortID="236301529">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_combat_punch_light_01" ID="{3FB66677-83D1-4F6B-AAE3-6A328731EF5B}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_combat_punch_light_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="161303902"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_combat_punch_light_01" ID="{3FB66677-83D1-4F6B-AAE3-6A328731EF5B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_combat_punch_light_02" ID="{3DBE6614-3730-4798-B1AF-08BB6FE87EFA}" ShortID="357051355">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_combat_punch_light_02" ID="{1278F9F0-0916-4F08-9489-791CA028ABF0}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_combat_punch_light_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="20389258"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_combat_punch_light_02" ID="{1278F9F0-0916-4F08-9489-791CA028ABF0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_combat_punch_light_03" ID="{D0C54E84-0C04-48C4-AEE8-E50B6576DBB9}" ShortID="762237910">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_combat_punch_light_03" ID="{975B385F-87B5-4FEE-BB1D-AB3C18710E6B}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_combat_punch_light_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="996432136"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_combat_punch_light_03" ID="{975B385F-87B5-4FEE-BB1D-AB3C18710E6B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_combat_punch_light_04" ID="{146B9C08-F91E-4872-8C46-D0564AEFC87F}" ShortID="456868194">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_combat_punch_light_04" ID="{3DEBA26A-3927-4185-9A4C-A90B6ACF803A}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_combat_punch_light_04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="588301371"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_combat_punch_light_04" ID="{3DEBA26A-3927-4185-9A4C-A90B6ACF803A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_combat_punch_light_05" ID="{86F47A42-E08A-46FD-98F3-9164CBEF5B31}" ShortID="733522956">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_combat_punch_light_05" ID="{0101F1B6-C86C-4631-8329-F30CC57BBE41}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_combat_punch_light_05.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="543785188"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_combat_punch_light_05" ID="{0101F1B6-C86C-4631-8329-F30CC57BBE41}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_combat_punch_light_06" ID="{144EBE99-AFA9-49BD-BD6B-050D56D40A7C}" ShortID="639449808">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_combat_punch_light_06" ID="{3C9F59AA-0468-4C49-9C22-89CBCC7CCD60}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_combat_punch_light_06.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="670658824"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_combat_punch_light_06" ID="{3C9F59AA-0468-4C49-9C22-89CBCC7CCD60}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Player_Punches_Heavy" ID="{CFC19FA4-F07C-4971-8B6C-B0007B99E1B2}" ShortID="1022459052">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_fighter1_combat_punch_heavy_01" ID="{F4D46862-EBA6-4B59-B39F-9408840BEF73}" ShortID="902493245">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_combat_punch_heavy_01" ID="{06E20BC7-EEFC-415C-A900-9B602361147A}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_combat_punch_heavy_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1015996428"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_combat_punch_heavy_01" ID="{06E20BC7-EEFC-415C-A900-9B602361147A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_combat_punch_heavy_02" ID="{140C7D16-8728-42C1-AD73-9F8861A39DCF}" ShortID="644575646">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_combat_punch_heavy_02" ID="{B24C789F-6C31-40B5-B457-B2039518A155}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_combat_punch_heavy_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="63453727"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_combat_punch_heavy_02" ID="{B24C789F-6C31-40B5-B457-B2039518A155}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_combat_punch_heavy_03" ID="{0F41DA63-AD07-42E2-AD75-D5E803519C9B}" ShortID="903336798">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_combat_punch_heavy_03" ID="{39E6881B-600B-4880-8C29-4CEC6DC3A0E7}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_combat_punch_heavy_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="873340468"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_combat_punch_heavy_03" ID="{39E6881B-600B-4880-8C29-4CEC6DC3A0E7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_combat_punch_heavy_04" ID="{80C090AA-639D-4446-99FA-17B135CF5321}" ShortID="315778264">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_combat_punch_heavy_04" ID="{99AEC662-14FF-4BBF-8428-8F6ECA76384D}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_combat_punch_heavy_04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="56341530"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_combat_punch_heavy_04" ID="{99AEC662-14FF-4BBF-8428-8F6ECA76384D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_combat_punch_heavy_05" ID="{9F64A2DE-D9DE-43CA-A1F8-15EA56CDB709}" ShortID="424652308">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_combat_punch_heavy_05" ID="{A83F113C-7390-488F-A1B0-0005CB64C5F9}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_combat_punch_heavy_05.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="910147547"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_combat_punch_heavy_05" ID="{A83F113C-7390-488F-A1B0-0005CB64C5F9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_combat_punch_heavy_06" ID="{01F3DB5E-74ED-484A-8708-3403938C00AF}" ShortID="935771799">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_combat_punch_heavy_06" ID="{4115ECC2-9D2E-410A-8D26-E965B5CDF472}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_combat_punch_heavy_06.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="65131504"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_combat_punch_heavy_06" ID="{4115ECC2-9D2E-410A-8D26-E965B5CDF472}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

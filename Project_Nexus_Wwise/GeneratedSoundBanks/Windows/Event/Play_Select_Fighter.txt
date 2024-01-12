@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2518864784	Play_Select_Fighter			\UI\Play_Select_Fighter	
+

@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A2C58249-302C-4D4A-9D22-B27D518DF14A}" SchemaVersion="110" RootDocumentID="{DAD6D8BA-01FF-4EA2-924D-8C59CACB0568}" ParentDocumentID="{DAD6D8BA-01FF-4EA2-924D-8C59CACB0568}">
+	<AudioObjects>
+		<WorkUnit Name="PlayerFootsteps" ID="{A2C58249-302C-4D4A-9D22-B27D518DF14A}" OwnerID="{DAD6D8BA-01FF-4EA2-924D-8C59CACB0568}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="4"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<SwitchContainer Name="Player_Footsteps_MaterialSwitch_complex" ID="{A33A4A51-D403-405E-954D-2043DCD89E6E}" ShortID="624469721">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Dirt" ID="{8BBE48CE-F73E-4AA9-B1FA-E4F009E5DEBD}" WorkUnitID="{4610ADD1-A8C3-4181-B7D1-B4A0CCCB408E}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="GroundMaterialSwitch" ID="{837C1AB4-47B2-4EFB-B32C-0C393B49C2F7}" WorkUnitID="{4610ADD1-A8C3-4181-B7D1-B4A0CCCB408E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="Material_WetnessTemplate" ID="{2B4651F2-72A1-4959-B24A-57E42F76DD74}" ShortID="546776707">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Dry" ID="{BDCBA5AB-2E7D-4800-81BB-CC31AC17BF98}" WorkUnitID="{4610ADD1-A8C3-4181-B7D1-B4A0CCCB408E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="GroundWetnessSwitch" ID="{8013AB7B-3A81-452C-9437-9B04037A1145}" WorkUnitID="{4610ADD1-A8C3-4181-B7D1-B4A0CCCB408E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Damp" ID="{8511D43A-591F-46C3-94B7-B5E98832FA91}" ShortID="871834679">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Dry" ID="{7FC0826F-3E7F-474A-865E-779738176A7D}" ShortID="409263342">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Soaked" ID="{CE8DC3E2-67C5-48FC-B9BF-AF9314878428}" ShortID="285919724">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Wet" ID="{5E6A120D-CA40-4335-B4E0-545045F608C2}" ShortID="379898418">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Wet" ID="{5E6A120D-CA40-4335-B4E0-545045F608C2}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Damp" ID="{8511D43A-591F-46C3-94B7-B5E98832FA91}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Dry" ID="{7FC0826F-3E7F-474A-865E-779738176A7D}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Soaked" ID="{CE8DC3E2-67C5-48FC-B9BF-AF9314878428}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Damp" ID="{5F699B44-0891-4594-901A-049FD93E38EE}"/>
+										<ItemList>
+											<ItemRef Name="Damp" ID="{8511D43A-591F-46C3-94B7-B5E98832FA91}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Wet" ID="{D8BEE27C-AE53-4783-A513-3859C7940042}"/>
+										<ItemList>
+											<ItemRef Name="Wet" ID="{5E6A120D-CA40-4335-B4E0-545045F608C2}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Soaked" ID="{358010A4-6EBA-431D-A8AB-0164BAB32F98}"/>
+										<ItemList>
+											<ItemRef Name="Soaked" ID="{CE8DC3E2-67C5-48FC-B9BF-AF9314878428}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Dry" ID="{BDCBA5AB-2E7D-4800-81BB-CC31AC17BF98}"/>
+										<ItemList>
+											<ItemRef Name="Dry" ID="{7FC0826F-3E7F-474A-865E-779738176A7D}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="Dirt_WetnessSwitch" ID="{864F07D3-B155-45D7-BB99-7A1D81F76F58}" ShortID="12085516">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Dry" ID="{BDCBA5AB-2E7D-4800-81BB-CC31AC17BF98}" WorkUnitID="{4610ADD1-A8C3-4181-B7D1-B4A0CCCB408E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="GroundWetnessSwitch" ID="{8013AB7B-3A81-452C-9437-9B04037A1145}" WorkUnitID="{4610ADD1-A8C3-4181-B7D1-B4A0CCCB408E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Damp" ID="{5C891216-74DE-422D-B8FA-FF1B2A54DD51}" ShortID="475311010">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Dry" ID="{BF6BADA1-97EB-41B3-B915-C928D52DFEF7}" ShortID="549746662">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Soaked" ID="{5DE13F77-5EE5-4BD2-8F63-B28BA1F189D9}" ShortID="286860697">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Wet" ID="{341AA0E5-3336-4D28-9EAE-008FD3766EDD}" ShortID="135855879">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Damp" ID="{5C891216-74DE-422D-B8FA-FF1B2A54DD51}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Soaked" ID="{5DE13F77-5EE5-4BD2-8F63-B28BA1F189D9}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Dry" ID="{BF6BADA1-97EB-41B3-B915-C928D52DFEF7}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Wet" ID="{341AA0E5-3336-4D28-9EAE-008FD3766EDD}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Damp" ID="{5F699B44-0891-4594-901A-049FD93E38EE}"/>
+										<ItemList>
+											<ItemRef Name="Damp" ID="{5C891216-74DE-422D-B8FA-FF1B2A54DD51}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Wet" ID="{D8BEE27C-AE53-4783-A513-3859C7940042}"/>
+										<ItemList>
+											<ItemRef Name="Wet" ID="{341AA0E5-3336-4D28-9EAE-008FD3766EDD}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Soaked" ID="{358010A4-6EBA-431D-A8AB-0164BAB32F98}"/>
+										<ItemList>
+											<ItemRef Name="Soaked" ID="{5DE13F77-5EE5-4BD2-8F63-B28BA1F189D9}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Dry" ID="{BDCBA5AB-2E7D-4800-81BB-CC31AC17BF98}"/>
+										<ItemList>
+											<ItemRef Name="Dry" ID="{BF6BADA1-97EB-41B3-B915-C928D52DFEF7}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="Gravel_WetnessSwitch" ID="{40D205F3-1B1C-44BF-BC12-93BD03FA0AF4}" ShortID="246889925">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Dry" ID="{BDCBA5AB-2E7D-4800-81BB-CC31AC17BF98}" WorkUnitID="{4610ADD1-A8C3-4181-B7D1-B4A0CCCB408E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="GroundWetnessSwitch" ID="{8013AB7B-3A81-452C-9437-9B04037A1145}" WorkUnitID="{4610ADD1-A8C3-4181-B7D1-B4A0CCCB408E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Damp" ID="{D5B260A3-60E9-48A3-9586-16692E97812E}" ShortID="545164275">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Dry" ID="{188C4FB5-17DB-4DB4-9E72-69EF8BE9C4D8}" ShortID="238469784">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Soaked" ID="{695479FC-D859-41CA-9538-0783EDB878AA}" ShortID="1027377315">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Wet" ID="{FE5140D5-33F3-4EF0-8A7E-CFA739EB532B}" ShortID="470702987">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Damp" ID="{D5B260A3-60E9-48A3-9586-16692E97812E}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Dry" ID="{188C4FB5-17DB-4DB4-9E72-69EF8BE9C4D8}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Wet" ID="{FE5140D5-33F3-4EF0-8A7E-CFA739EB532B}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Soaked" ID="{695479FC-D859-41CA-9538-0783EDB878AA}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Damp" ID="{5F699B44-0891-4594-901A-049FD93E38EE}"/>
+										<ItemList>
+											<ItemRef Name="Damp" ID="{D5B260A3-60E9-48A3-9586-16692E97812E}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Wet" ID="{D8BEE27C-AE53-4783-A513-3859C7940042}"/>
+										<ItemList>
+											<ItemRef Name="Wet" ID="{FE5140D5-33F3-4EF0-8A7E-CFA739EB532B}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Soaked" ID="{358010A4-6EBA-431D-A8AB-0164BAB32F98}"/>
+										<ItemList>
+											<ItemRef Name="Soaked" ID="{695479FC-D859-41CA-9538-0783EDB878AA}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Dry" ID="{BDCBA5AB-2E7D-4800-81BB-CC31AC17BF98}"/>
+										<ItemList>
+											<ItemRef Name="Dry" ID="{188C4FB5-17DB-4DB4-9E72-69EF8BE9C4D8}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="Water_WetnessSwitch" ID="{F2E1BB8D-20F9-4A3D-ABA5-356AFDF5AE7C}" ShortID="158402910">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Dry" ID="{BDCBA5AB-2E7D-4800-81BB-CC31AC17BF98}" WorkUnitID="{4610ADD1-A8C3-4181-B7D1-B4A0CCCB408E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="GroundWetnessSwitch" ID="{8013AB7B-3A81-452C-9437-9B04037A1145}" WorkUnitID="{4610ADD1-A8C3-4181-B7D1-B4A0CCCB408E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Damp" ID="{24670574-2359-4EEA-979E-5803B7A4B497}" ShortID="859713934">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Dry" ID="{F10239BB-3939-4AB0-8038-E909653CF76B}" ShortID="654934551">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Soaked" ID="{609B9262-E2E0-41ED-80AA-0FCCE7762925}" ShortID="597212848">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Wet" ID="{C024C204-05B4-414B-AAD1-61A23547361D}" ShortID="819845287">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Wet" ID="{C024C204-05B4-414B-AAD1-61A23547361D}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Soaked" ID="{609B9262-E2E0-41ED-80AA-0FCCE7762925}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Damp" ID="{24670574-2359-4EEA-979E-5803B7A4B497}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Dry" ID="{F10239BB-3939-4AB0-8038-E909653CF76B}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Damp" ID="{5F699B44-0891-4594-901A-049FD93E38EE}"/>
+										<ItemList>
+											<ItemRef Name="Damp" ID="{24670574-2359-4EEA-979E-5803B7A4B497}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Wet" ID="{D8BEE27C-AE53-4783-A513-3859C7940042}"/>
+										<ItemList>
+											<ItemRef Name="Wet" ID="{C024C204-05B4-414B-AAD1-61A23547361D}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Soaked" ID="{358010A4-6EBA-431D-A8AB-0164BAB32F98}"/>
+										<ItemList>
+											<ItemRef Name="Soaked" ID="{609B9262-E2E0-41ED-80AA-0FCCE7762925}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Dry" ID="{BDCBA5AB-2E7D-4800-81BB-CC31AC17BF98}"/>
+										<ItemList>
+											<ItemRef Name="Dry" ID="{F10239BB-3939-4AB0-8038-E909653CF76B}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="Stone_WetnessSwitch" ID="{981F6071-CFE9-44FB-8E64-4EE9066A6DA9}" ShortID="944614456">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Dry" ID="{BDCBA5AB-2E7D-4800-81BB-CC31AC17BF98}" WorkUnitID="{4610ADD1-A8C3-4181-B7D1-B4A0CCCB408E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="GroundWetnessSwitch" ID="{8013AB7B-3A81-452C-9437-9B04037A1145}" WorkUnitID="{4610ADD1-A8C3-4181-B7D1-B4A0CCCB408E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Damp" ID="{D84AFCAA-FF43-4C2E-AB91-FE43DCB8F74A}" ShortID="156402201">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Dry" ID="{6793685F-F2FA-4B8D-8559-62C8EE3273CA}" ShortID="314682930">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Soaked" ID="{6A686CF5-59F6-46CC-B5DE-8D159DB5B97D}" ShortID="394459286">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Wet" ID="{3176FAA8-87A5-4A5A-B04D-75014F10B79A}" ShortID="280786552">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Dry" ID="{6793685F-F2FA-4B8D-8559-62C8EE3273CA}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Wet" ID="{3176FAA8-87A5-4A5A-B04D-75014F10B79A}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Damp" ID="{D84AFCAA-FF43-4C2E-AB91-FE43DCB8F74A}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Soaked" ID="{6A686CF5-59F6-46CC-B5DE-8D159DB5B97D}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Damp" ID="{5F699B44-0891-4594-901A-049FD93E38EE}"/>
+										<ItemList>
+											<ItemRef Name="Damp" ID="{D84AFCAA-FF43-4C2E-AB91-FE43DCB8F74A}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Wet" ID="{D8BEE27C-AE53-4783-A513-3859C7940042}"/>
+										<ItemList>
+											<ItemRef Name="Wet" ID="{3176FAA8-87A5-4A5A-B04D-75014F10B79A}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Soaked" ID="{358010A4-6EBA-431D-A8AB-0164BAB32F98}"/>
+										<ItemList>
+											<ItemRef Name="Soaked" ID="{6A686CF5-59F6-46CC-B5DE-8D159DB5B97D}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Dry" ID="{BDCBA5AB-2E7D-4800-81BB-CC31AC17BF98}"/>
+										<ItemList>
+											<ItemRef Name="Dry" ID="{6793685F-F2FA-4B8D-8559-62C8EE3273CA}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Stone_WetnessSwitch" ID="{981F6071-CFE9-44FB-8E64-4EE9066A6DA9}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Water_WetnessSwitch" ID="{F2E1BB8D-20F9-4A3D-ABA5-356AFDF5AE7C}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Dirt_WetnessSwitch" ID="{864F07D3-B155-45D7-BB99-7A1D81F76F58}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Material_WetnessTemplate" ID="{2B4651F2-72A1-4959-B24A-57E42F76DD74}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Gravel_WetnessSwitch" ID="{40D205F3-1B1C-44BF-BC12-93BD03FA0AF4}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Gravel" ID="{9464961A-39D2-4071-82AB-1C7E868448AA}"/>
+								<ItemList>
+									<ItemRef Name="Gravel_WetnessSwitch" ID="{40D205F3-1B1C-44BF-BC12-93BD03FA0AF4}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Stone" ID="{3C15D331-3AD8-4BFA-BA9A-E01D9D580F12}"/>
+								<ItemList>
+									<ItemRef Name="Stone_WetnessSwitch" ID="{981F6071-CFE9-44FB-8E64-4EE9066A6DA9}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Water" ID="{87606646-0DDD-4539-8AC3-7DD81A1DC005}"/>
+								<ItemList>
+									<ItemRef Name="Water_WetnessSwitch" ID="{F2E1BB8D-20F9-4A3D-ABA5-356AFDF5AE7C}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Dirt" ID="{8BBE48CE-F73E-4AA9-B1FA-E4F009E5DEBD}"/>
+								<ItemList>
+									<ItemRef Name="Dirt_WetnessSwitch" ID="{864F07D3-B155-45D7-BB99-7A1D81F76F58}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+				<SwitchContainer Name="Player_Footsteps_MaterialSwitch" ID="{3D226559-44BC-4752-ABD8-AA8F19300E44}" ShortID="1062067425">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Concrete" ID="{E812C4B3-3DB5-42FD-9C23-3A9B3A798CE7}" WorkUnitID="{4610ADD1-A8C3-4181-B7D1-B4A0CCCB408E}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="GroundMaterialSwitch" ID="{837C1AB4-47B2-4EFB-B32C-0C393B49C2F7}" WorkUnitID="{4610ADD1-A8C3-4181-B7D1-B4A0CCCB408E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Concrete" ID="{BE2B9724-B814-485C-9AE0-6DE36990E182}" ShortID="744897066">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{4F8EA3C6-BFCE-41EB-A367-D6EB6B60BAEE}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="657"/>
+													<Property Name="Min" Type="Real64" Value="-632"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{3D41E1A2-755A-4F20-90F7-B196C7F7BA6D}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="5"/>
+													<Property Name="Min" Type="Real64" Value="-5"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_fighter1_movement_footsteps_concrete__01" ID="{4BBA8054-8BEE-44FA-90F9-B073336306C1}" ShortID="876485187">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_fighter1_movement_footsteps_concrete__01" ID="{9369D93D-7EDE-4900-806F-48EFD2107593}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_fighter1_movement_footsteps_concrete__01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="381863405"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_fighter1_movement_footsteps_concrete__01" ID="{9369D93D-7EDE-4900-806F-48EFD2107593}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_fighter1_movement_footsteps_concrete__02" ID="{2720D84B-269A-4A4F-9021-48D061065802}" ShortID="199387804">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_fighter1_movement_footsteps_concrete__02" ID="{192B8340-69B0-4E88-A778-B9E74355660B}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_fighter1_movement_footsteps_concrete__02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="944425952"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_fighter1_movement_footsteps_concrete__02" ID="{192B8340-69B0-4E88-A778-B9E74355660B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_fighter1_movement_footsteps_concrete__03" ID="{5965263A-AFC2-45AA-BD1C-0E01E5CB0369}" ShortID="519177233">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_fighter1_movement_footsteps_concrete__03" ID="{CDF6D54B-41AE-442D-B43F-B0B29B2532BB}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_fighter1_movement_footsteps_concrete__03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="753767965"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_fighter1_movement_footsteps_concrete__03" ID="{CDF6D54B-41AE-442D-B43F-B0B29B2532BB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_fighter1_movement_footsteps_concrete__04" ID="{B222BC01-8D06-4678-A3B1-3F6B2AF79A24}" ShortID="983717313">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_fighter1_movement_footsteps_concrete__04" ID="{6FA9EE0F-FF56-47D4-9B21-EE4104E1334C}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_fighter1_movement_footsteps_concrete__04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="983701975"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_fighter1_movement_footsteps_concrete__04" ID="{6FA9EE0F-FF56-47D4-9B21-EE4104E1334C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_fighter1_movement_footsteps_concrete__05" ID="{C968295D-81CB-459E-A2AD-2A516837027E}" ShortID="21391880">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_fighter1_movement_footsteps_concrete__05" ID="{8CD5E03F-E028-4170-822A-AC2F8D7FDD82}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_fighter1_movement_footsteps_concrete__05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="285670170"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_fighter1_movement_footsteps_concrete__05" ID="{8CD5E03F-E028-4170-822A-AC2F8D7FDD82}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_fighter1_movement_footsteps_concrete__06" ID="{C7216359-3072-4ACE-9900-1123C027EE6D}" ShortID="145439825">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_fighter1_movement_footsteps_concrete__06" ID="{E558C68D-9608-42C4-B0FB-F650424A1535}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_fighter1_movement_footsteps_concrete__06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="914402793"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_fighter1_movement_footsteps_concrete__06" ID="{E558C68D-9608-42C4-B0FB-F650424A1535}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Puddle" ID="{63A74A41-1756-43D8-92BB-4F0CE6D3659E}" ShortID="686389136">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_fighter1_movement_footsteps_puddle__01" ID="{47C6657D-3481-445B-811A-A34C8D9E3B90}" ShortID="1014861170">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_fighter1_movement_footsteps_puddle__01" ID="{05386144-52FC-4BFA-A5E0-A623C691BD3F}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_fighter1_movement_footsteps_puddle__01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="29994990"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_fighter1_movement_footsteps_puddle__01" ID="{05386144-52FC-4BFA-A5E0-A623C691BD3F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_fighter1_movement_footsteps_puddle__02" ID="{AEE04ADF-AD9D-4CE1-904A-D360CD23073D}" ShortID="671129319">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_fighter1_movement_footsteps_puddle__02" ID="{E9E26AAE-E283-4623-8BF9-1C67E08E041C}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_fighter1_movement_footsteps_puddle__02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="473753266"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_fighter1_movement_footsteps_puddle__02" ID="{E9E26AAE-E283-4623-8BF9-1C67E08E041C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_fighter1_movement_footsteps_puddle__03" ID="{994EEBBC-ED80-46D3-9CED-C1BE7A39E9AD}" ShortID="692499060">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_fighter1_movement_footsteps_puddle__03" ID="{3B41F98C-20E2-425E-BB28-9F28CAABA820}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_fighter1_movement_footsteps_puddle__03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="466432269"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_fighter1_movement_footsteps_puddle__03" ID="{3B41F98C-20E2-425E-BB28-9F28CAABA820}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_fighter1_movement_footsteps_puddle__04" ID="{6A186920-7C3D-47A6-A99D-F23F61B0A3D1}" ShortID="1013075510">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_fighter1_movement_footsteps_puddle__04" ID="{5062F134-6732-4090-9B18-C864B2698A59}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_fighter1_movement_footsteps_puddle__04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="149012600"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_fighter1_movement_footsteps_puddle__04" ID="{5062F134-6732-4090-9B18-C864B2698A59}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_fighter1_movement_footsteps_puddle__05" ID="{FB347C9A-FEEE-4C31-A82F-DD47E3D7222D}" ShortID="147840118">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_fighter1_movement_footsteps_puddle__05" ID="{4C950D09-C658-4B98-B929-79BD4659A275}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_fighter1_movement_footsteps_puddle__05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="620540260"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_fighter1_movement_footsteps_puddle__05" ID="{4C950D09-C658-4B98-B929-79BD4659A275}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_fighter1_movement_footsteps_puddle__06" ID="{E2FAA9E2-963A-478E-BB3B-214704922D2E}" ShortID="883054799">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_fighter1_movement_footsteps_puddle__06" ID="{87C3D701-5A85-4830-AC6A-F178EA674F47}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_fighter1_movement_footsteps_puddle__06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="549571819"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_fighter1_movement_footsteps_puddle__06" ID="{87C3D701-5A85-4830-AC6A-F178EA674F47}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Concrete" ID="{BE2B9724-B814-485C-9AE0-6DE36990E182}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Puddle" ID="{63A74A41-1756-43D8-92BB-4F0CE6D3659E}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Puddle" ID="{1EA3450A-CCE0-4188-A244-C7704C707E90}"/>
+								<ItemList>
+									<ItemRef Name="Puddle" ID="{63A74A41-1756-43D8-92BB-4F0CE6D3659E}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Concrete" ID="{E812C4B3-3DB5-42FD-9C23-3A9B3A798CE7}"/>
+								<ItemList>
+									<ItemRef Name="Concrete" ID="{BE2B9724-B814-485C-9AE0-6DE36990E182}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

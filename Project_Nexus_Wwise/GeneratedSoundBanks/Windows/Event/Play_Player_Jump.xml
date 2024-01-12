@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="562256996" Type="Event" GUID="{237BD721-40C9-4B31-BDC1-78F59500DF4D}" Language="SFX" Hash="{D53DC19D-56E4-A53D-253F-924A6C6ABF0B}">
+			<ObjectPath>Play_Player_Jump</ObjectPath>
+			<ShortName>Play_Player_Jump</ShortName>
+			<Path>Event/Play_Player_Jump.bnk</Path>
+			<Media>
+				<File Id="44536699" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_jump__04.wav</ShortName>
+					<Path>Media/44536699.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_jump__04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="169644528" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_jump__05.wav</ShortName>
+					<Path>Media/169644528.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_jump__05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="262497759" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_jump__02.wav</ShortName>
+					<Path>Media/262497759.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_jump__02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="567642391" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_jump__06.wav</ShortName>
+					<Path>Media/567642391.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_jump__06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="615857249" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_jump__03.wav</ShortName>
+					<Path>Media/615857249.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_jump__03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="724190295" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_jump__01.wav</ShortName>
+					<Path>Media/724190295.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_jump__01_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="562256996" Name="Play_Player_Jump" ObjectPath="\Events\Player\PlayerLocomotion\Play_Player_Jump" GUID="{237BD721-40C9-4B31-BDC1-78F59500DF4D}" DurationType="OneShot" DurationMin="0.33138883" DurationMax="0.52998096">
+					<MediaRefs>
+						<MediaRef Id="44536699"/>
+						<MediaRef Id="169644528"/>
+						<MediaRef Id="262497759"/>
+						<MediaRef Id="567642391"/>
+						<MediaRef Id="615857249"/>
+						<MediaRef Id="724190295"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{8BD2FC0A-19C3-170B-470C-3A0EBCC06F63}</FileHash>
+</SoundBanksInfo>

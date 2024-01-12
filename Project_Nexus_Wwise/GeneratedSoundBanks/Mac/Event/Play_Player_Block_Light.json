@@ -1,0 +1,108 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "1376358074",
+    "Type": "Event",
+    "GUID": "{D23E66E6-43DA-4114-901C-C8A2B0828697}",
+    "Language": "SFX",
+    "Hash": "{FC6DF7CD-2E58-B73A-4C76-6CCFC9E6C107}",
+    "ObjectPath": "Play_Player_Block_Light",
+    "ShortName": "Play_Player_Block_Light",
+    "Path": "Event/Play_Player_Block_Light.bnk",
+    "Media": [
+     {
+      "Id": "27748016",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_blocking_light_01.wav",
+      "Path": "Media/27748016.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_blocking_light_01_10C4C929.wem"
+     },
+     {
+      "Id": "76329243",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_blocking_light_04.wav",
+      "Path": "Media/76329243.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_blocking_light_04_10C4C929.wem"
+     },
+     {
+      "Id": "176246137",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_blocking_light_02.wav",
+      "Path": "Media/176246137.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_blocking_light_02_10C4C929.wem"
+     },
+     {
+      "Id": "202002167",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_blocking_light_05.wav",
+      "Path": "Media/202002167.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_blocking_light_05_10C4C929.wem"
+     },
+     {
+      "Id": "591698946",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_blocking_light_03.wav",
+      "Path": "Media/591698946.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_blocking_light_03_10C4C929.wem"
+     },
+     {
+      "Id": "788773747",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_blocking_light_06.wav",
+      "Path": "Media/788773747.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_blocking_light_06_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1376358074",
+      "Name": "Play_Player_Block_Light",
+      "ObjectPath": "\\Events\\Player\\PlayerCombat\\Play_Player_Block_Light",
+      "GUID": "{D23E66E6-43DA-4114-901C-C8A2B0828697}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.20314583",
+      "DurationMax": "0.28066668",
+      "MediaRefs": [
+       {
+        "Id": "27748016"
+       },
+       {
+        "Id": "76329243"
+       },
+       {
+        "Id": "176246137"
+       },
+       {
+        "Id": "202002167"
+       },
+       {
+        "Id": "591698946"
+       },
+       {
+        "Id": "788773747"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{E0794658-FB94-FA42-AEB3-8289B57A43F4}"
+ }
+}

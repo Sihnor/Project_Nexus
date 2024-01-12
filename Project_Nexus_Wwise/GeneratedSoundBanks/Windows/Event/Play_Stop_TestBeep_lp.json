@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "2963813288",
+    "Type": "Event",
+    "GUID": "{A9A40CEC-4EF1-4D1A-8CB5-6FA8E96D85AB}",
+    "Language": "SFX",
+    "Hash": "{BD73CB33-5D25-E152-E109-83D30E91A21A}",
+    "ObjectPath": "Play_Stop_TestBeep_lp",
+    "ShortName": "Play_Stop_TestBeep_lp",
+    "Path": "Event/Play_Stop_TestBeep_lp.bnk",
+    "Events": [
+     {
+      "Id": "2963813288",
+      "Name": "Play_Stop_TestBeep_lp",
+      "ObjectPath": "\\Events\\TestEvents\\Play_Stop_TestBeep_lp",
+      "GUID": "{A9A40CEC-4EF1-4D1A-8CB5-6FA8E96D85AB}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{47FBF087-34BD-4F54-04D5-BDBC33B98652}"
+ }
+}

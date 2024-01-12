@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9E862803-B68C-481E-B1AE-338A40562A8D}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Player_Voices" ID="{9E862803-B68C-481E-B1AE-338A40562A8D}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Plyr_Movement_Jump" ID="{D209308F-B533-4A51-849A-30A2F7A262C4}">
+					<ChildrenList>
+						<Action Name="" ID="{A5971603-2C3E-431A-85ED-EF5268679817}" ShortID="939660139">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Plyr_Movement_Jump" ID="{8BB3DDF6-BF9F-434E-8DFF-86DB856F6E8F}" WorkUnitID="{E5F57FEB-3DEE-451F-A6A7-6237024381AC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Plyr_Attack_Light" ID="{26AB0E9E-6FC9-4D4C-98BC-CDD120436275}">
+					<ChildrenList>
+						<Action Name="" ID="{7494CD63-A7B9-4A12-8B74-732E11C63AF5}" ShortID="941169092">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Plyr_Attack_Light" ID="{AC0B648D-B8F6-4A72-84FC-A924907EA7EF}" WorkUnitID="{E5F57FEB-3DEE-451F-A6A7-6237024381AC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Plyr_Attack_Heavy" ID="{99EBE9DA-2D4B-4E25-A1FD-CC1C387CC0C5}">
+					<ChildrenList>
+						<Action Name="" ID="{40081A8E-C8CF-4073-9BF2-36E52A6A0FBD}" ShortID="709634386">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Plyr_Attack_Heavy" ID="{706211CE-090E-41D9-97A6-435BC7E7D5FE}" WorkUnitID="{E5F57FEB-3DEE-451F-A6A7-6237024381AC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

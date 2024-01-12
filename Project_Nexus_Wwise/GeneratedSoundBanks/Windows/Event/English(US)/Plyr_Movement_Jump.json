@@ -1,0 +1,132 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "597741315",
+    "Type": "Event",
+    "GUID": "{D209308F-B533-4A51-849A-30A2F7A262C4}",
+    "Language": "English(US)",
+    "Hash": "{5CEC6E0B-B7CD-9F55-7947-D05D325C59AB}",
+    "ObjectPath": "Plyr_Movement_Jump",
+    "ShortName": "Plyr_Movement_Jump",
+    "Path": "Event/English(US)/Plyr_Movement_Jump.bnk",
+    "Media": [
+     {
+      "Id": "90036059",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Mov_Jump_02-121.wav",
+      "Path": "Media/English(US)/90036059.wem",
+      "CachePath": "Voices/English(US)/Mov_Jump_02-121_7F20BEB0.wem"
+     },
+     {
+      "Id": "204099209",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Mov_Jump_01-08.wav",
+      "Path": "Media/English(US)/204099209.wem",
+      "CachePath": "Voices/English(US)/Mov_Jump_01-08_565C881F.wem"
+     },
+     {
+      "Id": "318930592",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Mov_Jump_02-28.wav",
+      "Path": "Media/English(US)/318930592.wem",
+      "CachePath": "Voices/English(US)/Mov_Jump_02-28_8BC23090.wem"
+     },
+     {
+      "Id": "482099551",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Mov_Jump_02-24.wav",
+      "Path": "Media/English(US)/482099551.wem",
+      "CachePath": "Voices/English(US)/Mov_Jump_02-24_93C6C239.wem"
+     },
+     {
+      "Id": "487322753",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Mov_Jump_01-50.wav",
+      "Path": "Media/English(US)/487322753.wem",
+      "CachePath": "Voices/English(US)/Mov_Jump_01-50_3DAF23D8.wem"
+     },
+     {
+      "Id": "628149815",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Mov_Jump_01-12.wav",
+      "Path": "Media/English(US)/628149815.wem",
+      "CachePath": "Voices/English(US)/Mov_Jump_01-12_EC4A5D54.wem"
+     },
+     {
+      "Id": "869457211",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Mov_Jump_02-96.wav",
+      "Path": "Media/English(US)/869457211.wem",
+      "CachePath": "Voices/English(US)/Mov_Jump_02-96_CEC159FB.wem"
+     },
+     {
+      "Id": "934193837",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Mov_Jump_01-67.wav",
+      "Path": "Media/English(US)/934193837.wem",
+      "CachePath": "Voices/English(US)/Mov_Jump_01-67_FBBCCF55.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "597741315",
+      "Name": "Plyr_Movement_Jump",
+      "ObjectPath": "\\Events\\Player_Voices\\Plyr_Movement_Jump",
+      "GUID": "{D209308F-B533-4A51-849A-30A2F7A262C4}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.27573663",
+      "DurationMax": "0.5884256",
+      "MediaRefs": [
+       {
+        "Id": "90036059"
+       },
+       {
+        "Id": "204099209"
+       },
+       {
+        "Id": "318930592"
+       },
+       {
+        "Id": "482099551"
+       },
+       {
+        "Id": "487322753"
+       },
+       {
+        "Id": "628149815"
+       },
+       {
+        "Id": "869457211"
+       },
+       {
+        "Id": "934193837"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{45D691AE-4825-0931-D236-E368EC69A989}"
+ }
+}
