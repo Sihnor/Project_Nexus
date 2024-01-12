@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="3050477643" Type="Event" GUID="{0CC81BF0-10CA-47AF-B55E-1EA9838D45AF}" Language="SFX" Hash="{8A9046F5-37A1-1BD8-3FF9-8CB995FC2FC0}">
+			<ObjectPath>Ambi_Stop</ObjectPath>
+			<ShortName>Ambi_Stop</ShortName>
+			<Path>Event/Ambi_Stop.bnk</Path>
+			<Events>
+				<Event Id="3050477643" Name="Ambi_Stop" ObjectPath="\Events\Ambience\Ambi_Stop" GUID="{0CC81BF0-10CA-47AF-B55E-1EA9838D45AF}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{07B0DB11-3CC2-4625-C6F8-155ED04321B9}</FileHash>
+</SoundBanksInfo>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="1619838726" Type="Event" GUID="{12E562B3-F440-40CE-912E-3B5E11D0E0E4}" Language="SFX" Hash="{88270D22-5861-8D60-5974-7992B52590B6}">
+			<ObjectPath>Play_Stop_TestBeep_lp_3D</ObjectPath>
+			<ShortName>Play_Stop_TestBeep_lp_3D</ShortName>
+			<Path>Event/Play_Stop_TestBeep_lp_3D.bnk</Path>
+			<Events>
+				<Event Id="1619838726" Name="Play_Stop_TestBeep_lp_3D" ObjectPath="\Events\TestEvents\Play_Stop_TestBeep_lp_3D" GUID="{12E562B3-F440-40CE-912E-3B5E11D0E0E4}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{FE3F11BE-79E2-2CAD-3156-D70593CB9AED}</FileHash>
+</SoundBanksInfo>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="3545700988" Type="Bus" GUID="{6BE3BED4-0EDC-4674-80E4-B77F6F0EDD9B}" Language="SFX" Hash="{CE46620C-58DD-93B1-6318-AA7CD5C7C39D}">
+			<ObjectPath>Reverbs</ObjectPath>
+			<ShortName>Reverbs</ShortName>
+			<Path>Bus/Reverbs.bnk</Path>
+			<AuxBusses>
+				<AuxBus Id="3545700988" Name="Reverbs" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs" GUID="{6BE3BED4-0EDC-4674-80E4-B77F6F0EDD9B}"/>
+			</AuxBusses>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{8F69FE2A-D02D-35AC-41E3-D4160EACC725}</FileHash>
+</SoundBanksInfo>

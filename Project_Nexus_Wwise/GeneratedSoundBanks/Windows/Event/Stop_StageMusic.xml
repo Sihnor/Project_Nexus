@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="2611482463" Type="Event" GUID="{814FA06B-28E6-4FED-A38E-2F5C065D05FD}" Language="SFX" Hash="{6C6B7379-1AC5-E290-038C-17290BC65FF6}">
+			<ObjectPath>Stop_StageMusic</ObjectPath>
+			<ShortName>Stop_StageMusic</ShortName>
+			<Path>Event/Stop_StageMusic.bnk</Path>
+			<Events>
+				<Event Id="2611482463" Name="Stop_StageMusic" ObjectPath="\Events\Music\Stop_StageMusic" GUID="{814FA06B-28E6-4FED-A38E-2F5C065D05FD}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{77A05F8E-EEE3-F4DB-EC12-B6B059672A13}</FileHash>
+</SoundBanksInfo>

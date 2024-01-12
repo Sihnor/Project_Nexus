@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "2092733163",
+    "Type": "Event",
+    "GUID": "{82FCA46E-6E59-4873-9785-CC8165F421C1}",
+    "Language": "SFX",
+    "Hash": "{483DACAC-6E9A-8E69-43D7-50D98BF82F54}",
+    "ObjectPath": "Play_Settings_Slider",
+    "ShortName": "Play_Settings_Slider",
+    "Path": "Event/Play_Settings_Slider.bnk",
+    "Media": [
+     {
+      "Id": "765111185",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_menu_settings_slider.wav",
+      "Path": "Media/765111185.wem",
+      "CachePath": "SFX/sfx_menu_settings_slider_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2092733163",
+      "Name": "Play_Settings_Slider",
+      "ObjectPath": "\\Events\\UI\\Play_Settings_Slider",
+      "GUID": "{82FCA46E-6E59-4873-9785-CC8165F421C1}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.34983334",
+      "DurationMax": "0.34983334",
+      "MediaRefs": [
+       {
+        "Id": "765111185"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{1A81BE61-A1B5-BD81-1199-A31B545D2905}"
+ }
+}

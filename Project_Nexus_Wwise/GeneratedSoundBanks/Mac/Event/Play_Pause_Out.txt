@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	986664061	Play_Pause_Out			\UI\Play_Pause_Out	
+

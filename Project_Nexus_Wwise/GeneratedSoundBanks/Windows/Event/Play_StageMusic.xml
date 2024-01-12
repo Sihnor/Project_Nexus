@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="1362654913" Type="Event" GUID="{22E52904-E216-485D-A917-E19F5A57449D}" Language="SFX" Hash="{B0BB0C77-98F6-A7CA-A354-0855C5459964}">
+			<ObjectPath>Play_StageMusic</ObjectPath>
+			<ShortName>Play_StageMusic</ShortName>
+			<Path>Event/Play_StageMusic.bnk</Path>
+			<Media>
+				<File Id="595978771" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Nexus 2_V2.wav</ShortName>
+					<Path>Media/595978771.wem</Path>
+					<CachePath>SFX/Nexus 2_V2_B3FA1263.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1362654913" Name="Play_StageMusic" ObjectPath="\Events\Music\Play_StageMusic" GUID="{22E52904-E216-485D-A917-E19F5A57449D}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="595978771"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{3614633D-93A7-908F-CDD7-C8E9CC419FE8}</FileHash>
+</SoundBanksInfo>
