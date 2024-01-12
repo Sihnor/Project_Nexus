@@ -781,7 +781,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="1362654913" Type="Event" GUID="{22E52904-E216-485D-A917-E19F5A57449D}" Language="SFX" Hash="{B0BB0C77-98F6-A7CA-A354-0855C5459964}">
+		<SoundBank Id="1362654913" Type="Event" GUID="{22E52904-E216-485D-A917-E19F5A57449D}" Language="SFX" Hash="{F74CB90B-1BE1-C1DA-27AD-2098CB5D1116}">
 			<ObjectPath>Play_StageMusic</ObjectPath>
 			<ShortName>Play_StageMusic</ShortName>
 			<Path>Event/Play_StageMusic.bnk</Path>
@@ -789,7 +789,7 @@
 				<File Id="595978771" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Nexus 2_V2.wav</ShortName>
 					<Path>Media/595978771.wem</Path>
-					<CachePath>SFX/Nexus 2_V2_B3FA1263.wem</CachePath>
+					<CachePath>SFX/Nexus 2_V2_AA286D99.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -1146,7 +1146,7 @@
 				<File Id="68506720" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Nexus-Menu.wav</ShortName>
 					<Path>Media/68506720.wem</Path>
-					<CachePath>SFX/Nexus-Menu_26FE13D1.wem</CachePath>
+					<CachePath>SFX/Nexus-Menu_E48F3E35.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -1457,5 +1457,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5C5BF61D-5B2D-B35E-7F8A-54A7C1B526CE}</FileHash>
+	<FileHash>{FFBDD310-EBC6-1BFF-2707-F8408A2591D7}</FileHash>
 </SoundBanksInfo>
