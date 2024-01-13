@@ -57,9 +57,10 @@
 					<ChildrenList>
 						<AudioFileSource Name="Nexus 2_V2" ID="{A4459EDB-C91E-47C3-B89B-F16BF6F5ABB0}">
 							<PropertyList>
-								<Property Name="LoopBegin" Type="Real64" Value="61.420275080391"/>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.562402095973525"/>
 								<Property Name="LoopEnd" Type="Real64" Value="152.122309210736"/>
 								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="61.5554075059976"/>
 							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>Nexus 2_V2.wav</AudioFile>

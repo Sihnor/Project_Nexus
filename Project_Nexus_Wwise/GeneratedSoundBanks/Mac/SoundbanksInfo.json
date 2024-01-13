@@ -2077,7 +2077,7 @@
     "Type": "Event",
     "GUID": "{22E52904-E216-485D-A917-E19F5A57449D}",
     "Language": "SFX",
-    "Hash": "{B0BB0C77-98F6-A7CA-A354-0855C5459964}",
+    "Hash": "{F74CB90B-1BE1-C1DA-27AD-2098CB5D1116}",
     "ObjectPath": "Play_StageMusic",
     "ShortName": "Play_StageMusic",
     "Path": "Event/Play_StageMusic.bnk",
@@ -2089,7 +2089,7 @@
       "Location": "Loose",
       "ShortName": "Nexus 2_V2.wav",
       "Path": "Media/595978771.wem",
-      "CachePath": "SFX/Nexus 2_V2_B3FA1263.wem"
+      "CachePath": "SFX/Nexus 2_V2_AA286D99.wem"
      }
     ],
     "Events": [
@@ -2799,7 +2799,7 @@
       "Location": "Loose",
       "ShortName": "Nexus-Menu.wav",
       "Path": "Media/68506720.wem",
-      "CachePath": "SFX/Nexus-Menu_26FE13D1.wem"
+      "CachePath": "SFX/Nexus-Menu_E48F3E35.wem"
      }
     ],
     "Events": [
@@ -3435,6 +3435,6 @@
     ]
    }
   ],
-  "FileHash": "{A3F31398-319F-8F23-CA4D-756C3A5D1F03}"
+  "FileHash": "{39EAF322-0A22-FC2A-4562-C748BD53523C}"
  }
 }

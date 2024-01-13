@@ -9,7 +9,7 @@
 				<File Id="68506720" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Nexus-Menu.wav</ShortName>
 					<Path>Media/68506720.wem</Path>
-					<CachePath>SFX/Nexus-Menu_26FE13D1.wem</CachePath>
+					<CachePath>SFX/Nexus-Menu_E48F3E35.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -21,5 +21,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9C6E891B-737C-63E6-30D8-91FCF2B64023}</FileHash>
+	<FileHash>{EE74A40B-2E7A-8F62-58F6-32C3A8E26B76}</FileHash>
 </SoundBanksInfo>
