@@ -63,7 +63,7 @@ void AFightingCharacter::BeginPlay()
 void AFightingCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	OtherCharacter = Cast<AFightingCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), PlayerIndex));	
+	OtherCharacter = Cast<AFightingCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), PlayerIndex));
 
 	//UE_LOG(LogTemp, Warning, TEXT("Velocit X: %f Y: %f Z: %f"), GetVelocity().X, GetVelocity().Y, GetVelocity().Z);
 }
@@ -71,7 +71,7 @@ void AFightingCharacter::Tick(float DeltaTime)
 void AFightingCharacter::DoMoveFwd(const FInputActionValue& Value){
 	const FVector Forward = GetActorForwardVector();
 
-	if (GetController() && IsCombatReady && !IsBlocking && !WasFirstHeavyAttackUsed && !WasFirstLightAttackUsed && !IsSideStepNY && !IsSideStepPY) {
+	if (GetController() && IsCombatReady && !IsBlocking && !WasFirstHeavyAttackUsed && !WasFirstLightAttackUsed && !IsSideStepNY && !IsSideStepPY && !this->bIsCrouched) {
 		UpdateCharacterRotation();
 		AddMovementInput(Forward, Value.Get<float>());
 		MoveFwd = true;

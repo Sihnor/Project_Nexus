@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{22E52904-E216-485D-A917-E19F5A57449D}",
     "Language": "SFX",
-    "Hash": "{B0BB0C77-98F6-A7CA-A354-0855C5459964}",
+    "Hash": "{F74CB90B-1BE1-C1DA-27AD-2098CB5D1116}",
     "ObjectPath": "Play_StageMusic",
     "ShortName": "Play_StageMusic",
     "Path": "Event/Play_StageMusic.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "Nexus 2_V2.wav",
       "Path": "Media/595978771.wem",
-      "CachePath": "SFX/Nexus 2_V2_B3FA1263.wem"
+      "CachePath": "SFX/Nexus 2_V2_AA286D99.wem"
      }
     ],
     "Events": [
@@ -41,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{AE68A047-AF56-C6A5-4CA6-C9F5A7570E6E}"
+  "FileHash": "{2B454081-4B6D-90AD-4912-2668DAD11904}"
  }
 }
