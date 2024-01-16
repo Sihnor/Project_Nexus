@@ -63,7 +63,7 @@ void AFightingCharacter::BeginPlay()
 void AFightingCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	OtherCharacter = Cast<AFightingCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), PlayerIndex));	
+	OtherCharacter = Cast<AFightingCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), PlayerIndex));
 
 	//UE_LOG(LogTemp, Warning, TEXT("Velocit X: %f Y: %f Z: %f"), GetVelocity().X, GetVelocity().Y, GetVelocity().Z);
 }
