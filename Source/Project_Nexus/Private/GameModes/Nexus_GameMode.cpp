@@ -93,8 +93,7 @@ void ANexus_GameMode::CountDown()
 	if (this->GameState->GetRemainingTime() == 0)
 	{
 		this->GetWorldTimerManager().ClearTimer(this->TH_CountDown);
-
-		return;
+		this->OnTimeIsUp();
 	}
 
 	OnCountDown(this->GameState->GetRemainingTime());
@@ -120,33 +119,21 @@ void ANexus_GameMode::PlayerIsDead(EPlayerEnum Player)
 	switch (Player)
 	{
 	case EPlayerEnum::PlayerOne:
-		this->PlayerTwoRoundWon++;
+		this->AddPlayerOneRoundWon(EPlayerEnum::PlayerTwo);
 		break;
 	case EPlayerEnum::PlayerTwo:
-		this->PlayerOneRoundWon++;
+		this->AddPlayerOneRoundWon(EPlayerEnum::PlayerOne);
 		break;
 	}
 
 	OnPlayerIsDead(Player);
-
-	//if (!this->CheckIfGameIsWon())
-	//{
-	//	this->CurrentRound++;
-	//	this->EndMatch();
-	//	this->StartMatch();
-	//	return;
-	//}
-	//
-	//FString MapName = "UserInterfaceLevel";
-	//
-	//UGameplayStatics::OpenLevel(this, *MapName, true);
-	//
-	//if (GEngine) {
-	//	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("WAS LOS %d")));
-	//}
 }
 
 void ANexus_GameMode::OnCountDown_Implementation(int RemainingTime)
+{
+}
+
+void ANexus_GameMode::OnTimeIsUp_Implementation()
 {
 }
 
@@ -157,4 +144,18 @@ bool ANexus_GameMode::CheckIfGameIsWon()
 		return true;
 	}
 	return false;
+}
+
+void ANexus_GameMode::AddPlayerOneRoundWon(EPlayerEnum Player)
+{
+	switch (Player)
+	{
+		case EPlayerEnum::PlayerOne:
+			this->PlayerOneRoundWon++;
+			break;
+		case EPlayerEnum::PlayerTwo:
+			this->PlayerTwoRoundWon++;
+			break;
+	default: ;
+	}
 }
