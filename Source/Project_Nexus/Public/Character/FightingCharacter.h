@@ -13,6 +13,21 @@ class UInputAction;
 class UCurveFloat;
 class AHitBox;
 
+UENUM(BlueprintType)
+enum class ECharacterState : uint8
+{
+	VE_Default UMETA(DisplayName = "Not_Moving"),
+    VE_MovingRight UMETA(DisplayName = "Moving_Right"),
+    VE_MovingLeft UMETA(DisplayName = "Moving_Left"),
+	VE_RunningLeft UMETA(DisplayName = "Running_Left"),
+	VE_Jumping UMETA(DisplayName = "Jumping"),
+	VE_Stunned UMETA(DisplayName = "Stunned"),
+	VE_Blocking UMETA(DisplayName = "Blocking"),
+	VE_Crouching UMETA(DisplayName = "Crouching"),
+	VE_Launched UMETA(DisplayName = "Launched")
+	//more...
+};
+
 UCLASS()
 class PROJECT_NEXUS_API AFightingCharacter : public ACharacter
 {
@@ -27,6 +42,8 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	virtual void Landed(const FHitResult& Hit) override;
 
 protected:
 	// Called when the game starts or when spawned
@@ -83,6 +100,9 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hurtboxes")
     	bool bUsingComplexHurtboxes;
 
+	UFUNCTION(BlueprintCallable, Category = "Hitbox")
+		void GetStunned(float HitStunTime, float BlockStunTime, float PushbackAmount, float LaunchAmount);
+
 	//Delegate signature for the function which will handle our Finished event.
 	
    	FOnTimelineFloat TimelineProgressEvent;
@@ -124,6 +144,16 @@ private:
 
 	void ClearSideStep(const FInputActionValue& Value);
 
+	//void GetStunned(float HitStunTime, float BlockStunTime, float PushbackAmount, float LaunchAmount);
+
+	void PerformPushBack(float PushbackAmount, float LaunchAmount, bool HasBlocked);
+
+	void BeginStun();
+
+	void EndStun();
+
+	FTimerHandle StunTimeHandle;
+
 	// Custom function for updating character rotation
 	UFUNCTION(BlueprintCallable, Category = "Custom Character Rotation", meta = (AllowPrivateAccess = "true"))
     	void UpdateCharacterRotation();
@@ -161,8 +191,26 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
 		bool IsSideStepPY = false;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool WasLaunched = false;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool WasStunned = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool HasLandedHit = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		float StunTime;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		float GravityScale;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats", meta = (AllowPrivateAccess = "true"))
 		int PlayerIndex;
+
+
+
 
     // Whether to rotate the character based on input
 	/*UPROPERTY(EditAnywhere, Category = "Custom Character Rotation")

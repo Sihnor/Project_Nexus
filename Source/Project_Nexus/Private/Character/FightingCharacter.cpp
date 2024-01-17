@@ -35,6 +35,21 @@ AFightingCharacter::AFightingCharacter()
 	OtherCharacter = nullptr;
 	Hurtbox= nullptr;
 	bUsingComplexHurtboxes = false;
+	//CharacterState = ECharacterState::VE_Default;
+	StunTime = 0.f;
+	GravityScale = GetCharacterMovement()->GravityScale;
+
+	IsCombatReady = false;
+	MoveFwd = false;
+	MoveBwd = false;
+	IsBlocking = false;
+	WasFirstLightAttackUsed = false;
+	WasFirstHeavyAttackUsed = false;
+	IsSideStepNY = false;
+	IsSideStepPY = false;
+	WasLaunched = false;
+	WasStunned = false;
+	HasLandedHit = false;
 
 }
 
@@ -65,13 +80,28 @@ void AFightingCharacter::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 	OtherCharacter = Cast<AFightingCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), PlayerIndex));
 
+	//UE_LOG(LogTemp, Warning, TEXT("Player %i Was launched: %i"), PlayerIndex, WasLaunched);
+
+	//UE_LOG(LogTemp, Warning, TEXT("On Gorund: %i"), GetCharacterMovement()->IsMovingOnGround());
+	//UE_LOG(LogTemp, Warning, TEXT("Player %i Rotation %f, %f, %f"), PlayerIndex, GetActorRotation().Roll, GetActorRotation().Pitch, GetActorRotation().Yaw);
+	//UE_LOG(LogTemp, Warning, TEXT("Player %i Foward Vector: %f"), PlayerIndex, GetActorForwardVector().X);
+
 	//UE_LOG(LogTemp, Warning, TEXT("Velocit X: %f Y: %f Z: %f"), GetVelocity().X, GetVelocity().Y, GetVelocity().Z);
+}
+
+void AFightingCharacter::Landed(const FHitResult& Hit){
+	if(WasLaunched || bWasJumping){
+		GetCharacterMovement()->GravityScale = GravityScale;
+	}
+
+	WasLaunched = false;
+	
 }
 
 void AFightingCharacter::DoMoveFwd(const FInputActionValue& Value){
 	const FVector Forward = GetActorForwardVector();
 
-	if (GetController() && IsCombatReady && !IsBlocking && !WasFirstHeavyAttackUsed && !WasFirstLightAttackUsed && !IsSideStepNY && !IsSideStepPY && !this->bIsCrouched) {
+	if (GetController() && IsCombatReady && !IsBlocking && !WasFirstHeavyAttackUsed && !WasFirstLightAttackUsed && !IsSideStepNY && !IsSideStepPY && !this->bIsCrouched && !WasLaunched) {
 		UpdateCharacterRotation();
 		AddMovementInput(Forward, Value.Get<float>());
 		MoveFwd = true;
@@ -85,7 +115,7 @@ void AFightingCharacter::DoMoveFwd(const FInputActionValue& Value){
 void AFightingCharacter::DoMoveBwd(const FInputActionValue& Value){
 	const FVector Forward = GetActorForwardVector();
 
-	if (GetController() && IsCombatReady && !IsBlocking && !WasFirstHeavyAttackUsed && !WasFirstLightAttackUsed && !IsSideStepNY && !IsSideStepPY && !this->bIsCrouched) {
+	if (GetController() && IsCombatReady && !IsBlocking && !WasFirstHeavyAttackUsed && !WasFirstLightAttackUsed && !IsSideStepNY && !IsSideStepPY && !this->bIsCrouched && !WasLaunched) {
 		UpdateCharacterRotation();
 		AddMovementInput(Forward, Value.Get<float>());
 		MoveBwd = true;
@@ -135,6 +165,7 @@ void AFightingCharacter::DoJump(const FInputActionValue& Value){
 	if (GetController() && IsCombatReady && this->CanJump()) {
 		//UE_LOG(LogTemp, Warning, TEXT("Jump"));
 		this->Jump();
+
 	}
 }
 
@@ -234,6 +265,77 @@ void AFightingCharacter::TimelineFinishedFunction()
 {
 	TimelineComp->Stop();
 	TimelineComp->SetPlaybackPosition(0.f, false);
+}
+
+void AFightingCharacter::GetStunned(float HitStunTime, float BlockStunTime, float PushbackAmount, float LaunchAmount)
+{
+	if(!IsBlocking){
+		StunTime= HitStunTime;
+
+		if(StunTime > 0.f){
+			WasStunned = true;
+			BeginStun();
+			//OtherCharacter->PerformPushBack(PushbackAmount, 0.f, false);
+		}
+
+		if(OtherCharacter){
+			OtherCharacter->HasLandedHit = true;
+			OtherCharacter->PerformPushBack(PushbackAmount, 0.f, false);
+		}
+
+		PerformPushBack(PushbackAmount, LaunchAmount, false);
+	}else{
+		StunTime = BlockStunTime;
+
+		if(StunTime > 0.f){
+			BeginStun();
+		}
+
+		if(OtherCharacter){
+			OtherCharacter->HasLandedHit = false;
+			OtherCharacter->PerformPushBack(PushbackAmount, 0.f, false);
+		}
+
+		PerformPushBack(PushbackAmount, 0.f, true);
+	}
+}
+
+void AFightingCharacter::PerformPushBack(float PushbackAmount, float LaunchAmount, bool HasBlocked){
+	if(HasBlocked){
+		if(OtherCharacter->GetActorForwardVector().X < 0.f){
+			LaunchCharacter(FVector( -PushbackAmount*2.f, 0.f,0.f), false, false);
+			//UE_LOG(LogTemp, Warning, TEXT("1 Push Amount: %f"), -PushbackAmount*2.f);
+		}else {
+			LaunchCharacter(FVector(PushbackAmount*2.f, 0.f,0.f), false, false);
+			//UE_LOG(LogTemp, Warning, TEXT("2 Push Amount: %f"), PushbackAmount*2.f);
+		}
+		//UE_LOG(LogTemp, Warning, TEXT("SideStep Negative Y");
+	}else {
+		if(LaunchAmount>0.f){
+				GetCharacterMovement()->GravityScale *= 0.7;
+				WasLaunched = true;
+		}
+		
+		if(OtherCharacter->GetActorForwardVector().X < 0.f){
+			LaunchCharacter(FVector(-PushbackAmount, 0.f, LaunchAmount), false, false);
+			//UE_LOG(LogTemp, Warning, TEXT("Forward actor of Player %i is %f with3 Push Amount: %f"), PlayerIndex, GetActorForwardVector().X, PushbackAmount*2.f);
+		}else{
+			LaunchCharacter(FVector(PushbackAmount, 0.f, LaunchAmount), false, false);
+			//UE_LOG(LogTemp, Warning, TEXT("4 Push Amount: %f"), PushbackAmount*2.f);
+		}
+	}
+}
+
+void AFightingCharacter::BeginStun(){
+	IsCombatReady = false;
+
+	GetWorld()->GetTimerManager().SetTimer(StunTimeHandle, this, &AFightingCharacter::EndStun, StunTime, false);
+
+}
+
+void AFightingCharacter::EndStun(){
+	
+	IsCombatReady = true;
 }
 
 // Called to bind functionality to input
