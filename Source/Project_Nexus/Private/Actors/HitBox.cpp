@@ -26,6 +26,7 @@ AHitBox::AHitBox()
 
 
 	ShouldAttach = false;
+	IsNeutral = false;
 }
 
 // Called when the game starts or when spawned

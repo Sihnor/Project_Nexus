@@ -16,15 +16,17 @@ class AHitBox;
 UENUM(BlueprintType)
 enum class ECharacterState : uint8
 {
-	VE_Default UMETA(DisplayName = "Not_Moving"),
-    VE_MovingRight UMETA(DisplayName = "Moving_Right"),
-    VE_MovingLeft UMETA(DisplayName = "Moving_Left"),
-	VE_RunningLeft UMETA(DisplayName = "Running_Left"),
-	VE_Jumping UMETA(DisplayName = "Jumping"),
-	VE_Stunned UMETA(DisplayName = "Stunned"),
-	VE_Blocking UMETA(DisplayName = "Blocking"),
-	VE_Crouching UMETA(DisplayName = "Crouching"),
-	VE_Launched UMETA(DisplayName = "Launched")
+	FC_Default UMETA(DisplayName = "Not_Moving"),
+    FC_MovingRight UMETA(DisplayName = "Moving_Right"),
+    FC_MovingLeft UMETA(DisplayName = "Moving_Left"),
+	FC_RunningLeft UMETA(DisplayName = "Running_Left"),
+	FC_Jumping UMETA(DisplayName = "Jumping"),
+	FC_Stunned UMETA(DisplayName = "Stunned"),
+	FC_Blocking UMETA(DisplayName = "Blocking"),
+	FC_Crouching UMETA(DisplayName = "Crouching"),
+	FC_Launched UMETA(DisplayName = "Launched"),
+	FC_KockedDown UMETA(DisplayName = "Knocked Down"),
+	FC_Recovery UMETA(DisplayName = "Recovery")
 	//more...
 };
 
@@ -101,7 +103,7 @@ protected:
     	bool bUsingComplexHurtboxes;
 
 	UFUNCTION(BlueprintCallable, Category = "Hitbox")
-		void GetStunned(float HitStunTime, float BlockStunTime, float PushbackAmount, float LaunchAmount);
+		void GetStunned(float HitStunTime, float BlockStunTime, float PushbackAmount, float LaunchAmount, bool IsNeutral);
 
 	//Delegate signature for the function which will handle our Finished event.
 	
@@ -146,7 +148,7 @@ private:
 
 	//void GetStunned(float HitStunTime, float BlockStunTime, float PushbackAmount, float LaunchAmount);
 
-	void PerformPushBack(float PushbackAmount, float LaunchAmount, bool HasBlocked);
+	void PerformPushBack(float PushbackAmount, float LaunchAmount, bool HasBlocked, bool IsNeutral);
 
 	void BeginStun();
 
@@ -201,10 +203,19 @@ private:
 		bool HasLandedHit = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool IsKnockedDown = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool IsRecovery = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
 		float StunTime;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
-		float GravityScale;
+		float DefaultGravityScale;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		float GravityScaleModifier;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats", meta = (AllowPrivateAccess = "true"))
 		int PlayerIndex;
