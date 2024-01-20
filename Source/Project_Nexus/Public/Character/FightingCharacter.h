@@ -17,9 +17,11 @@ UENUM(BlueprintType)
 enum class ECharacterState : uint8
 {
 	FC_Default UMETA(DisplayName = "Not_Moving"),
-    FC_MovingRight UMETA(DisplayName = "Moving_Right"),
-    FC_MovingLeft UMETA(DisplayName = "Moving_Left"),
-	FC_RunningLeft UMETA(DisplayName = "Running_Left"),
+    FC_MovingForward UMETA(DisplayName = "Moving_Forward"),
+    FC_MovingBackward UMETA(DisplayName = "Moving_Backward"),
+	FC_RunningForward UMETA(DisplayName = "Running_Forward"),
+	FC_DashForward UMETA(DisplayName = "Dash_Forward"),
+	FC_DashBackward UMETA(DisplayName = "Dash_Backward"),
 	FC_Jumping UMETA(DisplayName = "Jumping"),
 	FC_Stunned UMETA(DisplayName = "Stunned"),
 	FC_Blocking UMETA(DisplayName = "Blocking"),
@@ -122,6 +124,12 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Timeline")
     	UCurveFloat* FloatCurve;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+		ECharacterState CharacterState;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+		FTransform Transform;
+
 private:
 
 	void DoMoveFwd(const FInputActionValue& Value); //include InputActionValue header file because it not a pointer
@@ -184,10 +192,10 @@ private:
 		bool IsBlocking = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
-		bool WasFirstLightAttackUsed = false;
+		bool WasLightAttackUsed = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
-		bool WasFirstHeavyAttackUsed = false;
+		bool WasHeavyAttackUsed = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
 		bool IsSideStepNY = false;

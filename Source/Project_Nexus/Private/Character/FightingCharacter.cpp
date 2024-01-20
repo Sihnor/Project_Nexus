@@ -37,7 +37,8 @@ AFightingCharacter::AFightingCharacter()
 	OtherCharacter = nullptr;
 	Hurtbox= nullptr;
 	bUsingComplexHurtboxes = false;
-	//CharacterState = ECharacterState::VE_Default;
+	CharacterState = ECharacterState::FC_Default;
+	Transform = FTransform();
 	StunTime = 0.f;
 	DefaultGravityScale = GetCharacterMovement()->GravityScale;
 	GravityScaleModifier = 0.8f;
@@ -47,8 +48,8 @@ AFightingCharacter::AFightingCharacter()
 	MoveFwd = false;
 	MoveBwd = false;
 	IsBlocking = false;
-	WasFirstLightAttackUsed = false;
-	WasFirstHeavyAttackUsed = false;
+	WasLightAttackUsed = false;
+	WasHeavyAttackUsed = false;
 	IsSideStepNY = false;
 	IsSideStepPY = false;
 	WasLaunched = false;
@@ -128,24 +129,28 @@ void AFightingCharacter::Landed(const FHitResult& Hit){
 void AFightingCharacter::DoMoveFwd(const FInputActionValue& Value){
 	const FVector Forward = GetActorForwardVector();
 
-	if (GetController() && IsCombatReady && !IsBlocking && !WasFirstHeavyAttackUsed && !WasFirstLightAttackUsed && !IsSideStepNY && !IsSideStepPY && !this->bIsCrouched && !WasLaunched && !WasStunned && !IsKnockedDown && !IsRecovery && GetCharacterMovement()->IsMovingOnGround() && !IsWallBounce && !IsGroundBounce) {
+	if (GetController() && IsCombatReady && !IsBlocking && !WasHeavyAttackUsed && !WasLightAttackUsed && !IsSideStepNY && !IsSideStepPY && !this->bIsCrouched && !WasLaunched && !WasStunned && !IsKnockedDown && !IsRecovery && GetCharacterMovement()->IsMovingOnGround() && !IsWallBounce && !IsGroundBounce) {
 		UpdateCharacterRotation();
+
+		CharacterState = ECharacterState::FC_MovingForward;
+
+
 		AddMovementInput(Forward, Value.Get<float>());
 
 		MoveFwd = true;
 
-
-
 		//UE_LOG(LogTemp, Warning, TEXT("Move Value X: %f"), Value.Get<float>());
 		//UE_LOG(LogTemp, Warning, TEXT("Forwar Value: %f %f %f"), Forward.X, Forward.Y, Forward.Z);
-	}
+	}/*else {
+		CharacterState = ECharacterState::FC_Default;
+	}*/
 
 }
 
 void AFightingCharacter::DoMoveBwd(const FInputActionValue& Value){
 	const FVector Forward = GetActorForwardVector();
 
-	if (GetController() && IsCombatReady && !IsBlocking && !WasFirstHeavyAttackUsed && !WasFirstLightAttackUsed && !IsSideStepNY && !IsSideStepPY && !this->bIsCrouched && !WasLaunched && !WasStunned && !IsKnockedDown && !IsRecovery && GetCharacterMovement()->IsMovingOnGround() && !IsWallBounce && !IsGroundBounce) {
+	if (GetController() && IsCombatReady && !IsBlocking && !WasHeavyAttackUsed && !WasLightAttackUsed && !IsSideStepNY && !IsSideStepPY && !this->bIsCrouched && !WasLaunched && !WasStunned && !IsKnockedDown && !IsRecovery && GetCharacterMovement()->IsMovingOnGround() && !IsWallBounce && !IsGroundBounce) {
 		UpdateCharacterRotation();
 
 		float CurrentDistanceApart = abs(OtherCharacter->GetActorLocation().X - GetActorLocation().X);
@@ -155,24 +160,25 @@ void AFightingCharacter::DoMoveBwd(const FInputActionValue& Value){
 		UE_LOG(LogTemp, Warning, TEXT("Forwar actor is greater %i"), GetActorForwardVector().X > 0.f);
 		UE_LOG(LogTemp, Warning, TEXT("Forwar actor %f"), GetActorForwardVector().X);*/
 
-		//|| (CurrentDistanceApart - Value.Get<float>() < CurrentDistanceApart && GetActorForwardVector().X < 0.f) 
-
 		if(CurrentDistanceApart >= MaxDistanceApart){
 			if((CurrentDistanceApart + Value.Get<float>() > CurrentDistanceApart && GetActorForwardVector().X > 0.f) || (CurrentDistanceApart - Value.Get<float>() < CurrentDistanceApart && GetActorForwardVector().X < 0.f) ){
-			AddMovementInput(Forward, Value.Get<float>());
+				AddMovementInput(Forward, Value.Get<float>());
 			}
 		}else {
 			AddMovementInput(Forward, Value.Get<float>());
 		}
+		CharacterState = ECharacterState::FC_MovingBackward;
 		MoveBwd = true;
 		//UE_LOG(LogTemp, Warning, TEXT("Move X: %f"), Value.Get<float>());
-	}
+	}/*else {
+		CharacterState = ECharacterState::FC_Default;
+	}*/
 }
 
 void AFightingCharacter::LightAttack(const FInputActionValue& Value){
 	if (GetController() && IsCombatReady) {
 		UpdateCharacterRotation();
-		WasFirstLightAttackUsed = true;
+		WasLightAttackUsed = true;
 
 		//UE_LOG(LogTemp, Warning, TEXT("Light Attack"));
 		//UE_LOG(LogTemp, Warning, TEXT("LA: %d"), WasFirstLightAttackUsed);
@@ -182,7 +188,7 @@ void AFightingCharacter::LightAttack(const FInputActionValue& Value){
 void AFightingCharacter::HeavyAttack(const FInputActionValue& Value){
 	if (GetController() && IsCombatReady) {
 		UpdateCharacterRotation();
-		WasFirstHeavyAttackUsed = true;
+		WasHeavyAttackUsed = true;
 		
 		//UE_LOG(LogTemp, Warning, TEXT("Heavy Attack"));
 		//UE_LOG(LogTemp, Warning, TEXT("HA: %d"), WasFirstHeavyAttackUsed);
@@ -190,7 +196,7 @@ void AFightingCharacter::HeavyAttack(const FInputActionValue& Value){
 }
 
 void AFightingCharacter::Block(const FInputActionValue& Value){
-	if (GetController() && IsCombatReady && !this->bIsCrouched && !WasFirstHeavyAttackUsed && !WasFirstLightAttackUsed) {
+	if (GetController() && IsCombatReady && !this->bIsCrouched && !WasHeavyAttackUsed && !WasLightAttackUsed) {
 			UpdateCharacterRotation();
 			IsBlocking = true;
 			//UE_LOG(LogTemp, Warning, TEXT("Block"));
@@ -237,7 +243,7 @@ void AFightingCharacter::UnDuck(const FInputActionValue& Value){
 void AFightingCharacter::SideStepNY(const FInputActionValue& Value){
     const FVector SideStep = GetActorRightVector();
 
-    if (GetController() && IsCombatReady && !IsBlocking && !IsSideStepPY && !this->bIsCrouched && GetVelocity().Z == 0 && !MoveFwd && !MoveBwd && !WasFirstHeavyAttackUsed && !WasFirstLightAttackUsed && !WasLaunched && !WasStunned && !IsKnockedDown && !IsRecovery && GetCharacterMovement()->IsMovingOnGround()) {
+    if (GetController() && IsCombatReady && !IsBlocking && !IsSideStepPY && !this->bIsCrouched && GetVelocity().Z == 0 && !MoveFwd && !MoveBwd && !WasHeavyAttackUsed && !WasLightAttackUsed && !WasLaunched && !WasStunned && !IsKnockedDown && !IsRecovery && GetCharacterMovement()->IsMovingOnGround()) {
 		UpdateCharacterRotation();	
 		IsSideStepNY = true;
 
@@ -250,7 +256,7 @@ void AFightingCharacter::SideStepNY(const FInputActionValue& Value){
 void AFightingCharacter::SideStepPY(const FInputActionValue& Value){
     const FVector SideStep = GetActorRightVector();
 
-    if (GetController() && IsCombatReady && !IsBlocking && !IsSideStepNY && !this->bIsCrouched && GetVelocity().Z == 0 && !MoveFwd && !MoveBwd  && !WasFirstHeavyAttackUsed && !WasFirstLightAttackUsed && !WasLaunched && !WasStunned && !IsKnockedDown && !IsRecovery && GetCharacterMovement()->IsMovingOnGround()) {	
+    if (GetController() && IsCombatReady && !IsBlocking && !IsSideStepNY && !this->bIsCrouched && GetVelocity().Z == 0 && !MoveFwd && !MoveBwd  && !WasHeavyAttackUsed && !WasLightAttackUsed && !WasLaunched && !WasStunned && !IsKnockedDown && !IsRecovery && GetCharacterMovement()->IsMovingOnGround()) {	
 		UpdateCharacterRotation();	
 		IsSideStepPY = true;
 
@@ -268,6 +274,8 @@ void AFightingCharacter::ClearSideStep(const FInputActionValue& Value){
 		//IsSideStepPY = false;
 		MoveFwd = false;
 		MoveBwd = false;
+
+		CharacterState = ECharacterState::FC_Default;
 	}
 }
 
@@ -429,6 +437,7 @@ void AFightingCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 
 		EnhancedInputComp->BindAction(SideStepPositiveYAction, ETriggerEvent::Triggered, this, &AFightingCharacter::SideStepPY);
 		EnhancedInputComp->BindAction(SideStepNegativeYAction, ETriggerEvent::Triggered, this, &AFightingCharacter::SideStepNY);
+
 		//EnhancedInputComp->BindAction(SideStepPositiveYAction, ETriggerEvent::Completed, this, &AFightingCharacter::ClearSideStep);
 		//EnhancedInputComp->BindAction(SideStepNegativeYAction, ETriggerEvent::Completed, this, &AFightingCharacter::ClearSideStep);
 	}
