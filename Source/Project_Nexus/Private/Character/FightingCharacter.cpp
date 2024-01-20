@@ -41,6 +41,7 @@ AFightingCharacter::AFightingCharacter()
 	StunTime = 0.f;
 	DefaultGravityScale = GetCharacterMovement()->GravityScale;
 	GravityScaleModifier = 0.8f;
+	MaxDistanceApart = 800.f;
 
 	IsCombatReady = false;
 	MoveFwd = false;
@@ -55,7 +56,8 @@ AFightingCharacter::AFightingCharacter()
 	HasLandedHit = false;
 	IsKnockedDown = false;
 	IsRecovery = false;
-
+	IsWallBounce = false;
+	IsGroundBounce = false;
 }
 
 // Called when the game starts or when spawned
@@ -85,7 +87,10 @@ void AFightingCharacter::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 	OtherCharacter = Cast<AFightingCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), PlayerIndex));
 
+	//UE_LOG(LogTemp, Warning, TEXT("Forwar actor: %f"), GetActorForwardVector().X);
 	//UE_LOG(LogTemp, Warning, TEXT("Player %i Was launched: %i"), PlayerIndex, WasLaunched);
+
+	//UE_LOG(LogTemp, Warning, TEXT("0-> Player %i IsCombatReady: %i Launched: %i Stunned: %i KnockedDown: %i IsRecovery: %i IsOnGround: %i IsWallBounce: %i IsGroundBounce: %i"), PlayerIndex, IsCombatReady, WasLaunched, WasStunned, IsKnockedDown, IsRecovery, GetCharacterMovement()->IsMovingOnGround(), IsWallBounce, IsGroundBounce);
 
 	//UE_LOG(LogTemp, Warning, TEXT("Player %i Launched: %i Stunned: %i KnockedDown: %i IsRecovery: %i IsOnGround: %i"), PlayerIndex, WasLaunched, WasStunned, IsKnockedDown, IsRecovery, GetCharacterMovement()->IsMovingOnGround());
 	//UE_LOG(LogTemp, Warning, TEXT("Player %i NotLaunched: %i NotStunned: %i NotKnockedDown: %i NotIsRecovery: %i IsOnGround: %i"), PlayerIndex, !WasLaunched, !WasStunned, !IsKnockedDown, !IsRecovery, GetCharacterMovement()->IsMovingOnGround());
@@ -105,26 +110,31 @@ void AFightingCharacter::Landed(const FHitResult& Hit){
 			IsKnockedDown = false;
 		}
 		
-	} else if(WasLaunched){
+	} else if((WasLaunched && !IsGroundBounce) || IsWallBounce ||  IsGroundBounce){
 		if(!Cast<AHitBox>(Hit.GetActor())){
 			GetCharacterMovement()->GravityScale = DefaultGravityScale;
 			GravityScaleModifier = 0.8f;
 			IsKnockedDown = true;
-			
 		}
-		
+	}
+	else if(IsGroundBounce){
+		IsGroundBounce = true;
 	}
 	WasLaunched = false;
+	IsWallBounce = false;
 	
 }
 
 void AFightingCharacter::DoMoveFwd(const FInputActionValue& Value){
 	const FVector Forward = GetActorForwardVector();
 
-	if (GetController() && IsCombatReady && !IsBlocking && !WasFirstHeavyAttackUsed && !WasFirstLightAttackUsed && !IsSideStepNY && !IsSideStepPY && !this->bIsCrouched && !WasLaunched && !WasStunned && !IsKnockedDown && !IsRecovery && GetCharacterMovement()->IsMovingOnGround()) {
+	if (GetController() && IsCombatReady && !IsBlocking && !WasFirstHeavyAttackUsed && !WasFirstLightAttackUsed && !IsSideStepNY && !IsSideStepPY && !this->bIsCrouched && !WasLaunched && !WasStunned && !IsKnockedDown && !IsRecovery && GetCharacterMovement()->IsMovingOnGround() && !IsWallBounce && !IsGroundBounce) {
 		UpdateCharacterRotation();
 		AddMovementInput(Forward, Value.Get<float>());
+
 		MoveFwd = true;
+
+
 
 		//UE_LOG(LogTemp, Warning, TEXT("Move Value X: %f"), Value.Get<float>());
 		//UE_LOG(LogTemp, Warning, TEXT("Forwar Value: %f %f %f"), Forward.X, Forward.Y, Forward.Z);
@@ -135,9 +145,25 @@ void AFightingCharacter::DoMoveFwd(const FInputActionValue& Value){
 void AFightingCharacter::DoMoveBwd(const FInputActionValue& Value){
 	const FVector Forward = GetActorForwardVector();
 
-	if (GetController() && IsCombatReady && !IsBlocking && !WasFirstHeavyAttackUsed && !WasFirstLightAttackUsed && !IsSideStepNY && !IsSideStepPY && !this->bIsCrouched && !WasLaunched && !WasStunned && !IsKnockedDown && !IsRecovery && GetCharacterMovement()->IsMovingOnGround()) {
+	if (GetController() && IsCombatReady && !IsBlocking && !WasFirstHeavyAttackUsed && !WasFirstLightAttackUsed && !IsSideStepNY && !IsSideStepPY && !this->bIsCrouched && !WasLaunched && !WasStunned && !IsKnockedDown && !IsRecovery && GetCharacterMovement()->IsMovingOnGround() && !IsWallBounce && !IsGroundBounce) {
 		UpdateCharacterRotation();
-		AddMovementInput(Forward, Value.Get<float>());
+
+		float CurrentDistanceApart = abs(OtherCharacter->GetActorLocation().X - GetActorLocation().X);
+
+		/*UE_LOG(LogTemp, Warning, TEXT("Current distance %f"), CurrentDistanceApart);
+		UE_LOG(LogTemp, Warning, TEXT("Current distance + Value %f"), CurrentDistanceApart + Value.Get<float>());
+		UE_LOG(LogTemp, Warning, TEXT("Forwar actor is greater %i"), GetActorForwardVector().X > 0.f);
+		UE_LOG(LogTemp, Warning, TEXT("Forwar actor %f"), GetActorForwardVector().X);*/
+
+		//|| (CurrentDistanceApart - Value.Get<float>() < CurrentDistanceApart && GetActorForwardVector().X < 0.f) 
+
+		if(CurrentDistanceApart >= MaxDistanceApart){
+			if((CurrentDistanceApart + Value.Get<float>() > CurrentDistanceApart && GetActorForwardVector().X > 0.f) || (CurrentDistanceApart - Value.Get<float>() < CurrentDistanceApart && GetActorForwardVector().X < 0.f) ){
+			AddMovementInput(Forward, Value.Get<float>());
+			}
+		}else {
+			AddMovementInput(Forward, Value.Get<float>());
+		}
 		MoveBwd = true;
 		//UE_LOG(LogTemp, Warning, TEXT("Move X: %f"), Value.Get<float>());
 	}
@@ -182,7 +208,7 @@ void AFightingCharacter::UnBlock(const FInputActionValue& Value){
 }
 
 void AFightingCharacter::DoJump(const FInputActionValue& Value){
-	if (GetController() && IsCombatReady && this->CanJump() && !WasStunned && !WasLaunched && !IsKnockedDown && !IsRecovery) {
+	if (GetController() && IsCombatReady && this->CanJump() && !WasStunned && !WasLaunched && !IsKnockedDown && !IsRecovery && !IsWallBounce && !IsGroundBounce) {
 		//UE_LOG(LogTemp, Warning, TEXT("Jump"));
 		this->Jump();
 
@@ -298,7 +324,6 @@ void AFightingCharacter::GetStunned(float HitStunTime, float BlockStunTime, floa
 		if(StunTime > 0.f){
 			WasStunned = true;
 			BeginStun();
-			//OtherCharacter->PerformPushBack(PushbackAmount, 0.f, false);
 		}
 
 		if(OtherCharacter){
@@ -316,7 +341,8 @@ void AFightingCharacter::GetStunned(float HitStunTime, float BlockStunTime, floa
 
 		if(OtherCharacter){
 			OtherCharacter->HasLandedHit = false;
-			OtherCharacter->PerformPushBack(PushbackAmount, 0.f, false, IsNeutral);
+			OtherCharacter->PerformPushBack(PushbackAmount, LaunchAmount, false, IsNeutral);
+			//OtherCharacter->PerformPushBack(PushbackAmount, 0.f, false, IsNeutral);
 		}
 
 		PerformPushBack(PushbackAmount, 0.f, true, false);
@@ -334,30 +360,32 @@ void AFightingCharacter::PerformPushBack(float PushbackAmount, float LaunchAmoun
 		}
 		
 	}else {
-		if(LaunchAmount>0.f){
+		if(LaunchAmount>0.f || IsNeutral && !GetCharacterMovement()->IsMovingOnGround()){
 				GetCharacterMovement()->GravityScale = DefaultGravityScale * GravityScaleModifier;
 				GravityScaleModifier += 0.1f;
-				//GetCharacterMovement()->GravityScale *= 0.9f;
 				WasLaunched = true;
+				//UE_LOG(LogTemp, Warning, TEXT("0-> Player %i IsCombatReady: %i Launched: %i Stunned: %i KnockedDown: %i IsRecovery: %i IsOnGround: %i IsWallBounce: %i IsGroundBounce: %i"), PlayerIndex, IsCombatReady, WasLaunched, WasStunned, IsKnockedDown, IsRecovery, GetCharacterMovement()->IsMovingOnGround(), IsWallBounce, IsGroundBounce);
 		}
 		
-		if(OtherCharacter->GetActorForwardVector().X < 0.f){
+		if(OtherCharacter->GetActorForwardVector().X < 0.f || OtherCharacter->GetActorForwardVector().Y < 0.f){
 			
 			if(IsNeutral && !GetCharacterMovement()->IsMovingOnGround()){
-				LaunchCharacter(FVector(-PushbackAmount, 0.f, 650.f), false, false);
+				//LaunchCharacter(FVector(-PushbackAmount, 0.f, 650.f), false, false);
+				LaunchCharacter(FVector(-PushbackAmount, -PushbackAmount, 650.f), false, false);
 			}else {
-				LaunchCharacter(FVector(-PushbackAmount, 0.f, LaunchAmount), false, false);
+				//LaunchCharacter(FVector(-PushbackAmount, 0.f, LaunchAmount), false, false);
+				LaunchCharacter(FVector(-PushbackAmount, -PushbackAmount, LaunchAmount), false, false);
+
 			}
-			
-			//UE_LOG(LogTemp, Warning, TEXT("Forward actor of Player %i is %f with3 Push Amount: %f"), PlayerIndex, GetActorForwardVector().X, PushbackAmount*2.f);
 		}else{
 			//UE_LOG(LogTemp, Warning, TEXT("Is neutral= %i and not ground = %i and Launch is %f"), IsNeutral, !GetCharacterMovement()->IsMovingOnGround(), LaunchAmount); //0.25
 			if(IsNeutral && !GetCharacterMovement()->IsMovingOnGround()){
-				LaunchCharacter(FVector(PushbackAmount, 0.f, 650.f), false, false);
+				//LaunchCharacter(FVector(PushbackAmount, 0.f, 650.f), false, false);
+				LaunchCharacter(FVector(PushbackAmount, PushbackAmount, 650.f), false, false);
 			}else {
-				LaunchCharacter(FVector(PushbackAmount, 0.f, LaunchAmount), false, false);
+				//LaunchCharacter(FVector(PushbackAmount, 0.f, LaunchAmount), false, false);
+				LaunchCharacter(FVector(PushbackAmount, PushbackAmount, LaunchAmount), false, false);
 			}
-			//UE_LOG(LogTemp, Warning, TEXT("4 Push Amount: %f"), PushbackAmount*2.f);
 		}
 	}
 }
@@ -370,9 +398,10 @@ void AFightingCharacter::BeginStun(){
 }
 
 void AFightingCharacter::EndStun(){
-	
-	IsCombatReady = true;
-	WasStunned= false;
+	if(!WasLaunched && !IsKnockedDown && !IsRecovery && !IsWallBounce && !IsGroundBounce){
+		IsCombatReady = true;
+		WasStunned= false;
+	}
 }
 
 // Called to bind functionality to input

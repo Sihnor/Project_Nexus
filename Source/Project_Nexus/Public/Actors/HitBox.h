@@ -79,6 +79,10 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
 		bool IsNeutral;
 
+	//Should Hitbox be attached to the Player
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
+		bool CauseGroundBounce;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

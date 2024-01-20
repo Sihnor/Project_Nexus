@@ -27,6 +27,7 @@ AHitBox::AHitBox()
 
 	ShouldAttach = false;
 	IsNeutral = false;
+	CauseGroundBounce = false;
 }
 
 // Called when the game starts or when spawned

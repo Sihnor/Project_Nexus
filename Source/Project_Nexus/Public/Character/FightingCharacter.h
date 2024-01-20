@@ -25,8 +25,10 @@ enum class ECharacterState : uint8
 	FC_Blocking UMETA(DisplayName = "Blocking"),
 	FC_Crouching UMETA(DisplayName = "Crouching"),
 	FC_Launched UMETA(DisplayName = "Launched"),
-	FC_KockedDown UMETA(DisplayName = "Knocked Down"),
-	FC_Recovery UMETA(DisplayName = "Recovery")
+	FC_KockedDown UMETA(DisplayName = "Knocked_Down"),
+	FC_Recovery UMETA(DisplayName = "Recovery"),
+	FC_WallBounce UMETA(DisplayName = "Wall_Bounce"),
+	FC_GroundBounce UMETA(DisplayName = "Ground_Bounce")
 	//more...
 };
 
@@ -209,13 +211,23 @@ private:
 		bool IsRecovery = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool IsWallBounce = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool IsGroundBounce = false;
+
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
 		float StunTime;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
 		float DefaultGravityScale;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera", meta = (AllowPrivateAccess = "true"))
 		float GravityScaleModifier;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		float MaxDistanceApart;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats", meta = (AllowPrivateAccess = "true"))
 		int PlayerIndex;
