@@ -51,6 +51,10 @@ public:
 	void OnCountDown(int RemainingTime);
 	virtual void OnCountDown_Implementation(int RemainingTime);
 
+	UFUNCTION(BlueprintNativeEvent)
+	void OnTimeIsUp();
+	virtual void OnTimeIsUp_Implementation();
+
 
 private:
 	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, meta=(AllowPrivateAccess = "true"))
@@ -75,6 +79,9 @@ private:
 
 	UFUNCTION(BlueprintCallable, BlueprintPure, meta=(AllowPrivateAccess = "true"))
 	bool CheckIfGameIsWon();
+
+	UFUNCTION(BlueprintCallable, meta=(AllowPrivateAccess = "true"))
+	void AddPlayerOneRoundWon(EPlayerEnum Player);
 	
 };
 
