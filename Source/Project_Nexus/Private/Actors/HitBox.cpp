@@ -19,10 +19,15 @@ AHitBox::AHitBox()
 	HitboxDisplay->SetStaticMesh(CubeMeshAsset.Object);
 
 	HitboxDamage = 0.f;
-	PushbackDsitance = 0.f;
+	HitstunTime= 0.f;
+	BlockstunTime= 0.f;
+	PushbackDistance = 0.f;
 	LaunchDistance = 0.f;
 
+
 	ShouldAttach = false;
+	IsNeutral = false;
+	CauseGroundBounce = false;
 }
 
 // Called when the game starts or when spawned

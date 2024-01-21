@@ -45,6 +45,24 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
 		float HitboxDamage;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
+		float HitstunTime;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
+		float BlockstunTime;
+
+	//Amount of distance to push the character back
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
+		float PushbackDistance;
+
+	//Amount of distance to launch the player
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
+		float LaunchDistance;
+
+	//location to spawn hitbox
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
+		FRotator HitboxRotation;
+
 	//Hitbox enum instance
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
 		EHitBoxStates HitboxType;
@@ -53,21 +71,17 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
 		FVector HitboxLocation;
 
-	//location to spawn hitbox
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
-		FRotator HitboxRotation;
-
-	//Amount of distance to push the character back
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
-		float PushbackDsitance;
-
-	//Amount of distance to launch the player
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
-		float LaunchDistance;
-
 	//Should Hitbox be attached to the Player
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
 		bool ShouldAttach;
+
+	//Should Hitbox be attached to the Player
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
+		bool IsNeutral;
+
+	//Should Hitbox be attached to the Player
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
+		bool CauseGroundBounce;
 
 protected:
 	// Called when the game starts or when spawned
