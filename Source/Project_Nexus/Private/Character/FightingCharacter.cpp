@@ -4,6 +4,7 @@
 #include "Character/FightingCharacter.h"
 #include "EnhancedInputSubsystems.h"
 #include "EnhancedInputComponent.h"
+#include "EnhancedInputSubsystemInterface.h"
 //#include "GameFramework/SpringArmComponent.h"
 //#include "Camera/CameraComponent.h"
 #include "Kismet/GameplayStatics.h"
@@ -39,17 +40,20 @@ AFightingCharacter::AFightingCharacter()
 	bUsingComplexHurtboxes = false;
 	CharacterState = ECharacterState::FC_Default;
 	Transform = FTransform();
+
+	MaxDistanceApart = 800.f;
 	StunTime = 0.f;
+	RemoveInputFromInputBufferTime = 1.f;
 	DefaultGravityScale = GetCharacterMovement()->GravityScale;
 	GravityScaleModifier = 0.8f;
-	MaxDistanceApart = 800.f;
+
+	WasLightAttackUsed = false;
+	WasHeavyAttackUsed = false;
 
 	IsCombatReady = false;
 	MoveFwd = false;
 	MoveBwd = false;
 	IsBlocking = false;
-	WasLightAttackUsed = false;
-	WasHeavyAttackUsed = false;
 	IsSideStepNY = false;
 	IsSideStepPY = false;
 	WasLaunched = false;
@@ -279,6 +283,22 @@ void AFightingCharacter::ClearSideStep(const FInputActionValue& Value){
 	}
 }
 
+void AFightingCharacter::DoAddInputToInputBuffer(const FInputActionValue& Value){
+	if (GetController() && IsCombatReady) {
+	
+	}
+}
+
+void AFightingCharacter::AddInputToInputBuffer(FInputInfo InputInfo){
+
+	InputBuffer.Add(InputInfo);
+
+}
+
+void AFightingCharacter::RemoveInputFromInputBuffer(){
+
+}
+
 // Custom function for updating character rotation
 void AFightingCharacter::UpdateCharacterRotation()
 {
@@ -412,6 +432,8 @@ void AFightingCharacter::EndStun(){
 	}
 }
 
+
+
 // Called to bind functionality to input
 void AFightingCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
@@ -440,6 +462,8 @@ void AFightingCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 
 		//EnhancedInputComp->BindAction(SideStepPositiveYAction, ETriggerEvent::Completed, this, &AFightingCharacter::ClearSideStep);
 		//EnhancedInputComp->BindAction(SideStepNegativeYAction, ETriggerEvent::Completed, this, &AFightingCharacter::ClearSideStep);
+
+		EnhancedInputComp->BindAction(AddToInputBufferAction, ETriggerEvent::Triggered, this, &AFightingCharacter::DoAddInputToInputBuffer);
 	}
 }
 

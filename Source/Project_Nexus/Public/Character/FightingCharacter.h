@@ -34,6 +34,18 @@ enum class ECharacterState : uint8
 	//more...
 };
 
+USTRUCT(BlueprintType)
+struct FInputInfo{
+	GENERATED_BODY()
+
+public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+	FString InputName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+	float TineStamp;
+};
+
 UCLASS()
 class PROJECT_NEXUS_API AFightingCharacter : public ACharacter
 {
@@ -85,6 +97,9 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 		UInputAction* SideStepNegativeYAction;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+		UInputAction* AddToInputBufferAction;
+
 	// Expose OtherPlayerCharacter to Blueprint
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats")
     	AFightingCharacter* OtherPlayerCharacter;
@@ -109,6 +124,12 @@ protected:
 	UFUNCTION(BlueprintCallable, Category = "Hitbox")
 		void GetStunned(float HitStunTime, float BlockStunTime, float PushbackAmount, float LaunchAmount, bool IsNeutral);
 
+	UFUNCTION(BlueprintCallable, Category = "InputBuffer")
+		void AddInputToInputBuffer(FInputInfo InputInfo);
+
+	UFUNCTION(BlueprintCallable, Category = "InputBuffer")
+		void RemoveInputFromInputBuffer();
+
 	//Delegate signature for the function which will handle our Finished event.
 	
    	FOnTimelineFloat TimelineProgressEvent;
@@ -129,6 +150,9 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
 		FTransform Transform;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+		TArray<FInputInfo> InputBuffer;
 
 private:
 
@@ -164,7 +188,11 @@ private:
 
 	void EndStun();
 
+	void DoAddInputToInputBuffer(const FInputActionValue& Value);
+
 	FTimerHandle StunTimeHandle;
+
+	FTimerHandle InputBufferTimeHandle;
 
 	// Custom function for updating character rotation
 	UFUNCTION(BlueprintCallable, Category = "Custom Character Rotation", meta = (AllowPrivateAccess = "true"))
@@ -237,11 +265,10 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
 		float MaxDistanceApart;
 
+	float RemoveInputFromInputBufferTime;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats", meta = (AllowPrivateAccess = "true"))
 		int PlayerIndex;
-
-
-
 
     // Whether to rotate the character based on input
 	/*UPROPERTY(EditAnywhere, Category = "Custom Character Rotation")
@@ -256,5 +283,7 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Custom Character Rotation")
     	bool bShowRotation;
+
+	
 
 };
