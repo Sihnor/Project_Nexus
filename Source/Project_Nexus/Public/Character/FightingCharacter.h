@@ -13,6 +13,39 @@ class UInputAction;
 class UCurveFloat;
 class AHitBox;
 
+UENUM(BlueprintType)
+enum class ECharacterState : uint8
+{
+	FC_Default UMETA(DisplayName = "Not_Moving"),
+    FC_MovingForward UMETA(DisplayName = "Moving_Forward"),
+    FC_MovingBackward UMETA(DisplayName = "Moving_Backward"),
+	FC_RunningForward UMETA(DisplayName = "Running_Forward"),
+	FC_DashForward UMETA(DisplayName = "Dash_Forward"),
+	FC_DashBackward UMETA(DisplayName = "Dash_Backward"),
+	FC_Jumping UMETA(DisplayName = "Jumping"),
+	FC_Stunned UMETA(DisplayName = "Stunned"),
+	FC_Blocking UMETA(DisplayName = "Blocking"),
+	FC_Crouching UMETA(DisplayName = "Crouching"),
+	FC_Launched UMETA(DisplayName = "Launched"),
+	FC_KockedDown UMETA(DisplayName = "Knocked_Down"),
+	FC_Recovery UMETA(DisplayName = "Recovery"),
+	FC_WallBounce UMETA(DisplayName = "Wall_Bounce"),
+	FC_GroundBounce UMETA(DisplayName = "Ground_Bounce")
+	//more...
+};
+
+USTRUCT(BlueprintType)
+struct FInputInfo{
+	GENERATED_BODY()
+
+public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+	FString InputName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+	float TineStamp;
+};
+
 UCLASS()
 class PROJECT_NEXUS_API AFightingCharacter : public ACharacter
 {
@@ -27,6 +60,8 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	virtual void Landed(const FHitResult& Hit) override;
 
 protected:
 	// Called when the game starts or when spawned
@@ -62,6 +97,9 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 		UInputAction* SideStepNegativeYAction;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+		UInputAction* AddToInputBufferAction;
+
 	// Expose OtherPlayerCharacter to Blueprint
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats")
     	AFightingCharacter* OtherPlayerCharacter;
@@ -83,6 +121,15 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hurtboxes")
     	bool bUsingComplexHurtboxes;
 
+	UFUNCTION(BlueprintCallable, Category = "Hitbox")
+		void GetStunned(float HitStunTime, float BlockStunTime, float PushbackAmount, float LaunchAmount, bool IsNeutral);
+
+	UFUNCTION(BlueprintCallable, Category = "InputBuffer")
+		void AddInputToInputBuffer(FInputInfo InputInfo);
+
+	UFUNCTION(BlueprintCallable, Category = "InputBuffer")
+		void RemoveInputFromInputBuffer();
+
 	//Delegate signature for the function which will handle our Finished event.
 	
    	FOnTimelineFloat TimelineProgressEvent;
@@ -97,6 +144,15 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Timeline")
     	UCurveFloat* FloatCurve;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+		ECharacterState CharacterState;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+		FTransform Transform;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+		TArray<FInputInfo> InputBuffer;
 
 private:
 
@@ -124,6 +180,20 @@ private:
 
 	void ClearSideStep(const FInputActionValue& Value);
 
+	//void GetStunned(float HitStunTime, float BlockStunTime, float PushbackAmount, float LaunchAmount);
+
+	void PerformPushBack(float PushbackAmount, float LaunchAmount, bool HasBlocked, bool IsNeutral);
+
+	void BeginStun();
+
+	void EndStun();
+
+	void DoAddInputToInputBuffer(const FInputActionValue& Value);
+
+	FTimerHandle StunTimeHandle;
+
+	FTimerHandle InputBufferTimeHandle;
+
 	// Custom function for updating character rotation
 	UFUNCTION(BlueprintCallable, Category = "Custom Character Rotation", meta = (AllowPrivateAccess = "true"))
     	void UpdateCharacterRotation();
@@ -150,16 +220,52 @@ private:
 		bool IsBlocking = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
-		bool WasFirstLightAttackUsed = false;
+		bool WasLightAttackUsed = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
-		bool WasFirstHeavyAttackUsed = false;
+		bool WasHeavyAttackUsed = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
 		bool IsSideStepNY = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
 		bool IsSideStepPY = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool WasLaunched = false;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool WasStunned = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool HasLandedHit = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool IsKnockedDown = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool IsRecovery = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool IsWallBounce = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool IsGroundBounce = false;
+
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		float StunTime;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		float DefaultGravityScale;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera", meta = (AllowPrivateAccess = "true"))
+		float GravityScaleModifier;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		float MaxDistanceApart;
+
+	float RemoveInputFromInputBufferTime;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats", meta = (AllowPrivateAccess = "true"))
 		int PlayerIndex;
@@ -177,5 +283,7 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Custom Character Rotation")
     	bool bShowRotation;
+
+	
 
 };
