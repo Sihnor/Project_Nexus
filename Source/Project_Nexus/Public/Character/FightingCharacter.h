@@ -35,6 +35,18 @@ enum class ECharacterState : uint8
 };
 
 USTRUCT(BlueprintType)
+struct FCommand{
+	GENERATED_BODY()
+
+public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+	FString CommandName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+	TArray<FString> Inputs;
+};
+
+USTRUCT(BlueprintType)
 struct FInputInfo{
 	GENERATED_BODY()
 
@@ -128,7 +140,18 @@ protected:
 		void AddInputToInputBuffer(FInputInfo InputInfo);
 
 	UFUNCTION(BlueprintCallable, Category = "InputBuffer")
-		void RemoveInputFromInputBuffer();
+		void CheckInputBufferForCommand();
+
+	UFUNCTION(BlueprintCallable, Category = "InputBuffer")
+		void StartCommand(FString CommandName);
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+		TArray<FInputInfo> InputBuffer;
+
+	FCommand TempCommand;
+
+	/*UFUNCTION(BlueprintCallable, Category = "InputBuffer")
+		void RemoveInputFromInputBuffer();*/
 
 	//Delegate signature for the function which will handle our Finished event.
 	
@@ -150,9 +173,6 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
 		FTransform Transform;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
-		TArray<FInputInfo> InputBuffer;
 
 private:
 
@@ -192,7 +212,7 @@ private:
 
 	FTimerHandle StunTimeHandle;
 
-	FTimerHandle InputBufferTimeHandle;
+	//FTimerHandle InputBufferTimeHandle;
 
 	// Custom function for updating character rotation
 	UFUNCTION(BlueprintCallable, Category = "Custom Character Rotation", meta = (AllowPrivateAccess = "true"))
@@ -252,6 +272,8 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
 		bool IsGroundBounce = false;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool HasUsedTempCommand;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
 		float StunTime;
@@ -259,7 +281,7 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
 		float DefaultGravityScale;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera", meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
 		float GravityScaleModifier;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))

@@ -63,6 +63,13 @@ AFightingCharacter::AFightingCharacter()
 	IsRecovery = false;
 	IsWallBounce = false;
 	IsGroundBounce = false;
+	
+	//Create a child class so every character has it's own command and create a database of it... Sorry
+	TempCommand.CommandName = "Test Command";
+	TempCommand.Inputs.Add("A");
+	TempCommand.Inputs.Add("S");
+	TempCommand.Inputs.Add("D");
+	HasUsedTempCommand = false;
 }
 
 // Called when the game starts or when spawned
@@ -111,28 +118,6 @@ void AFightingCharacter::Tick(float DeltaTime)
 	//UE_LOG(LogTemp, Warning, TEXT("Velocit X: %f Y: %f Z: %f"), GetVelocity().X, GetVelocity().Y, GetVelocity().Z);
 }
 
-void AFightingCharacter::Landed(const FHitResult& Hit){
-	if(bWasJumping){
-		if(!Cast<AHitBox>(Hit.GetActor())){
-			GetCharacterMovement()->GravityScale = DefaultGravityScale;
-			GravityScaleModifier = 0.8f;
-			IsKnockedDown = false;
-		}
-		
-	} else if((WasLaunched && !IsGroundBounce) || IsWallBounce ||  IsGroundBounce){
-		if(!Cast<AHitBox>(Hit.GetActor())){
-			GetCharacterMovement()->GravityScale = DefaultGravityScale;
-			GravityScaleModifier = 0.8f;
-			IsKnockedDown = true;
-		}
-	}
-	else if(IsGroundBounce){
-		IsGroundBounce = true;
-	}
-	WasLaunched = false;
-	IsWallBounce = false;
-	
-}
 
 void AFightingCharacter::DoMoveFwd(const FInputActionValue& Value){
 	const FVector Forward = GetActorForwardVector();
@@ -294,16 +279,6 @@ void AFightingCharacter::DoAddInputToInputBuffer(const FInputActionValue& Value)
 	}
 }
 
-void AFightingCharacter::AddInputToInputBuffer(FInputInfo InputInfo){
-
-	InputBuffer.Add(InputInfo);
-
-}
-
-void AFightingCharacter::RemoveInputFromInputBuffer(){
-
-}
-
 // Custom function for updating character rotation
 void AFightingCharacter::UpdateCharacterRotation()
 {
@@ -437,7 +412,69 @@ void AFightingCharacter::EndStun(){
 	}
 }
 
+void AFightingCharacter::Landed(const FHitResult& Hit){
+	if(bWasJumping){
+		if(!Cast<AHitBox>(Hit.GetActor())){
+			GetCharacterMovement()->GravityScale = DefaultGravityScale;
+			GravityScaleModifier = 0.8f;
+			IsKnockedDown = false;
+		}
+		
+	} else if((WasLaunched && !IsGroundBounce) || IsWallBounce ||  IsGroundBounce){
+		if(!Cast<AHitBox>(Hit.GetActor())){
+			GetCharacterMovement()->GravityScale = DefaultGravityScale;
+			GravityScaleModifier = 0.8f;
+			IsKnockedDown = true;
+		}
+	}
+	else if(IsGroundBounce){
+		IsGroundBounce = true;
+	}
+	WasLaunched = false;
+	IsWallBounce = false;
+	
+}
 
+
+void AFightingCharacter::AddInputToInputBuffer(FInputInfo InputInfo){
+
+	InputBuffer.Add(InputInfo);
+	CheckInputBufferForCommand();
+}
+
+void AFightingCharacter::CheckInputBufferForCommand(){
+	int CorrectSequenceCounter = 0;
+
+	for(int CommandInput = 0; CommandInput < InputBuffer.Num(); ++CommandInput ){
+		for(int Input = 0; Input < InputBuffer.Num(); ++Input){
+			if (Input  + CorrectSequenceCounter < InputBuffer.Num()){
+				if(InputBuffer[Input + CorrectSequenceCounter].InputName.Compare(TempCommand.Inputs[CommandInput]) == 0){
+					UE_LOG(LogTemp, Warning, TEXT("The Player added another input to the comand sequence."));
+					++CorrectSequenceCounter;
+
+					if(CorrectSequenceCounter == TempCommand.Inputs.Num()){
+						StartCommand(TempCommand.CommandName);
+					}
+
+					break;
+				}else{
+					UE_LOG(LogTemp, Warning, TEXT("The Player broke the comand sequence."));
+					CorrectSequenceCounter = 0;
+				}
+			}else{
+				UE_LOG(LogTemp, Warning, TEXT("The Player is not yet finished with the command sequence."));
+				CorrectSequenceCounter = 0;
+			}
+		}
+	}
+}
+
+void AFightingCharacter::StartCommand(FString CommandName){
+	if(CommandName.Compare(TempCommand.CommandName) == 0){
+		UE_LOG(LogTemp, Warning, TEXT("The Character is using the command: %s."), *CommandName);
+		HasUsedTempCommand = true;
+	}
+}
 
 // Called to bind functionality to input
 void AFightingCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
