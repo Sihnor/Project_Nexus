@@ -106,7 +106,7 @@ void AFightingCharacter::Tick(float DeltaTime)
 
 	//UE_LOG(LogTemp, Warning, TEXT("0-> Player %i IsCombatReady: %i Launched: %i Stunned: %i KnockedDown: %i IsRecovery: %i IsOnGround: %i IsWallBounce: %i IsGroundBounce: %i"), PlayerIndex, IsCombatReady, WasLaunched, WasStunned, IsKnockedDown, IsRecovery, GetCharacterMovement()->IsMovingOnGround(), IsWallBounce, IsGroundBounce);
 
-	UE_LOG(LogTemp, Warning, TEXT("Player %i IsCombatReady: %i IsBlocking: %i HavyAttack: %i LightAttack: %i, IsSideStepNY: %i, IsSideStepPY: %i IsCrouched: %i Launched: %i Stunned: %i KnockedDown: %i IsRecovery: %i IsOnGround: %i"), PlayerIndex, IsCombatReady, IsBlocking, WasHeavyAttackUsed, WasLightAttackUsed,IsSideStepNY ,IsSideStepPY, this->bIsCrouched, WasLaunched, WasStunned, IsKnockedDown, IsRecovery, GetCharacterMovement()->IsMovingOnGround());
+	//UE_LOG(LogTemp, Warning, TEXT("Player %i IsCombatReady: %i IsBlocking: %i HavyAttack: %i LightAttack: %i, IsSideStepNY: %i, IsSideStepPY: %i IsCrouched: %i Launched: %i Stunned: %i KnockedDown: %i IsRecovery: %i IsOnGround: %i"), PlayerIndex, IsCombatReady, IsBlocking, WasHeavyAttackUsed, WasLightAttackUsed,IsSideStepNY ,IsSideStepPY, this->bIsCrouched, WasLaunched, WasStunned, IsKnockedDown, IsRecovery, GetCharacterMovement()->IsMovingOnGround());
 
 	//UE_LOG(LogTemp, Warning, TEXT("Player %i Launched: %i Stunned: %i KnockedDown: %i IsRecovery: %i IsOnGround: %i"), PlayerIndex, WasLaunched, WasStunned, IsKnockedDown, IsRecovery, GetCharacterMovement()->IsMovingOnGround());
 	//UE_LOG(LogTemp, Warning, TEXT("Player %i NotLaunched: %i NotStunned: %i NotKnockedDown: %i NotIsRecovery: %i IsOnGround: %i"), PlayerIndex, !WasLaunched, !WasStunned, !IsKnockedDown, !IsRecovery, GetCharacterMovement()->IsMovingOnGround());
