@@ -38,7 +38,9 @@ AFightingCharacter::AFightingCharacter()
 	OtherCharacter = nullptr;
 	Hurtbox= nullptr;
 	bUsingComplexHurtboxes = false;
+
 	CharacterState = ECharacterState::FC_Default;
+	
 	Transform = FTransform();
 
 	MaxDistanceApart = 800.f;
@@ -65,11 +67,46 @@ AFightingCharacter::AFightingCharacter()
 	IsGroundBounce = false;
 	
 	//Create a child class so every character has it's own command and create a database of it... Sorry
-	TempCommand.CommandName = "Test Command";
-	TempCommand.Inputs.Add("A");
-	TempCommand.Inputs.Add("S");
-	TempCommand.Inputs.Add("D");
-	HasUsedTempCommand = false;
+	PlayerCommand.SetNum(2);
+
+	/*PlayerCommand[0].Inputs.Add("A");
+	PlayerCommand[0].Inputs.Add("S");
+	PlayerCommand[0].Inputs.Add("D");*/
+
+	//Command #1 assignments.
+	/*this->PlayerCommand[0].CommandName = "Command #1";
+	this->PlayerCommand[0].InputTypes.Add(EInputType::F_Backward);
+	this->PlayerCommand[0].InputTypes.Add(EInputType::F_Crouch);
+	this->PlayerCommand[0].InputTypes.Add(EInputType::F_Forward);
+	this->PlayerCommand[0].InputTypes.Add(EInputType::F_LightAttack);
+	
+	//Command #2 assignments.
+	this->PlayerCommand[1].CommandName = "Command #2";
+	this->PlayerCommand[1].InputTypes.Add(EInputType::F_Forward);
+	this->PlayerCommand[1].InputTypes.Add(EInputType::F_Crouch);
+	this->PlayerCommand[1].InputTypes.Add(EInputType::F_Backward);
+	this->PlayerCommand[1].InputTypes.Add(EInputType::F_HeavyAttack);*/
+
+	//Command #1 assignments.
+	this->PlayerCommand[0].HasUsedCommand = false;
+	this->PlayerCommand[0].CommandName = "Command #1";
+	this->PlayerCommand[0].InputTypes.Add(EInputType::F_Backward);
+	this->PlayerCommand[0].InputTypes.Add(EInputType::F_Crouch);
+	this->PlayerCommand[0].InputTypes.Add(EInputType::F_Forward);
+	this->PlayerCommand[0].InputTypes.Add(EInputType::F_LightAttack);
+
+	//Command #2 assignments.
+	this->PlayerCommand[1].HasUsedCommand = false;
+	this->PlayerCommand[1].CommandName = "Command #2";
+	this->PlayerCommand[1].InputTypes.Add(EInputType::F_Forward);
+	this->PlayerCommand[1].InputTypes.Add(EInputType::F_Crouch);
+	this->PlayerCommand[1].InputTypes.Add(EInputType::F_Backward);
+	this->PlayerCommand[1].InputTypes.Add(EInputType::F_HeavyAttack);
+
+
+	/*PlayerCommand[1].Inputs.Add("D");
+	PlayerCommand[1].Inputs.Add("S");
+	PlayerCommand[1].Inputs.Add("A");*/
 }
 
 // Called when the game starts or when spawned
@@ -99,7 +136,7 @@ void AFightingCharacter::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 	OtherCharacter = Cast<AFightingCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), PlayerIndex));
 
-
+	//UE_LOG(LogTemp, Warning, TEXT("Command: %i"), PlayerCommand[0].HasUsedCommand);
 
 	//UE_LOG(LogTemp, Warning, TEXT("Forwar actor: %f"), GetActorForwardVector().X);
 	//UE_LOG(LogTemp, Warning, TEXT("Player %i Was launched: %i"), PlayerIndex, WasLaunched);
@@ -275,7 +312,7 @@ void AFightingCharacter::ClearSideStep(const FInputActionValue& Value){
 
 void AFightingCharacter::DoAddInputToInputBuffer(const FInputActionValue& Value){
 	if (GetController() && IsCombatReady) {
-	
+		//Value.GetValueTypeFromKey
 	}
 }
 
@@ -435,44 +472,92 @@ void AFightingCharacter::Landed(const FHitResult& Hit){
 	
 }
 
+void AFightingCharacter::AddToInputMap(FString _Input, EInputType _Type){
+	InputToInputTypeMap.Add(_Input, _Type);
+	
+}
 
 void AFightingCharacter::AddInputToInputBuffer(FInputInfo InputInfo){
 
 	InputBuffer.Add(InputInfo);
-	CheckInputBufferForCommand();
+	CheckInputBufferForCommandUsingType();
+	//CheckInputBufferForCommand();
 }
 
 void AFightingCharacter::CheckInputBufferForCommand(){
-	int CorrectSequenceCounter = 0;
+	/*int CorrectSequenceCounter = 0;
 
-	for(int CommandInput = 0; CommandInput < InputBuffer.Num(); ++CommandInput ){
-		for(int Input = 0; Input < InputBuffer.Num(); ++Input){
-			if (Input  + CorrectSequenceCounter < InputBuffer.Num()){
-				if(InputBuffer[Input + CorrectSequenceCounter].InputName.Compare(TempCommand.Inputs[CommandInput]) == 0){
-					UE_LOG(LogTemp, Warning, TEXT("The Player added another input to the comand sequence."));
-					++CorrectSequenceCounter;
+	for(auto CurrentCommand : PlayerCommand){
 
-					if(CorrectSequenceCounter == TempCommand.Inputs.Num()){
-						StartCommand(TempCommand.CommandName);
+		for(int CommandInput = 0; CommandInput < CurrentCommand.Inputs.Num(); ++CommandInput){
+
+			for(int Input = 0; Input < InputBuffer.Num(); ++Input){
+
+				if (Input  + CorrectSequenceCounter < InputBuffer.Num()){
+
+					if(InputBuffer[Input + CorrectSequenceCounter].InputName.Compare(CurrentCommand.Inputs[CommandInput]) == 0){
+						UE_LOG(LogTemp, Warning, TEXT("The Player added another input to the comand sequence."));
+						++CorrectSequenceCounter;
+
+						if(CorrectSequenceCounter == CurrentCommand.Inputs.Num()){
+							StartCommand(CurrentCommand.CommandName);
+						}
+
+						break;
+					}else{
+						UE_LOG(LogTemp, Warning, TEXT("The Player broke the comand sequence."));
+						CorrectSequenceCounter = 0;
 					}
-
-					break;
 				}else{
-					UE_LOG(LogTemp, Warning, TEXT("The Player broke the comand sequence."));
+					UE_LOG(LogTemp, Warning, TEXT("The Player is not yet finished with the command sequence."));
 					CorrectSequenceCounter = 0;
 				}
-			}else{
-				UE_LOG(LogTemp, Warning, TEXT("The Player is not yet finished with the command sequence."));
-				CorrectSequenceCounter = 0;
+			}
+		}
+	}*/
+}
+
+void AFightingCharacter::CheckInputBufferForCommandUsingType(){
+	int CorrectSequenceCounter = 0;
+
+	for(auto CurrentCommand : PlayerCommand){
+
+			//UE_LOG(LogTemp, Warning, TEXT("Array size: %i."), CurrentCommand.Num()));
+
+		for(int CommandInput = 0; CommandInput < CurrentCommand.InputTypes.Num(); ++CommandInput){
+
+			for(int Input = 0; Input < InputBuffer.Num(); ++Input){
+
+				if (Input  + CorrectSequenceCounter < InputBuffer.Num()){
+
+					if(InputBuffer[Input + CorrectSequenceCounter].InputType == (CurrentCommand.InputTypes[CommandInput])){
+						UE_LOG(LogTemp, Warning, TEXT("The Player added another input to the comand sequence."));
+						++CorrectSequenceCounter;
+
+						if(CorrectSequenceCounter == CurrentCommand.InputTypes.Num()){
+							StartCommand(CurrentCommand.CommandName);
+						}
+
+						break;
+					}else{
+						UE_LOG(LogTemp, Warning, TEXT("The Player broke the comand sequence."));
+						CorrectSequenceCounter = 0;
+					}
+				}else{
+					UE_LOG(LogTemp, Warning, TEXT("The Player is not yet finished with the command sequence."));
+					CorrectSequenceCounter = 0;
+				}
 			}
 		}
 	}
 }
 
 void AFightingCharacter::StartCommand(FString CommandName){
-	if(CommandName.Compare(TempCommand.CommandName) == 0){
-		UE_LOG(LogTemp, Warning, TEXT("The Character is using the command: %s."), *CommandName);
-		HasUsedTempCommand = true;
+	for(int CurrentCommand =0; CurrentCommand < PlayerCommand.Num(); ++CurrentCommand){
+		if(CommandName.Compare(PlayerCommand[CurrentCommand].CommandName) == 0){
+			UE_LOG(LogTemp, Warning, TEXT("The Character is using the command: %s."), *CommandName);
+			PlayerCommand[CurrentCommand].HasUsedCommand = true;
+		}
 	}
 }
 
@@ -492,6 +577,7 @@ void AFightingCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 		EnhancedInputComp->BindAction(DuckAction, ETriggerEvent::Triggered, this, &AFightingCharacter::Duck);
 		EnhancedInputComp->BindAction(DuckAction, ETriggerEvent::Completed, this, &AFightingCharacter::UnDuck);
 		EnhancedInputComp->BindAction(JumpAction, ETriggerEvent::Triggered, this, &AFightingCharacter::DoJump);
+		
 
 		EnhancedInputComp->BindAction(LightAttackAction, ETriggerEvent::Started, this, &AFightingCharacter::LightAttack);
 		EnhancedInputComp->BindAction(HeavyAttackAction, ETriggerEvent::Started, this, &AFightingCharacter::HeavyAttack);
@@ -501,7 +587,6 @@ void AFightingCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 
 		EnhancedInputComp->BindAction(SideStepPositiveYAction, ETriggerEvent::Triggered, this, &AFightingCharacter::SideStepPY);
 		EnhancedInputComp->BindAction(SideStepNegativeYAction, ETriggerEvent::Triggered, this, &AFightingCharacter::SideStepNY);
-
 		//EnhancedInputComp->BindAction(SideStepPositiveYAction, ETriggerEvent::Completed, this, &AFightingCharacter::ClearSideStep);
 		//EnhancedInputComp->BindAction(SideStepNegativeYAction, ETriggerEvent::Completed, this, &AFightingCharacter::ClearSideStep);
 

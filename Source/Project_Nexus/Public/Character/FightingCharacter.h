@@ -34,6 +34,22 @@ enum class ECharacterState : uint8
 	//more...
 };
 
+UENUM(BlueprintType)
+enum class EInputType : uint8
+{
+	F_None UMETA(DisplayName = "None"),
+	F_Forward UMETA(DisplayName = "Forward"),
+	F_Backward UMETA(DisplayName = "Backward"),
+	F_Jump UMETA(DisplayName = "Jump"),
+	F_Crouch UMETA(DisplayName = "Crouch"),
+	F_Block UMETA(DisplayName = "Block"),
+	F_LightAttack UMETA(DisplayName = "Light_Attack"),
+	F_HeavyAttack UMETA(DisplayName = "Heavy_Attack"),
+	F_Throw UMETA(DisplayName = "Throw"),
+	F_SpecialAttack UMETA(DisplayName = "SpecialAttack")
+	//more...
+};
+
 USTRUCT(BlueprintType)
 struct FCommand{
 	GENERATED_BODY()
@@ -43,19 +59,28 @@ public:
 	FString CommandName;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
-	TArray<FString> Inputs;
-};
+	TArray<EInputType> InputTypes;
 
+	/*UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+	TArray<FString> Inputs;*/
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+	bool HasUsedCommand;
+};
+ 
 USTRUCT(BlueprintType)
 struct FInputInfo{
 	GENERATED_BODY()
 
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+	EInputType InputType;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
 	FString InputName;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
-	float TineStamp;
+	float TimeStamp;
 };
 
 UCLASS()
@@ -137,18 +162,28 @@ protected:
 		void GetStunned(float HitStunTime, float BlockStunTime, float PushbackAmount, float LaunchAmount, bool IsNeutral);
 
 	UFUNCTION(BlueprintCallable, Category = "InputBuffer")
+		void AddToInputMap(FString _Input, EInputType _Type);
+
+	UFUNCTION(BlueprintCallable, Category = "InputBuffer")
 		void AddInputToInputBuffer(FInputInfo InputInfo);
 
 	UFUNCTION(BlueprintCallable, Category = "InputBuffer")
 		void CheckInputBufferForCommand();
 
 	UFUNCTION(BlueprintCallable, Category = "InputBuffer")
+		void CheckInputBufferForCommandUsingType();
+
+	UFUNCTION(BlueprintCallable, Category = "InputBuffer")
 		void StartCommand(FString CommandName);
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "InputBuffer")
+		TMap<FString, EInputType> InputToInputTypeMap;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "InputBuffer")
 		TArray<FInputInfo> InputBuffer;
 
-	FCommand TempCommand;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "InputBuffer")
+		TArray<FCommand> PlayerCommand;
 
 	/*UFUNCTION(BlueprintCallable, Category = "InputBuffer")
 		void RemoveInputFromInputBuffer();*/
@@ -271,9 +306,6 @@ private:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
 		bool IsGroundBounce = false;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
-		bool HasUsedTempCommand;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
 		float StunTime;
