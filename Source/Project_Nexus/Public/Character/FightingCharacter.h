@@ -81,6 +81,9 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
 	float TimeStamp;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+	bool WasUsed;
 };
 
 UCLASS()
