@@ -45,7 +45,12 @@ AFightingCharacter::AFightingCharacter()
 
 	MaxDistanceApart = 800.f;
 	StunTime = 0.f;
-	RemoveInputFromInputBufferTime = 1.f;
+
+	ForwardDashDistance= 800.f;
+	BackwardDashDistance= 600.f;
+
+	//RemoveInputFromInputBufferTime = 1.f;
+	
 	DefaultGravityScale = GetCharacterMovement()->GravityScale;
 	GravityScaleModifier = 0.8f;
 
