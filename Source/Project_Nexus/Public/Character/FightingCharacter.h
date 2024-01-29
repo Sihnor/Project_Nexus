@@ -176,17 +176,28 @@ protected:
 	UFUNCTION(BlueprintCallable, Category = "InputBuffer")
 		void CheckInputBufferForCommandUsingType();
 
+	//Determine command to use based off the criteria (exp. Move lenght, difficutly or relevance).
+	UFUNCTION(BlueprintCallable, Category = "InputBuffer")
+		void DetermineCommandToUse();
+
 	UFUNCTION(BlueprintCallable, Category = "InputBuffer")
 		void StartCommand(FString CommandName);
 
+	//Map of input types to determine the player controlling for this character
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "InputBuffer")
 		TMap<FString, EInputType> InputToInputTypeMap;
 
+	//Array of inputs that the player controls has performed
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "InputBuffer")
 		TArray<FInputInfo> InputBuffer;
 
+	//Usable Commands getting when correct series of inputs has been pressed.
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "InputBuffer")
 		TArray<FCommand> PlayerCommand;
+
+	//Correct Command inputs can be activ on the next update (tick) or when animation/state is complete.
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "InputBuffer")
+		TArray<FCommand> MoveBuffer;
 
 	/*UFUNCTION(BlueprintCallable, Category = "InputBuffer")
 		void RemoveInputFromInputBuffer();*/

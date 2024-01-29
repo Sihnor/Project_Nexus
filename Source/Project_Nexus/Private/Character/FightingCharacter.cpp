@@ -72,7 +72,7 @@ AFightingCharacter::AFightingCharacter()
 	IsGroundBounce = false;
 	
 	//Create a child class so every character has it's own command and create a database of it... Sorry
-	PlayerCommand.SetNum(6);
+	PlayerCommand.SetNum(8);
 
 	/*PlayerCommand[0].Inputs.Add("A");
 	PlayerCommand[0].Inputs.Add("S");
@@ -92,47 +92,53 @@ AFightingCharacter::AFightingCharacter()
 	this->PlayerCommand[1].InputTypes.Add(EInputType::F_Backward);
 	this->PlayerCommand[1].InputTypes.Add(EInputType::F_HeavyAttack);*/
 
-
-	//Combat Command #1 assignments.
-	this->PlayerCommand[0].CommandName = "Special Move #1";
-	this->PlayerCommand[0].InputTypes.Add(EInputType::F_Crouch);
+	//Move Command #1 assignments.
+	this->PlayerCommand[0].CommandName = "Forward Dash";
 	this->PlayerCommand[0].InputTypes.Add(EInputType::F_Forward);
-	this->PlayerCommand[0].InputTypes.Add(EInputType::F_LightAttack);
+	this->PlayerCommand[0].InputTypes.Add(EInputType::F_Forward);
 	this->PlayerCommand[0].HasUsedCommand = false;
 
 
-	//Combat Command #2 assignments.
-	this->PlayerCommand[1].CommandName = "Special Move #2";
-	this->PlayerCommand[1].InputTypes.Add(EInputType::F_Crouch);
+	//Move Command #2 assignments.
+	this->PlayerCommand[1].CommandName = "Backward Dash";
 	this->PlayerCommand[1].InputTypes.Add(EInputType::F_Backward);
-	this->PlayerCommand[1].InputTypes.Add(EInputType::F_HeavyAttack);
+	this->PlayerCommand[1].InputTypes.Add(EInputType::F_Backward);
 	this->PlayerCommand[1].HasUsedCommand = false;
 
-
-	//Move Command #1 assignments.
-	this->PlayerCommand[2].CommandName = "Forward Dash";
-	this->PlayerCommand[2].InputTypes.Add(EInputType::F_Forward);
-	this->PlayerCommand[2].InputTypes.Add(EInputType::F_Forward);
+	//Light Attack Command assignments.
+	this->PlayerCommand[2].CommandName = "Light Attack";
+	this->PlayerCommand[2].InputTypes.Add(EInputType::F_LightAttack);
 	this->PlayerCommand[2].HasUsedCommand = false;
 
-
-	//Move Command #2 assignments.
-	this->PlayerCommand[3].CommandName = "Backward Dash";
-	this->PlayerCommand[3].InputTypes.Add(EInputType::F_Backward);
-	this->PlayerCommand[3].InputTypes.Add(EInputType::F_Backward);
+	this->PlayerCommand[3].CommandName = "Heavy Attack";
+	this->PlayerCommand[3].InputTypes.Add(EInputType::F_HeavyAttack);
 	this->PlayerCommand[3].HasUsedCommand = false;
 
-	//Combat Command #2 assignments.
-	this->PlayerCommand[4].CommandName = "Light Combo";
-	this->PlayerCommand[4].InputTypes.Add(EInputType::F_LightAttack);
+	//Heavy Attack Command assignments.
+	this->PlayerCommand[4].CommandName = "Special Move #1";
+	this->PlayerCommand[4].InputTypes.Add(EInputType::F_Crouch);
+	this->PlayerCommand[4].InputTypes.Add(EInputType::F_Forward);
 	this->PlayerCommand[4].InputTypes.Add(EInputType::F_LightAttack);
 	this->PlayerCommand[4].HasUsedCommand = false;
 
 	//Combat Command #2 assignments.
-	this->PlayerCommand[5].CommandName = "Heavy Combo";
-	this->PlayerCommand[5].InputTypes.Add(EInputType::F_HeavyAttack);
+	this->PlayerCommand[5].CommandName = "Special Move #2";
+	this->PlayerCommand[5].InputTypes.Add(EInputType::F_Crouch);
+	this->PlayerCommand[5].InputTypes.Add(EInputType::F_Backward);
 	this->PlayerCommand[5].InputTypes.Add(EInputType::F_HeavyAttack);
 	this->PlayerCommand[5].HasUsedCommand = false;
+
+	//Combat Command #2 assignments.
+	this->PlayerCommand[6].CommandName = "Light Combo";
+	this->PlayerCommand[6].InputTypes.Add(EInputType::F_LightAttack);
+	this->PlayerCommand[6].InputTypes.Add(EInputType::F_LightAttack);
+	this->PlayerCommand[6].HasUsedCommand = false;
+
+	//Combat Command #2 assignments.
+	this->PlayerCommand[7].CommandName = "Heavy Combo";
+	this->PlayerCommand[7].InputTypes.Add(EInputType::F_HeavyAttack);
+	this->PlayerCommand[7].InputTypes.Add(EInputType::F_HeavyAttack);
+	this->PlayerCommand[7].HasUsedCommand = false;
 
 
 
@@ -168,6 +174,8 @@ void AFightingCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	OtherCharacter = Cast<AFightingCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), PlayerIndex));
+
+	DetermineCommandToUse();
 
 	//UE_LOG(LogTemp, Warning, TEXT("Command: %i"), PlayerCommand[0].HasUsedCommand);
 
@@ -573,7 +581,8 @@ void AFightingCharacter::CheckInputBufferForCommandUsingType(){
 						++CorrectSequenceCounter;
 
 						if(CorrectSequenceCounter == CurrentCommand.InputTypes.Num()){
-							StartCommand(CurrentCommand.CommandName);
+							//StartCommand(CurrentCommand.CommandName);
+							MoveBuffer.Add(CurrentCommand);
 							CorrectSequenceCounter = 0;
 						}
 
@@ -588,6 +597,23 @@ void AFightingCharacter::CheckInputBufferForCommandUsingType(){
 				}
 			}
 		}
+	}
+}
+
+void AFightingCharacter::DetermineCommandToUse(){
+	if(MoveBuffer.Num() > 0){
+
+		FCommand MoveToUse = MoveBuffer[0];
+		for(int i = 1; i < MoveBuffer.Num(); ++i){
+
+			if(MoveToUse.InputTypes.Num() < MoveBuffer[i].InputTypes.Num()){
+
+				MoveToUse = MoveBuffer[i];
+			}
+		}
+
+		StartCommand(MoveToUse.CommandName);
+		MoveBuffer.Empty();
 	}
 }
 
