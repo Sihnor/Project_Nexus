@@ -6,6 +6,7 @@
 #include "GameFramework/Character.h"
 #include "InputActionValue.h"
 #include "Components/TimelineComponent.h"
+#include "Containers/CircularBuffer.h"
 #include "FightingCharacter.generated.h"
 
 class UInputMappingContext;
@@ -61,6 +62,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
 	TArray<EInputType> InputTypes;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+	int64 MaxFramesBetweenInputs = 12;
+
 	/*UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
 	TArray<FString> Inputs;*/
 
@@ -81,6 +85,9 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
 	float TimeStamp;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+	int64 Frame;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
 	bool WasUsed;
@@ -190,6 +197,11 @@ protected:
 	//Array of inputs that the player controls has performed
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "InputBuffer")
 		TArray<FInputInfo> InputBuffer;
+
+	//Array of inputs that the player controls has performed (Circular buffer)
+	//Circular array has a start and end point. Once it reaches the end point it rolls over to the next point
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "InputBuffer")
+	TCircularBuffer<FInputInfo> CircularInputBuffer = TCircularBuffer<FInputInfo>(60);
 
 	//Usable Commands getting when correct series of inputs has been pressed.
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "InputBuffer")
@@ -338,6 +350,9 @@ private:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement", meta = (AllowPrivateAccess = "true"))
 		float ForwardDashDistance;
+
+	int CurrentTick;
+	bool CaptureInputThisFrame;
 
 	//float RemoveInputFromInputBufferTime;
 

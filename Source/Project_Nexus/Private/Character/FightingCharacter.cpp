@@ -175,7 +175,29 @@ void AFightingCharacter::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 	OtherCharacter = Cast<AFightingCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), PlayerIndex));
 
+	//UE_LOG(LogTemp, Warning, TEXT("Tick function, frame %d"), GFrameCounter);
+	if(CurrentTick < 59){
+		++CurrentTick;
+	}else{
+		CurrentTick = 0;
+	}
+
+	if(!CaptureInputThisFrame){
+		FInputInfo NoneInput;
+		NoneInput.InputType = EInputType::F_None;
+		NoneInput.InputName = FString("None");
+		NoneInput.TimeStamp = 0.0f;
+		NoneInput.Frame = GFrameCounter;
+		NoneInput.WasUsed = false;
+
+		//InputBuffer.Add(NoneInput);
+		CircularInputBuffer[CurrentTick] = NoneInput;
+	}else {
+		CaptureInputThisFrame = false;
+	}
+
 	DetermineCommandToUse();
+
 
 	//UE_LOG(LogTemp, Warning, TEXT("Command: %i"), PlayerCommand[0].HasUsedCommand);
 
@@ -519,11 +541,21 @@ void AFightingCharacter::AddToInputMap(FString _Input, EInputType _Type){
 }
 
 void AFightingCharacter::AddInputToInputBuffer(FInputInfo InputInfo){
+	if(!CaptureInputThisFrame){
+		//InputBuffer.Add(InputInfo);
+		CircularInputBuffer[CurrentTick] = InputInfo;
+		CaptureInputThisFrame = true;
+		//CheckInputBufferForCommand();
+	}else{
+		//Multiple inputs were performed on the same frame
+	}
 
-	InputBuffer.Add(InputInfo);
+	//UE_LOG(LogTemp, Warning, TEXT("Add Input to Input Buffer, frame %d"), GFrameCounter);
+
 	CheckInputBufferForCommandUsingType();
-	//CheckInputBufferForCommand();
+
 }
+
 
 void AFightingCharacter::CheckInputBufferForCommand(){
 	/*int CorrectSequenceCounter = 0;
@@ -559,6 +591,41 @@ void AFightingCharacter::CheckInputBufferForCommand(){
 }
 
 void AFightingCharacter::CheckInputBufferForCommandUsingType(){
+	int CorrectSequenceCounter = 0;
+	//int64 LastSuccessfulInputFrame = -1;
+
+	for(auto CurrentCommand : PlayerCommand){
+
+		CorrectSequenceCounter = CurrentCommand.InputTypes.Num() - 1;
+
+		/*for(unsigned int Input = 0; Input < CircularInputBuffer.Capacity(); ++Input){
+			CircularInputBuffer[Input].WasUsed = false;
+		}*/
+
+		for(int Frame = 0; Frame < CurrentCommand.MaxFramesBetweenInputs; ++Frame){
+
+			int FrameDataToCheck = (CurrentTick - Frame + CircularInputBuffer.Capacity()) % CircularInputBuffer.Capacity();
+			EInputType Type = CircularInputBuffer[FrameDataToCheck].InputType;
+			
+			if(CorrectSequenceCounter >= 0){
+				if(Type == CurrentCommand.InputTypes[CorrectSequenceCounter]){
+
+					--CorrectSequenceCounter;
+					//CircularInputBuffer[FrameDataToCheck].WasUsed = true;
+				}else if(Type != EInputType::F_None){
+					CorrectSequenceCounter = CurrentCommand.InputTypes.Num() - 1;
+				}
+			}
+
+			if(CorrectSequenceCounter == -1){
+				MoveBuffer.Add(CurrentCommand);
+				break;
+			}
+		}
+	}
+}
+
+/*void AFightingCharacter::CheckInputBufferForCommandUsingType(){
 	int CorrectSequenceCounter = 0;
 
 	for(auto CurrentCommand : PlayerCommand){
@@ -598,7 +665,7 @@ void AFightingCharacter::CheckInputBufferForCommandUsingType(){
 			}
 		}
 	}
-}
+}*/
 
 void AFightingCharacter::DetermineCommandToUse(){
 	if(MoveBuffer.Num() > 0){
@@ -618,8 +685,10 @@ void AFightingCharacter::DetermineCommandToUse(){
 }
 
 void AFightingCharacter::StartCommand(FString CommandName){
-	for(int CurrentCommand =0; CurrentCommand < PlayerCommand.Num(); ++CurrentCommand){
+	for(int CurrentCommand = 0; CurrentCommand < PlayerCommand.Num(); ++CurrentCommand){
+
 		if(CommandName.Compare(PlayerCommand[CurrentCommand].CommandName) == 0){
+			
 			UE_LOG(LogTemp, Error, TEXT("The Character is using the command: %s."), *CommandName);
 			PlayerCommand[CurrentCommand].HasUsedCommand = true;
 		}
