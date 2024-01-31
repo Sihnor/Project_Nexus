@@ -12,6 +12,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Math/UnrealMathUtility.h"
 #include "Curves/CurveFloat.h"
+//#include "Components/CapsuleComponent.h"
 #include "Character/FightingCharacter.h"
 #include "Actors/HitBox.h"
 
@@ -56,6 +57,7 @@ AFightingCharacter::AFightingCharacter()
 
 	WasLightAttackUsed = false;
 	WasHeavyAttackUsed = false;
+	WasThrowUsed = false;
 
 	IsCombatReady = false;
 	MoveFwd = false;
@@ -152,6 +154,9 @@ AFightingCharacter::AFightingCharacter()
 void AFightingCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+
+		//GetCapsuleComponent()->InitCapsuleSize(34.f, 44.f);
+
 
 	if (APlayerController* PlayerController = Cast<APlayerController>(GetController())) {
 		if (UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PlayerController->GetLocalPlayer())) {
@@ -293,9 +298,11 @@ void AFightingCharacter::Block(const FInputActionValue& Value){
 	if (GetController() && IsCombatReady && !this->bIsCrouched && !WasHeavyAttackUsed && !WasLightAttackUsed) {
 			UpdateCharacterRotation();
 			IsBlocking = true;
+			CharacterState = ECharacterState::FC_Blocking;
 			//UE_LOG(LogTemp, Warning, TEXT("Block"));
 	}else {
 		IsBlocking = false;
+		CharacterState = ECharacterState::FC_Default;
 	}
 }
 
@@ -303,6 +310,7 @@ void AFightingCharacter::UnBlock(const FInputActionValue& Value){
 	if (GetController() && IsCombatReady) {
 			UpdateCharacterRotation();
 			IsBlocking = false;
+			CharacterState = ECharacterState::FC_Default;
 			//UE_LOG(LogTemp, Warning, TEXT("UnBlock"));
 	}
 }
@@ -311,8 +319,10 @@ void AFightingCharacter::DoJump(const FInputActionValue& Value){
 	if (GetController() && IsCombatReady && this->CanJump() && !WasStunned && !WasLaunched && !IsKnockedDown && !IsRecovery && !IsWallBounce && !IsGroundBounce) {
 		//UE_LOG(LogTemp, Warning, TEXT("Jump"));
 		this->Jump();
+		CharacterState = ECharacterState::FC_Jumping;
 
 	}else if(IsKnockedDown){
+		CharacterState = ECharacterState::FC_Recovery;
 		IsRecovery = true;
 		IsKnockedDown = false;
 	}
@@ -321,6 +331,8 @@ void AFightingCharacter::DoJump(const FInputActionValue& Value){
 void AFightingCharacter::Duck(const FInputActionValue& Value){
 	if (GetController() && IsCombatReady && this->CanCrouch()) {
 		this->Crouch();
+
+		CharacterState = ECharacterState::FC_Crouching;
 
 		//UE_LOG(LogTemp, Warning, TEXT("Duck"));
 	}
@@ -379,6 +391,14 @@ void AFightingCharacter::DoAddInputToInputBuffer(const FInputActionValue& Value)
 	}
 }
 
+void AFightingCharacter::DoThrow(const FInputActionValue& Value){
+	if (GetController() && IsCombatReady) {
+		WasThrowUsed = true;
+
+		UE_LOG(LogTemp, Error, TEXT("Throw Attack"));
+	}
+}
+
 // Custom function for updating character rotation
 void AFightingCharacter::UpdateCharacterRotation()
 {
@@ -431,6 +451,7 @@ void AFightingCharacter::GetStunned(float HitStunTime, float BlockStunTime, floa
 
 		if(StunTime > 0.f){
 			WasStunned = true;
+			CharacterState = ECharacterState::FC_Stunned;
 			BeginStun();
 		}
 
@@ -472,6 +493,7 @@ void AFightingCharacter::PerformPushBack(float PushbackAmount, float LaunchAmoun
 				GetCharacterMovement()->GravityScale = DefaultGravityScale * GravityScaleModifier;
 				GravityScaleModifier += 0.1f;
 				WasLaunched = true;
+				CharacterState = ECharacterState::FC_Launched;
 				//UE_LOG(LogTemp, Warning, TEXT("0-> Player %i IsCombatReady: %i Launched: %i Stunned: %i KnockedDown: %i IsRecovery: %i IsOnGround: %i IsWallBounce: %i IsGroundBounce: %i"), PlayerIndex, IsCombatReady, WasLaunched, WasStunned, IsKnockedDown, IsRecovery, GetCharacterMovement()->IsMovingOnGround(), IsWallBounce, IsGroundBounce);
 		}
 		
@@ -509,15 +531,31 @@ void AFightingCharacter::EndStun(){
 	if(!WasLaunched && !IsKnockedDown && !IsRecovery && !IsWallBounce && !IsGroundBounce){
 		IsCombatReady = true;
 		WasStunned= false;
+		CharacterState = ECharacterState::FC_Default;
 	}
 }
 
 void AFightingCharacter::Landed(const FHitResult& Hit){
-	if(bWasJumping){
-		if(!Cast<AHitBox>(Hit.GetActor())){
+	
+	//Stop moving whith any momentum landing 
+	GetMovementComponent()->StopMovementImmediately();
+	UE_LOG(LogTemp, Error, TEXT("bJumping: %d"), this->CanJump());
+	if(!this->CanJump()){
+		if(Hit.GetActor() == OtherCharacter){
+			/*UE_LOG(LogTemp, Error, TEXT("A Character has landedn on top of other character (offset to the right)."));
+			UE_LOG(LogTemp, Error, TEXT("Landing character y locatiob: %f %f"), GetActorLocation().X, GetActorLocation().Y);
+			UE_LOG(LogTemp, Error, TEXT("Landing on character y locatiob: %f %f "), OtherCharacter->GetActorLocation().X, OtherCharacter->GetActorLocation().Y);*/
+
+			LaunchCharacter(FVector(GetActorForwardVector().X*350.f, GetActorForwardVector().Y*350.f, 50.f), true, false);
+
+			GetCharacterMovement()->GravityScale = DefaultGravityScale;
+			GravityScaleModifier = 0.8f;		
+
+		}else if(!Cast<AHitBox>(Hit.GetActor())){
 			GetCharacterMovement()->GravityScale = DefaultGravityScale;
 			GravityScaleModifier = 0.8f;
 			IsKnockedDown = false;
+			//CharacterState = ECharacterState::FC_Default;
 		}
 		
 	} else if((WasLaunched && !IsGroundBounce) || IsWallBounce ||  IsGroundBounce){
@@ -525,11 +563,15 @@ void AFightingCharacter::Landed(const FHitResult& Hit){
 			GetCharacterMovement()->GravityScale = DefaultGravityScale;
 			GravityScaleModifier = 0.8f;
 			IsKnockedDown = true;
+			CharacterState = ECharacterState::FC_KockedDown;
 		}
 	}
 	else if(IsGroundBounce){
 		IsGroundBounce = true;
+		CharacterState = ECharacterState::FC_GroundBounce;
 	}
+
+	CharacterState = ECharacterState::FC_Default;
 	WasLaunched = false;
 	IsWallBounce = false;
 	
@@ -555,7 +597,6 @@ void AFightingCharacter::AddInputToInputBuffer(FInputInfo InputInfo){
 	CheckInputBufferForCommandUsingType();
 
 }
-
 
 void AFightingCharacter::CheckInputBufferForCommand(){
 	/*int CorrectSequenceCounter = 0;
@@ -715,6 +756,7 @@ void AFightingCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 
 		EnhancedInputComp->BindAction(LightAttackAction, ETriggerEvent::Started, this, &AFightingCharacter::LightAttack);
 		EnhancedInputComp->BindAction(HeavyAttackAction, ETriggerEvent::Started, this, &AFightingCharacter::HeavyAttack);
+		EnhancedInputComp->BindAction(ThrowAction, ETriggerEvent::Started, this, &AFightingCharacter::DoThrow);
 
 		EnhancedInputComp->BindAction(BlockAction, ETriggerEvent::Triggered, this, &AFightingCharacter::Block);
 		EnhancedInputComp->BindAction(BlockAction, ETriggerEvent::Completed, this, &AFightingCharacter::UnBlock);

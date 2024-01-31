@@ -145,6 +145,9 @@ protected:
 		UInputAction* SideStepNegativeYAction;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+		UInputAction* ThrowAction;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 		UInputAction* AddToInputBufferAction;
 
 	// Expose OtherPlayerCharacter to Blueprint
@@ -214,6 +217,10 @@ protected:
 	/*UFUNCTION(BlueprintCallable, Category = "InputBuffer")
 		void RemoveInputFromInputBuffer();*/
 
+	//Move Character off of other Hurtbox/collider smoothly
+	UFUNCTION(BlueprintImplementableEvent)
+	void MoveCharacterSmoothly(FVector _Start, FVector _End);
+
 	//Delegate signature for the function which will handle our Finished event.
 	
    	FOnTimelineFloat TimelineProgressEvent;
@@ -261,6 +268,8 @@ private:
 
 	void ClearSideStep(const FInputActionValue& Value);
 
+	void DoThrow(const FInputActionValue& Value);
+
 	//void GetStunned(float HitStunTime, float BlockStunTime, float PushbackAmount, float LaunchAmount);
 
 	void PerformPushBack(float PushbackAmount, float LaunchAmount, bool HasBlocked, bool IsNeutral);
@@ -305,6 +314,9 @@ private:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
 		bool WasHeavyAttackUsed = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool WasThrowUsed = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
 		bool IsSideStepNY = false;
