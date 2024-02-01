@@ -209,9 +209,9 @@ void AFightingCharacter::Tick(float DeltaTime)
 	//UE_LOG(LogTemp, Warning, TEXT("Forwar actor: %f"), GetActorForwardVector().X);
 	//UE_LOG(LogTemp, Warning, TEXT("Player %i Was launched: %i"), PlayerIndex, WasLaunched);
 
-	//UE_LOG(LogTemp, Warning, TEXT("0-> Player %i IsCombatReady: %i Launched: %i Stunned: %i KnockedDown: %i IsRecovery: %i IsOnGround: %i IsWallBounce: %i IsGroundBounce: %i"), PlayerIndex, IsCombatReady, WasLaunched, WasStunned, IsKnockedDown, IsRecovery, GetCharacterMovement()->IsMovingOnGround(), IsWallBounce, IsGroundBounce);
+	//UE_LOG(LogTemp, Error, TEXT("0-> Player %i IsCombatReady: %i Launched: %i Stunned: %i KnockedDown: %i IsRecovery: %i IsOnGround: %i IsWallBounce: %i IsGroundBounce: %i"), PlayerIndex, IsCombatReady, WasLaunched, WasStunned, IsKnockedDown, IsRecovery, GetCharacterMovement()->IsMovingOnGround(), IsWallBounce, IsGroundBounce);
 
-	//UE_LOG(LogTemp, Warning, TEXT("Player %i IsCombatReady: %i IsBlocking: %i HavyAttack: %i LightAttack: %i, IsSideStepNY: %i, IsSideStepPY: %i IsCrouched: %i Launched: %i Stunned: %i KnockedDown: %i IsRecovery: %i IsOnGround: %i"), PlayerIndex, IsCombatReady, IsBlocking, WasHeavyAttackUsed, WasLightAttackUsed,IsSideStepNY ,IsSideStepPY, this->bIsCrouched, WasLaunched, WasStunned, IsKnockedDown, IsRecovery, GetCharacterMovement()->IsMovingOnGround());
+	//UE_LOG(LogTemp, Error, TEXT("Player %i IsCombatReady: %i IsBlocking: %i HavyAttack: %i LightAttack: %i, IsSideStepNY: %i, IsSideStepPY: %i IsCrouched: %i Launched: %i Stunned: %i KnockedDown: %i IsRecovery: %i IsOnGround: %i"), PlayerIndex, IsCombatReady, IsBlocking, WasHeavyAttackUsed, WasLightAttackUsed,IsSideStepNY ,IsSideStepPY, this->bIsCrouched, WasLaunched, WasStunned, IsKnockedDown, IsRecovery, GetCharacterMovement()->IsMovingOnGround());
 
 	//UE_LOG(LogTemp, Warning, TEXT("Player %i Launched: %i Stunned: %i KnockedDown: %i IsRecovery: %i IsOnGround: %i"), PlayerIndex, WasLaunched, WasStunned, IsKnockedDown, IsRecovery, GetCharacterMovement()->IsMovingOnGround());
 	//UE_LOG(LogTemp, Warning, TEXT("Player %i NotLaunched: %i NotStunned: %i NotKnockedDown: %i NotIsRecovery: %i IsOnGround: %i"), PlayerIndex, !WasLaunched, !WasStunned, !IsKnockedDown, !IsRecovery, GetCharacterMovement()->IsMovingOnGround());
@@ -539,9 +539,32 @@ void AFightingCharacter::Landed(const FHitResult& Hit){
 	
 	//Stop moving whith any momentum landing 
 	GetMovementComponent()->StopMovementImmediately();
-	UE_LOG(LogTemp, Error, TEXT("bJumping: %d"), this->CanJump());
-	if(!this->CanJump()){
-		if(Hit.GetActor() == OtherCharacter){
+
+	//Re-initialize hit info
+	FHitResult LTHit;
+
+	GetWorld()->LineTraceSingleByChannel(
+		LTHit,
+		FVector(GetActorLocation().X, GetActorLocation().Y, GetActorLocation().Z*-5.f),
+		FVector(GetActorLocation().X, GetActorLocation().Y, GetActorForwardVector().Z*200.f),
+		ECollisionChannel::ECC_Visibility			
+	);
+
+	//For Debugging
+	//DrawDebugLine(GetWorld(), FVector(GetActorLocation().X, GetActorLocation().Y, GetActorLocation().Z*-5.f), FVector(GetActorLocation().X, GetActorLocation().Y, GetActorForwardVector().Z*200.f), LTHit.bBlockingHit ? FColor::Blue : FColor::Red, false, 5.0f, 0, 10.0f);
+	/*if (IsValid(LTHit.GetActor())){
+		UE_LOG(LogTemp, Warning, TEXT("Trace hit actor: %s"), *LTHit.GetActor()->GetName());
+	}
+	else {
+			UE_LOG(LogTemp, Warning, TEXT("No Actors were hit"));
+	}*/
+
+
+	if(LTHit.GetActor()==OtherCharacter){
+		UE_LOG(LogTemp, Error, TEXT("Junping state"));
+		
+
+		if(OtherCharacter && Hit.GetActor() == OtherCharacter){
 			/*UE_LOG(LogTemp, Error, TEXT("A Character has landedn on top of other character (offset to the right)."));
 			UE_LOG(LogTemp, Error, TEXT("Landing character y locatiob: %f %f"), GetActorLocation().X, GetActorLocation().Y);
 			UE_LOG(LogTemp, Error, TEXT("Landing on character y locatiob: %f %f "), OtherCharacter->GetActorLocation().X, OtherCharacter->GetActorLocation().Y);*/
@@ -555,11 +578,14 @@ void AFightingCharacter::Landed(const FHitResult& Hit){
 			GetCharacterMovement()->GravityScale = DefaultGravityScale;
 			GravityScaleModifier = 0.8f;
 			IsKnockedDown = false;
-			//CharacterState = ECharacterState::FC_Default;
+			CharacterState = ECharacterState::FC_Default;
 		}
 		
 	} else if((WasLaunched && !IsGroundBounce) || IsWallBounce ||  IsGroundBounce){
+		
+
 		if(!Cast<AHitBox>(Hit.GetActor())){
+
 			GetCharacterMovement()->GravityScale = DefaultGravityScale;
 			GravityScaleModifier = 0.8f;
 			IsKnockedDown = true;
@@ -569,9 +595,9 @@ void AFightingCharacter::Landed(const FHitResult& Hit){
 	else if(IsGroundBounce){
 		IsGroundBounce = true;
 		CharacterState = ECharacterState::FC_GroundBounce;
-	}
+	} 
 
-	CharacterState = ECharacterState::FC_Default;
+	//CharacterState = ECharacterState::FC_Default;
 	WasLaunched = false;
 	IsWallBounce = false;
 	
