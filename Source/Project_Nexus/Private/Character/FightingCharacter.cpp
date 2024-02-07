@@ -74,7 +74,7 @@ AFightingCharacter::AFightingCharacter()
 	IsGroundBounce = false;
 	
 	//Create a child class so every character has it's own command and create a database of it... Sorry
-	PlayerCommand.SetNum(8);
+	PlayerCommand.SetNum(9);
 
 	/*PlayerCommand[0].Inputs.Add("A");
 	PlayerCommand[0].Inputs.Add("S");
@@ -95,59 +95,60 @@ AFightingCharacter::AFightingCharacter()
 	this->PlayerCommand[1].InputTypes.Add(EInputType::F_HeavyAttack);*/
 
 	//Move Command #1 assignments.
-	this->PlayerCommand[0].CommandName = "Forward Dash";
+	this->PlayerCommand[0].CommandName = "Sprint Forward";
+	this->PlayerCommand[0].InputTypes.Add(EInputType::F_Forward);
 	this->PlayerCommand[0].InputTypes.Add(EInputType::F_Forward);
 	this->PlayerCommand[0].InputTypes.Add(EInputType::F_Forward);
 	this->PlayerCommand[0].HasUsedCommand = false;
 
-
 	//Move Command #2 assignments.
-	this->PlayerCommand[1].CommandName = "Backward Dash";
-	this->PlayerCommand[1].InputTypes.Add(EInputType::F_Backward);
-	this->PlayerCommand[1].InputTypes.Add(EInputType::F_Backward);
+	this->PlayerCommand[1].CommandName = "Forward Dash";
+	this->PlayerCommand[1].InputTypes.Add(EInputType::F_Forward);
+	this->PlayerCommand[1].InputTypes.Add(EInputType::F_Forward);
 	this->PlayerCommand[1].HasUsedCommand = false;
 
-	//Light Attack Command assignments.
-	this->PlayerCommand[2].CommandName = "Light Attack";
-	this->PlayerCommand[2].InputTypes.Add(EInputType::F_LightAttack);
+
+	//Move Command #3 assignments.
+	this->PlayerCommand[2].CommandName = "Backward Dash";
+	this->PlayerCommand[2].InputTypes.Add(EInputType::F_Backward);
+	this->PlayerCommand[2].InputTypes.Add(EInputType::F_Backward);
 	this->PlayerCommand[2].HasUsedCommand = false;
 
-	this->PlayerCommand[3].CommandName = "Heavy Attack";
-	this->PlayerCommand[3].InputTypes.Add(EInputType::F_HeavyAttack);
+	//Heavy Attack Command assignments.
+	this->PlayerCommand[3].CommandName = "Special Move #1";
+	this->PlayerCommand[3].InputTypes.Add(EInputType::F_Crouch);
+	this->PlayerCommand[3].InputTypes.Add(EInputType::F_Forward);
+	this->PlayerCommand[3].InputTypes.Add(EInputType::F_LightAttack);
 	this->PlayerCommand[3].HasUsedCommand = false;
 
-	//Heavy Attack Command assignments.
-	this->PlayerCommand[4].CommandName = "Special Move #1";
+	//Combat Command #2 assignments.
+	this->PlayerCommand[4].CommandName = "Special Move #2";
 	this->PlayerCommand[4].InputTypes.Add(EInputType::F_Crouch);
-	this->PlayerCommand[4].InputTypes.Add(EInputType::F_Forward);
-	this->PlayerCommand[4].InputTypes.Add(EInputType::F_LightAttack);
+	this->PlayerCommand[4].InputTypes.Add(EInputType::F_Backward);
+	this->PlayerCommand[4].InputTypes.Add(EInputType::F_HeavyAttack);
 	this->PlayerCommand[4].HasUsedCommand = false;
 
 	//Combat Command #2 assignments.
-	this->PlayerCommand[5].CommandName = "Special Move #2";
-	this->PlayerCommand[5].InputTypes.Add(EInputType::F_Crouch);
-	this->PlayerCommand[5].InputTypes.Add(EInputType::F_Backward);
-	this->PlayerCommand[5].InputTypes.Add(EInputType::F_HeavyAttack);
+	this->PlayerCommand[5].CommandName = "Light Combo";
+	this->PlayerCommand[5].InputTypes.Add(EInputType::F_LightAttack);
+	this->PlayerCommand[5].InputTypes.Add(EInputType::F_LightAttack);
 	this->PlayerCommand[5].HasUsedCommand = false;
 
 	//Combat Command #2 assignments.
-	this->PlayerCommand[6].CommandName = "Light Combo";
-	this->PlayerCommand[6].InputTypes.Add(EInputType::F_LightAttack);
-	this->PlayerCommand[6].InputTypes.Add(EInputType::F_LightAttack);
+	this->PlayerCommand[6].CommandName = "Heavy Combo";
+	this->PlayerCommand[6].InputTypes.Add(EInputType::F_HeavyAttack);
+	this->PlayerCommand[6].InputTypes.Add(EInputType::F_HeavyAttack);
 	this->PlayerCommand[6].HasUsedCommand = false;
 
-	//Combat Command #2 assignments.
-	this->PlayerCommand[7].CommandName = "Heavy Combo";
-	this->PlayerCommand[7].InputTypes.Add(EInputType::F_HeavyAttack);
-	this->PlayerCommand[7].InputTypes.Add(EInputType::F_HeavyAttack);
+	//Light Attack Command assignments.
+	this->PlayerCommand[7].CommandName = "Light Attack";
+	this->PlayerCommand[7].InputTypes.Add(EInputType::F_LightAttack);
 	this->PlayerCommand[7].HasUsedCommand = false;
 
+	this->PlayerCommand[8].CommandName = "Heavy Attack";
+	this->PlayerCommand[8].InputTypes.Add(EInputType::F_HeavyAttack);
+	this->PlayerCommand[8].HasUsedCommand = false;
 
-
-
-	/*PlayerCommand[1].Inputs.Add("D");
-	PlayerCommand[1].Inputs.Add("S");
-	PlayerCommand[1].Inputs.Add("A");*/
 }
 
 // Called when the game starts or when spawned
@@ -230,8 +231,10 @@ void AFightingCharacter::DoMoveFwd(const FInputActionValue& Value){
 	if (GetController() && IsCombatReady && !IsBlocking && !WasHeavyAttackUsed && !WasLightAttackUsed && !IsSideStepNY && !IsSideStepPY && !this->bIsCrouched && !WasLaunched && !WasStunned && !IsKnockedDown && !IsRecovery && GetCharacterMovement()->IsMovingOnGround() && !IsWallBounce && !IsGroundBounce) {
 		UpdateCharacterRotation();
 
+		if(CharacterState != ECharacterState::FC_DashForward && CharacterState != ECharacterState::FC_RunningForward){
+			CharacterState = ECharacterState::FC_MovingForward;
 
-		CharacterState = ECharacterState::FC_MovingForward;
+		}
 
 
 		AddMovementInput(Forward, Value.Get<float>());
@@ -266,7 +269,11 @@ void AFightingCharacter::DoMoveBwd(const FInputActionValue& Value){
 		}else {
 			AddMovementInput(Forward, Value.Get<float>());
 		}
-		CharacterState = ECharacterState::FC_MovingBackward;
+
+		if(CharacterState != ECharacterState::FC_DashBackward){
+			CharacterState = ECharacterState::FC_MovingBackward;
+		}
+
 		MoveBwd = true;
 		//UE_LOG(LogTemp, Warning, TEXT("Move X: %f"), Value.Get<float>());
 	}/*else {
@@ -341,6 +348,8 @@ void AFightingCharacter::Duck(const FInputActionValue& Value){
 void AFightingCharacter::UnDuck(const FInputActionValue& Value){
 	if (GetController() && IsCombatReady && !this->CanCrouch()) {
 		this->UnCrouch();
+
+		CharacterState = ECharacterState::FC_Default;
 
 		//UE_LOG(LogTemp, Warning, TEXT("UnDuck"));
 	}
@@ -758,6 +767,11 @@ void AFightingCharacter::StartCommand(FString CommandName){
 			
 			UE_LOG(LogTemp, Error, TEXT("The Character is using the command: %s."), *CommandName);
 			PlayerCommand[CurrentCommand].HasUsedCommand = true;
+
+			//check if the character state is not default state
+			if(PlayerCommand[CurrentCommand].ResultingState != ECharacterState::FC_Default){
+				CharacterState = PlayerCommand[CurrentCommand].ResultingState;
+			}
 		}
 	}
 }

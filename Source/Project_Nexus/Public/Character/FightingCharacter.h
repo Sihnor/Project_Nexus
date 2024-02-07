@@ -25,9 +25,10 @@ enum class ECharacterState : uint8
 	FC_DashBackward UMETA(DisplayName = "Dash_Backward"),
 	FC_Jumping UMETA(DisplayName = "Jumping"),
 	FC_Stunned UMETA(DisplayName = "Stunned"),
-	FC_Blocking UMETA(DisplayName = "Blocking"),
 	FC_Crouching UMETA(DisplayName = "Crouching"),
 	FC_Launched UMETA(DisplayName = "Launched"),
+	FC_Blocking UMETA(DisplayName = "Blocking"),
+	FC_CrouchBlocking UMETA(DisplayName = "Crouch_Blocking"),
 	FC_KockedDown UMETA(DisplayName = "Knocked_Down"),
 	FC_Recovery UMETA(DisplayName = "Recovery"),
 	FC_WallBounce UMETA(DisplayName = "Wall_Bounce"),
@@ -56,19 +57,25 @@ struct FCommand{
 	GENERATED_BODY()
 
 public:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input Data")
 	FString CommandName;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input Data")
 	TArray<EInputType> InputTypes;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input Data")
+	ECharacterState RequireState;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input Data")
+	ECharacterState ResultingState;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input Data")
 	int64 MaxFramesBetweenInputs = 12;
 
 	/*UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
 	TArray<FString> Inputs;*/
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input Data")
 	bool HasUsedCommand;
 };
  
@@ -77,19 +84,19 @@ struct FInputInfo{
 	GENERATED_BODY()
 
 public:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input Data")
 	EInputType InputType;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input Data")
 	FString InputName;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input Data")
 	float TimeStamp;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input Data")
 	int64 Frame;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input Data")
 	bool WasUsed;
 };
 
