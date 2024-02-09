@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C5D6ECA9-4828-42A3-8174-4EC190FF3816}" SchemaVersion="110" RootDocumentID="{DAD6D8BA-01FF-4EA2-924D-8C59CACB0568}" ParentDocumentID="{DAD6D8BA-01FF-4EA2-924D-8C59CACB0568}">
+	<AudioObjects>
+		<WorkUnit Name="PlayerCrouch" ID="{C5D6ECA9-4828-42A3-8174-4EC190FF3816}" OwnerID="{DAD6D8BA-01FF-4EA2-924D-8C59CACB0568}" PersistMode="Nested">
+			<ChildrenList>
+				<RandomSequenceContainer Name="Player_Crouch_In" ID="{6D0277FB-D56E-4814-BAB1-B9A50C17B2EC}" ShortID="802226143">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>21</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{ADCD1159-FA85-416E-8C52-0349B7699F8D}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="354"/>
+											<Property Name="Min" Type="Real64" Value="-379"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-20</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{AEA91C50-B71A-47F8-9C3D-ACD9DED812B2}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="4"/>
+											<Property Name="Min" Type="Real64" Value="-4"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_fighter1_movement_crouch_in_01" ID="{FE9E888B-730A-41CE-9AA0-56F1A6E0DB09}" ShortID="531810946">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_crouch_in_01" ID="{5183C105-150E-4F87-82E4-9E1597383AB9}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_crouch_in_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="507215868"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_crouch_in_01" ID="{5183C105-150E-4F87-82E4-9E1597383AB9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_crouch_in_02" ID="{B90DEE40-FA3E-462B-855E-2755E2A910E8}" ShortID="927768935">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_crouch_in_02" ID="{3DFDCA4B-82A0-4A29-AABB-3A6724E4A6A3}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_crouch_in_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="427230100"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_crouch_in_02" ID="{3DFDCA4B-82A0-4A29-AABB-3A6724E4A6A3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_crouch_in_03" ID="{8C14E998-8DB0-4A57-A82E-ABCB39D3C034}" ShortID="140515586">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_crouch_in_03" ID="{60F40444-E5D3-447D-90E0-615D954C743A}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_crouch_in_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="126319256"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_crouch_in_03" ID="{60F40444-E5D3-447D-90E0-615D954C743A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_crouch_in_04" ID="{87204D44-F20F-4F15-9B62-E5C6DED23B42}" ShortID="95637446">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_crouch_in_04" ID="{5C495EAA-BE26-4A75-B5B0-2FCE0F4CE9A9}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_crouch_in_04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="546080245"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_crouch_in_04" ID="{5C495EAA-BE26-4A75-B5B0-2FCE0F4CE9A9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_crouch_in_05" ID="{5948B021-45CE-4909-85B4-81ED787CCE55}" ShortID="485089209">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_crouch_in_05" ID="{714F3897-1F25-4251-B5E0-55853DB7E628}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_crouch_in_05.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="537328825"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_crouch_in_05" ID="{714F3897-1F25-4251-B5E0-55853DB7E628}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_crouch_in_06" ID="{0079C899-CE1B-4FB7-A8EB-1B93E5358F54}" ShortID="409036906">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_crouch_in_06" ID="{78485223-A1E5-498E-B06E-3F5CCAA8ED36}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_crouch_in_06.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="827760532"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_crouch_in_06" ID="{78485223-A1E5-498E-B06E-3F5CCAA8ED36}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Player_Crouch_Out" ID="{E8B94CCA-D650-4B11-9DAA-97E8961D4FA7}" ShortID="113437246">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{FD12096A-C29A-407E-B1F4-68C2E16C8697}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="404"/>
+											<Property Name="Min" Type="Real64" Value="-379"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-20</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{AB07A401-82A7-47BA-9638-ADB9292E73E7}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="4"/>
+											<Property Name="Min" Type="Real64" Value="-4"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_fighter1_movement_crouch_out_01" ID="{099DE67F-9DE2-4437-8314-7E298852FF80}" ShortID="262034237">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_crouch_out_01" ID="{C5D02594-76F1-4499-A5CC-1B945B2EA245}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_crouch_out_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="475058918"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_crouch_out_01" ID="{C5D02594-76F1-4499-A5CC-1B945B2EA245}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_crouch_out_02" ID="{0FF5024F-3C8F-4FA0-9E2C-F173240C2E87}" ShortID="49149832">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_crouch_out_02" ID="{705EB90F-3104-4310-B762-010922D34D7C}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_crouch_out_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1016905659"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_crouch_out_02" ID="{705EB90F-3104-4310-B762-010922D34D7C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_crouch_out_03" ID="{F964DAA4-16CC-400D-B806-7AD6144D589F}" ShortID="561715484">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_crouch_out_03" ID="{BD2C61D5-1BFA-4A62-A4CE-B25038A9789A}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_crouch_out_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="408344611"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_crouch_out_03" ID="{BD2C61D5-1BFA-4A62-A4CE-B25038A9789A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_crouch_out_04" ID="{B2115DD3-6066-49D0-B2E5-1612D0D7B7B9}" ShortID="743620325">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_crouch_out_04" ID="{6B77C4AF-9C6F-415B-BA01-E9E560CF428E}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_crouch_out_04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="703951287"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_crouch_out_04" ID="{6B77C4AF-9C6F-415B-BA01-E9E560CF428E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_crouch_out_05" ID="{078CB34F-907C-40C6-99D4-07EFB47F9526}" ShortID="928879268">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_crouch_out_05" ID="{921670D5-EA85-431F-8A41-C08A217C2F32}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_crouch_out_05.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1037379880"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_crouch_out_05" ID="{921670D5-EA85-431F-8A41-C08A217C2F32}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_crouch_out_06" ID="{61250F70-6202-46ED-9F1F-BEEAF5A49F1F}" ShortID="389632024">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_crouch_out_06" ID="{1BB5F91D-BDE9-4F59-9123-93C2DC0147CF}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_crouch_out_06.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="242429337"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_crouch_out_06" ID="{1BB5F91D-BDE9-4F59-9123-93C2DC0147CF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

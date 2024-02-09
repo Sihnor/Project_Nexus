@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="2518864784" Type="Event" GUID="{5B16E403-94D2-446D-9060-3E385BA132ED}" Language="SFX" Hash="{F3F03F35-3D5C-DE65-78F5-165DBF51DAD8}">
+			<ObjectPath>Play_Select_Fighter</ObjectPath>
+			<ShortName>Play_Select_Fighter</ShortName>
+			<Path>Event/Play_Select_Fighter.bnk</Path>
+			<Media>
+				<File Id="908855246" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_menu_select_fighter.wav</ShortName>
+					<Path>Media/908855246.wem</Path>
+					<CachePath>SFX/sfx_menu_select_fighter_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2518864784" Name="Play_Select_Fighter" ObjectPath="\Events\UI\Play_Select_Fighter" GUID="{5B16E403-94D2-446D-9060-3E385BA132ED}" DurationType="OneShot" DurationMin="0.9851458" DurationMax="0.9851458">
+					<MediaRefs>
+						<MediaRef Id="908855246"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{FAAD78A6-7569-143C-E0DD-48C6D2D54CAF}</FileHash>
+</SoundBanksInfo>

@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	725346841	Play_Player_Landing			\Player\PlayerLocomotion\Play_Player_Landing	
+

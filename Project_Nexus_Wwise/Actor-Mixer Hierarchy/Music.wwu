@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{72A0A74B-0124-4CA2-8AB2-B55E8E9D9FAF}" SchemaVersion="110">
+	<AudioObjects>
+		<WorkUnit Name="Music" ID="{72A0A74B-0124-4CA2-8AB2-B55E8E9D9FAF}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Menu_Music" ID="{9B59812E-3F2B-464B-B391-E4FA152EA35A}" ShortID="263968287">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Nexus-Menu" ID="{18B9120A-CB4C-48BC-A247-E611D84E9AB9}">
+							<PropertyList>
+								<Property Name="LoopEnd" Type="Real64" Value="147.905814823069"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Nexus-Menu.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="68506720"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Nexus-Menu" ID="{18B9120A-CB4C-48BC-A247-E611D84E9AB9}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Stage_Music" ID="{496121C4-8191-467A-B319-86C102E91E85}" ShortID="672145592">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Nexus 2_V2" ID="{A4459EDB-C91E-47C3-B89B-F16BF6F5ABB0}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.562402095973525"/>
+								<Property Name="LoopEnd" Type="Real64" Value="152.122309210736"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="61.5554075059976"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Nexus 2_V2.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="595978771"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Nexus 2_V2" ID="{A4459EDB-C91E-47C3-B89B-F16BF6F5ABB0}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

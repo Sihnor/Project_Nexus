@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F1D85732-9B9D-4A1E-8A12-03103586EB56}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Commentator_Voices" ID="{F1D85732-9B9D-4A1E-8A12-03103586EB56}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Com_Round_Fight" ID="{4DDF616B-CE7F-4803-9C49-4378BAFA5BD4}">
+					<ChildrenList>
+						<Action Name="" ID="{672265CE-E480-495C-BC6F-58ABF106471D}" ShortID="682373825">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Com_Round_Fight" ID="{3B732C5C-1078-438D-A2CA-C8BD648ED775}" WorkUnitID="{5BA06415-9A5F-4D77-9896-C2068BB4FFC9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

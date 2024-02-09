@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DAD6D8BA-01FF-4EA2-924D-8C59CACB0568}" SchemaVersion="110">
+	<AudioObjects>
+		<WorkUnit Name="Player_Locomotion" ID="{DAD6D8BA-01FF-4EA2-924D-8C59CACB0568}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="4"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<WorkUnit Name="PlayerFootsteps" ID="{A2C58249-302C-4D4A-9D22-B27D518DF14A}" PersistMode="Reference"/>
+				<WorkUnit Name="PlayerCloth" ID="{B4CFF792-40DD-400F-8C3A-0691A0EBFC8D}" PersistMode="Reference"/>
+				<WorkUnit Name="PlayerBodyfalls" ID="{BD1FFCEA-0CBC-4907-BA3B-52143CB1DB24}" PersistMode="Reference"/>
+				<WorkUnit Name="PlayerJump" ID="{A8EAA9EC-3A87-4AAE-B1D1-D11CB4C9DFE8}" PersistMode="Reference"/>
+				<WorkUnit Name="PlayerLanding" ID="{257FC425-BAA1-4C76-B61D-F20E65168BDD}" PersistMode="Reference"/>
+				<WorkUnit Name="PlayerCrouch" ID="{C5D6ECA9-4828-42A3-8174-4EC190FF3816}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

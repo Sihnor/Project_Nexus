@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="1681067324" Type="Event" GUID="{4DEEC41B-B46A-428D-BC1E-14F8277A4A26}" Language="SFX" Hash="{4440A18B-B745-79FB-AF3F-CB90FF484BA4}">
+			<ObjectPath>Play_TestBeep_3D</ObjectPath>
+			<ShortName>Play_TestBeep_3D</ShortName>
+			<Path>Event/Play_TestBeep_3D.bnk</Path>
+			<Media>
+				<File Id="759261552" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>TestFiles\sfx_test_beep_short.wav</ShortName>
+					<Path>Media/759261552.wem</Path>
+					<CachePath>SFX/TestFiles/sfx_test_beep_short_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1681067324" Name="Play_TestBeep_3D" ObjectPath="\Events\TestEvents\Play_TestBeep_3D" GUID="{4DEEC41B-B46A-428D-BC1E-14F8277A4A26}" MaxAttenuation="50" DurationType="OneShot" DurationMin="0.07419501" DurationMax="0.07419501">
+					<MediaRefs>
+						<MediaRef Id="759261552"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{FB1DEF06-90D8-799E-5C70-E527D498D319}</FileHash>
+</SoundBanksInfo>

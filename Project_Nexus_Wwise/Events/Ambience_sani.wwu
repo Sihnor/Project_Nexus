@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E7620FFA-6913-46EF-BAAE-BB405C3D6887}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Ambience_sani" ID="{E7620FFA-6913-46EF-BAAE-BB405C3D6887}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_AmbienceMain" ID="{A5135C10-7237-4528-BB2B-2CF6187A56A9}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

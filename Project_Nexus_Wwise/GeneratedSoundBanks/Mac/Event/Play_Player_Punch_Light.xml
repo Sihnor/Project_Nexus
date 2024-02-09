@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="2334765685" Type="Event" GUID="{F110A2AB-C527-4CD6-956A-320E06655E4E}" Language="SFX" Hash="{F96893BC-6251-F831-E209-AB0C55742371}">
+			<ObjectPath>Play_Player_Punch_Light</ObjectPath>
+			<ShortName>Play_Player_Punch_Light</ShortName>
+			<Path>Event/Play_Player_Punch_Light.bnk</Path>
+			<Media>
+				<File Id="20389258" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_light_02.wav</ShortName>
+					<Path>Media/20389258.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_light_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="161303902" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_light_01.wav</ShortName>
+					<Path>Media/161303902.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_light_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="543785188" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_light_05.wav</ShortName>
+					<Path>Media/543785188.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_light_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="588301371" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_light_04.wav</ShortName>
+					<Path>Media/588301371.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_light_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="670658824" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_light_06.wav</ShortName>
+					<Path>Media/670658824.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_light_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="996432136" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_light_03.wav</ShortName>
+					<Path>Media/996432136.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_light_03_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2334765685" Name="Play_Player_Punch_Light" ObjectPath="\Events\Player\PlayerCombat\Play_Player_Punch_Light" GUID="{F110A2AB-C527-4CD6-956A-320E06655E4E}" DurationType="OneShot" DurationMin="0.44264585" DurationMax="0.54541665">
+					<MediaRefs>
+						<MediaRef Id="20389258"/>
+						<MediaRef Id="161303902"/>
+						<MediaRef Id="543785188"/>
+						<MediaRef Id="588301371"/>
+						<MediaRef Id="670658824"/>
+						<MediaRef Id="996432136"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{0C009F8D-7CE9-7A10-51FC-7CBA07C5BB68}</FileHash>
+</SoundBanksInfo>
