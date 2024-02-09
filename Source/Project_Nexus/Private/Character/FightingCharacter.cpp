@@ -302,22 +302,31 @@ void AFightingCharacter::HeavyAttack(const FInputActionValue& Value){
 }
 
 void AFightingCharacter::Block(const FInputActionValue& Value){
-	if (GetController() && IsCombatReady && !this->bIsCrouched && !WasHeavyAttackUsed && !WasLightAttackUsed) {
+	if (GetController() && IsCombatReady && !WasHeavyAttackUsed && !WasLightAttackUsed) {
 			UpdateCharacterRotation();
 			IsBlocking = true;
-			CharacterState = ECharacterState::FC_Blocking;
+			if(!this->bIsCrouched){
+				CharacterState = ECharacterState::FC_Blocking;
+			}else{
+				CharacterState = ECharacterState::FC_CrouchBlocking;
+			}
 			//UE_LOG(LogTemp, Warning, TEXT("Block"));
-	}else {
+	}/*else {
 		IsBlocking = false;
 		CharacterState = ECharacterState::FC_Default;
-	}
+	}*/
 }
 
 void AFightingCharacter::UnBlock(const FInputActionValue& Value){
 	if (GetController() && IsCombatReady) {
 			UpdateCharacterRotation();
 			IsBlocking = false;
-			CharacterState = ECharacterState::FC_Default;
+			if(!this->bIsCrouched){
+				CharacterState = ECharacterState::FC_Default;
+			}else{
+				CharacterState = ECharacterState::FC_Crouching;
+			}
+			//CharacterState = ECharacterState::FC_Default;
 			//UE_LOG(LogTemp, Warning, TEXT("UnBlock"));
 	}
 }
@@ -455,7 +464,7 @@ void AFightingCharacter::TimelineFinishedFunction()
 
 void AFightingCharacter::GetStunned(float HitStunTime, float BlockStunTime, float PushbackAmount, float LaunchAmount, bool IsNeutral)
 {
-	if(!IsBlocking){
+	if(CharacterState != ECharacterState::FC_Blocking && CharacterState != ECharacterState::FC_CrouchBlocking){
 		StunTime= HitStunTime;
 
 		if(StunTime > 0.f){
@@ -478,13 +487,29 @@ void AFightingCharacter::GetStunned(float HitStunTime, float BlockStunTime, floa
 	}else{
 		StunTime = BlockStunTime;
 
+
 		if(StunTime > 0.f){
+		
+			if(CharacterState != ECharacterState::FC_CrouchBlocking){
+				CharacterState = ECharacterState::FC_BlockStunned;
+				UE_LOG(LogTemp, Warning, TEXT("BlockStunned"));
+
+			}else{
+				CharacterState = ECharacterState::FC_BlockCrouchStunned;
+				UE_LOG(LogTemp, Warning, TEXT("BlockCrouchStunned"));
+			}
+
+			//CharacterState = ECharacterState::FC_BlockStunned;
+			WasStunned = true;
 			BeginStun();
+		} else {
+			CharacterState = ECharacterState::FC_Default;
+			WasStunned = false;
 		}
 
 		if(OtherCharacter){
 			OtherCharacter->HasLandedHit = false;
-			OtherCharacter->PerformPushBack(PushbackAmount, LaunchAmount, false, IsNeutral);
+			OtherCharacter->PerformPushBack(PushbackAmount, LaunchAmount, false, false);
 			//OtherCharacter->PerformPushBack(PushbackAmount, 0.f, false, IsNeutral);
 		}
 
@@ -537,13 +562,19 @@ void AFightingCharacter::PerformPushBack(float PushbackAmount, float LaunchAmoun
 void AFightingCharacter::BeginStun(){
 	IsCombatReady = false;
 
+
 	GetWorld()->GetTimerManager().SetTimer(StunTimeHandle, this, &AFightingCharacter::EndStun, StunTime, false);
 
 }
 
 void AFightingCharacter::EndStun(){
 	if(!WasLaunched && !IsKnockedDown && !IsRecovery && !IsWallBounce && !IsGroundBounce){
-		CharacterState = ECharacterState::FC_Default;
+		/*if(IsBlocking){
+			CharacterState = ECharacterState::FC_Blocking;
+		}*/
+			CharacterState = ECharacterState::FC_Default;
+		
+
 		IsCombatReady = true;
 		WasStunned= false;
 		

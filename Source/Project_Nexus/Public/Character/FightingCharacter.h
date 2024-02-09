@@ -26,6 +26,8 @@ enum class ECharacterState : uint8
 	FC_Jumping UMETA(DisplayName = "Jumping"),
 	FC_LightStunned UMETA(DisplayName = "Light_Stunned"),
 	FC_HeavyStunned UMETA(DisplayName = "Heavy_Stunned"),
+	FC_BlockStunned UMETA(DisplayName = "Block_Stunned"),
+	FC_BlockCrouchStunned UMETA(DisplayName = "Block_Crouch_Stunned"),
 	FC_Crouching UMETA(DisplayName = "Crouching"),
 	FC_Launched UMETA(DisplayName = "Launched"),
 	FC_Blocking UMETA(DisplayName = "Blocking"),
