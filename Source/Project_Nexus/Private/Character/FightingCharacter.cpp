@@ -459,8 +459,13 @@ void AFightingCharacter::GetStunned(float HitStunTime, float BlockStunTime, floa
 		StunTime= HitStunTime;
 
 		if(StunTime > 0.f){
+			if(StunTime > 0.5f){
+				CharacterState = ECharacterState::FC_HeavyStunned;
+			}else{
+				CharacterState = ECharacterState::FC_LightStunned;
+			}
+			
 			WasStunned = true;
-			CharacterState = ECharacterState::FC_Stunned;
 			BeginStun();
 		}
 
@@ -538,9 +543,10 @@ void AFightingCharacter::BeginStun(){
 
 void AFightingCharacter::EndStun(){
 	if(!WasLaunched && !IsKnockedDown && !IsRecovery && !IsWallBounce && !IsGroundBounce){
+		CharacterState = ECharacterState::FC_Default;
 		IsCombatReady = true;
 		WasStunned= false;
-		CharacterState = ECharacterState::FC_Default;
+		
 	}
 }
 
