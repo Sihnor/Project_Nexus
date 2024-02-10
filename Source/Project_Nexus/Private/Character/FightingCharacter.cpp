@@ -68,13 +68,14 @@ AFightingCharacter::AFightingCharacter()
 	WasLaunched = false;
 	WasStunned = false;
 	HasLandedHit = false;
+	HasLandedThrow = false;
 	IsKnockedDown = false;
 	IsRecovery = false;
 	IsWallBounce = false;
 	IsGroundBounce = false;
 	
 	//Create a child class so every character has it's own command and create a database of it... Sorry
-	PlayerCommand.SetNum(9);
+	PlayerCommand.SetNum(10);
 
 	/*PlayerCommand[0].Inputs.Add("A");
 	PlayerCommand[0].Inputs.Add("S");
@@ -148,6 +149,10 @@ AFightingCharacter::AFightingCharacter()
 	this->PlayerCommand[8].CommandName = "Heavy Attack";
 	this->PlayerCommand[8].InputTypes.Add(EInputType::F_HeavyAttack);
 	this->PlayerCommand[8].HasUsedCommand = false;
+
+	this->PlayerCommand[9].CommandName = "Throw Attack";
+	this->PlayerCommand[9].InputTypes.Add(EInputType::F_Throw);
+	this->PlayerCommand[9].HasUsedCommand = false;
 
 }
 

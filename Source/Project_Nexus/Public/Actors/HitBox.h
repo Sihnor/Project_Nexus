@@ -18,8 +18,8 @@ enum class EHitBoxStates : uint8
 {
 	HB_Begin UMETA(DisplayName = "Begin"),
     HB_Active UMETA(DisplayName = "Active"),
-    HB_Hurtbox UMETA(DisplayName = "Hurtbox")
-	//HB_Throwbox UMETA(DisplayName = "Throwbox")
+    HB_Hurtbox UMETA(DisplayName = "Hurtbox"),
+	HB_Throwbox UMETA(DisplayName = "Throwbox")
 	//HB_Projectile UMETA(DisplayName = "Projectile")
 	//more...
 };
