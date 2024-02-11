@@ -182,7 +182,7 @@ protected:
     	bool bUsingComplexHurtboxes;
 
 	UFUNCTION(BlueprintCallable, Category = "Hitbox")
-		void GetStunned(float HitStunTime, float BlockStunTime, float PushbackAmount, float LaunchAmount, bool IsNeutral);
+		void GetStunned(float HitStunTime, float BlockStunTime, float PushbackAmount, float LaunchAmount, bool IsNeutral, float HitStopDamageAmount);
 
 	UFUNCTION(BlueprintCallable, Category = "InputBuffer")
 		void AddToInputMap(FString _Input, EInputType _Type);
@@ -288,9 +288,15 @@ private:
 
 	void EndStun();
 
+	void BeginHitsop(float _DamageAmount);
+
+	void EndHitstop();
+
 	void DoAddInputToInputBuffer(const FInputActionValue& Value);
 
 	FTimerHandle StunTimeHandle;
+
+	FTimerHandle HitstopTimeHandle;
 
 	//FTimerHandle InputBufferTimeHandle;
 
@@ -366,6 +372,9 @@ private:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats", meta = (AllowPrivateAccess = "true"))
 		float GravityScaleModifier;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats", meta = (AllowPrivateAccess = "true"))
+		float HitstopModifier;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats", meta = (AllowPrivateAccess = "true"))
 		float MaxDistanceApart;

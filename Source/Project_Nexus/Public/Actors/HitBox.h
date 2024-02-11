@@ -49,6 +49,9 @@ public:
 		float HitstunTime;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
+		float HitStopTime;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
 		float BlockstunTime;
 
 	//Amount of distance to push the character back

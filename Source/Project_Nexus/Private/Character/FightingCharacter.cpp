@@ -15,6 +15,7 @@
 //#include "Components/CapsuleComponent.h"
 #include "Character/FightingCharacter.h"
 #include "Actors/HitBox.h"
+#include "GameModes/Nexus_GameMode.h"
 
 
 
@@ -54,6 +55,7 @@ AFightingCharacter::AFightingCharacter()
 	
 	DefaultGravityScale = GetCharacterMovement()->GravityScale;
 	GravityScaleModifier = 0.8f;
+	HitstopModifier = 1.f;
 
 	WasLightAttackUsed = false;
 	WasHeavyAttackUsed = false;
@@ -228,7 +230,6 @@ void AFightingCharacter::Tick(float DeltaTime)
 
 	//UE_LOG(LogTemp, Warning, TEXT("Velocit X: %f Y: %f Z: %f"), GetVelocity().X, GetVelocity().Y, GetVelocity().Z);
 }
-
 
 void AFightingCharacter::DoMoveFwd(const FInputActionValue& Value){
 	const FVector Forward = GetActorForwardVector();
@@ -467,7 +468,7 @@ void AFightingCharacter::TimelineFinishedFunction()
 	TimelineComp->SetPlaybackPosition(0.f, false);
 }
 
-void AFightingCharacter::GetStunned(float HitStunTime, float BlockStunTime, float PushbackAmount, float LaunchAmount, bool IsNeutral)
+void AFightingCharacter::GetStunned(float HitStunTime, float BlockStunTime, float PushbackAmount, float LaunchAmount, bool IsNeutral, float HitStopDamageAmount)
 {
 	if(CharacterState != ECharacterState::FC_Blocking && CharacterState != ECharacterState::FC_CrouchBlocking){
 		StunTime= HitStunTime;
@@ -481,6 +482,10 @@ void AFightingCharacter::GetStunned(float HitStunTime, float BlockStunTime, floa
 			
 			WasStunned = true;
 			BeginStun();
+		}
+
+		if(HitStopDamageAmount > 0.f){
+			BeginHitsop(HitStopDamageAmount);
 		}
 
 		if(OtherCharacter){
@@ -512,6 +517,10 @@ void AFightingCharacter::GetStunned(float HitStunTime, float BlockStunTime, floa
 			WasStunned = false;
 		}
 
+		if(HitStopDamageAmount > 0.f){
+			float reducedHitStopTime = HitStopDamageAmount * 0.5f; 
+			BeginHitsop(reducedHitStopTime);
+		}
 		if(OtherCharacter){
 			OtherCharacter->HasLandedHit = false;
 			OtherCharacter->PerformPushBack(PushbackAmount, LaunchAmount, false, false);
@@ -584,6 +593,33 @@ void AFightingCharacter::EndStun(){
 		WasStunned= false;
 		
 	}
+}
+
+void AFightingCharacter::BeginHitsop(float _DamageAmount){
+	
+	CustomTimeDilation = 0.f;
+	OtherCharacter->CustomTimeDilation = 0.f;
+	float HitStopTime = _DamageAmount * HitstopModifier;
+
+	//stop the timer of current game
+	/*if(auto GameMode = Cast<ANexus_GameMode>(GetWorld()->GetAuthGameMode())){
+		//set timer pause
+		GameMode->isTimerAct = false;
+	}*/
+
+	GetWorld()->GetTimerManager().SetTimer(HitstopTimeHandle, this, &AFightingCharacter::EndHitstop, HitStopTime, false);
+}
+
+void AFightingCharacter::EndHitstop(){
+	CustomTimeDilation = 1.f;
+	OtherCharacter->CustomTimeDilation = 1.f;
+
+	//play the timer of current game
+	/*if(auto GameMode = Cast<ANexus_GameMode>(GetWorld()->GetAuthGameMode())){
+		//set timer pause
+		GameMode->isTimerAct = false;
+	}*/
+
 }
 
 void AFightingCharacter::Landed(const FHitResult& Hit){
