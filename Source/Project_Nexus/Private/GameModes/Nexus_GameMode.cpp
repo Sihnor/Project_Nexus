@@ -5,7 +5,6 @@
 
 #include "GameInstances/Nexus_GameInstance.h"
 #include "GameState/Nexus_GameState.h"
-#include "Kismet/GameplayStatics.h"
 #include "Subsystems/Nexus_SettingsSubsystem.h"
 
 
@@ -66,8 +65,6 @@ void ANexus_GameMode::OnStartMatch_Implementation()
 		}
 
 		this->GameState->StartNewGame();
-
-		this->GetWorldTimerManager().SetTimer(this->TH_CountDown, this, &ANexus_GameMode::CountDown, 1.0f, true, 1.0f);
 	}
 
 	if (this->CurrentRound != 0)
@@ -92,7 +89,7 @@ void ANexus_GameMode::CountDown()
 {
 	if (this->GameState->GetRemainingTime() == 0)
 	{
-		this->GetWorldTimerManager().ClearTimer(this->TH_CountDown);
+		this->StopTimer();
 		this->OnTimeIsUp();
 	}
 
@@ -114,7 +111,7 @@ void ANexus_GameMode::OnPlayerIsDead_Implementation(EPlayerEnum Player)
 
 void ANexus_GameMode::PlayerIsDead(EPlayerEnum Player)
 {
-	this->GetWorldTimerManager().ClearTimer(this->TH_CountDown);
+	this->StopTimer();
 
 	switch (Player)
 	{
@@ -158,4 +155,24 @@ void ANexus_GameMode::AddPlayerOneRoundWon(EPlayerEnum Player)
 			break;
 	default: ;
 	}
+}
+
+void ANexus_GameMode::StartTimer()
+{
+	this->GetWorldTimerManager().SetTimer(this->TH_CountDown, this, &ANexus_GameMode::CountDown, 1.0f, true, 1.0f);
+}
+
+void ANexus_GameMode::PauseTimer()
+{
+	this->GetWorldTimerManager().PauseTimer(this->TH_CountDown);
+}
+
+void ANexus_GameMode::ResumeTimer()
+{
+	this->GetWorldTimerManager().UnPauseTimer(this->TH_CountDown);
+}
+
+void ANexus_GameMode::StopTimer()
+{
+	this->GetWorldTimerManager().ClearTimer(this->TH_CountDown);
 }
