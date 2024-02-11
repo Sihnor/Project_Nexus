@@ -8,7 +8,7 @@
 void UNexus_SettingsSubsystem::Initialize(FSubsystemCollectionBase& Collection)
 {
 	Super::Initialize(Collection);
-	this->NumberOfRounds = 5;
+	this->NumberOfRounds = 3;
 	this->TimeLimitIndex = 0;
 	this->ControllerVibration = ECheckBoxState::Checked;
 
