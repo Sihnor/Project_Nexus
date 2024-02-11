@@ -415,11 +415,12 @@ void AFightingCharacter::DoAddInputToInputBuffer(const FInputActionValue& Value)
 	}
 }
 
-void AFightingCharacter::DoThrow(const FInputActionValue& Value){
+void AFightingCharacter::AttackThrow(const FInputActionValue& Value){
+	UE_LOG(LogTemp, Error, TEXT("Throw Attack"));
 	if (GetController() && IsCombatReady) {
 		WasThrowUsed = true;
 
-		UE_LOG(LogTemp, Error, TEXT("Throw Attack"));
+		//UE_LOG(LogTemp, Error, TEXT("Throw Attack"));
 	}
 }
 
@@ -874,7 +875,8 @@ void AFightingCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 
 		EnhancedInputComp->BindAction(LightAttackAction, ETriggerEvent::Started, this, &AFightingCharacter::LightAttack);
 		EnhancedInputComp->BindAction(HeavyAttackAction, ETriggerEvent::Started, this, &AFightingCharacter::HeavyAttack);
-		EnhancedInputComp->BindAction(ThrowAction, ETriggerEvent::Started, this, &AFightingCharacter::DoThrow);
+		EnhancedInputComp->BindAction(ThrowAction, ETriggerEvent::Started, this, &AFightingCharacter::AttackThrow);
+
 
 		EnhancedInputComp->BindAction(BlockAction, ETriggerEvent::Triggered, this, &AFightingCharacter::Block);
 		EnhancedInputComp->BindAction(BlockAction, ETriggerEvent::Completed, this, &AFightingCharacter::UnBlock);

@@ -278,7 +278,7 @@ private:
 
 	void ClearSideStep(const FInputActionValue& Value);
 
-	void DoThrow(const FInputActionValue& Value);
+	void AttackThrow(const FInputActionValue& Value);
 
 	//void GetStunned(float HitStunTime, float BlockStunTime, float PushbackAmount, float LaunchAmount);
 
