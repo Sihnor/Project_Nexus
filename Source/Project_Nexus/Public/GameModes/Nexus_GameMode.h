@@ -82,7 +82,19 @@ private:
 
 	UFUNCTION(BlueprintCallable, meta=(AllowPrivateAccess = "true"))
 	void AddPlayerOneRoundWon(EPlayerEnum Player);
-	
+
+protected:
+	UFUNCTION(BlueprintCallable, meta=(AllowPrivateAccess = "true"))
+	void StartTimer();
+
+	UFUNCTION(BlueprintCallable, meta=(AllowPrivateAccess = "true"))
+	void PauseTimer();
+
+	UFUNCTION(BlueprintCallable, meta=(AllowPrivateAccess = "true"))
+	void ResumeTimer();
+
+	UFUNCTION(BlueprintCallable, meta=(AllowPrivateAccess = "true"))
+	void StopTimer();
 };
 
 
