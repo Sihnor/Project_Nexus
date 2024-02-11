@@ -54,6 +54,9 @@ public:
 	UFUNCTION(BlueprintNativeEvent)
 	void OnTimeIsUp();
 	virtual void OnTimeIsUp_Implementation();
+	
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, meta=(AllowPrivateAccess = "true"))
+	bool DebugTimer = false;
 
 
 private:
