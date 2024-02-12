@@ -8,18 +8,37 @@
    {
     "Id": "1349836090",
     "Type": "Bus",
-    "GUID": "{91B1DC06-C7F6-4B39-A874-9B796197EE5B}",
+    "GUID": "{44E599A3-1CE2-49AF-8FBC-737785A8D7B8}",
     "Language": "SFX",
-    "Hash": "{84B7DEA6-D7BF-64CD-8DF9-39FE3873FD24}",
+    "Hash": "{9DF95DBF-16DE-24D4-5EF4-8EA0422E6328}",
     "ObjectPath": "BetweenBuildings",
     "ShortName": "BetweenBuildings",
     "Path": "Bus/BetweenBuildings.bnk",
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "48620415",
+       "Name": "Have_U_Ever_Been_Outside",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Exteriors\\Have_U_Ever_Been_Outside",
+       "GUID": "{FE29AE8D-FD86-4652-A95D-68D32F5760EC}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ]
+    },
     "AuxBusses": [
      {
       "Id": "1349836090",
       "Name": "BetweenBuildings",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverbs\\BetweenBuildings",
-      "GUID": "{91B1DC06-C7F6-4B39-A874-9B796197EE5B}",
+      "GUID": "{44E599A3-1CE2-49AF-8FBC-737785A8D7B8}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "48620415"
+        }
+       ]
+      },
       "AuxBusRefs": [
        {
         "Id": "3545700988",
@@ -32,6 +51,6 @@
     ]
    }
   ],
-  "FileHash": "{DD0565B7-227B-5506-6C99-1613D9AF3E21}"
+  "FileHash": "{5DCB808C-5EB1-B3BA-3106-6FD246A253FB}"
  }
 }

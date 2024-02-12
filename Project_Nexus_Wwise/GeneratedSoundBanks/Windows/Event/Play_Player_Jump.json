@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{237BD721-40C9-4B31-BDC1-78F59500DF4D}",
     "Language": "SFX",
-    "Hash": "{D53DC19D-56E4-A53D-253F-924A6C6ABF0B}",
+    "Hash": "{7AF77AE3-4B94-1B27-6677-AFEA9C2A340E}",
     "ObjectPath": "Play_Player_Jump",
     "ShortName": "Play_Player_Jump",
     "Path": "Event/Play_Player_Jump.bnk",
@@ -103,6 +103,6 @@
     ]
    }
   ],
-  "FileHash": "{12D72568-1A44-6832-4F48-A41D7F46527C}"
+  "FileHash": "{BF968BF8-44F9-6769-191F-DB6A76A7BD6C}"
  }
 }
