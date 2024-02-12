@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2334765685" Type="Event" GUID="{F110A2AB-C527-4CD6-956A-320E06655E4E}" Language="SFX" Hash="{F96893BC-6251-F831-E209-AB0C55742371}">
+		<SoundBank Id="2334765685" Type="Event" GUID="{F110A2AB-C527-4CD6-956A-320E06655E4E}" Language="SFX" Hash="{1C19E938-EF82-D16B-97F9-FB95367035F4}">
 			<ObjectPath>Play_Player_Punch_Light</ObjectPath>
 			<ShortName>Play_Player_Punch_Light</ShortName>
 			<Path>Event/Play_Player_Punch_Light.bnk</Path>
@@ -51,5 +51,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4A265114-F8A9-2FF6-0357-D216A16599F2}</FileHash>
+	<FileHash>{F4BF9343-ADB9-731C-1BC4-E92A9CB822D9}</FileHash>
 </SoundBanksInfo>

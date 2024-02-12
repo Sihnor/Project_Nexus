@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{26AB0E9E-6FC9-4D4C-98BC-CDD120436275}",
     "Language": "English(US)",
-    "Hash": "{67B5E9D0-3A90-7E69-7ABE-BAC60F822703}",
+    "Hash": "{4263EB14-848B-E364-48FB-A5C7656A6B57}",
     "ObjectPath": "Plyr_Attack_Light",
     "ShortName": "Plyr_Attack_Light",
     "Path": "Event/English(US)/Plyr_Attack_Light.bnk",
@@ -79,6 +79,6 @@
     ]
    }
   ],
-  "FileHash": "{09FE41FF-23F6-3193-17C5-67526545E575}"
+  "FileHash": "{5CE34ACD-2A0E-8B31-8448-338E0528E003}"
  }
 }

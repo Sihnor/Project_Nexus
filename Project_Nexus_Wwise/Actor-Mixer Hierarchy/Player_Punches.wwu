@@ -4,6 +4,9 @@
 		<WorkUnit Name="Player_Punches" ID="{E397D207-C94B-410A-9F84-64FF39F595DA}" OwnerID="{7C43A499-F954-4315-B89C-49E000EF9DAD}" PersistMode="Nested">
 			<ChildrenList>
 				<RandomSequenceContainer Name="Player_Punches_Light" ID="{551B8C8E-B18F-4218-9437-8426C7EB66FF}" ShortID="787238428">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -148,6 +151,9 @@
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Player_Punches_Heavy" ID="{CFC19FA4-F07C-4971-8B6C-B0007B99E1B2}" ShortID="1022459052">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
