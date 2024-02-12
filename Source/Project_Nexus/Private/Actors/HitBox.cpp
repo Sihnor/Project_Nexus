@@ -23,6 +23,7 @@ AHitBox::AHitBox()
 	BlockstunTime= 0.f;
 	PushbackDistance = 0.f;
 	LaunchDistance = 0.f;
+	HitStopTime = 0.f;
 
 
 	ShouldAttach = false;
