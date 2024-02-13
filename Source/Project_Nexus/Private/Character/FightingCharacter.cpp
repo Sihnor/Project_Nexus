@@ -288,7 +288,7 @@ void AFightingCharacter::DoMoveBwd(const FInputActionValue& Value){
 }
 
 void AFightingCharacter::LightAttack(const FInputActionValue& Value){
-	if (GetController() && IsCombatReady) {
+	if (GetController() && IsCombatReady && CharacterState != ECharacterState::FC_Blocking && !HasLandedThrow && CharacterState != ECharacterState::FC_KockedDown && CharacterState != ECharacterState::FC_Recovery) {
 		UpdateCharacterRotation();
 		WasLightAttackUsed = true;
 
@@ -298,7 +298,7 @@ void AFightingCharacter::LightAttack(const FInputActionValue& Value){
 }
 
 void AFightingCharacter::HeavyAttack(const FInputActionValue& Value){
-	if (GetController() && IsCombatReady) {
+	if (GetController() && IsCombatReady && CharacterState != ECharacterState::FC_Blocking && CharacterState != ECharacterState::FC_KockedDown && CharacterState != ECharacterState::FC_Recovery) {
 		UpdateCharacterRotation();
 		WasHeavyAttackUsed = true;
 		
@@ -308,9 +308,10 @@ void AFightingCharacter::HeavyAttack(const FInputActionValue& Value){
 }
 
 void AFightingCharacter::Block(const FInputActionValue& Value){
-	if (GetController() && IsCombatReady && !WasHeavyAttackUsed && !WasLightAttackUsed) {
+	if (GetController() && IsCombatReady && !WasHeavyAttackUsed && !WasLightAttackUsed && !HasLandedThrow && CharacterState != ECharacterState::FC_KockedDown && CharacterState != ECharacterState::FC_Recovery) {
 			UpdateCharacterRotation();
-			IsBlocking = true;
+			//IsBlocking = true;
+
 			if(!this->bIsCrouched){
 				CharacterState = ECharacterState::FC_Blocking;
 			}else{
@@ -324,7 +325,7 @@ void AFightingCharacter::Block(const FInputActionValue& Value){
 }
 
 void AFightingCharacter::UnBlock(const FInputActionValue& Value){
-	if (GetController() && IsCombatReady) {
+	if (GetController() && IsCombatReady && !WasHeavyAttackUsed && !WasLightAttackUsed && !HasLandedThrow && CharacterState != ECharacterState::FC_KockedDown && CharacterState != ECharacterState::FC_Recovery) {
 			UpdateCharacterRotation();
 			IsBlocking = false;
 			if(!this->bIsCrouched){
@@ -475,7 +476,10 @@ void AFightingCharacter::GetStunned(float HitStunTime, float BlockStunTime, floa
 		StunTime= HitStunTime;
 
 		if(StunTime > 0.f){
-			if(StunTime > 0.5f){
+			if(HasLandedThrow){
+				CharacterState = ECharacterState::FC_ThrowStunned;
+				UE_LOG(LogTemp, Error, TEXT("Throw Stun"));
+			}else if(StunTime > 0.5f){
 				CharacterState = ECharacterState::FC_HeavyStunned;
 			}else{
 				CharacterState = ECharacterState::FC_LightStunned;
@@ -500,14 +504,13 @@ void AFightingCharacter::GetStunned(float HitStunTime, float BlockStunTime, floa
 
 
 		if(StunTime > 0.f){
-		
-			if(CharacterState != ECharacterState::FC_CrouchBlocking){
+			if(HasLandedThrow){
+				CharacterState = ECharacterState::FC_ThrowStunned;
+				UE_LOG(LogTemp, Error, TEXT("Throw Stun"));
+			} if(CharacterState != ECharacterState::FC_CrouchBlocking){
 				CharacterState = ECharacterState::FC_BlockStunned;
-				UE_LOG(LogTemp, Warning, TEXT("BlockStunned"));
-
 			}else{
 				CharacterState = ECharacterState::FC_BlockCrouchStunned;
-				UE_LOG(LogTemp, Warning, TEXT("BlockCrouchStunned"));
 			}
 
 			//CharacterState = ECharacterState::FC_BlockStunned;
@@ -694,6 +697,7 @@ void AFightingCharacter::Landed(const FHitResult& Hit){
 void AFightingCharacter::AddToInputMap(FString _Input, EInputType _Type){
 	InputToInputTypeMap.Add(_Input, _Type);
 	
+	
 }
 
 void AFightingCharacter::AddInputToInputBuffer(FInputInfo InputInfo){
@@ -840,16 +844,18 @@ void AFightingCharacter::DetermineCommandToUse(){
 }
 
 void AFightingCharacter::StartCommand(FString CommandName){
-	for(int CurrentCommand = 0; CurrentCommand < PlayerCommand.Num(); ++CurrentCommand){
+	if(CharacterState != ECharacterState::FC_Blocking && CharacterState != ECharacterState::FC_KockedDown && CharacterState != ECharacterState::FC_Recovery){
+		for(int CurrentCommand = 0; CurrentCommand < PlayerCommand.Num(); ++CurrentCommand){
 
-		if(CommandName.Compare(PlayerCommand[CurrentCommand].CommandName) == 0){
+			if(CommandName.Compare(PlayerCommand[CurrentCommand].CommandName) == 0){
 			
-			UE_LOG(LogTemp, Error, TEXT("The Character is using the command: %s."), *CommandName);
-			PlayerCommand[CurrentCommand].HasUsedCommand = true;
+				UE_LOG(LogTemp, Error, TEXT("The Character is using the command: %s."), *CommandName);
+				PlayerCommand[CurrentCommand].HasUsedCommand = true;
 
-			//check if the character state is not default state
-			if(PlayerCommand[CurrentCommand].ResultingState != ECharacterState::FC_Default){
-				CharacterState = PlayerCommand[CurrentCommand].ResultingState;
+				//check if the character state is not default state
+				if(PlayerCommand[CurrentCommand].ResultingState != ECharacterState::FC_Default){
+					CharacterState = PlayerCommand[CurrentCommand].ResultingState;
+				}
 			}
 		}
 	}
