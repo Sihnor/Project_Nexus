@@ -82,9 +82,13 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	4152869693	2DAmbientBeds			\Default Work Unit\Master Audio Bus\AmbientMaster\AmbientBeds\2DAmbientBeds	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	144697359	Outdoor			\Default Work Unit\Master Audio Bus\Reverbs\Outdoor	
+	672587556	Alley			\Default Work Unit\Master Audio Bus\Reverbs\Alley	
 	1349836090	BetweenBuildings			\Default Work Unit\Master Audio Bus\Reverbs\BetweenBuildings	
 	3545700988	Reverbs			\Default Work Unit\Master Audio Bus\Reverbs	
+
+Effect plug-ins	ID	Name	Type				Notes
+	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+	2995775460	Room_Small	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

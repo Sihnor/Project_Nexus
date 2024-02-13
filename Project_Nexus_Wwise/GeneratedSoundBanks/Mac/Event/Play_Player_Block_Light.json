@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{D23E66E6-43DA-4114-901C-C8A2B0828697}",
     "Language": "SFX",
-    "Hash": "{FC6DF7CD-2E58-B73A-4C76-6CCFC9E6C107}",
+    "Hash": "{289A6DCF-AD78-98D5-55BE-6C7C04BC0FDC}",
     "ObjectPath": "Play_Player_Block_Light",
     "ShortName": "Play_Player_Block_Light",
     "Path": "Event/Play_Player_Block_Light.bnk",
@@ -103,6 +103,6 @@
     ]
    }
   ],
-  "FileHash": "{E0794658-FB94-FA42-AEB3-8289B57A43F4}"
+  "FileHash": "{B5D4A4F4-93B4-4734-4F52-93FFDAF9E983}"
  }
 }

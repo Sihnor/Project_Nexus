@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{683A1ECC-1199-45F8-A261-2323D2B70EFD}",
     "Language": "SFX",
-    "Hash": "{E40A395A-0C30-7738-F355-87FB880AC90C}",
+    "Hash": "{7F3E6B65-9111-B746-C6A1-C9C652FC52CE}",
     "ObjectPath": "Play_Player_Block_Heavy",
     "ShortName": "Play_Player_Block_Heavy",
     "Path": "Event/Play_Player_Block_Heavy.bnk",
@@ -103,6 +103,6 @@
     ]
    }
   ],
-  "FileHash": "{D0DC2EA2-6880-E4A4-5A00-905ED2C828BF}"
+  "FileHash": "{8E7BCBBA-0710-B6BA-D584-062DD3107E9D}"
  }
 }

@@ -18,7 +18,7 @@
     "Type": "Event",
     "GUID": "{27E85706-E807-4F1E-A42D-5B83ED9D03A3}",
     "Language": "SFX",
-    "Hash": "{5BF56D77-975D-81A5-EDC5-FA3D56CE84C1}",
+    "Hash": "{6FF2DB43-736D-9593-BA5E-AFD5B6F0797B}",
     "ObjectPath": "Play_Player_Footsteps",
     "ShortName": "Play_Player_Footsteps",
     "Path": "Event/Play_Player_Footsteps.bnk",
@@ -140,7 +140,7 @@
       "GUID": "{27E85706-E807-4F1E-A42D-5B83ED9D03A3}",
       "DurationType": "OneShot",
       "DurationMin": "0.17385939",
-      "DurationMax": "0.451485",
+      "DurationMax": "0.5671767",
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -250,32 +250,6 @@
     ]
    },
    {
-    "Id": "144697359",
-    "Type": "Bus",
-    "GUID": "{63E5214B-7ED3-4AD2-998D-C05ECC909F3A}",
-    "Language": "SFX",
-    "Hash": "{4C2D4338-445A-B4CD-A527-C8B3729F7C32}",
-    "ObjectPath": "Outdoor",
-    "ShortName": "Outdoor",
-    "Path": "Bus/Outdoor.bnk",
-    "AuxBusses": [
-     {
-      "Id": "144697359",
-      "Name": "Outdoor",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverbs\\Outdoor",
-      "GUID": "{63E5214B-7ED3-4AD2-998D-C05ECC909F3A}",
-      "AuxBusRefs": [
-       {
-        "Id": "3545700988",
-        "Name": "Reverbs",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverbs",
-        "GUID": "{6BE3BED4-0EDC-4674-80E4-B77F6F0EDD9B}"
-       }
-      ]
-     }
-    ]
-   },
-   {
     "Id": "161393517",
     "Type": "Event",
     "GUID": "{A854F97E-93DC-455A-B406-D6C171EA282D}",
@@ -353,7 +327,7 @@
     "Type": "Event",
     "GUID": "{237BD721-40C9-4B31-BDC1-78F59500DF4D}",
     "Language": "SFX",
-    "Hash": "{D53DC19D-56E4-A53D-253F-924A6C6ABF0B}",
+    "Hash": "{7AF77AE3-4B94-1B27-6677-AFEA9C2A340E}",
     "ObjectPath": "Play_Player_Jump",
     "ShortName": "Play_Player_Jump",
     "Path": "Event/Play_Player_Jump.bnk",
@@ -450,7 +424,7 @@
     "Type": "Event",
     "GUID": "{26AB0E9E-6FC9-4D4C-98BC-CDD120436275}",
     "Language": "English(US)",
-    "Hash": "{67B5E9D0-3A90-7E69-7ABE-BAC60F822703}",
+    "Hash": "{4263EB14-848B-E364-48FB-A5C7656A6B57}",
     "ObjectPath": "Plyr_Attack_Light",
     "ShortName": "Plyr_Attack_Light",
     "Path": "Event/English(US)/Plyr_Attack_Light.bnk",
@@ -523,7 +497,7 @@
     "Type": "Event",
     "GUID": "{D209308F-B533-4A51-849A-30A2F7A262C4}",
     "Language": "English(US)",
-    "Hash": "{5CEC6E0B-B7CD-9F55-7947-D05D325C59AB}",
+    "Hash": "{096B9258-BFD8-A905-999D-21049268076B}",
     "ObjectPath": "Plyr_Movement_Jump",
     "ShortName": "Plyr_Movement_Jump",
     "Path": "Event/English(US)/Plyr_Movement_Jump.bnk",
@@ -644,7 +618,7 @@
     "Type": "Event",
     "GUID": "{2C86464F-2577-4636-99EE-045C1778A0B0}",
     "Language": "SFX",
-    "Hash": "{7AC866C3-80C2-5EB7-61E7-9DAC91E996A0}",
+    "Hash": "{607F4D05-11BA-50B3-47A5-28A1A998E287}",
     "ObjectPath": "Play_Player_Bodyfall",
     "ShortName": "Play_Player_Bodyfall",
     "Path": "Event/Play_Player_Bodyfall.bnk",
@@ -737,11 +711,56 @@
     ]
    },
    {
+    "Id": "672587556",
+    "Type": "Bus",
+    "GUID": "{D0D5848F-8E0F-47CD-A3E5-17FA4D8E1C38}",
+    "Language": "SFX",
+    "Hash": "{174F6586-5AB2-6971-3676-995F746454DC}",
+    "ObjectPath": "Alley",
+    "ShortName": "Alley",
+    "Path": "Bus/Alley.bnk",
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "2995775460",
+       "Name": "Room_Small",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Small",
+       "GUID": "{577F1466-A63B-47F7-98BD-C56E433F8B5D}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ]
+    },
+    "AuxBusses": [
+     {
+      "Id": "672587556",
+      "Name": "Alley",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverbs\\Alley",
+      "GUID": "{D0D5848F-8E0F-47CD-A3E5-17FA4D8E1C38}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2995775460"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "3545700988",
+        "Name": "Reverbs",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverbs",
+        "GUID": "{6BE3BED4-0EDC-4674-80E4-B77F6F0EDD9B}"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "725346841",
     "Type": "Event",
     "GUID": "{BD4FEB80-88A8-45D8-9FBF-7EF06D02BC15}",
     "Language": "SFX",
-    "Hash": "{797021BB-91E1-83F7-CEF0-6A67ECFD568F}",
+    "Hash": "{037E82E7-8317-50F9-A888-539FF554E9FF}",
     "ObjectPath": "Play_Player_Landing",
     "ShortName": "Play_Player_Landing",
     "Path": "Event/Play_Player_Landing.bnk",
@@ -1004,18 +1023,37 @@
    {
     "Id": "1349836090",
     "Type": "Bus",
-    "GUID": "{91B1DC06-C7F6-4B39-A874-9B796197EE5B}",
+    "GUID": "{44E599A3-1CE2-49AF-8FBC-737785A8D7B8}",
     "Language": "SFX",
-    "Hash": "{84B7DEA6-D7BF-64CD-8DF9-39FE3873FD24}",
+    "Hash": "{9DF95DBF-16DE-24D4-5EF4-8EA0422E6328}",
     "ObjectPath": "BetweenBuildings",
     "ShortName": "BetweenBuildings",
     "Path": "Bus/BetweenBuildings.bnk",
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "48620415",
+       "Name": "Have_U_Ever_Been_Outside",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Exteriors\\Have_U_Ever_Been_Outside",
+       "GUID": "{FE29AE8D-FD86-4652-A95D-68D32F5760EC}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ]
+    },
     "AuxBusses": [
      {
       "Id": "1349836090",
       "Name": "BetweenBuildings",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverbs\\BetweenBuildings",
-      "GUID": "{91B1DC06-C7F6-4B39-A874-9B796197EE5B}",
+      "GUID": "{44E599A3-1CE2-49AF-8FBC-737785A8D7B8}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "48620415"
+        }
+       ]
+      },
       "AuxBusRefs": [
        {
         "Id": "3545700988",
@@ -1032,11 +1070,29 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{D2E5A08F-9D4E-A34F-7685-D05AAAAF29ED}",
+    "Hash": "{0EFA6A9B-21B5-76B3-17BA-B4A33A16AE74}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "48620415",
+       "Name": "Have_U_Ever_Been_Outside",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Exteriors\\Have_U_Ever_Been_Outside",
+       "GUID": "{FE29AE8D-FD86-4652-A95D-68D32F5760EC}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
+      {
+       "Id": "2995775460",
+       "Name": "Room_Small",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Small",
+       "GUID": "{577F1466-A63B-47F7-98BD-C56E433F8B5D}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ],
      "AudioDevices": [
       {
        "Id": "2317455096",
@@ -1168,10 +1224,17 @@
     ],
     "AuxBusses": [
      {
-      "Id": "144697359",
-      "Name": "Outdoor",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverbs\\Outdoor",
-      "GUID": "{63E5214B-7ED3-4AD2-998D-C05ECC909F3A}",
+      "Id": "672587556",
+      "Name": "Alley",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverbs\\Alley",
+      "GUID": "{D0D5848F-8E0F-47CD-A3E5-17FA4D8E1C38}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2995775460"
+        }
+       ]
+      },
       "AuxBusRefs": [
        {
         "Id": "3545700988",
@@ -1185,7 +1248,14 @@
       "Id": "1349836090",
       "Name": "BetweenBuildings",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverbs\\BetweenBuildings",
-      "GUID": "{91B1DC06-C7F6-4B39-A874-9B796197EE5B}",
+      "GUID": "{44E599A3-1CE2-49AF-8FBC-737785A8D7B8}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "48620415"
+        }
+       ]
+      },
       "AuxBusRefs": [
        {
         "Id": "3545700988",
@@ -2112,7 +2182,7 @@
     "Type": "Event",
     "GUID": "{D23E66E6-43DA-4114-901C-C8A2B0828697}",
     "Language": "SFX",
-    "Hash": "{FC6DF7CD-2E58-B73A-4C76-6CCFC9E6C107}",
+    "Hash": "{289A6DCF-AD78-98D5-55BE-6C7C04BC0FDC}",
     "ObjectPath": "Play_Player_Block_Light",
     "ShortName": "Play_Player_Block_Light",
     "Path": "Event/Play_Player_Block_Light.bnk",
@@ -2269,7 +2339,7 @@
     "Type": "Event",
     "GUID": "{AAC9A511-42FF-4C09-9324-E39E4DA787AC}",
     "Language": "SFX",
-    "Hash": "{2DCE8770-B355-2454-084A-A5EF7BB34B80}",
+    "Hash": "{862377D4-6620-B6CC-9684-D90A17A7E79E}",
     "ObjectPath": "Play_Player_Cloth",
     "ShortName": "Play_Player_Cloth",
     "Path": "Event/Play_Player_Cloth.bnk",
@@ -2459,7 +2529,7 @@
     "Type": "Event",
     "GUID": "{F110A2AB-C527-4CD6-956A-320E06655E4E}",
     "Language": "SFX",
-    "Hash": "{F96893BC-6251-F831-E209-AB0C55742371}",
+    "Hash": "{1C19E938-EF82-D16B-97F9-FB95367035F4}",
     "ObjectPath": "Play_Player_Punch_Light",
     "ShortName": "Play_Player_Punch_Light",
     "Path": "Event/Play_Player_Punch_Light.bnk",
@@ -2556,7 +2626,7 @@
     "Type": "Event",
     "GUID": "{52806D64-28C9-4DBD-9FA9-B19EFC1D9D2B}",
     "Language": "SFX",
-    "Hash": "{444C3E35-1814-E93F-ECC0-38396FC8D84C}",
+    "Hash": "{69968BA8-013D-A01B-D859-DD8BBFBF78C1}",
     "ObjectPath": "Play_Player_Crouch_In",
     "ShortName": "Play_Player_Crouch_In",
     "Path": "Event/Play_Player_Crouch_In.bnk",
@@ -2690,7 +2760,7 @@
     "Type": "Event",
     "GUID": "{756383C1-840D-41DF-B7D5-98E46E2560D4}",
     "Language": "SFX",
-    "Hash": "{6453CA21-6791-2F9C-4F2A-627E1B600F8F}",
+    "Hash": "{96692B0F-AB13-BB5C-50EC-822247644B69}",
     "ObjectPath": "Play_Player_Crouch_Out",
     "ShortName": "Play_Player_Crouch_Out",
     "Path": "Event/Play_Player_Crouch_Out.bnk",
@@ -2844,7 +2914,7 @@
     "Type": "Event",
     "GUID": "{99EBE9DA-2D4B-4E25-A1FD-CC1C387CC0C5}",
     "Language": "English(US)",
-    "Hash": "{382E1DA7-2745-5404-4402-59143E327218}",
+    "Hash": "{F7CFDDE7-96B2-44D8-42D1-A029ABC78D0A}",
     "ObjectPath": "Plyr_Attack_Heavy",
     "ShortName": "Plyr_Attack_Heavy",
     "Path": "Event/English(US)/Plyr_Attack_Heavy.bnk",
@@ -2953,7 +3023,7 @@
     "Type": "Event",
     "GUID": "{6909B8C2-6D58-49AD-9B0C-ECB42CC550E2}",
     "Language": "SFX",
-    "Hash": "{FFBE3B18-059D-40BB-ABA3-A35C52864EED}",
+    "Hash": "{6AD697B3-B688-BF2B-6A59-A8C09115199E}",
     "ObjectPath": "Play_Player_Punch_Heavy",
     "ShortName": "Play_Player_Punch_Heavy",
     "Path": "Event/Play_Player_Punch_Heavy.bnk",
@@ -3131,7 +3201,7 @@
     "Type": "Event",
     "GUID": "{DC4135FD-87EC-41A5-84C3-E1F70FC2699C}",
     "Language": "SFX",
-    "Hash": "{A7C8507A-A2A2-1300-7ACF-620081ABBB36}",
+    "Hash": "{AE3A5B70-471F-3232-8F11-9EDC6C4A19A6}",
     "ObjectPath": "Play_Player_Punsh_Woosh",
     "ShortName": "Play_Player_Punsh_Woosh",
     "Path": "Event/Play_Player_Punsh_Woosh.bnk",
@@ -3268,7 +3338,7 @@
     "Type": "Event",
     "GUID": "{683A1ECC-1199-45F8-A261-2323D2B70EFD}",
     "Language": "SFX",
-    "Hash": "{E40A395A-0C30-7738-F355-87FB880AC90C}",
+    "Hash": "{7F3E6B65-9111-B746-C6A1-C9C652FC52CE}",
     "ObjectPath": "Play_Player_Block_Heavy",
     "ShortName": "Play_Player_Block_Heavy",
     "Path": "Event/Play_Player_Block_Heavy.bnk",
@@ -3435,6 +3505,6 @@
     ]
    }
   ],
-  "FileHash": "{39EAF322-0A22-FC2A-4562-C748BD53523C}"
+  "FileHash": "{61B10114-8C7B-67F1-5B4C-22689DFA16C6}"
  }
 }

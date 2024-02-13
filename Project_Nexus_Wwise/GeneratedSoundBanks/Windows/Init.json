@@ -10,11 +10,29 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{FB946122-EFD6-E4EA-CA9B-F53D9B85742A}",
+    "Hash": "{D85FA454-38E7-F591-0986-DA3AE37FA79C}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "48620415",
+       "Name": "Have_U_Ever_Been_Outside",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Exteriors\\Have_U_Ever_Been_Outside",
+       "GUID": "{FE29AE8D-FD86-4652-A95D-68D32F5760EC}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
+      {
+       "Id": "2995775460",
+       "Name": "Room_Small",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Small",
+       "GUID": "{577F1466-A63B-47F7-98BD-C56E433F8B5D}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ],
      "AudioDevices": [
       {
        "Id": "2317455096",
@@ -146,10 +164,17 @@
     ],
     "AuxBusses": [
      {
-      "Id": "144697359",
-      "Name": "Outdoor",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverbs\\Outdoor",
-      "GUID": "{63E5214B-7ED3-4AD2-998D-C05ECC909F3A}",
+      "Id": "672587556",
+      "Name": "Alley",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverbs\\Alley",
+      "GUID": "{D0D5848F-8E0F-47CD-A3E5-17FA4D8E1C38}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2995775460"
+        }
+       ]
+      },
       "AuxBusRefs": [
        {
         "Id": "3545700988",
@@ -163,7 +188,14 @@
       "Id": "1349836090",
       "Name": "BetweenBuildings",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverbs\\BetweenBuildings",
-      "GUID": "{91B1DC06-C7F6-4B39-A874-9B796197EE5B}",
+      "GUID": "{44E599A3-1CE2-49AF-8FBC-737785A8D7B8}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "48620415"
+        }
+       ]
+      },
       "AuxBusRefs": [
        {
         "Id": "3545700988",
@@ -1051,6 +1083,6 @@
     ]
    }
   ],
-  "FileHash": "{5EDA7AC1-A0BA-DF5C-E2A1-70E857C0DF2C}"
+  "FileHash": "{8223ED67-B8BE-A504-B6BE-7B79BE8FCA4A}"
  }
 }

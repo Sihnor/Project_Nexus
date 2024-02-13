@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="577991234" Type="Event" GUID="{26AB0E9E-6FC9-4D4C-98BC-CDD120436275}" Language="English(US)" Hash="{67B5E9D0-3A90-7E69-7ABE-BAC60F822703}">
+		<SoundBank Id="577991234" Type="Event" GUID="{26AB0E9E-6FC9-4D4C-98BC-CDD120436275}" Language="English(US)" Hash="{4263EB14-848B-E364-48FB-A5C7656A6B57}">
 			<ObjectPath>Plyr_Attack_Light</ObjectPath>
 			<ShortName>Plyr_Attack_Light</ShortName>
 			<Path>Event/English(US)/Plyr_Attack_Light.bnk</Path>
@@ -39,5 +39,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{EF5CFF91-08FF-0D9B-E8DA-22C973F60621}</FileHash>
+	<FileHash>{0F06EDC3-3CB2-0E6B-1018-CB58883C1301}</FileHash>
 </SoundBanksInfo>
