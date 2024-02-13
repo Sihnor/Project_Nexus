@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2369679144" Type="Event" GUID="{52806D64-28C9-4DBD-9FA9-B19EFC1D9D2B}" Language="SFX" Hash="{444C3E35-1814-E93F-ECC0-38396FC8D84C}">
+		<SoundBank Id="2369679144" Type="Event" GUID="{52806D64-28C9-4DBD-9FA9-B19EFC1D9D2B}" Language="SFX" Hash="{69968BA8-013D-A01B-D859-DD8BBFBF78C1}">
 			<ObjectPath>Play_Player_Crouch_In</ObjectPath>
 			<ShortName>Play_Player_Crouch_In</ShortName>
 			<Path>Event/Play_Player_Crouch_In.bnk</Path>
@@ -51,5 +51,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C376B188-138F-664C-337C-4F9947952A8D}</FileHash>
+	<FileHash>{89600B01-FE60-3D4A-24AF-B326FC095003}</FileHash>
 </SoundBanksInfo>

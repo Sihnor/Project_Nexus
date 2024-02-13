@@ -1,0 +1,96 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "3235113002",
+    "Type": "Event",
+    "GUID": "{7A8FD551-211D-449D-89BF-34E067A83438}",
+    "Language": "SFX",
+    "Hash": "{B377A433-7B7A-2A25-F204-87D7E0BE9ACE}",
+    "ObjectPath": "Plyr1_Movement_Rollforward",
+    "ShortName": "Plyr1_Movement_Rollforward",
+    "Path": "Event/Plyr1_Movement_Rollforward.bnk",
+    "Media": [
+     {
+      "Id": "37941523",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_mov_rollfow_01.wav",
+      "Path": "Media/37941523.wem",
+      "CachePath": "SFX/vo_fighter1_mov_rollfow_01_10C4C929.wem"
+     },
+     {
+      "Id": "672209282",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_mov_rollfow_02.wav",
+      "Path": "Media/672209282.wem",
+      "CachePath": "SFX/vo_fighter1_mov_rollfow_02_10C4C929.wem"
+     },
+     {
+      "Id": "759506578",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_mov_rollfow_05.wav",
+      "Path": "Media/759506578.wem",
+      "CachePath": "SFX/vo_fighter1_mov_rollfow_05_10C4C929.wem"
+     },
+     {
+      "Id": "846878257",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_mov_rollfow_04.wav",
+      "Path": "Media/846878257.wem",
+      "CachePath": "SFX/vo_fighter1_mov_rollfow_04_10C4C929.wem"
+     },
+     {
+      "Id": "909606879",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_mov_rollfow_03.wav",
+      "Path": "Media/909606879.wem",
+      "CachePath": "SFX/vo_fighter1_mov_rollfow_03_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3235113002",
+      "Name": "Plyr1_Movement_Rollforward",
+      "ObjectPath": "\\Events\\Player_Voices\\Plyr1_Movement_Rollforward",
+      "GUID": "{7A8FD551-211D-449D-89BF-34E067A83438}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.59166664",
+      "DurationMax": "0.8541667",
+      "MediaRefs": [
+       {
+        "Id": "37941523"
+       },
+       {
+        "Id": "672209282"
+       },
+       {
+        "Id": "759506578"
+       },
+       {
+        "Id": "846878257"
+       },
+       {
+        "Id": "909606879"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{4D23DD8B-937B-19C2-1D32-058CC0AE1D84}"
+ }
+}

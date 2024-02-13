@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{D2E5A08F-9D4E-A34F-7685-D05AAAAF29ED}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{0EFA6A9B-21B5-76B3-17BA-B4A33A16AE74}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<ShareSets>
+					<Plugin Id="48620415" Name="Have_U_Ever_Been_Outside" ObjectPath="\Effects\Factory Effects\RoomVerb\Exteriors\Have_U_Ever_Been_Outside" GUID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="2995775460" Name="Room_Small" ObjectPath="\Effects\Factory Effects\RoomVerb\Rooms\Room_Small" GUID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" ObjectPath="\Audio Devices\Default Work Unit\No_Output" GUID="{DE921BA9-08FB-44B1-8F67-91783C2AE17F}" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" ObjectPath="\Audio Devices\Default Work Unit\System" GUID="{8324AC08-7ADF-46A8-966C-246CDF6632D2}" LibName="System" LibId="11403271"/>
@@ -32,12 +36,22 @@
 				<Bus Id="4152869693" Name="2DAmbientBeds" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AmbientMaster\AmbientBeds\2DAmbientBeds" GUID="{7652968F-D60E-4F94-8FDF-070121F0C4D5}"/>
 			</Busses>
 			<AuxBusses>
-				<AuxBus Id="144697359" Name="Outdoor" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\Outdoor" GUID="{63E5214B-7ED3-4AD2-998D-C05ECC909F3A}">
+				<AuxBus Id="672587556" Name="Alley" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\Alley" GUID="{D0D5848F-8E0F-47CD-A3E5-17FA4D8E1C38}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2995775460"/>
+						</ShareSets>
+					</PluginRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="3545700988" Name="Reverbs" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs" GUID="{6BE3BED4-0EDC-4674-80E4-B77F6F0EDD9B}"/>
 					</AuxBusRefs>
 				</AuxBus>
-				<AuxBus Id="1349836090" Name="BetweenBuildings" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\BetweenBuildings" GUID="{91B1DC06-C7F6-4B39-A874-9B796197EE5B}">
+				<AuxBus Id="1349836090" Name="BetweenBuildings" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\BetweenBuildings" GUID="{44E599A3-1CE2-49AF-8FBC-737785A8D7B8}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="48620415"/>
+						</ShareSets>
+					</PluginRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="3545700988" Name="Reverbs" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs" GUID="{6BE3BED4-0EDC-4674-80E4-B77F6F0EDD9B}"/>
 					</AuxBusRefs>
@@ -276,5 +290,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4DEED5DA-3EB3-B315-8D99-87632788F895}</FileHash>
+	<FileHash>{F6D913B9-BC95-F21D-85F7-A4F47012A19B}</FileHash>
 </SoundBanksInfo>

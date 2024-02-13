@@ -1,3 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	2644649371	Plyr_Attack_Heavy			\Player_Voices\Plyr_Attack_Heavy	
-

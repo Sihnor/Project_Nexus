@@ -33,8 +33,20 @@
 						<Bus Name="UIMaster" ID="{6999EF9D-06E8-4CC5-A3FD-2F338FD5E40E}"/>
 						<AuxBus Name="Reverbs" ID="{6BE3BED4-0EDC-4674-80E4-B77F6F0EDD9B}">
 							<ChildrenList>
-								<AuxBus Name="BetweenBuildings" ID="{91B1DC06-C7F6-4B39-A874-9B796197EE5B}"/>
-								<AuxBus Name="Outdoor" ID="{63E5214B-7ED3-4AD2-998D-C05ECC909F3A}"/>
+								<AuxBus Name="BetweenBuildings" ID="{44E599A3-1CE2-49AF-8FBC-737785A8D7B8}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+								<AuxBus Name="Alley" ID="{D0D5848F-8E0F-47CD-A3E5-17FA4D8E1C38}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
 							</ChildrenList>
 						</AuxBus>
 						<Bus Name="AmbientMaster" ID="{A7D3F28C-C5E2-4AE3-8C5F-2BB0336E260E}">

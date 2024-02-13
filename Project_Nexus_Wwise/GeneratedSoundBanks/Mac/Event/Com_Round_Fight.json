@@ -1,0 +1,96 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "3618896010",
+    "Type": "Event",
+    "GUID": "{4DDF616B-CE7F-4803-9C49-4378BAFA5BD4}",
+    "Language": "SFX",
+    "Hash": "{6CC4F864-2317-85AA-78C5-3A088512B133}",
+    "ObjectPath": "Com_Round_Fight",
+    "ShortName": "Com_Round_Fight",
+    "Path": "Event/Com_Round_Fight.bnk",
+    "Media": [
+     {
+      "Id": "115684259",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_commentator_fight_05.wav",
+      "Path": "Media/115684259.wem",
+      "CachePath": "SFX/vo_commentator_fight_05_10C4C929.wem"
+     },
+     {
+      "Id": "332544747",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_commentator_fight_02.wav",
+      "Path": "Media/332544747.wem",
+      "CachePath": "SFX/vo_commentator_fight_02_10C4C929.wem"
+     },
+     {
+      "Id": "565589375",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_commentator_fight_03.wav",
+      "Path": "Media/565589375.wem",
+      "CachePath": "SFX/vo_commentator_fight_03_10C4C929.wem"
+     },
+     {
+      "Id": "632686557",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_commentator_fight_04.wav",
+      "Path": "Media/632686557.wem",
+      "CachePath": "SFX/vo_commentator_fight_04_10C4C929.wem"
+     },
+     {
+      "Id": "950724125",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_commentator_fight_01.wav",
+      "Path": "Media/950724125.wem",
+      "CachePath": "SFX/vo_commentator_fight_01_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3618896010",
+      "Name": "Com_Round_Fight",
+      "ObjectPath": "\\Events\\Commentator_Voices\\Com_Round_Fight",
+      "GUID": "{4DDF616B-CE7F-4803-9C49-4378BAFA5BD4}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.8125",
+      "DurationMax": "1.125",
+      "MediaRefs": [
+       {
+        "Id": "115684259"
+       },
+       {
+        "Id": "332544747"
+       },
+       {
+        "Id": "565589375"
+       },
+       {
+        "Id": "632686557"
+       },
+       {
+        "Id": "950724125"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{7CA4AE41-9684-8D20-924A-ED7B0BEFF356}"
+ }
+}

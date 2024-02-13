@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1349836090" Type="Bus" GUID="{91B1DC06-C7F6-4B39-A874-9B796197EE5B}" Language="SFX" Hash="{84B7DEA6-D7BF-64CD-8DF9-39FE3873FD24}">
+		<SoundBank Id="1349836090" Type="Bus" GUID="{44E599A3-1CE2-49AF-8FBC-737785A8D7B8}" Language="SFX" Hash="{9DF95DBF-16DE-24D4-5EF4-8EA0422E6328}">
 			<ObjectPath>BetweenBuildings</ObjectPath>
 			<ShortName>BetweenBuildings</ShortName>
 			<Path>Bus/BetweenBuildings.bnk</Path>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="48620415" Name="Have_U_Ever_Been_Outside" ObjectPath="\Effects\Factory Effects\RoomVerb\Exteriors\Have_U_Ever_Been_Outside" GUID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
+			</Plugins>
 			<AuxBusses>
-				<AuxBus Id="1349836090" Name="BetweenBuildings" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\BetweenBuildings" GUID="{91B1DC06-C7F6-4B39-A874-9B796197EE5B}">
+				<AuxBus Id="1349836090" Name="BetweenBuildings" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\BetweenBuildings" GUID="{44E599A3-1CE2-49AF-8FBC-737785A8D7B8}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="48620415"/>
+						</ShareSets>
+					</PluginRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="3545700988" Name="Reverbs" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs" GUID="{6BE3BED4-0EDC-4674-80E4-B77F6F0EDD9B}"/>
 					</AuxBusRefs>
@@ -14,5 +24,5 @@
 			</AuxBusses>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2C6E46BE-D7AF-B497-C12B-79E1E5ACC91E}</FileHash>
+	<FileHash>{A5599239-7ADC-A69A-0F6F-DAD06A9910D7}</FileHash>
 </SoundBanksInfo>

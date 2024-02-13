@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="672587556" Type="Bus" GUID="{D0D5848F-8E0F-47CD-A3E5-17FA4D8E1C38}" Language="SFX" Hash="{174F6586-5AB2-6971-3676-995F746454DC}">
+			<ObjectPath>Alley</ObjectPath>
+			<ShortName>Alley</ShortName>
+			<Path>Bus/Alley.bnk</Path>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2995775460" Name="Room_Small" ObjectPath="\Effects\Factory Effects\RoomVerb\Rooms\Room_Small" GUID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
+			</Plugins>
+			<AuxBusses>
+				<AuxBus Id="672587556" Name="Alley" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\Alley" GUID="{D0D5848F-8E0F-47CD-A3E5-17FA4D8E1C38}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2995775460"/>
+						</ShareSets>
+					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3545700988" Name="Reverbs" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs" GUID="{6BE3BED4-0EDC-4674-80E4-B77F6F0EDD9B}"/>
+					</AuxBusRefs>
+				</AuxBus>
+			</AuxBusses>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{8F78CFAE-DB43-DE6D-5104-B9E19C53F4E8}</FileHash>
+</SoundBanksInfo>

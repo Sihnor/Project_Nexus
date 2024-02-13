@@ -1,3 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	3050477643	Ambi_Stop			\Ambience\Ambi_Stop	
-
