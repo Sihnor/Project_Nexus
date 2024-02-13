@@ -3977,6 +3977,43 @@
     ]
    },
    {
+    "Id": "2777511740",
+    "Type": "Event",
+    "GUID": "{3D69D6CA-7817-48AC-A481-26DD99F18E67}",
+    "Language": "SFX",
+    "Hash": "{17FF85FB-224C-FC1D-9C56-3358DBA91034}",
+    "ObjectPath": "Com_Choose",
+    "ShortName": "Com_Choose",
+    "Path": "Event/Com_Choose.bnk",
+    "Media": [
+     {
+      "Id": "653837993",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_commentator_choose_fighter_01.wav",
+      "Path": "Media/653837993.wem",
+      "CachePath": "SFX/vo_commentator_choose_fighter_01_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2777511740",
+      "Name": "Com_Choose",
+      "ObjectPath": "\\Events\\Commentator_Voices\\Com_Choose",
+      "GUID": "{3D69D6CA-7817-48AC-A481-26DD99F18E67}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.8125",
+      "DurationMax": "1.8125",
+      "MediaRefs": [
+       {
+        "Id": "653837993"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "2799667633",
     "Type": "Event",
     "GUID": "{18AC3747-1B0B-4F57-9307-A7FEBA0ADAC6}",
@@ -5265,6 +5302,6 @@
     ]
    }
   ],
-  "FileHash": "{3F0F00CF-6F65-4B51-4A2D-30296C2BECED}"
+  "FileHash": "{D870C421-5292-B8A5-0CF4-9F9917004CD9}"
  }
 }
