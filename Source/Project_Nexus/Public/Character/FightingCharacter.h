@@ -36,7 +36,10 @@ enum class ECharacterState : uint8
 	FC_KockedDown UMETA(DisplayName = "Knocked_Down"),
 	FC_Recovery UMETA(DisplayName = "Recovery"),
 	FC_WallBounce UMETA(DisplayName = "Wall_Bounce"),
-	FC_GroundBounce UMETA(DisplayName = "Ground_Bounce")
+	FC_GroundBounce UMETA(DisplayName = "Ground_Bounce"),
+	FC_Death UMETA(DisplayName = "Death"),
+	FC_Win UMETA(DisplayName = "Win"),
+	FC_Lose UMETA(DisplayName = "Lose")
 	//more...
 };
 
