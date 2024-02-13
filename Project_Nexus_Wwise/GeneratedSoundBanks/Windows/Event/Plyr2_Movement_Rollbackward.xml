@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="2579118743" Type="Event" GUID="{09907A82-0543-4AC4-8673-B8CE02D2AA76}" Language="SFX" Hash="{618884F4-CE53-A658-519B-187CC406B555}">
+			<ObjectPath>Plyr2_Movement_Rollbackward</ObjectPath>
+			<ShortName>Plyr2_Movement_Rollbackward</ShortName>
+			<Path>Event/Plyr2_Movement_Rollbackward.bnk</Path>
+			<Media>
+				<File Id="68625953" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_mov_rollbackw_03.wav</ShortName>
+					<Path>Media/68625953.wem</Path>
+					<CachePath>SFX/vo_fighter2_mov_rollbackw_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="139480995" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_mov_rollbackw_05.wav</ShortName>
+					<Path>Media/139480995.wem</Path>
+					<CachePath>SFX/vo_fighter2_mov_rollbackw_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="310248323" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_mov_rollbackw_04.wav</ShortName>
+					<Path>Media/310248323.wem</Path>
+					<CachePath>SFX/vo_fighter2_mov_rollbackw_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="782137537" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_mov_rollbackw_01.wav</ShortName>
+					<Path>Media/782137537.wem</Path>
+					<CachePath>SFX/vo_fighter2_mov_rollbackw_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1048125400" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_mov_rollbackw_02.wav</ShortName>
+					<Path>Media/1048125400.wem</Path>
+					<CachePath>SFX/vo_fighter2_mov_rollbackw_02_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2579118743" Name="Plyr2_Movement_Rollbackward" ObjectPath="\Events\Player_Voices\Plyr2_Movement_Rollbackward" GUID="{09907A82-0543-4AC4-8673-B8CE02D2AA76}" DurationType="OneShot" DurationMin="0.55916667" DurationMax="0.7435">
+					<MediaRefs>
+						<MediaRef Id="68625953"/>
+						<MediaRef Id="139480995"/>
+						<MediaRef Id="310248323"/>
+						<MediaRef Id="782137537"/>
+						<MediaRef Id="1048125400"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{6668E1E6-509D-3AD3-6F70-9D7CCB6DAC81}</FileHash>
+</SoundBanksInfo>

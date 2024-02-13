@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="3940439968" Type="Event" GUID="{79551593-FDCB-4471-8056-ED953CE28502}" Language="SFX" Hash="{7833D618-3CB8-AF2A-1963-9E0E4CD6F30B}">
+			<ObjectPath>Plyr1_Movement_Rollbackward</ObjectPath>
+			<ShortName>Plyr1_Movement_Rollbackward</ShortName>
+			<Path>Event/Plyr1_Movement_Rollbackward.bnk</Path>
+			<Media>
+				<File Id="138100336" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_rollbackw_03.wav</ShortName>
+					<Path>Media/138100336.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_rollbackw_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="150659127" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_rollbackw_02.wav</ShortName>
+					<Path>Media/150659127.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_rollbackw_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="256831828" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_rollbackw_05.wav</ShortName>
+					<Path>Media/256831828.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_rollbackw_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="343273517" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_rollbackw_01.wav</ShortName>
+					<Path>Media/343273517.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_rollbackw_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="578215789" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_rollbackw_04.wav</ShortName>
+					<Path>Media/578215789.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_rollbackw_04_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3940439968" Name="Plyr1_Movement_Rollbackward" ObjectPath="\Events\Player_Voices\Plyr1_Movement_Rollbackward" GUID="{79551593-FDCB-4471-8056-ED953CE28502}" DurationType="OneShot" DurationMin="0.3125" DurationMax="0.75">
+					<MediaRefs>
+						<MediaRef Id="138100336"/>
+						<MediaRef Id="150659127"/>
+						<MediaRef Id="256831828"/>
+						<MediaRef Id="343273517"/>
+						<MediaRef Id="578215789"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{DB2F7FD0-E06D-8E28-A453-CBBED4D20B11}</FileHash>
+</SoundBanksInfo>

@@ -1,0 +1,96 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "2799667633",
+    "Type": "Event",
+    "GUID": "{18AC3747-1B0B-4F57-9307-A7FEBA0ADAC6}",
+    "Language": "SFX",
+    "Hash": "{7A88C7E9-C51E-2C20-AA27-EDBBB2E866B1}",
+    "ObjectPath": "Plyr1_Dmg_Light",
+    "ShortName": "Plyr1_Dmg_Light",
+    "Path": "Event/Plyr1_Dmg_Light.bnk",
+    "Media": [
+     {
+      "Id": "198005070",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_damage_light_03.wav",
+      "Path": "Media/198005070.wem",
+      "CachePath": "SFX/vo_fighter1_damage_light_03_10C4C929.wem"
+     },
+     {
+      "Id": "206748773",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_damage_light_02.wav",
+      "Path": "Media/206748773.wem",
+      "CachePath": "SFX/vo_fighter1_damage_light_02_10C4C929.wem"
+     },
+     {
+      "Id": "302449853",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_damage_light_05.wav",
+      "Path": "Media/302449853.wem",
+      "CachePath": "SFX/vo_fighter1_damage_light_05_10C4C929.wem"
+     },
+     {
+      "Id": "370147068",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_damage_light_01.wav",
+      "Path": "Media/370147068.wem",
+      "CachePath": "SFX/vo_fighter1_damage_light_01_10C4C929.wem"
+     },
+     {
+      "Id": "643348026",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_damage_light_04.wav",
+      "Path": "Media/643348026.wem",
+      "CachePath": "SFX/vo_fighter1_damage_light_04_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2799667633",
+      "Name": "Plyr1_Dmg_Light",
+      "ObjectPath": "\\Events\\Player_Voices\\Plyr1_Dmg_Light",
+      "GUID": "{18AC3747-1B0B-4F57-9307-A7FEBA0ADAC6}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.26041666",
+      "DurationMax": "0.60833335",
+      "MediaRefs": [
+       {
+        "Id": "198005070"
+       },
+       {
+        "Id": "206748773"
+       },
+       {
+        "Id": "302449853"
+       },
+       {
+        "Id": "370147068"
+       },
+       {
+        "Id": "643348026"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{9F52F15B-8DAE-A0B7-2D01-98B9FD5638EC}"
+ }
+}

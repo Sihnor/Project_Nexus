@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="3518947313" Type="Event" GUID="{26AB0E9E-6FC9-4D4C-98BC-CDD120436275}" Language="SFX" Hash="{F52BDD86-16DF-E5D5-D083-DAE715B56FFA}">
+			<ObjectPath>Plyr1_Attack_Light</ObjectPath>
+			<ShortName>Plyr1_Attack_Light</ShortName>
+			<Path>Event/Plyr1_Attack_Light.bnk</Path>
+			<Media>
+				<File Id="55257799" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_punch_light_05.wav</ShortName>
+					<Path>Media/55257799.wem</Path>
+					<CachePath>SFX/vo_fighter1_punch_light_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="86967045" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_punch_light_03.wav</ShortName>
+					<Path>Media/86967045.wem</Path>
+					<CachePath>SFX/vo_fighter1_punch_light_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="458298908" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_punch_light_01.wav</ShortName>
+					<Path>Media/458298908.wem</Path>
+					<CachePath>SFX/vo_fighter1_punch_light_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="538408692" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_punch_light_04.wav</ShortName>
+					<Path>Media/538408692.wem</Path>
+					<CachePath>SFX/vo_fighter1_punch_light_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="599159208" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_punch_light_02.wav</ShortName>
+					<Path>Media/599159208.wem</Path>
+					<CachePath>SFX/vo_fighter1_punch_light_02_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3518947313" Name="Plyr1_Attack_Light" ObjectPath="\Events\Player_Voices\Plyr1_Attack_Light" GUID="{26AB0E9E-6FC9-4D4C-98BC-CDD120436275}" DurationType="OneShot" DurationMin="0.27291667" DurationMax="0.4365">
+					<MediaRefs>
+						<MediaRef Id="55257799"/>
+						<MediaRef Id="86967045"/>
+						<MediaRef Id="458298908"/>
+						<MediaRef Id="538408692"/>
+						<MediaRef Id="599159208"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{AA01528D-51A5-66ED-1EEE-8D90D61F9DC4}</FileHash>
+</SoundBanksInfo>

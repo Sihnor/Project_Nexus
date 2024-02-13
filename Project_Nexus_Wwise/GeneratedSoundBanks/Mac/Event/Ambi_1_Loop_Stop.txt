@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	4011766644	Ambi_1_Loop_Stop			\Ambience\2D\Ambi_1_Loop_Stop	
+

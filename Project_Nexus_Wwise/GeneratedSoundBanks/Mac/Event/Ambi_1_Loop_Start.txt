@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3812289192	Ambi_1_Loop_Start			\Ambience\2D\Ambi_1_Loop_Start	
+

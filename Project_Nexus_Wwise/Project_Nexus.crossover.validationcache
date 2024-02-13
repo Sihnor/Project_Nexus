@@ -133,7 +133,7 @@
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Queries\Factory Queries.wwu" DateLow="1704976059" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Queries\Default Work Unit.wwu" DateLow="1704976059" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Project_Nexus.wproj" DateLow="1705011085" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Project_Nexus.crossover.wsettings" DateLow="1707603206" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Project_Nexus.crossover.wsettings" DateLow="1707856926" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Presets\Factory Spatial Audio.wwu" DateLow="1704976059" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Presets\Factory Reflect.wwu" DateLow="1704976059" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Presets\Default Work Unit.wwu" DateLow="1704976059" DateHigh="0"/>
@@ -141,6 +141,7 @@
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Mixing Sessions\Default Work Unit.wwu" DateLow="1705005266" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Metadata\Default Work Unit.wwu" DateLow="1704976059" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1707599800" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Interactive Music Hierarchy\Music.wwu" DateLow="1707853441" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1705013302" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Game Parameters\Factory Soundseed Air Game Syncs.wwu" DateLow="1704976059" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Game Parameters\Default Work Unit.wwu" DateLow="1704976059" DateHigh="0"/>
@@ -148,14 +149,14 @@
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Events\TestEvents.wwu" DateLow="1704976059" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Events\PlayerLocomotion.wwu" DateLow="1706038530" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Events\PlayerCombat.wwu" DateLow="1704976059" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Events\Player_Voices.wwu" DateLow="1706731195" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Events\Player_Voices.wwu" DateLow="315529200" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Events\Player.wwu" DateLow="1704976059" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Events\Music.wwu" DateLow="1705019493" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Events\Music.wwu" DateLow="1707856879" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Events\Locomotion.wwu" DateLow="1704976059" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Events\Default Work Unit.wwu" DateLow="1704976059" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Events\Commentator_Voices.wwu" DateLow="1705014118" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Events\Default Work Unit.wwu" DateLow="315529200" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Events\Commentator_Voices.wwu" DateLow="1707850855" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Events\Ambience_sani.wwu" DateLow="1705011085" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Events\Ambience.wwu" DateLow="1705014308" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Events\Ambience.wwu" DateLow="1707856879" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Effects\Factory Reflect.wwu" DateLow="1704976059" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Effects\Factory McDSP Effects.wwu" DateLow="1704976059" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Effects\Factory Mastering Suite.wwu" DateLow="1704976059" DateHigh="0"/>
@@ -180,6 +181,7 @@
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Actor-Mixer Hierarchy\Voices.wwu" DateLow="1705011664" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Actor-Mixer Hierarchy\UI.wwu" DateLow="1704976059" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Actor-Mixer Hierarchy\TestFiles.wwu" DateLow="1704976059" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Actor-Mixer Hierarchy\Stage1_Ambience.wwu" DateLow="1707856879" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Actor-Mixer Hierarchy\PlayerLanding.wwu" DateLow="1706028281" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Actor-Mixer Hierarchy\PlayerJump.wwu" DateLow="1706028281" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Actor-Mixer Hierarchy\PlayerFootsteps.wwu" DateLow="1706316790" DateHigh="0"/>
@@ -187,16 +189,16 @@
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Actor-Mixer Hierarchy\PlayerCloth.wwu" DateLow="1706028281" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Actor-Mixer Hierarchy\PlayerBodyfalls.wwu" DateLow="1706028281" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Actor-Mixer Hierarchy\Player_Wooshes.wwu" DateLow="1706028281" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Actor-Mixer Hierarchy\Player_Voices.wwu" DateLow="1707599800" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Actor-Mixer Hierarchy\Player_Voices.wwu" DateLow="315529200" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Actor-Mixer Hierarchy\Player_Punches.wwu" DateLow="1706028281" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Actor-Mixer Hierarchy\Player_Locomotion.wwu" DateLow="1705010421" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Actor-Mixer Hierarchy\Player_Combat.wwu" DateLow="1704976059" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Actor-Mixer Hierarchy\Player_Blocking.wwu" DateLow="1706028281" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Actor-Mixer Hierarchy\Music.wwu" DateLow="1705098919" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1705016211" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Actor-Mixer Hierarchy\Commentator_Voices.wwu" DateLow="1705016211" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1707850855" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Actor-Mixer Hierarchy\Commentator_Voices.wwu" DateLow="1707850855" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Actor-Mixer Hierarchy\Ambience_sani.wwu" DateLow="1705011040" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Actor-Mixer Hierarchy\Ambience.wwu" DateLow="1705016211" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Project_Nexus\Project_Nexus_Wwise\Actor-Mixer Hierarchy\Ambience.wwu" DateLow="1707850855" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\Semester_3\Project_Nexus\Project_Nexus\Virtual Acoustics\Factory Acoustic Textures.wwu" DateLow="1696107242" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\Semester_3\Project_Nexus\Project_Nexus\Virtual Acoustics\Default Work Unit.wwu" DateLow="1696108963" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\Semester_3\Project_Nexus\Project_Nexus\Triggers\Default Work Unit.wwu" DateLow="1696108963" DateHigh="0"/>

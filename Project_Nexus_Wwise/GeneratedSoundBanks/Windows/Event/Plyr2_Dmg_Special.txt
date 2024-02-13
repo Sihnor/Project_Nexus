@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	4185259963	Plyr2_Dmg_Special			\Player_Voices\Plyr2_Dmg_Special	
+
