@@ -1731,6 +1731,25 @@
 				</Event>
 			</Events>
 		</SoundBank>
+		<SoundBank Id="2777511740" Type="Event" GUID="{3D69D6CA-7817-48AC-A481-26DD99F18E67}" Language="SFX" Hash="{17FF85FB-224C-FC1D-9C56-3358DBA91034}">
+			<ObjectPath>Com_Choose</ObjectPath>
+			<ShortName>Com_Choose</ShortName>
+			<Path>Event/Com_Choose.bnk</Path>
+			<Media>
+				<File Id="653837993" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_choose_fighter_01.wav</ShortName>
+					<Path>Media/653837993.wem</Path>
+					<CachePath>SFX/vo_commentator_choose_fighter_01_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2777511740" Name="Com_Choose" ObjectPath="\Events\Commentator_Voices\Com_Choose" GUID="{3D69D6CA-7817-48AC-A481-26DD99F18E67}" DurationType="OneShot" DurationMin="1.8125" DurationMax="1.8125">
+					<MediaRefs>
+						<MediaRef Id="653837993"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 		<SoundBank Id="2799667633" Type="Event" GUID="{18AC3747-1B0B-4F57-9307-A7FEBA0ADAC6}" Language="SFX" Hash="{7A88C7E9-C51E-2C20-AA27-EDBBB2E866B1}">
 			<ObjectPath>Plyr1_Dmg_Light</ObjectPath>
 			<ShortName>Plyr1_Dmg_Light</ShortName>
@@ -2378,5 +2397,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C06ABE6B-04E1-1B3C-9BC3-EB79BB1EE51B}</FileHash>
+	<FileHash>{90238479-1D48-9FE1-00BA-497BF2C528DD}</FileHash>
 </SoundBanksInfo>
