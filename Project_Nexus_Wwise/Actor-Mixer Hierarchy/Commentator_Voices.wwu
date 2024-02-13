@@ -2,17 +2,873 @@
 <WwiseDocument Type="WorkUnit" ID="{5BA06415-9A5F-4D77-9896-C2068BB4FFC9}" SchemaVersion="110">
 	<AudioObjects>
 		<WorkUnit Name="Commentator_Voices" ID="{5BA06415-9A5F-4D77-9896-C2068BB4FFC9}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="26"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
-				<RandomSequenceContainer Name="Com_Round_Fight" ID="{3B732C5C-1078-438D-A2CA-C8BD648ED775}" ShortID="937607662">
+				<SwitchContainer Name="Com_Round_Start" ID="{43E2B96F-94BF-41D2-89CE-D3C0B56C6BE4}" ShortID="341782798">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Com_Round1_Start" ID="{1CFD6ECD-2BF8-4EBC-8DEB-3B443F255327}" ShortID="1010541869">
+							<PropertyList>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="vo_commentator_round_01" ID="{9325370C-E521-467C-B5B9-2A0017D51C8F}" ShortID="205346428">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="vo_commentator_round_01" ID="{F87E4066-4FD7-4273-8412-B540C26A3B6E}">
+											<Language>SFX</Language>
+											<AudioFile>vo_commentator_round_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="200620881"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="vo_commentator_round_01" ID="{F87E4066-4FD7-4273-8412-B540C26A3B6E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Com_Round_Fight" ID="{F1513601-AF65-45E3-A0F2-84D1C7C922CF}" ShortID="406932063">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="vo_commentator_fight_01" ID="{DACB0249-EFFA-4E59-B2F1-F3BC1452735F}" ShortID="64897487">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vo_commentator_fight_01" ID="{5C67D053-3DF2-44D2-874A-B994E2A597AF}">
+													<Language>SFX</Language>
+													<AudioFile>vo_commentator_fight_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="950724125"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vo_commentator_fight_01" ID="{5C67D053-3DF2-44D2-874A-B994E2A597AF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vo_commentator_fight_02" ID="{C451C0A7-C9C4-4F59-869C-E27DC4C19BC8}" ShortID="990955524">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vo_commentator_fight_02" ID="{2D60AB63-B63E-48A8-B34B-F43C0316212E}">
+													<Language>SFX</Language>
+													<AudioFile>vo_commentator_fight_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="332544747"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vo_commentator_fight_02" ID="{2D60AB63-B63E-48A8-B34B-F43C0316212E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vo_commentator_fight_03" ID="{F3901EBE-7ECB-40D9-843F-1E22EFBC98C8}" ShortID="350935220">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vo_commentator_fight_03" ID="{FF49E891-BBBE-44B4-9AD3-063E31ED6AED}">
+													<Language>SFX</Language>
+													<AudioFile>vo_commentator_fight_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="565589375"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vo_commentator_fight_03" ID="{FF49E891-BBBE-44B4-9AD3-063E31ED6AED}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vo_commentator_fight_04" ID="{9BC86ED1-C69A-4394-9F31-A19CD1D9ACCC}" ShortID="325728590">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vo_commentator_fight_04" ID="{227F1A66-04FB-49E3-B555-6DDF5ABFF48B}">
+													<Language>SFX</Language>
+													<AudioFile>vo_commentator_fight_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="632686557"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vo_commentator_fight_04" ID="{227F1A66-04FB-49E3-B555-6DDF5ABFF48B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vo_commentator_fight_05" ID="{5262C384-6FCF-4064-AC98-54F35C77C6A1}" ShortID="503713887">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vo_commentator_fight_05" ID="{FBD2C60D-4EB4-469A-A53A-9CEC5EBF52EB}">
+													<Language>SFX</Language>
+													<AudioFile>vo_commentator_fight_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="115684259"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vo_commentator_fight_05" ID="{FBD2C60D-4EB4-469A-A53A-9CEC5EBF52EB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="vo_commentator_round_01" ID="{9325370C-E521-467C-B5B9-2A0017D51C8F}"/>
+								<ItemRef Name="Com_Round_Fight" ID="{F1513601-AF65-45E3-A0F2-84D1C7C922CF}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Com_Round2_Start" ID="{A7FE0187-C110-41A1-B408-22C24D1B0DFD}" ShortID="129602887">
+							<PropertyList>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="vo_commentator_round_02" ID="{4DAC5F04-B554-41DD-B05C-5C562E6B3401}" ShortID="161558205">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="vo_commentator_round_02" ID="{3D515CF9-B978-41C3-A4E6-58B0244E041D}">
+											<Language>SFX</Language>
+											<AudioFile>vo_commentator_round_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="818636588"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="vo_commentator_round_02" ID="{3D515CF9-B978-41C3-A4E6-58B0244E041D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Com_Round_Fight" ID="{F9BCEBAB-3E73-4408-AE1A-35750E34B095}" ShortID="178940050">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="vo_commentator_fight_01" ID="{6B60CB60-D8CB-4E70-95FF-8D93767D51F2}" ShortID="708845918">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vo_commentator_fight_01" ID="{631A743B-52F6-47FA-A8C1-D7CEFAC6C111}">
+													<Language>SFX</Language>
+													<AudioFile>vo_commentator_fight_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="950724125"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vo_commentator_fight_01" ID="{631A743B-52F6-47FA-A8C1-D7CEFAC6C111}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vo_commentator_fight_02" ID="{5E1CE72E-87AD-4B06-85AA-71B6A4315984}" ShortID="15094610">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vo_commentator_fight_02" ID="{1E552587-F357-42EB-9D4B-90E6B2A07EA0}">
+													<Language>SFX</Language>
+													<AudioFile>vo_commentator_fight_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="332544747"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vo_commentator_fight_02" ID="{1E552587-F357-42EB-9D4B-90E6B2A07EA0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vo_commentator_fight_03" ID="{8B4BFF94-6CD0-4862-94D9-1931D76BCDF2}" ShortID="763746644">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vo_commentator_fight_03" ID="{58EBDD72-7C63-4875-AAE2-2186E6B1E9FC}">
+													<Language>SFX</Language>
+													<AudioFile>vo_commentator_fight_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="565589375"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vo_commentator_fight_03" ID="{58EBDD72-7C63-4875-AAE2-2186E6B1E9FC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vo_commentator_fight_04" ID="{6FF3198E-8DB6-435B-9DA7-8A16B9173DE7}" ShortID="31842959">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vo_commentator_fight_04" ID="{C6569319-E82E-48F7-A926-4CAC2C7098DB}">
+													<Language>SFX</Language>
+													<AudioFile>vo_commentator_fight_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="632686557"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vo_commentator_fight_04" ID="{C6569319-E82E-48F7-A926-4CAC2C7098DB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vo_commentator_fight_05" ID="{3D53AE0F-66EE-4C15-81C1-CA58D7BD3BC6}" ShortID="40648564">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vo_commentator_fight_05" ID="{C0A73E8D-E9F0-4A07-B2CC-283DADDE3AC2}">
+													<Language>SFX</Language>
+													<AudioFile>vo_commentator_fight_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="115684259"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vo_commentator_fight_05" ID="{C0A73E8D-E9F0-4A07-B2CC-283DADDE3AC2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="vo_commentator_round_02" ID="{4DAC5F04-B554-41DD-B05C-5C562E6B3401}"/>
+								<ItemRef Name="Com_Round_Fight" ID="{F9BCEBAB-3E73-4408-AE1A-35750E34B095}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Com_Round3_Start" ID="{1F29ACC1-9E58-4EFF-BED4-74E5A70F4967}" ShortID="663107995">
+							<PropertyList>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="vo_commentator_round_03" ID="{BAB583EB-75F8-4ED1-A107-5E9C6BF5C137}" ShortID="32661263">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="vo_commentator_round_03" ID="{43687379-8540-42BE-99BA-6CAFE40C279A}">
+											<Language>SFX</Language>
+											<AudioFile>vo_commentator_round_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="697046052"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="vo_commentator_round_03" ID="{43687379-8540-42BE-99BA-6CAFE40C279A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Com_Round_Fight" ID="{58CE2FBE-61E9-4C8A-8C1F-A954B3340B2D}" ShortID="839299115">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="vo_commentator_fight_01" ID="{E82BACAE-A689-4333-95A9-4AF3A092DDAB}" ShortID="919074601">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vo_commentator_fight_01" ID="{76FC049F-E2FE-47DE-AD62-E6E0D5A29105}">
+													<Language>SFX</Language>
+													<AudioFile>vo_commentator_fight_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="950724125"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vo_commentator_fight_01" ID="{76FC049F-E2FE-47DE-AD62-E6E0D5A29105}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vo_commentator_fight_02" ID="{A8D4772E-ECB0-424D-A967-06744993D1F8}" ShortID="1033819832">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vo_commentator_fight_02" ID="{84DEEE4B-2F6A-4AEF-8610-98F8744C2994}">
+													<Language>SFX</Language>
+													<AudioFile>vo_commentator_fight_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="332544747"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vo_commentator_fight_02" ID="{84DEEE4B-2F6A-4AEF-8610-98F8744C2994}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vo_commentator_fight_03" ID="{C9E0851D-4751-4F95-B094-B2E07240C9EA}" ShortID="488658165">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vo_commentator_fight_03" ID="{851E376A-F7D6-4420-A689-3928FEE359D9}">
+													<Language>SFX</Language>
+													<AudioFile>vo_commentator_fight_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="565589375"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vo_commentator_fight_03" ID="{851E376A-F7D6-4420-A689-3928FEE359D9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vo_commentator_fight_04" ID="{C6B8D611-CEB0-47BE-AFC5-EF0FC81F8BD1}" ShortID="894873279">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vo_commentator_fight_04" ID="{49D99408-936C-46FD-83D8-167DBBA3F7F0}">
+													<Language>SFX</Language>
+													<AudioFile>vo_commentator_fight_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="632686557"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vo_commentator_fight_04" ID="{49D99408-936C-46FD-83D8-167DBBA3F7F0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vo_commentator_fight_05" ID="{D2C665D4-792E-4216-91DA-7139C7F32B0E}" ShortID="840691289">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vo_commentator_fight_05" ID="{87D3D3C8-6F68-4382-8262-E275E6DA94C8}">
+													<Language>SFX</Language>
+													<AudioFile>vo_commentator_fight_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="115684259"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vo_commentator_fight_05" ID="{87D3D3C8-6F68-4382-8262-E275E6DA94C8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="vo_commentator_round_03" ID="{BAB583EB-75F8-4ED1-A107-5E9C6BF5C137}"/>
+								<ItemRef Name="Com_Round_Fight" ID="{58CE2FBE-61E9-4C8A-8C1F-A954B3340B2D}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Com_Round4_Start" ID="{73E24738-8364-42B9-99A7-C58773744D79}" ShortID="942207620">
+							<PropertyList>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="vo_commentator_round_04" ID="{7DED9B80-B695-4288-9267-3A816DCCC0C9}" ShortID="941800174">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="vo_commentator_round_04" ID="{00999583-9F8B-49F1-9F57-C6FFA67F0188}">
+											<Language>SFX</Language>
+											<AudioFile>vo_commentator_round_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="134037975"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="vo_commentator_round_04" ID="{00999583-9F8B-49F1-9F57-C6FFA67F0188}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Com_Round_Fight" ID="{A54A6087-8D5F-402D-9119-BF643C50C6D0}" ShortID="492847607">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="vo_commentator_fight_01" ID="{93659D6F-A4CB-4EDD-A6C2-BB16083F9BF2}" ShortID="958033341">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vo_commentator_fight_01" ID="{096D9C41-ECA7-4258-8217-150C48A27CFC}">
+													<Language>SFX</Language>
+													<AudioFile>vo_commentator_fight_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="950724125"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vo_commentator_fight_01" ID="{096D9C41-ECA7-4258-8217-150C48A27CFC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vo_commentator_fight_02" ID="{16DC54FC-B224-4FCF-A13B-10DB77CCC7C8}" ShortID="49113140">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vo_commentator_fight_02" ID="{9F3C64AF-00BE-4D79-907F-9E53EC1E06C9}">
+													<Language>SFX</Language>
+													<AudioFile>vo_commentator_fight_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="332544747"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vo_commentator_fight_02" ID="{9F3C64AF-00BE-4D79-907F-9E53EC1E06C9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vo_commentator_fight_03" ID="{53FC49CF-BE65-4C21-93F0-03D9A7118584}" ShortID="1033776676">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vo_commentator_fight_03" ID="{015086E3-4760-48CA-884D-2D4908D27C19}">
+													<Language>SFX</Language>
+													<AudioFile>vo_commentator_fight_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="565589375"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vo_commentator_fight_03" ID="{015086E3-4760-48CA-884D-2D4908D27C19}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vo_commentator_fight_04" ID="{D78C2C68-1E89-45AE-BD15-AFFE91D88FE7}" ShortID="96509036">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vo_commentator_fight_04" ID="{CAEAA71C-5DBD-4CB0-98A5-CD171155E61F}">
+													<Language>SFX</Language>
+													<AudioFile>vo_commentator_fight_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="632686557"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vo_commentator_fight_04" ID="{CAEAA71C-5DBD-4CB0-98A5-CD171155E61F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="vo_commentator_fight_05" ID="{7E5B1A2A-C9D4-4F5C-82DE-477CA81CF150}" ShortID="794799708">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="vo_commentator_fight_05" ID="{9DB7BB29-E233-4F16-95BE-CDFBEF749947}">
+													<Language>SFX</Language>
+													<AudioFile>vo_commentator_fight_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="115684259"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="vo_commentator_fight_05" ID="{9DB7BB29-E233-4F16-95BE-CDFBEF749947}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="vo_commentator_round_04" ID="{7DED9B80-B695-4288-9267-3A816DCCC0C9}"/>
+								<ItemRef Name="Com_Round_Fight" ID="{A54A6087-8D5F-402D-9119-BF643C50C6D0}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Com_Round4_Start" ID="{73E24738-8364-42B9-99A7-C58773744D79}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Com_Round2_Start" ID="{A7FE0187-C110-41A1-B408-22C24D1B0DFD}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Com_Round3_Start" ID="{1F29ACC1-9E58-4EFF-BED4-74E5A70F4967}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Com_Round1_Start" ID="{1CFD6ECD-2BF8-4EBC-8DEB-3B443F255327}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+					</GroupingInfo>
+				</SwitchContainer>
+				<RandomSequenceContainer Name="Com_Round_End_KO" ID="{01800B22-03D9-46FF-93E6-12FBA9A82A2F}" ShortID="476300142">
 					<PropertyList>
-						<Property Name="Pitch" Type="int32">
-							<ValueList>
-								<Value>-50</Value>
-							</ValueList>
-						</Property>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>4</Value>
+								<Value>-3</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -25,9 +881,86 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Fight!_01-19" ID="{7009F435-B5FA-4273-AF47-9B64512DDA2E}" ShortID="982853540">
+						<Sound Name="vo_commentator_KO_03" ID="{2826C01C-6FB6-47A9-B500-BEC788486CDB}" ShortID="238842720">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="vo_commentator_KO_03" ID="{0149D948-664D-4E3E-921E-6FAFD6EE6204}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.283494832041344"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>vo_commentator_KO_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="455746205"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="vo_commentator_KO_03" ID="{0149D948-664D-4E3E-921E-6FAFD6EE6204}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="vo_commentator_KO_02" ID="{FEF00584-F518-4C9B-8339-8574A3E64030}" ShortID="329258561">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="vo_commentator_KO_02" ID="{B70E2840-1B33-4B8E-9167-1A2E729895F3}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.291666666666667"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>vo_commentator_KO_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="143414294"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="vo_commentator_KO_02" ID="{B70E2840-1B33-4B8E-9167-1A2E729895F3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Com_Round_Fight" ID="{76079135-BB4F-446A-9ED7-6C1FEC196568}" ShortID="601387976">
+					<PropertyList>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="vo_commentator_fight_01" ID="{2406AE48-13C4-434D-840A-F5CE275AA034}" ShortID="479606752">
 							<PropertyList>
-								<Property Name="IsVoice" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -38,20 +971,283 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Fight!_01-19" ID="{BEF84A50-9531-4FC8-B43B-9B0647903FA0}">
-									<Language>English(US)</Language>
-									<AudioFile>Fight!_01-19.wav</AudioFile>
+								<AudioFileSource Name="vo_commentator_fight_01" ID="{C406871A-AA91-4AE6-968A-CDD0B7904065}">
+									<Language>SFX</Language>
+									<AudioFile>vo_commentator_fight_01.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="747517666"/>
+										<MediaID ID="950724125"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Fight!_01-19" ID="{BEF84A50-9531-4FC8-B43B-9B0647903FA0}" Platform="Linked"/>
+								<ActiveSource Name="vo_commentator_fight_01" ID="{C406871A-AA91-4AE6-968A-CDD0B7904065}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="vo_commentator_fight_02" ID="{58A1DC6F-710A-4C64-8132-DE0172F42DA4}" ShortID="365614435">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="vo_commentator_fight_02" ID="{2C81BB19-836C-499D-BAA7-84BFDA056EC4}">
+									<Language>SFX</Language>
+									<AudioFile>vo_commentator_fight_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="332544747"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="vo_commentator_fight_02" ID="{2C81BB19-836C-499D-BAA7-84BFDA056EC4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="vo_commentator_fight_03" ID="{B6A87FD2-85A2-494E-842F-37CEDAC6ADB5}" ShortID="804798311">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="vo_commentator_fight_03" ID="{79B46135-8893-4555-BD16-A6A52D006036}">
+									<Language>SFX</Language>
+									<AudioFile>vo_commentator_fight_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="565589375"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="vo_commentator_fight_03" ID="{79B46135-8893-4555-BD16-A6A52D006036}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="vo_commentator_fight_04" ID="{AF6FD9C1-0053-424B-817D-E6D4E02039A7}" ShortID="857302719">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="vo_commentator_fight_04" ID="{7150F189-36E5-4DBC-A131-FEB920D1476F}">
+									<Language>SFX</Language>
+									<AudioFile>vo_commentator_fight_04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="632686557"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="vo_commentator_fight_04" ID="{7150F189-36E5-4DBC-A131-FEB920D1476F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="vo_commentator_fight_05" ID="{DE2B8B15-3BA3-40E5-AB9F-2D8D02D9FED2}" ShortID="836241854">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="vo_commentator_fight_05" ID="{20B460DB-A68B-47B0-8C59-B9889071B58F}">
+									<Language>SFX</Language>
+									<AudioFile>vo_commentator_fight_05.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="115684259"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="vo_commentator_fight_05" ID="{20B460DB-A68B-47B0-8C59-B9889071B58F}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<Sound Name="vo_commentator_choose_fighter_01" ID="{35DE1518-14A1-4854-8474-E057C97ED999}" ShortID="351325131">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="vo_commentator_choose_fighter_01" ID="{F92A5932-FB09-4982-B272-071B687A5CBE}">
+							<Language>SFX</Language>
+							<AudioFile>vo_commentator_choose_fighter_01.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="653837993"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="vo_commentator_choose_fighter_01" ID="{F92A5932-FB09-4982-B272-071B687A5CBE}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="vo_commentator_chara_select_lauren_01" ID="{BD954070-DA3B-4120-8E5A-764B18B04D67}" ShortID="692447461">
+					<PropertyList>
+						<Property Name="IsVoice" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="vo_commentator_chara_select_lauren_01" ID="{0672B2BE-74E1-497C-B6D4-F8D8618FE0E3}">
+							<Language>English(US)</Language>
+							<AudioFile>vo_commentator_chara_select_lauren_01.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="171327102"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="vo_commentator_chara_select_lauren_01" ID="{0672B2BE-74E1-497C-B6D4-F8D8618FE0E3}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="vo_commentator_chara_jack_wins_01" ID="{C43C668C-1723-450B-BD44-70E5F6F6DF8F}" ShortID="600496964">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="vo_commentator_chara_jack_wins_01" ID="{482119BF-277A-4734-AEF6-54A3501A3AEE}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.123379989631934"/>
+								<Property Name="LoopBegin" Type="Real64" Value="0"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>vo_commentator_chara_jack_wins_01.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="857849938"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="vo_commentator_chara_jack_wins_01" ID="{482119BF-277A-4734-AEF6-54A3501A3AEE}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="vo_commentator_chara_lauren_wins_01" ID="{CD364034-C72F-4411-BC6D-618BE1FF5A0E}" ShortID="679000020">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="vo_commentator_chara_lauren_wins_01" ID="{545071AE-7E55-482B-A3A0-17B374F9E9C2}">
+							<Language>SFX</Language>
+							<AudioFile>vo_commentator_chara_lauren_wins_01.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="478517942"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="vo_commentator_chara_lauren_wins_01" ID="{545071AE-7E55-482B-A3A0-17B374F9E9C2}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="vo_commentator_chara_select_jack_01" ID="{60A88425-3286-40AD-AD30-B4CFADCE77BA}" ShortID="1072214808">
+					<PropertyList>
+						<Property Name="IsVoice" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="vo_commentator_chara_select_jack_01" ID="{755A1EFF-C12E-40F3-8AB6-BDF57837AC24}">
+							<Language>English(US)</Language>
+							<AudioFile>vo_commentator_chara_select_jack_01.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="5541831"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="vo_commentator_chara_select_jack_01" ID="{755A1EFF-C12E-40F3-8AB6-BDF57837AC24}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="vo_commentator_welcome_01" ID="{03873243-4933-4930-A2C5-A842A41111EB}" ShortID="86004928">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="vo_commentator_welcome_01" ID="{C28FC5BD-206F-4DEB-96BB-E0119CFDBE68}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.280099792638673"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>vo_commentator_welcome_01.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="698339974"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="vo_commentator_welcome_01" ID="{C28FC5BD-206F-4DEB-96BB-E0119CFDBE68}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

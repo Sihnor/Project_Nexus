@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="1407253294" Type="Event" GUID="{64BA2DC8-AF54-4E1A-AEF6-60694538C48B}" Language="SFX" Hash="{DF80883E-3268-05C0-72A7-942C4B260DF6}">
+			<ObjectPath>Com_Round_3_Start</ObjectPath>
+			<ShortName>Com_Round_3_Start</ShortName>
+			<Path>Event/Com_Round_3_Start.bnk</Path>
+			<Media>
+				<File Id="115684259" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_05.wav</ShortName>
+					<Path>Media/115684259.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="332544747" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_02.wav</ShortName>
+					<Path>Media/332544747.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="565589375" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_03.wav</ShortName>
+					<Path>Media/565589375.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="632686557" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_04.wav</ShortName>
+					<Path>Media/632686557.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="697046052" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_round_03.wav</ShortName>
+					<Path>Media/697046052.wem</Path>
+					<CachePath>SFX/vo_commentator_round_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="950724125" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_01.wav</ShortName>
+					<Path>Media/950724125.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_01_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1407253294" Name="Com_Round_3_Start" ObjectPath="\Events\Commentator_Voices\Com_Round_3_Start" GUID="{64BA2DC8-AF54-4E1A-AEF6-60694538C48B}" DurationType="OneShot" DurationMin="2.6875" DurationMax="3">
+					<MediaRefs>
+						<MediaRef Id="115684259"/>
+						<MediaRef Id="332544747"/>
+						<MediaRef Id="565589375"/>
+						<MediaRef Id="632686557"/>
+						<MediaRef Id="697046052"/>
+						<MediaRef Id="950724125"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{D9CBAFD0-B5E2-5A90-7093-56F7B3C19830}</FileHash>
+</SoundBanksInfo>

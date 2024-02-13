@@ -1,0 +1,96 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "1986195668",
+    "Type": "Event",
+    "GUID": "{6FCF772D-550C-4F65-B592-DB8587BDF458}",
+    "Language": "SFX",
+    "Hash": "{CDBC47D2-E883-CD6C-639C-E171A512A70F}",
+    "ObjectPath": "Plyr1_Dmg_Heavy",
+    "ShortName": "Plyr1_Dmg_Heavy",
+    "Path": "Event/Plyr1_Dmg_Heavy.bnk",
+    "Media": [
+     {
+      "Id": "296001773",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_damage_heavy_01.wav",
+      "Path": "Media/296001773.wem",
+      "CachePath": "SFX/vo_fighter1_damage_heavy_01_10C4C929.wem"
+     },
+     {
+      "Id": "489055783",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_damage_heavy_05.wav",
+      "Path": "Media/489055783.wem",
+      "CachePath": "SFX/vo_fighter1_damage_heavy_05_10C4C929.wem"
+     },
+     {
+      "Id": "510817508",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_damage_heavy_04.wav",
+      "Path": "Media/510817508.wem",
+      "CachePath": "SFX/vo_fighter1_damage_heavy_04_10C4C929.wem"
+     },
+     {
+      "Id": "904551779",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_damage_heavy_03.wav",
+      "Path": "Media/904551779.wem",
+      "CachePath": "SFX/vo_fighter1_damage_heavy_03_10C4C929.wem"
+     },
+     {
+      "Id": "1017776858",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_damage_heavy_02.wav",
+      "Path": "Media/1017776858.wem",
+      "CachePath": "SFX/vo_fighter1_damage_heavy_02_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1986195668",
+      "Name": "Plyr1_Dmg_Heavy",
+      "ObjectPath": "\\Events\\Player_Voices\\Plyr1_Dmg_Heavy",
+      "GUID": "{6FCF772D-550C-4F65-B592-DB8587BDF458}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.5625",
+      "DurationMax": "0.89166665",
+      "MediaRefs": [
+       {
+        "Id": "296001773"
+       },
+       {
+        "Id": "489055783"
+       },
+       {
+        "Id": "510817508"
+       },
+       {
+        "Id": "904551779"
+       },
+       {
+        "Id": "1017776858"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{49B04C27-9602-56F0-2963-0615F335D02F}"
+ }
+}

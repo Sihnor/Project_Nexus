@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "1073355647",
+    "Type": "Event",
+    "GUID": "{EEB1C8DC-2012-4465-B929-C73B463E3F63}",
+    "Language": "SFX",
+    "Hash": "{0CE144A7-3469-4447-0568-43B88B82D608}",
+    "ObjectPath": "Ambi_2_Loop_Stop",
+    "ShortName": "Ambi_2_Loop_Stop",
+    "Path": "Event/Ambi_2_Loop_Stop.bnk",
+    "Events": [
+     {
+      "Id": "1073355647",
+      "Name": "Ambi_2_Loop_Stop",
+      "ObjectPath": "\\Events\\Ambience\\2D\\Ambi_2_Loop_Stop",
+      "GUID": "{EEB1C8DC-2012-4465-B929-C73B463E3F63}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{0206F929-CAA9-8105-D41A-083577FFEC1D}"
+ }
+}

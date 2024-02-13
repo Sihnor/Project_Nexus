@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "4011766644",
+    "Type": "Event",
+    "GUID": "{ECEA2C89-2161-42CE-A22A-B435716282B2}",
+    "Language": "SFX",
+    "Hash": "{D85D84CB-6721-9966-62DE-FB0D7FA4EA67}",
+    "ObjectPath": "Ambi_1_Loop_Stop",
+    "ShortName": "Ambi_1_Loop_Stop",
+    "Path": "Event/Ambi_1_Loop_Stop.bnk",
+    "Events": [
+     {
+      "Id": "4011766644",
+      "Name": "Ambi_1_Loop_Stop",
+      "ObjectPath": "\\Events\\Ambience\\2D\\Ambi_1_Loop_Stop",
+      "GUID": "{ECEA2C89-2161-42CE-A22A-B435716282B2}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{6F779589-4ED4-96C7-AAD2-7BFDE0398188}"
+ }
+}
