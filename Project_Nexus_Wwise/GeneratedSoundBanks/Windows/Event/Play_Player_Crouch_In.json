@@ -1,0 +1,108 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "2369679144",
+    "Type": "Event",
+    "GUID": "{52806D64-28C9-4DBD-9FA9-B19EFC1D9D2B}",
+    "Language": "SFX",
+    "Hash": "{444C3E35-1814-E93F-ECC0-38396FC8D84C}",
+    "ObjectPath": "Play_Player_Crouch_In",
+    "ShortName": "Play_Player_Crouch_In",
+    "Path": "Event/Play_Player_Crouch_In.bnk",
+    "Media": [
+     {
+      "Id": "126319256",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_crouch_in_03.wav",
+      "Path": "Media/126319256.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_crouch_in_03_10C4C929.wem"
+     },
+     {
+      "Id": "427230100",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_crouch_in_02.wav",
+      "Path": "Media/427230100.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_crouch_in_02_10C4C929.wem"
+     },
+     {
+      "Id": "507215868",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_crouch_in_01.wav",
+      "Path": "Media/507215868.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_crouch_in_01_10C4C929.wem"
+     },
+     {
+      "Id": "537328825",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_crouch_in_05.wav",
+      "Path": "Media/537328825.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_crouch_in_05_10C4C929.wem"
+     },
+     {
+      "Id": "546080245",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_crouch_in_04.wav",
+      "Path": "Media/546080245.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_crouch_in_04_10C4C929.wem"
+     },
+     {
+      "Id": "827760532",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_crouch_in_06.wav",
+      "Path": "Media/827760532.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_crouch_in_06_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2369679144",
+      "Name": "Play_Player_Crouch_In",
+      "ObjectPath": "\\Events\\Player\\PlayerLocomotion\\Play_Player_Crouch_In",
+      "GUID": "{52806D64-28C9-4DBD-9FA9-B19EFC1D9D2B}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.3373956",
+      "DurationMax": "0.626091",
+      "MediaRefs": [
+       {
+        "Id": "126319256"
+       },
+       {
+        "Id": "427230100"
+       },
+       {
+        "Id": "507215868"
+       },
+       {
+        "Id": "537328825"
+       },
+       {
+        "Id": "546080245"
+       },
+       {
+        "Id": "827760532"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{6CAECC7D-C8C9-F5FD-DAC8-AD2543B5F3F3}"
+ }
+}

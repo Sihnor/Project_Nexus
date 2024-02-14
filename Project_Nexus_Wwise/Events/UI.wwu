@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{25DD6557-5E2F-46FF-B6F6-0433B94AAC2A}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="UI" ID="{25DD6557-5E2F-46FF-B6F6-0433B94AAC2A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Select_Button" ID="{5A6C30F2-2944-40B2-A4D9-1A142FBE1444}">
+					<ChildrenList>
+						<Action Name="" ID="{B23283B8-D860-4616-885D-3308FFB78FCE}" ShortID="680328761">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_menu_button_select" ID="{D92D8003-4CB6-4DE0-AC87-502CA4DE1956}" WorkUnitID="{F630E117-1887-441A-A243-3DF392670FE3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Move_Button" ID="{E001864B-1F09-432D-9769-CAA8112B432A}">
+					<ChildrenList>
+						<Action Name="" ID="{ED0E0BEF-330C-40F2-9C8C-978D9B0187CC}" ShortID="625540493">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_menu_move" ID="{1BDBD083-E7BE-4C7E-BBA4-46307F6D3D27}" WorkUnitID="{F630E117-1887-441A-A243-3DF392670FE3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Back_Button" ID="{B62D6C1F-687C-48B5-81B8-7924344A1746}">
+					<ChildrenList>
+						<Action Name="" ID="{4754E44D-B807-4CB9-848D-CAF2AA6B90F1}" ShortID="579277474">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_menu_button_back" ID="{B526C5D1-CF60-4F74-94FE-F6C82F654B6A}" WorkUnitID="{F630E117-1887-441A-A243-3DF392670FE3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Settings_Slider" ID="{82FCA46E-6E59-4873-9785-CC8165F421C1}">
+					<ChildrenList>
+						<Action Name="" ID="{4CB976F7-1C34-4BD2-B02B-39309E658D15}" ShortID="361674928">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_menu_settings_slider" ID="{ED6E9571-FEF1-4393-BE62-688B8DE70F2B}" WorkUnitID="{F630E117-1887-441A-A243-3DF392670FE3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Settings_Select" ID="{BB6429FE-6011-4472-9010-9CAF484600A7}">
+					<ChildrenList>
+						<Action Name="" ID="{3B87467F-F5F6-419F-A0B3-138EC67097E9}" ShortID="593517837">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_menu_settings_select" ID="{613D3BE9-5FBE-4163-B75B-9B4C46380589}" WorkUnitID="{F630E117-1887-441A-A243-3DF392670FE3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Select_Fighter" ID="{5B16E403-94D2-446D-9060-3E385BA132ED}">
+					<ChildrenList>
+						<Action Name="" ID="{DCADEA86-BB9F-476B-A557-956BD25F1ECB}" ShortID="491460618">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_menu_select_fighter" ID="{A1CCADCE-6661-4357-BB89-FA13B75FEEC9}" WorkUnitID="{F630E117-1887-441A-A243-3DF392670FE3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Pause_In" ID="{40E09523-C912-41B2-8E87-1A5554483779}">
+					<ChildrenList>
+						<Action Name="" ID="{BDAD4CF1-ABA1-429D-8B13-B4D0E089FBFB}" ShortID="938183183">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_menu_pause_activate" ID="{6E9DFD4F-8D4B-49BE-9748-1D0DB05658CD}" WorkUnitID="{F630E117-1887-441A-A243-3DF392670FE3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Pause_Out" ID="{D586571B-518E-44CF-8A2E-6B68BFDB5D01}">
+					<ChildrenList>
+						<Action Name="" ID="{F7760311-D743-4984-A868-A79171BAD5E1}" ShortID="1063393768">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_menu_pause_deactivate" ID="{8E47F091-BCBF-443A-A2DC-C968ABA62BD0}" WorkUnitID="{F630E117-1887-441A-A243-3DF392670FE3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

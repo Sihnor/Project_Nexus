@@ -1,0 +1,108 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "3021177893",
+    "Type": "Event",
+    "GUID": "{DC4135FD-87EC-41A5-84C3-E1F70FC2699C}",
+    "Language": "SFX",
+    "Hash": "{A7C8507A-A2A2-1300-7ACF-620081ABBB36}",
+    "ObjectPath": "Play_Player_Punsh_Woosh",
+    "ShortName": "Play_Player_Punsh_Woosh",
+    "Path": "Event/Play_Player_Punsh_Woosh.bnk",
+    "Media": [
+     {
+      "Id": "266191415",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_punch_woosh_01.wav",
+      "Path": "Media/266191415.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_punch_woosh_01_10C4C929.wem"
+     },
+     {
+      "Id": "505491373",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_punch_woosh_02.wav",
+      "Path": "Media/505491373.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_punch_woosh_02_10C4C929.wem"
+     },
+     {
+      "Id": "761483195",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_punch_woosh_06.wav",
+      "Path": "Media/761483195.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_punch_woosh_06_10C4C929.wem"
+     },
+     {
+      "Id": "761832300",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_punch_woosh_03.wav",
+      "Path": "Media/761832300.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_punch_woosh_03_10C4C929.wem"
+     },
+     {
+      "Id": "1029515323",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_punch_woosh_04.wav",
+      "Path": "Media/1029515323.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_punch_woosh_04_10C4C929.wem"
+     },
+     {
+      "Id": "1072389693",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_punch_woosh_05.wav",
+      "Path": "Media/1072389693.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_punch_woosh_05_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3021177893",
+      "Name": "Play_Player_Punsh_Woosh",
+      "ObjectPath": "\\Events\\Player\\PlayerCombat\\Play_Player_Punsh_Woosh",
+      "GUID": "{DC4135FD-87EC-41A5-84C3-E1F70FC2699C}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.25119513",
+      "DurationMax": "0.47743717",
+      "MediaRefs": [
+       {
+        "Id": "266191415"
+       },
+       {
+        "Id": "505491373"
+       },
+       {
+        "Id": "761483195"
+       },
+       {
+        "Id": "761832300"
+       },
+       {
+        "Id": "1029515323"
+       },
+       {
+        "Id": "1072389693"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{F47C6283-4BE4-0BCE-EDD8-3D39A4CBA45A}"
+ }
+}

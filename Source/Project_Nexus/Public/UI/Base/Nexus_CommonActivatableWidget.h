@@ -6,17 +6,26 @@
 #include "CommonActivatableWidget.h"
 #include "Nexus_CommonActivatableWidget.generated.h"
 
+class UNexus_WidgetContainerStack;
+
 /**
  * 
  */
-UCLASS()
+
+UCLASS(Abstract)
 class PROJECT_NEXUS_API UNexus_CommonActivatableWidget : public UCommonActivatableWidget
 {
 	GENERATED_BODY()
-	
+public:
 	UPROPERTY(meta = (BindWidget))
-	class UCanvasPanel* CanvasPanel;
+	class UOverlay* MenuOverlay;
 
 	UPROPERTY(meta = (BindWidget))
-	class UCommonBorder* Border;
+	class UCommonBorder* MenuBorder;
+
+	virtual void PassStackVariable(UNexus_WidgetContainerStack* MenuStack);
+
+	UNexus_WidgetContainerStack* MenuStackRef;
+
+	virtual void RestoreDefaultSettings(){};
 };

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{92CA6F74-FCC9-4A27-8EDE-D8E36DDF0BE1}" SchemaVersion="110">
+	<Switches>
+		<WorkUnit Name="AmbienceSwitches" ID="{92CA6F74-FCC9-4A27-8EDE-D8E36DDF0BE1}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="AmbBiomeType" ID="{AAA9D6C1-62D8-4809-96FA-FD4C1FB37737}">
+					<ChildrenList>
+						<Switch Name="Forrest" ID="{049A7E08-DD9E-4D60-B716-F3EDBAD4E1B7}"/>
+						<Switch Name="Grassland" ID="{0534633D-AF3C-4495-A2CC-547C1AF77721}"/>
+						<Switch Name="Swamp" ID="{24994C10-E56E-4BE1-82F1-F32621503E68}"/>
+						<Switch Name="Mountain" ID="{74EBEB17-764C-48F2-A9FA-B5A8C6237A95}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="AmbTimeOfDay" ID="{401EE9DA-FC0E-48B4-9F06-284E78FBB970}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Night" ID="{5A20F4C9-BD67-43FF-AD84-684F762C63E2}"/>
+						<Switch Name="Dawn" ID="{13912C2F-E470-4DF1-8C9D-E5755E25D8B7}"/>
+						<Switch Name="EarlyMorning" ID="{0C347D84-F409-4125-A4AC-E1950DAB67DF}"/>
+						<Switch Name="Midday" ID="{BA4CB024-A733-44BE-B55C-1F629EB3E872}"/>
+						<Switch Name="Afternoon" ID="{6D896250-5D83-486B-886A-F41E5ADE49A6}"/>
+						<Switch Name="Evening" ID="{3A693EDA-AAEB-4D21-AF69-4B0EB283A958}"/>
+						<Switch Name="Dusk" ID="{C5FF0F1E-E93D-4EB1-97B1-B70F7B06A92D}"/>
+						<Switch Name="Nightfall" ID="{E74E90B6-4FCB-4CEA-88FA-2E8253EF403C}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="RTPC_TimeOfDay" ID="{ADA1D5E4-66D8-4D2C-9157-29FC9CF7C308}"/>
+						<Curve Name="" ID="{18FD2EF3-5EB1-4C88-B4DA-1B85ACF19490}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>3.2795</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>6.45962</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>10.03727</XPos>
+									<YPos>4</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>13.81366</XPos>
+									<YPos>5</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>17.21739</XPos>
+									<YPos>6</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>20.09938</XPos>
+									<YPos>7</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>22.08696</XPos>
+									<YPos>8</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>24</XPos>
+									<YPos>8</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="AmbThunderSwitch" ID="{F670F14B-D71B-4A85-A35E-C97C37DC739D}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="ThunderClose" ID="{7FFE2C5F-AD35-4484-B17D-C1E12BE938E5}"/>
+						<Switch Name="ThunderDistance" ID="{926F835F-386D-4FA8-AC03-C4F5A27A5DA4}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="RTPC_Distance" ID="{75B24472-D755-486A-9F02-2525D1FCA7E6}"/>
+						<Curve Name="" ID="{703B2784-39D5-4CA7-B82C-85734F1E53EF}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>25000</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>99999</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>100000</XPos>
+									<YPos>0</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
