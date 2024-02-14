@@ -389,6 +389,9 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement", meta = (AllowPrivateAccess = "true"))
 		float ForwardDashDistance;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement", meta = (AllowPrivateAccess = "true"))
+		float PushBackAmount;
+
 	int CurrentTick;
 	bool CaptureInputThisFrame;
 
