@@ -507,7 +507,7 @@ void AFightingCharacter::GetStunned(float HitStunTime, float BlockStunTime, floa
 		if(StunTime > 0.f){
 			if(HasLandedThrow){
 				CharacterState = ECharacterState::FC_ThrowStunned;
-				UE_LOG(LogTemp, Error, TEXT("Throw Stun"));
+				//UE_LOG(LogTemp, Error, TEXT("Throw Stun"));
 			} if(CharacterState != ECharacterState::FC_CrouchBlocking){
 				CharacterState = ECharacterState::FC_BlockStunned;
 			}else{
