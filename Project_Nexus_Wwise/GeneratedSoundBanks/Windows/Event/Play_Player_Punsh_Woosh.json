@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{DC4135FD-87EC-41A5-84C3-E1F70FC2699C}",
     "Language": "SFX",
-    "Hash": "{AE3A5B70-471F-3232-8F11-9EDC6C4A19A6}",
+    "Hash": "{D516753E-0EDA-F695-9320-2ADDDEBB1903}",
     "ObjectPath": "Play_Player_Punsh_Woosh",
     "ShortName": "Play_Player_Punsh_Woosh",
     "Path": "Event/Play_Player_Punsh_Woosh.bnk",
@@ -77,8 +77,8 @@
       "ObjectPath": "\\Events\\Player\\PlayerCombat\\Play_Player_Punsh_Woosh",
       "GUID": "{DC4135FD-87EC-41A5-84C3-E1F70FC2699C}",
       "DurationType": "OneShot",
-      "DurationMin": "0.25119513",
-      "DurationMax": "0.47743717",
+      "DurationMin": "0.26674756",
+      "DurationMax": "0.44960067",
       "MediaRefs": [
        {
         "Id": "266191415"
@@ -103,6 +103,6 @@
     ]
    }
   ],
-  "FileHash": "{DB00E8AB-4841-9C65-3DBA-95C6A9206FBB}"
+  "FileHash": "{24A405EF-4E49-1D34-ACF8-1FC3ED9B559A}"
  }
 }

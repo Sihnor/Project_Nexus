@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{91E57EC6-14BF-4999-BD5E-402DE08241C4}",
     "Language": "English(US)",
-    "Hash": "{B37CCB87-D8ED-C07F-F596-5465AEC5F02B}",
+    "Hash": "{0331E0DB-7C9A-95CF-2C8A-5145152BB8B5}",
     "ObjectPath": "Com_Char_Select_Lauren",
     "ShortName": "Com_Char_Select_Lauren",
     "Path": "Event/English(US)/Com_Char_Select_Lauren.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{64C08191-2A88-52B6-9367-9C9D453AE9B7}"
+  "FileHash": "{CC00B06E-7F70-8A85-2175-BBA9EFC47F09}"
  }
 }

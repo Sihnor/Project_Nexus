@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2526534989	Play_Player2_Punch_Light			\Player2\Player2Combat\Play_Player2_Punch_Light	
+

@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1587893616	Play_Player2_Bounce			\Player2\Player2Locomotion\Play_Player2_Bounce	
+

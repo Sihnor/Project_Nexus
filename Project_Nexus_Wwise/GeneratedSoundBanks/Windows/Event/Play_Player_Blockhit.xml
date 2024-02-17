@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="3883776002" Type="Event" GUID="{D23E66E6-43DA-4114-901C-C8A2B0828697}" Language="SFX" Hash="{26E2F1FD-0B71-D15F-CADF-A1E3CA0AEF0E}">
+			<ObjectPath>Play_Player_Blockhit</ObjectPath>
+			<ShortName>Play_Player_Blockhit</ShortName>
+			<Path>Event/Play_Player_Blockhit.bnk</Path>
+			<Media>
+				<File Id="157762813" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_blockhit_03.wav</ShortName>
+					<Path>Media/157762813.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_blockhit_03_D134634E.wem</CachePath>
+				</File>
+				<File Id="403585098" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_blockhit_06.wav</ShortName>
+					<Path>Media/403585098.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_blockhit_06_6F00982E.wem</CachePath>
+				</File>
+				<File Id="455990501" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_blockhit_02.wav</ShortName>
+					<Path>Media/455990501.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_blockhit_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="890575564" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_blockhit_05.wav</ShortName>
+					<Path>Media/890575564.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_blockhit_05_E7CBD34A.wem</CachePath>
+				</File>
+				<File Id="929725287" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_blockhit_01.wav</ShortName>
+					<Path>Media/929725287.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_blockhit_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1005950471" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_blockhit_04.wav</ShortName>
+					<Path>Media/1005950471.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_blockhit_04_39B7015B.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3883776002" Name="Play_Player_Blockhit" ObjectPath="\Events\Player\PlayerCombat\Play_Player_Blockhit" GUID="{D23E66E6-43DA-4114-901C-C8A2B0828697}" DurationType="OneShot" DurationMin="0.17583014" DurationMax="0.32133114">
+					<MediaRefs>
+						<MediaRef Id="157762813"/>
+						<MediaRef Id="403585098"/>
+						<MediaRef Id="455990501"/>
+						<MediaRef Id="890575564"/>
+						<MediaRef Id="929725287"/>
+						<MediaRef Id="1005950471"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{41B694BA-4615-2E1B-8326-EF056351BBCF}</FileHash>
+</SoundBanksInfo>

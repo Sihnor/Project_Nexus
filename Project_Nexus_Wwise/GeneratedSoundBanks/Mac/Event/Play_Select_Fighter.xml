@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2518864784" Type="Event" GUID="{5B16E403-94D2-446D-9060-3E385BA132ED}" Language="SFX" Hash="{F3F03F35-3D5C-DE65-78F5-165DBF51DAD8}">
+		<SoundBank Id="2518864784" Type="Event" GUID="{5B16E403-94D2-446D-9060-3E385BA132ED}" Language="SFX" Hash="{3A52027D-5BF1-6E7A-0531-217912BEAE11}">
 			<ObjectPath>Play_Select_Fighter</ObjectPath>
 			<ShortName>Play_Select_Fighter</ShortName>
 			<Path>Event/Play_Select_Fighter.bnk</Path>
@@ -21,5 +21,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6D847B8F-8FC2-D158-6D06-9ADAE2A8067F}</FileHash>
+	<FileHash>{C15CB2D8-74C3-9752-A373-47FF5A588068}</FileHash>
 </SoundBanksInfo>

@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{BB6429FE-6011-4472-9010-9CAF484600A7}",
     "Language": "SFX",
-    "Hash": "{283A0480-5A07-BF7C-D167-B7C43B030ED9}",
+    "Hash": "{6EF943FC-61FC-0087-CAB1-461F5D807584}",
     "ObjectPath": "Play_Settings_Select",
     "ShortName": "Play_Settings_Select",
     "Path": "Event/Play_Settings_Select.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{B2A93E3D-07FE-D78B-4C70-D9EF28294DA1}"
+  "FileHash": "{7AA16146-D918-2502-8923-81E9D66C22AE}"
  }
 }

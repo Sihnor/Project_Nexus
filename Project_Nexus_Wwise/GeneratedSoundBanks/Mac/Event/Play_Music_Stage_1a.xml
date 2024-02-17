@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="3074061029" Type="Event" GUID="{62D78041-F9D1-4419-AE06-E663C92CE753}" Language="SFX" Hash="{B9902C0A-F198-0823-0E19-A4EBCDD77FD3}">
+			<ObjectPath>Play_Music_Stage_1a</ObjectPath>
+			<ShortName>Play_Music_Stage_1a</ShortName>
+			<Path>Event/Play_Music_Stage_1a.bnk</Path>
+			<Media>
+				<File Id="25179338" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-C-Chorus_Drums_125bpm5-4_L13M_P0.wav</ShortName>
+					<Path>Media/25179338.wem</Path>
+					<CachePath>SFX/Stage-C-Chorus_Drums_125bpm5-4_L13M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="64850139" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-A-Chorus_Cymbals_125bpm3-4_L10M_P0.wav</ShortName>
+					<Path>Media/64850139.wem</Path>
+					<CachePath>SFX/Stage-A-Chorus_Cymbals_125bpm3-4_L10M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="119545211" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-A-Chorus_Bells_125bpm3-4_L6M_P1.wav</ShortName>
+					<Path>Media/119545211.wem</Path>
+					<CachePath>SFX/Stage-A-Chorus_Bells_125bpm3-4_L6M_P1_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="146942744" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-C-Chorus_Pauken_125bpm5-4_L13M_P0.wav</ShortName>
+					<Path>Media/146942744.wem</Path>
+					<CachePath>SFX/Stage-C-Chorus_Pauken_125bpm5-4_L13M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="162058052" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-B-Chorus_Cymbals_125bpm5-4_L10M_P0.wav</ShortName>
+					<Path>Media/162058052.wem</Path>
+					<CachePath>SFX/Stage-B-Chorus_Cymbals_125bpm5-4_L10M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="173519150" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-A-Chorus_Orchestra_125bpm3-4_L6M_P1.wav</ShortName>
+					<Path>Media/173519150.wem</Path>
+					<CachePath>SFX/Stage-A-Chorus_Orchestra_125bpm3-4_L6M_P1_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="193786671" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-C-Chorus_Gitarre_125bpm5-4_L13M_P0.wav</ShortName>
+					<Path>Media/193786671.wem</Path>
+					<CachePath>SFX/Stage-C-Chorus_Gitarre_125bpm5-4_L13M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="201603707" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-A-Bridge_Orchestra_125bpm4-4_L10M_P0.wav</ShortName>
+					<Path>Media/201603707.wem</Path>
+					<CachePath>SFX/Stage-A-Bridge_Orchestra_125bpm4-4_L10M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="238425668" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-A-Bridge_Gitarre2_125bpm4-4_L10M_P0.wav</ShortName>
+					<Path>Media/238425668.wem</Path>
+					<CachePath>SFX/Stage-A-Bridge_Gitarre2_125bpm4-4_L10M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="286218474" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-A-Chorus_Orchestra_125bpm3-4_L10M_P0.wav</ShortName>
+					<Path>Media/286218474.wem</Path>
+					<CachePath>SFX/Stage-A-Chorus_Orchestra_125bpm3-4_L10M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="287428225" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-B-Chorus_Gitarre_125bpm5-4_L10M_P0.wav</ShortName>
+					<Path>Media/287428225.wem</Path>
+					<CachePath>SFX/Stage-B-Chorus_Gitarre_125bpm5-4_L10M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="328658872" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-C-Chorus_PaukenRolls_125bpm5-4_L13M_P0.wav</ShortName>
+					<Path>Media/328658872.wem</Path>
+					<CachePath>SFX/Stage-C-Chorus_PaukenRolls_125bpm5-4_L13M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="336656664" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-B-Chorus_Orchestra_125bpm5-4_L10M_P0.wav</ShortName>
+					<Path>Media/336656664.wem</Path>
+					<CachePath>SFX/Stage-B-Chorus_Orchestra_125bpm5-4_L10M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="360105705" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-A-Strophe_Drums_125bpm3-4_L6M_P1.wav</ShortName>
+					<Path>Media/360105705.wem</Path>
+					<CachePath>SFX/Stage-A-Strophe_Drums_125bpm3-4_L6M_P1_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="363701330" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-A-Chorus_PaukenRolls_125bpm3-4_L6M_P1.wav</ShortName>
+					<Path>Media/363701330.wem</Path>
+					<CachePath>SFX/Stage-A-Chorus_PaukenRolls_125bpm3-4_L6M_P1_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="423817697" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-C-Chorus_Cymbals_125bpm5-4_L13M_P0.wav</ShortName>
+					<Path>Media/423817697.wem</Path>
+					<CachePath>SFX/Stage-C-Chorus_Cymbals_125bpm5-4_L13M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="427259993" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-A-Chorus_Pauken_125bpm3-4_L6M_P1.wav</ShortName>
+					<Path>Media/427259993.wem</Path>
+					<CachePath>SFX/Stage-A-Chorus_Pauken_125bpm3-4_L6M_P1_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="486159630" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-B-Chorus_Drums_125bpm5-4_L10M_P0.wav</ShortName>
+					<Path>Media/486159630.wem</Path>
+					<CachePath>SFX/Stage-B-Chorus_Drums_125bpm5-4_L10M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="530924770" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-B-Strophe_Orchestra_125bpm3-4_L11M_P1.wav</ShortName>
+					<Path>Media/530924770.wem</Path>
+					<CachePath>SFX/Stage-B-Strophe_Orchestra_125bpm3-4_L11M_P1_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="603726870" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-C-Chorus_Orchestra_125bpm5-4_L13M_P0.wav</ShortName>
+					<Path>Media/603726870.wem</Path>
+					<CachePath>SFX/Stage-C-Chorus_Orchestra_125bpm5-4_L13M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="610212862" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-A-Chorus_Drums_125bpm3-4_L10M_P0.wav</ShortName>
+					<Path>Media/610212862.wem</Path>
+					<CachePath>SFX/Stage-A-Chorus_Drums_125bpm3-4_L10M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="627391774" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-A-Chorus_Gitarre_125bpm3-4_L10M_P0.wav</ShortName>
+					<Path>Media/627391774.wem</Path>
+					<CachePath>SFX/Stage-A-Chorus_Gitarre_125bpm3-4_L10M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="703627334" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-A-Chorus_Gitarre_125bpm3-4_L6M_P1.wav</ShortName>
+					<Path>Media/703627334.wem</Path>
+					<CachePath>SFX/Stage-A-Chorus_Gitarre_125bpm3-4_L6M_P1_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="802536315" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-A-Bridge_Gitarre_125bpm4-4_L10M_P0.wav</ShortName>
+					<Path>Media/802536315.wem</Path>
+					<CachePath>SFX/Stage-A-Bridge_Gitarre_125bpm4-4_L10M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="859888067" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-B-Strophe_PaukenRolls_125bpm3-4_L11M_P1.wav</ShortName>
+					<Path>Media/859888067.wem</Path>
+					<CachePath>SFX/Stage-B-Strophe_PaukenRolls_125bpm3-4_L11M_P1_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="889077021" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-B-Strophe_Drums_125bpm3-4_L11M_P1.wav</ShortName>
+					<Path>Media/889077021.wem</Path>
+					<CachePath>SFX/Stage-B-Strophe_Drums_125bpm3-4_L11M_P1_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="906855380" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-A-Bridge_Pauken_125bpm4-4_L10M_P0.wav</ShortName>
+					<Path>Media/906855380.wem</Path>
+					<CachePath>SFX/Stage-A-Bridge_Pauken_125bpm4-4_L10M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="991543477" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-B-Strophe_Cymbals_125bpm3-4_L11M_P1.wav</ShortName>
+					<Path>Media/991543477.wem</Path>
+					<CachePath>SFX/Stage-B-Strophe_Cymbals_125bpm3-4_L11M_P1_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="1013507187" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-A-Chorus_Drums_125bpm3-4_L6M_P1.wav</ShortName>
+					<Path>Media/1013507187.wem</Path>
+					<CachePath>SFX/Stage-A-Chorus_Drums_125bpm3-4_L6M_P1_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="1026727903" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-B-Strophe_Gitarre_125bpm3-4_L11M_P1.wav</ShortName>
+					<Path>Media/1026727903.wem</Path>
+					<CachePath>SFX/Stage-B-Strophe_Gitarre_125bpm3-4_L11M_P1_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="1059559132" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage-B-Strophe_Pauken_125bpm3-4_L11M_P1.wav</ShortName>
+					<Path>Media/1059559132.wem</Path>
+					<CachePath>SFX/Stage-B-Strophe_Pauken_125bpm3-4_L11M_P1_D79FB2B7.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3074061029" Name="Play_Music_Stage_1a" ObjectPath="\Events\Music\Play_Music_Stage_1a" GUID="{62D78041-F9D1-4419-AE06-E663C92CE753}" DurationType="OneShot" DurationMin="135.84" DurationMax="135.84">
+					<MediaRefs>
+						<MediaRef Id="25179338"/>
+						<MediaRef Id="64850139"/>
+						<MediaRef Id="119545211"/>
+						<MediaRef Id="146942744"/>
+						<MediaRef Id="162058052"/>
+						<MediaRef Id="173519150"/>
+						<MediaRef Id="193786671"/>
+						<MediaRef Id="201603707"/>
+						<MediaRef Id="238425668"/>
+						<MediaRef Id="286218474"/>
+						<MediaRef Id="287428225"/>
+						<MediaRef Id="328658872"/>
+						<MediaRef Id="336656664"/>
+						<MediaRef Id="360105705"/>
+						<MediaRef Id="363701330"/>
+						<MediaRef Id="423817697"/>
+						<MediaRef Id="427259993"/>
+						<MediaRef Id="486159630"/>
+						<MediaRef Id="530924770"/>
+						<MediaRef Id="603726870"/>
+						<MediaRef Id="610212862"/>
+						<MediaRef Id="627391774"/>
+						<MediaRef Id="703627334"/>
+						<MediaRef Id="802536315"/>
+						<MediaRef Id="859888067"/>
+						<MediaRef Id="889077021"/>
+						<MediaRef Id="906855380"/>
+						<MediaRef Id="991543477"/>
+						<MediaRef Id="1013507187"/>
+						<MediaRef Id="1026727903"/>
+						<MediaRef Id="1059559132"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{862F0748-3DB9-5DE7-AC4D-55438EF5E09E}</FileHash>
+</SoundBanksInfo>

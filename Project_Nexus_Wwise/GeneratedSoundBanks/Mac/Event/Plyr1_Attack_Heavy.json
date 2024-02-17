@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{99EBE9DA-2D4B-4E25-A1FD-CC1C387CC0C5}",
     "Language": "SFX",
-    "Hash": "{09AB476E-9FF6-9FCA-96A8-EC84326D21BD}",
+    "Hash": "{8D32CB80-40BA-86BD-9F6B-605D57379631}",
     "ObjectPath": "Plyr1_Attack_Heavy",
     "ShortName": "Plyr1_Attack_Heavy",
     "Path": "Event/Plyr1_Attack_Heavy.bnk",
@@ -91,6 +91,6 @@
     ]
    }
   ],
-  "FileHash": "{B7A9E8BE-55A9-E539-32C1-73DD20095894}"
+  "FileHash": "{81AB9550-96AF-BB1D-4179-C95CB763241F}"
  }
 }

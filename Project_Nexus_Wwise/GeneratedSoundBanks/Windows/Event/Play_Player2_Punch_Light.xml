@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="2526534989" Type="Event" GUID="{9E15B848-01A3-4C12-AC8F-935B3047AD4C}" Language="SFX" Hash="{CFD999FC-2818-4692-7AE2-78924C0FFCAB}">
+			<ObjectPath>Play_Player2_Punch_Light</ObjectPath>
+			<ShortName>Play_Player2_Punch_Light</ShortName>
+			<Path>Event/Play_Player2_Punch_Light.bnk</Path>
+			<Media>
+				<File Id="36846148" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_combat_lightattack_04.wav</ShortName>
+					<Path>Media/36846148.wem</Path>
+					<CachePath>SFX/sfx_fighter2_combat_lightattack_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="394313105" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_combat_lightattack_02.wav</ShortName>
+					<Path>Media/394313105.wem</Path>
+					<CachePath>SFX/sfx_fighter2_combat_lightattack_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="613516675" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_combat_lightattack_05.wav</ShortName>
+					<Path>Media/613516675.wem</Path>
+					<CachePath>SFX/sfx_fighter2_combat_lightattack_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="664493311" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_combat_lightattack_01.wav</ShortName>
+					<Path>Media/664493311.wem</Path>
+					<CachePath>SFX/sfx_fighter2_combat_lightattack_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="764079962" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_combat_lightattack_06.wav</ShortName>
+					<Path>Media/764079962.wem</Path>
+					<CachePath>SFX/sfx_fighter2_combat_lightattack_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1064103838" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_combat_lightattack_03.wav</ShortName>
+					<Path>Media/1064103838.wem</Path>
+					<CachePath>SFX/sfx_fighter2_combat_lightattack_03_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2526534989" Name="Play_Player2_Punch_Light" ObjectPath="\Events\Player2\Player2Combat\Play_Player2_Punch_Light" GUID="{9E15B848-01A3-4C12-AC8F-935B3047AD4C}" DurationType="OneShot" DurationMin="0.26745078" DurationMax="0.4436073">
+					<MediaRefs>
+						<MediaRef Id="36846148"/>
+						<MediaRef Id="394313105"/>
+						<MediaRef Id="613516675"/>
+						<MediaRef Id="664493311"/>
+						<MediaRef Id="764079962"/>
+						<MediaRef Id="1064103838"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{981B2DF5-FE75-0058-8024-ED352EB46D16}</FileHash>
+</SoundBanksInfo>

@@ -1,0 +1,108 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "168095654",
+    "Type": "Event",
+    "GUID": "{6A53B62E-A897-495E-94B6-9D497FF0D9E3}",
+    "Language": "SFX",
+    "Hash": "{D956E3F6-C747-5540-09FE-B45E0CBBBA6B}",
+    "ObjectPath": "Play_Player2_Grab",
+    "ShortName": "Play_Player2_Grab",
+    "Path": "Event/Play_Player2_Grab.bnk",
+    "Media": [
+     {
+      "Id": "134630083",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_grab_02.wav",
+      "Path": "Media/134630083.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_grab_02_77F0026E.wem"
+     },
+     {
+      "Id": "617462176",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_grab_06.wav",
+      "Path": "Media/617462176.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_grab_06_A9089ED8.wem"
+     },
+     {
+      "Id": "756468279",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_grab_03.wav",
+      "Path": "Media/756468279.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_grab_03_732C0E4F.wem"
+     },
+     {
+      "Id": "809176333",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_grab_04.wav",
+      "Path": "Media/809176333.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_grab_04_9A71A74C.wem"
+     },
+     {
+      "Id": "861252882",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_grab_05.wav",
+      "Path": "Media/861252882.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_grab_05_3DB8813C.wem"
+     },
+     {
+      "Id": "867059040",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_grab_01.wav",
+      "Path": "Media/867059040.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_grab_01_4AE7ACF3.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "168095654",
+      "Name": "Play_Player2_Grab",
+      "ObjectPath": "\\Events\\Player2\\Player2Combat\\Play_Player2_Grab",
+      "GUID": "{6A53B62E-A897-495E-94B6-9D497FF0D9E3}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.23766193",
+      "DurationMax": "0.34754455",
+      "MediaRefs": [
+       {
+        "Id": "134630083"
+       },
+       {
+        "Id": "617462176"
+       },
+       {
+        "Id": "756468279"
+       },
+       {
+        "Id": "809176333"
+       },
+       {
+        "Id": "861252882"
+       },
+       {
+        "Id": "867059040"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{882047D8-9B7C-3109-BA61-B505F8DCEAF1}"
+ }
+}

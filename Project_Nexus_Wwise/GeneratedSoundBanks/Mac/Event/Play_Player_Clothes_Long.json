@@ -1,0 +1,156 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "1700596737",
+    "Type": "Event",
+    "GUID": "{05825B27-50D8-430E-9EFC-D8AD4D0DE1FE}",
+    "Language": "SFX",
+    "Hash": "{FE6CDE69-AB2F-3786-67AB-5176A3FC3CA4}",
+    "ObjectPath": "Play_Player_Clothes_Long",
+    "ShortName": "Play_Player_Clothes_Long",
+    "Path": "Event/Play_Player_Clothes_Long.bnk",
+    "Media": [
+     {
+      "Id": "46131675",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_long_06.wav",
+      "Path": "Media/46131675.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_long_06_10C4C929.wem"
+     },
+     {
+      "Id": "81485425",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_long_05.wav",
+      "Path": "Media/81485425.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_long_05_10C4C929.wem"
+     },
+     {
+      "Id": "135453367",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_long_04.wav",
+      "Path": "Media/135453367.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_long_04_10C4C929.wem"
+     },
+     {
+      "Id": "160447407",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_long_07.wav",
+      "Path": "Media/160447407.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_long_07_10C4C929.wem"
+     },
+     {
+      "Id": "322350762",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_long_02.wav",
+      "Path": "Media/322350762.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_long_02_10C4C929.wem"
+     },
+     {
+      "Id": "424180965",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_long_09.wav",
+      "Path": "Media/424180965.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_long_09_10C4C929.wem"
+     },
+     {
+      "Id": "507619548",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_long_08.wav",
+      "Path": "Media/507619548.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_long_08_10C4C929.wem"
+     },
+     {
+      "Id": "662112762",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_long_01.wav",
+      "Path": "Media/662112762.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_long_01_10C4C929.wem"
+     },
+     {
+      "Id": "867187785",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_long_10.wav",
+      "Path": "Media/867187785.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_long_10_10C4C929.wem"
+     },
+     {
+      "Id": "983336185",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_long_03.wav",
+      "Path": "Media/983336185.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_long_03_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1700596737",
+      "Name": "Play_Player_Clothes_Long",
+      "ObjectPath": "\\Events\\Player\\PlayerLocomotion\\Play_Player_Clothes_Long",
+      "GUID": "{05825B27-50D8-430E-9EFC-D8AD4D0DE1FE}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.6773952",
+      "DurationMax": "1.1386381",
+      "MediaRefs": [
+       {
+        "Id": "46131675"
+       },
+       {
+        "Id": "81485425"
+       },
+       {
+        "Id": "135453367"
+       },
+       {
+        "Id": "160447407"
+       },
+       {
+        "Id": "322350762"
+       },
+       {
+        "Id": "424180965"
+       },
+       {
+        "Id": "507619548"
+       },
+       {
+        "Id": "662112762"
+       },
+       {
+        "Id": "867187785"
+       },
+       {
+        "Id": "983336185"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{25A08F18-6470-BEF8-94FA-679A8E36B0B1}"
+ }
+}

@@ -8,7 +8,7 @@
 						<Action Name="" ID="{F0E74E57-6BEC-44AB-9B05-499D1A756BFD}" ShortID="423246386">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Player_Punches_Heavy" ID="{CFC19FA4-F07C-4971-8B6C-B0007B99E1B2}" WorkUnitID="{E397D207-C94B-410A-9F84-64FF39F595DA}"/>
+									<ObjectRef Name="Player1_Punches_Heavy" ID="{CFC19FA4-F07C-4971-8B6C-B0007B99E1B2}" WorkUnitID="{7C43A499-F954-4315-B89C-49E000EF9DAD}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -19,29 +19,18 @@
 						<Action Name="" ID="{BB63C89D-AFF6-4C7F-84DC-DBC9A3B8F7FD}" ShortID="436021884">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Player_Punches_Light" ID="{551B8C8E-B18F-4218-9437-8426C7EB66FF}" WorkUnitID="{E397D207-C94B-410A-9F84-64FF39F595DA}"/>
+									<ObjectRef Name="Player1_Punches_Light" ID="{551B8C8E-B18F-4218-9437-8426C7EB66FF}" WorkUnitID="{7C43A499-F954-4315-B89C-49E000EF9DAD}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Player_Block_Light" ID="{D23E66E6-43DA-4114-901C-C8A2B0828697}">
+				<Event Name="Play_Player_Blockhit" ID="{D23E66E6-43DA-4114-901C-C8A2B0828697}">
 					<ChildrenList>
 						<Action Name="" ID="{D49A4D40-80AD-43D0-9E4E-084419EDFF67}" ShortID="278254290">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Player_Blocking_Light" ID="{29C098F4-3835-452F-8250-7C27631C1A7D}" WorkUnitID="{7DC680C5-B3A1-4F4E-83CB-91AD1ED388B7}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Player_Block_Heavy" ID="{683A1ECC-1199-45F8-A261-2323D2B70EFD}">
-					<ChildrenList>
-						<Action Name="" ID="{BCA5A317-ABFF-4AFD-8A55-5050539DD344}" ShortID="463193937">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Player_Blocking_Heavy" ID="{9F6DDB20-C369-461C-8A0C-89FDB4DAE564}" WorkUnitID="{7DC680C5-B3A1-4F4E-83CB-91AD1ED388B7}"/>
+									<ObjectRef Name="Player1_Blockhit" ID="{29C098F4-3835-452F-8250-7C27631C1A7D}" WorkUnitID="{7C43A499-F954-4315-B89C-49E000EF9DAD}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -52,7 +41,18 @@
 						<Action Name="" ID="{9C9D3F83-277E-43A7-A42C-AB40148D057C}" ShortID="351011188">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Player_Punch_Woosh" ID="{C8EEA9B5-4E16-43B6-9473-CA146C917093}" WorkUnitID="{1F3E91F6-9A93-414C-87C5-172E8F02873A}"/>
+									<ObjectRef Name="Player1_PunchWoosh" ID="{C8EEA9B5-4E16-43B6-9473-CA146C917093}" WorkUnitID="{7C43A499-F954-4315-B89C-49E000EF9DAD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Player_Grab" ID="{D206E6DA-2A4C-4D0B-8966-B05C93D177C2}">
+					<ChildrenList>
+						<Action Name="" ID="{8C864227-F23D-4D3A-9AC3-5F933FB6027E}" ShortID="812617400">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player1_Grab" ID="{1418C16E-6253-4BB8-AFE2-24CBF83CE743}" WorkUnitID="{7C43A499-F954-4315-B89C-49E000EF9DAD}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

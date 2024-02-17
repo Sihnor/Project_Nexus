@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="1976886199" Type="Event" GUID="{8B058E88-CC41-4F15-9236-96A38B65C4D8}" Language="SFX" Hash="{536168BB-5711-D612-343D-454465EE25F7}">
+			<ObjectPath>Play_Player_Clothes_Short</ObjectPath>
+			<ShortName>Play_Player_Clothes_Short</ShortName>
+			<Path>Event/Play_Player_Clothes_Short.bnk</Path>
+			<Media>
+				<File Id="19366300" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_clothes_short_09.wav</ShortName>
+					<Path>Media/19366300.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_clothes_short_09_10C4C929.wem</CachePath>
+				</File>
+				<File Id="128777668" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_clothes_short_06.wav</ShortName>
+					<Path>Media/128777668.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_clothes_short_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="299183579" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_clothes_short_04.wav</ShortName>
+					<Path>Media/299183579.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_clothes_short_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="441480517" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_clothes_short_01.wav</ShortName>
+					<Path>Media/441480517.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_clothes_short_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="639090061" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_clothes_short_07.wav</ShortName>
+					<Path>Media/639090061.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_clothes_short_07_10C4C929.wem</CachePath>
+				</File>
+				<File Id="789184646" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_clothes_short_02.wav</ShortName>
+					<Path>Media/789184646.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_clothes_short_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="806035094" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_clothes_short_03.wav</ShortName>
+					<Path>Media/806035094.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_clothes_short_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="841626508" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_clothes_short_08.wav</ShortName>
+					<Path>Media/841626508.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_clothes_short_08_10C4C929.wem</CachePath>
+				</File>
+				<File Id="906023645" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_clothes_short_05.wav</ShortName>
+					<Path>Media/906023645.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_clothes_short_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="926468782" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_clothes_short_10.wav</ShortName>
+					<Path>Media/926468782.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_clothes_short_10_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1976886199" Name="Play_Player_Clothes_Short" ObjectPath="\Events\Player\PlayerLocomotion\Play_Player_Clothes_Short" GUID="{8B058E88-CC41-4F15-9236-96A38B65C4D8}" DurationType="OneShot" DurationMin="0.30193684" DurationMax="0.4715987">
+					<MediaRefs>
+						<MediaRef Id="19366300"/>
+						<MediaRef Id="128777668"/>
+						<MediaRef Id="299183579"/>
+						<MediaRef Id="441480517"/>
+						<MediaRef Id="639090061"/>
+						<MediaRef Id="789184646"/>
+						<MediaRef Id="806035094"/>
+						<MediaRef Id="841626508"/>
+						<MediaRef Id="906023645"/>
+						<MediaRef Id="926468782"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{76A48560-8875-4AD8-B8CD-9ED42FA4CC5D}</FileHash>
+</SoundBanksInfo>

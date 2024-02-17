@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{756383C1-840D-41DF-B7D5-98E46E2560D4}",
     "Language": "SFX",
-    "Hash": "{96692B0F-AB13-BB5C-50EC-822247644B69}",
+    "Hash": "{65E1C8FE-787D-B617-B0A0-2C2704171F51}",
     "ObjectPath": "Play_Player_Crouch_Out",
     "ShortName": "Play_Player_Crouch_Out",
     "Path": "Event/Play_Player_Crouch_Out.bnk",
@@ -77,8 +77,8 @@
       "ObjectPath": "\\Events\\Player\\PlayerLocomotion\\Play_Player_Crouch_Out",
       "GUID": "{756383C1-840D-41DF-B7D5-98E46E2560D4}",
       "DurationType": "OneShot",
-      "DurationMin": "0.3327285",
-      "DurationMax": "0.56416494",
+      "DurationMin": "0.36368236",
+      "DurationMax": "0.5236551",
       "MediaRefs": [
        {
         "Id": "242429337"
@@ -103,6 +103,6 @@
     ]
    }
   ],
-  "FileHash": "{02F61BD9-C36A-A5AD-1288-899666B9438A}"
+  "FileHash": "{C438F80A-9982-7071-0844-CD64FF314BB8}"
  }
 }

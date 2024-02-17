@@ -1,0 +1,108 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "2526534989",
+    "Type": "Event",
+    "GUID": "{9E15B848-01A3-4C12-AC8F-935B3047AD4C}",
+    "Language": "SFX",
+    "Hash": "{CFD999FC-2818-4692-7AE2-78924C0FFCAB}",
+    "ObjectPath": "Play_Player2_Punch_Light",
+    "ShortName": "Play_Player2_Punch_Light",
+    "Path": "Event/Play_Player2_Punch_Light.bnk",
+    "Media": [
+     {
+      "Id": "36846148",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_lightattack_04.wav",
+      "Path": "Media/36846148.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_lightattack_04_10C4C929.wem"
+     },
+     {
+      "Id": "394313105",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_lightattack_02.wav",
+      "Path": "Media/394313105.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_lightattack_02_10C4C929.wem"
+     },
+     {
+      "Id": "613516675",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_lightattack_05.wav",
+      "Path": "Media/613516675.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_lightattack_05_10C4C929.wem"
+     },
+     {
+      "Id": "664493311",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_lightattack_01.wav",
+      "Path": "Media/664493311.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_lightattack_01_10C4C929.wem"
+     },
+     {
+      "Id": "764079962",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_lightattack_06.wav",
+      "Path": "Media/764079962.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_lightattack_06_10C4C929.wem"
+     },
+     {
+      "Id": "1064103838",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_lightattack_03.wav",
+      "Path": "Media/1064103838.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_lightattack_03_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2526534989",
+      "Name": "Play_Player2_Punch_Light",
+      "ObjectPath": "\\Events\\Player2\\Player2Combat\\Play_Player2_Punch_Light",
+      "GUID": "{9E15B848-01A3-4C12-AC8F-935B3047AD4C}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.26745078",
+      "DurationMax": "0.4436073",
+      "MediaRefs": [
+       {
+        "Id": "36846148"
+       },
+       {
+        "Id": "394313105"
+       },
+       {
+        "Id": "613516675"
+       },
+       {
+        "Id": "664493311"
+       },
+       {
+        "Id": "764079962"
+       },
+       {
+        "Id": "1064103838"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{CB7CF4C1-6EAE-4A8D-2E91-C50E3CCCF214}"
+ }
+}

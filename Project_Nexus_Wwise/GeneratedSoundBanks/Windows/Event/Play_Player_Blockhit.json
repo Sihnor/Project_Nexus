@@ -1,0 +1,108 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "3883776002",
+    "Type": "Event",
+    "GUID": "{D23E66E6-43DA-4114-901C-C8A2B0828697}",
+    "Language": "SFX",
+    "Hash": "{26E2F1FD-0B71-D15F-CADF-A1E3CA0AEF0E}",
+    "ObjectPath": "Play_Player_Blockhit",
+    "ShortName": "Play_Player_Blockhit",
+    "Path": "Event/Play_Player_Blockhit.bnk",
+    "Media": [
+     {
+      "Id": "157762813",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_blockhit_03.wav",
+      "Path": "Media/157762813.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_blockhit_03_D134634E.wem"
+     },
+     {
+      "Id": "403585098",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_blockhit_06.wav",
+      "Path": "Media/403585098.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_blockhit_06_6F00982E.wem"
+     },
+     {
+      "Id": "455990501",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_blockhit_02.wav",
+      "Path": "Media/455990501.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_blockhit_02_10C4C929.wem"
+     },
+     {
+      "Id": "890575564",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_blockhit_05.wav",
+      "Path": "Media/890575564.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_blockhit_05_E7CBD34A.wem"
+     },
+     {
+      "Id": "929725287",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_blockhit_01.wav",
+      "Path": "Media/929725287.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_blockhit_01_10C4C929.wem"
+     },
+     {
+      "Id": "1005950471",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_blockhit_04.wav",
+      "Path": "Media/1005950471.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_blockhit_04_39B7015B.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3883776002",
+      "Name": "Play_Player_Blockhit",
+      "ObjectPath": "\\Events\\Player\\PlayerCombat\\Play_Player_Blockhit",
+      "GUID": "{D23E66E6-43DA-4114-901C-C8A2B0828697}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.17583014",
+      "DurationMax": "0.32133114",
+      "MediaRefs": [
+       {
+        "Id": "157762813"
+       },
+       {
+        "Id": "403585098"
+       },
+       {
+        "Id": "455990501"
+       },
+       {
+        "Id": "890575564"
+       },
+       {
+        "Id": "929725287"
+       },
+       {
+        "Id": "1005950471"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{6A14F871-CFF7-9F09-5418-D70CFABE7482}"
+ }
+}

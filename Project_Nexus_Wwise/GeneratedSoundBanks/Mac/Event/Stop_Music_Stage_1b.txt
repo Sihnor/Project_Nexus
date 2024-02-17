@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1283053048	Stop_Music_Stage_1b			\Music\Stop_Music_Stage_1b	
+
