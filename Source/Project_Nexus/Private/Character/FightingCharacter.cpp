@@ -418,7 +418,7 @@ void AFightingCharacter::DoAddInputToInputBuffer(const FInputActionValue& Value)
 }
 
 void AFightingCharacter::AttackThrow(const FInputActionValue& Value){
-	UE_LOG(LogTemp, Error, TEXT("Throw Attack"));
+	
 	if (GetController() && IsCombatReady) {
 		WasThrowUsed = true;
 
@@ -479,7 +479,6 @@ void AFightingCharacter::GetStunned(float HitStunTime, float BlockStunTime, floa
 		if(StunTime > 0.f){
 			if(HasLandedThrow){
 				CharacterState = ECharacterState::FC_ThrowStunned;
-				UE_LOG(LogTemp, Error, TEXT("Throw Stun"));
 			}else if(StunTime > 0.5f){
 				CharacterState = ECharacterState::FC_HeavyStunned;
 			}else{
@@ -507,7 +506,6 @@ void AFightingCharacter::GetStunned(float HitStunTime, float BlockStunTime, floa
 		if(StunTime > 0.f){
 			if(HasLandedThrow){
 				CharacterState = ECharacterState::FC_ThrowStunned;
-				//UE_LOG(LogTemp, Error, TEXT("Throw Stun"));
 			} if(CharacterState != ECharacterState::FC_CrouchBlocking){
 				CharacterState = ECharacterState::FC_BlockStunned;
 			}else{
@@ -845,7 +843,7 @@ void AFightingCharacter::DetermineCommandToUse(){
 }
 
 void AFightingCharacter::StartCommand(FString CommandName){
-	if(CharacterState != ECharacterState::FC_Blocking && CharacterState != ECharacterState::FC_KockedDown && CharacterState != ECharacterState::FC_Recovery){
+	if(CharacterState != ECharacterState::FC_Blocking && CharacterState != ECharacterState::FC_KockedDown && CharacterState != ECharacterState::FC_Recovery && !OtherCharacter->HasLandedThrow && !HasLandedThrow){
 		for(int CurrentCommand = 0; CurrentCommand < PlayerCommand.Num(); ++CurrentCommand){
 
 			if(CommandName.Compare(PlayerCommand[CurrentCommand].CommandName) == 0){
