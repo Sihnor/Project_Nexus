@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{3DE5C542-49C6-4EF5-B5BE-60CB49F75D00}",
     "Language": "SFX",
-    "Hash": "{D1DD1B4A-DDB5-CF53-4266-F86B6937108B}",
+    "Hash": "{C05E9F92-5205-A9D6-1196-67B8A6E05824}",
     "ObjectPath": "Com_Char_Wins_Jack",
     "ShortName": "Com_Char_Wins_Jack",
     "Path": "Event/Com_Char_Wins_Jack.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{858FB430-B920-0865-3412-E0F08A956CBD}"
+  "FileHash": "{6EEA4305-26A6-DBF7-2037-DD1EB3B50B7E}"
  }
 }

@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{BD4FEB80-88A8-45D8-9FBF-7EF06D02BC15}",
     "Language": "SFX",
-    "Hash": "{FFE75112-481C-1069-545E-12A6E81F24B4}",
+    "Hash": "{382F2CCD-4014-3FD2-2B6A-66E5502FEBA9}",
     "ObjectPath": "Play_Player_Landing",
     "ShortName": "Play_Player_Landing",
     "Path": "Event/Play_Player_Landing.bnk",
@@ -103,6 +103,6 @@
     ]
    }
   ],
-  "FileHash": "{23946AF1-C1B6-E5CF-CF16-EAA66990FF38}"
+  "FileHash": "{F05D59EF-50D3-1307-10F2-E16AB7E71BF9}"
  }
 }

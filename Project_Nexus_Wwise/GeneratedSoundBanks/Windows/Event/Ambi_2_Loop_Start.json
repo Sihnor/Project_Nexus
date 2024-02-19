@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{6A3B97C4-67AE-45C1-A149-EBF2C7E68E30}",
     "Language": "SFX",
-    "Hash": "{0D9DED30-4215-5BE1-89DA-CBFB99092273}",
+    "Hash": "{C79A04EA-0ECC-3F5A-11C4-33C03C58D5AC}",
     "ObjectPath": "Ambi_2_Loop_Start",
     "ShortName": "Ambi_2_Loop_Start",
     "Path": "Event/Ambi_2_Loop_Start.bnk",
@@ -65,6 +65,6 @@
     ]
    }
   ],
-  "FileHash": "{29768D7E-C5F5-D67A-4402-CE88C0A5E972}"
+  "FileHash": "{B642F614-EA58-DB92-D203-2212B82268EE}"
  }
 }

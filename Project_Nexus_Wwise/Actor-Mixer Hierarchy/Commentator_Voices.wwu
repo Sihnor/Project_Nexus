@@ -8,6 +8,13 @@
 			</PropertyList>
 			<ChildrenList>
 				<SwitchContainer Name="Com_Round_Start" ID="{43E2B96F-94BF-41D2-89CE-D3C0B56C6BE4}" ShortID="341782798">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -55,12 +62,12 @@
 								</Sound>
 								<RandomSequenceContainer Name="Com_Round_Fight" ID="{F1513601-AF65-45E3-A0F2-84D1C7C922CF}" ShortID="406932063">
 									<PropertyList>
-										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-										<Property Name="Volume" Type="Real64">
+										<Property Name="InitialDelay" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>3.5</Value>
 											</ValueList>
 										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -72,13 +79,6 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="vo_commentator_fight_01" ID="{DACB0249-EFFA-4E59-B2F1-F3BC1452735F}" ShortID="64897487">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-2</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -101,13 +101,6 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="vo_commentator_fight_02" ID="{C451C0A7-C9C4-4F59-869C-E27DC4C19BC8}" ShortID="990955524">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>1</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -130,13 +123,6 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="vo_commentator_fight_03" ID="{F3901EBE-7ECB-40D9-843F-1E22EFBC98C8}" ShortID="350935220">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>2</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -159,13 +145,6 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="vo_commentator_fight_04" ID="{9BC86ED1-C69A-4394-9F31-A19CD1D9ACCC}" ShortID="325728590">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>3</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -188,13 +167,6 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="vo_commentator_fight_05" ID="{5262C384-6FCF-4064-AC98-54F35C77C6A1}" ShortID="503713887">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-1</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -262,12 +234,12 @@
 								</Sound>
 								<RandomSequenceContainer Name="Com_Round_Fight" ID="{F9BCEBAB-3E73-4408-AE1A-35750E34B095}" ShortID="178940050">
 									<PropertyList>
-										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-										<Property Name="Volume" Type="Real64">
+										<Property Name="InitialDelay" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>3.5</Value>
 											</ValueList>
 										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -279,13 +251,6 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="vo_commentator_fight_01" ID="{6B60CB60-D8CB-4E70-95FF-8D93767D51F2}" ShortID="708845918">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-2</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -308,13 +273,6 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="vo_commentator_fight_02" ID="{5E1CE72E-87AD-4B06-85AA-71B6A4315984}" ShortID="15094610">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>1</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -337,13 +295,6 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="vo_commentator_fight_03" ID="{8B4BFF94-6CD0-4862-94D9-1931D76BCDF2}" ShortID="763746644">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>2</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -366,13 +317,6 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="vo_commentator_fight_04" ID="{6FF3198E-8DB6-435B-9DA7-8A16B9173DE7}" ShortID="31842959">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>3</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -395,13 +339,6 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="vo_commentator_fight_05" ID="{3D53AE0F-66EE-4C15-81C1-CA58D7BD3BC6}" ShortID="40648564">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-1</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -469,12 +406,12 @@
 								</Sound>
 								<RandomSequenceContainer Name="Com_Round_Fight" ID="{58CE2FBE-61E9-4C8A-8C1F-A954B3340B2D}" ShortID="839299115">
 									<PropertyList>
-										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-										<Property Name="Volume" Type="Real64">
+										<Property Name="InitialDelay" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>3.5</Value>
 											</ValueList>
 										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -486,13 +423,6 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="vo_commentator_fight_01" ID="{E82BACAE-A689-4333-95A9-4AF3A092DDAB}" ShortID="919074601">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-2</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -515,13 +445,6 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="vo_commentator_fight_02" ID="{A8D4772E-ECB0-424D-A967-06744993D1F8}" ShortID="1033819832">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>1</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -544,13 +467,6 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="vo_commentator_fight_03" ID="{C9E0851D-4751-4F95-B094-B2E07240C9EA}" ShortID="488658165">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>2</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -573,13 +489,6 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="vo_commentator_fight_04" ID="{C6B8D611-CEB0-47BE-AFC5-EF0FC81F8BD1}" ShortID="894873279">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>3</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -602,13 +511,6 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="vo_commentator_fight_05" ID="{D2C665D4-792E-4216-91DA-7139C7F32B0E}" ShortID="840691289">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-1</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -676,12 +578,12 @@
 								</Sound>
 								<RandomSequenceContainer Name="Com_Round_Fight" ID="{A54A6087-8D5F-402D-9119-BF643C50C6D0}" ShortID="492847607">
 									<PropertyList>
-										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-										<Property Name="Volume" Type="Real64">
+										<Property Name="InitialDelay" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>3.5</Value>
 											</ValueList>
 										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -693,13 +595,6 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="vo_commentator_fight_01" ID="{93659D6F-A4CB-4EDD-A6C2-BB16083F9BF2}" ShortID="958033341">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-2</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -722,13 +617,6 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="vo_commentator_fight_02" ID="{16DC54FC-B224-4FCF-A13B-10DB77CCC7C8}" ShortID="49113140">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>1</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -751,13 +639,6 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="vo_commentator_fight_03" ID="{53FC49CF-BE65-4C21-93F0-03D9A7118584}" ShortID="1033776676">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>2</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -780,13 +661,6 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="vo_commentator_fight_04" ID="{D78C2C68-1E89-45AE-BD15-AFFE91D88FE7}" ShortID="96509036">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>3</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -809,13 +683,6 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="vo_commentator_fight_05" ID="{7E5B1A2A-C9D4-4F5C-82DE-477CA81CF150}" ShortID="794799708">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-1</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -868,7 +735,7 @@
 						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-3</Value>
+								<Value>-5</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -955,13 +822,6 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="vo_commentator_fight_01" ID="{2406AE48-13C4-434D-840A-F5CE275AA034}" ShortID="479606752">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-2</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -984,13 +844,6 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="vo_commentator_fight_02" ID="{58A1DC6F-710A-4C64-8132-DE0172F42DA4}" ShortID="365614435">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>1</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -1013,13 +866,6 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="vo_commentator_fight_03" ID="{B6A87FD2-85A2-494E-842F-37CEDAC6ADB5}" ShortID="804798311">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>2</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -1042,13 +888,6 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="vo_commentator_fight_04" ID="{AF6FD9C1-0053-424B-817D-E6D4E02039A7}" ShortID="857302719">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>3</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -1071,13 +910,6 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="vo_commentator_fight_05" ID="{DE2B8B15-3BA3-40E5-AB9F-2D8D02D9FED2}" ShortID="836241854">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-1</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -1102,6 +934,13 @@
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<Sound Name="vo_commentator_choose_fighter_01" ID="{35DE1518-14A1-4854-8474-E057C97ED999}" ShortID="351325131">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -1126,6 +965,11 @@
 				<Sound Name="vo_commentator_chara_select_lauren_01" ID="{BD954070-DA3B-4120-8E5A-764B18B04D67}" ShortID="692447461">
 					<PropertyList>
 						<Property Name="IsVoice" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -1149,6 +993,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="vo_commentator_chara_jack_wins_01" ID="{C43C668C-1723-450B-BD44-70E5F6F6DF8F}" ShortID="600496964">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -1176,6 +1027,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="vo_commentator_chara_lauren_wins_01" ID="{CD364034-C72F-4411-BC6D-618BE1FF5A0E}" ShortID="679000020">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -1200,6 +1058,11 @@
 				<Sound Name="vo_commentator_chara_select_jack_01" ID="{60A88425-3286-40AD-AD30-B4CFADCE77BA}" ShortID="1072214808">
 					<PropertyList>
 						<Property Name="IsVoice" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -1223,6 +1086,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="vo_commentator_welcome_01" ID="{03873243-4933-4930-A2C5-A842A41111EB}" ShortID="86004928">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>

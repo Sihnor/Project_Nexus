@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{BC242ACD-BEB1-4A14-8C77-60F841C91DEF}",
     "Language": "SFX",
-    "Hash": "{1C870579-6338-8208-BFF2-E0057CC2C957}",
+    "Hash": "{A73E26D9-BAA3-904D-7C68-D6E3B35374FB}",
     "ObjectPath": "Play_Player2_Punsh_Woosh",
     "ShortName": "Play_Player2_Punsh_Woosh",
     "Path": "Event/Play_Player2_Punsh_Woosh.bnk",
@@ -103,6 +103,6 @@
     ]
    }
   ],
-  "FileHash": "{30673228-9520-6CF7-D041-FF666655EECA}"
+  "FileHash": "{711F373E-62FE-91AF-5E38-CB42310B2A92}"
  }
 }

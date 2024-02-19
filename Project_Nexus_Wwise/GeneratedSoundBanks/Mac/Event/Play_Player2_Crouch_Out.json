@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{7163BE23-43B2-4B38-82D6-14BFD3255622}",
     "Language": "SFX",
-    "Hash": "{4DB0708C-3309-8618-1839-89C125FF0312}",
+    "Hash": "{3D42C64A-64BA-ACEA-52C9-1637D64FF705}",
     "ObjectPath": "Play_Player2_Crouch_Out",
     "ShortName": "Play_Player2_Crouch_Out",
     "Path": "Event/Play_Player2_Crouch_Out.bnk",
@@ -103,6 +103,6 @@
     ]
    }
   ],
-  "FileHash": "{5E45E053-2C22-4AD3-9537-AE736A61BCF7}"
+  "FileHash": "{04505C51-F449-5265-5EF1-B49A9748B57D}"
  }
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2265500861" Type="Event" GUID="{BC242ACD-BEB1-4A14-8C77-60F841C91DEF}" Language="SFX" Hash="{1C870579-6338-8208-BFF2-E0057CC2C957}">
+		<SoundBank Id="2265500861" Type="Event" GUID="{BC242ACD-BEB1-4A14-8C77-60F841C91DEF}" Language="SFX" Hash="{A73E26D9-BAA3-904D-7C68-D6E3B35374FB}">
 			<ObjectPath>Play_Player2_Punsh_Woosh</ObjectPath>
 			<ShortName>Play_Player2_Punsh_Woosh</ShortName>
 			<Path>Event/Play_Player2_Punsh_Woosh.bnk</Path>
@@ -51,5 +51,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A99C13CF-0D69-8F9F-42D0-8F9F7514C83E}</FileHash>
+	<FileHash>{E7E6EF47-B1F9-1D24-2116-1CC1E3B2BC39}</FileHash>
 </SoundBanksInfo>

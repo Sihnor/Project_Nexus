@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="606831743" Type="Event" GUID="{2C86464F-2577-4636-99EE-045C1778A0B0}" Language="SFX" Hash="{BE252DE7-71BB-054A-9A03-ECB98C9BE963}">
+		<SoundBank Id="606831743" Type="Event" GUID="{2C86464F-2577-4636-99EE-045C1778A0B0}" Language="SFX" Hash="{E7BD1614-61BE-6624-7CA4-AB242BE32A29}">
 			<ObjectPath>Play_Player_Bodyfall</ObjectPath>
 			<ShortName>Play_Player_Bodyfall</ShortName>
 			<Path>Event/Play_Player_Bodyfall.bnk</Path>
@@ -51,5 +51,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{954DE1A0-E904-B8AB-42FB-D305B820665F}</FileHash>
+	<FileHash>{EEB58241-6F8D-47FB-B8DD-F38579992D05}</FileHash>
 </SoundBanksInfo>

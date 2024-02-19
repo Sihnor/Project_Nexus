@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{E001864B-1F09-432D-9769-CAA8112B432A}",
     "Language": "SFX",
-    "Hash": "{CBC0555D-DBDF-4C77-0344-27F7953927C2}",
+    "Hash": "{EBECED0C-FC4E-1B73-A9AE-A2CF65AADC49}",
     "ObjectPath": "Play_Move_Button",
     "ShortName": "Play_Move_Button",
     "Path": "Event/Play_Move_Button.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{BCCC69A7-E6CC-B7EC-949A-F9EECB1FE8B5}"
+  "FileHash": "{22153001-41E4-C0FF-A7D4-2D2B97A1425A}"
  }
 }

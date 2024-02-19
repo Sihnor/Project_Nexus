@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="466103037" Type="Event" GUID="{6A3B97C4-67AE-45C1-A149-EBF2C7E68E30}" Language="SFX" Hash="{0D9DED30-4215-5BE1-89DA-CBFB99092273}">
+		<SoundBank Id="466103037" Type="Event" GUID="{6A3B97C4-67AE-45C1-A149-EBF2C7E68E30}" Language="SFX" Hash="{C79A04EA-0ECC-3F5A-11C4-33C03C58D5AC}">
 			<ObjectPath>Ambi_2_Loop_Start</ObjectPath>
 			<ShortName>Ambi_2_Loop_Start</ShortName>
 			<Path>Event/Ambi_2_Loop_Start.bnk</Path>
@@ -33,5 +33,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C9729210-F5FE-390E-D37E-7737E30B8417}</FileHash>
+	<FileHash>{68B5210E-0202-7C98-220B-84202882C96C}</FileHash>
 </SoundBanksInfo>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="858506084" Type="Event" GUID="{BB6429FE-6011-4472-9010-9CAF484600A7}" Language="SFX" Hash="{6EF943FC-61FC-0087-CAB1-461F5D807584}">
+		<SoundBank Id="858506084" Type="Event" GUID="{BB6429FE-6011-4472-9010-9CAF484600A7}" Language="SFX" Hash="{866C9205-26B3-7D16-5C76-267264079839}">
 			<ObjectPath>Play_Settings_Select</ObjectPath>
 			<ShortName>Play_Settings_Select</ShortName>
 			<Path>Event/Play_Settings_Select.bnk</Path>
@@ -21,5 +21,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5D098078-16AE-0A03-E0E1-7A0C453B96E0}</FileHash>
+	<FileHash>{3E0B8501-54C1-FA7F-9500-48EAF90D6941}</FileHash>
 </SoundBanksInfo>

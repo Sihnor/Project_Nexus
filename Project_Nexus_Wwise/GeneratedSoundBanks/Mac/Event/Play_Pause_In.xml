@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="3761336386" Type="Event" GUID="{40E09523-C912-41B2-8E87-1A5554483779}" Language="SFX" Hash="{A10C2A72-71B0-0219-2644-986B46007254}">
+		<SoundBank Id="3761336386" Type="Event" GUID="{40E09523-C912-41B2-8E87-1A5554483779}" Language="SFX" Hash="{BBE1049D-6AD4-BD44-6017-6699391AF95F}">
 			<ObjectPath>Play_Pause_In</ObjectPath>
 			<ShortName>Play_Pause_In</ShortName>
 			<Path>Event/Play_Pause_In.bnk</Path>
@@ -21,5 +21,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7AEF2FC2-D94F-670C-0E65-E76E104CDDE6}</FileHash>
+	<FileHash>{FD4ED25B-FBE8-719F-956A-1816EEE8D9CC}</FileHash>
 </SoundBanksInfo>

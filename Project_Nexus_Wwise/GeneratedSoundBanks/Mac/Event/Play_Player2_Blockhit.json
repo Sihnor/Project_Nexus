@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{8C37F805-1EF3-48E8-9DA4-B8E4E9095CA4}",
     "Language": "SFX",
-    "Hash": "{F89F7707-43BA-4E84-DF7B-87C9272FA16F}",
+    "Hash": "{899517D1-6705-3AD3-F26F-B7BD8A97461D}",
     "ObjectPath": "Play_Player2_Blockhit",
     "ShortName": "Play_Player2_Blockhit",
     "Path": "Event/Play_Player2_Blockhit.bnk",
@@ -103,6 +103,6 @@
     ]
    }
   ],
-  "FileHash": "{3700F08C-3431-99E7-16F2-18760DBB8E95}"
+  "FileHash": "{69B7D5E2-847B-AC1D-1BE6-63E101C02A07}"
  }
 }

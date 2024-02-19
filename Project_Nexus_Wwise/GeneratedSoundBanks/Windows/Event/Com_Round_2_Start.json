@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{8701634F-24B1-44A7-A660-19C90F0851B0}",
     "Language": "SFX",
-    "Hash": "{B91FAACF-F135-5475-DA32-FFB690E5929D}",
+    "Hash": "{D978CEB0-DC0D-88C9-FEFD-972F6FB873B6}",
     "ObjectPath": "Com_Round_2_Start",
     "ShortName": "Com_Round_2_Start",
     "Path": "Event/Com_Round_2_Start.bnk",
@@ -77,8 +77,8 @@
       "ObjectPath": "\\Events\\Commentator_Voices\\Com_Round_2_Start",
       "GUID": "{8701634F-24B1-44A7-A660-19C90F0851B0}",
       "DurationType": "OneShot",
-      "DurationMin": "2.3125",
-      "DurationMax": "2.625",
+      "DurationMin": "5.8125",
+      "DurationMax": "6.125",
       "MediaRefs": [
        {
         "Id": "115684259"
@@ -103,6 +103,6 @@
     ]
    }
   ],
-  "FileHash": "{58C69730-F219-7700-34E2-9D679F896EE2}"
+  "FileHash": "{F02A8213-7DCA-C2F1-0E23-0DBB6AF0E2ED}"
  }
 }

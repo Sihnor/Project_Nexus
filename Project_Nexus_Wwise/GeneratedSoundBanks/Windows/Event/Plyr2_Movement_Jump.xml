@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1159457221" Type="Event" GUID="{93953BBA-0842-4F85-96F8-FADB33FA970A}" Language="SFX" Hash="{5607B76D-F8FD-DC25-E89C-855178DD7BD3}">
+		<SoundBank Id="1159457221" Type="Event" GUID="{93953BBA-0842-4F85-96F8-FADB33FA970A}" Language="SFX" Hash="{1685C68F-C0F2-4ABE-357C-BFDBF17AAA62}">
 			<ObjectPath>Plyr2_Movement_Jump</ObjectPath>
 			<ShortName>Plyr2_Movement_Jump</ShortName>
 			<Path>Event/Plyr2_Movement_Jump.bnk</Path>
@@ -45,5 +45,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8CE8D7DF-14F4-499E-91AA-825B5CFCD2A7}</FileHash>
+	<FileHash>{0C1AFFE7-B626-7E4F-C3E0-9869ACE0A20E}</FileHash>
 </SoundBanksInfo>

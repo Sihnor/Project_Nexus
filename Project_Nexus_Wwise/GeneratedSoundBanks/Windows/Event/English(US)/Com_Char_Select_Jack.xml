@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="3729567056" Type="Event" GUID="{C57354E5-1D79-43A6-9596-3AAD8A7B58E7}" Language="English(US)" Hash="{C70E34D6-5AA3-00BC-DB4B-6E8084B3A86B}">
+		<SoundBank Id="3729567056" Type="Event" GUID="{C57354E5-1D79-43A6-9596-3AAD8A7B58E7}" Language="English(US)" Hash="{DC311F94-602A-1B82-5034-64C6A059EF38}">
 			<ObjectPath>Com_Char_Select_Jack</ObjectPath>
 			<ShortName>Com_Char_Select_Jack</ShortName>
 			<Path>Event/English(US)/Com_Char_Select_Jack.bnk</Path>
@@ -21,5 +21,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3CEB0FBB-6C98-DBE5-B2A5-2D285A38D870}</FileHash>
+	<FileHash>{7A3D2D66-CCA1-5634-0CFC-EAFB3FE90581}</FileHash>
 </SoundBanksInfo>

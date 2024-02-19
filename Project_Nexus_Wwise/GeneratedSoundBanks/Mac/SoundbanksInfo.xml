@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="98439365" Type="Event" GUID="{27E85706-E807-4F1E-A42D-5B83ED9D03A3}" Language="SFX" Hash="{09C84FDB-37A3-F63A-9849-8C5239768B50}">
+		<SoundBank Id="98439365" Type="Event" GUID="{27E85706-E807-4F1E-A42D-5B83ED9D03A3}" Language="SFX" Hash="{67E36742-4075-1684-8592-91DF71446F0E}">
 			<ObjectPath>Play_Player_Footsteps</ObjectPath>
 			<ShortName>Play_Player_Footsteps</ShortName>
 			<Path>Event/Play_Player_Footsteps.bnk</Path>
@@ -124,7 +124,7 @@
 				<Event Id="106912753" Name="Stop_Music_Menu" ObjectPath="\Events\Music\Stop_Music_Menu" GUID="{AC432697-421D-452D-A0E0-ED705292EDA8}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="166827144" Type="Event" GUID="{853E51E0-E4E7-42E9-AB83-D4CB3ED432C8}" Language="SFX" Hash="{CE99F5C7-41ED-F86D-2BE6-2A1D67A72D5B}">
+		<SoundBank Id="166827144" Type="Event" GUID="{853E51E0-E4E7-42E9-AB83-D4CB3ED432C8}" Language="SFX" Hash="{E722431C-51EE-D640-8B5F-FBEF236E2402}">
 			<ObjectPath>Play_Player2_Punch_Heavy</ObjectPath>
 			<ShortName>Play_Player2_Punch_Heavy</ShortName>
 			<Path>Event/Play_Player2_Punch_Heavy.bnk</Path>
@@ -173,7 +173,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="168095654" Type="Event" GUID="{6A53B62E-A897-495E-94B6-9D497FF0D9E3}" Language="SFX" Hash="{D956E3F6-C747-5540-09FE-B45E0CBBBA6B}">
+		<SoundBank Id="168095654" Type="Event" GUID="{6A53B62E-A897-495E-94B6-9D497FF0D9E3}" Language="SFX" Hash="{3BE07320-B059-F0B7-6D56-D9A05E045020}">
 			<ObjectPath>Play_Player2_Grab</ObjectPath>
 			<ShortName>Play_Player2_Grab</ShortName>
 			<Path>Event/Play_Player2_Grab.bnk</Path>
@@ -222,7 +222,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="182415898" Type="Event" GUID="{B62D6C1F-687C-48B5-81B8-7924344A1746}" Language="SFX" Hash="{3C04B143-BB2C-91FC-919C-6BDE32239E3C}">
+		<SoundBank Id="182415898" Type="Event" GUID="{B62D6C1F-687C-48B5-81B8-7924344A1746}" Language="SFX" Hash="{79FE82BC-C8BC-387A-ABED-BDCA2AAE177E}">
 			<ObjectPath>Play_Back_Button</ObjectPath>
 			<ShortName>Play_Back_Button</ShortName>
 			<Path>Event/Play_Back_Button.bnk</Path>
@@ -241,7 +241,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="216287831" Type="Event" GUID="{7163BE23-43B2-4B38-82D6-14BFD3255622}" Language="SFX" Hash="{4DB0708C-3309-8618-1839-89C125FF0312}">
+		<SoundBank Id="216287831" Type="Event" GUID="{7163BE23-43B2-4B38-82D6-14BFD3255622}" Language="SFX" Hash="{3D42C64A-64BA-ACEA-52C9-1637D64FF705}">
 			<ObjectPath>Play_Player2_Crouch_Out</ObjectPath>
 			<ShortName>Play_Player2_Crouch_Out</ShortName>
 			<Path>Event/Play_Player2_Crouch_Out.bnk</Path>
@@ -290,7 +290,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="253333564" Type="Event" GUID="{1D179E9F-6385-46AE-9BD6-B3918124CCD2}" Language="SFX" Hash="{8AFC0BE0-AB61-59AD-EF90-DBB4A7063A45}">
+		<SoundBank Id="253333564" Type="Event" GUID="{1D179E9F-6385-46AE-9BD6-B3918124CCD2}" Language="SFX" Hash="{0EC5EC8E-0773-6321-5048-E4DE380DC714}">
 			<ObjectPath>Plyr2_Attack_Light</ObjectPath>
 			<ShortName>Plyr2_Attack_Light</ShortName>
 			<Path>Event/Plyr2_Attack_Light.bnk</Path>
@@ -333,15 +333,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="428126542" Type="Event" GUID="{E5BE2FFF-1923-4532-8105-65C7E6D3043F}" Language="SFX" Hash="{EA8CAE97-11DA-F327-7CC6-DF3ED78DD024}">
-			<ObjectPath>Ambi_3_Loop_Stop</ObjectPath>
-			<ShortName>Ambi_3_Loop_Stop</ShortName>
-			<Path>Event/Ambi_3_Loop_Stop.bnk</Path>
-			<Events>
-				<Event Id="428126542" Name="Ambi_3_Loop_Stop" ObjectPath="\Events\Ambience\2D\Ambi_3_Loop_Stop" GUID="{E5BE2FFF-1923-4532-8105-65C7E6D3043F}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-			</Events>
-		</SoundBank>
-		<SoundBank Id="466103037" Type="Event" GUID="{6A3B97C4-67AE-45C1-A149-EBF2C7E68E30}" Language="SFX" Hash="{0D9DED30-4215-5BE1-89DA-CBFB99092273}">
+		<SoundBank Id="466103037" Type="Event" GUID="{6A3B97C4-67AE-45C1-A149-EBF2C7E68E30}" Language="SFX" Hash="{C79A04EA-0ECC-3F5A-11C4-33C03C58D5AC}">
 			<ObjectPath>Ambi_2_Loop_Start</ObjectPath>
 			<ShortName>Ambi_2_Loop_Start</ShortName>
 			<Path>Event/Ambi_2_Loop_Start.bnk</Path>
@@ -372,7 +364,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="562256996" Type="Event" GUID="{237BD721-40C9-4B31-BDC1-78F59500DF4D}" Language="SFX" Hash="{E53916E2-1C4A-C445-C420-5BE340F7EC26}">
+		<SoundBank Id="562256996" Type="Event" GUID="{237BD721-40C9-4B31-BDC1-78F59500DF4D}" Language="SFX" Hash="{7A6B98C5-18D8-F9A0-363E-1226D2F32FA6}">
 			<ObjectPath>Play_Player_Jump</ObjectPath>
 			<ShortName>Play_Player_Jump</ShortName>
 			<Path>Event/Play_Player_Jump.bnk</Path>
@@ -421,7 +413,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="587623655" Type="Event" GUID="{820228B7-CD1A-459B-A81C-F381CF138931}" Language="SFX" Hash="{61AED589-8A7F-90A3-DDE5-48BE8917CC97}">
+		<SoundBank Id="587623655" Type="Event" GUID="{820228B7-CD1A-459B-A81C-F381CF138931}" Language="SFX" Hash="{42654768-0EAB-4DFE-3DF9-842876AF060C}">
 			<ObjectPath>Com_Char_Wins_Lauren</ObjectPath>
 			<ShortName>Com_Char_Wins_Lauren</ShortName>
 			<Path>Event/Com_Char_Wins_Lauren.bnk</Path>
@@ -440,7 +432,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="606831743" Type="Event" GUID="{2C86464F-2577-4636-99EE-045C1778A0B0}" Language="SFX" Hash="{BE252DE7-71BB-054A-9A03-ECB98C9BE963}">
+		<SoundBank Id="606831743" Type="Event" GUID="{2C86464F-2577-4636-99EE-045C1778A0B0}" Language="SFX" Hash="{E7BD1614-61BE-6624-7CA4-AB242BE32A29}">
 			<ObjectPath>Play_Player_Bodyfall</ObjectPath>
 			<ShortName>Play_Player_Bodyfall</ShortName>
 			<Path>Event/Play_Player_Bodyfall.bnk</Path>
@@ -489,7 +481,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="667908117" Type="Event" GUID="{50D65725-C02E-4F28-8D2E-1291893F7AA3}" Language="SFX" Hash="{5B4BF41C-FDE9-66C3-2E18-D63CF1751AD7}">
+		<SoundBank Id="667908117" Type="Event" GUID="{50D65725-C02E-4F28-8D2E-1291893F7AA3}" Language="SFX" Hash="{08F75B49-024B-4972-4B40-512D3D000C6B}">
 			<ObjectPath>Plyr2_Attack_Heavy</ObjectPath>
 			<ShortName>Plyr2_Attack_Heavy</ShortName>
 			<Path>Event/Plyr2_Attack_Heavy.bnk</Path>
@@ -554,7 +546,7 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="675253000" Type="Event" GUID="{1C6F23AF-8E95-4E1E-8297-02B637218C6D}" Language="SFX" Hash="{3142D61B-5BA5-CCD4-F5CE-EDF348460B5D}">
+		<SoundBank Id="675253000" Type="Event" GUID="{1C6F23AF-8E95-4E1E-8297-02B637218C6D}" Language="SFX" Hash="{ACCADA76-3A0C-3B95-FB0D-C24975C3BB8B}">
 			<ObjectPath>Play_Player_Bounce</ObjectPath>
 			<ShortName>Play_Player_Bounce</ShortName>
 			<Path>Event/Play_Player_Bounce.bnk</Path>
@@ -603,7 +595,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="725346841" Type="Event" GUID="{BD4FEB80-88A8-45D8-9FBF-7EF06D02BC15}" Language="SFX" Hash="{FFE75112-481C-1069-545E-12A6E81F24B4}">
+		<SoundBank Id="725346841" Type="Event" GUID="{BD4FEB80-88A8-45D8-9FBF-7EF06D02BC15}" Language="SFX" Hash="{382F2CCD-4014-3FD2-2B6A-66E5502FEBA9}">
 			<ObjectPath>Play_Player_Landing</ObjectPath>
 			<ShortName>Play_Player_Landing</ShortName>
 			<Path>Event/Play_Player_Landing.bnk</Path>
@@ -652,7 +644,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="858506084" Type="Event" GUID="{BB6429FE-6011-4472-9010-9CAF484600A7}" Language="SFX" Hash="{6EF943FC-61FC-0087-CAB1-461F5D807584}">
+		<SoundBank Id="858506084" Type="Event" GUID="{BB6429FE-6011-4472-9010-9CAF484600A7}" Language="SFX" Hash="{866C9205-26B3-7D16-5C76-267264079839}">
 			<ObjectPath>Play_Settings_Select</ObjectPath>
 			<ShortName>Play_Settings_Select</ShortName>
 			<Path>Event/Play_Settings_Select.bnk</Path>
@@ -671,7 +663,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="880454473" Type="Event" GUID="{5A6C30F2-2944-40B2-A4D9-1A142FBE1444}" Language="SFX" Hash="{BFFBDCA7-E21D-BAB7-115C-F3BD80268B9F}">
+		<SoundBank Id="880454473" Type="Event" GUID="{5A6C30F2-2944-40B2-A4D9-1A142FBE1444}" Language="SFX" Hash="{8C91BE4F-D76D-4CCC-728F-BC464A67AE3C}">
 			<ObjectPath>Play_Select_Button</ObjectPath>
 			<ShortName>Play_Select_Button</ShortName>
 			<Path>Event/Play_Select_Button.bnk</Path>
@@ -690,7 +682,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="892499175" Type="Event" GUID="{3DE5C542-49C6-4EF5-B5BE-60CB49F75D00}" Language="SFX" Hash="{D1DD1B4A-DDB5-CF53-4266-F86B6937108B}">
+		<SoundBank Id="892499175" Type="Event" GUID="{3DE5C542-49C6-4EF5-B5BE-60CB49F75D00}" Language="SFX" Hash="{C05E9F92-5205-A9D6-1196-67B8A6E05824}">
 			<ObjectPath>Com_Char_Wins_Jack</ObjectPath>
 			<ShortName>Com_Char_Wins_Jack</ShortName>
 			<Path>Event/Com_Char_Wins_Jack.bnk</Path>
@@ -709,7 +701,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="986664061" Type="Event" GUID="{D586571B-518E-44CF-8A2E-6B68BFDB5D01}" Language="SFX" Hash="{975D6E84-2B2C-D149-7ED3-2AB1B347902B}">
+		<SoundBank Id="986664061" Type="Event" GUID="{D586571B-518E-44CF-8A2E-6B68BFDB5D01}" Language="SFX" Hash="{09E087E1-A71E-9115-CAB6-0351A4636FEA}">
 			<ObjectPath>Play_Pause_Out</ObjectPath>
 			<ShortName>Play_Pause_Out</ShortName>
 			<Path>Event/Play_Pause_Out.bnk</Path>
@@ -728,7 +720,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1053701372" Type="Event" GUID="{A9011CA4-F40B-415B-9C65-B4914BA1B74C}" Language="SFX" Hash="{E17E7B5E-D4AF-DD77-FB90-925FEBE27F90}">
+		<SoundBank Id="1053701372" Type="Event" GUID="{A9011CA4-F40B-415B-9C65-B4914BA1B74C}" Language="SFX" Hash="{923AB8A8-2DB1-C5F3-FCA2-7DA405889936}">
 			<ObjectPath>Play_Music_Stagw_1b</ObjectPath>
 			<ShortName>Play_Music_Stagw_1b</ShortName>
 			<Path>Event/Play_Music_Stagw_1b.bnk</Path>
@@ -1139,7 +1131,7 @@
 				<Event Id="1073355647" Name="Ambi_2_Loop_Stop" ObjectPath="\Events\Ambience\2D\Ambi_2_Loop_Stop" GUID="{EEB1C8DC-2012-4465-B929-C73B463E3F63}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1159457221" Type="Event" GUID="{93953BBA-0842-4F85-96F8-FADB33FA970A}" Language="SFX" Hash="{5607B76D-F8FD-DC25-E89C-855178DD7BD3}">
+		<SoundBank Id="1159457221" Type="Event" GUID="{93953BBA-0842-4F85-96F8-FADB33FA970A}" Language="SFX" Hash="{1685C68F-C0F2-4ABE-357C-BFDBF17AAA62}">
 			<ObjectPath>Plyr2_Movement_Jump</ObjectPath>
 			<ShortName>Plyr2_Movement_Jump</ShortName>
 			<Path>Event/Plyr2_Movement_Jump.bnk</Path>
@@ -1182,7 +1174,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1237331087" Type="Event" GUID="{3E7B4894-9F13-4C12-920F-1F191BC300B8}" Language="SFX" Hash="{C8F3E5CF-34A3-D044-6A02-4B8F26D03561}">
+		<SoundBank Id="1237331087" Type="Event" GUID="{3E7B4894-9F13-4C12-920F-1F191BC300B8}" Language="SFX" Hash="{67182E68-74B6-A8EA-E79F-DACE6D28950C}">
 			<ObjectPath>Play_Player2_Clothes_Short</ObjectPath>
 			<ShortName>Play_Player2_Clothes_Short</ShortName>
 			<Path>Event/Play_Player2_Clothes_Short.bnk</Path>
@@ -1581,7 +1573,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="1407253294" Type="Event" GUID="{64BA2DC8-AF54-4E1A-AEF6-60694538C48B}" Language="SFX" Hash="{55CB8ECF-FD99-71CF-CCC6-E9B551B9B3CB}">
+		<SoundBank Id="1407253294" Type="Event" GUID="{64BA2DC8-AF54-4E1A-AEF6-60694538C48B}" Language="SFX" Hash="{9AE12119-AA62-6BC9-C839-CA1FF0C5F6D5}">
 			<ObjectPath>Com_Round_3_Start</ObjectPath>
 			<ShortName>Com_Round_3_Start</ShortName>
 			<Path>Event/Com_Round_3_Start.bnk</Path>
@@ -1618,7 +1610,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1407253294" Name="Com_Round_3_Start" ObjectPath="\Events\Commentator_Voices\Com_Round_3_Start" GUID="{64BA2DC8-AF54-4E1A-AEF6-60694538C48B}" DurationType="OneShot" DurationMin="2.6875" DurationMax="3">
+				<Event Id="1407253294" Name="Com_Round_3_Start" ObjectPath="\Events\Commentator_Voices\Com_Round_3_Start" GUID="{64BA2DC8-AF54-4E1A-AEF6-60694538C48B}" DurationType="OneShot" DurationMin="6.1875" DurationMax="6.5">
 					<MediaRefs>
 						<MediaRef Id="115684259"/>
 						<MediaRef Id="332544747"/>
@@ -1630,7 +1622,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1409386042" Type="Event" GUID="{8C37F805-1EF3-48E8-9DA4-B8E4E9095CA4}" Language="SFX" Hash="{F89F7707-43BA-4E84-DF7B-87C9272FA16F}">
+		<SoundBank Id="1409386042" Type="Event" GUID="{8C37F805-1EF3-48E8-9DA4-B8E4E9095CA4}" Language="SFX" Hash="{899517D1-6705-3AD3-F26F-B7BD8A97461D}">
 			<ObjectPath>Play_Player2_Blockhit</ObjectPath>
 			<ShortName>Play_Player2_Blockhit</ShortName>
 			<Path>Event/Play_Player2_Blockhit.bnk</Path>
@@ -1679,7 +1671,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1447755480" Type="Event" GUID="{D240E461-1973-4A2A-922A-01651A67602B}" Language="SFX" Hash="{80E6072E-DE19-3E05-4483-224D058B860C}">
+		<SoundBank Id="1447755480" Type="Event" GUID="{D240E461-1973-4A2A-922A-01651A67602B}" Language="SFX" Hash="{5D91FE1E-E56F-9D45-963B-E623FD17B6D4}">
 			<ObjectPath>Com_Round_1_Start</ObjectPath>
 			<ShortName>Com_Round_1_Start</ShortName>
 			<Path>Event/Com_Round_1_Start.bnk</Path>
@@ -1716,7 +1708,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1447755480" Name="Com_Round_1_Start" ObjectPath="\Events\Commentator_Voices\Com_Round_1_Start" GUID="{D240E461-1973-4A2A-922A-01651A67602B}" DurationType="OneShot" DurationMin="2.125" DurationMax="2.4375">
+				<Event Id="1447755480" Name="Com_Round_1_Start" ObjectPath="\Events\Commentator_Voices\Com_Round_1_Start" GUID="{D240E461-1973-4A2A-922A-01651A67602B}" DurationType="OneShot" DurationMin="5.625" DurationMax="5.9375">
 					<MediaRefs>
 						<MediaRef Id="115684259"/>
 						<MediaRef Id="200620881"/>
@@ -1728,7 +1720,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1474491129" Type="Event" GUID="{4D1B538B-1F94-4AB0-8825-F48931190C82}" Language="SFX" Hash="{971091B9-4576-5970-61AD-CDD8DBE0BE8E}">
+		<SoundBank Id="1474491129" Type="Event" GUID="{4D1B538B-1F94-4AB0-8825-F48931190C82}" Language="SFX" Hash="{74B0872B-4C35-AEF1-68BE-16EEF5CE07B8}">
 			<ObjectPath>Play_Player2_Clothes_Long</ObjectPath>
 			<ShortName>Play_Player2_Clothes_Long</ShortName>
 			<Path>Event/Play_Player2_Clothes_Long.bnk</Path>
@@ -1801,7 +1793,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1587893616" Type="Event" GUID="{F8598B8F-70C3-4D87-B0EC-D5BAC09D7237}" Language="SFX" Hash="{E3EADCD1-946C-1DF3-9E16-07BCFEBFF014}">
+		<SoundBank Id="1587893616" Type="Event" GUID="{F8598B8F-70C3-4D87-B0EC-D5BAC09D7237}" Language="SFX" Hash="{D7B0490A-8793-5FA0-127C-C68E8585B9BC}">
 			<ObjectPath>Play_Player2_Bounce</ObjectPath>
 			<ShortName>Play_Player2_Bounce</ShortName>
 			<Path>Event/Play_Player2_Bounce.bnk</Path>
@@ -1850,7 +1842,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1659825819" Type="Event" GUID="{167A664F-1E14-4579-BD2F-8548BA86507A}" Language="SFX" Hash="{1DDCFEF1-D60F-223A-C3FF-ACE67CEDE449}">
+		<SoundBank Id="1659825819" Type="Event" GUID="{167A664F-1E14-4579-BD2F-8548BA86507A}" Language="SFX" Hash="{D75FD749-95D7-D31C-5646-07DC832EA373}">
 			<ObjectPath>Plyr2_Movement_Rollforward</ObjectPath>
 			<ShortName>Plyr2_Movement_Rollforward</ShortName>
 			<Path>Event/Plyr2_Movement_Rollforward.bnk</Path>
@@ -1893,7 +1885,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1699343283" Type="Event" GUID="{1CC99C31-E23D-4648-94D8-90671E36B4EB}" Language="SFX" Hash="{E02CD66A-42C2-7AA6-CB00-E2FD73478BFB}">
+		<SoundBank Id="1699343283" Type="Event" GUID="{1CC99C31-E23D-4648-94D8-90671E36B4EB}" Language="SFX" Hash="{6AB1E238-D0DC-10EA-1BD4-407FFC4752CC}">
 			<ObjectPath>Play_Music_Menu</ObjectPath>
 			<ShortName>Play_Music_Menu</ShortName>
 			<Path>Event/Play_Music_Menu.bnk</Path>
@@ -2134,7 +2126,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1700596737" Type="Event" GUID="{05825B27-50D8-430E-9EFC-D8AD4D0DE1FE}" Language="SFX" Hash="{FE6CDE69-AB2F-3786-67AB-5176A3FC3CA4}">
+		<SoundBank Id="1700596737" Type="Event" GUID="{05825B27-50D8-430E-9EFC-D8AD4D0DE1FE}" Language="SFX" Hash="{ACAA22B1-4587-4A0C-3AA9-3559DA7C3CF7}">
 			<ObjectPath>Play_Player_Clothes_Long</ObjectPath>
 			<ShortName>Play_Player_Clothes_Long</ShortName>
 			<Path>Event/Play_Player_Clothes_Long.bnk</Path>
@@ -2207,7 +2199,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1912703074" Type="Event" GUID="{D7BC3EB3-3F4C-4395-A786-93E524AB9064}" Language="SFX" Hash="{1CAA014C-B86E-96D8-87FD-CB2BE5A279A3}">
+		<SoundBank Id="1912703074" Type="Event" GUID="{D7BC3EB3-3F4C-4395-A786-93E524AB9064}" Language="SFX" Hash="{4753212D-1F60-BBA8-E30F-560EC8017615}">
 			<ObjectPath>Plyr1_Movement_Jump</ObjectPath>
 			<ShortName>Plyr1_Movement_Jump</ShortName>
 			<Path>Event/Plyr1_Movement_Jump.bnk</Path>
@@ -2250,7 +2242,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1976886199" Type="Event" GUID="{8B058E88-CC41-4F15-9236-96A38B65C4D8}" Language="SFX" Hash="{536168BB-5711-D612-343D-454465EE25F7}">
+		<SoundBank Id="1976886199" Type="Event" GUID="{8B058E88-CC41-4F15-9236-96A38B65C4D8}" Language="SFX" Hash="{AC996519-48F4-74D4-AA8A-55A10E188E97}">
 			<ObjectPath>Play_Player_Clothes_Short</ObjectPath>
 			<ShortName>Play_Player_Clothes_Short</ShortName>
 			<Path>Event/Play_Player_Clothes_Short.bnk</Path>
@@ -2323,7 +2315,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1986195668" Type="Event" GUID="{6FCF772D-550C-4F65-B592-DB8587BDF458}" Language="SFX" Hash="{561F9018-4E28-EC25-C1B9-E6646A6CA078}">
+		<SoundBank Id="1986195668" Type="Event" GUID="{6FCF772D-550C-4F65-B592-DB8587BDF458}" Language="SFX" Hash="{F288CCA1-0919-33B5-6485-3153F2ED772A}">
 			<ObjectPath>Plyr1_Dmg_Heavy</ObjectPath>
 			<ShortName>Plyr1_Dmg_Heavy</ShortName>
 			<Path>Event/Plyr1_Dmg_Heavy.bnk</Path>
@@ -2366,7 +2358,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1991585818" Type="Event" GUID="{B9C1CDAF-05EE-4DFB-85C0-573948B38A64}" Language="SFX" Hash="{A727320F-D4D9-7260-7261-2394C9EEF4EC}">
+		<SoundBank Id="1991585818" Type="Event" GUID="{B9C1CDAF-05EE-4DFB-85C0-573948B38A64}" Language="SFX" Hash="{AFB1111C-623E-F2F9-B651-2601CBE33366}">
 			<ObjectPath>Plyr2_Dmg_Light</ObjectPath>
 			<ShortName>Plyr2_Dmg_Light</ShortName>
 			<Path>Event/Plyr2_Dmg_Light.bnk</Path>
@@ -2409,15 +2401,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2010386542" Type="Event" GUID="{D05CB7B5-5918-4544-A1AA-75CE5A34CB31}" Language="SFX" Hash="{689BBE60-4FB6-2F4B-7C95-2D50B62D0FF3}">
-			<ObjectPath>Ambi_3_Loop_Start</ObjectPath>
-			<ShortName>Ambi_3_Loop_Start</ShortName>
-			<Path>Event/Ambi_3_Loop_Start.bnk</Path>
-			<Events>
-				<Event Id="2010386542" Name="Ambi_3_Loop_Start" ObjectPath="\Events\Ambience\2D\Ambi_3_Loop_Start" GUID="{D05CB7B5-5918-4544-A1AA-75CE5A34CB31}" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-			</Events>
-		</SoundBank>
-		<SoundBank Id="2092733163" Type="Event" GUID="{82FCA46E-6E59-4873-9785-CC8165F421C1}" Language="SFX" Hash="{D831ABAD-8A80-A6F1-AEC5-8D4C6A9E8BC6}">
+		<SoundBank Id="2092733163" Type="Event" GUID="{82FCA46E-6E59-4873-9785-CC8165F421C1}" Language="SFX" Hash="{A28CAFEF-CE1E-C869-30AC-ADB6D519D6E8}">
 			<ObjectPath>Play_Settings_Slider</ObjectPath>
 			<ShortName>Play_Settings_Slider</ShortName>
 			<Path>Event/Play_Settings_Slider.bnk</Path>
@@ -2436,7 +2420,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2170617613" Type="Event" GUID="{6B678688-889A-448F-8387-4F2BA8FB80C2}" Language="SFX" Hash="{ADC3E598-97C4-3E20-15D9-41A3E169E876}">
+		<SoundBank Id="2170617613" Type="Event" GUID="{6B678688-889A-448F-8387-4F2BA8FB80C2}" Language="SFX" Hash="{4DE7E382-95E9-56B8-0FD6-714F23D544FC}">
 			<ObjectPath>Com_Welcome</ObjectPath>
 			<ShortName>Com_Welcome</ShortName>
 			<Path>Event/Com_Welcome.bnk</Path>
@@ -2455,7 +2439,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2175711460" Type="Event" GUID="{BA2D6A2D-F502-46EB-9C45-0EEE49BE465F}" Language="SFX" Hash="{B415393D-BF5A-711F-8B9F-FDCA78C6A50A}">
+		<SoundBank Id="2175711460" Type="Event" GUID="{BA2D6A2D-F502-46EB-9C45-0EEE49BE465F}" Language="SFX" Hash="{2FB180F6-84DD-349E-3E21-A2890AC097F8}">
 			<ObjectPath>Play_Player_Dash</ObjectPath>
 			<ShortName>Play_Player_Dash</ShortName>
 			<Path>Event/Play_Player_Dash.bnk</Path>
@@ -2504,7 +2488,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2265500861" Type="Event" GUID="{BC242ACD-BEB1-4A14-8C77-60F841C91DEF}" Language="SFX" Hash="{1C870579-6338-8208-BFF2-E0057CC2C957}">
+		<SoundBank Id="2265500861" Type="Event" GUID="{BC242ACD-BEB1-4A14-8C77-60F841C91DEF}" Language="SFX" Hash="{A73E26D9-BAA3-904D-7C68-D6E3B35374FB}">
 			<ObjectPath>Play_Player2_Punsh_Woosh</ObjectPath>
 			<ShortName>Play_Player2_Punsh_Woosh</ShortName>
 			<Path>Event/Play_Player2_Punsh_Woosh.bnk</Path>
@@ -2553,7 +2537,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2322697492" Type="Event" GUID="{99EBE9DA-2D4B-4E25-A1FD-CC1C387CC0C5}" Language="SFX" Hash="{8D32CB80-40BA-86BD-9F6B-605D57379631}">
+		<SoundBank Id="2322697492" Type="Event" GUID="{99EBE9DA-2D4B-4E25-A1FD-CC1C387CC0C5}" Language="SFX" Hash="{E13FB5A4-E0CD-50A3-7B47-2450D4CA1E7A}">
 			<ObjectPath>Plyr1_Attack_Heavy</ObjectPath>
 			<ShortName>Plyr1_Attack_Heavy</ShortName>
 			<Path>Event/Plyr1_Attack_Heavy.bnk</Path>
@@ -2596,7 +2580,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2334765685" Type="Event" GUID="{F110A2AB-C527-4CD6-956A-320E06655E4E}" Language="SFX" Hash="{13EB8CA3-F522-36C2-3335-533D932C9AF3}">
+		<SoundBank Id="2334765685" Type="Event" GUID="{F110A2AB-C527-4CD6-956A-320E06655E4E}" Language="SFX" Hash="{C790F221-0848-3A06-65F6-099845D908B8}">
 			<ObjectPath>Play_Player_Punch_Light</ObjectPath>
 			<ShortName>Play_Player_Punch_Light</ShortName>
 			<Path>Event/Play_Player_Punch_Light.bnk</Path>
@@ -2645,7 +2629,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2345698665" Type="Event" GUID="{36113D1F-1DF9-4707-9998-76CB9E7E679F}" Language="SFX" Hash="{F0454AF8-4EB7-7D41-242F-0BADE61FF37E}">
+		<SoundBank Id="2345698665" Type="Event" GUID="{36113D1F-1DF9-4707-9998-76CB9E7E679F}" Language="SFX" Hash="{5DC2175C-25E3-ADC3-B0D8-E402AE26F1CF}">
 			<ObjectPath>Com_Round_4_Start</ObjectPath>
 			<ShortName>Com_Round_4_Start</ShortName>
 			<Path>Event/Com_Round_4_Start.bnk</Path>
@@ -2682,7 +2666,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2345698665" Name="Com_Round_4_Start" ObjectPath="\Events\Commentator_Voices\Com_Round_4_Start" GUID="{36113D1F-1DF9-4707-9998-76CB9E7E679F}" DurationType="OneShot" DurationMin="3.03125" DurationMax="3.34375">
+				<Event Id="2345698665" Name="Com_Round_4_Start" ObjectPath="\Events\Commentator_Voices\Com_Round_4_Start" GUID="{36113D1F-1DF9-4707-9998-76CB9E7E679F}" DurationType="OneShot" DurationMin="6.53125" DurationMax="6.84375">
 					<MediaRefs>
 						<MediaRef Id="115684259"/>
 						<MediaRef Id="134037975"/>
@@ -2694,7 +2678,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2369679144" Type="Event" GUID="{52806D64-28C9-4DBD-9FA9-B19EFC1D9D2B}" Language="SFX" Hash="{28D10B0D-9680-6F06-3924-BC8E83BBEC0A}">
+		<SoundBank Id="2369679144" Type="Event" GUID="{52806D64-28C9-4DBD-9FA9-B19EFC1D9D2B}" Language="SFX" Hash="{F0EB6840-0167-B4DD-0077-17B6D652C615}">
 			<ObjectPath>Play_Player_Crouch_In</ObjectPath>
 			<ShortName>Play_Player_Crouch_In</ShortName>
 			<Path>Event/Play_Player_Crouch_In.bnk</Path>
@@ -2743,7 +2727,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2515698252" Type="Event" GUID="{56CAABDC-83A4-48A3-94F4-F0C5654233D4}" Language="SFX" Hash="{20B1DD98-DF8D-5D52-8016-BDD710E51355}">
+		<SoundBank Id="2515698252" Type="Event" GUID="{56CAABDC-83A4-48A3-94F4-F0C5654233D4}" Language="SFX" Hash="{B852D8D0-3BAE-D018-83F9-0D007ABDE03B}">
 			<ObjectPath>Play_Player2_Jump</ObjectPath>
 			<ShortName>Play_Player2_Jump</ShortName>
 			<Path>Event/Play_Player2_Jump.bnk</Path>
@@ -2792,7 +2776,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2518864784" Type="Event" GUID="{5B16E403-94D2-446D-9060-3E385BA132ED}" Language="SFX" Hash="{3A52027D-5BF1-6E7A-0531-217912BEAE11}">
+		<SoundBank Id="2518864784" Type="Event" GUID="{5B16E403-94D2-446D-9060-3E385BA132ED}" Language="SFX" Hash="{0B822E26-15BA-D7D9-1F7E-2710CDB21256}">
 			<ObjectPath>Play_Select_Fighter</ObjectPath>
 			<ShortName>Play_Select_Fighter</ShortName>
 			<Path>Event/Play_Select_Fighter.bnk</Path>
@@ -2811,7 +2795,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2526534989" Type="Event" GUID="{9E15B848-01A3-4C12-AC8F-935B3047AD4C}" Language="SFX" Hash="{CFD999FC-2818-4692-7AE2-78924C0FFCAB}">
+		<SoundBank Id="2526534989" Type="Event" GUID="{9E15B848-01A3-4C12-AC8F-935B3047AD4C}" Language="SFX" Hash="{E269456E-BC7F-F7BE-2852-01F0E29200CD}">
 			<ObjectPath>Play_Player2_Punch_Light</ObjectPath>
 			<ShortName>Play_Player2_Punch_Light</ShortName>
 			<Path>Event/Play_Player2_Punch_Light.bnk</Path>
@@ -2860,7 +2844,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2555223343" Type="Event" GUID="{756383C1-840D-41DF-B7D5-98E46E2560D4}" Language="SFX" Hash="{65E1C8FE-787D-B617-B0A0-2C2704171F51}">
+		<SoundBank Id="2555223343" Type="Event" GUID="{756383C1-840D-41DF-B7D5-98E46E2560D4}" Language="SFX" Hash="{3645C584-4507-A5EA-1C86-B84BCCEF5341}">
 			<ObjectPath>Play_Player_Crouch_Out</ObjectPath>
 			<ShortName>Play_Player_Crouch_Out</ShortName>
 			<Path>Event/Play_Player_Crouch_Out.bnk</Path>
@@ -2909,7 +2893,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2579118743" Type="Event" GUID="{09907A82-0543-4AC4-8673-B8CE02D2AA76}" Language="SFX" Hash="{9290A862-EB91-C9A2-8CC4-1CF061BD1C5C}">
+		<SoundBank Id="2579118743" Type="Event" GUID="{09907A82-0543-4AC4-8673-B8CE02D2AA76}" Language="SFX" Hash="{910F97F3-0486-5922-32A2-24B287125D9C}">
 			<ObjectPath>Plyr2_Movement_Rollbackward</ObjectPath>
 			<ShortName>Plyr2_Movement_Rollbackward</ShortName>
 			<Path>Event/Plyr2_Movement_Rollbackward.bnk</Path>
@@ -2952,7 +2936,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2663982528" Type="Event" GUID="{6909B8C2-6D58-49AD-9B0C-ECB42CC550E2}" Language="SFX" Hash="{B0F68CC8-3390-074F-66DC-60547667BA56}">
+		<SoundBank Id="2663982528" Type="Event" GUID="{6909B8C2-6D58-49AD-9B0C-ECB42CC550E2}" Language="SFX" Hash="{621F64FE-6867-D4F7-93BE-E41A6082F63D}">
 			<ObjectPath>Play_Player_Punch_Heavy</ObjectPath>
 			<ShortName>Play_Player_Punch_Heavy</ShortName>
 			<Path>Event/Play_Player_Punch_Heavy.bnk</Path>
@@ -3001,7 +2985,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2799667633" Type="Event" GUID="{18AC3747-1B0B-4F57-9307-A7FEBA0ADAC6}" Language="SFX" Hash="{D6EF0F9C-D438-B7FB-E024-A5C3EB7268A7}">
+		<SoundBank Id="2799667633" Type="Event" GUID="{18AC3747-1B0B-4F57-9307-A7FEBA0ADAC6}" Language="SFX" Hash="{40B7B2AD-C5FC-B6A8-D830-50D6E4EEFD74}">
 			<ObjectPath>Plyr1_Dmg_Light</ObjectPath>
 			<ShortName>Plyr1_Dmg_Light</ShortName>
 			<Path>Event/Plyr1_Dmg_Light.bnk</Path>
@@ -3044,7 +3028,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2963316176" Type="Event" GUID="{E001864B-1F09-432D-9769-CAA8112B432A}" Language="SFX" Hash="{CBC0555D-DBDF-4C77-0344-27F7953927C2}">
+		<SoundBank Id="2963316176" Type="Event" GUID="{E001864B-1F09-432D-9769-CAA8112B432A}" Language="SFX" Hash="{EBECED0C-FC4E-1B73-A9AE-A2CF65AADC49}">
 			<ObjectPath>Play_Move_Button</ObjectPath>
 			<ShortName>Play_Move_Button</ShortName>
 			<Path>Event/Play_Move_Button.bnk</Path>
@@ -3063,7 +3047,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3021177893" Type="Event" GUID="{DC4135FD-87EC-41A5-84C3-E1F70FC2699C}" Language="SFX" Hash="{D516753E-0EDA-F695-9320-2ADDDEBB1903}">
+		<SoundBank Id="3021177893" Type="Event" GUID="{DC4135FD-87EC-41A5-84C3-E1F70FC2699C}" Language="SFX" Hash="{BCD1DBE2-99B9-C3E1-34D1-B147DC8DC500}">
 			<ObjectPath>Play_Player_Punsh_Woosh</ObjectPath>
 			<ShortName>Play_Player_Punsh_Woosh</ShortName>
 			<Path>Event/Play_Player_Punsh_Woosh.bnk</Path>
@@ -3112,7 +3096,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3074061029" Type="Event" GUID="{62D78041-F9D1-4419-AE06-E663C92CE753}" Language="SFX" Hash="{B9902C0A-F198-0823-0E19-A4EBCDD77FD3}">
+		<SoundBank Id="3074061029" Type="Event" GUID="{62D78041-F9D1-4419-AE06-E663C92CE753}" Language="SFX" Hash="{97236034-A7E0-8BC2-741C-FC12AB3782E4}">
 			<ObjectPath>Play_Music_Stage_1a</ObjectPath>
 			<ShortName>Play_Music_Stage_1a</ShortName>
 			<Path>Event/Play_Music_Stage_1a.bnk</Path>
@@ -3311,7 +3295,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3101111843" Type="Event" GUID="{8701634F-24B1-44A7-A660-19C90F0851B0}" Language="SFX" Hash="{B91FAACF-F135-5475-DA32-FFB690E5929D}">
+		<SoundBank Id="3101111843" Type="Event" GUID="{8701634F-24B1-44A7-A660-19C90F0851B0}" Language="SFX" Hash="{D978CEB0-DC0D-88C9-FEFD-972F6FB873B6}">
 			<ObjectPath>Com_Round_2_Start</ObjectPath>
 			<ShortName>Com_Round_2_Start</ShortName>
 			<Path>Event/Com_Round_2_Start.bnk</Path>
@@ -3348,7 +3332,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3101111843" Name="Com_Round_2_Start" ObjectPath="\Events\Commentator_Voices\Com_Round_2_Start" GUID="{8701634F-24B1-44A7-A660-19C90F0851B0}" DurationType="OneShot" DurationMin="2.3125" DurationMax="2.625">
+				<Event Id="3101111843" Name="Com_Round_2_Start" ObjectPath="\Events\Commentator_Voices\Com_Round_2_Start" GUID="{8701634F-24B1-44A7-A660-19C90F0851B0}" DurationType="OneShot" DurationMin="5.8125" DurationMax="6.125">
 					<MediaRefs>
 						<MediaRef Id="115684259"/>
 						<MediaRef Id="332544747"/>
@@ -3360,7 +3344,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3108408445" Type="Event" GUID="{8C35D4D8-352D-4B69-B8D7-904A894A69E4}" Language="SFX" Hash="{1F1D8BDC-F711-EF49-3C29-443EB391ED91}">
+		<SoundBank Id="3108408445" Type="Event" GUID="{8C35D4D8-352D-4B69-B8D7-904A894A69E4}" Language="SFX" Hash="{C82103D3-9A2C-9AA9-7C92-007B9A5ECE34}">
 			<ObjectPath>Play_Player2_Footsteps</ObjectPath>
 			<ShortName>Play_Player2_Footsteps</ShortName>
 			<Path>Event/Play_Player2_Footsteps.bnk</Path>
@@ -3467,7 +3451,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3165952497" Type="Event" GUID="{E600404F-4142-4E2D-B7A6-D5AEE9951BBF}" Language="SFX" Hash="{D02E0572-4C65-F8C7-DB34-38D0AB62F969}">
+		<SoundBank Id="3165952497" Type="Event" GUID="{E600404F-4142-4E2D-B7A6-D5AEE9951BBF}" Language="SFX" Hash="{20942FA4-43C1-7BD0-02D6-671608F3A827}">
 			<ObjectPath>Play_Player2_Landing</ObjectPath>
 			<ShortName>Play_Player2_Landing</ShortName>
 			<Path>Event/Play_Player2_Landing.bnk</Path>
@@ -3516,7 +3500,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3235113002" Type="Event" GUID="{7A8FD551-211D-449D-89BF-34E067A83438}" Language="SFX" Hash="{60CE334B-C2B7-75FD-33AA-A600658DFC7D}">
+		<SoundBank Id="3235113002" Type="Event" GUID="{7A8FD551-211D-449D-89BF-34E067A83438}" Language="SFX" Hash="{5E9F9232-5829-47D2-A44A-CD0915C993B3}">
 			<ObjectPath>Plyr1_Movement_Rollforward</ObjectPath>
 			<ShortName>Plyr1_Movement_Rollforward</ShortName>
 			<Path>Event/Plyr1_Movement_Rollforward.bnk</Path>
@@ -3559,7 +3543,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3518947313" Type="Event" GUID="{26AB0E9E-6FC9-4D4C-98BC-CDD120436275}" Language="SFX" Hash="{5E174A61-60FF-8279-CD76-6ADA1DD5E63D}">
+		<SoundBank Id="3518947313" Type="Event" GUID="{26AB0E9E-6FC9-4D4C-98BC-CDD120436275}" Language="SFX" Hash="{BAC0E671-1DEA-CAA1-1BA2-846EF0549DCF}">
 			<ObjectPath>Plyr1_Attack_Light</ObjectPath>
 			<ShortName>Plyr1_Attack_Light</ShortName>
 			<Path>Event/Plyr1_Attack_Light.bnk</Path>
@@ -3610,7 +3594,7 @@
 				<AuxBus Id="3545700988" Name="Reverbs" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs" GUID="{6BE3BED4-0EDC-4674-80E4-B77F6F0EDD9B}"/>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="3578780510" Type="Event" GUID="{D206E6DA-2A4C-4D0B-8966-B05C93D177C2}" Language="SFX" Hash="{E896F0BD-9467-1751-59CF-A0EC2E161DC7}">
+		<SoundBank Id="3578780510" Type="Event" GUID="{D206E6DA-2A4C-4D0B-8966-B05C93D177C2}" Language="SFX" Hash="{818B66C4-01F3-B95E-F653-05D41AAB811D}">
 			<ObjectPath>Play_Player_Grab</ObjectPath>
 			<ShortName>Play_Player_Grab</ShortName>
 			<Path>Event/Play_Player_Grab.bnk</Path>
@@ -3659,7 +3643,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3596877596" Type="Event" GUID="{CC124DD1-467A-465A-9000-547582091E96}" Language="SFX" Hash="{969EB56D-C225-06A2-719C-4BE06C6A772A}">
+		<SoundBank Id="3596877596" Type="Event" GUID="{CC124DD1-467A-465A-9000-547582091E96}" Language="SFX" Hash="{91BA80F1-76C5-78F7-DBBA-717037326110}">
 			<ObjectPath>Play_Player2_Dash</ObjectPath>
 			<ShortName>Play_Player2_Dash</ShortName>
 			<Path>Event/Play_Player2_Dash.bnk</Path>
@@ -3708,7 +3692,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3618896010" Type="Event" GUID="{4DDF616B-CE7F-4803-9C49-4378BAFA5BD4}" Language="SFX" Hash="{EDC33064-6561-EB43-C901-F2A439F60BBB}">
+		<SoundBank Id="3618896010" Type="Event" GUID="{4DDF616B-CE7F-4803-9C49-4378BAFA5BD4}" Language="SFX" Hash="{7D8825F4-308A-4B50-ABDB-E65474CBACC1}">
 			<ObjectPath>Com_Round_Fight</ObjectPath>
 			<ShortName>Com_Round_Fight</ShortName>
 			<Path>Event/Com_Round_Fight.bnk</Path>
@@ -3751,7 +3735,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3695062128" Type="Event" GUID="{2FBB1439-6358-4311-AFDC-3DA2726483D3}" Language="SFX" Hash="{3EBC5F11-2E0D-CDBF-272B-ADA1D31B69DF}">
+		<SoundBank Id="3695062128" Type="Event" GUID="{2FBB1439-6358-4311-AFDC-3DA2726483D3}" Language="SFX" Hash="{C7CDBC83-D4BA-844C-C9E4-74CB645BB56B}">
 			<ObjectPath>Play_Player2_Crouch_In</ObjectPath>
 			<ShortName>Play_Player2_Crouch_In</ShortName>
 			<Path>Event/Play_Player2_Crouch_In.bnk</Path>
@@ -3800,7 +3784,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3729567056" Type="Event" GUID="{C57354E5-1D79-43A6-9596-3AAD8A7B58E7}" Language="English(US)" Hash="{C70E34D6-5AA3-00BC-DB4B-6E8084B3A86B}">
+		<SoundBank Id="3729567056" Type="Event" GUID="{C57354E5-1D79-43A6-9596-3AAD8A7B58E7}" Language="English(US)" Hash="{DC311F94-602A-1B82-5034-64C6A059EF38}">
 			<ObjectPath>Com_Char_Select_Jack</ObjectPath>
 			<ShortName>Com_Char_Select_Jack</ShortName>
 			<Path>Event/English(US)/Com_Char_Select_Jack.bnk</Path>
@@ -3819,7 +3803,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3761336386" Type="Event" GUID="{40E09523-C912-41B2-8E87-1A5554483779}" Language="SFX" Hash="{A10C2A72-71B0-0219-2644-986B46007254}">
+		<SoundBank Id="3761336386" Type="Event" GUID="{40E09523-C912-41B2-8E87-1A5554483779}" Language="SFX" Hash="{BBE1049D-6AD4-BD44-6017-6699391AF95F}">
 			<ObjectPath>Play_Pause_In</ObjectPath>
 			<ShortName>Play_Pause_In</ShortName>
 			<Path>Event/Play_Pause_In.bnk</Path>
@@ -3838,7 +3822,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3776843011" Type="Event" GUID="{926D2531-1E72-4E5D-9E0A-DF6DC68D4CD2}" Language="SFX" Hash="{07ADFEC5-C71D-AE3E-7E3A-4A38E9639229}">
+		<SoundBank Id="3776843011" Type="Event" GUID="{926D2531-1E72-4E5D-9E0A-DF6DC68D4CD2}" Language="SFX" Hash="{9EA2CEDC-985F-2A40-371B-15ED69A3D2FA}">
 			<ObjectPath>Plyr2_Dmg_Heavy</ObjectPath>
 			<ShortName>Plyr2_Dmg_Heavy</ShortName>
 			<Path>Event/Plyr2_Dmg_Heavy.bnk</Path>
@@ -3881,7 +3865,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3797728615" Type="Event" GUID="{D5493C59-9017-4BB4-A89D-77446FB05B0A}" Language="SFX" Hash="{79EEAA46-65B9-F836-80BA-6290B02CE04F}">
+		<SoundBank Id="3797728615" Type="Event" GUID="{D5493C59-9017-4BB4-A89D-77446FB05B0A}" Language="SFX" Hash="{3528B320-20BC-B35F-F6C9-A412FD153F27}">
 			<ObjectPath>Play_Player2_Bodyfall</ObjectPath>
 			<ShortName>Play_Player2_Bodyfall</ShortName>
 			<Path>Event/Play_Player2_Bodyfall.bnk</Path>
@@ -3930,7 +3914,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3812289192" Type="Event" GUID="{82962F56-8362-4D21-8FE6-A98FF8901AE9}" Language="SFX" Hash="{CBE62138-CEB8-64A2-5B87-F61A1CE8AE82}">
+		<SoundBank Id="3812289192" Type="Event" GUID="{82962F56-8362-4D21-8FE6-A98FF8901AE9}" Language="SFX" Hash="{B473F2EE-E060-8671-53AC-D8FCB79356E7}">
 			<ObjectPath>Ambi_1_Loop_Start</ObjectPath>
 			<ShortName>Ambi_1_Loop_Start</ShortName>
 			<Path>Event/Ambi_1_Loop_Start.bnk</Path>
@@ -3963,7 +3947,7 @@
 				<File Id="673665466" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Ambi_1_Loop_01.wav</ShortName>
 					<Path>Media/673665466.wem</Path>
-					<CachePath>SFX/Ambi_1_Loop_01_3E33C035.wem</CachePath>
+					<CachePath>SFX/Ambi_1_Loop_01_4DF62C0D.wem</CachePath>
 				</File>
 				<File Id="927375782" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Ambi_3_Loop_01.wav</ShortName>
@@ -3985,7 +3969,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3883776002" Type="Event" GUID="{D23E66E6-43DA-4114-901C-C8A2B0828697}" Language="SFX" Hash="{26E2F1FD-0B71-D15F-CADF-A1E3CA0AEF0E}">
+		<SoundBank Id="3883776002" Type="Event" GUID="{D23E66E6-43DA-4114-901C-C8A2B0828697}" Language="SFX" Hash="{A07E04B3-6126-7034-2738-5B09C95C4831}">
 			<ObjectPath>Play_Player_Blockhit</ObjectPath>
 			<ShortName>Play_Player_Blockhit</ShortName>
 			<Path>Event/Play_Player_Blockhit.bnk</Path>
@@ -4034,7 +4018,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3940439968" Type="Event" GUID="{79551593-FDCB-4471-8056-ED953CE28502}" Language="SFX" Hash="{B6022F82-6F91-D127-1295-E3B8BF4E9E9E}">
+		<SoundBank Id="3940439968" Type="Event" GUID="{79551593-FDCB-4471-8056-ED953CE28502}" Language="SFX" Hash="{DFB173C9-DACB-8CA1-D383-D0EEE49BABF8}">
 			<ObjectPath>Plyr1_Movement_Rollbackward</ObjectPath>
 			<ShortName>Plyr1_Movement_Rollbackward</ShortName>
 			<Path>Event/Plyr1_Movement_Rollbackward.bnk</Path>
@@ -4085,7 +4069,7 @@
 				<Event Id="4011766644" Name="Ambi_1_Loop_Stop" ObjectPath="\Events\Ambience\2D\Ambi_1_Loop_Stop" GUID="{ECEA2C89-2161-42CE-A22A-B435716282B2}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="4185259963" Type="Event" GUID="{C6F7CB46-440E-4309-90C2-B62B6502AD3E}" Language="SFX" Hash="{4501F5E7-644D-9992-9425-816DA48A3FF1}">
+		<SoundBank Id="4185259963" Type="Event" GUID="{C6F7CB46-440E-4309-90C2-B62B6502AD3E}" Language="SFX" Hash="{866D7247-18C4-3088-73A1-7EF0A523DE5D}">
 			<ObjectPath>Plyr2_Dmg_Special</ObjectPath>
 			<ShortName>Plyr2_Dmg_Special</ShortName>
 			<Path>Event/Plyr2_Dmg_Special.bnk</Path>
@@ -4128,7 +4112,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="4244936628" Type="Event" GUID="{7BD3B646-2657-40FF-9C97-391A4B37380E}" Language="SFX" Hash="{5ACF9AED-5A0A-7240-32D9-CEE582D3539B}">
+		<SoundBank Id="4244936628" Type="Event" GUID="{7BD3B646-2657-40FF-9C97-391A4B37380E}" Language="SFX" Hash="{09104747-E3A1-2504-158F-ACF2B0EED792}">
 			<ObjectPath>Plyr1_Dmg_Special</ObjectPath>
 			<ShortName>Plyr1_Dmg_Special</ShortName>
 			<Path>Event/Plyr1_Dmg_Special.bnk</Path>
@@ -4171,7 +4155,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="4259150480" Type="Event" GUID="{91E57EC6-14BF-4999-BD5E-402DE08241C4}" Language="English(US)" Hash="{0331E0DB-7C9A-95CF-2C8A-5145152BB8B5}">
+		<SoundBank Id="4259150480" Type="Event" GUID="{91E57EC6-14BF-4999-BD5E-402DE08241C4}" Language="English(US)" Hash="{7AB87B26-2459-464A-C11B-1715D27A7F61}">
 			<ObjectPath>Com_Char_Select_Lauren</ObjectPath>
 			<ShortName>Com_Char_Select_Lauren</ShortName>
 			<Path>Event/English(US)/Com_Char_Select_Lauren.bnk</Path>
@@ -4191,5 +4175,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6BEE54F0-4C05-5E46-4C25-5BB248D18E7F}</FileHash>
+	<FileHash>{3F361408-96C1-03DC-94DE-07F15F3D1A74}</FileHash>
 </SoundBanksInfo>
