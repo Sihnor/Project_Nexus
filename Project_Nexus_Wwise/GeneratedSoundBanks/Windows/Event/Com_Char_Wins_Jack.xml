@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="892499175" Type="Event" GUID="{3DE5C542-49C6-4EF5-B5BE-60CB49F75D00}" Language="SFX" Hash="{A11231B6-56DF-B847-4A2B-1CF58E11B9B2}">
+			<ObjectPath>Com_Char_Wins_Jack</ObjectPath>
+			<ShortName>Com_Char_Wins_Jack</ShortName>
+			<Path>Event/Com_Char_Wins_Jack.bnk</Path>
+			<Media>
+				<File Id="857849938" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_chara_jack_wins_01.wav</ShortName>
+					<Path>Media/857849938.wem</Path>
+					<CachePath>SFX/vo_commentator_chara_jack_wins_01_F6D14344.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="892499175" Name="Com_Char_Wins_Jack" ObjectPath="\Events\Commentator_Voices\Com_Char_Wins_Jack" GUID="{3DE5C542-49C6-4EF5-B5BE-60CB49F75D00}" DurationType="OneShot" DurationMin="2.125" DurationMax="2.125">
+					<MediaRefs>
+						<MediaRef Id="857849938"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{547858F4-D2EB-D0EC-1708-570A03027233}</FileHash>
+</SoundBanksInfo>

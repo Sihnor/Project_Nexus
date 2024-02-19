@@ -154,6 +154,88 @@
 				</Event>
 			</Events>
 		</SoundBank>
+		<SoundBank Id="253333564" Type="Event" GUID="{1D179E9F-6385-46AE-9BD6-B3918124CCD2}" Language="SFX" Hash="{815BE929-A691-9CB6-31CA-78D0679DB903}">
+			<ObjectPath>Plyr2_Attack_Light</ObjectPath>
+			<ShortName>Plyr2_Attack_Light</ShortName>
+			<Path>Event/Plyr2_Attack_Light.bnk</Path>
+			<Media>
+				<File Id="55257799" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_punch_light_05.wav</ShortName>
+					<Path>Media/55257799.wem</Path>
+					<CachePath>SFX/vo_fighter1_punch_light_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="86967045" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_punch_light_03.wav</ShortName>
+					<Path>Media/86967045.wem</Path>
+					<CachePath>SFX/vo_fighter1_punch_light_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="458298908" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_punch_light_01.wav</ShortName>
+					<Path>Media/458298908.wem</Path>
+					<CachePath>SFX/vo_fighter1_punch_light_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="538408692" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_punch_light_04.wav</ShortName>
+					<Path>Media/538408692.wem</Path>
+					<CachePath>SFX/vo_fighter1_punch_light_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="599159208" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_punch_light_02.wav</ShortName>
+					<Path>Media/599159208.wem</Path>
+					<CachePath>SFX/vo_fighter1_punch_light_02_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="253333564" Name="Plyr2_Attack_Light" ObjectPath="\Events\Player_Voices\Plyr2_Attack_Light" GUID="{1D179E9F-6385-46AE-9BD6-B3918124CCD2}" DurationType="OneShot" DurationMin="0.27291667" DurationMax="0.4365">
+					<MediaRefs>
+						<MediaRef Id="55257799"/>
+						<MediaRef Id="86967045"/>
+						<MediaRef Id="458298908"/>
+						<MediaRef Id="538408692"/>
+						<MediaRef Id="599159208"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="428126542" Type="Event" GUID="{E5BE2FFF-1923-4532-8105-65C7E6D3043F}" Language="SFX" Hash="{9C749DEF-3AD7-51EC-0C03-D01C034A4554}">
+			<ObjectPath>Ambi_3_Loop_Stop</ObjectPath>
+			<ShortName>Ambi_3_Loop_Stop</ShortName>
+			<Path>Event/Ambi_3_Loop_Stop.bnk</Path>
+			<Events>
+				<Event Id="428126542" Name="Ambi_3_Loop_Stop" ObjectPath="\Events\Ambience\2D\Ambi_3_Loop_Stop" GUID="{E5BE2FFF-1923-4532-8105-65C7E6D3043F}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="466103037" Type="Event" GUID="{6A3B97C4-67AE-45C1-A149-EBF2C7E68E30}" Language="SFX" Hash="{24B4D009-6A31-8F40-3F49-0FCCF609CEBC}">
+			<ObjectPath>Ambi_2_Loop_Start</ObjectPath>
+			<ShortName>Ambi_2_Loop_Start</ShortName>
+			<Path>Event/Ambi_2_Loop_Start.bnk</Path>
+			<Media>
+				<File Id="95110852" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Ambi_2_Loop_02.wav</ShortName>
+					<Path>Media/95110852.wem</Path>
+					<CachePath>SFX/Ambi_2_Loop_02_94056928.wem</CachePath>
+				</File>
+				<File Id="628115851" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Ambi_2_Loop_03.wav</ShortName>
+					<Path>Media/628115851.wem</Path>
+					<CachePath>SFX/Ambi_2_Loop_03_11973477.wem</CachePath>
+				</File>
+				<File Id="884370771" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Ambi_2_Loop_01.wav</ShortName>
+					<Path>Media/884370771.wem</Path>
+					<CachePath>SFX/Ambi_2_Loop_01_43E6DBB1.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="466103037" Name="Ambi_2_Loop_Start" ObjectPath="\Events\Ambience\2D\Ambi_2_Loop_Start" GUID="{6A3B97C4-67AE-45C1-A149-EBF2C7E68E30}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="95110852"/>
+						<MediaRef Id="628115851"/>
+						<MediaRef Id="884370771"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 		<SoundBank Id="562256996" Type="Event" GUID="{237BD721-40C9-4B31-BDC1-78F59500DF4D}" Language="SFX" Hash="{7AF77AE3-4B94-1B27-6677-AFEA9C2A340E}">
 			<ObjectPath>Play_Player_Jump</ObjectPath>
 			<ShortName>Play_Player_Jump</ShortName>
@@ -203,100 +285,21 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="577991234" Type="Event" GUID="{26AB0E9E-6FC9-4D4C-98BC-CDD120436275}" Language="English(US)" Hash="{4263EB14-848B-E364-48FB-A5C7656A6B57}">
-			<ObjectPath>Plyr_Attack_Light</ObjectPath>
-			<ShortName>Plyr_Attack_Light</ShortName>
-			<Path>Event/English(US)/Plyr_Attack_Light.bnk</Path>
+		<SoundBank Id="587623655" Type="Event" GUID="{820228B7-CD1A-459B-A81C-F381CF138931}" Language="SFX" Hash="{D2F6C8C3-D7C6-AA93-40D9-BA90B063D3A1}">
+			<ObjectPath>Com_Char_Wins_Lauren</ObjectPath>
+			<ShortName>Com_Char_Wins_Lauren</ShortName>
+			<Path>Event/Com_Char_Wins_Lauren.bnk</Path>
 			<Media>
-				<File Id="438478283" Language="English(US)" Streaming="false" Location="Loose">
-					<ShortName>Male_V_Light_Punch_01-61.wav</ShortName>
-					<Path>Media/English(US)/438478283.wem</Path>
-					<CachePath>Voices/English(US)/Male_V_Light_Punch_01-61_4BC29963.wem</CachePath>
-				</File>
-				<File Id="500668444" Language="English(US)" Streaming="false" Location="Loose">
-					<ShortName>Male_V_Light_Punch_01-14.wav</ShortName>
-					<Path>Media/English(US)/500668444.wem</Path>
-					<CachePath>Voices/English(US)/Male_V_Light_Punch_01-14_4C041960.wem</CachePath>
-				</File>
-				<File Id="919958799" Language="English(US)" Streaming="false" Location="Loose">
-					<ShortName>Male_V_Light_Punch_01-77.wav</ShortName>
-					<Path>Media/English(US)/919958799.wem</Path>
-					<CachePath>Voices/English(US)/Male_V_Light_Punch_01-77_10C4C929.wem</CachePath>
-				</File>
-				<File Id="1041453826" Language="English(US)" Streaming="false" Location="Loose">
-					<ShortName>Male_V_Light_Punch_01-97.wav</ShortName>
-					<Path>Media/English(US)/1041453826.wem</Path>
-					<CachePath>Voices/English(US)/Male_V_Light_Punch_01-97_2340D8AA.wem</CachePath>
+				<File Id="478517942" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_chara_lauren_wins_01.wav</ShortName>
+					<Path>Media/478517942.wem</Path>
+					<CachePath>SFX/vo_commentator_chara_lauren_wins_01_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="577991234" Name="Plyr_Attack_Light" ObjectPath="\Events\Player_Voices\Plyr_Attack_Light" GUID="{26AB0E9E-6FC9-4D4C-98BC-CDD120436275}" DurationType="OneShot" DurationMin="0.20462652" DurationMax="0.47689202">
+				<Event Id="587623655" Name="Com_Char_Wins_Lauren" ObjectPath="\Events\Commentator_Voices\Com_Char_Wins_Lauren" GUID="{820228B7-CD1A-459B-A81C-F381CF138931}" DurationType="OneShot" DurationMin="2.1875" DurationMax="2.1875">
 					<MediaRefs>
-						<MediaRef Id="438478283"/>
-						<MediaRef Id="500668444"/>
-						<MediaRef Id="919958799"/>
-						<MediaRef Id="1041453826"/>
-					</MediaRefs>
-				</Event>
-			</Events>
-		</SoundBank>
-		<SoundBank Id="597741315" Type="Event" GUID="{D209308F-B533-4A51-849A-30A2F7A262C4}" Language="English(US)" Hash="{096B9258-BFD8-A905-999D-21049268076B}">
-			<ObjectPath>Plyr_Movement_Jump</ObjectPath>
-			<ShortName>Plyr_Movement_Jump</ShortName>
-			<Path>Event/English(US)/Plyr_Movement_Jump.bnk</Path>
-			<Media>
-				<File Id="90036059" Language="English(US)" Streaming="false" Location="Loose">
-					<ShortName>Mov_Jump_02-121.wav</ShortName>
-					<Path>Media/English(US)/90036059.wem</Path>
-					<CachePath>Voices/English(US)/Mov_Jump_02-121_7F20BEB0.wem</CachePath>
-				</File>
-				<File Id="204099209" Language="English(US)" Streaming="false" Location="Loose">
-					<ShortName>Mov_Jump_01-08.wav</ShortName>
-					<Path>Media/English(US)/204099209.wem</Path>
-					<CachePath>Voices/English(US)/Mov_Jump_01-08_565C881F.wem</CachePath>
-				</File>
-				<File Id="318930592" Language="English(US)" Streaming="false" Location="Loose">
-					<ShortName>Mov_Jump_02-28.wav</ShortName>
-					<Path>Media/English(US)/318930592.wem</Path>
-					<CachePath>Voices/English(US)/Mov_Jump_02-28_8BC23090.wem</CachePath>
-				</File>
-				<File Id="482099551" Language="English(US)" Streaming="false" Location="Loose">
-					<ShortName>Mov_Jump_02-24.wav</ShortName>
-					<Path>Media/English(US)/482099551.wem</Path>
-					<CachePath>Voices/English(US)/Mov_Jump_02-24_93C6C239.wem</CachePath>
-				</File>
-				<File Id="487322753" Language="English(US)" Streaming="false" Location="Loose">
-					<ShortName>Mov_Jump_01-50.wav</ShortName>
-					<Path>Media/English(US)/487322753.wem</Path>
-					<CachePath>Voices/English(US)/Mov_Jump_01-50_3DAF23D8.wem</CachePath>
-				</File>
-				<File Id="628149815" Language="English(US)" Streaming="false" Location="Loose">
-					<ShortName>Mov_Jump_01-12.wav</ShortName>
-					<Path>Media/English(US)/628149815.wem</Path>
-					<CachePath>Voices/English(US)/Mov_Jump_01-12_EC4A5D54.wem</CachePath>
-				</File>
-				<File Id="869457211" Language="English(US)" Streaming="false" Location="Loose">
-					<ShortName>Mov_Jump_02-96.wav</ShortName>
-					<Path>Media/English(US)/869457211.wem</Path>
-					<CachePath>Voices/English(US)/Mov_Jump_02-96_CEC159FB.wem</CachePath>
-				</File>
-				<File Id="934193837" Language="English(US)" Streaming="false" Location="Loose">
-					<ShortName>Mov_Jump_01-67.wav</ShortName>
-					<Path>Media/English(US)/934193837.wem</Path>
-					<CachePath>Voices/English(US)/Mov_Jump_01-67_FBBCCF55.wem</CachePath>
-				</File>
-			</Media>
-			<Events>
-				<Event Id="597741315" Name="Plyr_Movement_Jump" ObjectPath="\Events\Player_Voices\Plyr_Movement_Jump" GUID="{D209308F-B533-4A51-849A-30A2F7A262C4}" DurationType="OneShot" DurationMin="0.27573663" DurationMax="0.5884256">
-					<MediaRefs>
-						<MediaRef Id="90036059"/>
-						<MediaRef Id="204099209"/>
-						<MediaRef Id="318930592"/>
-						<MediaRef Id="482099551"/>
-						<MediaRef Id="487322753"/>
-						<MediaRef Id="628149815"/>
-						<MediaRef Id="869457211"/>
-						<MediaRef Id="934193837"/>
+						<MediaRef Id="478517942"/>
 					</MediaRefs>
 				</Event>
 			</Events>
@@ -346,6 +349,49 @@
 						<MediaRef Id="769452454"/>
 						<MediaRef Id="808568048"/>
 						<MediaRef Id="948080380"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="667908117" Type="Event" GUID="{50D65725-C02E-4F28-8D2E-1291893F7AA3}" Language="SFX" Hash="{D865B2F3-9CC4-8ADF-1908-FA4D957B0434}">
+			<ObjectPath>Plyr2_Attack_Heavy</ObjectPath>
+			<ShortName>Plyr2_Attack_Heavy</ShortName>
+			<Path>Event/Plyr2_Attack_Heavy.bnk</Path>
+			<Media>
+				<File Id="61961079" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_punch_heavy_03.wav</ShortName>
+					<Path>Media/61961079.wem</Path>
+					<CachePath>SFX/vo_fighter2_punch_heavy_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="169474219" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_punch_heavy_01.wav</ShortName>
+					<Path>Media/169474219.wem</Path>
+					<CachePath>SFX/vo_fighter2_punch_heavy_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="462175575" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_punch_heavy_05.wav</ShortName>
+					<Path>Media/462175575.wem</Path>
+					<CachePath>SFX/vo_fighter2_punch_heavy_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="699677480" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_punch_heavy_02.wav</ShortName>
+					<Path>Media/699677480.wem</Path>
+					<CachePath>SFX/vo_fighter2_punch_heavy_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="760044868" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_punch_heavy_04.wav</ShortName>
+					<Path>Media/760044868.wem</Path>
+					<CachePath>SFX/vo_fighter2_punch_heavy_04_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="667908117" Name="Plyr2_Attack_Heavy" ObjectPath="\Events\Player_Voices\Plyr2_Attack_Heavy" GUID="{50D65725-C02E-4F28-8D2E-1291893F7AA3}" DurationType="OneShot" DurationMin="0.3125" DurationMax="0.48060417">
+					<MediaRefs>
+						<MediaRef Id="61961079"/>
+						<MediaRef Id="169474219"/>
+						<MediaRef Id="462175575"/>
+						<MediaRef Id="699677480"/>
+						<MediaRef Id="760044868"/>
 					</MediaRefs>
 				</Event>
 			</Events>
@@ -478,6 +524,25 @@
 				</Event>
 			</Events>
 		</SoundBank>
+		<SoundBank Id="892499175" Type="Event" GUID="{3DE5C542-49C6-4EF5-B5BE-60CB49F75D00}" Language="SFX" Hash="{A11231B6-56DF-B847-4A2B-1CF58E11B9B2}">
+			<ObjectPath>Com_Char_Wins_Jack</ObjectPath>
+			<ShortName>Com_Char_Wins_Jack</ShortName>
+			<Path>Event/Com_Char_Wins_Jack.bnk</Path>
+			<Media>
+				<File Id="857849938" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_chara_jack_wins_01.wav</ShortName>
+					<Path>Media/857849938.wem</Path>
+					<CachePath>SFX/vo_commentator_chara_jack_wins_01_F6D14344.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="892499175" Name="Com_Char_Wins_Jack" ObjectPath="\Events\Commentator_Voices\Com_Char_Wins_Jack" GUID="{3DE5C542-49C6-4EF5-B5BE-60CB49F75D00}" DurationType="OneShot" DurationMin="2.125" DurationMax="2.125">
+					<MediaRefs>
+						<MediaRef Id="857849938"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 		<SoundBank Id="903081441" Type="Event" GUID="{A5135C10-7237-4528-BB2B-2CF6187A56A9}" Language="SFX" Hash="{E0D24ED7-A40A-03CB-741F-094FBD675D12}">
 			<ObjectPath>Play_AmbienceMain</ObjectPath>
 			<ShortName>Play_AmbienceMain</ShortName>
@@ -501,6 +566,57 @@
 				<Event Id="986664061" Name="Play_Pause_Out" ObjectPath="\Events\UI\Play_Pause_Out" GUID="{D586571B-518E-44CF-8A2E-6B68BFDB5D01}" DurationType="OneShot" DurationMin="0.40908334" DurationMax="0.40908334">
 					<MediaRefs>
 						<MediaRef Id="658970362"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1073355647" Type="Event" GUID="{EEB1C8DC-2012-4465-B929-C73B463E3F63}" Language="SFX" Hash="{0CE144A7-3469-4447-0568-43B88B82D608}">
+			<ObjectPath>Ambi_2_Loop_Stop</ObjectPath>
+			<ShortName>Ambi_2_Loop_Stop</ShortName>
+			<Path>Event/Ambi_2_Loop_Stop.bnk</Path>
+			<Events>
+				<Event Id="1073355647" Name="Ambi_2_Loop_Stop" ObjectPath="\Events\Ambience\2D\Ambi_2_Loop_Stop" GUID="{EEB1C8DC-2012-4465-B929-C73B463E3F63}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1159457221" Type="Event" GUID="{93953BBA-0842-4F85-96F8-FADB33FA970A}" Language="SFX" Hash="{56AE6D74-2897-D73B-BD72-D002AA50F963}">
+			<ObjectPath>Plyr2_Movement_Jump</ObjectPath>
+			<ShortName>Plyr2_Movement_Jump</ShortName>
+			<Path>Event/Plyr2_Movement_Jump.bnk</Path>
+			<Media>
+				<File Id="103359460" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_mov_jump_01.wav</ShortName>
+					<Path>Media/103359460.wem</Path>
+					<CachePath>SFX/vo_fighter2_mov_jump_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="376315290" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_mov_jump_04.wav</ShortName>
+					<Path>Media/376315290.wem</Path>
+					<CachePath>SFX/vo_fighter2_mov_jump_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="508221196" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_mov_jump_03.wav</ShortName>
+					<Path>Media/508221196.wem</Path>
+					<CachePath>SFX/vo_fighter2_mov_jump_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="552469363" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_mov_jump_02.wav</ShortName>
+					<Path>Media/552469363.wem</Path>
+					<CachePath>SFX/vo_fighter2_mov_jump_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="982484189" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_mov_jump_05.wav</ShortName>
+					<Path>Media/982484189.wem</Path>
+					<CachePath>SFX/vo_fighter2_mov_jump_05_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1159457221" Name="Plyr2_Movement_Jump" ObjectPath="\Events\Player_Voices\Plyr2_Movement_Jump" GUID="{93953BBA-0842-4F85-96F8-FADB33FA970A}" DurationType="OneShot" DurationMin="0.3125" DurationMax="0.40625">
+					<MediaRefs>
+						<MediaRef Id="103359460"/>
+						<MediaRef Id="376315290"/>
+						<MediaRef Id="508221196"/>
+						<MediaRef Id="552469363"/>
+						<MediaRef Id="982484189"/>
 					</MediaRefs>
 				</Event>
 			</Events>
@@ -815,25 +931,6 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="1362654913" Type="Event" GUID="{22E52904-E216-485D-A917-E19F5A57449D}" Language="SFX" Hash="{F74CB90B-1BE1-C1DA-27AD-2098CB5D1116}">
-			<ObjectPath>Play_StageMusic</ObjectPath>
-			<ShortName>Play_StageMusic</ShortName>
-			<Path>Event/Play_StageMusic.bnk</Path>
-			<Media>
-				<File Id="595978771" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>Nexus 2_V2.wav</ShortName>
-					<Path>Media/595978771.wem</Path>
-					<CachePath>SFX/Nexus 2_V2_AA286D99.wem</CachePath>
-				</File>
-			</Media>
-			<Events>
-				<Event Id="1362654913" Name="Play_StageMusic" ObjectPath="\Events\Music\Play_StageMusic" GUID="{22E52904-E216-485D-A917-E19F5A57449D}" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="595978771"/>
-					</MediaRefs>
-				</Event>
-			</Events>
-		</SoundBank>
 		<SoundBank Id="1376358074" Type="Event" GUID="{D23E66E6-43DA-4114-901C-C8A2B0828697}" Language="SFX" Hash="{289A6DCF-AD78-98D5-55BE-6C7C04BC0FDC}">
 			<ObjectPath>Play_Player_Block_Light</ObjectPath>
 			<ShortName>Play_Player_Block_Light</ShortName>
@@ -883,12 +980,153 @@
 				</Event>
 			</Events>
 		</SoundBank>
+		<SoundBank Id="1407253294" Type="Event" GUID="{64BA2DC8-AF54-4E1A-AEF6-60694538C48B}" Language="SFX" Hash="{DF80883E-3268-05C0-72A7-942C4B260DF6}">
+			<ObjectPath>Com_Round_3_Start</ObjectPath>
+			<ShortName>Com_Round_3_Start</ShortName>
+			<Path>Event/Com_Round_3_Start.bnk</Path>
+			<Media>
+				<File Id="115684259" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_05.wav</ShortName>
+					<Path>Media/115684259.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="332544747" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_02.wav</ShortName>
+					<Path>Media/332544747.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="565589375" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_03.wav</ShortName>
+					<Path>Media/565589375.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="632686557" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_04.wav</ShortName>
+					<Path>Media/632686557.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="697046052" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_round_03.wav</ShortName>
+					<Path>Media/697046052.wem</Path>
+					<CachePath>SFX/vo_commentator_round_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="950724125" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_01.wav</ShortName>
+					<Path>Media/950724125.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_01_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1407253294" Name="Com_Round_3_Start" ObjectPath="\Events\Commentator_Voices\Com_Round_3_Start" GUID="{64BA2DC8-AF54-4E1A-AEF6-60694538C48B}" DurationType="OneShot" DurationMin="2.6875" DurationMax="3">
+					<MediaRefs>
+						<MediaRef Id="115684259"/>
+						<MediaRef Id="332544747"/>
+						<MediaRef Id="565589375"/>
+						<MediaRef Id="632686557"/>
+						<MediaRef Id="697046052"/>
+						<MediaRef Id="950724125"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1447755480" Type="Event" GUID="{D240E461-1973-4A2A-922A-01651A67602B}" Language="SFX" Hash="{7DFCCB9F-1D24-AC19-9E69-55633A334037}">
+			<ObjectPath>Com_Round_1_Start</ObjectPath>
+			<ShortName>Com_Round_1_Start</ShortName>
+			<Path>Event/Com_Round_1_Start.bnk</Path>
+			<Media>
+				<File Id="115684259" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_05.wav</ShortName>
+					<Path>Media/115684259.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="200620881" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_round_01.wav</ShortName>
+					<Path>Media/200620881.wem</Path>
+					<CachePath>SFX/vo_commentator_round_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="332544747" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_02.wav</ShortName>
+					<Path>Media/332544747.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="565589375" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_03.wav</ShortName>
+					<Path>Media/565589375.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="632686557" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_04.wav</ShortName>
+					<Path>Media/632686557.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="950724125" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_01.wav</ShortName>
+					<Path>Media/950724125.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_01_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1447755480" Name="Com_Round_1_Start" ObjectPath="\Events\Commentator_Voices\Com_Round_1_Start" GUID="{D240E461-1973-4A2A-922A-01651A67602B}" DurationType="OneShot" DurationMin="2.125" DurationMax="2.4375">
+					<MediaRefs>
+						<MediaRef Id="115684259"/>
+						<MediaRef Id="200620881"/>
+						<MediaRef Id="332544747"/>
+						<MediaRef Id="565589375"/>
+						<MediaRef Id="632686557"/>
+						<MediaRef Id="950724125"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 		<SoundBank Id="1619838726" Type="Event" GUID="{12E562B3-F440-40CE-912E-3B5E11D0E0E4}" Language="SFX" Hash="{88270D22-5861-8D60-5974-7992B52590B6}">
 			<ObjectPath>Play_Stop_TestBeep_lp_3D</ObjectPath>
 			<ShortName>Play_Stop_TestBeep_lp_3D</ShortName>
 			<Path>Event/Play_Stop_TestBeep_lp_3D.bnk</Path>
 			<Events>
 				<Event Id="1619838726" Name="Play_Stop_TestBeep_lp_3D" ObjectPath="\Events\TestEvents\Play_Stop_TestBeep_lp_3D" GUID="{12E562B3-F440-40CE-912E-3B5E11D0E0E4}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1659825819" Type="Event" GUID="{167A664F-1E14-4579-BD2F-8548BA86507A}" Language="SFX" Hash="{1E9B4A47-E7F8-5909-6036-7E77684CB5B0}">
+			<ObjectPath>Plyr2_Movement_Rollforward</ObjectPath>
+			<ShortName>Plyr2_Movement_Rollforward</ShortName>
+			<Path>Event/Plyr2_Movement_Rollforward.bnk</Path>
+			<Media>
+				<File Id="139368930" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_mov_rollfow_01.wav</ShortName>
+					<Path>Media/139368930.wem</Path>
+					<CachePath>SFX/vo_fighter2_mov_rollfow_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="182980205" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_mov_rollfow_03.wav</ShortName>
+					<Path>Media/182980205.wem</Path>
+					<CachePath>SFX/vo_fighter2_mov_rollfow_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="363488007" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_mov_rollfow_02.wav</ShortName>
+					<Path>Media/363488007.wem</Path>
+					<CachePath>SFX/vo_fighter2_mov_rollfow_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="819722637" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_mov_rollfow_05.wav</ShortName>
+					<Path>Media/819722637.wem</Path>
+					<CachePath>SFX/vo_fighter2_mov_rollfow_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1034347497" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_mov_rollfow_04.wav</ShortName>
+					<Path>Media/1034347497.wem</Path>
+					<CachePath>SFX/vo_fighter2_mov_rollfow_04_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1659825819" Name="Plyr2_Movement_Rollforward" ObjectPath="\Events\Player_Voices\Plyr2_Movement_Rollforward" GUID="{167A664F-1E14-4579-BD2F-8548BA86507A}" DurationType="OneShot" DurationMin="0.5" DurationMax="0.6875">
+					<MediaRefs>
+						<MediaRef Id="139368930"/>
+						<MediaRef Id="182980205"/>
+						<MediaRef Id="363488007"/>
+						<MediaRef Id="819722637"/>
+						<MediaRef Id="1034347497"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 		<SoundBank Id="1681067324" Type="Event" GUID="{4DEEC41B-B46A-428D-BC1E-14F8277A4A26}" Language="SFX" Hash="{4440A18B-B745-79FB-AF3F-CB90FF484BA4}">
@@ -941,6 +1179,49 @@
 				</Event>
 			</Events>
 		</SoundBank>
+		<SoundBank Id="1912703074" Type="Event" GUID="{D7BC3EB3-3F4C-4395-A786-93E524AB9064}" Language="SFX" Hash="{C7368D8E-0BEE-80A9-2E89-14C919DEC713}">
+			<ObjectPath>Plyr1_Movement_Jump</ObjectPath>
+			<ShortName>Plyr1_Movement_Jump</ShortName>
+			<Path>Event/Plyr1_Movement_Jump.bnk</Path>
+			<Media>
+				<File Id="59019535" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_jump_02.wav</ShortName>
+					<Path>Media/59019535.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_jump_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="78153664" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_jump_01.wav</ShortName>
+					<Path>Media/78153664.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_jump_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="760823714" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_jump_03.wav</ShortName>
+					<Path>Media/760823714.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_jump_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="783155984" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_jump_05.wav</ShortName>
+					<Path>Media/783155984.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_jump_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1018912342" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_jump_04.wav</ShortName>
+					<Path>Media/1018912342.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_jump_04_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1912703074" Name="Plyr1_Movement_Jump" ObjectPath="\Events\Player_Voices\Plyr1_Movement_Jump" GUID="{D7BC3EB3-3F4C-4395-A786-93E524AB9064}" DurationType="OneShot" DurationMin="0.34375" DurationMax="0.5625">
+					<MediaRefs>
+						<MediaRef Id="59019535"/>
+						<MediaRef Id="78153664"/>
+						<MediaRef Id="760823714"/>
+						<MediaRef Id="783155984"/>
+						<MediaRef Id="1018912342"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 		<SoundBank Id="1955951874" Type="Event" GUID="{D09020C2-8A1F-43E3-84A6-67EB0B1E108E}" Language="SFX" Hash="{F512F3E1-F33B-BAD4-C96E-A9003BC564A8}">
 			<ObjectPath>Play_TestBeep</ObjectPath>
 			<ShortName>Play_TestBeep</ShortName>
@@ -960,23 +1241,98 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2072064337" Type="Event" GUID="{94E2900C-95E9-4512-81AE-22994C942721}" Language="SFX" Hash="{C324FEA7-1D39-FC68-6ED2-AAE74CC8997B}">
-			<ObjectPath>Ambi_Start</ObjectPath>
-			<ShortName>Ambi_Start</ShortName>
-			<Path>Event/Ambi_Start.bnk</Path>
+		<SoundBank Id="1986195668" Type="Event" GUID="{6FCF772D-550C-4F65-B592-DB8587BDF458}" Language="SFX" Hash="{CDBC47D2-E883-CD6C-639C-E171A512A70F}">
+			<ObjectPath>Plyr1_Dmg_Heavy</ObjectPath>
+			<ShortName>Plyr1_Dmg_Heavy</ShortName>
+			<Path>Event/Plyr1_Dmg_Heavy.bnk</Path>
 			<Media>
-				<File Id="187874616" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>Ambience_test_2.wav</ShortName>
-					<Path>Media/187874616.wem</Path>
-					<CachePath>SFX/Ambience_test_2_89747CCB.wem</CachePath>
+				<File Id="296001773" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_damage_heavy_01.wav</ShortName>
+					<Path>Media/296001773.wem</Path>
+					<CachePath>SFX/vo_fighter1_damage_heavy_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="489055783" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_damage_heavy_05.wav</ShortName>
+					<Path>Media/489055783.wem</Path>
+					<CachePath>SFX/vo_fighter1_damage_heavy_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="510817508" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_damage_heavy_04.wav</ShortName>
+					<Path>Media/510817508.wem</Path>
+					<CachePath>SFX/vo_fighter1_damage_heavy_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="904551779" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_damage_heavy_03.wav</ShortName>
+					<Path>Media/904551779.wem</Path>
+					<CachePath>SFX/vo_fighter1_damage_heavy_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1017776858" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_damage_heavy_02.wav</ShortName>
+					<Path>Media/1017776858.wem</Path>
+					<CachePath>SFX/vo_fighter1_damage_heavy_02_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2072064337" Name="Ambi_Start" ObjectPath="\Events\Ambience\Ambi_Start" GUID="{94E2900C-95E9-4512-81AE-22994C942721}" DurationType="Infinite">
+				<Event Id="1986195668" Name="Plyr1_Dmg_Heavy" ObjectPath="\Events\Player_Voices\Plyr1_Dmg_Heavy" GUID="{6FCF772D-550C-4F65-B592-DB8587BDF458}" DurationType="OneShot" DurationMin="0.5625" DurationMax="0.89166665">
 					<MediaRefs>
-						<MediaRef Id="187874616"/>
+						<MediaRef Id="296001773"/>
+						<MediaRef Id="489055783"/>
+						<MediaRef Id="510817508"/>
+						<MediaRef Id="904551779"/>
+						<MediaRef Id="1017776858"/>
 					</MediaRefs>
 				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1991585818" Type="Event" GUID="{B9C1CDAF-05EE-4DFB-85C0-573948B38A64}" Language="SFX" Hash="{BF9CE012-8375-CDC5-F802-812E55F323A8}">
+			<ObjectPath>Plyr2_Dmg_Light</ObjectPath>
+			<ShortName>Plyr2_Dmg_Light</ShortName>
+			<Path>Event/Plyr2_Dmg_Light.bnk</Path>
+			<Media>
+				<File Id="265713679" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_dmg_light_01.wav</ShortName>
+					<Path>Media/265713679.wem</Path>
+					<CachePath>SFX/vo_fighter2_dmg_light_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="269088665" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_dmg_light_02.wav</ShortName>
+					<Path>Media/269088665.wem</Path>
+					<CachePath>SFX/vo_fighter2_dmg_light_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="291246007" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_dmg_light_03.wav</ShortName>
+					<Path>Media/291246007.wem</Path>
+					<CachePath>SFX/vo_fighter2_dmg_light_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="839357658" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_dmg_light_05.wav</ShortName>
+					<Path>Media/839357658.wem</Path>
+					<CachePath>SFX/vo_fighter2_dmg_light_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="994823399" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_dmg_light_04.wav</ShortName>
+					<Path>Media/994823399.wem</Path>
+					<CachePath>SFX/vo_fighter2_dmg_light_04_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1991585818" Name="Plyr2_Dmg_Light" ObjectPath="\Events\Player_Voices\Plyr2_Dmg_Light" GUID="{B9C1CDAF-05EE-4DFB-85C0-573948B38A64}" DurationType="OneShot" DurationMin="0.3125" DurationMax="0.5">
+					<MediaRefs>
+						<MediaRef Id="265713679"/>
+						<MediaRef Id="269088665"/>
+						<MediaRef Id="291246007"/>
+						<MediaRef Id="839357658"/>
+						<MediaRef Id="994823399"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2010386542" Type="Event" GUID="{D05CB7B5-5918-4544-A1AA-75CE5A34CB31}" Language="SFX" Hash="{072688D2-E7D3-6DDC-C69E-4E103DB9A2A8}">
+			<ObjectPath>Ambi_3_Loop_Start</ObjectPath>
+			<ShortName>Ambi_3_Loop_Start</ShortName>
+			<Path>Event/Ambi_3_Loop_Start.bnk</Path>
+			<Events>
+				<Event Id="2010386542" Name="Ambi_3_Loop_Start" ObjectPath="\Events\Ambience\2D\Ambi_3_Loop_Start" GUID="{D05CB7B5-5918-4544-A1AA-75CE5A34CB31}" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
 		<SoundBank Id="2092733163" Type="Event" GUID="{82FCA46E-6E59-4873-9785-CC8165F421C1}" Language="SFX" Hash="{483DACAC-6E9A-8E69-43D7-50D98BF82F54}">
@@ -998,12 +1354,74 @@
 				</Event>
 			</Events>
 		</SoundBank>
+		<SoundBank Id="2170617613" Type="Event" GUID="{6B678688-889A-448F-8387-4F2BA8FB80C2}" Language="SFX" Hash="{3956F5B6-15D9-01EF-7C8E-A1221FA71392}">
+			<ObjectPath>Com_Welcome</ObjectPath>
+			<ShortName>Com_Welcome</ShortName>
+			<Path>Event/Com_Welcome.bnk</Path>
+			<Media>
+				<File Id="698339974" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_welcome_01.wav</ShortName>
+					<Path>Media/698339974.wem</Path>
+					<CachePath>SFX/vo_commentator_welcome_01_C08E6CF5.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2170617613" Name="Com_Welcome" ObjectPath="\Events\Commentator_Voices\Com_Welcome" GUID="{6B678688-889A-448F-8387-4F2BA8FB80C2}" DurationType="OneShot" DurationMin="2.03125" DurationMax="2.03125">
+					<MediaRefs>
+						<MediaRef Id="698339974"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 		<SoundBank Id="2313976826" Type="Event" GUID="{74313079-6B9A-47A5-A030-881C27AB662E}" Language="SFX" Hash="{ABFC1A12-62C0-36D3-30C4-FCA0B8F23E0D}">
 			<ObjectPath>Stop_Player_Cloth</ObjectPath>
 			<ShortName>Stop_Player_Cloth</ShortName>
 			<Path>Event/Stop_Player_Cloth.bnk</Path>
 			<Events>
 				<Event Id="2313976826" Name="Stop_Player_Cloth" ObjectPath="\Events\Player\PlayerLocomotion\Stop_Player_Cloth" GUID="{74313079-6B9A-47A5-A030-881C27AB662E}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2322697492" Type="Event" GUID="{99EBE9DA-2D4B-4E25-A1FD-CC1C387CC0C5}" Language="SFX" Hash="{09AB476E-9FF6-9FCA-96A8-EC84326D21BD}">
+			<ObjectPath>Plyr1_Attack_Heavy</ObjectPath>
+			<ShortName>Plyr1_Attack_Heavy</ShortName>
+			<Path>Event/Plyr1_Attack_Heavy.bnk</Path>
+			<Media>
+				<File Id="2912288" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_punch_heavy_01.wav</ShortName>
+					<Path>Media/2912288.wem</Path>
+					<CachePath>SFX/vo_fighter1_punch_heavy_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="197192903" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_punch_heavy_02.wav</ShortName>
+					<Path>Media/197192903.wem</Path>
+					<CachePath>SFX/vo_fighter1_punch_heavy_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="210152119" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_punch_heavy_04.wav</ShortName>
+					<Path>Media/210152119.wem</Path>
+					<CachePath>SFX/vo_fighter1_punch_heavy_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="693339155" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_punch_heavy_05.wav</ShortName>
+					<Path>Media/693339155.wem</Path>
+					<CachePath>SFX/vo_fighter1_punch_heavy_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="970717813" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_punch_heavy_03.wav</ShortName>
+					<Path>Media/970717813.wem</Path>
+					<CachePath>SFX/vo_fighter1_punch_heavy_03_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2322697492" Name="Plyr1_Attack_Heavy" ObjectPath="\Events\Player_Voices\Plyr1_Attack_Heavy" GUID="{99EBE9DA-2D4B-4E25-A1FD-CC1C387CC0C5}" DurationType="OneShot" DurationMin="0.36458334" DurationMax="0.47291666">
+					<MediaRefs>
+						<MediaRef Id="2912288"/>
+						<MediaRef Id="197192903"/>
+						<MediaRef Id="210152119"/>
+						<MediaRef Id="693339155"/>
+						<MediaRef Id="970717813"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 		<SoundBank Id="2334765685" Type="Event" GUID="{F110A2AB-C527-4CD6-956A-320E06655E4E}" Language="SFX" Hash="{1C19E938-EF82-D16B-97F9-FB95367035F4}">
@@ -1051,6 +1469,55 @@
 						<MediaRef Id="588301371"/>
 						<MediaRef Id="670658824"/>
 						<MediaRef Id="996432136"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2345698665" Type="Event" GUID="{36113D1F-1DF9-4707-9998-76CB9E7E679F}" Language="SFX" Hash="{92A403BA-C840-04B5-D47D-EFF3CBCF8CD3}">
+			<ObjectPath>Com_Round_4_Start</ObjectPath>
+			<ShortName>Com_Round_4_Start</ShortName>
+			<Path>Event/Com_Round_4_Start.bnk</Path>
+			<Media>
+				<File Id="115684259" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_05.wav</ShortName>
+					<Path>Media/115684259.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="134037975" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_round_04.wav</ShortName>
+					<Path>Media/134037975.wem</Path>
+					<CachePath>SFX/vo_commentator_round_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="332544747" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_02.wav</ShortName>
+					<Path>Media/332544747.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="565589375" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_03.wav</ShortName>
+					<Path>Media/565589375.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="632686557" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_04.wav</ShortName>
+					<Path>Media/632686557.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="950724125" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_01.wav</ShortName>
+					<Path>Media/950724125.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_01_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2345698665" Name="Com_Round_4_Start" ObjectPath="\Events\Commentator_Voices\Com_Round_4_Start" GUID="{36113D1F-1DF9-4707-9998-76CB9E7E679F}" DurationType="OneShot" DurationMin="3.03125" DurationMax="3.34375">
+					<MediaRefs>
+						<MediaRef Id="115684259"/>
+						<MediaRef Id="134037975"/>
+						<MediaRef Id="332544747"/>
+						<MediaRef Id="565589375"/>
+						<MediaRef Id="632686557"/>
+						<MediaRef Id="950724125"/>
 					</MediaRefs>
 				</Event>
 			</Events>
@@ -1172,84 +1639,45 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2570041344" Type="Event" GUID="{7763077C-B319-4174-8788-5FBF581263D8}" Language="SFX" Hash="{C86C9965-712D-998C-89A1-0903A71F86EA}">
-			<ObjectPath>Play_MenuMusic</ObjectPath>
-			<ShortName>Play_MenuMusic</ShortName>
-			<Path>Event/Play_MenuMusic.bnk</Path>
+		<SoundBank Id="2579118743" Type="Event" GUID="{09907A82-0543-4AC4-8673-B8CE02D2AA76}" Language="SFX" Hash="{618884F4-CE53-A658-519B-187CC406B555}">
+			<ObjectPath>Plyr2_Movement_Rollbackward</ObjectPath>
+			<ShortName>Plyr2_Movement_Rollbackward</ShortName>
+			<Path>Event/Plyr2_Movement_Rollbackward.bnk</Path>
 			<Media>
-				<File Id="68506720" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>Nexus-Menu.wav</ShortName>
-					<Path>Media/68506720.wem</Path>
-					<CachePath>SFX/Nexus-Menu_E48F3E35.wem</CachePath>
+				<File Id="68625953" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_mov_rollbackw_03.wav</ShortName>
+					<Path>Media/68625953.wem</Path>
+					<CachePath>SFX/vo_fighter2_mov_rollbackw_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="139480995" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_mov_rollbackw_05.wav</ShortName>
+					<Path>Media/139480995.wem</Path>
+					<CachePath>SFX/vo_fighter2_mov_rollbackw_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="310248323" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_mov_rollbackw_04.wav</ShortName>
+					<Path>Media/310248323.wem</Path>
+					<CachePath>SFX/vo_fighter2_mov_rollbackw_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="782137537" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_mov_rollbackw_01.wav</ShortName>
+					<Path>Media/782137537.wem</Path>
+					<CachePath>SFX/vo_fighter2_mov_rollbackw_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1048125400" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_mov_rollbackw_02.wav</ShortName>
+					<Path>Media/1048125400.wem</Path>
+					<CachePath>SFX/vo_fighter2_mov_rollbackw_02_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2570041344" Name="Play_MenuMusic" ObjectPath="\Events\Music\Play_MenuMusic" GUID="{7763077C-B319-4174-8788-5FBF581263D8}" DurationType="Infinite">
+				<Event Id="2579118743" Name="Plyr2_Movement_Rollbackward" ObjectPath="\Events\Player_Voices\Plyr2_Movement_Rollbackward" GUID="{09907A82-0543-4AC4-8673-B8CE02D2AA76}" DurationType="OneShot" DurationMin="0.55916667" DurationMax="0.7435">
 					<MediaRefs>
-						<MediaRef Id="68506720"/>
-					</MediaRefs>
-				</Event>
-			</Events>
-		</SoundBank>
-		<SoundBank Id="2611482463" Type="Event" GUID="{814FA06B-28E6-4FED-A38E-2F5C065D05FD}" Language="SFX" Hash="{6C6B7379-1AC5-E290-038C-17290BC65FF6}">
-			<ObjectPath>Stop_StageMusic</ObjectPath>
-			<ShortName>Stop_StageMusic</ShortName>
-			<Path>Event/Stop_StageMusic.bnk</Path>
-			<Events>
-				<Event Id="2611482463" Name="Stop_StageMusic" ObjectPath="\Events\Music\Stop_StageMusic" GUID="{814FA06B-28E6-4FED-A38E-2F5C065D05FD}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-			</Events>
-		</SoundBank>
-		<SoundBank Id="2644649371" Type="Event" GUID="{99EBE9DA-2D4B-4E25-A1FD-CC1C387CC0C5}" Language="English(US)" Hash="{F7CFDDE7-96B2-44D8-42D1-A029ABC78D0A}">
-			<ObjectPath>Plyr_Attack_Heavy</ObjectPath>
-			<ShortName>Plyr_Attack_Heavy</ShortName>
-			<Path>Event/English(US)/Plyr_Attack_Heavy.bnk</Path>
-			<Media>
-				<File Id="163125014" Language="English(US)" Streaming="false" Location="Loose">
-					<ShortName>Male_V_Heavy_Kick_01-33.wav</ShortName>
-					<Path>Media/English(US)/163125014.wem</Path>
-					<CachePath>Voices/English(US)/Male_V_Heavy_Kick_01-33_A979C1F1.wem</CachePath>
-				</File>
-				<File Id="301906351" Language="English(US)" Streaming="false" Location="Loose">
-					<ShortName>Male_V_Heavy_Kick_01-96.wav</ShortName>
-					<Path>Media/English(US)/301906351.wem</Path>
-					<CachePath>Voices/English(US)/Male_V_Heavy_Kick_01-96_8677B3D8.wem</CachePath>
-				</File>
-				<File Id="430777336" Language="English(US)" Streaming="false" Location="Loose">
-					<ShortName>Male_V_Heavy_Kick_01-49.wav</ShortName>
-					<Path>Media/English(US)/430777336.wem</Path>
-					<CachePath>Voices/English(US)/Male_V_Heavy_Kick_01-49_836B4CDF.wem</CachePath>
-				</File>
-				<File Id="556005930" Language="English(US)" Streaming="false" Location="Loose">
-					<ShortName>Male_V_Heavy_Kick_01-24.wav</ShortName>
-					<Path>Media/English(US)/556005930.wem</Path>
-					<CachePath>Voices/English(US)/Male_V_Heavy_Kick_01-24_42A45A80.wem</CachePath>
-				</File>
-				<File Id="633489352" Language="English(US)" Streaming="false" Location="Loose">
-					<ShortName>Male_V_Heavy_Kick_01-60.wav</ShortName>
-					<Path>Media/English(US)/633489352.wem</Path>
-					<CachePath>Voices/English(US)/Male_V_Heavy_Kick_01-60_3689EA76.wem</CachePath>
-				</File>
-				<File Id="986590399" Language="English(US)" Streaming="false" Location="Loose">
-					<ShortName>Male_V_Heavy_Kick_01-52.wav</ShortName>
-					<Path>Media/English(US)/986590399.wem</Path>
-					<CachePath>Voices/English(US)/Male_V_Heavy_Kick_01-52_89DB2E65.wem</CachePath>
-				</File>
-				<File Id="1070016745" Language="English(US)" Streaming="false" Location="Loose">
-					<ShortName>Male_V_Heavy_Kick_01-64.wav</ShortName>
-					<Path>Media/English(US)/1070016745.wem</Path>
-					<CachePath>Voices/English(US)/Male_V_Heavy_Kick_01-64_00437C27.wem</CachePath>
-				</File>
-			</Media>
-			<Events>
-				<Event Id="2644649371" Name="Plyr_Attack_Heavy" ObjectPath="\Events\Player_Voices\Plyr_Attack_Heavy" GUID="{99EBE9DA-2D4B-4E25-A1FD-CC1C387CC0C5}" DurationType="OneShot" DurationMin="0.28671977" DurationMax="0.80051285">
-					<MediaRefs>
-						<MediaRef Id="163125014"/>
-						<MediaRef Id="301906351"/>
-						<MediaRef Id="430777336"/>
-						<MediaRef Id="556005930"/>
-						<MediaRef Id="633489352"/>
-						<MediaRef Id="986590399"/>
-						<MediaRef Id="1070016745"/>
+						<MediaRef Id="68625953"/>
+						<MediaRef Id="139480995"/>
+						<MediaRef Id="310248323"/>
+						<MediaRef Id="782137537"/>
+						<MediaRef Id="1048125400"/>
 					</MediaRefs>
 				</Event>
 			</Events>
@@ -1303,12 +1731,66 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2753202630" Type="Event" GUID="{0973E8E1-EE17-444F-B575-849EB0A94CA7}" Language="SFX" Hash="{FA978EBF-25FD-548D-1069-6B7E25DF2688}">
-			<ObjectPath>Stop_MenuMusic</ObjectPath>
-			<ShortName>Stop_MenuMusic</ShortName>
-			<Path>Event/Stop_MenuMusic.bnk</Path>
+		<SoundBank Id="2777511740" Type="Event" GUID="{3D69D6CA-7817-48AC-A481-26DD99F18E67}" Language="SFX" Hash="{17FF85FB-224C-FC1D-9C56-3358DBA91034}">
+			<ObjectPath>Com_Choose</ObjectPath>
+			<ShortName>Com_Choose</ShortName>
+			<Path>Event/Com_Choose.bnk</Path>
+			<Media>
+				<File Id="653837993" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_choose_fighter_01.wav</ShortName>
+					<Path>Media/653837993.wem</Path>
+					<CachePath>SFX/vo_commentator_choose_fighter_01_10C4C929.wem</CachePath>
+				</File>
+			</Media>
 			<Events>
-				<Event Id="2753202630" Name="Stop_MenuMusic" ObjectPath="\Events\Music\Stop_MenuMusic" GUID="{0973E8E1-EE17-444F-B575-849EB0A94CA7}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2777511740" Name="Com_Choose" ObjectPath="\Events\Commentator_Voices\Com_Choose" GUID="{3D69D6CA-7817-48AC-A481-26DD99F18E67}" DurationType="OneShot" DurationMin="1.8125" DurationMax="1.8125">
+					<MediaRefs>
+						<MediaRef Id="653837993"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2799667633" Type="Event" GUID="{18AC3747-1B0B-4F57-9307-A7FEBA0ADAC6}" Language="SFX" Hash="{7A88C7E9-C51E-2C20-AA27-EDBBB2E866B1}">
+			<ObjectPath>Plyr1_Dmg_Light</ObjectPath>
+			<ShortName>Plyr1_Dmg_Light</ShortName>
+			<Path>Event/Plyr1_Dmg_Light.bnk</Path>
+			<Media>
+				<File Id="198005070" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_damage_light_03.wav</ShortName>
+					<Path>Media/198005070.wem</Path>
+					<CachePath>SFX/vo_fighter1_damage_light_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="206748773" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_damage_light_02.wav</ShortName>
+					<Path>Media/206748773.wem</Path>
+					<CachePath>SFX/vo_fighter1_damage_light_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="302449853" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_damage_light_05.wav</ShortName>
+					<Path>Media/302449853.wem</Path>
+					<CachePath>SFX/vo_fighter1_damage_light_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="370147068" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_damage_light_01.wav</ShortName>
+					<Path>Media/370147068.wem</Path>
+					<CachePath>SFX/vo_fighter1_damage_light_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="643348026" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_damage_light_04.wav</ShortName>
+					<Path>Media/643348026.wem</Path>
+					<CachePath>SFX/vo_fighter1_damage_light_04_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2799667633" Name="Plyr1_Dmg_Light" ObjectPath="\Events\Player_Voices\Plyr1_Dmg_Light" GUID="{18AC3747-1B0B-4F57-9307-A7FEBA0ADAC6}" DurationType="OneShot" DurationMin="0.26041666" DurationMax="0.60833335">
+					<MediaRefs>
+						<MediaRef Id="198005070"/>
+						<MediaRef Id="206748773"/>
+						<MediaRef Id="302449853"/>
+						<MediaRef Id="370147068"/>
+						<MediaRef Id="643348026"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 		<SoundBank Id="2963316176" Type="Event" GUID="{E001864B-1F09-432D-9769-CAA8112B432A}" Language="SFX" Hash="{E564DEF2-9B7B-82FA-5EDD-F3AE0B64C4D0}">
@@ -1387,12 +1869,139 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3050477643" Type="Event" GUID="{0CC81BF0-10CA-47AF-B55E-1EA9838D45AF}" Language="SFX" Hash="{8A9046F5-37A1-1BD8-3FF9-8CB995FC2FC0}">
-			<ObjectPath>Ambi_Stop</ObjectPath>
-			<ShortName>Ambi_Stop</ShortName>
-			<Path>Event/Ambi_Stop.bnk</Path>
+		<SoundBank Id="3101111843" Type="Event" GUID="{8701634F-24B1-44A7-A660-19C90F0851B0}" Language="SFX" Hash="{D1094781-3471-4CBB-B4E4-5C79A0B9C9D4}">
+			<ObjectPath>Com_Round_2_Start</ObjectPath>
+			<ShortName>Com_Round_2_Start</ShortName>
+			<Path>Event/Com_Round_2_Start.bnk</Path>
+			<Media>
+				<File Id="115684259" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_05.wav</ShortName>
+					<Path>Media/115684259.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="332544747" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_02.wav</ShortName>
+					<Path>Media/332544747.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="565589375" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_03.wav</ShortName>
+					<Path>Media/565589375.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="632686557" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_04.wav</ShortName>
+					<Path>Media/632686557.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="818636588" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_round_02.wav</ShortName>
+					<Path>Media/818636588.wem</Path>
+					<CachePath>SFX/vo_commentator_round_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="950724125" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_01.wav</ShortName>
+					<Path>Media/950724125.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_01_10C4C929.wem</CachePath>
+				</File>
+			</Media>
 			<Events>
-				<Event Id="3050477643" Name="Ambi_Stop" ObjectPath="\Events\Ambience\Ambi_Stop" GUID="{0CC81BF0-10CA-47AF-B55E-1EA9838D45AF}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3101111843" Name="Com_Round_2_Start" ObjectPath="\Events\Commentator_Voices\Com_Round_2_Start" GUID="{8701634F-24B1-44A7-A660-19C90F0851B0}" DurationType="OneShot" DurationMin="2.3125" DurationMax="2.625">
+					<MediaRefs>
+						<MediaRef Id="115684259"/>
+						<MediaRef Id="332544747"/>
+						<MediaRef Id="565589375"/>
+						<MediaRef Id="632686557"/>
+						<MediaRef Id="818636588"/>
+						<MediaRef Id="950724125"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3235113002" Type="Event" GUID="{7A8FD551-211D-449D-89BF-34E067A83438}" Language="SFX" Hash="{B377A433-7B7A-2A25-F204-87D7E0BE9ACE}">
+			<ObjectPath>Plyr1_Movement_Rollforward</ObjectPath>
+			<ShortName>Plyr1_Movement_Rollforward</ShortName>
+			<Path>Event/Plyr1_Movement_Rollforward.bnk</Path>
+			<Media>
+				<File Id="37941523" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_rollfow_01.wav</ShortName>
+					<Path>Media/37941523.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_rollfow_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="672209282" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_rollfow_02.wav</ShortName>
+					<Path>Media/672209282.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_rollfow_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="759506578" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_rollfow_05.wav</ShortName>
+					<Path>Media/759506578.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_rollfow_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="846878257" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_rollfow_04.wav</ShortName>
+					<Path>Media/846878257.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_rollfow_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="909606879" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_rollfow_03.wav</ShortName>
+					<Path>Media/909606879.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_rollfow_03_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3235113002" Name="Plyr1_Movement_Rollforward" ObjectPath="\Events\Player_Voices\Plyr1_Movement_Rollforward" GUID="{7A8FD551-211D-449D-89BF-34E067A83438}" DurationType="OneShot" DurationMin="0.59166664" DurationMax="0.8541667">
+					<MediaRefs>
+						<MediaRef Id="37941523"/>
+						<MediaRef Id="672209282"/>
+						<MediaRef Id="759506578"/>
+						<MediaRef Id="846878257"/>
+						<MediaRef Id="909606879"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3518947313" Type="Event" GUID="{26AB0E9E-6FC9-4D4C-98BC-CDD120436275}" Language="SFX" Hash="{F52BDD86-16DF-E5D5-D083-DAE715B56FFA}">
+			<ObjectPath>Plyr1_Attack_Light</ObjectPath>
+			<ShortName>Plyr1_Attack_Light</ShortName>
+			<Path>Event/Plyr1_Attack_Light.bnk</Path>
+			<Media>
+				<File Id="55257799" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_punch_light_05.wav</ShortName>
+					<Path>Media/55257799.wem</Path>
+					<CachePath>SFX/vo_fighter1_punch_light_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="86967045" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_punch_light_03.wav</ShortName>
+					<Path>Media/86967045.wem</Path>
+					<CachePath>SFX/vo_fighter1_punch_light_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="458298908" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_punch_light_01.wav</ShortName>
+					<Path>Media/458298908.wem</Path>
+					<CachePath>SFX/vo_fighter1_punch_light_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="538408692" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_punch_light_04.wav</ShortName>
+					<Path>Media/538408692.wem</Path>
+					<CachePath>SFX/vo_fighter1_punch_light_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="599159208" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_punch_light_02.wav</ShortName>
+					<Path>Media/599159208.wem</Path>
+					<CachePath>SFX/vo_fighter1_punch_light_02_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3518947313" Name="Plyr1_Attack_Light" ObjectPath="\Events\Player_Voices\Plyr1_Attack_Light" GUID="{26AB0E9E-6FC9-4D4C-98BC-CDD120436275}" DurationType="OneShot" DurationMin="0.27291667" DurationMax="0.4365">
+					<MediaRefs>
+						<MediaRef Id="55257799"/>
+						<MediaRef Id="86967045"/>
+						<MediaRef Id="458298908"/>
+						<MediaRef Id="538408692"/>
+						<MediaRef Id="599159208"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 		<SoundBank Id="3545700988" Type="Bus" GUID="{6BE3BED4-0EDC-4674-80E4-B77F6F0EDD9B}" Language="SFX" Hash="{CE46620C-58DD-93B1-6318-AA7CD5C7C39D}">
@@ -1452,21 +2061,64 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3618896010" Type="Event" GUID="{4DDF616B-CE7F-4803-9C49-4378BAFA5BD4}" Language="English(US)" Hash="{B7A5898C-052E-C265-A706-34959B584E61}">
+		<SoundBank Id="3618896010" Type="Event" GUID="{4DDF616B-CE7F-4803-9C49-4378BAFA5BD4}" Language="SFX" Hash="{6CC4F864-2317-85AA-78C5-3A088512B133}">
 			<ObjectPath>Com_Round_Fight</ObjectPath>
 			<ShortName>Com_Round_Fight</ShortName>
-			<Path>Event/English(US)/Com_Round_Fight.bnk</Path>
+			<Path>Event/Com_Round_Fight.bnk</Path>
 			<Media>
-				<File Id="747517666" Language="English(US)" Streaming="false" Location="Loose">
-					<ShortName>Fight!_01-19.wav</ShortName>
-					<Path>Media/English(US)/747517666.wem</Path>
-					<CachePath>Voices/English(US)/Fight!_01-19_10C4C929.wem</CachePath>
+				<File Id="115684259" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_05.wav</ShortName>
+					<Path>Media/115684259.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="332544747" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_02.wav</ShortName>
+					<Path>Media/332544747.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="565589375" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_03.wav</ShortName>
+					<Path>Media/565589375.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="632686557" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_04.wav</ShortName>
+					<Path>Media/632686557.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="950724125" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_fight_01.wav</ShortName>
+					<Path>Media/950724125.wem</Path>
+					<CachePath>SFX/vo_commentator_fight_01_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3618896010" Name="Com_Round_Fight" ObjectPath="\Events\Commentator_Voices\Com_Round_Fight" GUID="{4DDF616B-CE7F-4803-9C49-4378BAFA5BD4}" DurationType="OneShot" DurationMin="0.9661717" DurationMax="0.9661717">
+				<Event Id="3618896010" Name="Com_Round_Fight" ObjectPath="\Events\Commentator_Voices\Com_Round_Fight" GUID="{4DDF616B-CE7F-4803-9C49-4378BAFA5BD4}" DurationType="OneShot" DurationMin="0.8125" DurationMax="1.125">
 					<MediaRefs>
-						<MediaRef Id="747517666"/>
+						<MediaRef Id="115684259"/>
+						<MediaRef Id="332544747"/>
+						<MediaRef Id="565589375"/>
+						<MediaRef Id="632686557"/>
+						<MediaRef Id="950724125"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3729567056" Type="Event" GUID="{C57354E5-1D79-43A6-9596-3AAD8A7B58E7}" Language="English(US)" Hash="{71C5E17A-CDA4-B843-FFC6-F37AA47CE650}">
+			<ObjectPath>Com_Char_Select_Jack</ObjectPath>
+			<ShortName>Com_Char_Select_Jack</ShortName>
+			<Path>Event/English(US)/Com_Char_Select_Jack.bnk</Path>
+			<Media>
+				<File Id="5541831" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_chara_select_jack_01.wav</ShortName>
+					<Path>Media/English(US)/5541831.wem</Path>
+					<CachePath>Voices/English(US)/vo_commentator_chara_select_jack_01_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3729567056" Name="Com_Char_Select_Jack" ObjectPath="\Events\Commentator_Voices\Com_Char_Select_Jack" GUID="{C57354E5-1D79-43A6-9596-3AAD8A7B58E7}" DurationType="OneShot" DurationMin="1.5" DurationMax="1.5">
+					<MediaRefs>
+						<MediaRef Id="5541831"/>
 					</MediaRefs>
 				</Event>
 			</Events>
@@ -1490,6 +2142,260 @@
 				</Event>
 			</Events>
 		</SoundBank>
+		<SoundBank Id="3776843011" Type="Event" GUID="{926D2531-1E72-4E5D-9E0A-DF6DC68D4CD2}" Language="SFX" Hash="{957478AD-FAC1-9AE4-7DFA-1A8BB78BA774}">
+			<ObjectPath>Plyr2_Dmg_Heavy</ObjectPath>
+			<ShortName>Plyr2_Dmg_Heavy</ShortName>
+			<Path>Event/Plyr2_Dmg_Heavy.bnk</Path>
+			<Media>
+				<File Id="16858258" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_dmg_heavy_01.wav</ShortName>
+					<Path>Media/16858258.wem</Path>
+					<CachePath>SFX/vo_fighter2_dmg_heavy_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="129825016" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_dmg_heavy_03.wav</ShortName>
+					<Path>Media/129825016.wem</Path>
+					<CachePath>SFX/vo_fighter2_dmg_heavy_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="511231690" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_dmg_heavy_04.wav</ShortName>
+					<Path>Media/511231690.wem</Path>
+					<CachePath>SFX/vo_fighter2_dmg_heavy_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="723634913" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_dmg_heavy_02.wav</ShortName>
+					<Path>Media/723634913.wem</Path>
+					<CachePath>SFX/vo_fighter2_dmg_heavy_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="891439857" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_dmg_heavy_05.wav</ShortName>
+					<Path>Media/891439857.wem</Path>
+					<CachePath>SFX/vo_fighter2_dmg_heavy_05_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3776843011" Name="Plyr2_Dmg_Heavy" ObjectPath="\Events\Player_Voices\Plyr2_Dmg_Heavy" GUID="{926D2531-1E72-4E5D-9E0A-DF6DC68D4CD2}" DurationType="OneShot" DurationMin="0.4375" DurationMax="0.59375">
+					<MediaRefs>
+						<MediaRef Id="16858258"/>
+						<MediaRef Id="129825016"/>
+						<MediaRef Id="511231690"/>
+						<MediaRef Id="723634913"/>
+						<MediaRef Id="891439857"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3812289192" Type="Event" GUID="{82962F56-8362-4D21-8FE6-A98FF8901AE9}" Language="SFX" Hash="{5937CF6E-6618-96A9-18B0-FCBEE378F541}">
+			<ObjectPath>Ambi_1_Loop_Start</ObjectPath>
+			<ShortName>Ambi_1_Loop_Start</ShortName>
+			<Path>Event/Ambi_1_Loop_Start.bnk</Path>
+			<Media>
+				<File Id="298534069" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Ambi_1_Loop_03.wav</ShortName>
+					<Path>Media/298534069.wem</Path>
+					<CachePath>SFX/Ambi_1_Loop_03_BB4D43EE.wem</CachePath>
+				</File>
+				<File Id="327659410" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Ambi_3_Loop_03.wav</ShortName>
+					<Path>Media/327659410.wem</Path>
+					<CachePath>SFX/Ambi_3_Loop_03_793AA136.wem</CachePath>
+				</File>
+				<File Id="508725905" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Ambi_1_Loop_02.wav</ShortName>
+					<Path>Media/508725905.wem</Path>
+					<CachePath>SFX/Ambi_1_Loop_02_0F5A2EC8.wem</CachePath>
+				</File>
+				<File Id="527739664" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Ambi_3_Loop_03_v2.wav</ShortName>
+					<Path>Media/527739664.wem</Path>
+					<CachePath>SFX/Ambi_3_Loop_03_v2_55B629B9.wem</CachePath>
+				</File>
+				<File Id="614566312" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Ambi_3_Loop_02.wav</ShortName>
+					<Path>Media/614566312.wem</Path>
+					<CachePath>SFX/Ambi_3_Loop_02_A92850A6.wem</CachePath>
+				</File>
+				<File Id="673665466" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Ambi_1_Loop_01.wav</ShortName>
+					<Path>Media/673665466.wem</Path>
+					<CachePath>SFX/Ambi_1_Loop_01_3E33C035.wem</CachePath>
+				</File>
+				<File Id="927375782" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Ambi_3_Loop_01.wav</ShortName>
+					<Path>Media/927375782.wem</Path>
+					<CachePath>SFX/Ambi_3_Loop_01_75D8312A.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3812289192" Name="Ambi_1_Loop_Start" ObjectPath="\Events\Ambience\2D\Ambi_1_Loop_Start" GUID="{82962F56-8362-4D21-8FE6-A98FF8901AE9}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="298534069"/>
+						<MediaRef Id="327659410"/>
+						<MediaRef Id="508725905"/>
+						<MediaRef Id="527739664"/>
+						<MediaRef Id="614566312"/>
+						<MediaRef Id="673665466"/>
+						<MediaRef Id="927375782"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3940439968" Type="Event" GUID="{79551593-FDCB-4471-8056-ED953CE28502}" Language="SFX" Hash="{7833D618-3CB8-AF2A-1963-9E0E4CD6F30B}">
+			<ObjectPath>Plyr1_Movement_Rollbackward</ObjectPath>
+			<ShortName>Plyr1_Movement_Rollbackward</ShortName>
+			<Path>Event/Plyr1_Movement_Rollbackward.bnk</Path>
+			<Media>
+				<File Id="138100336" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_rollbackw_03.wav</ShortName>
+					<Path>Media/138100336.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_rollbackw_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="150659127" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_rollbackw_02.wav</ShortName>
+					<Path>Media/150659127.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_rollbackw_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="256831828" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_rollbackw_05.wav</ShortName>
+					<Path>Media/256831828.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_rollbackw_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="343273517" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_rollbackw_01.wav</ShortName>
+					<Path>Media/343273517.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_rollbackw_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="578215789" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_rollbackw_04.wav</ShortName>
+					<Path>Media/578215789.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_rollbackw_04_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3940439968" Name="Plyr1_Movement_Rollbackward" ObjectPath="\Events\Player_Voices\Plyr1_Movement_Rollbackward" GUID="{79551593-FDCB-4471-8056-ED953CE28502}" DurationType="OneShot" DurationMin="0.3125" DurationMax="0.75">
+					<MediaRefs>
+						<MediaRef Id="138100336"/>
+						<MediaRef Id="150659127"/>
+						<MediaRef Id="256831828"/>
+						<MediaRef Id="343273517"/>
+						<MediaRef Id="578215789"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="4011766644" Type="Event" GUID="{ECEA2C89-2161-42CE-A22A-B435716282B2}" Language="SFX" Hash="{D85D84CB-6721-9966-62DE-FB0D7FA4EA67}">
+			<ObjectPath>Ambi_1_Loop_Stop</ObjectPath>
+			<ShortName>Ambi_1_Loop_Stop</ShortName>
+			<Path>Event/Ambi_1_Loop_Stop.bnk</Path>
+			<Events>
+				<Event Id="4011766644" Name="Ambi_1_Loop_Stop" ObjectPath="\Events\Ambience\2D\Ambi_1_Loop_Stop" GUID="{ECEA2C89-2161-42CE-A22A-B435716282B2}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="4185259963" Type="Event" GUID="{C6F7CB46-440E-4309-90C2-B62B6502AD3E}" Language="SFX" Hash="{5F30397D-5550-72E7-ED9C-7A99FFE0A377}">
+			<ObjectPath>Plyr2_Dmg_Special</ObjectPath>
+			<ShortName>Plyr2_Dmg_Special</ShortName>
+			<Path>Event/Plyr2_Dmg_Special.bnk</Path>
+			<Media>
+				<File Id="11410714" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_dmg_special_01.wav</ShortName>
+					<Path>Media/11410714.wem</Path>
+					<CachePath>SFX/vo_fighter2_dmg_special_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="351249602" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_dmg_special_04.wav</ShortName>
+					<Path>Media/351249602.wem</Path>
+					<CachePath>SFX/vo_fighter2_dmg_special_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="591413040" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_dmg_special_05.wav</ShortName>
+					<Path>Media/591413040.wem</Path>
+					<CachePath>SFX/vo_fighter2_dmg_special_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="927373889" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_dmg_special_02.wav</ShortName>
+					<Path>Media/927373889.wem</Path>
+					<CachePath>SFX/vo_fighter2_dmg_special_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1057742531" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_dmg_special_03.wav</ShortName>
+					<Path>Media/1057742531.wem</Path>
+					<CachePath>SFX/vo_fighter2_dmg_special_03_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="4185259963" Name="Plyr2_Dmg_Special" ObjectPath="\Events\Player_Voices\Plyr2_Dmg_Special" GUID="{C6F7CB46-440E-4309-90C2-B62B6502AD3E}" DurationType="OneShot" DurationMin="0.6875" DurationMax="0.9605833">
+					<MediaRefs>
+						<MediaRef Id="11410714"/>
+						<MediaRef Id="351249602"/>
+						<MediaRef Id="591413040"/>
+						<MediaRef Id="927373889"/>
+						<MediaRef Id="1057742531"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="4244936628" Type="Event" GUID="{7BD3B646-2657-40FF-9C97-391A4B37380E}" Language="SFX" Hash="{6A7614C9-1443-3119-A220-5EE0972A5268}">
+			<ObjectPath>Plyr1_Dmg_Special</ObjectPath>
+			<ShortName>Plyr1_Dmg_Special</ShortName>
+			<Path>Event/Plyr1_Dmg_Special.bnk</Path>
+			<Media>
+				<File Id="49941704" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_damage_special_05.wav</ShortName>
+					<Path>Media/49941704.wem</Path>
+					<CachePath>SFX/vo_fighter1_damage_special_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="515146572" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_damage_special_02.wav</ShortName>
+					<Path>Media/515146572.wem</Path>
+					<CachePath>SFX/vo_fighter1_damage_special_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="651026145" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_damage_special_04.wav</ShortName>
+					<Path>Media/651026145.wem</Path>
+					<CachePath>SFX/vo_fighter1_damage_special_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="955769142" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_damage_special_01.wav</ShortName>
+					<Path>Media/955769142.wem</Path>
+					<CachePath>SFX/vo_fighter1_damage_special_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1060805268" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_damage_special_03.wav</ShortName>
+					<Path>Media/1060805268.wem</Path>
+					<CachePath>SFX/vo_fighter1_damage_special_03_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="4244936628" Name="Plyr1_Dmg_Special" ObjectPath="\Events\Player_Voices\Plyr1_Dmg_Special" GUID="{7BD3B646-2657-40FF-9C97-391A4B37380E}" DurationType="OneShot" DurationMin="0.80833334" DurationMax="1.5958333">
+					<MediaRefs>
+						<MediaRef Id="49941704"/>
+						<MediaRef Id="515146572"/>
+						<MediaRef Id="651026145"/>
+						<MediaRef Id="955769142"/>
+						<MediaRef Id="1060805268"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="4259150480" Type="Event" GUID="{91E57EC6-14BF-4999-BD5E-402DE08241C4}" Language="English(US)" Hash="{B37CCB87-D8ED-C07F-F596-5465AEC5F02B}">
+			<ObjectPath>Com_Char_Select_Lauren</ObjectPath>
+			<ShortName>Com_Char_Select_Lauren</ShortName>
+			<Path>Event/English(US)/Com_Char_Select_Lauren.bnk</Path>
+			<Media>
+				<File Id="171327102" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_chara_select_lauren_01.wav</ShortName>
+					<Path>Media/English(US)/171327102.wem</Path>
+					<CachePath>Voices/English(US)/vo_commentator_chara_select_lauren_01_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="4259150480" Name="Com_Char_Select_Lauren" ObjectPath="\Events\Commentator_Voices\Com_Char_Select_Lauren" GUID="{91E57EC6-14BF-4999-BD5E-402DE08241C4}" DurationType="OneShot" DurationMin="1.375" DurationMax="1.375">
+					<MediaRefs>
+						<MediaRef Id="171327102"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7191B37E-792C-ED21-37A0-CD6717DAB221}</FileHash>
+	<FileHash>{0ACA00B4-EBBF-F4E6-B30E-A029616BFDAA}</FileHash>
 </SoundBanksInfo>

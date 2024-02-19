@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="4011766644" Type="Event" GUID="{ECEA2C89-2161-42CE-A22A-B435716282B2}" Language="SFX" Hash="{D85D84CB-6721-9966-62DE-FB0D7FA4EA67}">
+			<ObjectPath>Ambi_1_Loop_Stop</ObjectPath>
+			<ShortName>Ambi_1_Loop_Stop</ShortName>
+			<Path>Event/Ambi_1_Loop_Stop.bnk</Path>
+			<Events>
+				<Event Id="4011766644" Name="Ambi_1_Loop_Stop" ObjectPath="\Events\Ambience\2D\Ambi_1_Loop_Stop" GUID="{ECEA2C89-2161-42CE-A22A-B435716282B2}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{8BFD70F2-87CB-4D57-B14D-91361D8CE81E}</FileHash>
+</SoundBanksInfo>

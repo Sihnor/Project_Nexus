@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	587623655	Com_Char_Wins_Lauren			\Commentator_Voices\Com_Char_Wins_Lauren	
+

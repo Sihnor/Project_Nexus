@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1986195668	Plyr1_Dmg_Heavy			\Player_Voices\Plyr1_Dmg_Heavy	
+

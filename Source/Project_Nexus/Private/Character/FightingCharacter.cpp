@@ -48,8 +48,9 @@ AFightingCharacter::AFightingCharacter()
 	MaxDistanceApart = 800.f;
 	StunTime = 0.f;
 
-	ForwardDashDistance= 800.f;
-	BackwardDashDistance= 600.f;
+	ForwardDashDistance= 1500.f;
+	BackwardDashDistance= 800.f;
+	PushBackAmount = 0.f;
 
 	//RemoveInputFromInputBufferTime = 1.f;
 	
@@ -506,7 +507,7 @@ void AFightingCharacter::GetStunned(float HitStunTime, float BlockStunTime, floa
 		if(StunTime > 0.f){
 			if(HasLandedThrow){
 				CharacterState = ECharacterState::FC_ThrowStunned;
-				UE_LOG(LogTemp, Error, TEXT("Throw Stun"));
+				//UE_LOG(LogTemp, Error, TEXT("Throw Stun"));
 			} if(CharacterState != ECharacterState::FC_CrouchBlocking){
 				CharacterState = ECharacterState::FC_BlockStunned;
 			}else{
