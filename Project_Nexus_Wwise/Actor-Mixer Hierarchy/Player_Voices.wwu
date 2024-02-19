@@ -3,14 +3,30 @@
 	<AudioObjects>
 		<WorkUnit Name="Player_Voices" ID="{E5F57FEB-3DEE-451F-A6A7-6237024381AC}" PersistMode="Standalone">
 			<PropertyList>
-				<Property Name="Color" Type="int16" Value="19"/>
+				<Property Name="Color" Type="int16" Value="6"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
 				<ActorMixer Name="Plyr_1_Voices" ID="{1E393A6C-9DA0-404B-BAE5-58EC815DC738}" ShortID="1042071274">
 					<PropertyList>
-						<Property Name="Color" Type="int16" Value="24"/>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Color" Type="int16" Value="6"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{F6995844-99A3-47C3-B201-D0AE8004CB48}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="3"/>
+											<Property Name="Min" Type="Real64" Value="-3"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -23,8 +39,15 @@
 					<ChildrenList>
 						<ActorMixer Name="Plyr_Cheer_Won" ID="{50EDFB9B-A684-4AFD-80DC-B64D647190E3}" ShortID="580968553">
 							<PropertyList>
-								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="Color" Type="int16" Value="6"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{207808E2-E05E-462D-8602-06EE3FB40BEF}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -37,6 +60,8 @@
 							<ChildrenList>
 								<Sound Name="vo_fighter1_cheer_won_01" ID="{2A7F7A97-EF58-4394-ACEE-DC727439CEB4}" ShortID="237462822">
 									<PropertyList>
+										<Property Name="Color" Type="int16" Value="6"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-11</Value>
@@ -66,6 +91,8 @@
 								</Sound>
 								<Sound Name="vo_fighter1_cheer_won_02" ID="{3C00B48D-38F1-44A2-B71A-ECBBA0E63138}" ShortID="2619889">
 									<PropertyList>
+										<Property Name="Color" Type="int16" Value="6"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-13</Value>
@@ -97,14 +124,19 @@
 						</ActorMixer>
 						<RandomSequenceContainer Name="Plyr_Attack_Heavy" ID="{706211CE-090E-41D9-97A6-435BC7E7D5FE}" ShortID="820921013">
 							<PropertyList>
-								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="Color" Type="int16" Value="6"/>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-2</Value>
+										<Value>-14</Value>
 									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{E3EBA25D-2041-4429-B5A6-6F1182E7F1D6}"/>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -265,12 +297,12 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Plyr_Attack_Light" ID="{AC0B648D-B8F6-4A72-84FC-A924907EA7EF}" ShortID="22337593">
 							<PropertyList>
-								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="Color" Type="int16" Value="6"/>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-10</Value>
+										<Value>-18</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -285,11 +317,6 @@
 							<ChildrenList>
 								<Sound Name="vo_fighter1_punch_light_01" ID="{41075E0D-48F1-469F-A9E7-7F0F9F420E0C}" ShortID="790488702">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-5</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>36</Value>
@@ -319,11 +346,6 @@
 								</Sound>
 								<Sound Name="vo_fighter1_punch_light_02" ID="{69043D75-3C12-41BC-B18D-8B79956C7E75}" ShortID="694258746">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-1</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>47</Value>
@@ -353,11 +375,6 @@
 								</Sound>
 								<Sound Name="vo_fighter1_punch_light_03" ID="{F820438E-D0B5-4C74-ABDA-7D4E2D4196E7}" ShortID="261019426">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>2</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>49</Value>
@@ -387,11 +404,6 @@
 								</Sound>
 								<Sound Name="vo_fighter1_punch_light_04" ID="{EFC65615-DCB3-4628-B529-7F9C66F67924}" ShortID="870445732">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-5</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>40</Value>
@@ -421,11 +433,6 @@
 								</Sound>
 								<Sound Name="vo_fighter1_punch_light_05" ID="{4BABF892-B084-4AD7-9B70-04C9F0BD2C02}" ShortID="202324642">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>2</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>43</Value>
@@ -457,12 +464,12 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Plyr_Dmg_Heavy" ID="{BA28E740-0CB3-408C-B544-D6F13DA19F1F}" ShortID="1025711818">
 							<PropertyList>
-								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="Color" Type="int16" Value="6"/>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-8</Value>
+										<Value>-20</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -477,11 +484,6 @@
 							<ChildrenList>
 								<Sound Name="vo_fighter1_damage_heavy_01" ID="{EE652B38-1FFD-46F7-BE77-AF9A5F6659B6}" ShortID="3485017">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>2</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>46</Value>
@@ -510,13 +512,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter1_damage_heavy_02" ID="{27ECF0C0-C16B-4566-BFB9-CE87EFCD6356}" ShortID="365983358">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -540,11 +535,6 @@
 								</Sound>
 								<Sound Name="vo_fighter1_damage_heavy_03" ID="{03EB39AD-AD93-4AE5-A645-9CDC63E411F3}" ShortID="154226108">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>2</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>47</Value>
@@ -574,11 +564,6 @@
 								</Sound>
 								<Sound Name="vo_fighter1_damage_heavy_04" ID="{5924A63E-4A2E-4AE4-83B9-5417142CA103}" ShortID="388356926">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>52</Value>
@@ -608,11 +593,6 @@
 								</Sound>
 								<Sound Name="vo_fighter1_damage_heavy_05" ID="{37C35A25-D1D3-4937-8245-28A8992AFFE8}" ShortID="899313607">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-1</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>46</Value>
@@ -644,13 +624,18 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Plyr_Dmg_Light" ID="{DC776D2A-3EFD-4843-BA7C-F3EBCE447162}" ShortID="914803283">
 							<PropertyList>
-								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="Color" Type="int16" Value="6"/>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-13</Value>
+										<Value>-21</Value>
 									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{086808E0-8EDE-4D51-BC25-BFC8AB89EA28}"/>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -664,11 +649,6 @@
 							<ChildrenList>
 								<Sound Name="vo_fighter1_damage_light_01" ID="{BD177383-4662-435F-AB92-238311841A18}" ShortID="98253535">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-1</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>48</Value>
@@ -698,11 +678,6 @@
 								</Sound>
 								<Sound Name="vo_fighter1_damage_light_02" ID="{9B1B2748-5AA2-483F-8AB7-14BE23CE7838}" ShortID="128550251">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>41</Value>
@@ -761,11 +736,6 @@
 								</Sound>
 								<Sound Name="vo_fighter1_damage_light_04" ID="{C7816845-4D0B-47A1-A2F3-0F3D8E06C9BC}" ShortID="263260275">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>53</Value>
@@ -795,11 +765,6 @@
 								</Sound>
 								<Sound Name="vo_fighter1_damage_light_05" ID="{6CE27DDF-CB47-4F58-9C2E-044CB5ABB829}" ShortID="720256152">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>46</Value>
@@ -831,12 +796,12 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Plyr_Dmg_Special" ID="{9DF06F46-C3FD-44EB-94A0-0F2C4F568EAF}" ShortID="1063135716">
 							<PropertyList>
-								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="Color" Type="int16" Value="6"/>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-18</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -851,11 +816,6 @@
 							<ChildrenList>
 								<Sound Name="vo_fighter1_damage_special_01" ID="{A71EDF47-52C9-49F5-882F-E2508EA48D96}" ShortID="435244191">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-2</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>46</Value>
@@ -913,13 +873,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter1_damage_special_03" ID="{7F914DB1-1B00-4A40-A45E-B251CDD40A9D}" ShortID="907696900">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-4</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -942,13 +895,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter1_damage_special_04" ID="{E98E3FF5-2183-4615-9F33-85BD24E4808E}" ShortID="382936173">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-4</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -971,13 +917,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter1_damage_special_05" ID="{91E34811-9A6F-4144-BE17-2FF6A4B22090}" ShortID="917496249">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-1</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -1003,12 +942,12 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Plyr_Movement_Jump" ID="{8BB3DDF6-BF9F-434E-8DFF-86DB856F6E8F}" ShortID="168773758">
 							<PropertyList>
-								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="Color" Type="int16" Value="6"/>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-15</Value>
+										<Value>-17</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1022,13 +961,6 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="vo_fighter1_mov_jump_01" ID="{A1CE202E-BD3D-42AA-8512-6CFC99553C27}" ShortID="390795494">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-6</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -1051,13 +983,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter1_mov_jump_02" ID="{AAF4C842-BFE7-4F22-B90E-F2F6A29FC80A}" ShortID="592974399">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-4</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -1080,13 +1005,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter1_mov_jump_03" ID="{FB0EAE03-4066-4DEB-A2F4-3ED76FC5C5BD}" ShortID="1006748951">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -1109,13 +1027,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter1_mov_jump_04" ID="{5B47FDCF-884E-4E34-8B59-30F7278C4621}" ShortID="1072259570">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-2</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -1139,11 +1050,6 @@
 								</Sound>
 								<Sound Name="vo_fighter1_mov_jump_05" ID="{AE29FBC6-D6D2-446C-B8CC-D8B46B54759F}" ShortID="201588798">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>3</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>57</Value>
@@ -1175,12 +1081,12 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Plyr_Movement_Rollbackward" ID="{09724083-9A85-43CA-9B2D-4592A2B3B7E6}" ShortID="479803030">
 							<PropertyList>
-								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="Color" Type="int16" Value="6"/>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-12</Value>
+										<Value>-18</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1194,13 +1100,6 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="vo_fighter1_mov_rollbackw_01" ID="{C28ACB9A-484E-478C-819A-582BFE997498}" ShortID="249944302">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-4</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -1223,13 +1122,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter1_mov_rollbackw_02" ID="{31695E01-1225-4B55-9325-AADA50E7B7B3}" ShortID="491011507">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-4</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -1328,13 +1220,23 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Plyr_Movement_Rollforward" ID="{05A5A751-FCB7-4083-9EFF-7EFEE97C05B0}" ShortID="179700348">
 							<PropertyList>
-								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="Color" Type="int16" Value="6"/>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-7</Value>
+										<Value>-18</Value>
 									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{5C3CF8BF-AAAF-40D1-AC3F-F3C9833C4A4F}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="3"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -1347,13 +1249,6 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="vo_fighter1_mov_rollfow_01" ID="{59B9E3B3-4028-41C7-A554-FB4EA53BA1FF}" ShortID="249175638">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-2</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -1376,13 +1271,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter1_mov_rollfow_02" ID="{C21C276D-3E30-4C43-9D83-149624B879C5}" ShortID="510263255">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-2</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -1405,13 +1293,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter1_mov_rollfow_03" ID="{6F48BD2F-7B88-45B3-A73D-30541041C910}" ShortID="690797080">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-1</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -1434,13 +1315,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter1_mov_rollfow_04" ID="{A6362F75-D138-4204-AC67-BF9C18A1358B}" ShortID="16929996">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-1</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -1463,13 +1337,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter1_mov_rollfow_05" ID="{911FD775-8CD4-4ACD-B4D2-E3274C045B8F}" ShortID="188908182">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-5</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -1497,8 +1364,24 @@
 				</ActorMixer>
 				<ActorMixer Name="Plyr_2_Voices" ID="{433B9C9C-5A45-4794-9DF6-2C741C5CCC48}" ShortID="402181578">
 					<PropertyList>
-						<Property Name="Color" Type="int16" Value="24"/>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Color" Type="int16" Value="6"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{C6107E9D-DFE0-46AE-BB36-B4B7879C9A70}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="3"/>
+											<Property Name="Min" Type="Real64" Value="-3"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -1511,7 +1394,7 @@
 					<ChildrenList>
 						<ActorMixer Name="Plyr_Cheer_Won" ID="{71656433-F8ED-40DF-8B2D-9022F2F2F2CB}" ShortID="401800788">
 							<PropertyList>
-								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="Color" Type="int16" Value="6"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -1529,6 +1412,10 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="vo_fighter2_cheer_won_01" ID="{1B34A548-DDA7-4C3F-AF59-F512D58D73B7}" ShortID="194066882">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="6"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -1554,13 +1441,14 @@
 						</ActorMixer>
 						<RandomSequenceContainer Name="Plyr_Attack_Heavy" ID="{CBBA6D5C-0FC7-47BC-BE95-46C6EAFCB51F}" ShortID="907840877">
 							<PropertyList>
-								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="Color" Type="int16" Value="6"/>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismLoopCount" Type="int32" Value="3"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-10</Value>
+										<Value>-16</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1575,11 +1463,6 @@
 							<ChildrenList>
 								<Sound Name="vo_fighter2_punch_heavy_01" ID="{187A6E5D-E0EE-4F8A-BD40-A348C29D9D40}" ShortID="253576161">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>2</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>49</Value>
@@ -1609,11 +1492,6 @@
 								</Sound>
 								<Sound Name="vo_fighter2_punch_heavy_02" ID="{8158D069-FCB6-41ED-A9D5-5AA258E27EEE}" ShortID="265343284">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-4</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>52</Value>
@@ -1643,11 +1521,6 @@
 								</Sound>
 								<Sound Name="vo_fighter2_punch_heavy_03" ID="{79140DC2-04C5-4D67-A369-94B662E755DE}" ShortID="367991279">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>4</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>45</Value>
@@ -1677,11 +1550,6 @@
 								</Sound>
 								<Sound Name="vo_fighter2_punch_heavy_04" ID="{C3FDFE8A-2CE8-4E67-98E0-065E6B4454B9}" ShortID="21303940">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-2</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>55</Value>
@@ -1711,11 +1579,6 @@
 								</Sound>
 								<Sound Name="vo_fighter2_punch_heavy_05" ID="{51C3B8F4-757A-41B9-B448-DB637B4A3189}" ShortID="679972975">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-2</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>45</Value>
@@ -1747,13 +1610,14 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Plyr_Attack_Light" ID="{1B878667-F65C-4385-8372-AD6E193E7517}" ShortID="65937310">
 							<PropertyList>
-								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="Color" Type="int16" Value="6"/>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismLoopCount" Type="int32" Value="3"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-14</Value>
+										<Value>-18</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1767,13 +1631,6 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="vo_fighter2_punch_light_01" ID="{FB4C8F6E-CD52-4A9C-8B33-0B45C0526B50}" ShortID="30180903">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-4</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -1796,13 +1653,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter2_punch_light_02" ID="{9D27465C-BFA2-4290-883E-5C74ABF0F67F}" ShortID="936627238">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>2</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -1825,13 +1675,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter2_punch_light_03" ID="{77B62F91-3808-4AD8-BC1C-E562AC77D2AC}" ShortID="400509620">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -1854,13 +1697,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter2_punch_light_04" ID="{63589645-EBAE-41A6-B91D-9E4C85348D0F}" ShortID="564386727">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-2</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -1883,13 +1719,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter2_punch_light_05" ID="{A1F887BD-D9FE-44CC-8307-059C6F814155}" ShortID="881799207">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-2</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -1915,13 +1744,14 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Plyr_Dmg_Heavy" ID="{1C4F8620-F6CD-4A69-BC35-25E80467B190}" ShortID="1010364276">
 							<PropertyList>
-								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="Color" Type="int16" Value="6"/>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismLoopCount" Type="int32" Value="3"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>-20</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1935,13 +1765,6 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="vo_fighter2_dmg_heavy_01" ID="{A9B2A687-D0A7-4061-9752-39C6BE720AD2}" ShortID="381564397">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>3</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -1964,13 +1787,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter2_dmg_heavy_02" ID="{34E192CE-F3DE-4CE5-B43E-DBF615373E49}" ShortID="501082008">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-1</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -1993,13 +1809,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter2_dmg_heavy_03" ID="{152A11E3-A5CC-40CF-BF0C-3198873E9A9C}" ShortID="321221833">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-4</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -2022,13 +1831,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter2_dmg_heavy_04" ID="{BE5539F3-D14C-477C-9157-4F2F5FC2F8A4}" ShortID="239775387">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -2051,13 +1853,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter2_dmg_heavy_05" ID="{D5BC6D39-69EE-404E-B928-B9A476D185BB}" ShortID="964867286">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>2</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -2083,13 +1878,14 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Plyr_Dmg_Light" ID="{14A97F85-4368-4367-B779-4EF12197BE63}" ShortID="470491463">
 							<PropertyList>
-								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="Color" Type="int16" Value="6"/>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismLoopCount" Type="int32" Value="3"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-11</Value>
+										<Value>-20</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -2103,13 +1899,6 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="vo_fighter2_dmg_light_01" ID="{C1C11300-DAE4-4176-8421-BDE3355CBA55}" ShortID="862832962">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-1</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -2132,13 +1921,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter2_dmg_light_02" ID="{F63AE559-804B-49F8-8846-740A51CB4F1B}" ShortID="450174598">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>3</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -2161,13 +1943,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter2_dmg_light_03" ID="{4EA3A009-F903-4EAA-97AB-BBFE40FBCA53}" ShortID="6804288">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-2</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -2190,13 +1965,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter2_dmg_light_04" ID="{CDED5004-13B4-4799-90AF-CAF12581820A}" ShortID="83314330">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -2219,13 +1987,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter2_dmg_light_05" ID="{CCFDD5BD-A572-4DE5-84FB-FA79DDCB1913}" ShortID="449118460">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-2</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -2251,13 +2012,14 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Plyr_Dmg_Special" ID="{188E0ABF-9164-48E9-90E1-DE7EDEBFD43E}" ShortID="681425235">
 							<PropertyList>
-								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="Color" Type="int16" Value="6"/>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismLoopCount" Type="int32" Value="3"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-17</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -2272,11 +2034,6 @@
 							<ChildrenList>
 								<Sound Name="vo_fighter2_dmg_special_01" ID="{AE44D3DB-90EC-4620-8227-63D57018E6EF}" ShortID="574604222">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>46</Value>
@@ -2306,11 +2063,6 @@
 								</Sound>
 								<Sound Name="vo_fighter2_dmg_special_02" ID="{DED66BE1-C235-4C18-BDB8-797FB39A6A8D}" ShortID="812896504">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-2</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>36</Value>
@@ -2339,13 +2091,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter2_dmg_special_03" ID="{E6BCF82B-D19F-4C52-99A0-834CE5DE6D8D}" ShortID="505178705">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-4</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -2368,13 +2113,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter2_dmg_special_04" ID="{C222B20B-9ABC-4682-A578-99F083A34161}" ShortID="662518767">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -2397,13 +2135,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter2_dmg_special_05" ID="{FF9C0A1E-09CB-4919-B082-584BFC25652D}" ShortID="259844578">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -2429,12 +2160,13 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Plyr_Movement_Jump" ID="{3B59712D-45DE-4EFA-A986-94787DD8AB70}" ShortID="382827795">
 							<PropertyList>
-								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="Color" Type="int16" Value="6"/>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-17</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -2448,13 +2180,6 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="vo_fighter2_mov_jump_01" ID="{A6DE79B5-61D9-4361-B6FC-DAF71165ADF9}" ShortID="575188627">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-2</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -2477,13 +2202,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter2_mov_jump_02" ID="{00E9ADCC-20D3-4529-BFF8-929B6F6BABC3}" ShortID="841800460">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -2506,13 +2224,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter2_mov_jump_03" ID="{F89ED8E6-C23A-4E04-84E1-AB2EAAA49D5C}" ShortID="1004945406">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>3</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -2535,13 +2246,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter2_mov_jump_04" ID="{702D51A4-4C2D-4C78-85C4-6EBE4287A5D5}" ShortID="963008819">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -2564,13 +2268,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter2_mov_jump_05" ID="{3127ED32-9014-47C1-8E92-71DD76A5954F}" ShortID="626564771">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>2</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -2596,12 +2293,13 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Plyr_Movement_Rollbackward" ID="{EB280B08-C618-4F59-83F1-EF9C69288A3A}" ShortID="680167184">
 							<PropertyList>
-								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="Color" Type="int16" Value="6"/>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-9</Value>
+										<Value>-19</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -2615,13 +2313,6 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="vo_fighter2_mov_rollbackw_01" ID="{3E7EECFE-A877-4C8D-9C4E-1EEFB54C68F0}" ShortID="437232199">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>3</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -2644,13 +2335,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter2_mov_rollbackw_02" ID="{D5C10078-9F93-44C7-864A-02D15ED84414}" ShortID="55117309">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-4</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -2673,13 +2357,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter2_mov_rollbackw_03" ID="{A9D07DE4-F2B5-4C7B-B37B-2B0D534212F4}" ShortID="798561460">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-2</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -2702,13 +2379,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter2_mov_rollbackw_04" ID="{07170062-4BA9-4A8A-B53F-8CD0713E4B1B}" ShortID="504136580">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-1</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -2731,13 +2401,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter2_mov_rollbackw_05" ID="{178F2FE9-7EA7-4354-A9C8-2BC13579478C}" ShortID="380358205">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -2763,12 +2426,13 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Plyr_Movement_Rollforward" ID="{E681FF25-7493-4470-9513-82A32984DC0C}" ShortID="471501199">
 							<PropertyList>
-								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="Color" Type="int16" Value="6"/>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-11</Value>
+										<Value>-19</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -2782,13 +2446,6 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="vo_fighter2_mov_rollfow_01" ID="{5FECC7DB-70A5-4C45-8ADF-32D12BD273F1}" ShortID="1041580394">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -2811,13 +2468,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter2_mov_rollfow_02" ID="{119F99D4-D11F-4B9C-994E-B5148B87071C}" ShortID="337497276">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-4</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -2840,13 +2490,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter2_mov_rollfow_03" ID="{A7A9641D-C5DB-4295-B041-D781A123D517}" ShortID="322036875">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-2</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -2869,13 +2512,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter2_mov_rollfow_04" ID="{6AF94709-384B-425D-A201-1518ABA10DCC}" ShortID="663971465">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-6</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -2898,13 +2534,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="vo_fighter2_mov_rollfow_05" ID="{58D26B6E-2A6C-434F-9057-E3A49B35A7F1}" ShortID="246687532">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>2</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>

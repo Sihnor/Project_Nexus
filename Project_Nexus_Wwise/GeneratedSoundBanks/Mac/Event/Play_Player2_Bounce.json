@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{F8598B8F-70C3-4D87-B0EC-D5BAC09D7237}",
     "Language": "SFX",
-    "Hash": "{E3EADCD1-946C-1DF3-9E16-07BCFEBFF014}",
+    "Hash": "{D7B0490A-8793-5FA0-127C-C68E8585B9BC}",
     "ObjectPath": "Play_Player2_Bounce",
     "ShortName": "Play_Player2_Bounce",
     "Path": "Event/Play_Player2_Bounce.bnk",
@@ -103,6 +103,6 @@
     ]
    }
   ],
-  "FileHash": "{CA955C06-4614-8C30-C36E-E3526EA5A2B6}"
+  "FileHash": "{837F0164-341A-9F72-68DD-D321D8A31E55}"
  }
 }

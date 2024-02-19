@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{9E15B848-01A3-4C12-AC8F-935B3047AD4C}",
     "Language": "SFX",
-    "Hash": "{CFD999FC-2818-4692-7AE2-78924C0FFCAB}",
+    "Hash": "{E269456E-BC7F-F7BE-2852-01F0E29200CD}",
     "ObjectPath": "Play_Player2_Punch_Light",
     "ShortName": "Play_Player2_Punch_Light",
     "Path": "Event/Play_Player2_Punch_Light.bnk",
@@ -103,6 +103,6 @@
     ]
    }
   ],
-  "FileHash": "{CB7CF4C1-6EAE-4A8D-2E91-C50E3CCCF214}"
+  "FileHash": "{91A5E3AE-12A0-46A5-C260-C24B2C73BCC8}"
  }
 }

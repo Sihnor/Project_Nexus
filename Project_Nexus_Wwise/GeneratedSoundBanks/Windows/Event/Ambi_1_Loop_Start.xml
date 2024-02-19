@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="3812289192" Type="Event" GUID="{82962F56-8362-4D21-8FE6-A98FF8901AE9}" Language="SFX" Hash="{CBE62138-CEB8-64A2-5B87-F61A1CE8AE82}">
+		<SoundBank Id="3812289192" Type="Event" GUID="{82962F56-8362-4D21-8FE6-A98FF8901AE9}" Language="SFX" Hash="{B473F2EE-E060-8671-53AC-D8FCB79356E7}">
 			<ObjectPath>Ambi_1_Loop_Start</ObjectPath>
 			<ShortName>Ambi_1_Loop_Start</ShortName>
 			<Path>Event/Ambi_1_Loop_Start.bnk</Path>
@@ -34,7 +34,7 @@
 				<File Id="673665466" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Ambi_1_Loop_01.wav</ShortName>
 					<Path>Media/673665466.wem</Path>
-					<CachePath>SFX/Ambi_1_Loop_01_3E33C035.wem</CachePath>
+					<CachePath>SFX/Ambi_1_Loop_01_4DF62C0D.wem</CachePath>
 				</File>
 				<File Id="927375782" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Ambi_3_Loop_01.wav</ShortName>
@@ -57,5 +57,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{96BCF399-864C-9877-047F-6C9AB71E8AC9}</FileHash>
+	<FileHash>{5B5E0019-216C-77C0-36CD-81042C24C609}</FileHash>
 </SoundBanksInfo>

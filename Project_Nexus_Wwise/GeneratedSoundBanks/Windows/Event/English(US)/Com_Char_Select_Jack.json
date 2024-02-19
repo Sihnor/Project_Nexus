@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{C57354E5-1D79-43A6-9596-3AAD8A7B58E7}",
     "Language": "English(US)",
-    "Hash": "{C70E34D6-5AA3-00BC-DB4B-6E8084B3A86B}",
+    "Hash": "{DC311F94-602A-1B82-5034-64C6A059EF38}",
     "ObjectPath": "Com_Char_Select_Jack",
     "ShortName": "Com_Char_Select_Jack",
     "Path": "Event/English(US)/Com_Char_Select_Jack.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{9E47B0DE-46E2-CC3D-DA08-07CBF587C725}"
+  "FileHash": "{EFCAA6CB-5DA3-DC6F-EBF0-CBA0762C3045}"
  }
 }

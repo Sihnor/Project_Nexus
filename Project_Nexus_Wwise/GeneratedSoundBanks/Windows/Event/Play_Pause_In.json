@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{40E09523-C912-41B2-8E87-1A5554483779}",
     "Language": "SFX",
-    "Hash": "{A10C2A72-71B0-0219-2644-986B46007254}",
+    "Hash": "{BBE1049D-6AD4-BD44-6017-6699391AF95F}",
     "ObjectPath": "Play_Pause_In",
     "ShortName": "Play_Pause_In",
     "Path": "Event/Play_Pause_In.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{FB922BCF-AAB7-76AD-2705-7E487AD1C966}"
+  "FileHash": "{6CE1AABD-389A-B370-5E0B-2B1333BB442C}"
  }
 }

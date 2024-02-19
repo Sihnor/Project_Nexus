@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="4259150480" Type="Event" GUID="{91E57EC6-14BF-4999-BD5E-402DE08241C4}" Language="English(US)" Hash="{0331E0DB-7C9A-95CF-2C8A-5145152BB8B5}">
+		<SoundBank Id="4259150480" Type="Event" GUID="{91E57EC6-14BF-4999-BD5E-402DE08241C4}" Language="English(US)" Hash="{7AB87B26-2459-464A-C11B-1715D27A7F61}">
 			<ObjectPath>Com_Char_Select_Lauren</ObjectPath>
 			<ShortName>Com_Char_Select_Lauren</ShortName>
 			<Path>Event/English(US)/Com_Char_Select_Lauren.bnk</Path>
@@ -21,5 +21,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6773A267-B49A-7A85-4090-55E31E317974}</FileHash>
+	<FileHash>{21A5111C-CFB2-772E-F403-398D5374A19A}</FileHash>
 </SoundBanksInfo>

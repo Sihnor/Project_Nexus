@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="3021177893" Type="Event" GUID="{DC4135FD-87EC-41A5-84C3-E1F70FC2699C}" Language="SFX" Hash="{D516753E-0EDA-F695-9320-2ADDDEBB1903}">
+		<SoundBank Id="3021177893" Type="Event" GUID="{DC4135FD-87EC-41A5-84C3-E1F70FC2699C}" Language="SFX" Hash="{BCD1DBE2-99B9-C3E1-34D1-B147DC8DC500}">
 			<ObjectPath>Play_Player_Punsh_Woosh</ObjectPath>
 			<ShortName>Play_Player_Punsh_Woosh</ShortName>
 			<Path>Event/Play_Player_Punsh_Woosh.bnk</Path>
@@ -51,5 +51,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F343F025-A32B-C724-1DF9-B59FD26121BF}</FileHash>
+	<FileHash>{715C1F24-9BDC-DFB8-B436-38E1A60AF9A7}</FileHash>
 </SoundBanksInfo>

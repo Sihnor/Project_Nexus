@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2526534989" Type="Event" GUID="{9E15B848-01A3-4C12-AC8F-935B3047AD4C}" Language="SFX" Hash="{CFD999FC-2818-4692-7AE2-78924C0FFCAB}">
+		<SoundBank Id="2526534989" Type="Event" GUID="{9E15B848-01A3-4C12-AC8F-935B3047AD4C}" Language="SFX" Hash="{E269456E-BC7F-F7BE-2852-01F0E29200CD}">
 			<ObjectPath>Play_Player2_Punch_Light</ObjectPath>
 			<ShortName>Play_Player2_Punch_Light</ShortName>
 			<Path>Event/Play_Player2_Punch_Light.bnk</Path>
@@ -51,5 +51,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B69E65D8-6025-16A4-79EE-CDE36526D1EC}</FileHash>
+	<FileHash>{A2BB59AB-C6D2-5221-17BD-6F93A2FC8077}</FileHash>
 </SoundBanksInfo>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2518864784" Type="Event" GUID="{5B16E403-94D2-446D-9060-3E385BA132ED}" Language="SFX" Hash="{3A52027D-5BF1-6E7A-0531-217912BEAE11}">
+		<SoundBank Id="2518864784" Type="Event" GUID="{5B16E403-94D2-446D-9060-3E385BA132ED}" Language="SFX" Hash="{0B822E26-15BA-D7D9-1F7E-2710CDB21256}">
 			<ObjectPath>Play_Select_Fighter</ObjectPath>
 			<ShortName>Play_Select_Fighter</ShortName>
 			<Path>Event/Play_Select_Fighter.bnk</Path>
@@ -21,5 +21,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F581035C-3847-6258-05D6-2371C675542F}</FileHash>
+	<FileHash>{090B4384-AB76-A2CF-D4B4-BB6CF16A8429}</FileHash>
 </SoundBanksInfo>

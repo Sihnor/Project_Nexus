@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{B62D6C1F-687C-48B5-81B8-7924344A1746}",
     "Language": "SFX",
-    "Hash": "{3C04B143-BB2C-91FC-919C-6BDE32239E3C}",
+    "Hash": "{79FE82BC-C8BC-387A-ABED-BDCA2AAE177E}",
     "ObjectPath": "Play_Back_Button",
     "ShortName": "Play_Back_Button",
     "Path": "Event/Play_Back_Button.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{394B35CE-74FB-05D6-E1C9-DBF3613E4204}"
+  "FileHash": "{048A6761-FDF2-6DCD-AD60-2CA821C9EA51}"
  }
 }

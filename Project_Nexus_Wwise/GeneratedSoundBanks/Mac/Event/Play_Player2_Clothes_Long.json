@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{4D1B538B-1F94-4AB0-8825-F48931190C82}",
     "Language": "SFX",
-    "Hash": "{971091B9-4576-5970-61AD-CDD8DBE0BE8E}",
+    "Hash": "{74B0872B-4C35-AEF1-68BE-16EEF5CE07B8}",
     "ObjectPath": "Play_Player2_Clothes_Long",
     "ShortName": "Play_Player2_Clothes_Long",
     "Path": "Event/Play_Player2_Clothes_Long.bnk",
@@ -151,6 +151,6 @@
     ]
    }
   ],
-  "FileHash": "{C5FAE6AF-A5A1-18C9-9F91-6792B92265DE}"
+  "FileHash": "{FEED6D48-229A-EFA3-6A1F-B09374FFB231}"
  }
 }

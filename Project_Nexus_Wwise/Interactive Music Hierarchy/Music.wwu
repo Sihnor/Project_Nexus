@@ -2,12 +2,21 @@
 <WwiseDocument Type="WorkUnit" ID="{6620E9C0-70DC-4577-9232-ABC8365CEA5F}" SchemaVersion="110">
 	<InteractiveMusic>
 		<WorkUnit Name="Music" ID="{6620E9C0-70DC-4577-9232-ABC8365CEA5F}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="1"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<MusicPlaylistContainer Name="Menu" ID="{815263B3-316B-4E7B-9237-1BA794DA8AB8}" ShortID="413161438">
 					<PropertyList>
-						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="1"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="Tempo" Type="Real64" Value="88"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-15</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -5686,12 +5695,17 @@
 				</MusicPlaylistContainer>
 				<MusicPlaylistContainer Name="Stage 1" ID="{58725EC0-95A7-46BF-A376-F5BA09D99E1A}" ShortID="1034643682">
 					<PropertyList>
-						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="Color" Type="int16" Value="1"/>
+						<Property Name="OutputBusHighpass" Type="int16">
+							<ValueList>
+								<Value>20</Value>
+							</ValueList>
+						</Property>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="Tempo" Type="Real64" Value="127"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-2</Value>
+								<Value>-96</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -16461,12 +16475,17 @@
 				</MusicPlaylistContainer>
 				<MusicPlaylistContainer Name="Stage" ID="{D0704EEE-6855-46F4-8AB7-CA86ABBA8E28}" ShortID="621013753">
 					<PropertyList>
-						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="Color" Type="int16" Value="1"/>
+						<Property Name="OutputBusHighpass" Type="int16">
+							<ValueList>
+								<Value>20</Value>
+							</ValueList>
+						</Property>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="Tempo" Type="Real64" Value="125"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-4</Value>
+								<Value>-96</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>

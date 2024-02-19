@@ -9,6 +9,7 @@
 			<ChildrenList>
 				<RandomSequenceContainer Name="Player1_Bodyfalls" ID="{BFD5B6AF-F28F-477F-A341-6C6D75153C65}" ShortID="545405146">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
@@ -23,6 +24,8 @@
 							</ModifierList>
 						</Property>
 						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="UserAuxSendVolume0" Type="Real64">
 							<ValueList>
 								<Value>-15</Value>
@@ -30,7 +33,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-3</Value>
+								<Value>-2</Value>
 							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
@@ -190,6 +193,7 @@
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Player1_Bounce" ID="{5A501982-C8B5-4063-B68D-A757533623B0}" ShortID="435617282">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
@@ -204,7 +208,12 @@
 							</ModifierList>
 						</Property>
 						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
 									<Modifier Name="" ID="{DAF62606-1538-46FC-96DB-C1B901C9C6C7}">
@@ -363,6 +372,7 @@
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Player1_Jump" ID="{E9125266-8C21-4666-BB06-B77012054402}" ShortID="478216956">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
@@ -377,10 +387,11 @@
 							</ModifierList>
 						</Property>
 						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-13</Value>
+								<Value>-7</Value>
 							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
@@ -540,6 +551,7 @@
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Player1_Landing" ID="{BC63615F-8AAE-4D10-8052-97640654546B}" ShortID="775574884">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
@@ -553,6 +565,7 @@
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -716,6 +729,7 @@
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Player1_Dash" ID="{FA5F9C37-B5E4-4C08-9C1F-F17E9B733F65}" ShortID="825233169">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
@@ -730,9 +744,11 @@
 							</ModifierList>
 						</Property>
 						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-7</Value>
+								<Value>-6</Value>
 							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
@@ -892,6 +908,7 @@
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Player1_Crouch_In" ID="{6D0277FB-D56E-4814-BAB1-B9A50C17B2EC}" ShortID="802226143">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="Lowpass" Type="int16">
 							<ValueList>
 								<Value>21</Value>
@@ -911,6 +928,7 @@
 							</ModifierList>
 						</Property>
 						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -921,8 +939,8 @@
 									<Modifier Name="" ID="{AEA91C50-B71A-47F8-9C3D-ACD9DED812B2}">
 										<PropertyList>
 											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="4"/>
-											<Property Name="Min" Type="Real64" Value="-4"/>
+											<Property Name="Max" Type="Real64" Value="2"/>
+											<Property Name="Min" Type="Real64" Value="-2"/>
 										</PropertyList>
 									</Modifier>
 								</ModifierInfo>
@@ -1074,6 +1092,7 @@
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Player1_Crouch_Out" ID="{E8B94CCA-D650-4B11-9DAA-97E8961D4FA7}" ShortID="113437246">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
@@ -1088,6 +1107,7 @@
 							</ModifierList>
 						</Property>
 						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -1098,8 +1118,8 @@
 									<Modifier Name="" ID="{AB07A401-82A7-47BA-9638-ADB9292E73E7}">
 										<PropertyList>
 											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="4"/>
-											<Property Name="Min" Type="Real64" Value="-4"/>
+											<Property Name="Max" Type="Real64" Value="2"/>
+											<Property Name="Min" Type="Real64" Value="-2"/>
 										</PropertyList>
 									</Modifier>
 								</ModifierInfo>
@@ -1251,6 +1271,7 @@
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Player1_Clothes_Long" ID="{67884C30-A3D4-429F-87A6-1F5E8E5DCEE5}" ShortID="991655367">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="Lowpass" Type="int16">
 							<ModifierList>
 								<ModifierInfo>
@@ -1277,17 +1298,19 @@
 							</ModifierList>
 						</Property>
 						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-20</Value>
+								<Value>-30</Value>
 							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
 									<Modifier Name="" ID="{FD0CD954-EB75-4BD7-8FEF-145A8F797EC5}">
 										<PropertyList>
 											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="3"/>
-											<Property Name="Min" Type="Real64" Value="-3"/>
+											<Property Name="Max" Type="Real64" Value="2"/>
+											<Property Name="Min" Type="Real64" Value="-2"/>
 										</PropertyList>
 									</Modifier>
 								</ModifierInfo>
@@ -1527,6 +1550,7 @@
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Player1_Clothes_Short" ID="{ABD9E36F-6176-4430-B960-05089B589A64}" ShortID="953122192">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
@@ -1541,17 +1565,19 @@
 							</ModifierList>
 						</Property>
 						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-20</Value>
+								<Value>-30</Value>
 							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
 									<Modifier Name="" ID="{08DF4D16-2CE9-4E19-A922-42B2B4D66D44}">
 										<PropertyList>
 											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="4"/>
-											<Property Name="Min" Type="Real64" Value="-4"/>
+											<Property Name="Max" Type="Real64" Value="2"/>
+											<Property Name="Min" Type="Real64" Value="-2"/>
 										</PropertyList>
 									</Modifier>
 								</ModifierInfo>
@@ -1791,7 +1817,14 @@
 				</RandomSequenceContainer>
 				<SwitchContainer Name="Player1_Footsteps" ID="{3D226559-44BC-4752-ABD8-AA8F19300E44}" ShortID="1062067425">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">

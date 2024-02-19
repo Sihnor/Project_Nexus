@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{D5493C59-9017-4BB4-A89D-77446FB05B0A}",
     "Language": "SFX",
-    "Hash": "{79EEAA46-65B9-F836-80BA-6290B02CE04F}",
+    "Hash": "{3528B320-20BC-B35F-F6C9-A412FD153F27}",
     "ObjectPath": "Play_Player2_Bodyfall",
     "ShortName": "Play_Player2_Bodyfall",
     "Path": "Event/Play_Player2_Bodyfall.bnk",
@@ -103,6 +103,6 @@
     ]
    }
   ],
-  "FileHash": "{BF87089F-64CD-57AF-3A0A-4007E34D5EFC}"
+  "FileHash": "{E18F7D2D-ECE9-B469-2A2C-90F805ADC03E}"
  }
 }

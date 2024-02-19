@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{853E51E0-E4E7-42E9-AB83-D4CB3ED432C8}",
     "Language": "SFX",
-    "Hash": "{CE99F5C7-41ED-F86D-2BE6-2A1D67A72D5B}",
+    "Hash": "{E722431C-51EE-D640-8B5F-FBEF236E2402}",
     "ObjectPath": "Play_Player2_Punch_Heavy",
     "ShortName": "Play_Player2_Punch_Heavy",
     "Path": "Event/Play_Player2_Punch_Heavy.bnk",
@@ -103,6 +103,6 @@
     ]
    }
   ],
-  "FileHash": "{AAA656BF-8D01-B230-9681-F33C60447FB5}"
+  "FileHash": "{399A5894-54A0-3D77-B9FF-15A102FF0490}"
  }
 }

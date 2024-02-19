@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="4185259963" Type="Event" GUID="{C6F7CB46-440E-4309-90C2-B62B6502AD3E}" Language="SFX" Hash="{4501F5E7-644D-9992-9425-816DA48A3FF1}">
+		<SoundBank Id="4185259963" Type="Event" GUID="{C6F7CB46-440E-4309-90C2-B62B6502AD3E}" Language="SFX" Hash="{866D7247-18C4-3088-73A1-7EF0A523DE5D}">
 			<ObjectPath>Plyr2_Dmg_Special</ObjectPath>
 			<ShortName>Plyr2_Dmg_Special</ShortName>
 			<Path>Event/Plyr2_Dmg_Special.bnk</Path>
@@ -45,5 +45,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E61D3C38-CF2C-3249-5781-894F9A21727E}</FileHash>
+	<FileHash>{FB99B844-3D75-59DA-0D40-A0D99C1A4F6C}</FileHash>
 </SoundBanksInfo>

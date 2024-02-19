@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{820228B7-CD1A-459B-A81C-F381CF138931}",
     "Language": "SFX",
-    "Hash": "{61AED589-8A7F-90A3-DDE5-48BE8917CC97}",
+    "Hash": "{42654768-0EAB-4DFE-3DF9-842876AF060C}",
     "ObjectPath": "Com_Char_Wins_Lauren",
     "ShortName": "Com_Char_Wins_Lauren",
     "Path": "Event/Com_Char_Wins_Lauren.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{270EDC5B-AB38-065B-F95F-BBEFAB52ABF0}"
+  "FileHash": "{6B2A0AD4-3AA4-F744-E01A-C3C1CF19D89F}"
  }
 }

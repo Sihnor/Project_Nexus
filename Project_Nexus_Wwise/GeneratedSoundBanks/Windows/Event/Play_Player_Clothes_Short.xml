@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1976886199" Type="Event" GUID="{8B058E88-CC41-4F15-9236-96A38B65C4D8}" Language="SFX" Hash="{536168BB-5711-D612-343D-454465EE25F7}">
+		<SoundBank Id="1976886199" Type="Event" GUID="{8B058E88-CC41-4F15-9236-96A38B65C4D8}" Language="SFX" Hash="{AC996519-48F4-74D4-AA8A-55A10E188E97}">
 			<ObjectPath>Play_Player_Clothes_Short</ObjectPath>
 			<ShortName>Play_Player_Clothes_Short</ShortName>
 			<Path>Event/Play_Player_Clothes_Short.bnk</Path>
@@ -75,5 +75,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4CB76A4B-578B-69AC-ACA1-2E64D72320AE}</FileHash>
+	<FileHash>{5FAB991D-2CB9-C6F3-ACB4-EC2A5234EE38}</FileHash>
 </SoundBanksInfo>

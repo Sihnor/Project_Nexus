@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{18AC3747-1B0B-4F57-9307-A7FEBA0ADAC6}",
     "Language": "SFX",
-    "Hash": "{D6EF0F9C-D438-B7FB-E024-A5C3EB7268A7}",
+    "Hash": "{40B7B2AD-C5FC-B6A8-D830-50D6E4EEFD74}",
     "ObjectPath": "Plyr1_Dmg_Light",
     "ShortName": "Plyr1_Dmg_Light",
     "Path": "Event/Plyr1_Dmg_Light.bnk",
@@ -91,6 +91,6 @@
     ]
    }
   ],
-  "FileHash": "{9537B0B7-5D18-5E20-C57A-AC64FB8E0C72}"
+  "FileHash": "{F8813BE4-C2B3-53DE-8AEF-77D281A41AB0}"
  }
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="182415898" Type="Event" GUID="{B62D6C1F-687C-48B5-81B8-7924344A1746}" Language="SFX" Hash="{3C04B143-BB2C-91FC-919C-6BDE32239E3C}">
+		<SoundBank Id="182415898" Type="Event" GUID="{B62D6C1F-687C-48B5-81B8-7924344A1746}" Language="SFX" Hash="{79FE82BC-C8BC-387A-ABED-BDCA2AAE177E}">
 			<ObjectPath>Play_Back_Button</ObjectPath>
 			<ShortName>Play_Back_Button</ShortName>
 			<Path>Event/Play_Back_Button.bnk</Path>
@@ -21,5 +21,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BD342D8A-4DFC-CB77-040C-32EEC6A8C91C}</FileHash>
+	<FileHash>{DBF6BD00-4441-2965-6A11-679651F01870}</FileHash>
 </SoundBanksInfo>
