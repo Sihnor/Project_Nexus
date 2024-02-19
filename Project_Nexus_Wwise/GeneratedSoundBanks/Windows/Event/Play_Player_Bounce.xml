@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="675253000" Type="Event" GUID="{1C6F23AF-8E95-4E1E-8297-02B637218C6D}" Language="SFX" Hash="{3142D61B-5BA5-CCD4-F5CE-EDF348460B5D}">
+			<ObjectPath>Play_Player_Bounce</ObjectPath>
+			<ShortName>Play_Player_Bounce</ShortName>
+			<Path>Event/Play_Player_Bounce.bnk</Path>
+			<Media>
+				<File Id="93751365" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_bounce_05.wav</ShortName>
+					<Path>Media/93751365.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_bounce_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="106303132" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_bounce_06.wav</ShortName>
+					<Path>Media/106303132.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_bounce_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="155359304" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_bounce_02.wav</ShortName>
+					<Path>Media/155359304.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_bounce_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="259948865" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_bounce_04.wav</ShortName>
+					<Path>Media/259948865.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_bounce_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="300286671" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_bounce_01.wav</ShortName>
+					<Path>Media/300286671.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_bounce_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="505204503" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_bounce_03.wav</ShortName>
+					<Path>Media/505204503.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_bounce_03_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="675253000" Name="Play_Player_Bounce" ObjectPath="\Events\Player\PlayerLocomotion\Play_Player_Bounce" GUID="{1C6F23AF-8E95-4E1E-8297-02B637218C6D}" DurationType="OneShot" DurationMin="0.24718283" DurationMax="0.3809535">
+					<MediaRefs>
+						<MediaRef Id="93751365"/>
+						<MediaRef Id="106303132"/>
+						<MediaRef Id="155359304"/>
+						<MediaRef Id="259948865"/>
+						<MediaRef Id="300286671"/>
+						<MediaRef Id="505204503"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{9B23BF35-7E35-50D8-FB46-5060628BB2BD}</FileHash>
+</SoundBanksInfo>

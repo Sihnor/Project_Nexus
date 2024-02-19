@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1407253294" Type="Event" GUID="{64BA2DC8-AF54-4E1A-AEF6-60694538C48B}" Language="SFX" Hash="{DF80883E-3268-05C0-72A7-942C4B260DF6}">
+		<SoundBank Id="1407253294" Type="Event" GUID="{64BA2DC8-AF54-4E1A-AEF6-60694538C48B}" Language="SFX" Hash="{55CB8ECF-FD99-71CF-CCC6-E9B551B9B3CB}">
 			<ObjectPath>Com_Round_3_Start</ObjectPath>
 			<ShortName>Com_Round_3_Start</ShortName>
 			<Path>Event/Com_Round_3_Start.bnk</Path>
@@ -51,5 +51,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{383804B0-61C4-0BF0-4281-86C708319F7B}</FileHash>
+	<FileHash>{C8109BBC-E481-266A-5B68-44ADB044C1D6}</FileHash>
 </SoundBanksInfo>

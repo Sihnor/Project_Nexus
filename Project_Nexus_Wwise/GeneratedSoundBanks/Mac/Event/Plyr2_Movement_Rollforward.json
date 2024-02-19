@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{167A664F-1E14-4579-BD2F-8548BA86507A}",
     "Language": "SFX",
-    "Hash": "{1E9B4A47-E7F8-5909-6036-7E77684CB5B0}",
+    "Hash": "{1DDCFEF1-D60F-223A-C3FF-ACE67CEDE449}",
     "ObjectPath": "Plyr2_Movement_Rollforward",
     "ShortName": "Plyr2_Movement_Rollforward",
     "Path": "Event/Plyr2_Movement_Rollforward.bnk",
@@ -91,6 +91,6 @@
     ]
    }
   ],
-  "FileHash": "{8D3A0BDD-D85A-D6EC-3BE7-EDA0FEAE92FA}"
+  "FileHash": "{6BA8FC8D-00FE-E954-BF1E-BFD1837EBD7B}"
  }
 }

@@ -1,0 +1,108 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "3596877596",
+    "Type": "Event",
+    "GUID": "{CC124DD1-467A-465A-9000-547582091E96}",
+    "Language": "SFX",
+    "Hash": "{969EB56D-C225-06A2-719C-4BE06C6A772A}",
+    "ObjectPath": "Play_Player2_Dash",
+    "ShortName": "Play_Player2_Dash",
+    "Path": "Event/Play_Player2_Dash.bnk",
+    "Media": [
+     {
+      "Id": "9770278",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_dash_06.wav",
+      "Path": "Media/9770278.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_dash_06_10C4C929.wem"
+     },
+     {
+      "Id": "13032332",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_dash_04.wav",
+      "Path": "Media/13032332.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_dash_04_10C4C929.wem"
+     },
+     {
+      "Id": "147580599",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_dash_01.wav",
+      "Path": "Media/147580599.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_dash_01_10C4C929.wem"
+     },
+     {
+      "Id": "229900453",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_dash_03.wav",
+      "Path": "Media/229900453.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_dash_03_10C4C929.wem"
+     },
+     {
+      "Id": "621916710",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_dash_02.wav",
+      "Path": "Media/621916710.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_dash_02_10C4C929.wem"
+     },
+     {
+      "Id": "868614108",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_dash_05.wav",
+      "Path": "Media/868614108.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_dash_05_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3596877596",
+      "Name": "Play_Player2_Dash",
+      "ObjectPath": "\\Events\\Player2\\Player2Locomotion\\Play_Player2_Dash",
+      "GUID": "{CC124DD1-467A-465A-9000-547582091E96}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.46244898",
+      "DurationMax": "0.71405613",
+      "MediaRefs": [
+       {
+        "Id": "9770278"
+       },
+       {
+        "Id": "13032332"
+       },
+       {
+        "Id": "147580599"
+       },
+       {
+        "Id": "229900453"
+       },
+       {
+        "Id": "621916710"
+       },
+       {
+        "Id": "868614108"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{EF335E4F-A596-7EE6-71E0-BA6E03311014}"
+ }
+}

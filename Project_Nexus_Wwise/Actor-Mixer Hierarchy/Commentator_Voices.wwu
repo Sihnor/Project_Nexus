@@ -3,7 +3,7 @@
 	<AudioObjects>
 		<WorkUnit Name="Commentator_Voices" ID="{5BA06415-9A5F-4D77-9896-C2068BB4FFC9}" PersistMode="Standalone">
 			<PropertyList>
-				<Property Name="Color" Type="int16" Value="26"/>
+				<Property Name="Color" Type="int16" Value="8"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>

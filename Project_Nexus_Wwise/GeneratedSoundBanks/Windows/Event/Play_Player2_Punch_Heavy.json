@@ -1,0 +1,108 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "166827144",
+    "Type": "Event",
+    "GUID": "{853E51E0-E4E7-42E9-AB83-D4CB3ED432C8}",
+    "Language": "SFX",
+    "Hash": "{CE99F5C7-41ED-F86D-2BE6-2A1D67A72D5B}",
+    "ObjectPath": "Play_Player2_Punch_Heavy",
+    "ShortName": "Play_Player2_Punch_Heavy",
+    "Path": "Event/Play_Player2_Punch_Heavy.bnk",
+    "Media": [
+     {
+      "Id": "232473678",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_heavyattack_04.wav",
+      "Path": "Media/232473678.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_heavyattack_04_10C4C929.wem"
+     },
+     {
+      "Id": "431709875",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_heavyattack_02.wav",
+      "Path": "Media/431709875.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_heavyattack_02_10C4C929.wem"
+     },
+     {
+      "Id": "474139874",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_heavyattack_03.wav",
+      "Path": "Media/474139874.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_heavyattack_03_10C4C929.wem"
+     },
+     {
+      "Id": "576718424",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_heavyattack_06.wav",
+      "Path": "Media/576718424.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_heavyattack_06_10C4C929.wem"
+     },
+     {
+      "Id": "711237658",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_heavyattack_01.wav",
+      "Path": "Media/711237658.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_heavyattack_01_10C4C929.wem"
+     },
+     {
+      "Id": "1013405996",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_heavyattack_05.wav",
+      "Path": "Media/1013405996.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_heavyattack_05_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "166827144",
+      "Name": "Play_Player2_Punch_Heavy",
+      "ObjectPath": "\\Events\\Player2\\Player2Combat\\Play_Player2_Punch_Heavy",
+      "GUID": "{853E51E0-E4E7-42E9-AB83-D4CB3ED432C8}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.3487932",
+      "DurationMax": "0.56508785",
+      "MediaRefs": [
+       {
+        "Id": "232473678"
+       },
+       {
+        "Id": "431709875"
+       },
+       {
+        "Id": "474139874"
+       },
+       {
+        "Id": "576718424"
+       },
+       {
+        "Id": "711237658"
+       },
+       {
+        "Id": "1013405996"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{3C4FEF77-89ED-9AA5-0459-16BF4C865F6E}"
+ }
+}

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="253333564" Type="Event" GUID="{1D179E9F-6385-46AE-9BD6-B3918124CCD2}" Language="SFX" Hash="{815BE929-A691-9CB6-31CA-78D0679DB903}">
+		<SoundBank Id="253333564" Type="Event" GUID="{1D179E9F-6385-46AE-9BD6-B3918124CCD2}" Language="SFX" Hash="{8AFC0BE0-AB61-59AD-EF90-DBB4A7063A45}">
 			<ObjectPath>Plyr2_Attack_Light</ObjectPath>
 			<ShortName>Plyr2_Attack_Light</ShortName>
 			<Path>Event/Plyr2_Attack_Light.bnk</Path>
@@ -45,5 +45,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7C695B66-76F0-FB5C-555A-CEDF41E8F075}</FileHash>
+	<FileHash>{F0598B2E-02C6-744D-8F94-F683369C2FBF}</FileHash>
 </SoundBanksInfo>

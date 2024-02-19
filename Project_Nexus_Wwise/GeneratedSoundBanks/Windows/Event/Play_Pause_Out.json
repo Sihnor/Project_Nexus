@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{D586571B-518E-44CF-8A2E-6B68BFDB5D01}",
     "Language": "SFX",
-    "Hash": "{17352C94-6167-FB9E-D030-6B74E06F2B62}",
+    "Hash": "{975D6E84-2B2C-D149-7ED3-2AB1B347902B}",
     "ObjectPath": "Play_Pause_Out",
     "ShortName": "Play_Pause_Out",
     "Path": "Event/Play_Pause_Out.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{1E936BCE-3ECB-91F7-CEC6-963F63A2E8D8}"
+  "FileHash": "{541B9355-FDFC-09EB-DC49-ACF041D3A955}"
  }
 }

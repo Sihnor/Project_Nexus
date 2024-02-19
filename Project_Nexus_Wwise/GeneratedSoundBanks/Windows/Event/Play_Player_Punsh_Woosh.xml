@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="3021177893" Type="Event" GUID="{DC4135FD-87EC-41A5-84C3-E1F70FC2699C}" Language="SFX" Hash="{AE3A5B70-471F-3232-8F11-9EDC6C4A19A6}">
+		<SoundBank Id="3021177893" Type="Event" GUID="{DC4135FD-87EC-41A5-84C3-E1F70FC2699C}" Language="SFX" Hash="{D516753E-0EDA-F695-9320-2ADDDEBB1903}">
 			<ObjectPath>Play_Player_Punsh_Woosh</ObjectPath>
 			<ShortName>Play_Player_Punsh_Woosh</ShortName>
 			<Path>Event/Play_Player_Punsh_Woosh.bnk</Path>
@@ -38,7 +38,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3021177893" Name="Play_Player_Punsh_Woosh" ObjectPath="\Events\Player\PlayerCombat\Play_Player_Punsh_Woosh" GUID="{DC4135FD-87EC-41A5-84C3-E1F70FC2699C}" DurationType="OneShot" DurationMin="0.25119513" DurationMax="0.47743717">
+				<Event Id="3021177893" Name="Play_Player_Punsh_Woosh" ObjectPath="\Events\Player\PlayerCombat\Play_Player_Punsh_Woosh" GUID="{DC4135FD-87EC-41A5-84C3-E1F70FC2699C}" DurationType="OneShot" DurationMin="0.26674756" DurationMax="0.44960067">
 					<MediaRefs>
 						<MediaRef Id="266191415"/>
 						<MediaRef Id="505491373"/>
@@ -51,5 +51,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{AD63F38A-803C-E8DF-BC71-2C6E5657A9F0}</FileHash>
+	<FileHash>{C1FE9EFF-1294-7BC4-FCB0-97C260625B87}</FileHash>
 </SoundBanksInfo>

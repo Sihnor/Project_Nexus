@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2799667633" Type="Event" GUID="{18AC3747-1B0B-4F57-9307-A7FEBA0ADAC6}" Language="SFX" Hash="{7A88C7E9-C51E-2C20-AA27-EDBBB2E866B1}">
+		<SoundBank Id="2799667633" Type="Event" GUID="{18AC3747-1B0B-4F57-9307-A7FEBA0ADAC6}" Language="SFX" Hash="{D6EF0F9C-D438-B7FB-E024-A5C3EB7268A7}">
 			<ObjectPath>Plyr1_Dmg_Light</ObjectPath>
 			<ShortName>Plyr1_Dmg_Light</ShortName>
 			<Path>Event/Plyr1_Dmg_Light.bnk</Path>
@@ -45,5 +45,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{885A55D1-9C28-5D17-5458-F01C6E5F995F}</FileHash>
+	<FileHash>{99573A28-5B4A-6158-67C5-B876C8E2AF00}</FileHash>
 </SoundBanksInfo>

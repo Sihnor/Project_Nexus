@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="168095654" Type="Event" GUID="{6A53B62E-A897-495E-94B6-9D497FF0D9E3}" Language="SFX" Hash="{D956E3F6-C747-5540-09FE-B45E0CBBBA6B}">
+			<ObjectPath>Play_Player2_Grab</ObjectPath>
+			<ShortName>Play_Player2_Grab</ShortName>
+			<Path>Event/Play_Player2_Grab.bnk</Path>
+			<Media>
+				<File Id="134630083" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_combat_grab_02.wav</ShortName>
+					<Path>Media/134630083.wem</Path>
+					<CachePath>SFX/sfx_fighter2_combat_grab_02_77F0026E.wem</CachePath>
+				</File>
+				<File Id="617462176" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_combat_grab_06.wav</ShortName>
+					<Path>Media/617462176.wem</Path>
+					<CachePath>SFX/sfx_fighter2_combat_grab_06_A9089ED8.wem</CachePath>
+				</File>
+				<File Id="756468279" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_combat_grab_03.wav</ShortName>
+					<Path>Media/756468279.wem</Path>
+					<CachePath>SFX/sfx_fighter2_combat_grab_03_732C0E4F.wem</CachePath>
+				</File>
+				<File Id="809176333" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_combat_grab_04.wav</ShortName>
+					<Path>Media/809176333.wem</Path>
+					<CachePath>SFX/sfx_fighter2_combat_grab_04_9A71A74C.wem</CachePath>
+				</File>
+				<File Id="861252882" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_combat_grab_05.wav</ShortName>
+					<Path>Media/861252882.wem</Path>
+					<CachePath>SFX/sfx_fighter2_combat_grab_05_3DB8813C.wem</CachePath>
+				</File>
+				<File Id="867059040" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_combat_grab_01.wav</ShortName>
+					<Path>Media/867059040.wem</Path>
+					<CachePath>SFX/sfx_fighter2_combat_grab_01_4AE7ACF3.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="168095654" Name="Play_Player2_Grab" ObjectPath="\Events\Player2\Player2Combat\Play_Player2_Grab" GUID="{6A53B62E-A897-495E-94B6-9D497FF0D9E3}" DurationType="OneShot" DurationMin="0.23766193" DurationMax="0.34754455">
+					<MediaRefs>
+						<MediaRef Id="134630083"/>
+						<MediaRef Id="617462176"/>
+						<MediaRef Id="756468279"/>
+						<MediaRef Id="809176333"/>
+						<MediaRef Id="861252882"/>
+						<MediaRef Id="867059040"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{3AA72732-2D0E-4712-C16F-A03B50CB5356}</FileHash>
+</SoundBanksInfo>

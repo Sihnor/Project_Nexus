@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{7BD3B646-2657-40FF-9C97-391A4B37380E}",
     "Language": "SFX",
-    "Hash": "{6A7614C9-1443-3119-A220-5EE0972A5268}",
+    "Hash": "{5ACF9AED-5A0A-7240-32D9-CEE582D3539B}",
     "ObjectPath": "Plyr1_Dmg_Special",
     "ShortName": "Plyr1_Dmg_Special",
     "Path": "Event/Plyr1_Dmg_Special.bnk",
@@ -91,6 +91,6 @@
     ]
    }
   ],
-  "FileHash": "{DC21A848-9966-F840-4EFC-772583ECAABA}"
+  "FileHash": "{CE826392-DA22-B55D-1F4E-8ABFF2E6B781}"
  }
 }

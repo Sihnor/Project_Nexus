@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1659825819" Type="Event" GUID="{167A664F-1E14-4579-BD2F-8548BA86507A}" Language="SFX" Hash="{1E9B4A47-E7F8-5909-6036-7E77684CB5B0}">
+		<SoundBank Id="1659825819" Type="Event" GUID="{167A664F-1E14-4579-BD2F-8548BA86507A}" Language="SFX" Hash="{1DDCFEF1-D60F-223A-C3FF-ACE67CEDE449}">
 			<ObjectPath>Plyr2_Movement_Rollforward</ObjectPath>
 			<ShortName>Plyr2_Movement_Rollforward</ShortName>
 			<Path>Event/Plyr2_Movement_Rollforward.bnk</Path>
@@ -45,5 +45,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{180BA29C-FB47-95E8-35A1-7B79E51D4732}</FileHash>
+	<FileHash>{935DD687-62F2-2B09-2360-0F4BA6F1A6BA}</FileHash>
 </SoundBanksInfo>

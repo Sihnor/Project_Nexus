@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="606831743" Type="Event" GUID="{2C86464F-2577-4636-99EE-045C1778A0B0}" Language="SFX" Hash="{607F4D05-11BA-50B3-47A5-28A1A998E287}">
+		<SoundBank Id="606831743" Type="Event" GUID="{2C86464F-2577-4636-99EE-045C1778A0B0}" Language="SFX" Hash="{BE252DE7-71BB-054A-9A03-ECB98C9BE963}">
 			<ObjectPath>Play_Player_Bodyfall</ObjectPath>
 			<ShortName>Play_Player_Bodyfall</ShortName>
 			<Path>Event/Play_Player_Bodyfall.bnk</Path>
@@ -38,7 +38,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="606831743" Name="Play_Player_Bodyfall" ObjectPath="\Events\Player\PlayerLocomotion\Play_Player_Bodyfall" GUID="{2C86464F-2577-4636-99EE-045C1778A0B0}" DurationType="OneShot" DurationMin="0.4156916" DurationMax="0.60136056">
+				<Event Id="606831743" Name="Play_Player_Bodyfall" ObjectPath="\Events\Player\PlayerLocomotion\Play_Player_Bodyfall" GUID="{2C86464F-2577-4636-99EE-045C1778A0B0}" DurationType="OneShot" DurationMin="0.35979274" DurationMax="0.6947762">
 					<MediaRefs>
 						<MediaRef Id="377947128"/>
 						<MediaRef Id="399584824"/>
@@ -51,5 +51,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5987046D-AC57-00A1-A081-D5A4C567EEB9}</FileHash>
+	<FileHash>{954DE1A0-E904-B8AB-42FB-D305B820665F}</FileHash>
 </SoundBanksInfo>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1912703074" Type="Event" GUID="{D7BC3EB3-3F4C-4395-A786-93E524AB9064}" Language="SFX" Hash="{C7368D8E-0BEE-80A9-2E89-14C919DEC713}">
+		<SoundBank Id="1912703074" Type="Event" GUID="{D7BC3EB3-3F4C-4395-A786-93E524AB9064}" Language="SFX" Hash="{1CAA014C-B86E-96D8-87FD-CB2BE5A279A3}">
 			<ObjectPath>Plyr1_Movement_Jump</ObjectPath>
 			<ShortName>Plyr1_Movement_Jump</ShortName>
 			<Path>Event/Plyr1_Movement_Jump.bnk</Path>
@@ -45,5 +45,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B4C3CC86-6D9A-A2D7-A44B-69B04C0B800D}</FileHash>
+	<FileHash>{61CA80D9-35B7-13E8-CADE-6ED886DF2D43}</FileHash>
 </SoundBanksInfo>

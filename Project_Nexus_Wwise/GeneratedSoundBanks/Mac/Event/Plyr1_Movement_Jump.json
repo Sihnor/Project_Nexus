@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{D7BC3EB3-3F4C-4395-A786-93E524AB9064}",
     "Language": "SFX",
-    "Hash": "{C7368D8E-0BEE-80A9-2E89-14C919DEC713}",
+    "Hash": "{1CAA014C-B86E-96D8-87FD-CB2BE5A279A3}",
     "ObjectPath": "Plyr1_Movement_Jump",
     "ShortName": "Plyr1_Movement_Jump",
     "Path": "Event/Plyr1_Movement_Jump.bnk",
@@ -91,6 +91,6 @@
     ]
    }
   ],
-  "FileHash": "{3C7D8197-374F-951C-CAE7-80C5D84494D2}"
+  "FileHash": "{CBC9E9D3-3F03-4630-B674-994A96F76D54}"
  }
 }

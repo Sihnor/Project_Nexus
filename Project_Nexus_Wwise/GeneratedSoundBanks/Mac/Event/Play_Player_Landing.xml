@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="725346841" Type="Event" GUID="{BD4FEB80-88A8-45D8-9FBF-7EF06D02BC15}" Language="SFX" Hash="{037E82E7-8317-50F9-A888-539FF554E9FF}">
+		<SoundBank Id="725346841" Type="Event" GUID="{BD4FEB80-88A8-45D8-9FBF-7EF06D02BC15}" Language="SFX" Hash="{FFE75112-481C-1069-545E-12A6E81F24B4}">
 			<ObjectPath>Play_Player_Landing</ObjectPath>
 			<ShortName>Play_Player_Landing</ShortName>
 			<Path>Event/Play_Player_Landing.bnk</Path>
@@ -38,7 +38,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="725346841" Name="Play_Player_Landing" ObjectPath="\Events\Player\PlayerLocomotion\Play_Player_Landing" GUID="{BD4FEB80-88A8-45D8-9FBF-7EF06D02BC15}" DurationType="OneShot" DurationMin="0.20616615" DurationMax="0.42318013">
+				<Event Id="725346841" Name="Play_Player_Landing" ObjectPath="\Events\Player\PlayerLocomotion\Play_Player_Landing" GUID="{BD4FEB80-88A8-45D8-9FBF-7EF06D02BC15}" DurationType="OneShot" DurationMin="0.22211511" DurationMax="0.39279372">
 					<MediaRefs>
 						<MediaRef Id="606884774"/>
 						<MediaRef Id="616693563"/>
@@ -51,5 +51,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{AA055C3C-358B-3991-0D67-647D8D1677DB}</FileHash>
+	<FileHash>{54E9F8B7-E239-42F2-9F95-BCB019FC7124}</FileHash>
 </SoundBanksInfo>

@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{D240E461-1973-4A2A-922A-01651A67602B}",
     "Language": "SFX",
-    "Hash": "{7DFCCB9F-1D24-AC19-9E69-55633A334037}",
+    "Hash": "{80E6072E-DE19-3E05-4483-224D058B860C}",
     "ObjectPath": "Com_Round_1_Start",
     "ShortName": "Com_Round_1_Start",
     "Path": "Event/Com_Round_1_Start.bnk",
@@ -103,6 +103,6 @@
     ]
    }
   ],
-  "FileHash": "{8722A1E9-1D86-9F78-B35B-313E425F6CD3}"
+  "FileHash": "{B7FC6178-CA79-26DE-7EA1-094F7D5B7C1B}"
  }
 }

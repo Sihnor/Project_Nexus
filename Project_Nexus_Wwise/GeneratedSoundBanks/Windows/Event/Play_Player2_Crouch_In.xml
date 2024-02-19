@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="3695062128" Type="Event" GUID="{2FBB1439-6358-4311-AFDC-3DA2726483D3}" Language="SFX" Hash="{3EBC5F11-2E0D-CDBF-272B-ADA1D31B69DF}">
+			<ObjectPath>Play_Player2_Crouch_In</ObjectPath>
+			<ShortName>Play_Player2_Crouch_In</ShortName>
+			<Path>Event/Play_Player2_Crouch_In.bnk</Path>
+			<Media>
+				<File Id="117224640" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_crouchdown_04.wav</ShortName>
+					<Path>Media/117224640.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_crouchdown_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="137871176" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_crouchdown_02.wav</ShortName>
+					<Path>Media/137871176.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_crouchdown_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="192500971" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_crouchdown_06.wav</ShortName>
+					<Path>Media/192500971.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_crouchdown_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="633461965" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_crouchdown_05.wav</ShortName>
+					<Path>Media/633461965.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_crouchdown_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="748042722" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_crouchdown_01.wav</ShortName>
+					<Path>Media/748042722.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_crouchdown_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1033057339" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_crouchdown_03.wav</ShortName>
+					<Path>Media/1033057339.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_crouchdown_03_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3695062128" Name="Play_Player2_Crouch_In" ObjectPath="\Events\Player2\Player2Locomotion\Play_Player2_Crouch_In" GUID="{2FBB1439-6358-4311-AFDC-3DA2726483D3}" DurationType="OneShot" DurationMin="0.362191" DurationMax="0.587545">
+					<MediaRefs>
+						<MediaRef Id="117224640"/>
+						<MediaRef Id="137871176"/>
+						<MediaRef Id="192500971"/>
+						<MediaRef Id="633461965"/>
+						<MediaRef Id="748042722"/>
+						<MediaRef Id="1033057339"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{8FB19DDE-50A5-E781-478E-45512FBDAB1D}</FileHash>
+</SoundBanksInfo>

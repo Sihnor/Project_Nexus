@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="1409386042" Type="Event" GUID="{8C37F805-1EF3-48E8-9DA4-B8E4E9095CA4}" Language="SFX" Hash="{F89F7707-43BA-4E84-DF7B-87C9272FA16F}">
+			<ObjectPath>Play_Player2_Blockhit</ObjectPath>
+			<ShortName>Play_Player2_Blockhit</ShortName>
+			<Path>Event/Play_Player2_Blockhit.bnk</Path>
+			<Media>
+				<File Id="14956916" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_combat_blockhit_02.wav</ShortName>
+					<Path>Media/14956916.wem</Path>
+					<CachePath>SFX/sfx_fighter2_combat_blockhit_02_D5050D44.wem</CachePath>
+				</File>
+				<File Id="131647470" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_combat_blockhit_01.wav</ShortName>
+					<Path>Media/131647470.wem</Path>
+					<CachePath>SFX/sfx_fighter2_combat_blockhit_01_5C99D561.wem</CachePath>
+				</File>
+				<File Id="250748462" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_combat_blockhit_03.wav</ShortName>
+					<Path>Media/250748462.wem</Path>
+					<CachePath>SFX/sfx_fighter2_combat_blockhit_03_3E0160BD.wem</CachePath>
+				</File>
+				<File Id="592825387" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_combat_blockhit_05.wav</ShortName>
+					<Path>Media/592825387.wem</Path>
+					<CachePath>SFX/sfx_fighter2_combat_blockhit_05_46793C6A.wem</CachePath>
+				</File>
+				<File Id="765364776" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_combat_blockhit_06.wav</ShortName>
+					<Path>Media/765364776.wem</Path>
+					<CachePath>SFX/sfx_fighter2_combat_blockhit_06_3749CEF9.wem</CachePath>
+				</File>
+				<File Id="1005047455" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_combat_blockhit_04.wav</ShortName>
+					<Path>Media/1005047455.wem</Path>
+					<CachePath>SFX/sfx_fighter2_combat_blockhit_04_BB5505F4.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1409386042" Name="Play_Player2_Blockhit" ObjectPath="\Events\Player2\Player2Combat\Play_Player2_Blockhit" GUID="{8C37F805-1EF3-48E8-9DA4-B8E4E9095CA4}" DurationType="OneShot" DurationMin="0.23633985" DurationMax="0.42273876">
+					<MediaRefs>
+						<MediaRef Id="14956916"/>
+						<MediaRef Id="131647470"/>
+						<MediaRef Id="250748462"/>
+						<MediaRef Id="592825387"/>
+						<MediaRef Id="765364776"/>
+						<MediaRef Id="1005047455"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{A61DF8AF-DA4B-F6BA-8E1A-1D847C6C9417}</FileHash>
+</SoundBanksInfo>

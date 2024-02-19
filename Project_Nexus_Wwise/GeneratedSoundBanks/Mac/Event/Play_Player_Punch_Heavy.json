@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{6909B8C2-6D58-49AD-9B0C-ECB42CC550E2}",
     "Language": "SFX",
-    "Hash": "{6AD697B3-B688-BF2B-6A59-A8C09115199E}",
+    "Hash": "{B0F68CC8-3390-074F-66DC-60547667BA56}",
     "ObjectPath": "Play_Player_Punch_Heavy",
     "ShortName": "Play_Player_Punch_Heavy",
     "Path": "Event/Play_Player_Punch_Heavy.bnk",
@@ -77,8 +77,8 @@
       "ObjectPath": "\\Events\\Player\\PlayerCombat\\Play_Player_Punch_Heavy",
       "GUID": "{6909B8C2-6D58-49AD-9B0C-ECB42CC550E2}",
       "DurationType": "OneShot",
-      "DurationMin": "0.583875",
-      "DurationMax": "0.68789583",
+      "DurationMin": "0.3487932",
+      "DurationMax": "0.56508785",
       "MediaRefs": [
        {
         "Id": "56341530"
@@ -103,6 +103,6 @@
     ]
    }
   ],
-  "FileHash": "{EF0757F1-0F58-449C-E383-FE2CDEB81A63}"
+  "FileHash": "{1281E5E7-9866-E510-317A-6F706FEFF6D1}"
  }
 }
