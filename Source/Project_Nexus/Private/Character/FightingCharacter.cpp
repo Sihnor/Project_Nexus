@@ -78,7 +78,7 @@ AFightingCharacter::AFightingCharacter()
 	IsGroundBounce = false;
 	
 	//Create a child class so every character has it's own command and create a database of it... Sorry
-	PlayerCommand.SetNum(10);
+	PlayerCommand.SetNum(12);
 
 	/*PlayerCommand[0].Inputs.Add("A");
 	PlayerCommand[0].Inputs.Add("S");
@@ -132,30 +132,38 @@ AFightingCharacter::AFightingCharacter()
 	this->PlayerCommand[4].InputTypes.Add(EInputType::F_HeavyAttack);
 	this->PlayerCommand[4].HasUsedCommand = false;
 
-	//Combat Command #2 assignments.
-	this->PlayerCommand[5].CommandName = "Light Combo";
-	this->PlayerCommand[5].InputTypes.Add(EInputType::F_LightAttack);
+	//Light Attack Command assignments.
+	this->PlayerCommand[5].CommandName = "Light Attack";
 	this->PlayerCommand[5].InputTypes.Add(EInputType::F_LightAttack);
 	this->PlayerCommand[5].HasUsedCommand = false;
 
-	//Combat Command #2 assignments.
-	this->PlayerCommand[6].CommandName = "Heavy Combo";
-	this->PlayerCommand[6].InputTypes.Add(EInputType::F_HeavyAttack);
+	this->PlayerCommand[6].CommandName = "Heavy Attack";
 	this->PlayerCommand[6].InputTypes.Add(EInputType::F_HeavyAttack);
 	this->PlayerCommand[6].HasUsedCommand = false;
 
-	//Light Attack Command assignments.
-	this->PlayerCommand[7].CommandName = "Light Attack";
+	/*this->PlayerCommand[7].CommandName = "DAttackLF";
+	this->PlayerCommand[7].InputTypes.Add(EInputType::F_Forward);
 	this->PlayerCommand[7].InputTypes.Add(EInputType::F_LightAttack);
 	this->PlayerCommand[7].HasUsedCommand = false;
 
-	this->PlayerCommand[8].CommandName = "Heavy Attack";
-	this->PlayerCommand[8].InputTypes.Add(EInputType::F_HeavyAttack);
+	this->PlayerCommand[8].CommandName = "DAttackLB";
+	this->PlayerCommand[8].InputTypes.Add(EInputType::F_Backward);
+	this->PlayerCommand[8].InputTypes.Add(EInputType::F_LightAttack);
 	this->PlayerCommand[8].HasUsedCommand = false;
 
-	this->PlayerCommand[9].CommandName = "Throw Attack";
-	this->PlayerCommand[9].InputTypes.Add(EInputType::F_Throw);
+	this->PlayerCommand[9].CommandName = "DAttackHF";
+	this->PlayerCommand[9].InputTypes.Add(EInputType::F_Forward);
+	this->PlayerCommand[9].InputTypes.Add(EInputType::F_HeavyAttack);
 	this->PlayerCommand[9].HasUsedCommand = false;
+
+	this->PlayerCommand[10].CommandName = "DAttackHB";
+	this->PlayerCommand[10].InputTypes.Add(EInputType::F_Backward);
+	this->PlayerCommand[10].InputTypes.Add(EInputType::F_HeavyAttack);
+	this->PlayerCommand[10].HasUsedCommand = false;*/
+
+	this->PlayerCommand[7].CommandName = "Throw Attack";
+	this->PlayerCommand[7].InputTypes.Add(EInputType::F_Throw);
+	this->PlayerCommand[7].HasUsedCommand = false;
 
 }
 
@@ -247,12 +255,7 @@ void AFightingCharacter::DoMoveFwd(const FInputActionValue& Value){
 		AddMovementInput(Forward, Value.Get<float>());
 
 		MoveFwd = true;
-
-		//UE_LOG(LogTemp, Warning, TEXT("Move Value X: %f"), Value.Get<float>());
-		//UE_LOG(LogTemp, Warning, TEXT("Forwar Value: %f %f %f"), Forward.X, Forward.Y, Forward.Z);
-	}/*else {
-		CharacterState = ECharacterState::FC_Default;
-	}*/
+	}
 
 }
 
@@ -282,10 +285,7 @@ void AFightingCharacter::DoMoveBwd(const FInputActionValue& Value){
 		}
 
 		MoveBwd = true;
-		//UE_LOG(LogTemp, Warning, TEXT("Move X: %f"), Value.Get<float>());
-	}/*else {
-		CharacterState = ECharacterState::FC_Default;
-	}*/
+	}
 }
 
 void AFightingCharacter::LightAttack(const FInputActionValue& Value){
@@ -293,6 +293,7 @@ void AFightingCharacter::LightAttack(const FInputActionValue& Value){
 		UpdateCharacterRotation();
 		WasLightAttackUsed = true;
 
+		
 		//UE_LOG(LogTemp, Warning, TEXT("Light Attack"));
 		//UE_LOG(LogTemp, Warning, TEXT("LA: %d"), WasFirstLightAttackUsed);
 	}
@@ -300,6 +301,7 @@ void AFightingCharacter::LightAttack(const FInputActionValue& Value){
 
 void AFightingCharacter::HeavyAttack(const FInputActionValue& Value){
 	if (GetController() && IsCombatReady && CharacterState != ECharacterState::FC_Blocking && CharacterState != ECharacterState::FC_KockedDown && CharacterState != ECharacterState::FC_Recovery) {
+		
 		UpdateCharacterRotation();
 		WasHeavyAttackUsed = true;
 		
@@ -318,11 +320,7 @@ void AFightingCharacter::Block(const FInputActionValue& Value){
 			}else{
 				CharacterState = ECharacterState::FC_CrouchBlocking;
 			}
-			//UE_LOG(LogTemp, Warning, TEXT("Block"));
-	}/*else {
-		IsBlocking = false;
-		CharacterState = ECharacterState::FC_Default;
-	}*/
+	}
 }
 
 void AFightingCharacter::UnBlock(const FInputActionValue& Value){
@@ -334,8 +332,6 @@ void AFightingCharacter::UnBlock(const FInputActionValue& Value){
 			}else{
 				CharacterState = ECharacterState::FC_Crouching;
 			}
-			//CharacterState = ECharacterState::FC_Default;
-			//UE_LOG(LogTemp, Warning, TEXT("UnBlock"));
 	}
 }
 
@@ -441,18 +437,6 @@ void AFightingCharacter::UpdateCharacterRotation()
 		if (TimelineComp != nullptr){
 			TimelineComp->Play();
 		}
-
-		//UE_LOG(LogTemp, Warning, TEXT("found %f"), OtherCharacter->GetActorLocation().X);
-		/*FRotator PlayerSetRotaion = FMath::RInterpTo(
-			GetActorRotation(),
-			UKismetMathLibrary::FindLookAtRotation(GetActorLocation(),OtherCharacter->GetActorLocation()),
-			UGameplayStatics::GetWorldDeltaSeconds(GetWorld()), 
-			TempRotaionRate
-		);*/
-
-		//UE_LOG(LogTemp, Warning, TEXT("Rotation Rate %f"), TempRotaionRate);
-
-		//SetActorRotation(FRotator(0.f, PlayerSetRotaion.Yaw, 0.f));
 	}
 
 }
@@ -512,7 +496,6 @@ void AFightingCharacter::GetStunned(float HitStunTime, float BlockStunTime, floa
 				CharacterState = ECharacterState::FC_BlockCrouchStunned;
 			}
 
-			//CharacterState = ECharacterState::FC_BlockStunned;
 			WasStunned = true;
 			BeginStun();
 		} else {
@@ -586,12 +569,7 @@ void AFightingCharacter::BeginStun(){
 
 void AFightingCharacter::EndStun(){
 	if(!WasLaunched && !IsKnockedDown && !IsRecovery && !IsWallBounce && !IsGroundBounce){
-		/*if(IsBlocking){
-			CharacterState = ECharacterState::FC_Blocking;
-		}*/
-			CharacterState = ECharacterState::FC_Default;
-		
-
+		CharacterState = ECharacterState::FC_Default;
 		IsCombatReady = true;
 		WasStunned= false;
 		
@@ -687,7 +665,6 @@ void AFightingCharacter::Landed(const FHitResult& Hit){
 		CharacterState = ECharacterState::FC_GroundBounce;
 	} 
 
-	//CharacterState = ECharacterState::FC_Default;
 	WasLaunched = false;
 	IsWallBounce = false;
 	
