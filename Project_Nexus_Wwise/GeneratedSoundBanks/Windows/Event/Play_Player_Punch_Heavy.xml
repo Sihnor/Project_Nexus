@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2663982528" Type="Event" GUID="{6909B8C2-6D58-49AD-9B0C-ECB42CC550E2}" Language="SFX" Hash="{6AD697B3-B688-BF2B-6A59-A8C09115199E}">
+		<SoundBank Id="2663982528" Type="Event" GUID="{6909B8C2-6D58-49AD-9B0C-ECB42CC550E2}" Language="SFX" Hash="{621F64FE-6867-D4F7-93BE-E41A6082F63D}">
 			<ObjectPath>Play_Player_Punch_Heavy</ObjectPath>
 			<ShortName>Play_Player_Punch_Heavy</ShortName>
 			<Path>Event/Play_Player_Punch_Heavy.bnk</Path>
@@ -38,7 +38,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2663982528" Name="Play_Player_Punch_Heavy" ObjectPath="\Events\Player\PlayerCombat\Play_Player_Punch_Heavy" GUID="{6909B8C2-6D58-49AD-9B0C-ECB42CC550E2}" DurationType="OneShot" DurationMin="0.583875" DurationMax="0.68789583">
+				<Event Id="2663982528" Name="Play_Player_Punch_Heavy" ObjectPath="\Events\Player\PlayerCombat\Play_Player_Punch_Heavy" GUID="{6909B8C2-6D58-49AD-9B0C-ECB42CC550E2}" DurationType="OneShot" DurationMin="0.3487932" DurationMax="0.56508785">
 					<MediaRefs>
 						<MediaRef Id="56341530"/>
 						<MediaRef Id="63453727"/>
@@ -51,5 +51,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4B9F0BA4-D860-FA25-04DF-1CA083B36B08}</FileHash>
+	<FileHash>{906370AC-CFCF-C173-B796-CC9A514BB5B7}</FileHash>
 </SoundBanksInfo>

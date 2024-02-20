@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{6B678688-889A-448F-8387-4F2BA8FB80C2}",
     "Language": "SFX",
-    "Hash": "{3956F5B6-15D9-01EF-7C8E-A1221FA71392}",
+    "Hash": "{4DE7E382-95E9-56B8-0FD6-714F23D544FC}",
     "ObjectPath": "Com_Welcome",
     "ShortName": "Com_Welcome",
     "Path": "Event/Com_Welcome.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{E9346E51-F01D-634C-F00B-80292DE1BA7C}"
+  "FileHash": "{C9C88CD5-74EB-BB84-44DF-9650651DCF6E}"
  }
 }

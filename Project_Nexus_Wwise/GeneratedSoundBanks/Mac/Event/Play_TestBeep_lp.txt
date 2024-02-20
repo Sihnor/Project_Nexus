@@ -1,3 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	858964037	Play_TestBeep_lp			\TestEvents\Play_TestBeep_lp	
-

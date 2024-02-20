@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2322697492" Type="Event" GUID="{99EBE9DA-2D4B-4E25-A1FD-CC1C387CC0C5}" Language="SFX" Hash="{09AB476E-9FF6-9FCA-96A8-EC84326D21BD}">
+		<SoundBank Id="2322697492" Type="Event" GUID="{99EBE9DA-2D4B-4E25-A1FD-CC1C387CC0C5}" Language="SFX" Hash="{E13FB5A4-E0CD-50A3-7B47-2450D4CA1E7A}">
 			<ObjectPath>Plyr1_Attack_Heavy</ObjectPath>
 			<ShortName>Plyr1_Attack_Heavy</ShortName>
 			<Path>Event/Plyr1_Attack_Heavy.bnk</Path>
@@ -45,5 +45,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{794E6661-FA28-D04B-D6D7-E2D6F84E6589}</FileHash>
+	<FileHash>{D9FE9DC1-2CE1-3BB6-CCED-8D6CC289C52F}</FileHash>
 </SoundBanksInfo>

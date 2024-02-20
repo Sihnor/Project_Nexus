@@ -10,55 +10,55 @@
     "Type": "Event",
     "GUID": "{1D179E9F-6385-46AE-9BD6-B3918124CCD2}",
     "Language": "SFX",
-    "Hash": "{815BE929-A691-9CB6-31CA-78D0679DB903}",
+    "Hash": "{37F3FEBD-2D8E-DCFA-B4DB-3FAE0EC87F02}",
     "ObjectPath": "Plyr2_Attack_Light",
     "ShortName": "Plyr2_Attack_Light",
     "Path": "Event/Plyr2_Attack_Light.bnk",
     "Media": [
      {
-      "Id": "55257799",
+      "Id": "17703360",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "vo_fighter1_punch_light_05.wav",
-      "Path": "Media/55257799.wem",
-      "CachePath": "SFX/vo_fighter1_punch_light_05_10C4C929.wem"
+      "ShortName": "vo_fighter2_punch_light_05.wav",
+      "Path": "Media/17703360.wem",
+      "CachePath": "SFX/vo_fighter2_punch_light_05_10C4C929.wem"
      },
      {
-      "Id": "86967045",
+      "Id": "172704328",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "vo_fighter1_punch_light_03.wav",
-      "Path": "Media/86967045.wem",
-      "CachePath": "SFX/vo_fighter1_punch_light_03_10C4C929.wem"
+      "ShortName": "vo_fighter2_punch_light_03.wav",
+      "Path": "Media/172704328.wem",
+      "CachePath": "SFX/vo_fighter2_punch_light_03_10C4C929.wem"
      },
      {
-      "Id": "458298908",
+      "Id": "213664664",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "vo_fighter1_punch_light_01.wav",
-      "Path": "Media/458298908.wem",
-      "CachePath": "SFX/vo_fighter1_punch_light_01_10C4C929.wem"
+      "ShortName": "vo_fighter2_punch_light_01.wav",
+      "Path": "Media/213664664.wem",
+      "CachePath": "SFX/vo_fighter2_punch_light_01_10C4C929.wem"
      },
      {
-      "Id": "538408692",
+      "Id": "275575852",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "vo_fighter1_punch_light_04.wav",
-      "Path": "Media/538408692.wem",
-      "CachePath": "SFX/vo_fighter1_punch_light_04_10C4C929.wem"
+      "ShortName": "vo_fighter2_punch_light_04.wav",
+      "Path": "Media/275575852.wem",
+      "CachePath": "SFX/vo_fighter2_punch_light_04_10C4C929.wem"
      },
      {
-      "Id": "599159208",
+      "Id": "729733461",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "vo_fighter1_punch_light_02.wav",
-      "Path": "Media/599159208.wem",
-      "CachePath": "SFX/vo_fighter1_punch_light_02_10C4C929.wem"
+      "ShortName": "vo_fighter2_punch_light_02.wav",
+      "Path": "Media/729733461.wem",
+      "CachePath": "SFX/vo_fighter2_punch_light_02_10C4C929.wem"
      }
     ],
     "Events": [
@@ -68,29 +68,29 @@
       "ObjectPath": "\\Events\\Player_Voices\\Plyr2_Attack_Light",
       "GUID": "{1D179E9F-6385-46AE-9BD6-B3918124CCD2}",
       "DurationType": "OneShot",
-      "DurationMin": "0.27291667",
-      "DurationMax": "0.4365",
+      "DurationMin": "0.4275625",
+      "DurationMax": "0.75",
       "MediaRefs": [
        {
-        "Id": "55257799"
+        "Id": "17703360"
        },
        {
-        "Id": "86967045"
+        "Id": "172704328"
        },
        {
-        "Id": "458298908"
+        "Id": "213664664"
        },
        {
-        "Id": "538408692"
+        "Id": "275575852"
        },
        {
-        "Id": "599159208"
+        "Id": "729733461"
        }
       ]
      }
     ]
    }
   ],
-  "FileHash": "{099E8EE2-3095-B6CD-2BD8-658AE71B2911}"
+  "FileHash": "{BC988A8A-1AE2-73F5-2594-FBBB15F7AAC6}"
  }
 }

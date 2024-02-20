@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2345698665" Type="Event" GUID="{36113D1F-1DF9-4707-9998-76CB9E7E679F}" Language="SFX" Hash="{92A403BA-C840-04B5-D47D-EFF3CBCF8CD3}">
+		<SoundBank Id="2345698665" Type="Event" GUID="{36113D1F-1DF9-4707-9998-76CB9E7E679F}" Language="SFX" Hash="{5DC2175C-25E3-ADC3-B0D8-E402AE26F1CF}">
 			<ObjectPath>Com_Round_4_Start</ObjectPath>
 			<ShortName>Com_Round_4_Start</ShortName>
 			<Path>Event/Com_Round_4_Start.bnk</Path>
@@ -38,7 +38,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2345698665" Name="Com_Round_4_Start" ObjectPath="\Events\Commentator_Voices\Com_Round_4_Start" GUID="{36113D1F-1DF9-4707-9998-76CB9E7E679F}" DurationType="OneShot" DurationMin="3.03125" DurationMax="3.34375">
+				<Event Id="2345698665" Name="Com_Round_4_Start" ObjectPath="\Events\Commentator_Voices\Com_Round_4_Start" GUID="{36113D1F-1DF9-4707-9998-76CB9E7E679F}" DurationType="OneShot" DurationMin="6.53125" DurationMax="6.84375">
 					<MediaRefs>
 						<MediaRef Id="115684259"/>
 						<MediaRef Id="134037975"/>
@@ -51,5 +51,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{83292620-D7CF-2AF4-DFE5-1DB865BDAA6D}</FileHash>
+	<FileHash>{4041284B-B68B-CE3B-EEA7-6A34450C0AC9}</FileHash>
 </SoundBanksInfo>

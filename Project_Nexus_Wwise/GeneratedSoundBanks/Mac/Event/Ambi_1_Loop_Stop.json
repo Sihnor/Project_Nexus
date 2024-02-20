@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{ECEA2C89-2161-42CE-A22A-B435716282B2}",
     "Language": "SFX",
-    "Hash": "{D85D84CB-6721-9966-62DE-FB0D7FA4EA67}",
+    "Hash": "{CF5E70B8-D92C-6EA4-151D-EAA352D55623}",
     "ObjectPath": "Ambi_1_Loop_Stop",
     "ShortName": "Ambi_1_Loop_Stop",
     "Path": "Event/Ambi_1_Loop_Stop.bnk",
@@ -28,6 +28,6 @@
     ]
    }
   ],
-  "FileHash": "{6F779589-4ED4-96C7-AAD2-7BFDE0398188}"
+  "FileHash": "{5FF1EB98-BAB5-978E-14E5-4B4C1BFA5BE2}"
  }
 }
