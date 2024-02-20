@@ -720,7 +720,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1053701372" Type="Event" GUID="{A9011CA4-F40B-415B-9C65-B4914BA1B74C}" Language="SFX" Hash="{923AB8A8-2DB1-C5F3-FCA2-7DA405889936}">
+		<SoundBank Id="1053701372" Type="Event" GUID="{A9011CA4-F40B-415B-9C65-B4914BA1B74C}" Language="SFX" Hash="{11638EB0-88D9-8704-DE37-E5343C03F606}">
 			<ObjectPath>Play_Music_Stagw_1b</ObjectPath>
 			<ShortName>Play_Music_Stagw_1b</ShortName>
 			<Path>Event/Play_Music_Stagw_1b.bnk</Path>
@@ -1885,7 +1885,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1699343283" Type="Event" GUID="{1CC99C31-E23D-4648-94D8-90671E36B4EB}" Language="SFX" Hash="{D9DFCE97-69CE-6523-721D-1E56D784BD83}">
+		<SoundBank Id="1699343283" Type="Event" GUID="{1CC99C31-E23D-4648-94D8-90671E36B4EB}" Language="SFX" Hash="{BA319596-49E2-69B4-1278-A51657E3981B}">
 			<ObjectPath>Play_Music_Menu</ObjectPath>
 			<ShortName>Play_Music_Menu</ShortName>
 			<Path>Event/Play_Music_Menu.bnk</Path>
@@ -3096,7 +3096,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3074061029" Type="Event" GUID="{62D78041-F9D1-4419-AE06-E663C92CE753}" Language="SFX" Hash="{97236034-A7E0-8BC2-741C-FC12AB3782E4}">
+		<SoundBank Id="3074061029" Type="Event" GUID="{62D78041-F9D1-4419-AE06-E663C92CE753}" Language="SFX" Hash="{25B5BB24-8F85-C784-8DB2-77E7879127AF}">
 			<ObjectPath>Play_Music_Stage_1a</ObjectPath>
 			<ShortName>Play_Music_Stage_1a</ShortName>
 			<Path>Event/Play_Music_Stage_1a.bnk</Path>
@@ -4175,5 +4175,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{58D65E53-E486-53B3-D2BA-B1F74BB64651}</FileHash>
+	<FileHash>{8A0E6E6B-BBD5-19AC-DE8A-52C53028FB63}</FileHash>
 </SoundBanksInfo>

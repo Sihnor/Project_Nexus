@@ -240,7 +240,7 @@
 						<Value Platform="Windows"></Value>
 					</ValueList>
 				</Property>
-				<Property Name="SoundEngine\BusMapping\{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" Type="string" Value="{8324AC08-7ADF-46A8-966C-246CDF6632D2}3201487163"/>
+				<Property Name="SoundEngine\BusMapping\{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" Type="string" Value="{8324AC08-7ADF-46A8-966C-246CDF6632D2}967837431"/>
 				<Property Name="SoundEngine\BusMapping\{F90804D9-5D0B-4ECF-A2E6-4AEFF4E2CA73}" Type="string" Value=""/>
 				<Property Name="Soundcaster\PreviousSession" Type="string" Value="{5C9C3097-E0B7-4E5D-9AAA-940C2E8F7D64}"/>
 			</PropertyList>
