@@ -10,64 +10,64 @@
     "Type": "Event",
     "GUID": "{237BD721-40C9-4B31-BDC1-78F59500DF4D}",
     "Language": "SFX",
-    "Hash": "{7AF77AE3-4B94-1B27-6677-AFEA9C2A340E}",
+    "Hash": "{7A6B98C5-18D8-F9A0-363E-1226D2F32FA6}",
     "ObjectPath": "Play_Player_Jump",
     "ShortName": "Play_Player_Jump",
     "Path": "Event/Play_Player_Jump.bnk",
     "Media": [
      {
-      "Id": "44536699",
+      "Id": "71411161",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "sfx_fighter1_movement_jump__04.wav",
-      "Path": "Media/44536699.wem",
-      "CachePath": "SFX/sfx_fighter1_movement_jump__04_10C4C929.wem"
+      "ShortName": "sfx_fighter1_movement_jump_03.wav",
+      "Path": "Media/71411161.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_jump_03_10C4C929.wem"
      },
      {
-      "Id": "169644528",
+      "Id": "287169205",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "sfx_fighter1_movement_jump__05.wav",
-      "Path": "Media/169644528.wem",
-      "CachePath": "SFX/sfx_fighter1_movement_jump__05_10C4C929.wem"
+      "ShortName": "sfx_fighter1_movement_jump_01.wav",
+      "Path": "Media/287169205.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_jump_01_10C4C929.wem"
      },
      {
-      "Id": "262497759",
+      "Id": "502994276",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "sfx_fighter1_movement_jump__02.wav",
-      "Path": "Media/262497759.wem",
-      "CachePath": "SFX/sfx_fighter1_movement_jump__02_10C4C929.wem"
+      "ShortName": "sfx_fighter1_movement_jump_06.wav",
+      "Path": "Media/502994276.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_jump_06_10C4C929.wem"
      },
      {
-      "Id": "567642391",
+      "Id": "651099545",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "sfx_fighter1_movement_jump__06.wav",
-      "Path": "Media/567642391.wem",
-      "CachePath": "SFX/sfx_fighter1_movement_jump__06_10C4C929.wem"
+      "ShortName": "sfx_fighter1_movement_jump_05.wav",
+      "Path": "Media/651099545.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_jump_05_10C4C929.wem"
      },
      {
-      "Id": "615857249",
+      "Id": "680609463",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "sfx_fighter1_movement_jump__03.wav",
-      "Path": "Media/615857249.wem",
-      "CachePath": "SFX/sfx_fighter1_movement_jump__03_10C4C929.wem"
+      "ShortName": "sfx_fighter1_movement_jump_04.wav",
+      "Path": "Media/680609463.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_jump_04_10C4C929.wem"
      },
      {
-      "Id": "724190295",
+      "Id": "1025118858",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "sfx_fighter1_movement_jump__01.wav",
-      "Path": "Media/724190295.wem",
-      "CachePath": "SFX/sfx_fighter1_movement_jump__01_10C4C929.wem"
+      "ShortName": "sfx_fighter1_movement_jump_02.wav",
+      "Path": "Media/1025118858.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_jump_02_10C4C929.wem"
      }
     ],
     "Events": [
@@ -77,32 +77,32 @@
       "ObjectPath": "\\Events\\Player\\PlayerLocomotion\\Play_Player_Jump",
       "GUID": "{237BD721-40C9-4B31-BDC1-78F59500DF4D}",
       "DurationType": "OneShot",
-      "DurationMin": "0.33138883",
-      "DurationMax": "0.52998096",
+      "DurationMin": "0.42559156",
+      "DurationMax": "0.6107242",
       "MediaRefs": [
        {
-        "Id": "44536699"
+        "Id": "71411161"
        },
        {
-        "Id": "169644528"
+        "Id": "287169205"
        },
        {
-        "Id": "262497759"
+        "Id": "502994276"
        },
        {
-        "Id": "567642391"
+        "Id": "651099545"
        },
        {
-        "Id": "615857249"
+        "Id": "680609463"
        },
        {
-        "Id": "724190295"
+        "Id": "1025118858"
        }
       ]
      }
     ]
    }
   ],
-  "FileHash": "{769AF252-A01C-2B27-38CA-DAC48B8C22B2}"
+  "FileHash": "{46A09D62-6F7F-69C2-1D14-82C54F14C78A}"
  }
 }

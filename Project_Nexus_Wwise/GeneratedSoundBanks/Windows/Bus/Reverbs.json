@@ -10,7 +10,7 @@
     "Type": "Bus",
     "GUID": "{6BE3BED4-0EDC-4674-80E4-B77F6F0EDD9B}",
     "Language": "SFX",
-    "Hash": "{CE46620C-58DD-93B1-6318-AA7CD5C7C39D}",
+    "Hash": "{8AD9903B-82DC-5076-FF9D-1C4D84C73F21}",
     "ObjectPath": "Reverbs",
     "ShortName": "Reverbs",
     "Path": "Bus/Reverbs.bnk",
@@ -24,6 +24,6 @@
     ]
    }
   ],
-  "FileHash": "{4657C96E-F2DC-57EF-7032-578E41405042}"
+  "FileHash": "{74F75743-4DF5-1A62-F19F-98EDA73E8B4A}"
  }
 }

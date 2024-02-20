@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2555223343" Type="Event" GUID="{756383C1-840D-41DF-B7D5-98E46E2560D4}" Language="SFX" Hash="{96692B0F-AB13-BB5C-50EC-822247644B69}">
+		<SoundBank Id="2555223343" Type="Event" GUID="{756383C1-840D-41DF-B7D5-98E46E2560D4}" Language="SFX" Hash="{3645C584-4507-A5EA-1C86-B84BCCEF5341}">
 			<ObjectPath>Play_Player_Crouch_Out</ObjectPath>
 			<ShortName>Play_Player_Crouch_Out</ShortName>
 			<Path>Event/Play_Player_Crouch_Out.bnk</Path>
@@ -38,7 +38,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2555223343" Name="Play_Player_Crouch_Out" ObjectPath="\Events\Player\PlayerLocomotion\Play_Player_Crouch_Out" GUID="{756383C1-840D-41DF-B7D5-98E46E2560D4}" DurationType="OneShot" DurationMin="0.3327285" DurationMax="0.56416494">
+				<Event Id="2555223343" Name="Play_Player_Crouch_Out" ObjectPath="\Events\Player\PlayerLocomotion\Play_Player_Crouch_Out" GUID="{756383C1-840D-41DF-B7D5-98E46E2560D4}" DurationType="OneShot" DurationMin="0.36368236" DurationMax="0.5236551">
 					<MediaRefs>
 						<MediaRef Id="242429337"/>
 						<MediaRef Id="408344611"/>
@@ -51,5 +51,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{ACA941B0-561A-DFDF-9EC0-6143A9F3D741}</FileHash>
+	<FileHash>{22106934-2EDA-A713-D8E5-7B122082D825}</FileHash>
 </SoundBanksInfo>

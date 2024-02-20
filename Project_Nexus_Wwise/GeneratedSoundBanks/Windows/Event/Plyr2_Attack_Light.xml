@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="253333564" Type="Event" GUID="{1D179E9F-6385-46AE-9BD6-B3918124CCD2}" Language="SFX" Hash="{815BE929-A691-9CB6-31CA-78D0679DB903}">
+		<SoundBank Id="253333564" Type="Event" GUID="{1D179E9F-6385-46AE-9BD6-B3918124CCD2}" Language="SFX" Hash="{37F3FEBD-2D8E-DCFA-B4DB-3FAE0EC87F02}">
 			<ObjectPath>Plyr2_Attack_Light</ObjectPath>
 			<ShortName>Plyr2_Attack_Light</ShortName>
 			<Path>Event/Plyr2_Attack_Light.bnk</Path>
 			<Media>
-				<File Id="55257799" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>vo_fighter1_punch_light_05.wav</ShortName>
-					<Path>Media/55257799.wem</Path>
-					<CachePath>SFX/vo_fighter1_punch_light_05_10C4C929.wem</CachePath>
+				<File Id="17703360" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_punch_light_05.wav</ShortName>
+					<Path>Media/17703360.wem</Path>
+					<CachePath>SFX/vo_fighter2_punch_light_05_10C4C929.wem</CachePath>
 				</File>
-				<File Id="86967045" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>vo_fighter1_punch_light_03.wav</ShortName>
-					<Path>Media/86967045.wem</Path>
-					<CachePath>SFX/vo_fighter1_punch_light_03_10C4C929.wem</CachePath>
+				<File Id="172704328" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_punch_light_03.wav</ShortName>
+					<Path>Media/172704328.wem</Path>
+					<CachePath>SFX/vo_fighter2_punch_light_03_10C4C929.wem</CachePath>
 				</File>
-				<File Id="458298908" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>vo_fighter1_punch_light_01.wav</ShortName>
-					<Path>Media/458298908.wem</Path>
-					<CachePath>SFX/vo_fighter1_punch_light_01_10C4C929.wem</CachePath>
+				<File Id="213664664" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_punch_light_01.wav</ShortName>
+					<Path>Media/213664664.wem</Path>
+					<CachePath>SFX/vo_fighter2_punch_light_01_10C4C929.wem</CachePath>
 				</File>
-				<File Id="538408692" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>vo_fighter1_punch_light_04.wav</ShortName>
-					<Path>Media/538408692.wem</Path>
-					<CachePath>SFX/vo_fighter1_punch_light_04_10C4C929.wem</CachePath>
+				<File Id="275575852" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_punch_light_04.wav</ShortName>
+					<Path>Media/275575852.wem</Path>
+					<CachePath>SFX/vo_fighter2_punch_light_04_10C4C929.wem</CachePath>
 				</File>
-				<File Id="599159208" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>vo_fighter1_punch_light_02.wav</ShortName>
-					<Path>Media/599159208.wem</Path>
-					<CachePath>SFX/vo_fighter1_punch_light_02_10C4C929.wem</CachePath>
+				<File Id="729733461" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter2_punch_light_02.wav</ShortName>
+					<Path>Media/729733461.wem</Path>
+					<CachePath>SFX/vo_fighter2_punch_light_02_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="253333564" Name="Plyr2_Attack_Light" ObjectPath="\Events\Player_Voices\Plyr2_Attack_Light" GUID="{1D179E9F-6385-46AE-9BD6-B3918124CCD2}" DurationType="OneShot" DurationMin="0.27291667" DurationMax="0.4365">
+				<Event Id="253333564" Name="Plyr2_Attack_Light" ObjectPath="\Events\Player_Voices\Plyr2_Attack_Light" GUID="{1D179E9F-6385-46AE-9BD6-B3918124CCD2}" DurationType="OneShot" DurationMin="0.4275625" DurationMax="0.75">
 					<MediaRefs>
-						<MediaRef Id="55257799"/>
-						<MediaRef Id="86967045"/>
-						<MediaRef Id="458298908"/>
-						<MediaRef Id="538408692"/>
-						<MediaRef Id="599159208"/>
+						<MediaRef Id="17703360"/>
+						<MediaRef Id="172704328"/>
+						<MediaRef Id="213664664"/>
+						<MediaRef Id="275575852"/>
+						<MediaRef Id="729733461"/>
 					</MediaRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{EB6E250F-C3AB-ED7D-AF88-1A495ED6DADC}</FileHash>
+	<FileHash>{82BE6410-0CB1-767E-2ACD-43ED754C3DCD}</FileHash>
 </SoundBanksInfo>

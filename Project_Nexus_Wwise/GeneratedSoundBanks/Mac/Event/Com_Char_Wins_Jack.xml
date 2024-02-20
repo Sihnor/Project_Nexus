@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="892499175" Type="Event" GUID="{3DE5C542-49C6-4EF5-B5BE-60CB49F75D00}" Language="SFX" Hash="{A11231B6-56DF-B847-4A2B-1CF58E11B9B2}">
+		<SoundBank Id="892499175" Type="Event" GUID="{3DE5C542-49C6-4EF5-B5BE-60CB49F75D00}" Language="SFX" Hash="{C05E9F92-5205-A9D6-1196-67B8A6E05824}">
 			<ObjectPath>Com_Char_Wins_Jack</ObjectPath>
 			<ShortName>Com_Char_Wins_Jack</ShortName>
 			<Path>Event/Com_Char_Wins_Jack.bnk</Path>
@@ -21,5 +21,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5885D1AB-4EA5-128E-42F2-926CE05B4535}</FileHash>
+	<FileHash>{72B79A23-9C7E-3AF1-74E7-17D860B659EB}</FileHash>
 </SoundBanksInfo>

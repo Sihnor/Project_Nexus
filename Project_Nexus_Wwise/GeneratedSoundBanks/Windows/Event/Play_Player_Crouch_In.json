@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{52806D64-28C9-4DBD-9FA9-B19EFC1D9D2B}",
     "Language": "SFX",
-    "Hash": "{69968BA8-013D-A01B-D859-DD8BBFBF78C1}",
+    "Hash": "{F0EB6840-0167-B4DD-0077-17B6D652C615}",
     "ObjectPath": "Play_Player_Crouch_In",
     "ShortName": "Play_Player_Crouch_In",
     "Path": "Event/Play_Player_Crouch_In.bnk",
@@ -77,8 +77,8 @@
       "ObjectPath": "\\Events\\Player\\PlayerLocomotion\\Play_Player_Crouch_In",
       "GUID": "{52806D64-28C9-4DBD-9FA9-B19EFC1D9D2B}",
       "DurationType": "OneShot",
-      "DurationMin": "0.3373956",
-      "DurationMax": "0.626091",
+      "DurationMin": "0.35828504",
+      "DurationMax": "0.5811346",
       "MediaRefs": [
        {
         "Id": "126319256"
@@ -103,6 +103,6 @@
     ]
    }
   ],
-  "FileHash": "{0BE668C8-4D76-3040-0435-3381E2A372E0}"
+  "FileHash": "{30D19978-2088-20C0-25C8-3D5D897F4794}"
  }
 }

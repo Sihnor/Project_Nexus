@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="1700596737" Type="Event" GUID="{05825B27-50D8-430E-9EFC-D8AD4D0DE1FE}" Language="SFX" Hash="{ACAA22B1-4587-4A0C-3AA9-3559DA7C3CF7}">
+			<ObjectPath>Play_Player_Clothes_Long</ObjectPath>
+			<ShortName>Play_Player_Clothes_Long</ShortName>
+			<Path>Event/Play_Player_Clothes_Long.bnk</Path>
+			<Media>
+				<File Id="46131675" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_clothes_long_06.wav</ShortName>
+					<Path>Media/46131675.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_clothes_long_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="81485425" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_clothes_long_05.wav</ShortName>
+					<Path>Media/81485425.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_clothes_long_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="135453367" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_clothes_long_04.wav</ShortName>
+					<Path>Media/135453367.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_clothes_long_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="160447407" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_clothes_long_07.wav</ShortName>
+					<Path>Media/160447407.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_clothes_long_07_10C4C929.wem</CachePath>
+				</File>
+				<File Id="322350762" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_clothes_long_02.wav</ShortName>
+					<Path>Media/322350762.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_clothes_long_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="424180965" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_clothes_long_09.wav</ShortName>
+					<Path>Media/424180965.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_clothes_long_09_10C4C929.wem</CachePath>
+				</File>
+				<File Id="507619548" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_clothes_long_08.wav</ShortName>
+					<Path>Media/507619548.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_clothes_long_08_10C4C929.wem</CachePath>
+				</File>
+				<File Id="662112762" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_clothes_long_01.wav</ShortName>
+					<Path>Media/662112762.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_clothes_long_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="867187785" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_clothes_long_10.wav</ShortName>
+					<Path>Media/867187785.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_clothes_long_10_10C4C929.wem</CachePath>
+				</File>
+				<File Id="983336185" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_clothes_long_03.wav</ShortName>
+					<Path>Media/983336185.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_clothes_long_03_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1700596737" Name="Play_Player_Clothes_Long" ObjectPath="\Events\Player\PlayerLocomotion\Play_Player_Clothes_Long" GUID="{05825B27-50D8-430E-9EFC-D8AD4D0DE1FE}" DurationType="OneShot" DurationMin="0.6773952" DurationMax="1.1386381">
+					<MediaRefs>
+						<MediaRef Id="46131675"/>
+						<MediaRef Id="81485425"/>
+						<MediaRef Id="135453367"/>
+						<MediaRef Id="160447407"/>
+						<MediaRef Id="322350762"/>
+						<MediaRef Id="424180965"/>
+						<MediaRef Id="507619548"/>
+						<MediaRef Id="662112762"/>
+						<MediaRef Id="867187785"/>
+						<MediaRef Id="983336185"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{A0C7F9F1-B8A7-F02E-EB2D-67F9C40F8AEB}</FileHash>
+</SoundBanksInfo>

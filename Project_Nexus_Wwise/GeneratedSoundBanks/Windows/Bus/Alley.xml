@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="672587556" Type="Bus" GUID="{D0D5848F-8E0F-47CD-A3E5-17FA4D8E1C38}" Language="SFX" Hash="{174F6586-5AB2-6971-3676-995F746454DC}">
+		<SoundBank Id="672587556" Type="Bus" GUID="{D0D5848F-8E0F-47CD-A3E5-17FA4D8E1C38}" Language="SFX" Hash="{B01E399E-E942-24C7-2440-674FBA92FC0D}">
 			<ObjectPath>Alley</ObjectPath>
 			<ShortName>Alley</ShortName>
 			<Path>Bus/Alley.bnk</Path>
@@ -24,5 +24,5 @@
 			</AuxBusses>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8F78CFAE-DB43-DE6D-5104-B9E19C53F4E8}</FileHash>
+	<FileHash>{AA68CBC3-46F4-D81E-94EF-219C90B85BCF}</FileHash>
 </SoundBanksInfo>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="3596877596" Type="Event" GUID="{CC124DD1-467A-465A-9000-547582091E96}" Language="SFX" Hash="{91BA80F1-76C5-78F7-DBBA-717037326110}">
+			<ObjectPath>Play_Player2_Dash</ObjectPath>
+			<ShortName>Play_Player2_Dash</ShortName>
+			<Path>Event/Play_Player2_Dash.bnk</Path>
+			<Media>
+				<File Id="9770278" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_dash_06.wav</ShortName>
+					<Path>Media/9770278.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_dash_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="13032332" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_dash_04.wav</ShortName>
+					<Path>Media/13032332.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_dash_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="147580599" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_dash_01.wav</ShortName>
+					<Path>Media/147580599.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_dash_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="229900453" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_dash_03.wav</ShortName>
+					<Path>Media/229900453.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_dash_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="621916710" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_dash_02.wav</ShortName>
+					<Path>Media/621916710.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_dash_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="868614108" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_dash_05.wav</ShortName>
+					<Path>Media/868614108.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_dash_05_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3596877596" Name="Play_Player2_Dash" ObjectPath="\Events\Player2\Player2Locomotion\Play_Player2_Dash" GUID="{CC124DD1-467A-465A-9000-547582091E96}" DurationType="OneShot" DurationMin="0.46244898" DurationMax="0.71405613">
+					<MediaRefs>
+						<MediaRef Id="9770278"/>
+						<MediaRef Id="13032332"/>
+						<MediaRef Id="147580599"/>
+						<MediaRef Id="229900453"/>
+						<MediaRef Id="621916710"/>
+						<MediaRef Id="868614108"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{66B6D6E7-9E4F-F411-835B-97787B2C50F6}</FileHash>
+</SoundBanksInfo>
