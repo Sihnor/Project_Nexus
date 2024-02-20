@@ -111,7 +111,7 @@
 						<Action Name="" ID="{FE65FE77-7392-4B08-A1D3-43654EE04C45}" ShortID="845840806">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Plyr_Attack_Light" ID="{AC0B648D-B8F6-4A72-84FC-A924907EA7EF}" WorkUnitID="{E5F57FEB-3DEE-451F-A6A7-6237024381AC}"/>
+									<ObjectRef Name="Plyr_Attack_Light" ID="{1B878667-F65C-4385-8372-AD6E193E7517}" WorkUnitID="{E5F57FEB-3DEE-451F-A6A7-6237024381AC}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

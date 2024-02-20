@@ -10,7 +10,7 @@
     "Type": "Bus",
     "GUID": "{D0D5848F-8E0F-47CD-A3E5-17FA4D8E1C38}",
     "Language": "SFX",
-    "Hash": "{174F6586-5AB2-6971-3676-995F746454DC}",
+    "Hash": "{B01E399E-E942-24C7-2440-674FBA92FC0D}",
     "ObjectPath": "Alley",
     "ShortName": "Alley",
     "Path": "Bus/Alley.bnk",
@@ -51,6 +51,6 @@
     ]
    }
   ],
-  "FileHash": "{F12EA551-7D63-5ECD-1F51-9C82CCD1DCB3}"
+  "FileHash": "{48FFF9D1-0DE1-144D-A3C1-ABDC81601BFE}"
  }
 }

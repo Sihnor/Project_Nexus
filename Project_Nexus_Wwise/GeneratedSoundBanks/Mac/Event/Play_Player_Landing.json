@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{BD4FEB80-88A8-45D8-9FBF-7EF06D02BC15}",
     "Language": "SFX",
-    "Hash": "{037E82E7-8317-50F9-A888-539FF554E9FF}",
+    "Hash": "{382F2CCD-4014-3FD2-2B6A-66E5502FEBA9}",
     "ObjectPath": "Play_Player_Landing",
     "ShortName": "Play_Player_Landing",
     "Path": "Event/Play_Player_Landing.bnk",
@@ -77,8 +77,8 @@
       "ObjectPath": "\\Events\\Player\\PlayerLocomotion\\Play_Player_Landing",
       "GUID": "{BD4FEB80-88A8-45D8-9FBF-7EF06D02BC15}",
       "DurationType": "OneShot",
-      "DurationMin": "0.20616615",
-      "DurationMax": "0.42318013",
+      "DurationMin": "0.22211511",
+      "DurationMax": "0.39279372",
       "MediaRefs": [
        {
         "Id": "606884774"
@@ -103,6 +103,6 @@
     ]
    }
   ],
-  "FileHash": "{1944954A-4103-AF8D-3C66-8EF82D3E4FB7}"
+  "FileHash": "{DDAD9501-BAA9-F09D-A7B0-546F0744EE7A}"
  }
 }

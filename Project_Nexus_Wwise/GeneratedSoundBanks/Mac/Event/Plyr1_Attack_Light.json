@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{26AB0E9E-6FC9-4D4C-98BC-CDD120436275}",
     "Language": "SFX",
-    "Hash": "{F52BDD86-16DF-E5D5-D083-DAE715B56FFA}",
+    "Hash": "{BAC0E671-1DEA-CAA1-1BA2-846EF0549DCF}",
     "ObjectPath": "Plyr1_Attack_Light",
     "ShortName": "Plyr1_Attack_Light",
     "Path": "Event/Plyr1_Attack_Light.bnk",
@@ -91,6 +91,6 @@
     ]
    }
   ],
-  "FileHash": "{C14388FB-4A6F-4B23-23AE-A3C3A470CDE7}"
+  "FileHash": "{C6C12065-5ADD-2B56-F54D-5F260D0A1006}"
  }
 }

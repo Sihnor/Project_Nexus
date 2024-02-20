@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1D163B74-0B10-4C32-8079-38746E1A4671}" SchemaVersion="110">
+	<AudioObjects>
+		<WorkUnit Name="Player2_SFX" ID="{1D163B74-0B10-4C32-8079-38746E1A4671}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="10"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<WorkUnit Name="Player2_Combat" ID="{6334F0FF-D885-4182-B5A2-A138FEF70387}" PersistMode="Reference"/>
+				<WorkUnit Name="Player2_Locomotion" ID="{95546F27-64FB-4702-8F0E-A5C0C885A1C7}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

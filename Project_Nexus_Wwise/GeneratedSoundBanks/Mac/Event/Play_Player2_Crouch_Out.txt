@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	216287831	Play_Player2_Crouch_Out			\Player2\Player2Locomotion\Play_Player2_Crouch_Out	
+

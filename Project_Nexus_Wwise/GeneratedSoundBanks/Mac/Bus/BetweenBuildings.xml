@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1349836090" Type="Bus" GUID="{44E599A3-1CE2-49AF-8FBC-737785A8D7B8}" Language="SFX" Hash="{9DF95DBF-16DE-24D4-5EF4-8EA0422E6328}">
+		<SoundBank Id="1349836090" Type="Bus" GUID="{44E599A3-1CE2-49AF-8FBC-737785A8D7B8}" Language="SFX" Hash="{C06B6E40-3E1C-58A7-9966-ECE8D2207F01}">
 			<ObjectPath>BetweenBuildings</ObjectPath>
 			<ShortName>BetweenBuildings</ShortName>
 			<Path>Bus/BetweenBuildings.bnk</Path>
@@ -24,5 +24,5 @@
 			</AuxBusses>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6A4DA2D3-406B-A0FF-C363-061AAB1D3336}</FileHash>
+	<FileHash>{CEA39EFC-4F34-45CB-A711-CFEDF21E5E96}</FileHash>
 </SoundBanksInfo>

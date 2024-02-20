@@ -1,0 +1,2225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DAD6D8BA-01FF-4EA2-924D-8C59CACB0568}" SchemaVersion="110" RootDocumentID="{FE407C5E-9D2F-4719-82F7-1B69FB34BF9C}" ParentDocumentID="{FE407C5E-9D2F-4719-82F7-1B69FB34BF9C}">
+	<AudioObjects>
+		<WorkUnit Name="Player1_Locomotion" ID="{DAD6D8BA-01FF-4EA2-924D-8C59CACB0568}" OwnerID="{FE407C5E-9D2F-4719-82F7-1B69FB34BF9C}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="23"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<RandomSequenceContainer Name="Player1_Bodyfalls" ID="{BFD5B6AF-F28F-477F-A341-6C6D75153C65}" ShortID="545405146">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{BE3A5819-FBBA-4364-A11A-77891F1F555F}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="250"/>
+											<Property Name="Min" Type="Real64" Value="-250"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>-15</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-2</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{2483E611-56F1-48C6-9316-FF5E22AC5DE8}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="4"/>
+											<Property Name="Min" Type="Real64" Value="-4"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_fighter1_movement_bodyfall_01" ID="{D6FBE736-F32F-404A-8743-398A4A4C2CB1}" ShortID="1006820936">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_bodyfall_01" ID="{7D32F599-101E-445B-9EB8-2154E7331B35}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_bodyfall_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="769452454"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_bodyfall_01" ID="{7D32F599-101E-445B-9EB8-2154E7331B35}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_bodyfall_02" ID="{D8EDD5D8-C25F-4DD8-A8BA-833FF359C2F1}" ShortID="363542545">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_bodyfall_02" ID="{90872B1D-9B48-44F6-A1F4-62A2D8ED79D8}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_bodyfall_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="948080380"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_bodyfall_02" ID="{90872B1D-9B48-44F6-A1F4-62A2D8ED79D8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_bodyfall_03" ID="{A67FBB73-D23E-46E5-83AE-0E556A5FB2E5}" ShortID="271843607">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_bodyfall_03" ID="{FD0299B8-FAE8-49CC-80F3-696AF9B39C08}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_bodyfall_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="399584824"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_bodyfall_03" ID="{FD0299B8-FAE8-49CC-80F3-696AF9B39C08}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_bodyfall_04" ID="{EED296F0-822D-4EE5-84C4-D9F56AB3A6E6}" ShortID="520743350">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_bodyfall_04" ID="{C1F432B5-746B-4B07-BB18-0071E832A437}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_bodyfall_04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="756064182"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_bodyfall_04" ID="{C1F432B5-746B-4B07-BB18-0071E832A437}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_bodyfall_05" ID="{6C02FAAA-1B43-499D-B866-13C6EA9C5C5B}" ShortID="602620282">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_bodyfall_05" ID="{8704484C-3125-40F2-A96F-957B5C7AC7D1}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_bodyfall_05.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="377947128"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_bodyfall_05" ID="{8704484C-3125-40F2-A96F-957B5C7AC7D1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_bodyfall_06" ID="{B109D8F8-C64C-46EA-87CC-C49CBFC6AB31}" ShortID="869777531">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_bodyfall_06" ID="{BB0F1774-7F14-45AC-A4EC-56FB697699EB}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_bodyfall_06.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="808568048"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_bodyfall_06" ID="{BB0F1774-7F14-45AC-A4EC-56FB697699EB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Player1_Bounce" ID="{5A501982-C8B5-4063-B68D-A757533623B0}" ShortID="435617282">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{9D11054F-A0C2-4EEE-AB20-3FB63A45D030}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="250"/>
+											<Property Name="Min" Type="Real64" Value="-250"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{DAF62606-1538-46FC-96DB-C1B901C9C6C7}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="4"/>
+											<Property Name="Min" Type="Real64" Value="-4"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_fighter1_movement_bounce_01" ID="{9AAB2934-B9E3-4D81-B7B8-BDB1006570ED}" ShortID="819124129">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_bounce_01" ID="{3994C7FE-5C66-4786-BF3A-EF824F203189}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_bounce_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="300286671"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_bounce_01" ID="{3994C7FE-5C66-4786-BF3A-EF824F203189}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_bounce_02" ID="{C9D53E55-0877-4B1C-9448-71B4FF6C7FB2}" ShortID="116509836">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_bounce_02" ID="{0EE32DB7-76F0-4054-AB73-CBC8E95DD022}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_bounce_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="155359304"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_bounce_02" ID="{0EE32DB7-76F0-4054-AB73-CBC8E95DD022}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_bounce_03" ID="{737A1072-27F4-40AA-98BD-DD281BDFE90F}" ShortID="38646826">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_bounce_03" ID="{AA6433BE-22D2-46FE-8916-2F19C8CFFD50}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_bounce_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="505204503"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_bounce_03" ID="{AA6433BE-22D2-46FE-8916-2F19C8CFFD50}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_bounce_04" ID="{8CC6319B-8251-4CED-BFB8-03CBDBD8FDB7}" ShortID="103903266">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_bounce_04" ID="{10FE0BB5-6404-4550-A178-F63F67CBC075}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_bounce_04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="259948865"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_bounce_04" ID="{10FE0BB5-6404-4550-A178-F63F67CBC075}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_bounce_05" ID="{C190713C-58ED-4F3A-ADA5-4C294C41CE85}" ShortID="1069603401">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_bounce_05" ID="{97377AA4-A29A-4D1F-AA85-88F8B07368EF}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_bounce_05.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="93751365"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_bounce_05" ID="{97377AA4-A29A-4D1F-AA85-88F8B07368EF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_bounce_06" ID="{76FCCAB9-9D29-49D6-82AC-735D92FC4079}" ShortID="935651436">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_bounce_06" ID="{DC08578F-3F42-41D4-9247-CB00BD0FFCAA}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_bounce_06.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="106303132"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_bounce_06" ID="{DC08578F-3F42-41D4-9247-CB00BD0FFCAA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Player1_Jump" ID="{E9125266-8C21-4666-BB06-B77012054402}" ShortID="478216956">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{B8736BE3-FABF-4393-BFFC-065E48FE5E05}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="250"/>
+											<Property Name="Min" Type="Real64" Value="-250"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{210D6592-7EB7-4168-AEC6-5A940437510B}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="4"/>
+											<Property Name="Min" Type="Real64" Value="-4"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_fighter1_movement_jump_01" ID="{81A1321B-B191-4987-ACF3-349B5FC204F0}" ShortID="467245717">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_jump_01" ID="{23BD9B49-8EA0-4D6F-B081-C8A9B8579496}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_jump_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="287169205"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_jump_01" ID="{23BD9B49-8EA0-4D6F-B081-C8A9B8579496}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_jump_02" ID="{B8F2D15E-358B-4CD5-9190-9F9E8ECFB76D}" ShortID="45915822">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_jump_02" ID="{79C7BFE7-E237-44AE-B377-ACC984C5BA92}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_jump_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1025118858"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_jump_02" ID="{79C7BFE7-E237-44AE-B377-ACC984C5BA92}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_jump_03" ID="{647265DE-5E1E-45EF-8BBC-C53217134A9C}" ShortID="818152811">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_jump_03" ID="{8939FCA1-9139-4655-A923-B70988E3A3A5}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_jump_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="71411161"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_jump_03" ID="{8939FCA1-9139-4655-A923-B70988E3A3A5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_jump_04" ID="{4BA272CA-3881-4795-B28E-943B76BF041D}" ShortID="712426675">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_jump_04" ID="{76F38609-AD5D-4D28-826F-CC32FB21941F}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_jump_04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="680609463"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_jump_04" ID="{76F38609-AD5D-4D28-826F-CC32FB21941F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_jump_05" ID="{16AFEEDB-0944-4E4C-9D0D-284BD8FD9D1A}" ShortID="127752402">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_jump_05" ID="{0F886F25-EE63-4DB3-B76A-C7906230AAD5}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_jump_05.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="651099545"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_jump_05" ID="{0F886F25-EE63-4DB3-B76A-C7906230AAD5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_jump_06" ID="{47FE732E-2550-43A5-B143-D687B67477AA}" ShortID="909614747">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_jump_06" ID="{5FD27B30-1F4E-46C3-BC15-08023FB50666}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_jump_06.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="502994276"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_jump_06" ID="{5FD27B30-1F4E-46C3-BC15-08023FB50666}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Player1_Landing" ID="{BC63615F-8AAE-4D10-8052-97640654546B}" ShortID="775574884">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{60E2182C-237B-42B2-A61B-052825A5640F}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="250"/>
+											<Property Name="Min" Type="Real64" Value="-250"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-15</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{D4BBE5B7-44B6-4FCF-93C6-17E0FFF519C6}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="4"/>
+											<Property Name="Min" Type="Real64" Value="-4"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_fighter1_movement_landing__01" ID="{BA692DCB-FA13-4430-AE38-510F0276FBBD}" ShortID="75632917">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_landing__01" ID="{F188F2BD-B86D-4E6C-9F18-768872093F02}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_landing__01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="653697011"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_landing__01" ID="{F188F2BD-B86D-4E6C-9F18-768872093F02}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_landing__02" ID="{23192E50-FFF0-4A63-8B5C-36710F2B7B79}" ShortID="78422348">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_landing__02" ID="{38721242-93F1-4A27-BE53-4B77E9026A7E}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_landing__02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="616693563"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_landing__02" ID="{38721242-93F1-4A27-BE53-4B77E9026A7E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_landing__03" ID="{C0BA082A-E477-4F07-BF53-CD94423F72D4}" ShortID="728479401">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_landing__03" ID="{6BC8CBE6-C009-4F64-856B-7D7C624E538B}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_landing__03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="982992959"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_landing__03" ID="{6BC8CBE6-C009-4F64-856B-7D7C624E538B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_landing__04" ID="{EFCEDA0B-BF62-4F78-96D7-3548412070E9}" ShortID="15038221">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_landing__04" ID="{AE8065A8-1375-4C1A-A0CF-66C0490F82E7}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_landing__04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="774956098"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_landing__04" ID="{AE8065A8-1375-4C1A-A0CF-66C0490F82E7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_landing__05" ID="{16873299-BDDC-4A9C-B728-0D2369CABD86}" ShortID="153321638">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_landing__05" ID="{976884BA-1D5F-4FF8-9D18-FBF345CCCA7B}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_landing__05.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="691248896"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_landing__05" ID="{976884BA-1D5F-4FF8-9D18-FBF345CCCA7B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_landing__06" ID="{F06B43EA-0713-4712-84E2-BBA014C7AE4A}" ShortID="951774552">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_landing__06" ID="{33B0BC34-78F0-4307-9E98-783B16373849}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_landing__06.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="606884774"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_landing__06" ID="{33B0BC34-78F0-4307-9E98-783B16373849}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Player1_Dash" ID="{FA5F9C37-B5E4-4C08-9C1F-F17E9B733F65}" ShortID="825233169">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{A82AF942-ABD2-4FE5-84CA-9018AA171C29}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="250"/>
+											<Property Name="Min" Type="Real64" Value="-250"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{899DA909-5383-439E-A50C-533866A18835}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="3"/>
+											<Property Name="Min" Type="Real64" Value="-3"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_fighter1_movement_dash_01" ID="{770EA5B0-4CB2-4B39-A529-AFF19B924C70}" ShortID="364255119">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_dash_01" ID="{23B54BDC-C1A2-4B65-9004-2E7ED04F6A2A}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_dash_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="79594913"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_dash_01" ID="{23B54BDC-C1A2-4B65-9004-2E7ED04F6A2A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_dash_02" ID="{A2B9B2E7-862F-401C-871C-6F53FDC5D66A}" ShortID="1073142668">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_dash_02" ID="{0A9D6A14-2FA7-4DFF-A779-EF8FA72D38DB}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_dash_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="145495843"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_dash_02" ID="{0A9D6A14-2FA7-4DFF-A779-EF8FA72D38DB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_dash_03" ID="{242FF140-2BC8-4451-BA48-5317E24E1909}" ShortID="1043790254">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_dash_03" ID="{8C45D6B0-C97F-4C10-A35A-9C5D069C5DC3}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_dash_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1068380641"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_dash_03" ID="{8C45D6B0-C97F-4C10-A35A-9C5D069C5DC3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_dash_04" ID="{B061F789-94C4-4FB1-A15E-973464E3F815}" ShortID="174655527">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_dash_04" ID="{58256F0C-C400-48E5-AAB6-614A5EE5AD27}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_dash_04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="584663142"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_dash_04" ID="{58256F0C-C400-48E5-AAB6-614A5EE5AD27}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_dash_05" ID="{59B712C2-A8AB-4B7B-9250-868CF30CAE13}" ShortID="869914934">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_dash_05" ID="{543E699A-7639-4AB3-9DF4-8768E6653560}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_dash_05.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="565228550"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_dash_05" ID="{543E699A-7639-4AB3-9DF4-8768E6653560}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_dash_06" ID="{041DD1D8-E040-4DCC-85BD-B865D74E4492}" ShortID="1025044216">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_dash_06" ID="{349CBFAA-7412-4A77-9C6A-37CC5D447B24}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_dash_06.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="979127355"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_dash_06" ID="{349CBFAA-7412-4A77-9C6A-37CC5D447B24}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Player1_Crouch_In" ID="{6D0277FB-D56E-4814-BAB1-B9A50C17B2EC}" ShortID="802226143">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>21</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{ADCD1159-FA85-416E-8C52-0349B7699F8D}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="250"/>
+											<Property Name="Min" Type="Real64" Value="-250"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-20</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{AEA91C50-B71A-47F8-9C3D-ACD9DED812B2}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="2"/>
+											<Property Name="Min" Type="Real64" Value="-2"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_fighter1_movement_crouch_in_01" ID="{FE9E888B-730A-41CE-9AA0-56F1A6E0DB09}" ShortID="531810946">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_crouch_in_01" ID="{5183C105-150E-4F87-82E4-9E1597383AB9}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_crouch_in_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="507215868"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_crouch_in_01" ID="{5183C105-150E-4F87-82E4-9E1597383AB9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_crouch_in_02" ID="{B90DEE40-FA3E-462B-855E-2755E2A910E8}" ShortID="927768935">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_crouch_in_02" ID="{3DFDCA4B-82A0-4A29-AABB-3A6724E4A6A3}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_crouch_in_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="427230100"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_crouch_in_02" ID="{3DFDCA4B-82A0-4A29-AABB-3A6724E4A6A3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_crouch_in_03" ID="{8C14E998-8DB0-4A57-A82E-ABCB39D3C034}" ShortID="140515586">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_crouch_in_03" ID="{60F40444-E5D3-447D-90E0-615D954C743A}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_crouch_in_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="126319256"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_crouch_in_03" ID="{60F40444-E5D3-447D-90E0-615D954C743A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_crouch_in_04" ID="{87204D44-F20F-4F15-9B62-E5C6DED23B42}" ShortID="95637446">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_crouch_in_04" ID="{5C495EAA-BE26-4A75-B5B0-2FCE0F4CE9A9}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_crouch_in_04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="546080245"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_crouch_in_04" ID="{5C495EAA-BE26-4A75-B5B0-2FCE0F4CE9A9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_crouch_in_05" ID="{5948B021-45CE-4909-85B4-81ED787CCE55}" ShortID="485089209">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_crouch_in_05" ID="{714F3897-1F25-4251-B5E0-55853DB7E628}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_crouch_in_05.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="537328825"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_crouch_in_05" ID="{714F3897-1F25-4251-B5E0-55853DB7E628}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_crouch_in_06" ID="{0079C899-CE1B-4FB7-A8EB-1B93E5358F54}" ShortID="409036906">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_crouch_in_06" ID="{78485223-A1E5-498E-B06E-3F5CCAA8ED36}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_crouch_in_06.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="827760532"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_crouch_in_06" ID="{78485223-A1E5-498E-B06E-3F5CCAA8ED36}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Player1_Crouch_Out" ID="{E8B94CCA-D650-4B11-9DAA-97E8961D4FA7}" ShortID="113437246">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{FD12096A-C29A-407E-B1F4-68C2E16C8697}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="250"/>
+											<Property Name="Min" Type="Real64" Value="-250"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-20</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{AB07A401-82A7-47BA-9638-ADB9292E73E7}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="2"/>
+											<Property Name="Min" Type="Real64" Value="-2"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_fighter1_movement_crouch_out_01" ID="{099DE67F-9DE2-4437-8314-7E298852FF80}" ShortID="262034237">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_crouch_out_01" ID="{C5D02594-76F1-4499-A5CC-1B945B2EA245}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_crouch_out_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="475058918"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_crouch_out_01" ID="{C5D02594-76F1-4499-A5CC-1B945B2EA245}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_crouch_out_02" ID="{0FF5024F-3C8F-4FA0-9E2C-F173240C2E87}" ShortID="49149832">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_crouch_out_02" ID="{705EB90F-3104-4310-B762-010922D34D7C}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_crouch_out_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1016905659"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_crouch_out_02" ID="{705EB90F-3104-4310-B762-010922D34D7C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_crouch_out_03" ID="{F964DAA4-16CC-400D-B806-7AD6144D589F}" ShortID="561715484">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_crouch_out_03" ID="{BD2C61D5-1BFA-4A62-A4CE-B25038A9789A}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_crouch_out_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="408344611"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_crouch_out_03" ID="{BD2C61D5-1BFA-4A62-A4CE-B25038A9789A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_crouch_out_04" ID="{B2115DD3-6066-49D0-B2E5-1612D0D7B7B9}" ShortID="743620325">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_crouch_out_04" ID="{6B77C4AF-9C6F-415B-BA01-E9E560CF428E}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_crouch_out_04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="703951287"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_crouch_out_04" ID="{6B77C4AF-9C6F-415B-BA01-E9E560CF428E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_crouch_out_05" ID="{078CB34F-907C-40C6-99D4-07EFB47F9526}" ShortID="928879268">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_crouch_out_05" ID="{921670D5-EA85-431F-8A41-C08A217C2F32}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_crouch_out_05.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1037379880"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_crouch_out_05" ID="{921670D5-EA85-431F-8A41-C08A217C2F32}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_crouch_out_06" ID="{61250F70-6202-46ED-9F1F-BEEAF5A49F1F}" ShortID="389632024">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_crouch_out_06" ID="{1BB5F91D-BDE9-4F59-9123-93C2DC0147CF}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_crouch_out_06.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="242429337"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_crouch_out_06" ID="{1BB5F91D-BDE9-4F59-9123-93C2DC0147CF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Player1_Clothes_Long" ID="{67884C30-A3D4-429F-87A6-1F5E8E5DCEE5}" ShortID="991655367">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Lowpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{A7194431-A23F-4085-B38D-A593E119AE80}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="100"/>
+											<Property Name="Min" Type="Real64" Value="-100"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{FA07595F-9DD3-4B15-8AD8-37A61C8043B4}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="250"/>
+											<Property Name="Min" Type="Real64" Value="-250"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-30</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{FD0CD954-EB75-4BD7-8FEF-145A8F797EC5}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="2"/>
+											<Property Name="Min" Type="Real64" Value="-2"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_fighter1_movement_clothes_long_01" ID="{06B36563-6E04-49E7-B4CD-EBD3EE99AC86}" ShortID="476123159">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_clothes_long_01" ID="{713D378A-00D2-498E-9367-D40ADA270FC1}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_clothes_long_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="662112762"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_clothes_long_01" ID="{713D378A-00D2-498E-9367-D40ADA270FC1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_clothes_long_02" ID="{563B85E2-E3DE-4832-A1E5-309419C508A8}" ShortID="500189336">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_clothes_long_02" ID="{AD44A811-2C44-419C-8344-D90B8CD755AB}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_clothes_long_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="322350762"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_clothes_long_02" ID="{AD44A811-2C44-419C-8344-D90B8CD755AB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_clothes_long_03" ID="{BAFC3600-F7C8-4B91-BB62-FE7CC487BF80}" ShortID="1050606447">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_clothes_long_03" ID="{AD4B9667-2DE9-402F-B0B5-9F2E3EC7C2F9}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_clothes_long_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="983336185"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_clothes_long_03" ID="{AD4B9667-2DE9-402F-B0B5-9F2E3EC7C2F9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_clothes_long_04" ID="{724B7337-8D77-4639-8563-B9E65E168009}" ShortID="665729892">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_clothes_long_04" ID="{C045DC54-3064-4D4F-9C75-E336FBDA6F6A}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_clothes_long_04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="135453367"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_clothes_long_04" ID="{C045DC54-3064-4D4F-9C75-E336FBDA6F6A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_clothes_long_05" ID="{1C2C9108-B95D-461E-8F6C-0E3B08F3E4AE}" ShortID="240546495">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_clothes_long_05" ID="{E76BE600-BB00-470C-B6C0-EAD4D35CF675}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_clothes_long_05.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="81485425"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_clothes_long_05" ID="{E76BE600-BB00-470C-B6C0-EAD4D35CF675}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_clothes_long_06" ID="{95885E3A-926F-46C0-9550-C8E4426E3998}" ShortID="1045456005">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_clothes_long_06" ID="{0CA7EF3E-F9AC-43F8-9EE9-B22BDB96E2F3}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_clothes_long_06.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="46131675"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_clothes_long_06" ID="{0CA7EF3E-F9AC-43F8-9EE9-B22BDB96E2F3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_clothes_long_07" ID="{42573C1A-F1D3-4860-A39F-C3BED41A2D82}" ShortID="1059608276">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_clothes_long_07" ID="{6253E9B7-314A-483B-B6B7-B65A001B46EA}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_clothes_long_07.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="160447407"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_clothes_long_07" ID="{6253E9B7-314A-483B-B6B7-B65A001B46EA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_clothes_long_08" ID="{B6BDB565-520B-497D-8089-BB4CD144FC5D}" ShortID="12073769">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_clothes_long_08" ID="{D28F6FB4-C38E-4A44-B426-72480807A9FC}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_clothes_long_08.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="507619548"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_clothes_long_08" ID="{D28F6FB4-C38E-4A44-B426-72480807A9FC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_clothes_long_09" ID="{B1897246-CA78-4F93-B82D-1B702444F969}" ShortID="775171544">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_clothes_long_09" ID="{1D21EA57-BAAF-48B5-9644-6994ACC05A65}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_clothes_long_09.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="424180965"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_clothes_long_09" ID="{1D21EA57-BAAF-48B5-9644-6994ACC05A65}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_clothes_long_10" ID="{25B7F6C5-2E38-47FB-A075-97390C3A8E73}" ShortID="713367317">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_clothes_long_10" ID="{1739B4F2-5467-4558-8C6D-8EED7B700A4C}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_clothes_long_10.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="867187785"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_clothes_long_10" ID="{1739B4F2-5467-4558-8C6D-8EED7B700A4C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Player1_Clothes_Short" ID="{ABD9E36F-6176-4430-B960-05089B589A64}" ShortID="953122192">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{0777169E-05FE-4F02-BCCB-0E46BBB5920A}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="250"/>
+											<Property Name="Min" Type="Real64" Value="-250"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-30</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{08DF4D16-2CE9-4E19-A922-42B2B4D66D44}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="2"/>
+											<Property Name="Min" Type="Real64" Value="-2"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_fighter1_movement_clothes_short_01" ID="{F0503F0E-80C6-4588-9A61-559A08B38C56}" ShortID="650669436">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_clothes_short_01" ID="{4407BFEC-4F8D-4377-8A4F-6CB70DE5F94E}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_clothes_short_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="441480517"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_clothes_short_01" ID="{4407BFEC-4F8D-4377-8A4F-6CB70DE5F94E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_clothes_short_02" ID="{428DF95E-20D7-4EC7-B287-CA810EF68860}" ShortID="237384310">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_clothes_short_02" ID="{FF6CB628-62E3-4BE0-A345-2F5D51C8AF12}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_clothes_short_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="789184646"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_clothes_short_02" ID="{FF6CB628-62E3-4BE0-A345-2F5D51C8AF12}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_clothes_short_03" ID="{7AAB6249-D0CD-4FFF-8124-F2E6493397B2}" ShortID="972917704">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_clothes_short_03" ID="{9CEB80F0-94A5-4D12-8266-8BE42EF4DC19}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_clothes_short_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="806035094"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_clothes_short_03" ID="{9CEB80F0-94A5-4D12-8266-8BE42EF4DC19}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_clothes_short_04" ID="{3BED2B40-E873-45A1-BFBF-F6ADD9DA9D7F}" ShortID="563976641">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_clothes_short_04" ID="{5451BF69-86F8-4B5C-9204-85BA655D59EF}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_clothes_short_04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="299183579"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_clothes_short_04" ID="{5451BF69-86F8-4B5C-9204-85BA655D59EF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_clothes_short_05" ID="{238369D6-DE1F-4AD9-BE0F-3F72413D2B01}" ShortID="847472459">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_clothes_short_05" ID="{B75BB41A-FF10-4796-B48F-B083FEF5A104}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_clothes_short_05.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="906023645"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_clothes_short_05" ID="{B75BB41A-FF10-4796-B48F-B083FEF5A104}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_clothes_short_06" ID="{7B43C451-7E9D-4FC7-B631-8BFF0ABC7391}" ShortID="875343611">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_clothes_short_06" ID="{FFED6806-7CB3-492E-B9D2-FDBDD70BB938}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_clothes_short_06.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="128777668"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_clothes_short_06" ID="{FFED6806-7CB3-492E-B9D2-FDBDD70BB938}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_clothes_short_07" ID="{8CD72334-4B46-4234-923C-350D1198DC8A}" ShortID="351218141">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_clothes_short_07" ID="{DCA1FEF0-BA86-455A-98BA-032D61A229B1}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_clothes_short_07.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="639090061"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_clothes_short_07" ID="{DCA1FEF0-BA86-455A-98BA-032D61A229B1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_clothes_short_08" ID="{E3F03B17-A874-489C-A311-0CCA69198E27}" ShortID="471591750">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_clothes_short_08" ID="{15E93448-5FA6-42AE-820B-8BFCDB8B2C9A}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_clothes_short_08.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="841626508"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_clothes_short_08" ID="{15E93448-5FA6-42AE-820B-8BFCDB8B2C9A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_clothes_short_09" ID="{B3A8E043-97DF-45C9-9685-D00F9E1D1671}" ShortID="326311708">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_clothes_short_09" ID="{240713E9-74AE-440B-875E-9A75FC3158A3}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_clothes_short_09.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="19366300"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_clothes_short_09" ID="{240713E9-74AE-440B-875E-9A75FC3158A3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fighter1_movement_clothes_short_10" ID="{EBFB2FB9-2B2D-4299-B6F5-215909091CB8}" ShortID="88084199">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fighter1_movement_clothes_short_10" ID="{D7DC2024-B617-469B-8485-4F160153B296}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fighter1_movement_clothes_short_10.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="926468782"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fighter1_movement_clothes_short_10" ID="{D7DC2024-B617-469B-8485-4F160153B296}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<SwitchContainer Name="Player1_Footsteps" ID="{3D226559-44BC-4752-ABD8-AA8F19300E44}" ShortID="1062067425">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Concrete" ID="{E812C4B3-3DB5-42FD-9C23-3A9B3A798CE7}" WorkUnitID="{4610ADD1-A8C3-4181-B7D1-B4A0CCCB408E}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="GroundMaterialSwitch" ID="{837C1AB4-47B2-4EFB-B32C-0C393B49C2F7}" WorkUnitID="{4610ADD1-A8C3-4181-B7D1-B4A0CCCB408E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Concrete" ID="{BE2B9724-B814-485C-9AE0-6DE36990E182}" ShortID="744897066">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{4F8EA3C6-BFCE-41EB-A367-D6EB6B60BAEE}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="250"/>
+													<Property Name="Min" Type="Real64" Value="-250"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{3D41E1A2-755A-4F20-90F7-B196C7F7BA6D}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="4"/>
+													<Property Name="Min" Type="Real64" Value="-4"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_fighter1_movement_footsteps_concrete__01" ID="{4BBA8054-8BEE-44FA-90F9-B073336306C1}" ShortID="876485187">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_fighter1_movement_footsteps_concrete__01" ID="{9369D93D-7EDE-4900-806F-48EFD2107593}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_fighter1_movement_footsteps_concrete__01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="381863405"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_fighter1_movement_footsteps_concrete__01" ID="{9369D93D-7EDE-4900-806F-48EFD2107593}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_fighter1_movement_footsteps_concrete__02" ID="{2720D84B-269A-4A4F-9021-48D061065802}" ShortID="199387804">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_fighter1_movement_footsteps_concrete__02" ID="{192B8340-69B0-4E88-A778-B9E74355660B}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_fighter1_movement_footsteps_concrete__02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="944425952"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_fighter1_movement_footsteps_concrete__02" ID="{192B8340-69B0-4E88-A778-B9E74355660B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_fighter1_movement_footsteps_concrete__03" ID="{5965263A-AFC2-45AA-BD1C-0E01E5CB0369}" ShortID="519177233">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_fighter1_movement_footsteps_concrete__03" ID="{CDF6D54B-41AE-442D-B43F-B0B29B2532BB}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_fighter1_movement_footsteps_concrete__03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="753767965"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_fighter1_movement_footsteps_concrete__03" ID="{CDF6D54B-41AE-442D-B43F-B0B29B2532BB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_fighter1_movement_footsteps_concrete__04" ID="{B222BC01-8D06-4678-A3B1-3F6B2AF79A24}" ShortID="983717313">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_fighter1_movement_footsteps_concrete__04" ID="{6FA9EE0F-FF56-47D4-9B21-EE4104E1334C}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_fighter1_movement_footsteps_concrete__04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="983701975"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_fighter1_movement_footsteps_concrete__04" ID="{6FA9EE0F-FF56-47D4-9B21-EE4104E1334C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_fighter1_movement_footsteps_concrete__05" ID="{C968295D-81CB-459E-A2AD-2A516837027E}" ShortID="21391880">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_fighter1_movement_footsteps_concrete__05" ID="{8CD5E03F-E028-4170-822A-AC2F8D7FDD82}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_fighter1_movement_footsteps_concrete__05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="285670170"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_fighter1_movement_footsteps_concrete__05" ID="{8CD5E03F-E028-4170-822A-AC2F8D7FDD82}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_fighter1_movement_footsteps_concrete__06" ID="{C7216359-3072-4ACE-9900-1123C027EE6D}" ShortID="145439825">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_fighter1_movement_footsteps_concrete__06" ID="{E558C68D-9608-42C4-B0FB-F650424A1535}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_fighter1_movement_footsteps_concrete__06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="914402793"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_fighter1_movement_footsteps_concrete__06" ID="{E558C68D-9608-42C4-B0FB-F650424A1535}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Puddle" ID="{63A74A41-1756-43D8-92BB-4F0CE6D3659E}" ShortID="686389136">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{F5D77CDA-CB99-4C56-B1A0-017F298D3392}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="250"/>
+													<Property Name="Min" Type="Real64" Value="-250"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B143F42F-138A-4221-956F-A5F01F0F8294}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="4"/>
+													<Property Name="Min" Type="Real64" Value="-4"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_fighter1_movement_footsteps_puddle__01" ID="{47C6657D-3481-445B-811A-A34C8D9E3B90}" ShortID="1014861170">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_fighter1_movement_footsteps_puddle__01" ID="{05386144-52FC-4BFA-A5E0-A623C691BD3F}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_fighter1_movement_footsteps_puddle__01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="29994990"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_fighter1_movement_footsteps_puddle__01" ID="{05386144-52FC-4BFA-A5E0-A623C691BD3F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_fighter1_movement_footsteps_puddle__02" ID="{AEE04ADF-AD9D-4CE1-904A-D360CD23073D}" ShortID="671129319">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_fighter1_movement_footsteps_puddle__02" ID="{E9E26AAE-E283-4623-8BF9-1C67E08E041C}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_fighter1_movement_footsteps_puddle__02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="473753266"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_fighter1_movement_footsteps_puddle__02" ID="{E9E26AAE-E283-4623-8BF9-1C67E08E041C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_fighter1_movement_footsteps_puddle__03" ID="{994EEBBC-ED80-46D3-9CED-C1BE7A39E9AD}" ShortID="692499060">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_fighter1_movement_footsteps_puddle__03" ID="{3B41F98C-20E2-425E-BB28-9F28CAABA820}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_fighter1_movement_footsteps_puddle__03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="466432269"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_fighter1_movement_footsteps_puddle__03" ID="{3B41F98C-20E2-425E-BB28-9F28CAABA820}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_fighter1_movement_footsteps_puddle__04" ID="{6A186920-7C3D-47A6-A99D-F23F61B0A3D1}" ShortID="1013075510">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_fighter1_movement_footsteps_puddle__04" ID="{5062F134-6732-4090-9B18-C864B2698A59}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_fighter1_movement_footsteps_puddle__04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="149012600"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_fighter1_movement_footsteps_puddle__04" ID="{5062F134-6732-4090-9B18-C864B2698A59}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_fighter1_movement_footsteps_puddle__05" ID="{FB347C9A-FEEE-4C31-A82F-DD47E3D7222D}" ShortID="147840118">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_fighter1_movement_footsteps_puddle__05" ID="{4C950D09-C658-4B98-B929-79BD4659A275}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_fighter1_movement_footsteps_puddle__05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="620540260"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_fighter1_movement_footsteps_puddle__05" ID="{4C950D09-C658-4B98-B929-79BD4659A275}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_fighter1_movement_footsteps_puddle__06" ID="{E2FAA9E2-963A-478E-BB3B-214704922D2E}" ShortID="883054799">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_fighter1_movement_footsteps_puddle__06" ID="{87C3D701-5A85-4830-AC6A-F178EA674F47}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_fighter1_movement_footsteps_puddle__06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="549571819"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_fighter1_movement_footsteps_puddle__06" ID="{87C3D701-5A85-4830-AC6A-F178EA674F47}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Concrete" ID="{BE2B9724-B814-485C-9AE0-6DE36990E182}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Puddle" ID="{63A74A41-1756-43D8-92BB-4F0CE6D3659E}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Puddle" ID="{1EA3450A-CCE0-4188-A244-C7704C707E90}"/>
+								<ItemList>
+									<ItemRef Name="Puddle" ID="{63A74A41-1756-43D8-92BB-4F0CE6D3659E}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Concrete" ID="{E812C4B3-3DB5-42FD-9C23-3A9B3A798CE7}"/>
+								<ItemList>
+									<ItemRef Name="Concrete" ID="{BE2B9724-B814-485C-9AE0-6DE36990E182}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

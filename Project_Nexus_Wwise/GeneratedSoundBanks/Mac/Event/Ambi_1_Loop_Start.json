@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{82962F56-8362-4D21-8FE6-A98FF8901AE9}",
     "Language": "SFX",
-    "Hash": "{5937CF6E-6618-96A9-18B0-FCBEE378F541}",
+    "Hash": "{B473F2EE-E060-8671-53AC-D8FCB79356E7}",
     "ObjectPath": "Ambi_1_Loop_Start",
     "ShortName": "Ambi_1_Loop_Start",
     "Path": "Event/Ambi_1_Loop_Start.bnk",
@@ -67,7 +67,7 @@
       "Location": "Loose",
       "ShortName": "Ambi_1_Loop_01.wav",
       "Path": "Media/673665466.wem",
-      "CachePath": "SFX/Ambi_1_Loop_01_3E33C035.wem"
+      "CachePath": "SFX/Ambi_1_Loop_01_4DF62C0D.wem"
      },
      {
       "Id": "927375782",
@@ -113,6 +113,6 @@
     ]
    }
   ],
-  "FileHash": "{622ED624-C9D6-0864-A3E7-967D9445E5BF}"
+  "FileHash": "{668EE404-FBA8-3D1D-EBBA-CB13F6A822FF}"
  }
 }

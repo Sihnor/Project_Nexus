@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{82FCA46E-6E59-4873-9785-CC8165F421C1}",
     "Language": "SFX",
-    "Hash": "{483DACAC-6E9A-8E69-43D7-50D98BF82F54}",
+    "Hash": "{A28CAFEF-CE1E-C869-30AC-ADB6D519D6E8}",
     "ObjectPath": "Play_Settings_Slider",
     "ShortName": "Play_Settings_Slider",
     "Path": "Event/Play_Settings_Slider.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{1A81BE61-A1B5-BD81-1199-A31B545D2905}"
+  "FileHash": "{9E4881C5-3C0A-9533-5EE8-AFCA29D690B9}"
  }
 }

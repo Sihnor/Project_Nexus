@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{36113D1F-1DF9-4707-9998-76CB9E7E679F}",
     "Language": "SFX",
-    "Hash": "{92A403BA-C840-04B5-D47D-EFF3CBCF8CD3}",
+    "Hash": "{5DC2175C-25E3-ADC3-B0D8-E402AE26F1CF}",
     "ObjectPath": "Com_Round_4_Start",
     "ShortName": "Com_Round_4_Start",
     "Path": "Event/Com_Round_4_Start.bnk",
@@ -77,8 +77,8 @@
       "ObjectPath": "\\Events\\Commentator_Voices\\Com_Round_4_Start",
       "GUID": "{36113D1F-1DF9-4707-9998-76CB9E7E679F}",
       "DurationType": "OneShot",
-      "DurationMin": "3.03125",
-      "DurationMax": "3.34375",
+      "DurationMin": "6.53125",
+      "DurationMax": "6.84375",
       "MediaRefs": [
        {
         "Id": "115684259"
@@ -103,6 +103,6 @@
     ]
    }
   ],
-  "FileHash": "{960120CB-D915-A262-A65C-63A699145CB7}"
+  "FileHash": "{44181D16-0AE9-64E2-B8C9-3ED9D0166477}"
  }
 }

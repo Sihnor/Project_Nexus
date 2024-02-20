@@ -3,11 +3,18 @@
 	<AudioObjects>
 		<WorkUnit Name="UI" ID="{F630E117-1887-441A-A243-3DF392670FE3}" PersistMode="Standalone">
 			<PropertyList>
-				<Property Name="Color" Type="int16" Value="25"/>
+				<Property Name="Color" Type="int16" Value="24"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
 				<Sound Name="sfx_menu_settings_slider" ID="{ED6E9571-FEF1-4393-BE62-688B8DE70F2B}" ShortID="731816657">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -30,6 +37,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="sfx_menu_move" ID="{1BDBD083-E7BE-4C7E-BBA4-46307F6D3D27}" ShortID="325296335">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -52,6 +66,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="sfx_menu_button_back" ID="{B526C5D1-CF60-4F74-94FE-F6C82F654B6A}" ShortID="828801721">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -74,6 +95,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="sfx_menu_button_select" ID="{D92D8003-4CB6-4DE0-AC87-502CA4DE1956}" ShortID="42816363">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -96,6 +124,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="sfx_menu_pause_activate" ID="{6E9DFD4F-8D4B-49BE-9748-1D0DB05658CD}" ShortID="1019892345">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -118,6 +153,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="sfx_menu_pause_deactivate" ID="{8E47F091-BCBF-443A-A2DC-C968ABA62BD0}" ShortID="279214141">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -140,6 +182,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="sfx_menu_select_fighter" ID="{A1CCADCE-6661-4357-BB89-FA13B75FEEC9}" ShortID="485669767">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
@@ -162,6 +211,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="sfx_menu_settings_select" ID="{613D3BE9-5FBE-4163-B75B-9B4C46380589}" ShortID="397988658">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>

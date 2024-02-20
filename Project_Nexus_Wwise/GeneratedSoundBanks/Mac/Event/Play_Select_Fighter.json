@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{5B16E403-94D2-446D-9060-3E385BA132ED}",
     "Language": "SFX",
-    "Hash": "{F3F03F35-3D5C-DE65-78F5-165DBF51DAD8}",
+    "Hash": "{0B822E26-15BA-D7D9-1F7E-2710CDB21256}",
     "ObjectPath": "Play_Select_Fighter",
     "ShortName": "Play_Select_Fighter",
     "Path": "Event/Play_Select_Fighter.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{51AFF419-2303-F52C-0697-F7AA569890E4}"
+  "FileHash": "{04A5BA09-2485-E8CD-818F-96DF21B14A56}"
  }
 }

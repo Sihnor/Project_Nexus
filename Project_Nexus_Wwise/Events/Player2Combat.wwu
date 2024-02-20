@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FD355DCC-3131-43E8-B4D8-9D81F0710E66}" SchemaVersion="110" RootDocumentID="{F1045EF7-6224-4CB2-8EBE-969AABF2D81C}" ParentDocumentID="{F1045EF7-6224-4CB2-8EBE-969AABF2D81C}">
+	<Events>
+		<WorkUnit Name="Player2Combat" ID="{FD355DCC-3131-43E8-B4D8-9D81F0710E66}" OwnerID="{F1045EF7-6224-4CB2-8EBE-969AABF2D81C}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Play_Player2_Blockhit" ID="{8C37F805-1EF3-48E8-9DA4-B8E4E9095CA4}">
+					<ChildrenList>
+						<Action Name="" ID="{A5CDEA30-CD28-4614-B54B-1730BA67FD38}" ShortID="643382884">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player2_Blockhit" ID="{C799FA8F-C9EE-4A52-B79D-ACA99C5599D8}" WorkUnitID="{6334F0FF-D885-4182-B5A2-A138FEF70387}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Player2_Grab" ID="{6A53B62E-A897-495E-94B6-9D497FF0D9E3}">
+					<ChildrenList>
+						<Action Name="" ID="{09D3F949-9AE0-4BF0-AA3F-5E4C8ED84EBC}" ShortID="1017242561">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player2_Grab" ID="{703CF001-0557-4F41-805A-B526CA4EB116}" WorkUnitID="{6334F0FF-D885-4182-B5A2-A138FEF70387}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Player2_Punch_Heavy" ID="{853E51E0-E4E7-42E9-AB83-D4CB3ED432C8}">
+					<ChildrenList>
+						<Action Name="" ID="{C4EB8361-F1D6-4601-8763-C7C1348BCA0B}" ShortID="653717538">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player2_Punches_Heavy" ID="{99A5292D-0C21-4830-A3A9-E33763D35F41}" WorkUnitID="{6334F0FF-D885-4182-B5A2-A138FEF70387}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Player2_Punch_Light" ID="{9E15B848-01A3-4C12-AC8F-935B3047AD4C}">
+					<ChildrenList>
+						<Action Name="" ID="{E83312B7-9777-4F40-A6F7-6DDAC4D2B26C}" ShortID="315793113">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player2_Punches_Light" ID="{A54AE1BC-0B8C-4FDC-86AA-B434AA804DBF}" WorkUnitID="{6334F0FF-D885-4182-B5A2-A138FEF70387}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Player2_Punsh_Woosh" ID="{BC242ACD-BEB1-4A14-8C77-60F841C91DEF}">
+					<ChildrenList>
+						<Action Name="" ID="{841E6452-2866-40A5-BCA5-A4FB3388DBF4}" ShortID="339392417">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player2_PunchWoosh" ID="{944700A1-BEC3-4DEE-B3AB-22155DF0A62D}" WorkUnitID="{6334F0FF-D885-4182-B5A2-A138FEF70387}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

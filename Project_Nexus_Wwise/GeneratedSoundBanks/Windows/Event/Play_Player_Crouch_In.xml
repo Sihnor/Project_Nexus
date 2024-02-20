@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2369679144" Type="Event" GUID="{52806D64-28C9-4DBD-9FA9-B19EFC1D9D2B}" Language="SFX" Hash="{69968BA8-013D-A01B-D859-DD8BBFBF78C1}">
+		<SoundBank Id="2369679144" Type="Event" GUID="{52806D64-28C9-4DBD-9FA9-B19EFC1D9D2B}" Language="SFX" Hash="{F0EB6840-0167-B4DD-0077-17B6D652C615}">
 			<ObjectPath>Play_Player_Crouch_In</ObjectPath>
 			<ShortName>Play_Player_Crouch_In</ShortName>
 			<Path>Event/Play_Player_Crouch_In.bnk</Path>
@@ -38,7 +38,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2369679144" Name="Play_Player_Crouch_In" ObjectPath="\Events\Player\PlayerLocomotion\Play_Player_Crouch_In" GUID="{52806D64-28C9-4DBD-9FA9-B19EFC1D9D2B}" DurationType="OneShot" DurationMin="0.3373956" DurationMax="0.626091">
+				<Event Id="2369679144" Name="Play_Player_Crouch_In" ObjectPath="\Events\Player\PlayerLocomotion\Play_Player_Crouch_In" GUID="{52806D64-28C9-4DBD-9FA9-B19EFC1D9D2B}" DurationType="OneShot" DurationMin="0.35828504" DurationMax="0.5811346">
 					<MediaRefs>
 						<MediaRef Id="126319256"/>
 						<MediaRef Id="427230100"/>
@@ -51,5 +51,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{56AECB95-B0C4-CEFD-86B0-8D4FA30B7562}</FileHash>
+	<FileHash>{ACC67FB2-180A-D68F-7AA2-379A99A3FF68}</FileHash>
 </SoundBanksInfo>

@@ -1,0 +1,108 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "3797728615",
+    "Type": "Event",
+    "GUID": "{D5493C59-9017-4BB4-A89D-77446FB05B0A}",
+    "Language": "SFX",
+    "Hash": "{3528B320-20BC-B35F-F6C9-A412FD153F27}",
+    "ObjectPath": "Play_Player2_Bodyfall",
+    "ShortName": "Play_Player2_Bodyfall",
+    "Path": "Event/Play_Player2_Bodyfall.bnk",
+    "Media": [
+     {
+      "Id": "30487593",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_bodyfall_04.wav",
+      "Path": "Media/30487593.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_bodyfall_04_10C4C929.wem"
+     },
+     {
+      "Id": "120487873",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_bodyfall_01.wav",
+      "Path": "Media/120487873.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_bodyfall_01_10C4C929.wem"
+     },
+     {
+      "Id": "535278952",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_bodyfall_06.wav",
+      "Path": "Media/535278952.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_bodyfall_06_10C4C929.wem"
+     },
+     {
+      "Id": "553762238",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_bodyfall_03.wav",
+      "Path": "Media/553762238.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_bodyfall_03_10C4C929.wem"
+     },
+     {
+      "Id": "709615145",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_bodyfall_02.wav",
+      "Path": "Media/709615145.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_bodyfall_02_10C4C929.wem"
+     },
+     {
+      "Id": "810746233",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_bodyfall_05.wav",
+      "Path": "Media/810746233.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_bodyfall_05_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3797728615",
+      "Name": "Play_Player2_Bodyfall",
+      "ObjectPath": "\\Events\\Player2\\Player2Locomotion\\Play_Player2_Bodyfall",
+      "GUID": "{D5493C59-9017-4BB4-A89D-77446FB05B0A}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.34376228",
+      "DurationMax": "0.6436037",
+      "MediaRefs": [
+       {
+        "Id": "30487593"
+       },
+       {
+        "Id": "120487873"
+       },
+       {
+        "Id": "535278952"
+       },
+       {
+        "Id": "553762238"
+       },
+       {
+        "Id": "709615145"
+       },
+       {
+        "Id": "810746233"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{E18F7D2D-ECE9-B469-2A2C-90F805ADC03E}"
+ }
+}

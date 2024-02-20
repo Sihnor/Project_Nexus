@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{F110A2AB-C527-4CD6-956A-320E06655E4E}",
     "Language": "SFX",
-    "Hash": "{1C19E938-EF82-D16B-97F9-FB95367035F4}",
+    "Hash": "{C790F221-0848-3A06-65F6-099845D908B8}",
     "ObjectPath": "Play_Player_Punch_Light",
     "ShortName": "Play_Player_Punch_Light",
     "Path": "Event/Play_Player_Punch_Light.bnk",
@@ -77,8 +77,8 @@
       "ObjectPath": "\\Events\\Player\\PlayerCombat\\Play_Player_Punch_Light",
       "GUID": "{F110A2AB-C527-4CD6-956A-320E06655E4E}",
       "DurationType": "OneShot",
-      "DurationMin": "0.44264585",
-      "DurationMax": "0.54541665",
+      "DurationMin": "0.2440092",
+      "DurationMax": "0.40502334",
       "MediaRefs": [
        {
         "Id": "20389258"
@@ -103,6 +103,6 @@
     ]
    }
   ],
-  "FileHash": "{C3BDE86F-68A7-236F-F76C-EA209731AC97}"
+  "FileHash": "{B4A92108-0D2C-4810-66F0-DED36DF01BCD}"
  }
 }

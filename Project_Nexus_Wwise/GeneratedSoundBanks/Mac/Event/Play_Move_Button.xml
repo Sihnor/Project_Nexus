@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2963316176" Type="Event" GUID="{E001864B-1F09-432D-9769-CAA8112B432A}" Language="SFX" Hash="{E564DEF2-9B7B-82FA-5EDD-F3AE0B64C4D0}">
+		<SoundBank Id="2963316176" Type="Event" GUID="{E001864B-1F09-432D-9769-CAA8112B432A}" Language="SFX" Hash="{EBECED0C-FC4E-1B73-A9AE-A2CF65AADC49}">
 			<ObjectPath>Play_Move_Button</ObjectPath>
 			<ShortName>Play_Move_Button</ShortName>
 			<Path>Event/Play_Move_Button.bnk</Path>
@@ -21,5 +21,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{77BB1185-9953-09A1-4E7F-C58969BA6679}</FileHash>
+	<FileHash>{7E7D5DAF-C7FC-9076-BC1D-84003E560721}</FileHash>
 </SoundBanksInfo>

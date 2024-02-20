@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{4DDF616B-CE7F-4803-9C49-4378BAFA5BD4}",
     "Language": "SFX",
-    "Hash": "{6CC4F864-2317-85AA-78C5-3A088512B133}",
+    "Hash": "{7D8825F4-308A-4B50-ABDB-E65474CBACC1}",
     "ObjectPath": "Com_Round_Fight",
     "ShortName": "Com_Round_Fight",
     "Path": "Event/Com_Round_Fight.bnk",
@@ -91,6 +91,6 @@
     ]
    }
   ],
-  "FileHash": "{7CA4AE41-9684-8D20-924A-ED7B0BEFF356}"
+  "FileHash": "{730320AD-9A2D-9C11-9066-6C7D767DB1D3}"
  }
 }

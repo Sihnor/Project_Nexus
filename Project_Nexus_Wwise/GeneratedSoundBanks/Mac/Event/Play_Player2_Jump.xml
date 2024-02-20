@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="2515698252" Type="Event" GUID="{56CAABDC-83A4-48A3-94F4-F0C5654233D4}" Language="SFX" Hash="{B852D8D0-3BAE-D018-83F9-0D007ABDE03B}">
+			<ObjectPath>Play_Player2_Jump</ObjectPath>
+			<ShortName>Play_Player2_Jump</ShortName>
+			<Path>Event/Play_Player2_Jump.bnk</Path>
+			<Media>
+				<File Id="38970517" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_jump_06.wav</ShortName>
+					<Path>Media/38970517.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_jump_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="85352697" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_jump_01.wav</ShortName>
+					<Path>Media/85352697.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_jump_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="445769901" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_jump_05.wav</ShortName>
+					<Path>Media/445769901.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_jump_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="468309020" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_jump_04.wav</ShortName>
+					<Path>Media/468309020.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_jump_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="858322442" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_jump_03.wav</ShortName>
+					<Path>Media/858322442.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_jump_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="931526503" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_jump_02.wav</ShortName>
+					<Path>Media/931526503.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_jump_02_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2515698252" Name="Play_Player2_Jump" ObjectPath="\Events\Player2\Player2Locomotion\Play_Player2_Jump" GUID="{56CAABDC-83A4-48A3-94F4-F0C5654233D4}" DurationType="OneShot" DurationMin="0.36094677" DurationMax="0.5081386">
+					<MediaRefs>
+						<MediaRef Id="38970517"/>
+						<MediaRef Id="85352697"/>
+						<MediaRef Id="445769901"/>
+						<MediaRef Id="468309020"/>
+						<MediaRef Id="858322442"/>
+						<MediaRef Id="931526503"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{39330DDD-42A5-5E17-E39D-75751D9B765F}</FileHash>
+</SoundBanksInfo>

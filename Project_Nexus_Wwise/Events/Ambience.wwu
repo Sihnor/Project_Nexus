@@ -59,31 +59,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Ambi_3_Loop_Start" ID="{D05CB7B5-5918-4544-A1AA-75CE5A34CB31}">
-							<ChildrenList>
-								<Action Name="" ID="{7098AD4C-A990-4BDA-8589-DA77D1D3ACED}" ShortID="1029362440">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Ambi_3_Loop" ID="{4C4E39D9-7B87-4DE5-BFEA-2903C5202B77}" WorkUnitID="{6CBD71BE-A490-4796-9349-42BC7A29FBB7}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Ambi_3_Loop_Stop" ID="{E5BE2FFF-1923-4532-8105-65C7E6D3043F}">
-							<ChildrenList>
-								<Action Name="" ID="{CCAF6D69-669B-45E6-A635-AFB4E2E76E25}" ShortID="845937820">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Ambi_3_Loop" ID="{4C4E39D9-7B87-4DE5-BFEA-2903C5202B77}" WorkUnitID="{6CBD71BE-A490-4796-9349-42BC7A29FBB7}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

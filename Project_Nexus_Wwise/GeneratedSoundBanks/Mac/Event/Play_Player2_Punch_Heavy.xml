@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="166827144" Type="Event" GUID="{853E51E0-E4E7-42E9-AB83-D4CB3ED432C8}" Language="SFX" Hash="{E722431C-51EE-D640-8B5F-FBEF236E2402}">
+			<ObjectPath>Play_Player2_Punch_Heavy</ObjectPath>
+			<ShortName>Play_Player2_Punch_Heavy</ShortName>
+			<Path>Event/Play_Player2_Punch_Heavy.bnk</Path>
+			<Media>
+				<File Id="232473678" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_combat_heavyattack_04.wav</ShortName>
+					<Path>Media/232473678.wem</Path>
+					<CachePath>SFX/sfx_fighter2_combat_heavyattack_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="431709875" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_combat_heavyattack_02.wav</ShortName>
+					<Path>Media/431709875.wem</Path>
+					<CachePath>SFX/sfx_fighter2_combat_heavyattack_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="474139874" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_combat_heavyattack_03.wav</ShortName>
+					<Path>Media/474139874.wem</Path>
+					<CachePath>SFX/sfx_fighter2_combat_heavyattack_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="576718424" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_combat_heavyattack_06.wav</ShortName>
+					<Path>Media/576718424.wem</Path>
+					<CachePath>SFX/sfx_fighter2_combat_heavyattack_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="711237658" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_combat_heavyattack_01.wav</ShortName>
+					<Path>Media/711237658.wem</Path>
+					<CachePath>SFX/sfx_fighter2_combat_heavyattack_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1013405996" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_combat_heavyattack_05.wav</ShortName>
+					<Path>Media/1013405996.wem</Path>
+					<CachePath>SFX/sfx_fighter2_combat_heavyattack_05_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="166827144" Name="Play_Player2_Punch_Heavy" ObjectPath="\Events\Player2\Player2Combat\Play_Player2_Punch_Heavy" GUID="{853E51E0-E4E7-42E9-AB83-D4CB3ED432C8}" DurationType="OneShot" DurationMin="0.3487932" DurationMax="0.56508785">
+					<MediaRefs>
+						<MediaRef Id="232473678"/>
+						<MediaRef Id="431709875"/>
+						<MediaRef Id="474139874"/>
+						<MediaRef Id="576718424"/>
+						<MediaRef Id="711237658"/>
+						<MediaRef Id="1013405996"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{2F30011B-8CF8-ED3F-8D5D-A27A3BE4E2F3}</FileHash>
+</SoundBanksInfo>

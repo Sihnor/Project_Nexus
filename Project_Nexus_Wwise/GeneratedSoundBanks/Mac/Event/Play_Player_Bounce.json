@@ -1,0 +1,108 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "675253000",
+    "Type": "Event",
+    "GUID": "{1C6F23AF-8E95-4E1E-8297-02B637218C6D}",
+    "Language": "SFX",
+    "Hash": "{ACCADA76-3A0C-3B95-FB0D-C24975C3BB8B}",
+    "ObjectPath": "Play_Player_Bounce",
+    "ShortName": "Play_Player_Bounce",
+    "Path": "Event/Play_Player_Bounce.bnk",
+    "Media": [
+     {
+      "Id": "93751365",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_bounce_05.wav",
+      "Path": "Media/93751365.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_bounce_05_10C4C929.wem"
+     },
+     {
+      "Id": "106303132",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_bounce_06.wav",
+      "Path": "Media/106303132.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_bounce_06_10C4C929.wem"
+     },
+     {
+      "Id": "155359304",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_bounce_02.wav",
+      "Path": "Media/155359304.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_bounce_02_10C4C929.wem"
+     },
+     {
+      "Id": "259948865",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_bounce_04.wav",
+      "Path": "Media/259948865.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_bounce_04_10C4C929.wem"
+     },
+     {
+      "Id": "300286671",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_bounce_01.wav",
+      "Path": "Media/300286671.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_bounce_01_10C4C929.wem"
+     },
+     {
+      "Id": "505204503",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_bounce_03.wav",
+      "Path": "Media/505204503.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_bounce_03_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "675253000",
+      "Name": "Play_Player_Bounce",
+      "ObjectPath": "\\Events\\Player\\PlayerLocomotion\\Play_Player_Bounce",
+      "GUID": "{1C6F23AF-8E95-4E1E-8297-02B637218C6D}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.24718283",
+      "DurationMax": "0.3809535",
+      "MediaRefs": [
+       {
+        "Id": "93751365"
+       },
+       {
+        "Id": "106303132"
+       },
+       {
+        "Id": "155359304"
+       },
+       {
+        "Id": "259948865"
+       },
+       {
+        "Id": "300286671"
+       },
+       {
+        "Id": "505204503"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{824C931F-4588-1AAB-3A21-4B9645A190A5}"
+ }
+}

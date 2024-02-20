@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1073355647" Type="Event" GUID="{EEB1C8DC-2012-4465-B929-C73B463E3F63}" Language="SFX" Hash="{0CE144A7-3469-4447-0568-43B88B82D608}">
+		<SoundBank Id="1073355647" Type="Event" GUID="{EEB1C8DC-2012-4465-B929-C73B463E3F63}" Language="SFX" Hash="{A544CAB3-52CB-E240-2489-D25DB3E5405B}">
 			<ObjectPath>Ambi_2_Loop_Stop</ObjectPath>
 			<ShortName>Ambi_2_Loop_Stop</ShortName>
 			<Path>Event/Ambi_2_Loop_Stop.bnk</Path>
@@ -10,5 +10,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F2E68005-60C6-5925-4B0A-A081D677E2C2}</FileHash>
+	<FileHash>{1BD71942-C9F2-B605-0E97-0CB7065BF802}</FileHash>
 </SoundBanksInfo>

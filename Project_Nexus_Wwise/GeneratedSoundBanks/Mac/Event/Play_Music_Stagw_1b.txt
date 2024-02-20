@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1053701372	Play_Music_Stagw_1b			\Music\Play_Music_Stagw_1b	
+

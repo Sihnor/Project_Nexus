@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{2C86464F-2577-4636-99EE-045C1778A0B0}",
     "Language": "SFX",
-    "Hash": "{607F4D05-11BA-50B3-47A5-28A1A998E287}",
+    "Hash": "{E7BD1614-61BE-6624-7CA4-AB242BE32A29}",
     "ObjectPath": "Play_Player_Bodyfall",
     "ShortName": "Play_Player_Bodyfall",
     "Path": "Event/Play_Player_Bodyfall.bnk",
@@ -77,8 +77,8 @@
       "ObjectPath": "\\Events\\Player\\PlayerLocomotion\\Play_Player_Bodyfall",
       "GUID": "{2C86464F-2577-4636-99EE-045C1778A0B0}",
       "DurationType": "OneShot",
-      "DurationMin": "0.4156916",
-      "DurationMax": "0.60136056",
+      "DurationMin": "0.35979274",
+      "DurationMax": "0.6947762",
       "MediaRefs": [
        {
         "Id": "377947128"
@@ -103,6 +103,6 @@
     ]
    }
   ],
-  "FileHash": "{DF6AAC3B-6E0E-FE60-386C-CF9D20DD775A}"
+  "FileHash": "{2D7EDC46-29F5-7B74-BFC5-95A3B6864DE1}"
  }
 }

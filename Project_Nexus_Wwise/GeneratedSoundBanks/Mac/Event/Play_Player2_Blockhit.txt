@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1409386042	Play_Player2_Blockhit			\Player2\Player2Combat\Play_Player2_Blockhit	
+

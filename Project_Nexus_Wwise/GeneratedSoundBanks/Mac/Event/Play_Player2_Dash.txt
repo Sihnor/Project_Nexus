@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3596877596	Play_Player2_Dash			\Player2\Player2Locomotion\Play_Player2_Dash	
+

@@ -1,0 +1,247 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "3108408445",
+    "Type": "Event",
+    "GUID": "{8C35D4D8-352D-4B69-B8D7-904A894A69E4}",
+    "Language": "SFX",
+    "Hash": "{C82103D3-9A2C-9AA9-7C92-007B9A5ECE34}",
+    "ObjectPath": "Play_Player2_Footsteps",
+    "ShortName": "Play_Player2_Footsteps",
+    "Path": "Event/Play_Player2_Footsteps.bnk",
+    "Media": [
+     {
+      "Id": "67593857",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_footsteps_puddle_04.wav",
+      "Path": "Media/67593857.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_footsteps_puddle_04_10C4C929.wem"
+     },
+     {
+      "Id": "301027720",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_footsteps_concrete_04.wav",
+      "Path": "Media/301027720.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_footsteps_concrete_04_10C4C929.wem"
+     },
+     {
+      "Id": "330289375",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_footsteps_concrete_02.wav",
+      "Path": "Media/330289375.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_footsteps_concrete_02_10C4C929.wem"
+     },
+     {
+      "Id": "406092065",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_footsteps_puddle_05.wav",
+      "Path": "Media/406092065.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_footsteps_puddle_05_10C4C929.wem"
+     },
+     {
+      "Id": "445959598",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_footsteps_concrete_06.wav",
+      "Path": "Media/445959598.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_footsteps_concrete_06_10C4C929.wem"
+     },
+     {
+      "Id": "632561365",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_footsteps_puddle_02.wav",
+      "Path": "Media/632561365.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_footsteps_puddle_02_10C4C929.wem"
+     },
+     {
+      "Id": "659928428",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_footsteps_concrete_01.wav",
+      "Path": "Media/659928428.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_footsteps_concrete_01_10C4C929.wem"
+     },
+     {
+      "Id": "695830248",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_footsteps_concrete_03.wav",
+      "Path": "Media/695830248.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_footsteps_concrete_03_10C4C929.wem"
+     },
+     {
+      "Id": "745414471",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_footsteps_puddle_01.wav",
+      "Path": "Media/745414471.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_footsteps_puddle_01_10C4C929.wem"
+     },
+     {
+      "Id": "759945326",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_footsteps_concrete_05.wav",
+      "Path": "Media/759945326.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_footsteps_concrete_05_10C4C929.wem"
+     },
+     {
+      "Id": "899471618",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_footsteps_puddle_06.wav",
+      "Path": "Media/899471618.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_footsteps_puddle_06_10C4C929.wem"
+     },
+     {
+      "Id": "985855415",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_footsteps_puddle_03.wav",
+      "Path": "Media/985855415.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_footsteps_puddle_03_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3108408445",
+      "Name": "Play_Player2_Footsteps",
+      "ObjectPath": "\\Events\\Player2\\Player2Locomotion\\Play_Player2_Footsteps",
+      "GUID": "{8C35D4D8-352D-4B69-B8D7-904A894A69E4}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.17020415",
+      "DurationMax": "0.30219695",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1044534455",
+         "Id": "2003927601",
+         "GUID": "{1EA3450A-CCE0-4188-A244-C7704C707E90}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "67593857"
+         },
+         {
+          "Id": "406092065"
+         },
+         {
+          "Id": "632561365"
+         },
+         {
+          "Id": "745414471"
+         },
+         {
+          "Id": "899471618"
+         },
+         {
+          "Id": "985855415"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1044534455",
+         "Id": "841620460",
+         "GUID": "{E812C4B3-3DB5-42FD-9C23-3A9B3A798CE7}",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "301027720"
+         },
+         {
+          "Id": "330289375"
+         },
+         {
+          "Id": "445959598"
+         },
+         {
+          "Id": "659928428"
+         },
+         {
+          "Id": "695830248"
+         },
+         {
+          "Id": "759945326"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "1044534455",
+      "Name": "GroundMaterialSwitch",
+      "ObjectPath": "\\Switches\\Default Work Unit\\GroundMaterialSwitch",
+      "GUID": "{837C1AB4-47B2-4EFB-B32C-0C393B49C2F7}",
+      "Switches": [
+       {
+        "Id": "841620460",
+        "Name": "Concrete",
+        "ObjectPath": "\\Switches\\Default Work Unit\\GroundMaterialSwitch\\Concrete",
+        "GUID": "{E812C4B3-3DB5-42FD-9C23-3A9B3A798CE7}"
+       },
+       {
+        "Id": "1216965916",
+        "Name": "Stone",
+        "ObjectPath": "\\Switches\\Default Work Unit\\GroundMaterialSwitch\\Stone",
+        "GUID": "{3C15D331-3AD8-4BFA-BA9A-E01D9D580F12}"
+       },
+       {
+        "Id": "2003927601",
+        "Name": "Puddle",
+        "ObjectPath": "\\Switches\\Default Work Unit\\GroundMaterialSwitch\\Puddle",
+        "GUID": "{1EA3450A-CCE0-4188-A244-C7704C707E90}"
+       },
+       {
+        "Id": "2185786256",
+        "Name": "Gravel",
+        "ObjectPath": "\\Switches\\Default Work Unit\\GroundMaterialSwitch\\Gravel",
+        "GUID": "{9464961A-39D2-4071-82AB-1C7E868448AA}"
+       },
+       {
+        "Id": "2195636714",
+        "Name": "Dirt",
+        "ObjectPath": "\\Switches\\Default Work Unit\\GroundMaterialSwitch\\Dirt",
+        "GUID": "{8BBE48CE-F73E-4AA9-B1FA-E4F009E5DEBD}"
+       },
+       {
+        "Id": "2654748154",
+        "Name": "Water",
+        "ObjectPath": "\\Switches\\Default Work Unit\\GroundMaterialSwitch\\Water",
+        "GUID": "{87606646-0DDD-4539-8AC3-7DD81A1DC005}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{1645B809-1478-E4CA-86D2-D9EB8412BDC9}"
+ }
+}
