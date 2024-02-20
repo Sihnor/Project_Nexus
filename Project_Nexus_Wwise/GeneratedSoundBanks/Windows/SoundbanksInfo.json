@@ -1451,7 +1451,7 @@
     "Type": "Event",
     "GUID": "{A9011CA4-F40B-415B-9C65-B4914BA1B74C}",
     "Language": "SFX",
-    "Hash": "{5C215F15-7BC1-AE04-0543-C21243EFFD43}",
+    "Hash": "{11638EB0-88D9-8704-DE37-E5343C03F606}",
     "ObjectPath": "Play_Music_Stagw_1b",
     "ShortName": "Play_Music_Stagw_1b",
     "Path": "Event/Play_Music_Stagw_1b.bnk",
@@ -4292,7 +4292,7 @@
     "Type": "Event",
     "GUID": "{1CC99C31-E23D-4648-94D8-90671E36B4EB}",
     "Language": "SFX",
-    "Hash": "{6AB1E238-D0DC-10EA-1BD4-407FFC4752CC}",
+    "Hash": "{BA319596-49E2-69B4-1278-A51657E3981B}",
     "ObjectPath": "Play_Music_Menu",
     "ShortName": "Play_Music_Menu",
     "Path": "Event/Play_Music_Menu.bnk",
@@ -6691,7 +6691,7 @@
     "Type": "Event",
     "GUID": "{62D78041-F9D1-4419-AE06-E663C92CE753}",
     "Language": "SFX",
-    "Hash": "{2C30B08A-4937-43D7-09C9-F61A16740159}",
+    "Hash": "{25B5BB24-8F85-C784-8DB2-77E7879127AF}",
     "ObjectPath": "Play_Music_Stage_1a",
     "ShortName": "Play_Music_Stage_1a",
     "Path": "Event/Play_Music_Stage_1a.bnk",
@@ -8852,6 +8852,6 @@
     ]
    }
   ],
-  "FileHash": "{A502DDB4-590F-5593-F2B2-F8E722108269}"
+  "FileHash": "{9E92A218-CF84-5DAF-2FC1-6CA64A0A4986}"
  }
 }

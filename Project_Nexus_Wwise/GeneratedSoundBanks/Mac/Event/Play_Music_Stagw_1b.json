@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{A9011CA4-F40B-415B-9C65-B4914BA1B74C}",
     "Language": "SFX",
-    "Hash": "{5C215F15-7BC1-AE04-0543-C21243EFFD43}",
+    "Hash": "{11638EB0-88D9-8704-DE37-E5343C03F606}",
     "ObjectPath": "Play_Music_Stagw_1b",
     "ShortName": "Play_Music_Stagw_1b",
     "Path": "Event/Play_Music_Stagw_1b.bnk",
@@ -811,6 +811,6 @@
     ]
    }
   ],
-  "FileHash": "{0CA849EA-EAF5-68D9-18CA-EABDFB8D65E8}"
+  "FileHash": "{20BEBCE4-0746-0750-0732-D08EA30403F7}"
  }
 }
