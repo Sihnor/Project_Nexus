@@ -1,0 +1,108 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "3165952497",
+    "Type": "Event",
+    "GUID": "{E600404F-4142-4E2D-B7A6-D5AEE9951BBF}",
+    "Language": "SFX",
+    "Hash": "{20942FA4-43C1-7BD0-02D6-671608F3A827}",
+    "ObjectPath": "Play_Player2_Landing",
+    "ShortName": "Play_Player2_Landing",
+    "Path": "Event/Play_Player2_Landing.bnk",
+    "Media": [
+     {
+      "Id": "242860944",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_landing_05.wav",
+      "Path": "Media/242860944.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_landing_05_10C4C929.wem"
+     },
+     {
+      "Id": "285999037",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_landing_06.wav",
+      "Path": "Media/285999037.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_landing_06_10C4C929.wem"
+     },
+     {
+      "Id": "344642312",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_landing_01.wav",
+      "Path": "Media/344642312.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_landing_01_10C4C929.wem"
+     },
+     {
+      "Id": "662348136",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_landing_04.wav",
+      "Path": "Media/662348136.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_landing_04_10C4C929.wem"
+     },
+     {
+      "Id": "846625063",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_landing_03.wav",
+      "Path": "Media/846625063.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_landing_03_10C4C929.wem"
+     },
+     {
+      "Id": "934277310",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_landing_02.wav",
+      "Path": "Media/934277310.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_landing_02_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3165952497",
+      "Name": "Play_Player2_Landing",
+      "ObjectPath": "\\Events\\Player2\\Player2Locomotion\\Play_Player2_Landing",
+      "GUID": "{E600404F-4142-4E2D-B7A6-D5AEE9951BBF}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.1477543",
+      "DurationMax": "0.2710024",
+      "MediaRefs": [
+       {
+        "Id": "242860944"
+       },
+       {
+        "Id": "285999037"
+       },
+       {
+        "Id": "344642312"
+       },
+       {
+        "Id": "662348136"
+       },
+       {
+        "Id": "846625063"
+       },
+       {
+        "Id": "934277310"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{26D40BE7-B7D0-2E18-C158-F33B22D64C4E}"
+ }
+}

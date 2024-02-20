@@ -18,7 +18,7 @@
     "Type": "Event",
     "GUID": "{27E85706-E807-4F1E-A42D-5B83ED9D03A3}",
     "Language": "SFX",
-    "Hash": "{6FF2DB43-736D-9593-BA5E-AFD5B6F0797B}",
+    "Hash": "{67E36742-4075-1684-8592-91DF71446F0E}",
     "ObjectPath": "Play_Player_Footsteps",
     "ShortName": "Play_Player_Footsteps",
     "Path": "Event/Play_Player_Footsteps.bnk",
@@ -139,8 +139,8 @@
       "ObjectPath": "\\Events\\Player\\PlayerLocomotion\\Play_Player_Footsteps",
       "GUID": "{27E85706-E807-4F1E-A42D-5B83ED9D03A3}",
       "DurationType": "OneShot",
-      "DurationMin": "0.17385939",
-      "DurationMax": "0.5671767",
+      "DurationMin": "0.21993658",
+      "DurationMax": "0.4501684",
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -250,36 +250,216 @@
     ]
    },
    {
-    "Id": "161393517",
+    "Id": "106912753",
     "Type": "Event",
-    "GUID": "{A854F97E-93DC-455A-B406-D6C171EA282D}",
+    "GUID": "{AC432697-421D-452D-A0E0-ED705292EDA8}",
     "Language": "SFX",
-    "Hash": "{87F63879-5229-B51B-87A1-44B8F666A600}",
-    "ObjectPath": "Play_TestBeep_lp_3D",
-    "ShortName": "Play_TestBeep_lp_3D",
-    "Path": "Event/Play_TestBeep_lp_3D.bnk",
+    "Hash": "{112425A6-B56B-24E3-3EC9-2E70F5E226C1}",
+    "ObjectPath": "Stop_Music_Menu",
+    "ShortName": "Stop_Music_Menu",
+    "Path": "Event/Stop_Music_Menu.bnk",
+    "Events": [
+     {
+      "Id": "106912753",
+      "Name": "Stop_Music_Menu",
+      "ObjectPath": "\\Events\\Music\\Stop_Music_Menu",
+      "GUID": "{AC432697-421D-452D-A0E0-ED705292EDA8}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   },
+   {
+    "Id": "166827144",
+    "Type": "Event",
+    "GUID": "{853E51E0-E4E7-42E9-AB83-D4CB3ED432C8}",
+    "Language": "SFX",
+    "Hash": "{E722431C-51EE-D640-8B5F-FBEF236E2402}",
+    "ObjectPath": "Play_Player2_Punch_Heavy",
+    "ShortName": "Play_Player2_Punch_Heavy",
+    "Path": "Event/Play_Player2_Punch_Heavy.bnk",
     "Media": [
      {
-      "Id": "572018551",
+      "Id": "232473678",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "TestFiles\\sfx_test_beep_long.wav",
-      "Path": "Media/572018551.wem",
-      "CachePath": "SFX/TestFiles/sfx_test_beep_long_D79FB2B7.wem"
+      "ShortName": "sfx_fighter2_combat_heavyattack_04.wav",
+      "Path": "Media/232473678.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_heavyattack_04_10C4C929.wem"
+     },
+     {
+      "Id": "431709875",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_heavyattack_02.wav",
+      "Path": "Media/431709875.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_heavyattack_02_10C4C929.wem"
+     },
+     {
+      "Id": "474139874",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_heavyattack_03.wav",
+      "Path": "Media/474139874.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_heavyattack_03_10C4C929.wem"
+     },
+     {
+      "Id": "576718424",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_heavyattack_06.wav",
+      "Path": "Media/576718424.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_heavyattack_06_10C4C929.wem"
+     },
+     {
+      "Id": "711237658",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_heavyattack_01.wav",
+      "Path": "Media/711237658.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_heavyattack_01_10C4C929.wem"
+     },
+     {
+      "Id": "1013405996",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_heavyattack_05.wav",
+      "Path": "Media/1013405996.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_heavyattack_05_10C4C929.wem"
      }
     ],
     "Events": [
      {
-      "Id": "161393517",
-      "Name": "Play_TestBeep_lp_3D",
-      "ObjectPath": "\\Events\\TestEvents\\Play_TestBeep_lp_3D",
-      "GUID": "{A854F97E-93DC-455A-B406-D6C171EA282D}",
-      "MaxAttenuation": "50",
-      "DurationType": "Infinite",
+      "Id": "166827144",
+      "Name": "Play_Player2_Punch_Heavy",
+      "ObjectPath": "\\Events\\Player2\\Player2Combat\\Play_Player2_Punch_Heavy",
+      "GUID": "{853E51E0-E4E7-42E9-AB83-D4CB3ED432C8}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.3487932",
+      "DurationMax": "0.56508785",
       "MediaRefs": [
        {
-        "Id": "572018551"
+        "Id": "232473678"
+       },
+       {
+        "Id": "431709875"
+       },
+       {
+        "Id": "474139874"
+       },
+       {
+        "Id": "576718424"
+       },
+       {
+        "Id": "711237658"
+       },
+       {
+        "Id": "1013405996"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "168095654",
+    "Type": "Event",
+    "GUID": "{6A53B62E-A897-495E-94B6-9D497FF0D9E3}",
+    "Language": "SFX",
+    "Hash": "{3BE07320-B059-F0B7-6D56-D9A05E045020}",
+    "ObjectPath": "Play_Player2_Grab",
+    "ShortName": "Play_Player2_Grab",
+    "Path": "Event/Play_Player2_Grab.bnk",
+    "Media": [
+     {
+      "Id": "134630083",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_grab_02.wav",
+      "Path": "Media/134630083.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_grab_02_77F0026E.wem"
+     },
+     {
+      "Id": "617462176",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_grab_06.wav",
+      "Path": "Media/617462176.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_grab_06_A9089ED8.wem"
+     },
+     {
+      "Id": "756468279",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_grab_03.wav",
+      "Path": "Media/756468279.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_grab_03_732C0E4F.wem"
+     },
+     {
+      "Id": "809176333",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_grab_04.wav",
+      "Path": "Media/809176333.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_grab_04_9A71A74C.wem"
+     },
+     {
+      "Id": "861252882",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_grab_05.wav",
+      "Path": "Media/861252882.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_grab_05_3DB8813C.wem"
+     },
+     {
+      "Id": "867059040",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_grab_01.wav",
+      "Path": "Media/867059040.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_grab_01_4AE7ACF3.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "168095654",
+      "Name": "Play_Player2_Grab",
+      "ObjectPath": "\\Events\\Player2\\Player2Combat\\Play_Player2_Grab",
+      "GUID": "{6A53B62E-A897-495E-94B6-9D497FF0D9E3}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.23766193",
+      "DurationMax": "0.34754455",
+      "MediaRefs": [
+       {
+        "Id": "134630083"
+       },
+       {
+        "Id": "617462176"
+       },
+       {
+        "Id": "756468279"
+       },
+       {
+        "Id": "809176333"
+       },
+       {
+        "Id": "861252882"
+       },
+       {
+        "Id": "867059040"
        }
       ]
      }
@@ -290,7 +470,7 @@
     "Type": "Event",
     "GUID": "{B62D6C1F-687C-48B5-81B8-7924344A1746}",
     "Language": "SFX",
-    "Hash": "{1B443DC7-4A74-B0F9-33C5-EC3CD56C871C}",
+    "Hash": "{79FE82BC-C8BC-387A-ABED-BDCA2AAE177E}",
     "ObjectPath": "Play_Back_Button",
     "ShortName": "Play_Back_Button",
     "Path": "Event/Play_Back_Button.bnk",
@@ -323,59 +503,156 @@
     ]
    },
    {
+    "Id": "216287831",
+    "Type": "Event",
+    "GUID": "{7163BE23-43B2-4B38-82D6-14BFD3255622}",
+    "Language": "SFX",
+    "Hash": "{3D42C64A-64BA-ACEA-52C9-1637D64FF705}",
+    "ObjectPath": "Play_Player2_Crouch_Out",
+    "ShortName": "Play_Player2_Crouch_Out",
+    "Path": "Event/Play_Player2_Crouch_Out.bnk",
+    "Media": [
+     {
+      "Id": "147451652",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_crouchup_02.wav",
+      "Path": "Media/147451652.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_crouchup_02_10C4C929.wem"
+     },
+     {
+      "Id": "281792141",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_crouchup_04.wav",
+      "Path": "Media/281792141.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_crouchup_04_10C4C929.wem"
+     },
+     {
+      "Id": "333328705",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_crouchup_01.wav",
+      "Path": "Media/333328705.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_crouchup_01_10C4C929.wem"
+     },
+     {
+      "Id": "387862631",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_crouchup_06.wav",
+      "Path": "Media/387862631.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_crouchup_06_10C4C929.wem"
+     },
+     {
+      "Id": "653710083",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_crouchup_05.wav",
+      "Path": "Media/653710083.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_crouchup_05_10C4C929.wem"
+     },
+     {
+      "Id": "734022748",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_crouchup_03.wav",
+      "Path": "Media/734022748.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_crouchup_03_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "216287831",
+      "Name": "Play_Player2_Crouch_Out",
+      "ObjectPath": "\\Events\\Player2\\Player2Locomotion\\Play_Player2_Crouch_Out",
+      "GUID": "{7163BE23-43B2-4B38-82D6-14BFD3255622}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.43",
+      "DurationMax": "0.5317708",
+      "MediaRefs": [
+       {
+        "Id": "147451652"
+       },
+       {
+        "Id": "281792141"
+       },
+       {
+        "Id": "333328705"
+       },
+       {
+        "Id": "387862631"
+       },
+       {
+        "Id": "653710083"
+       },
+       {
+        "Id": "734022748"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "253333564",
     "Type": "Event",
     "GUID": "{1D179E9F-6385-46AE-9BD6-B3918124CCD2}",
     "Language": "SFX",
-    "Hash": "{815BE929-A691-9CB6-31CA-78D0679DB903}",
+    "Hash": "{37F3FEBD-2D8E-DCFA-B4DB-3FAE0EC87F02}",
     "ObjectPath": "Plyr2_Attack_Light",
     "ShortName": "Plyr2_Attack_Light",
     "Path": "Event/Plyr2_Attack_Light.bnk",
     "Media": [
      {
-      "Id": "55257799",
+      "Id": "17703360",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "vo_fighter1_punch_light_05.wav",
-      "Path": "Media/55257799.wem",
-      "CachePath": "SFX/vo_fighter1_punch_light_05_10C4C929.wem"
+      "ShortName": "vo_fighter2_punch_light_05.wav",
+      "Path": "Media/17703360.wem",
+      "CachePath": "SFX/vo_fighter2_punch_light_05_10C4C929.wem"
      },
      {
-      "Id": "86967045",
+      "Id": "172704328",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "vo_fighter1_punch_light_03.wav",
-      "Path": "Media/86967045.wem",
-      "CachePath": "SFX/vo_fighter1_punch_light_03_10C4C929.wem"
+      "ShortName": "vo_fighter2_punch_light_03.wav",
+      "Path": "Media/172704328.wem",
+      "CachePath": "SFX/vo_fighter2_punch_light_03_10C4C929.wem"
      },
      {
-      "Id": "458298908",
+      "Id": "213664664",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "vo_fighter1_punch_light_01.wav",
-      "Path": "Media/458298908.wem",
-      "CachePath": "SFX/vo_fighter1_punch_light_01_10C4C929.wem"
+      "ShortName": "vo_fighter2_punch_light_01.wav",
+      "Path": "Media/213664664.wem",
+      "CachePath": "SFX/vo_fighter2_punch_light_01_10C4C929.wem"
      },
      {
-      "Id": "538408692",
+      "Id": "275575852",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "vo_fighter1_punch_light_04.wav",
-      "Path": "Media/538408692.wem",
-      "CachePath": "SFX/vo_fighter1_punch_light_04_10C4C929.wem"
+      "ShortName": "vo_fighter2_punch_light_04.wav",
+      "Path": "Media/275575852.wem",
+      "CachePath": "SFX/vo_fighter2_punch_light_04_10C4C929.wem"
      },
      {
-      "Id": "599159208",
+      "Id": "729733461",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "vo_fighter1_punch_light_02.wav",
-      "Path": "Media/599159208.wem",
-      "CachePath": "SFX/vo_fighter1_punch_light_02_10C4C929.wem"
+      "ShortName": "vo_fighter2_punch_light_02.wav",
+      "Path": "Media/729733461.wem",
+      "CachePath": "SFX/vo_fighter2_punch_light_02_10C4C929.wem"
      }
     ],
     "Events": [
@@ -385,47 +662,25 @@
       "ObjectPath": "\\Events\\Player_Voices\\Plyr2_Attack_Light",
       "GUID": "{1D179E9F-6385-46AE-9BD6-B3918124CCD2}",
       "DurationType": "OneShot",
-      "DurationMin": "0.27291667",
-      "DurationMax": "0.4365",
+      "DurationMin": "0.4275625",
+      "DurationMax": "0.75",
       "MediaRefs": [
        {
-        "Id": "55257799"
+        "Id": "17703360"
        },
        {
-        "Id": "86967045"
+        "Id": "172704328"
        },
        {
-        "Id": "458298908"
+        "Id": "213664664"
        },
        {
-        "Id": "538408692"
+        "Id": "275575852"
        },
        {
-        "Id": "599159208"
+        "Id": "729733461"
        }
       ]
-     }
-    ]
-   },
-   {
-    "Id": "428126542",
-    "Type": "Event",
-    "GUID": "{E5BE2FFF-1923-4532-8105-65C7E6D3043F}",
-    "Language": "SFX",
-    "Hash": "{9C749DEF-3AD7-51EC-0C03-D01C034A4554}",
-    "ObjectPath": "Ambi_3_Loop_Stop",
-    "ShortName": "Ambi_3_Loop_Stop",
-    "Path": "Event/Ambi_3_Loop_Stop.bnk",
-    "Events": [
-     {
-      "Id": "428126542",
-      "Name": "Ambi_3_Loop_Stop",
-      "ObjectPath": "\\Events\\Ambience\\2D\\Ambi_3_Loop_Stop",
-      "GUID": "{E5BE2FFF-1923-4532-8105-65C7E6D3043F}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
      }
     ]
    },
@@ -434,7 +689,7 @@
     "Type": "Event",
     "GUID": "{6A3B97C4-67AE-45C1-A149-EBF2C7E68E30}",
     "Language": "SFX",
-    "Hash": "{24B4D009-6A31-8F40-3F49-0FCCF609CEBC}",
+    "Hash": "{C79A04EA-0ECC-3F5A-11C4-33C03C58D5AC}",
     "ObjectPath": "Ambi_2_Loop_Start",
     "ShortName": "Ambi_2_Loop_Start",
     "Path": "Event/Ambi_2_Loop_Start.bnk",
@@ -493,64 +748,64 @@
     "Type": "Event",
     "GUID": "{237BD721-40C9-4B31-BDC1-78F59500DF4D}",
     "Language": "SFX",
-    "Hash": "{7AF77AE3-4B94-1B27-6677-AFEA9C2A340E}",
+    "Hash": "{7A6B98C5-18D8-F9A0-363E-1226D2F32FA6}",
     "ObjectPath": "Play_Player_Jump",
     "ShortName": "Play_Player_Jump",
     "Path": "Event/Play_Player_Jump.bnk",
     "Media": [
      {
-      "Id": "44536699",
+      "Id": "71411161",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "sfx_fighter1_movement_jump__04.wav",
-      "Path": "Media/44536699.wem",
-      "CachePath": "SFX/sfx_fighter1_movement_jump__04_10C4C929.wem"
+      "ShortName": "sfx_fighter1_movement_jump_03.wav",
+      "Path": "Media/71411161.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_jump_03_10C4C929.wem"
      },
      {
-      "Id": "169644528",
+      "Id": "287169205",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "sfx_fighter1_movement_jump__05.wav",
-      "Path": "Media/169644528.wem",
-      "CachePath": "SFX/sfx_fighter1_movement_jump__05_10C4C929.wem"
+      "ShortName": "sfx_fighter1_movement_jump_01.wav",
+      "Path": "Media/287169205.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_jump_01_10C4C929.wem"
      },
      {
-      "Id": "262497759",
+      "Id": "502994276",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "sfx_fighter1_movement_jump__02.wav",
-      "Path": "Media/262497759.wem",
-      "CachePath": "SFX/sfx_fighter1_movement_jump__02_10C4C929.wem"
+      "ShortName": "sfx_fighter1_movement_jump_06.wav",
+      "Path": "Media/502994276.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_jump_06_10C4C929.wem"
      },
      {
-      "Id": "567642391",
+      "Id": "651099545",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "sfx_fighter1_movement_jump__06.wav",
-      "Path": "Media/567642391.wem",
-      "CachePath": "SFX/sfx_fighter1_movement_jump__06_10C4C929.wem"
+      "ShortName": "sfx_fighter1_movement_jump_05.wav",
+      "Path": "Media/651099545.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_jump_05_10C4C929.wem"
      },
      {
-      "Id": "615857249",
+      "Id": "680609463",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "sfx_fighter1_movement_jump__03.wav",
-      "Path": "Media/615857249.wem",
-      "CachePath": "SFX/sfx_fighter1_movement_jump__03_10C4C929.wem"
+      "ShortName": "sfx_fighter1_movement_jump_04.wav",
+      "Path": "Media/680609463.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_jump_04_10C4C929.wem"
      },
      {
-      "Id": "724190295",
+      "Id": "1025118858",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "sfx_fighter1_movement_jump__01.wav",
-      "Path": "Media/724190295.wem",
-      "CachePath": "SFX/sfx_fighter1_movement_jump__01_10C4C929.wem"
+      "ShortName": "sfx_fighter1_movement_jump_02.wav",
+      "Path": "Media/1025118858.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_jump_02_10C4C929.wem"
      }
     ],
     "Events": [
@@ -560,26 +815,26 @@
       "ObjectPath": "\\Events\\Player\\PlayerLocomotion\\Play_Player_Jump",
       "GUID": "{237BD721-40C9-4B31-BDC1-78F59500DF4D}",
       "DurationType": "OneShot",
-      "DurationMin": "0.33138883",
-      "DurationMax": "0.52998096",
+      "DurationMin": "0.42559156",
+      "DurationMax": "0.6107242",
       "MediaRefs": [
        {
-        "Id": "44536699"
+        "Id": "71411161"
        },
        {
-        "Id": "169644528"
+        "Id": "287169205"
        },
        {
-        "Id": "262497759"
+        "Id": "502994276"
        },
        {
-        "Id": "567642391"
+        "Id": "651099545"
        },
        {
-        "Id": "615857249"
+        "Id": "680609463"
        },
        {
-        "Id": "724190295"
+        "Id": "1025118858"
        }
       ]
      }
@@ -590,7 +845,7 @@
     "Type": "Event",
     "GUID": "{820228B7-CD1A-459B-A81C-F381CF138931}",
     "Language": "SFX",
-    "Hash": "{D2F6C8C3-D7C6-AA93-40D9-BA90B063D3A1}",
+    "Hash": "{42654768-0EAB-4DFE-3DF9-842876AF060C}",
     "ObjectPath": "Com_Char_Wins_Lauren",
     "ShortName": "Com_Char_Wins_Lauren",
     "Path": "Event/Com_Char_Wins_Lauren.bnk",
@@ -627,7 +882,7 @@
     "Type": "Event",
     "GUID": "{2C86464F-2577-4636-99EE-045C1778A0B0}",
     "Language": "SFX",
-    "Hash": "{607F4D05-11BA-50B3-47A5-28A1A998E287}",
+    "Hash": "{E7BD1614-61BE-6624-7CA4-AB242BE32A29}",
     "ObjectPath": "Play_Player_Bodyfall",
     "ShortName": "Play_Player_Bodyfall",
     "Path": "Event/Play_Player_Bodyfall.bnk",
@@ -694,8 +949,8 @@
       "ObjectPath": "\\Events\\Player\\PlayerLocomotion\\Play_Player_Bodyfall",
       "GUID": "{2C86464F-2577-4636-99EE-045C1778A0B0}",
       "DurationType": "OneShot",
-      "DurationMin": "0.4156916",
-      "DurationMax": "0.60136056",
+      "DurationMin": "0.35979274",
+      "DurationMax": "0.6947762",
       "MediaRefs": [
        {
         "Id": "377947128"
@@ -724,7 +979,7 @@
     "Type": "Event",
     "GUID": "{50D65725-C02E-4F28-8D2E-1291893F7AA3}",
     "Language": "SFX",
-    "Hash": "{D865B2F3-9CC4-8ADF-1908-FA4D957B0434}",
+    "Hash": "{08F75B49-024B-4972-4B40-512D3D000C6B}",
     "ObjectPath": "Plyr2_Attack_Heavy",
     "ShortName": "Plyr2_Attack_Heavy",
     "Path": "Event/Plyr2_Attack_Heavy.bnk",
@@ -809,7 +1064,7 @@
     "Type": "Bus",
     "GUID": "{D0D5848F-8E0F-47CD-A3E5-17FA4D8E1C38}",
     "Language": "SFX",
-    "Hash": "{174F6586-5AB2-6971-3676-995F746454DC}",
+    "Hash": "{B01E399E-E942-24C7-2440-674FBA92FC0D}",
     "ObjectPath": "Alley",
     "ShortName": "Alley",
     "Path": "Bus/Alley.bnk",
@@ -850,11 +1105,108 @@
     ]
    },
    {
+    "Id": "675253000",
+    "Type": "Event",
+    "GUID": "{1C6F23AF-8E95-4E1E-8297-02B637218C6D}",
+    "Language": "SFX",
+    "Hash": "{ACCADA76-3A0C-3B95-FB0D-C24975C3BB8B}",
+    "ObjectPath": "Play_Player_Bounce",
+    "ShortName": "Play_Player_Bounce",
+    "Path": "Event/Play_Player_Bounce.bnk",
+    "Media": [
+     {
+      "Id": "93751365",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_bounce_05.wav",
+      "Path": "Media/93751365.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_bounce_05_10C4C929.wem"
+     },
+     {
+      "Id": "106303132",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_bounce_06.wav",
+      "Path": "Media/106303132.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_bounce_06_10C4C929.wem"
+     },
+     {
+      "Id": "155359304",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_bounce_02.wav",
+      "Path": "Media/155359304.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_bounce_02_10C4C929.wem"
+     },
+     {
+      "Id": "259948865",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_bounce_04.wav",
+      "Path": "Media/259948865.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_bounce_04_10C4C929.wem"
+     },
+     {
+      "Id": "300286671",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_bounce_01.wav",
+      "Path": "Media/300286671.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_bounce_01_10C4C929.wem"
+     },
+     {
+      "Id": "505204503",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_bounce_03.wav",
+      "Path": "Media/505204503.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_bounce_03_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "675253000",
+      "Name": "Play_Player_Bounce",
+      "ObjectPath": "\\Events\\Player\\PlayerLocomotion\\Play_Player_Bounce",
+      "GUID": "{1C6F23AF-8E95-4E1E-8297-02B637218C6D}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.24718283",
+      "DurationMax": "0.3809535",
+      "MediaRefs": [
+       {
+        "Id": "93751365"
+       },
+       {
+        "Id": "106303132"
+       },
+       {
+        "Id": "155359304"
+       },
+       {
+        "Id": "259948865"
+       },
+       {
+        "Id": "300286671"
+       },
+       {
+        "Id": "505204503"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "725346841",
     "Type": "Event",
     "GUID": "{BD4FEB80-88A8-45D8-9FBF-7EF06D02BC15}",
     "Language": "SFX",
-    "Hash": "{037E82E7-8317-50F9-A888-539FF554E9FF}",
+    "Hash": "{382F2CCD-4014-3FD2-2B6A-66E5502FEBA9}",
     "ObjectPath": "Play_Player_Landing",
     "ShortName": "Play_Player_Landing",
     "Path": "Event/Play_Player_Landing.bnk",
@@ -921,8 +1273,8 @@
       "ObjectPath": "\\Events\\Player\\PlayerLocomotion\\Play_Player_Landing",
       "GUID": "{BD4FEB80-88A8-45D8-9FBF-7EF06D02BC15}",
       "DurationType": "OneShot",
-      "DurationMin": "0.20616615",
-      "DurationMax": "0.42318013",
+      "DurationMin": "0.22211511",
+      "DurationMax": "0.39279372",
       "MediaRefs": [
        {
         "Id": "606884774"
@@ -951,7 +1303,7 @@
     "Type": "Event",
     "GUID": "{BB6429FE-6011-4472-9010-9CAF484600A7}",
     "Language": "SFX",
-    "Hash": "{283A0480-5A07-BF7C-D167-B7C43B030ED9}",
+    "Hash": "{866C9205-26B3-7D16-5C76-267264079839}",
     "ObjectPath": "Play_Settings_Select",
     "ShortName": "Play_Settings_Select",
     "Path": "Event/Play_Settings_Select.bnk",
@@ -984,46 +1336,11 @@
     ]
    },
    {
-    "Id": "858964037",
-    "Type": "Event",
-    "GUID": "{5C14B9D2-5B11-44D1-9EAF-3D6225FA3912}",
-    "Language": "SFX",
-    "Hash": "{3C837870-C4B3-87EA-6959-C9A403E21A19}",
-    "ObjectPath": "Play_TestBeep_lp",
-    "ShortName": "Play_TestBeep_lp",
-    "Path": "Event/Play_TestBeep_lp.bnk",
-    "Media": [
-     {
-      "Id": "572018551",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "TestFiles\\sfx_test_beep_long.wav",
-      "Path": "Media/572018551.wem",
-      "CachePath": "SFX/TestFiles/sfx_test_beep_long_D79FB2B7.wem"
-     }
-    ],
-    "Events": [
-     {
-      "Id": "858964037",
-      "Name": "Play_TestBeep_lp",
-      "ObjectPath": "\\Events\\TestEvents\\Play_TestBeep_lp",
-      "GUID": "{5C14B9D2-5B11-44D1-9EAF-3D6225FA3912}",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "572018551"
-       }
-      ]
-     }
-    ]
-   },
-   {
     "Id": "880454473",
     "Type": "Event",
     "GUID": "{5A6C30F2-2944-40B2-A4D9-1A142FBE1444}",
     "Language": "SFX",
-    "Hash": "{42B01F05-EF82-4EA4-3CDB-878A9DCEEEE8}",
+    "Hash": "{8C91BE4F-D76D-4CCC-728F-BC464A67AE3C}",
     "ObjectPath": "Play_Select_Button",
     "ShortName": "Play_Select_Button",
     "Path": "Event/Play_Select_Button.bnk",
@@ -1060,7 +1377,7 @@
     "Type": "Event",
     "GUID": "{3DE5C542-49C6-4EF5-B5BE-60CB49F75D00}",
     "Language": "SFX",
-    "Hash": "{A11231B6-56DF-B847-4A2B-1CF58E11B9B2}",
+    "Hash": "{C05E9F92-5205-A9D6-1196-67B8A6E05824}",
     "ObjectPath": "Com_Char_Wins_Jack",
     "ShortName": "Com_Char_Wins_Jack",
     "Path": "Event/Com_Char_Wins_Jack.bnk",
@@ -1093,33 +1410,11 @@
     ]
    },
    {
-    "Id": "903081441",
-    "Type": "Event",
-    "GUID": "{A5135C10-7237-4528-BB2B-2CF6187A56A9}",
-    "Language": "SFX",
-    "Hash": "{E0D24ED7-A40A-03CB-741F-094FBD675D12}",
-    "ObjectPath": "Play_AmbienceMain",
-    "ShortName": "Play_AmbienceMain",
-    "Path": "Event/Play_AmbienceMain.bnk",
-    "Events": [
-     {
-      "Id": "903081441",
-      "Name": "Play_AmbienceMain",
-      "ObjectPath": "\\Events\\Ambience_sani\\Play_AmbienceMain",
-      "GUID": "{A5135C10-7237-4528-BB2B-2CF6187A56A9}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     }
-    ]
-   },
-   {
     "Id": "986664061",
     "Type": "Event",
     "GUID": "{D586571B-518E-44CF-8A2E-6B68BFDB5D01}",
     "Language": "SFX",
-    "Hash": "{17352C94-6167-FB9E-D030-6B74E06F2B62}",
+    "Hash": "{09E087E1-A71E-9115-CAB6-0351A4636FEA}",
     "ObjectPath": "Play_Pause_Out",
     "ShortName": "Play_Pause_Out",
     "Path": "Event/Play_Pause_Out.bnk",
@@ -1152,11 +1447,816 @@
     ]
    },
    {
+    "Id": "1053701372",
+    "Type": "Event",
+    "GUID": "{A9011CA4-F40B-415B-9C65-B4914BA1B74C}",
+    "Language": "SFX",
+    "Hash": "{5C215F15-7BC1-AE04-0543-C21243EFFD43}",
+    "ObjectPath": "Play_Music_Stagw_1b",
+    "ShortName": "Play_Music_Stagw_1b",
+    "Path": "Event/Play_Music_Stagw_1b.bnk",
+    "Media": [
+     {
+      "Id": "1836545",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-B-Chorus_Male-Oh-Chor_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/1836545.wem",
+      "CachePath": "SFX/Stage2-B-Chorus_Male-Oh-Chor_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "4274385",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-B-Strophe_Guitar1_127bpm4-4_L4M_P0.wav",
+      "Path": "Media/4274385.wem",
+      "CachePath": "SFX/Stage2-B-Strophe_Guitar1_127bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "19018753",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-A-Bridge_Drums_127bpm4-4_L4M_P0.wav",
+      "Path": "Media/19018753.wem",
+      "CachePath": "SFX/Stage2-A-Bridge_Drums_127bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "25747088",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-B-Chorus_Orchestra_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/25747088.wem",
+      "CachePath": "SFX/Stage2-B-Chorus_Orchestra_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "34748751",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-D-Chorus_Male-Ah-Chor_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/34748751.wem",
+      "CachePath": "SFX/Stage2-D-Chorus_Male-Ah-Chor_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "59894170",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-B-Chorus_Brass_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/59894170.wem",
+      "CachePath": "SFX/Stage2-B-Chorus_Brass_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "69677015",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-B-Chorus_Guitar2_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/69677015.wem",
+      "CachePath": "SFX/Stage2-B-Chorus_Guitar2_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "91720265",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-D-Chorus_Drums_127bpm4-4_L8M_P0 .wav",
+      "Path": "Media/91720265.wem",
+      "CachePath": "SFX/Stage2-D-Chorus_Drums_127bpm4-4_L8M_P0 _D79FB2B7.wem"
+     },
+     {
+      "Id": "98717790",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-B-Strophe_Drums_127bpm4-4_L4M_P0.wav",
+      "Path": "Media/98717790.wem",
+      "CachePath": "SFX/Stage2-B-Strophe_Drums_127bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "109332476",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-B-Chorus_Lead-Viola_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/109332476.wem",
+      "CachePath": "SFX/Stage2-B-Chorus_Lead-Viola_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "144038015",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-C-Chorus_Back-Viola-R_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/144038015.wem",
+      "CachePath": "SFX/Stage2-C-Chorus_Back-Viola-R_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "184904425",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-A-Strophe_Guitar1_127bpm4-4_L4M_P0.wav",
+      "Path": "Media/184904425.wem",
+      "CachePath": "SFX/Stage2-A-Strophe_Guitar1_127bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "207434630",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-B-Strophe_Back-Viola-R_127bpm4-4_L4M_P0.wav",
+      "Path": "Media/207434630.wem",
+      "CachePath": "SFX/Stage2-B-Strophe_Back-Viola-R_127bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "210383655",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-B-Strophe_Guitar2_127bpm4-4_L4M_P0.wav",
+      "Path": "Media/210383655.wem",
+      "CachePath": "SFX/Stage2-B-Strophe_Guitar2_127bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "223375965",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-D-Chorus_Female-Ah-Chor_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/223375965.wem",
+      "CachePath": "SFX/Stage2-D-Chorus_Female-Ah-Chor_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "276493761",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-C-Strophe_Back-Viola-R_127bpm4-4_L4M_P0.wav",
+      "Path": "Media/276493761.wem",
+      "CachePath": "SFX/Stage2-C-Strophe_Back-Viola-R_127bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "318182342",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-A-Chorus_Drums_127bpm4-4_L8M_P1.wav",
+      "Path": "Media/318182342.wem",
+      "CachePath": "SFX/Stage2-A-Chorus_Drums_127bpm4-4_L8M_P1_D79FB2B7.wem"
+     },
+     {
+      "Id": "353737771",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-A-Chorus_Guitar2_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/353737771.wem",
+      "CachePath": "SFX/Stage2-A-Chorus_Guitar2_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "376806526",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-B-Strophe_Back-Viola-L_127bpm4-4_L4M_P0.wav",
+      "Path": "Media/376806526.wem",
+      "CachePath": "SFX/Stage2-B-Strophe_Back-Viola-L_127bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "382278126",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-A-Chorus_Female-Ah-Chor_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/382278126.wem",
+      "CachePath": "SFX/Stage2-A-Chorus_Female-Ah-Chor_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "392364824",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-A-Chorus_Lead-Viola_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/392364824.wem",
+      "CachePath": "SFX/Stage2-A-Chorus_Lead-Viola_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "419655799",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-B-Chorus_Female-Ah-Chor_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/419655799.wem",
+      "CachePath": "SFX/Stage2-B-Chorus_Female-Ah-Chor_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "423319925",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-E-Chorus_Drums_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/423319925.wem",
+      "CachePath": "SFX/Stage2-E-Chorus_Drums_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "427398205",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-B-Bridge_Orchestra_127bpm4-4_L4M_P0.wav",
+      "Path": "Media/427398205.wem",
+      "CachePath": "SFX/Stage2-B-Bridge_Orchestra_127bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "469833479",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-A-Chorus_Brass_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/469833479.wem",
+      "CachePath": "SFX/Stage2-A-Chorus_Brass_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "472710795",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-C-Strophe_Guitar2_127bpm4-4_L4M_P0.wav",
+      "Path": "Media/472710795.wem",
+      "CachePath": "SFX/Stage2-C-Strophe_Guitar2_127bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "478590222",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-B-Strophe_Brass_127bpm4-4_L4M_P0.wav",
+      "Path": "Media/478590222.wem",
+      "CachePath": "SFX/Stage2-B-Strophe_Brass_127bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "487471458",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-C-Strophe_Guitar1_127bpm4-4_L4M_P0.wav",
+      "Path": "Media/487471458.wem",
+      "CachePath": "SFX/Stage2-C-Strophe_Guitar1_127bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "498416247",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-C-Strophe_Lead-Viola_127bpm4-4_L4M_P0.wav",
+      "Path": "Media/498416247.wem",
+      "CachePath": "SFX/Stage2-C-Strophe_Lead-Viola_127bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "510868377",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-A-Chorus_BackGuitar_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/510868377.wem",
+      "CachePath": "SFX/Stage2-A-Chorus_BackGuitar_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "538071305",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-C-Chorus_Male-Ah-Chor_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/538071305.wem",
+      "CachePath": "SFX/Stage2-C-Chorus_Male-Ah-Chor_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "544032170",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-B-Chorus_Back-Viola-R_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/544032170.wem",
+      "CachePath": "SFX/Stage2-B-Chorus_Back-Viola-R_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "549679855",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-A-Strophe_Brass_127bpm4-4_L4M_P0.wav",
+      "Path": "Media/549679855.wem",
+      "CachePath": "SFX/Stage2-A-Strophe_Brass_127bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "557567604",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-C-Chorus_Drums_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/557567604.wem",
+      "CachePath": "SFX/Stage2-C-Chorus_Drums_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "559057821",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-B-Bridge_Drums_127bpm4-4_L4M_P0.wav",
+      "Path": "Media/559057821.wem",
+      "CachePath": "SFX/Stage2-B-Bridge_Drums_127bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "582945150",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-A-Bridge_Orchestra_127bpm4-4_L4M_P0.wav",
+      "Path": "Media/582945150.wem",
+      "CachePath": "SFX/Stage2-A-Bridge_Orchestra_127bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "600807486",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-A-Chorus_Male-Ah-Chor_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/600807486.wem",
+      "CachePath": "SFX/Stage2-A-Chorus_Male-Ah-Chor_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "633452290",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-D-Chorus_Drums_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/633452290.wem",
+      "CachePath": "SFX/Stage2-D-Chorus_Drums_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "634944310",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-C-Strophe_Drums_127bpm4-4_L4M_P0.wav",
+      "Path": "Media/634944310.wem",
+      "CachePath": "SFX/Stage2-C-Strophe_Drums_127bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "634986360",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-B-Chorus_BackGuitar_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/634986360.wem",
+      "CachePath": "SFX/Stage2-B-Chorus_BackGuitar_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "639073552",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-D-Chorus_Female-Oh-Chor_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/639073552.wem",
+      "CachePath": "SFX/Stage2-D-Chorus_Female-Oh-Chor_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "652878662",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-B-Chorus_Guitar1_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/652878662.wem",
+      "CachePath": "SFX/Stage2-B-Chorus_Guitar1_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "662078818",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-A-Chorus_Orchestra_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/662078818.wem",
+      "CachePath": "SFX/Stage2-A-Chorus_Orchestra_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "712437315",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-B-Chorus_Back-Viola-L_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/712437315.wem",
+      "CachePath": "SFX/Stage2-B-Chorus_Back-Viola-L_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "713283304",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-A-Strophe_Guitar2_127bpm4-4_L4M_P0.wav",
+      "Path": "Media/713283304.wem",
+      "CachePath": "SFX/Stage2-A-Strophe_Guitar2_127bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "719066797",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-C-Chorus_Male-Oh-Chor_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/719066797.wem",
+      "CachePath": "SFX/Stage2-C-Chorus_Male-Oh-Chor_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "719977428",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-A-Strophe_Oboe_127bpm4-4_L4M_P0.wav",
+      "Path": "Media/719977428.wem",
+      "CachePath": "SFX/Stage2-A-Strophe_Oboe_127bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "733862812",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-C-Chorus_Back-Viola-L_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/733862812.wem",
+      "CachePath": "SFX/Stage2-C-Chorus_Back-Viola-L_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "748340040",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-A-Chorus_Male-Oh-Chor_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/748340040.wem",
+      "CachePath": "SFX/Stage2-A-Chorus_Male-Oh-Chor_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "760853440",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-A-Strophe_Drums_127bpm4-4_L4M_P0.wav",
+      "Path": "Media/760853440.wem",
+      "CachePath": "SFX/Stage2-A-Strophe_Drums_127bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "792632883",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-A-Chorus_Guitar1_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/792632883.wem",
+      "CachePath": "SFX/Stage2-A-Chorus_Guitar1_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "793566019",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-C-Strophe_Back-Viola-L_127bpm4-4_L4M_P0.wav",
+      "Path": "Media/793566019.wem",
+      "CachePath": "SFX/Stage2-C-Strophe_Back-Viola-L_127bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "799664391",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-C-Chorus_Lead-Viola_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/799664391.wem",
+      "CachePath": "SFX/Stage2-C-Chorus_Lead-Viola_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "803939716",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-B-Chorus_Drums_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/803939716.wem",
+      "CachePath": "SFX/Stage2-B-Chorus_Drums_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "817764818",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-B-Strophe_Oboe_127bpm4-4_L4M_P0.wav",
+      "Path": "Media/817764818.wem",
+      "CachePath": "SFX/Stage2-B-Strophe_Oboe_127bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "907489735",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-B-Chorus_Lead-Viola_127bpm4-4_L4M_P0.wav",
+      "Path": "Media/907489735.wem",
+      "CachePath": "SFX/Stage2-B-Chorus_Lead-Viola_127bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "925531371",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-A-Strophe_Lead-Viola_127bpm4-4_L4M_P0.wav",
+      "Path": "Media/925531371.wem",
+      "CachePath": "SFX/Stage2-A-Strophe_Lead-Viola_127bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "929859593",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-C-Chorus_Orchestra_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/929859593.wem",
+      "CachePath": "SFX/Stage2-C-Chorus_Orchestra_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "933251036",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-B-Chorus_Male-Ah-Chor_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/933251036.wem",
+      "CachePath": "SFX/Stage2-B-Chorus_Male-Ah-Chor_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "952661471",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-C-Chorus_Guitar2_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/952661471.wem",
+      "CachePath": "SFX/Stage2-C-Chorus_Guitar2_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "954514733",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-C-Chorus_Brass_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/954514733.wem",
+      "CachePath": "SFX/Stage2-C-Chorus_Brass_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "1040270206",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-B-Strophe_Lead-Viola_127bpm4-4_L4M_P0.wav",
+      "Path": "Media/1040270206.wem",
+      "CachePath": "SFX/Stage2-B-Strophe_Lead-Viola_127bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "1040429922",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-C-Chorus_Female-Oh-Chor_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/1040429922.wem",
+      "CachePath": "SFX/Stage2-C-Chorus_Female-Oh-Chor_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "1062710133",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-C-Chorus_Back-Viola-L_127bpm4-4_L4M_P0.wav",
+      "Path": "Media/1062710133.wem",
+      "CachePath": "SFX/Stage2-C-Chorus_Back-Viola-L_127bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "1070007167",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage2-D-Chorus_Male-Oh-Chor_127bpm4-4_L8M_P0.wav",
+      "Path": "Media/1070007167.wem",
+      "CachePath": "SFX/Stage2-D-Chorus_Male-Oh-Chor_127bpm4-4_L8M_P0_D79FB2B7.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1053701372",
+      "Name": "Play_Music_Stagw_1b",
+      "ObjectPath": "\\Events\\Music\\Play_Music_Stagw_1b",
+      "GUID": "{A9011CA4-F40B-415B-9C65-B4914BA1B74C}",
+      "DurationType": "OneShot",
+      "DurationMin": "282.72952",
+      "DurationMax": "282.72958",
+      "MediaRefs": [
+       {
+        "Id": "1836545"
+       },
+       {
+        "Id": "4274385"
+       },
+       {
+        "Id": "19018753"
+       },
+       {
+        "Id": "25747088"
+       },
+       {
+        "Id": "34748751"
+       },
+       {
+        "Id": "59894170"
+       },
+       {
+        "Id": "69677015"
+       },
+       {
+        "Id": "91720265"
+       },
+       {
+        "Id": "98717790"
+       },
+       {
+        "Id": "109332476"
+       },
+       {
+        "Id": "144038015"
+       },
+       {
+        "Id": "184904425"
+       },
+       {
+        "Id": "207434630"
+       },
+       {
+        "Id": "210383655"
+       },
+       {
+        "Id": "223375965"
+       },
+       {
+        "Id": "276493761"
+       },
+       {
+        "Id": "318182342"
+       },
+       {
+        "Id": "353737771"
+       },
+       {
+        "Id": "376806526"
+       },
+       {
+        "Id": "382278126"
+       },
+       {
+        "Id": "392364824"
+       },
+       {
+        "Id": "419655799"
+       },
+       {
+        "Id": "423319925"
+       },
+       {
+        "Id": "427398205"
+       },
+       {
+        "Id": "469833479"
+       },
+       {
+        "Id": "472710795"
+       },
+       {
+        "Id": "478590222"
+       },
+       {
+        "Id": "487471458"
+       },
+       {
+        "Id": "498416247"
+       },
+       {
+        "Id": "510868377"
+       },
+       {
+        "Id": "538071305"
+       },
+       {
+        "Id": "544032170"
+       },
+       {
+        "Id": "549679855"
+       },
+       {
+        "Id": "557567604"
+       },
+       {
+        "Id": "559057821"
+       },
+       {
+        "Id": "582945150"
+       },
+       {
+        "Id": "600807486"
+       },
+       {
+        "Id": "633452290"
+       },
+       {
+        "Id": "634944310"
+       },
+       {
+        "Id": "634986360"
+       },
+       {
+        "Id": "639073552"
+       },
+       {
+        "Id": "652878662"
+       },
+       {
+        "Id": "662078818"
+       },
+       {
+        "Id": "712437315"
+       },
+       {
+        "Id": "713283304"
+       },
+       {
+        "Id": "719066797"
+       },
+       {
+        "Id": "719977428"
+       },
+       {
+        "Id": "733862812"
+       },
+       {
+        "Id": "748340040"
+       },
+       {
+        "Id": "760853440"
+       },
+       {
+        "Id": "792632883"
+       },
+       {
+        "Id": "793566019"
+       },
+       {
+        "Id": "799664391"
+       },
+       {
+        "Id": "803939716"
+       },
+       {
+        "Id": "817764818"
+       },
+       {
+        "Id": "907489735"
+       },
+       {
+        "Id": "925531371"
+       },
+       {
+        "Id": "929859593"
+       },
+       {
+        "Id": "933251036"
+       },
+       {
+        "Id": "952661471"
+       },
+       {
+        "Id": "954514733"
+       },
+       {
+        "Id": "1040270206"
+       },
+       {
+        "Id": "1040429922"
+       },
+       {
+        "Id": "1062710133"
+       },
+       {
+        "Id": "1070007167"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "1073355647",
     "Type": "Event",
     "GUID": "{EEB1C8DC-2012-4465-B929-C73B463E3F63}",
     "Language": "SFX",
-    "Hash": "{0CE144A7-3469-4447-0568-43B88B82D608}",
+    "Hash": "{A544CAB3-52CB-E240-2489-D25DB3E5405B}",
     "ObjectPath": "Ambi_2_Loop_Stop",
     "ShortName": "Ambi_2_Loop_Stop",
     "Path": "Event/Ambi_2_Loop_Stop.bnk",
@@ -1178,7 +2278,7 @@
     "Type": "Event",
     "GUID": "{93953BBA-0842-4F85-96F8-FADB33FA970A}",
     "Language": "SFX",
-    "Hash": "{56AE6D74-2897-D73B-BD72-D002AA50F963}",
+    "Hash": "{1685C68F-C0F2-4ABE-357C-BFDBF17AAA62}",
     "ObjectPath": "Plyr2_Movement_Jump",
     "ShortName": "Plyr2_Movement_Jump",
     "Path": "Event/Plyr2_Movement_Jump.bnk",
@@ -1259,11 +2359,200 @@
     ]
    },
    {
+    "Id": "1237331087",
+    "Type": "Event",
+    "GUID": "{3E7B4894-9F13-4C12-920F-1F191BC300B8}",
+    "Language": "SFX",
+    "Hash": "{67182E68-74B6-A8EA-E79F-DACE6D28950C}",
+    "ObjectPath": "Play_Player2_Clothes_Short",
+    "ShortName": "Play_Player2_Clothes_Short",
+    "Path": "Event/Play_Player2_Clothes_Short.bnk",
+    "Media": [
+     {
+      "Id": "252024733",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_clothes_short_06.wav",
+      "Path": "Media/252024733.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_clothes_short_06_10C4C929.wem"
+     },
+     {
+      "Id": "344566894",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_clothes_short_03.wav",
+      "Path": "Media/344566894.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_clothes_short_03_10C4C929.wem"
+     },
+     {
+      "Id": "387174135",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_clothes_short_02.wav",
+      "Path": "Media/387174135.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_clothes_short_02_10C4C929.wem"
+     },
+     {
+      "Id": "499312341",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_clothes_short_04.wav",
+      "Path": "Media/499312341.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_clothes_short_04_10C4C929.wem"
+     },
+     {
+      "Id": "523167106",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_clothes_short_01.wav",
+      "Path": "Media/523167106.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_clothes_short_01_10C4C929.wem"
+     },
+     {
+      "Id": "540994362",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_clothes_short_08.wav",
+      "Path": "Media/540994362.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_clothes_short_08_10C4C929.wem"
+     },
+     {
+      "Id": "553551288",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_clothes_short_07.wav",
+      "Path": "Media/553551288.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_clothes_short_07_10C4C929.wem"
+     },
+     {
+      "Id": "862668636",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_clothes_short_05.wav",
+      "Path": "Media/862668636.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_clothes_short_05_10C4C929.wem"
+     },
+     {
+      "Id": "885396804",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_clothes_short_09.wav",
+      "Path": "Media/885396804.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_clothes_short_09_10C4C929.wem"
+     },
+     {
+      "Id": "978907770",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_clothes_short_10.wav",
+      "Path": "Media/978907770.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_clothes_short_10_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1237331087",
+      "Name": "Play_Player2_Clothes_Short",
+      "ObjectPath": "\\Events\\Player2\\Player2Locomotion\\Play_Player2_Clothes_Short",
+      "GUID": "{3E7B4894-9F13-4C12-920F-1F191BC300B8}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.3508849",
+      "DurationMax": "0.49261352",
+      "MediaRefs": [
+       {
+        "Id": "252024733"
+       },
+       {
+        "Id": "344566894"
+       },
+       {
+        "Id": "387174135"
+       },
+       {
+        "Id": "499312341"
+       },
+       {
+        "Id": "523167106"
+       },
+       {
+        "Id": "540994362"
+       },
+       {
+        "Id": "553551288"
+       },
+       {
+        "Id": "862668636"
+       },
+       {
+        "Id": "885396804"
+       },
+       {
+        "Id": "978907770"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "1283053048",
+    "Type": "Event",
+    "GUID": "{2D7537D9-B663-478E-A75B-D3B696CEA654}",
+    "Language": "SFX",
+    "Hash": "{594059CC-21C4-0620-7ED9-EA636BA48830}",
+    "ObjectPath": "Stop_Music_Stage_1b",
+    "ShortName": "Stop_Music_Stage_1b",
+    "Path": "Event/Stop_Music_Stage_1b.bnk",
+    "Events": [
+     {
+      "Id": "1283053048",
+      "Name": "Stop_Music_Stage_1b",
+      "ObjectPath": "\\Events\\Music\\Stop_Music_Stage_1b",
+      "GUID": "{2D7537D9-B663-478E-A75B-D3B696CEA654}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   },
+   {
+    "Id": "1283053051",
+    "Type": "Event",
+    "GUID": "{AFE902AB-BBF9-4EB1-87AC-47A2C6AA76EC}",
+    "Language": "SFX",
+    "Hash": "{6ABB6AA5-3E8C-5AD4-DF4D-00FAC15D22B9}",
+    "ObjectPath": "Stop_Music_Stage_1a",
+    "ShortName": "Stop_Music_Stage_1a",
+    "Path": "Event/Stop_Music_Stage_1a.bnk",
+    "Events": [
+     {
+      "Id": "1283053051",
+      "Name": "Stop_Music_Stage_1a",
+      "ObjectPath": "\\Events\\Music\\Stop_Music_Stage_1a",
+      "GUID": "{AFE902AB-BBF9-4EB1-87AC-47A2C6AA76EC}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   },
+   {
     "Id": "1349836090",
     "Type": "Bus",
     "GUID": "{44E599A3-1CE2-49AF-8FBC-737785A8D7B8}",
     "Language": "SFX",
-    "Hash": "{9DF95DBF-16DE-24D4-5EF4-8EA0422E6328}",
+    "Hash": "{C06B6E40-3E1C-58A7-9966-ECE8D2207F01}",
     "ObjectPath": "BetweenBuildings",
     "ShortName": "BetweenBuildings",
     "Path": "Bus/BetweenBuildings.bnk",
@@ -1308,7 +2597,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{0EFA6A9B-21B5-76B3-17BA-B4A33A16AE74}",
+    "Hash": "{03E93AB0-8624-38E9-F3AF-1D73EF35B53F}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -2381,108 +3670,11 @@
     ]
    },
    {
-    "Id": "1376358074",
-    "Type": "Event",
-    "GUID": "{D23E66E6-43DA-4114-901C-C8A2B0828697}",
-    "Language": "SFX",
-    "Hash": "{289A6DCF-AD78-98D5-55BE-6C7C04BC0FDC}",
-    "ObjectPath": "Play_Player_Block_Light",
-    "ShortName": "Play_Player_Block_Light",
-    "Path": "Event/Play_Player_Block_Light.bnk",
-    "Media": [
-     {
-      "Id": "27748016",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "sfx_fighter1_combat_blocking_light_01.wav",
-      "Path": "Media/27748016.wem",
-      "CachePath": "SFX/sfx_fighter1_combat_blocking_light_01_10C4C929.wem"
-     },
-     {
-      "Id": "76329243",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "sfx_fighter1_combat_blocking_light_04.wav",
-      "Path": "Media/76329243.wem",
-      "CachePath": "SFX/sfx_fighter1_combat_blocking_light_04_10C4C929.wem"
-     },
-     {
-      "Id": "176246137",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "sfx_fighter1_combat_blocking_light_02.wav",
-      "Path": "Media/176246137.wem",
-      "CachePath": "SFX/sfx_fighter1_combat_blocking_light_02_10C4C929.wem"
-     },
-     {
-      "Id": "202002167",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "sfx_fighter1_combat_blocking_light_05.wav",
-      "Path": "Media/202002167.wem",
-      "CachePath": "SFX/sfx_fighter1_combat_blocking_light_05_10C4C929.wem"
-     },
-     {
-      "Id": "591698946",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "sfx_fighter1_combat_blocking_light_03.wav",
-      "Path": "Media/591698946.wem",
-      "CachePath": "SFX/sfx_fighter1_combat_blocking_light_03_10C4C929.wem"
-     },
-     {
-      "Id": "788773747",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "sfx_fighter1_combat_blocking_light_06.wav",
-      "Path": "Media/788773747.wem",
-      "CachePath": "SFX/sfx_fighter1_combat_blocking_light_06_10C4C929.wem"
-     }
-    ],
-    "Events": [
-     {
-      "Id": "1376358074",
-      "Name": "Play_Player_Block_Light",
-      "ObjectPath": "\\Events\\Player\\PlayerCombat\\Play_Player_Block_Light",
-      "GUID": "{D23E66E6-43DA-4114-901C-C8A2B0828697}",
-      "DurationType": "OneShot",
-      "DurationMin": "0.20314583",
-      "DurationMax": "0.28066668",
-      "MediaRefs": [
-       {
-        "Id": "27748016"
-       },
-       {
-        "Id": "76329243"
-       },
-       {
-        "Id": "176246137"
-       },
-       {
-        "Id": "202002167"
-       },
-       {
-        "Id": "591698946"
-       },
-       {
-        "Id": "788773747"
-       }
-      ]
-     }
-    ]
-   },
-   {
     "Id": "1407253294",
     "Type": "Event",
     "GUID": "{64BA2DC8-AF54-4E1A-AEF6-60694538C48B}",
     "Language": "SFX",
-    "Hash": "{DF80883E-3268-05C0-72A7-942C4B260DF6}",
+    "Hash": "{9AE12119-AA62-6BC9-C839-CA1FF0C5F6D5}",
     "ObjectPath": "Com_Round_3_Start",
     "ShortName": "Com_Round_3_Start",
     "Path": "Event/Com_Round_3_Start.bnk",
@@ -2549,8 +3741,8 @@
       "ObjectPath": "\\Events\\Commentator_Voices\\Com_Round_3_Start",
       "GUID": "{64BA2DC8-AF54-4E1A-AEF6-60694538C48B}",
       "DurationType": "OneShot",
-      "DurationMin": "2.6875",
-      "DurationMax": "3",
+      "DurationMin": "6.1875",
+      "DurationMax": "6.5",
       "MediaRefs": [
        {
         "Id": "115684259"
@@ -2575,11 +3767,108 @@
     ]
    },
    {
+    "Id": "1409386042",
+    "Type": "Event",
+    "GUID": "{8C37F805-1EF3-48E8-9DA4-B8E4E9095CA4}",
+    "Language": "SFX",
+    "Hash": "{899517D1-6705-3AD3-F26F-B7BD8A97461D}",
+    "ObjectPath": "Play_Player2_Blockhit",
+    "ShortName": "Play_Player2_Blockhit",
+    "Path": "Event/Play_Player2_Blockhit.bnk",
+    "Media": [
+     {
+      "Id": "14956916",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_blockhit_02.wav",
+      "Path": "Media/14956916.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_blockhit_02_D5050D44.wem"
+     },
+     {
+      "Id": "131647470",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_blockhit_01.wav",
+      "Path": "Media/131647470.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_blockhit_01_5C99D561.wem"
+     },
+     {
+      "Id": "250748462",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_blockhit_03.wav",
+      "Path": "Media/250748462.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_blockhit_03_3E0160BD.wem"
+     },
+     {
+      "Id": "592825387",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_blockhit_05.wav",
+      "Path": "Media/592825387.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_blockhit_05_46793C6A.wem"
+     },
+     {
+      "Id": "765364776",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_blockhit_06.wav",
+      "Path": "Media/765364776.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_blockhit_06_3749CEF9.wem"
+     },
+     {
+      "Id": "1005047455",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_blockhit_04.wav",
+      "Path": "Media/1005047455.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_blockhit_04_BB5505F4.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1409386042",
+      "Name": "Play_Player2_Blockhit",
+      "ObjectPath": "\\Events\\Player2\\Player2Combat\\Play_Player2_Blockhit",
+      "GUID": "{8C37F805-1EF3-48E8-9DA4-B8E4E9095CA4}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.23633985",
+      "DurationMax": "0.42273876",
+      "MediaRefs": [
+       {
+        "Id": "14956916"
+       },
+       {
+        "Id": "131647470"
+       },
+       {
+        "Id": "250748462"
+       },
+       {
+        "Id": "592825387"
+       },
+       {
+        "Id": "765364776"
+       },
+       {
+        "Id": "1005047455"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "1447755480",
     "Type": "Event",
     "GUID": "{D240E461-1973-4A2A-922A-01651A67602B}",
     "Language": "SFX",
-    "Hash": "{7DFCCB9F-1D24-AC19-9E69-55633A334037}",
+    "Hash": "{5D91FE1E-E56F-9D45-963B-E623FD17B6D4}",
     "ObjectPath": "Com_Round_1_Start",
     "ShortName": "Com_Round_1_Start",
     "Path": "Event/Com_Round_1_Start.bnk",
@@ -2646,8 +3935,8 @@
       "ObjectPath": "\\Events\\Commentator_Voices\\Com_Round_1_Start",
       "GUID": "{D240E461-1973-4A2A-922A-01651A67602B}",
       "DurationType": "OneShot",
-      "DurationMin": "2.125",
-      "DurationMax": "2.4375",
+      "DurationMin": "5.625",
+      "DurationMax": "5.9375",
       "MediaRefs": [
        {
         "Id": "115684259"
@@ -2672,24 +3961,244 @@
     ]
    },
    {
-    "Id": "1619838726",
+    "Id": "1474491129",
     "Type": "Event",
-    "GUID": "{12E562B3-F440-40CE-912E-3B5E11D0E0E4}",
+    "GUID": "{4D1B538B-1F94-4AB0-8825-F48931190C82}",
     "Language": "SFX",
-    "Hash": "{88270D22-5861-8D60-5974-7992B52590B6}",
-    "ObjectPath": "Play_Stop_TestBeep_lp_3D",
-    "ShortName": "Play_Stop_TestBeep_lp_3D",
-    "Path": "Event/Play_Stop_TestBeep_lp_3D.bnk",
+    "Hash": "{74B0872B-4C35-AEF1-68BE-16EEF5CE07B8}",
+    "ObjectPath": "Play_Player2_Clothes_Long",
+    "ShortName": "Play_Player2_Clothes_Long",
+    "Path": "Event/Play_Player2_Clothes_Long.bnk",
+    "Media": [
+     {
+      "Id": "15000448",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_clothes_long_06.wav",
+      "Path": "Media/15000448.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_clothes_long_06_10C4C929.wem"
+     },
+     {
+      "Id": "56834757",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_clothes_long_09.wav",
+      "Path": "Media/56834757.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_clothes_long_09_10C4C929.wem"
+     },
+     {
+      "Id": "121744730",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_clothes_long_04.wav",
+      "Path": "Media/121744730.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_clothes_long_04_10C4C929.wem"
+     },
+     {
+      "Id": "211679234",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_clothes_long_02.wav",
+      "Path": "Media/211679234.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_clothes_long_02_10C4C929.wem"
+     },
+     {
+      "Id": "313978099",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_clothes_long_03.wav",
+      "Path": "Media/313978099.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_clothes_long_03_10C4C929.wem"
+     },
+     {
+      "Id": "424578477",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_clothes_long_01.wav",
+      "Path": "Media/424578477.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_clothes_long_01_10C4C929.wem"
+     },
+     {
+      "Id": "575587824",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_clothes_long_08.wav",
+      "Path": "Media/575587824.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_clothes_long_08_10C4C929.wem"
+     },
+     {
+      "Id": "635403729",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_clothes_long_10.wav",
+      "Path": "Media/635403729.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_clothes_long_10_10C4C929.wem"
+     },
+     {
+      "Id": "644869827",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_clothes_long_07.wav",
+      "Path": "Media/644869827.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_clothes_long_07_10C4C929.wem"
+     },
+     {
+      "Id": "1006846422",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_clothes_long_05.wav",
+      "Path": "Media/1006846422.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_clothes_long_05_10C4C929.wem"
+     }
+    ],
     "Events": [
      {
-      "Id": "1619838726",
-      "Name": "Play_Stop_TestBeep_lp_3D",
-      "ObjectPath": "\\Events\\TestEvents\\Play_Stop_TestBeep_lp_3D",
-      "GUID": "{12E562B3-F440-40CE-912E-3B5E11D0E0E4}",
-      "MaxAttenuation": "0",
+      "Id": "1474491129",
+      "Name": "Play_Player2_Clothes_Long",
+      "ObjectPath": "\\Events\\Player2\\Player2Locomotion\\Play_Player2_Clothes_Long",
+      "GUID": "{4D1B538B-1F94-4AB0-8825-F48931190C82}",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "0.6621355",
+      "DurationMax": "1.1818537",
+      "MediaRefs": [
+       {
+        "Id": "15000448"
+       },
+       {
+        "Id": "56834757"
+       },
+       {
+        "Id": "121744730"
+       },
+       {
+        "Id": "211679234"
+       },
+       {
+        "Id": "313978099"
+       },
+       {
+        "Id": "424578477"
+       },
+       {
+        "Id": "575587824"
+       },
+       {
+        "Id": "635403729"
+       },
+       {
+        "Id": "644869827"
+       },
+       {
+        "Id": "1006846422"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "1587893616",
+    "Type": "Event",
+    "GUID": "{F8598B8F-70C3-4D87-B0EC-D5BAC09D7237}",
+    "Language": "SFX",
+    "Hash": "{D7B0490A-8793-5FA0-127C-C68E8585B9BC}",
+    "ObjectPath": "Play_Player2_Bounce",
+    "ShortName": "Play_Player2_Bounce",
+    "Path": "Event/Play_Player2_Bounce.bnk",
+    "Media": [
+     {
+      "Id": "178885760",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_bounce_01.wav",
+      "Path": "Media/178885760.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_bounce_01_10C4C929.wem"
+     },
+     {
+      "Id": "633693056",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_bounce_02.wav",
+      "Path": "Media/633693056.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_bounce_02_10C4C929.wem"
+     },
+     {
+      "Id": "857554498",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_bounce_04.wav",
+      "Path": "Media/857554498.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_bounce_04_10C4C929.wem"
+     },
+     {
+      "Id": "903453315",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_bounce_03.wav",
+      "Path": "Media/903453315.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_bounce_03_10C4C929.wem"
+     },
+     {
+      "Id": "950059571",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_bounce_05.wav",
+      "Path": "Media/950059571.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_bounce_05_10C4C929.wem"
+     },
+     {
+      "Id": "1019383596",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_bounce_06.wav",
+      "Path": "Media/1019383596.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_bounce_06_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1587893616",
+      "Name": "Play_Player2_Bounce",
+      "ObjectPath": "\\Events\\Player2\\Player2Locomotion\\Play_Player2_Bounce",
+      "GUID": "{F8598B8F-70C3-4D87-B0EC-D5BAC09D7237}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.24426162",
+      "DurationMax": "0.39154422",
+      "MediaRefs": [
+       {
+        "Id": "178885760"
+       },
+       {
+        "Id": "633693056"
+       },
+       {
+        "Id": "857554498"
+       },
+       {
+        "Id": "903453315"
+       },
+       {
+        "Id": "950059571"
+       },
+       {
+        "Id": "1019383596"
+       }
+      ]
      }
     ]
    },
@@ -2698,7 +4207,7 @@
     "Type": "Event",
     "GUID": "{167A664F-1E14-4579-BD2F-8548BA86507A}",
     "Language": "SFX",
-    "Hash": "{1E9B4A47-E7F8-5909-6036-7E77684CB5B0}",
+    "Hash": "{D75FD749-95D7-D31C-5646-07DC832EA373}",
     "ObjectPath": "Plyr2_Movement_Rollforward",
     "ShortName": "Plyr2_Movement_Rollforward",
     "Path": "Event/Plyr2_Movement_Rollforward.bnk",
@@ -2779,97 +4288,626 @@
     ]
    },
    {
-    "Id": "1681067324",
+    "Id": "1699343283",
     "Type": "Event",
-    "GUID": "{4DEEC41B-B46A-428D-BC1E-14F8277A4A26}",
+    "GUID": "{1CC99C31-E23D-4648-94D8-90671E36B4EB}",
     "Language": "SFX",
-    "Hash": "{4440A18B-B745-79FB-AF3F-CB90FF484BA4}",
-    "ObjectPath": "Play_TestBeep_3D",
-    "ShortName": "Play_TestBeep_3D",
-    "Path": "Event/Play_TestBeep_3D.bnk",
+    "Hash": "{6AB1E238-D0DC-10EA-1BD4-407FFC4752CC}",
+    "ObjectPath": "Play_Music_Menu",
+    "ShortName": "Play_Music_Menu",
+    "Path": "Event/Play_Music_Menu.bnk",
     "Media": [
      {
-      "Id": "759261552",
+      "Id": "2521971",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "TestFiles\\sfx_test_beep_short.wav",
-      "Path": "Media/759261552.wem",
-      "CachePath": "SFX/TestFiles/sfx_test_beep_short_10C4C929.wem"
+      "ShortName": "Menu-E-Chorus_Horn_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/2521971.wem",
+      "CachePath": "SFX/Menu-E-Chorus_Horn_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "28058448",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-F-Chorus_Flute_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/28058448.wem",
+      "CachePath": "SFX/Menu-F-Chorus_Flute_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "79959033",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Strophe-Ende_Orchestra_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/79959033.wem",
+      "CachePath": "SFX/Menu-A-Strophe-Ende_Orchestra_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "80446344",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Break_Orchestra_88bpm4-4_L8M_P0.wav",
+      "Path": "Media/80446344.wem",
+      "CachePath": "SFX/Menu-A-Break_Orchestra_88bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "145497044",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-B-Chorus_Bass_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/145497044.wem",
+      "CachePath": "SFX/Menu-B-Chorus_Bass_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "145558699",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Strophe_Bass_88bpm4-4_L3M_P0.wav",
+      "Path": "Media/145558699.wem",
+      "CachePath": "SFX/Menu-A-Strophe_Bass_88bpm4-4_L3M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "145888327",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Break_Lead-Violin_88bpm4-4_L8M_P0.wav",
+      "Path": "Media/145888327.wem",
+      "CachePath": "SFX/Menu-A-Break_Lead-Violin_88bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "146366110",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-F-Chorus_Lead-Violin_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/146366110.wem",
+      "CachePath": "SFX/Menu-F-Chorus_Lead-Violin_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "183094554",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Pre-Break_Orchestra_88bpm4-4_L3M_P0.wav",
+      "Path": "Media/183094554.wem",
+      "CachePath": "SFX/Menu-A-Pre-Break_Orchestra_88bpm4-4_L3M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "191413141",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-E-Chorus_Flute_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/191413141.wem",
+      "CachePath": "SFX/Menu-E-Chorus_Flute_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "209674026",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Pre-Break_Bass_88bpm4-4_L3M_P0.wav",
+      "Path": "Media/209674026.wem",
+      "CachePath": "SFX/Menu-A-Pre-Break_Bass_88bpm4-4_L3M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "211503943",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-B-Strophe_Orchestra_88bpm4-4_L4M_P0.wav",
+      "Path": "Media/211503943.wem",
+      "CachePath": "SFX/Menu-B-Strophe_Orchestra_88bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "273125985",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Break_Bass_88bpm4-4_L8M_P0.wav",
+      "Path": "Media/273125985.wem",
+      "CachePath": "SFX/Menu-A-Break_Bass_88bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "350392181",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-C-Chorus_Horn_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/350392181.wem",
+      "CachePath": "SFX/Menu-C-Chorus_Horn_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "355767013",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-C-Chorus_Bass_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/355767013.wem",
+      "CachePath": "SFX/Menu-C-Chorus_Bass_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "365768873",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-C-Chorus_Orchestra_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/365768873.wem",
+      "CachePath": "SFX/Menu-C-Chorus_Orchestra_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "383319973",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Chorus_Horn_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/383319973.wem",
+      "CachePath": "SFX/Menu-A-Chorus_Horn_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "391926307",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-B-Strophe_Bass_88bpm4-4_L4M_P0.wav",
+      "Path": "Media/391926307.wem",
+      "CachePath": "SFX/Menu-B-Strophe_Bass_88bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "450420091",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Break_Horn_88bpm4-4_L8M_P0.wav",
+      "Path": "Media/450420091.wem",
+      "CachePath": "SFX/Menu-A-Break_Horn_88bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "481187531",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-C-Chorus_Flute_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/481187531.wem",
+      "CachePath": "SFX/Menu-C-Chorus_Flute_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "574637584",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-E-Chorus_Lead-Violin_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/574637584.wem",
+      "CachePath": "SFX/Menu-E-Chorus_Lead-Violin_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "633935857",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-B-Chorus_Orchestra_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/633935857.wem",
+      "CachePath": "SFX/Menu-B-Chorus_Orchestra_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "709954021",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-C-Strophe_Bass_88bpm4-4_L5M_P0.wav",
+      "Path": "Media/709954021.wem",
+      "CachePath": "SFX/Menu-C-Strophe_Bass_88bpm4-4_L5M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "725629222",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Chorus_Orchestra_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/725629222.wem",
+      "CachePath": "SFX/Menu-A-Chorus_Orchestra_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "734937015",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Break_Flute_88bpm4-4_L8M_P0.wav",
+      "Path": "Media/734937015.wem",
+      "CachePath": "SFX/Menu-A-Break_Flute_88bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "737061799",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-B-Chorus_Horn_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/737061799.wem",
+      "CachePath": "SFX/Menu-B-Chorus_Horn_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "740693526",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-C-Strophe_Orchestra_88bpm4-4_L5M_P0.wav",
+      "Path": "Media/740693526.wem",
+      "CachePath": "SFX/Menu-C-Strophe_Orchestra_88bpm4-4_L5M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "740759816",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-C-Chorus_Lead-Violin_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/740759816.wem",
+      "CachePath": "SFX/Menu-C-Chorus_Lead-Violin_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "747661577",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Strophe_Orchestra_88bpm4-4_L3M_P0.wav",
+      "Path": "Media/747661577.wem",
+      "CachePath": "SFX/Menu-A-Strophe_Orchestra_88bpm4-4_L3M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "848738650",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-F-Chorus_Horn_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/848738650.wem",
+      "CachePath": "SFX/Menu-F-Chorus_Horn_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "874650496",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-B-Chorus_Flute_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/874650496.wem",
+      "CachePath": "SFX/Menu-B-Chorus_Flute_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "886259219",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Chorus_Lead-Violin_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/886259219.wem",
+      "CachePath": "SFX/Menu-A-Chorus_Lead-Violin_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "901962940",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Chorus_Flute_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/901962940.wem",
+      "CachePath": "SFX/Menu-A-Chorus_Flute_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "967133822",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Pre-Break_Horn_88bpm4-4_L3M_P0.wav",
+      "Path": "Media/967133822.wem",
+      "CachePath": "SFX/Menu-A-Pre-Break_Horn_88bpm4-4_L3M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "1004708010",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-B-Chorus_Lead-Violin_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/1004708010.wem",
+      "CachePath": "SFX/Menu-B-Chorus_Lead-Violin_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "1008613782",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Chorus_Bass_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/1008613782.wem",
+      "CachePath": "SFX/Menu-A-Chorus_Bass_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "1013844771",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Strophe-Ende_Bass_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/1013844771.wem",
+      "CachePath": "SFX/Menu-A-Strophe-Ende_Bass_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "1056010784",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Chorus-B\\Menu-B-Chorus_Flute_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/1056010784.wem",
+      "CachePath": "SFX/Chorus-B/Menu-B-Chorus_Flute_88bpm4-4_L2M_P0_D79FB2B7.wem"
      }
     ],
     "Events": [
      {
-      "Id": "1681067324",
-      "Name": "Play_TestBeep_3D",
-      "ObjectPath": "\\Events\\TestEvents\\Play_TestBeep_3D",
-      "GUID": "{4DEEC41B-B46A-428D-BC1E-14F8277A4A26}",
-      "MaxAttenuation": "50",
+      "Id": "1699343283",
+      "Name": "Play_Music_Menu",
+      "ObjectPath": "\\Events\\Music\\Play_Music_Menu",
+      "GUID": "{1CC99C31-E23D-4648-94D8-90671E36B4EB}",
       "DurationType": "OneShot",
-      "DurationMin": "0.07419501",
-      "DurationMax": "0.07419501",
+      "DurationMin": "174.20454",
+      "DurationMax": "231.13635",
       "MediaRefs": [
        {
-        "Id": "759261552"
+        "Id": "2521971"
+       },
+       {
+        "Id": "28058448"
+       },
+       {
+        "Id": "79959033"
+       },
+       {
+        "Id": "80446344"
+       },
+       {
+        "Id": "145497044"
+       },
+       {
+        "Id": "145558699"
+       },
+       {
+        "Id": "145888327"
+       },
+       {
+        "Id": "146366110"
+       },
+       {
+        "Id": "183094554"
+       },
+       {
+        "Id": "191413141"
+       },
+       {
+        "Id": "209674026"
+       },
+       {
+        "Id": "211503943"
+       },
+       {
+        "Id": "273125985"
+       },
+       {
+        "Id": "350392181"
+       },
+       {
+        "Id": "355767013"
+       },
+       {
+        "Id": "365768873"
+       },
+       {
+        "Id": "383319973"
+       },
+       {
+        "Id": "391926307"
+       },
+       {
+        "Id": "450420091"
+       },
+       {
+        "Id": "481187531"
+       },
+       {
+        "Id": "574637584"
+       },
+       {
+        "Id": "633935857"
+       },
+       {
+        "Id": "709954021"
+       },
+       {
+        "Id": "725629222"
+       },
+       {
+        "Id": "734937015"
+       },
+       {
+        "Id": "737061799"
+       },
+       {
+        "Id": "740693526"
+       },
+       {
+        "Id": "740759816"
+       },
+       {
+        "Id": "747661577"
+       },
+       {
+        "Id": "848738650"
+       },
+       {
+        "Id": "874650496"
+       },
+       {
+        "Id": "886259219"
+       },
+       {
+        "Id": "901962940"
+       },
+       {
+        "Id": "967133822"
+       },
+       {
+        "Id": "1004708010"
+       },
+       {
+        "Id": "1008613782"
+       },
+       {
+        "Id": "1013844771"
+       },
+       {
+        "Id": "1056010784"
        }
       ]
      }
     ]
    },
    {
-    "Id": "1830121012",
+    "Id": "1700596737",
     "Type": "Event",
-    "GUID": "{AAC9A511-42FF-4C09-9324-E39E4DA787AC}",
+    "GUID": "{05825B27-50D8-430E-9EFC-D8AD4D0DE1FE}",
     "Language": "SFX",
-    "Hash": "{862377D4-6620-B6CC-9684-D90A17A7E79E}",
-    "ObjectPath": "Play_Player_Cloth",
-    "ShortName": "Play_Player_Cloth",
-    "Path": "Event/Play_Player_Cloth.bnk",
+    "Hash": "{ACAA22B1-4587-4A0C-3AA9-3559DA7C3CF7}",
+    "ObjectPath": "Play_Player_Clothes_Long",
+    "ShortName": "Play_Player_Clothes_Long",
+    "Path": "Event/Play_Player_Clothes_Long.bnk",
     "Media": [
      {
-      "Id": "220455491",
+      "Id": "46131675",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "sfx_fighter1_movement_clothes_loop_03.wav",
-      "Path": "Media/220455491.wem",
-      "CachePath": "SFX/sfx_fighter1_movement_clothes_loop_03_D79FB2B7.wem"
+      "ShortName": "sfx_fighter1_movement_clothes_long_06.wav",
+      "Path": "Media/46131675.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_long_06_10C4C929.wem"
      },
      {
-      "Id": "513187626",
+      "Id": "81485425",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "sfx_fighter1_movement_clothes_loop_02.wav",
-      "Path": "Media/513187626.wem",
-      "CachePath": "SFX/sfx_fighter1_movement_clothes_loop_02_D79FB2B7.wem"
+      "ShortName": "sfx_fighter1_movement_clothes_long_05.wav",
+      "Path": "Media/81485425.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_long_05_10C4C929.wem"
      },
      {
-      "Id": "717159586",
+      "Id": "135453367",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "sfx_fighter1_movement_clothes_loop_01.wav",
-      "Path": "Media/717159586.wem",
-      "CachePath": "SFX/sfx_fighter1_movement_clothes_loop_01_D79FB2B7.wem"
+      "ShortName": "sfx_fighter1_movement_clothes_long_04.wav",
+      "Path": "Media/135453367.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_long_04_10C4C929.wem"
+     },
+     {
+      "Id": "160447407",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_long_07.wav",
+      "Path": "Media/160447407.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_long_07_10C4C929.wem"
+     },
+     {
+      "Id": "322350762",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_long_02.wav",
+      "Path": "Media/322350762.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_long_02_10C4C929.wem"
+     },
+     {
+      "Id": "424180965",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_long_09.wav",
+      "Path": "Media/424180965.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_long_09_10C4C929.wem"
+     },
+     {
+      "Id": "507619548",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_long_08.wav",
+      "Path": "Media/507619548.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_long_08_10C4C929.wem"
+     },
+     {
+      "Id": "662112762",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_long_01.wav",
+      "Path": "Media/662112762.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_long_01_10C4C929.wem"
+     },
+     {
+      "Id": "867187785",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_long_10.wav",
+      "Path": "Media/867187785.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_long_10_10C4C929.wem"
+     },
+     {
+      "Id": "983336185",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_long_03.wav",
+      "Path": "Media/983336185.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_long_03_10C4C929.wem"
      }
     ],
     "Events": [
      {
-      "Id": "1830121012",
-      "Name": "Play_Player_Cloth",
-      "ObjectPath": "\\Events\\Player\\PlayerLocomotion\\Play_Player_Cloth",
-      "GUID": "{AAC9A511-42FF-4C09-9324-E39E4DA787AC}",
-      "DurationType": "Infinite",
+      "Id": "1700596737",
+      "Name": "Play_Player_Clothes_Long",
+      "ObjectPath": "\\Events\\Player\\PlayerLocomotion\\Play_Player_Clothes_Long",
+      "GUID": "{05825B27-50D8-430E-9EFC-D8AD4D0DE1FE}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.6773952",
+      "DurationMax": "1.1386381",
       "MediaRefs": [
        {
-        "Id": "220455491"
+        "Id": "46131675"
        },
        {
-        "Id": "513187626"
+        "Id": "81485425"
        },
        {
-        "Id": "717159586"
+        "Id": "135453367"
+       },
+       {
+        "Id": "160447407"
+       },
+       {
+        "Id": "322350762"
+       },
+       {
+        "Id": "424180965"
+       },
+       {
+        "Id": "507619548"
+       },
+       {
+        "Id": "662112762"
+       },
+       {
+        "Id": "867187785"
+       },
+       {
+        "Id": "983336185"
        }
       ]
      }
@@ -2880,7 +4918,7 @@
     "Type": "Event",
     "GUID": "{D7BC3EB3-3F4C-4395-A786-93E524AB9064}",
     "Language": "SFX",
-    "Hash": "{C7368D8E-0BEE-80A9-2E89-14C919DEC713}",
+    "Hash": "{4753212D-1F60-BBA8-E30F-560EC8017615}",
     "ObjectPath": "Plyr1_Movement_Jump",
     "ShortName": "Plyr1_Movement_Jump",
     "Path": "Event/Plyr1_Movement_Jump.bnk",
@@ -2961,37 +4999,145 @@
     ]
    },
    {
-    "Id": "1955951874",
+    "Id": "1976886199",
     "Type": "Event",
-    "GUID": "{D09020C2-8A1F-43E3-84A6-67EB0B1E108E}",
+    "GUID": "{8B058E88-CC41-4F15-9236-96A38B65C4D8}",
     "Language": "SFX",
-    "Hash": "{F512F3E1-F33B-BAD4-C96E-A9003BC564A8}",
-    "ObjectPath": "Play_TestBeep",
-    "ShortName": "Play_TestBeep",
-    "Path": "Event/Play_TestBeep.bnk",
+    "Hash": "{AC996519-48F4-74D4-AA8A-55A10E188E97}",
+    "ObjectPath": "Play_Player_Clothes_Short",
+    "ShortName": "Play_Player_Clothes_Short",
+    "Path": "Event/Play_Player_Clothes_Short.bnk",
     "Media": [
      {
-      "Id": "759261552",
+      "Id": "19366300",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "TestFiles\\sfx_test_beep_short.wav",
-      "Path": "Media/759261552.wem",
-      "CachePath": "SFX/TestFiles/sfx_test_beep_short_10C4C929.wem"
+      "ShortName": "sfx_fighter1_movement_clothes_short_09.wav",
+      "Path": "Media/19366300.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_short_09_10C4C929.wem"
+     },
+     {
+      "Id": "128777668",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_short_06.wav",
+      "Path": "Media/128777668.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_short_06_10C4C929.wem"
+     },
+     {
+      "Id": "299183579",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_short_04.wav",
+      "Path": "Media/299183579.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_short_04_10C4C929.wem"
+     },
+     {
+      "Id": "441480517",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_short_01.wav",
+      "Path": "Media/441480517.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_short_01_10C4C929.wem"
+     },
+     {
+      "Id": "639090061",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_short_07.wav",
+      "Path": "Media/639090061.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_short_07_10C4C929.wem"
+     },
+     {
+      "Id": "789184646",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_short_02.wav",
+      "Path": "Media/789184646.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_short_02_10C4C929.wem"
+     },
+     {
+      "Id": "806035094",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_short_03.wav",
+      "Path": "Media/806035094.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_short_03_10C4C929.wem"
+     },
+     {
+      "Id": "841626508",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_short_08.wav",
+      "Path": "Media/841626508.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_short_08_10C4C929.wem"
+     },
+     {
+      "Id": "906023645",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_short_05.wav",
+      "Path": "Media/906023645.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_short_05_10C4C929.wem"
+     },
+     {
+      "Id": "926468782",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_clothes_short_10.wav",
+      "Path": "Media/926468782.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_clothes_short_10_10C4C929.wem"
      }
     ],
     "Events": [
      {
-      "Id": "1955951874",
-      "Name": "Play_TestBeep",
-      "ObjectPath": "\\Events\\TestEvents\\Play_TestBeep",
-      "GUID": "{D09020C2-8A1F-43E3-84A6-67EB0B1E108E}",
+      "Id": "1976886199",
+      "Name": "Play_Player_Clothes_Short",
+      "ObjectPath": "\\Events\\Player\\PlayerLocomotion\\Play_Player_Clothes_Short",
+      "GUID": "{8B058E88-CC41-4F15-9236-96A38B65C4D8}",
       "DurationType": "OneShot",
-      "DurationMin": "0.07419501",
-      "DurationMax": "0.07419501",
+      "DurationMin": "0.30193684",
+      "DurationMax": "0.4715987",
       "MediaRefs": [
        {
-        "Id": "759261552"
+        "Id": "19366300"
+       },
+       {
+        "Id": "128777668"
+       },
+       {
+        "Id": "299183579"
+       },
+       {
+        "Id": "441480517"
+       },
+       {
+        "Id": "639090061"
+       },
+       {
+        "Id": "789184646"
+       },
+       {
+        "Id": "806035094"
+       },
+       {
+        "Id": "841626508"
+       },
+       {
+        "Id": "906023645"
+       },
+       {
+        "Id": "926468782"
        }
       ]
      }
@@ -3002,7 +5148,7 @@
     "Type": "Event",
     "GUID": "{6FCF772D-550C-4F65-B592-DB8587BDF458}",
     "Language": "SFX",
-    "Hash": "{CDBC47D2-E883-CD6C-639C-E171A512A70F}",
+    "Hash": "{F288CCA1-0919-33B5-6485-3153F2ED772A}",
     "ObjectPath": "Plyr1_Dmg_Heavy",
     "ShortName": "Plyr1_Dmg_Heavy",
     "Path": "Event/Plyr1_Dmg_Heavy.bnk",
@@ -3087,7 +5233,7 @@
     "Type": "Event",
     "GUID": "{B9C1CDAF-05EE-4DFB-85C0-573948B38A64}",
     "Language": "SFX",
-    "Hash": "{BF9CE012-8375-CDC5-F802-812E55F323A8}",
+    "Hash": "{AFB1111C-623E-F2F9-B651-2601CBE33366}",
     "ObjectPath": "Plyr2_Dmg_Light",
     "ShortName": "Plyr2_Dmg_Light",
     "Path": "Event/Plyr2_Dmg_Light.bnk",
@@ -3168,32 +5314,11 @@
     ]
    },
    {
-    "Id": "2010386542",
-    "Type": "Event",
-    "GUID": "{D05CB7B5-5918-4544-A1AA-75CE5A34CB31}",
-    "Language": "SFX",
-    "Hash": "{072688D2-E7D3-6DDC-C69E-4E103DB9A2A8}",
-    "ObjectPath": "Ambi_3_Loop_Start",
-    "ShortName": "Ambi_3_Loop_Start",
-    "Path": "Event/Ambi_3_Loop_Start.bnk",
-    "Events": [
-     {
-      "Id": "2010386542",
-      "Name": "Ambi_3_Loop_Start",
-      "ObjectPath": "\\Events\\Ambience\\2D\\Ambi_3_Loop_Start",
-      "GUID": "{D05CB7B5-5918-4544-A1AA-75CE5A34CB31}",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     }
-    ]
-   },
-   {
     "Id": "2092733163",
     "Type": "Event",
     "GUID": "{82FCA46E-6E59-4873-9785-CC8165F421C1}",
     "Language": "SFX",
-    "Hash": "{483DACAC-6E9A-8E69-43D7-50D98BF82F54}",
+    "Hash": "{A28CAFEF-CE1E-C869-30AC-ADB6D519D6E8}",
     "ObjectPath": "Play_Settings_Slider",
     "ShortName": "Play_Settings_Slider",
     "Path": "Event/Play_Settings_Slider.bnk",
@@ -3230,7 +5355,7 @@
     "Type": "Event",
     "GUID": "{6B678688-889A-448F-8387-4F2BA8FB80C2}",
     "Language": "SFX",
-    "Hash": "{3956F5B6-15D9-01EF-7C8E-A1221FA71392}",
+    "Hash": "{4DE7E382-95E9-56B8-0FD6-714F23D544FC}",
     "ObjectPath": "Com_Welcome",
     "ShortName": "Com_Welcome",
     "Path": "Event/Com_Welcome.bnk",
@@ -3263,24 +5388,196 @@
     ]
    },
    {
-    "Id": "2313976826",
+    "Id": "2175711460",
     "Type": "Event",
-    "GUID": "{74313079-6B9A-47A5-A030-881C27AB662E}",
+    "GUID": "{BA2D6A2D-F502-46EB-9C45-0EEE49BE465F}",
     "Language": "SFX",
-    "Hash": "{ABFC1A12-62C0-36D3-30C4-FCA0B8F23E0D}",
-    "ObjectPath": "Stop_Player_Cloth",
-    "ShortName": "Stop_Player_Cloth",
-    "Path": "Event/Stop_Player_Cloth.bnk",
+    "Hash": "{2FB180F6-84DD-349E-3E21-A2890AC097F8}",
+    "ObjectPath": "Play_Player_Dash",
+    "ShortName": "Play_Player_Dash",
+    "Path": "Event/Play_Player_Dash.bnk",
+    "Media": [
+     {
+      "Id": "79594913",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_dash_01.wav",
+      "Path": "Media/79594913.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_dash_01_10C4C929.wem"
+     },
+     {
+      "Id": "145495843",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_dash_02.wav",
+      "Path": "Media/145495843.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_dash_02_10C4C929.wem"
+     },
+     {
+      "Id": "565228550",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_dash_05.wav",
+      "Path": "Media/565228550.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_dash_05_10C4C929.wem"
+     },
+     {
+      "Id": "584663142",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_dash_04.wav",
+      "Path": "Media/584663142.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_dash_04_10C4C929.wem"
+     },
+     {
+      "Id": "979127355",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_dash_06.wav",
+      "Path": "Media/979127355.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_dash_06_10C4C929.wem"
+     },
+     {
+      "Id": "1068380641",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_dash_03.wav",
+      "Path": "Media/1068380641.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_dash_03_10C4C929.wem"
+     }
+    ],
     "Events": [
      {
-      "Id": "2313976826",
-      "Name": "Stop_Player_Cloth",
-      "ObjectPath": "\\Events\\Player\\PlayerLocomotion\\Stop_Player_Cloth",
-      "GUID": "{74313079-6B9A-47A5-A030-881C27AB662E}",
-      "MaxAttenuation": "0",
+      "Id": "2175711460",
+      "Name": "Play_Player_Dash",
+      "ObjectPath": "\\Events\\Player\\PlayerLocomotion\\Play_Player_Dash",
+      "GUID": "{BA2D6A2D-F502-46EB-9C45-0EEE49BE465F}",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "0.43709597",
+      "DurationMax": "0.645433",
+      "MediaRefs": [
+       {
+        "Id": "79594913"
+       },
+       {
+        "Id": "145495843"
+       },
+       {
+        "Id": "565228550"
+       },
+       {
+        "Id": "584663142"
+       },
+       {
+        "Id": "979127355"
+       },
+       {
+        "Id": "1068380641"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "2265500861",
+    "Type": "Event",
+    "GUID": "{BC242ACD-BEB1-4A14-8C77-60F841C91DEF}",
+    "Language": "SFX",
+    "Hash": "{A73E26D9-BAA3-904D-7C68-D6E3B35374FB}",
+    "ObjectPath": "Play_Player2_Punsh_Woosh",
+    "ShortName": "Play_Player2_Punsh_Woosh",
+    "Path": "Event/Play_Player2_Punsh_Woosh.bnk",
+    "Media": [
+     {
+      "Id": "362073948",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_punch_woosh_06.wav",
+      "Path": "Media/362073948.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_punch_woosh_06_10C4C929.wem"
+     },
+     {
+      "Id": "494396620",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_punch_woosh_01.wav",
+      "Path": "Media/494396620.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_punch_woosh_01_10C4C929.wem"
+     },
+     {
+      "Id": "510778664",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_punch_woosh_02.wav",
+      "Path": "Media/510778664.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_punch_woosh_02_10C4C929.wem"
+     },
+     {
+      "Id": "861693247",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_punch_woosh_03.wav",
+      "Path": "Media/861693247.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_punch_woosh_03_10C4C929.wem"
+     },
+     {
+      "Id": "862612232",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_punch_woosh_04.wav",
+      "Path": "Media/862612232.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_punch_woosh_04_10C4C929.wem"
+     },
+     {
+      "Id": "878616464",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_punch_woosh_05.wav",
+      "Path": "Media/878616464.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_punch_woosh_05_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2265500861",
+      "Name": "Play_Player2_Punsh_Woosh",
+      "ObjectPath": "\\Events\\Player2\\Player2Combat\\Play_Player2_Punsh_Woosh",
+      "GUID": "{BC242ACD-BEB1-4A14-8C77-60F841C91DEF}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.1983341",
+      "DurationMax": "0.327037",
+      "MediaRefs": [
+       {
+        "Id": "362073948"
+       },
+       {
+        "Id": "494396620"
+       },
+       {
+        "Id": "510778664"
+       },
+       {
+        "Id": "861693247"
+       },
+       {
+        "Id": "862612232"
+       },
+       {
+        "Id": "878616464"
+       }
+      ]
      }
     ]
    },
@@ -3289,7 +5586,7 @@
     "Type": "Event",
     "GUID": "{99EBE9DA-2D4B-4E25-A1FD-CC1C387CC0C5}",
     "Language": "SFX",
-    "Hash": "{09AB476E-9FF6-9FCA-96A8-EC84326D21BD}",
+    "Hash": "{E13FB5A4-E0CD-50A3-7B47-2450D4CA1E7A}",
     "ObjectPath": "Plyr1_Attack_Heavy",
     "ShortName": "Plyr1_Attack_Heavy",
     "Path": "Event/Plyr1_Attack_Heavy.bnk",
@@ -3374,7 +5671,7 @@
     "Type": "Event",
     "GUID": "{F110A2AB-C527-4CD6-956A-320E06655E4E}",
     "Language": "SFX",
-    "Hash": "{1C19E938-EF82-D16B-97F9-FB95367035F4}",
+    "Hash": "{C790F221-0848-3A06-65F6-099845D908B8}",
     "ObjectPath": "Play_Player_Punch_Light",
     "ShortName": "Play_Player_Punch_Light",
     "Path": "Event/Play_Player_Punch_Light.bnk",
@@ -3441,8 +5738,8 @@
       "ObjectPath": "\\Events\\Player\\PlayerCombat\\Play_Player_Punch_Light",
       "GUID": "{F110A2AB-C527-4CD6-956A-320E06655E4E}",
       "DurationType": "OneShot",
-      "DurationMin": "0.44264585",
-      "DurationMax": "0.54541665",
+      "DurationMin": "0.2440092",
+      "DurationMax": "0.40502334",
       "MediaRefs": [
        {
         "Id": "20389258"
@@ -3471,7 +5768,7 @@
     "Type": "Event",
     "GUID": "{36113D1F-1DF9-4707-9998-76CB9E7E679F}",
     "Language": "SFX",
-    "Hash": "{92A403BA-C840-04B5-D47D-EFF3CBCF8CD3}",
+    "Hash": "{5DC2175C-25E3-ADC3-B0D8-E402AE26F1CF}",
     "ObjectPath": "Com_Round_4_Start",
     "ShortName": "Com_Round_4_Start",
     "Path": "Event/Com_Round_4_Start.bnk",
@@ -3538,8 +5835,8 @@
       "ObjectPath": "\\Events\\Commentator_Voices\\Com_Round_4_Start",
       "GUID": "{36113D1F-1DF9-4707-9998-76CB9E7E679F}",
       "DurationType": "OneShot",
-      "DurationMin": "3.03125",
-      "DurationMax": "3.34375",
+      "DurationMin": "6.53125",
+      "DurationMax": "6.84375",
       "MediaRefs": [
        {
         "Id": "115684259"
@@ -3568,7 +5865,7 @@
     "Type": "Event",
     "GUID": "{52806D64-28C9-4DBD-9FA9-B19EFC1D9D2B}",
     "Language": "SFX",
-    "Hash": "{69968BA8-013D-A01B-D859-DD8BBFBF78C1}",
+    "Hash": "{F0EB6840-0167-B4DD-0077-17B6D652C615}",
     "ObjectPath": "Play_Player_Crouch_In",
     "ShortName": "Play_Player_Crouch_In",
     "Path": "Event/Play_Player_Crouch_In.bnk",
@@ -3635,8 +5932,8 @@
       "ObjectPath": "\\Events\\Player\\PlayerLocomotion\\Play_Player_Crouch_In",
       "GUID": "{52806D64-28C9-4DBD-9FA9-B19EFC1D9D2B}",
       "DurationType": "OneShot",
-      "DurationMin": "0.3373956",
-      "DurationMax": "0.626091",
+      "DurationMin": "0.35828504",
+      "DurationMax": "0.5811346",
       "MediaRefs": [
        {
         "Id": "126319256"
@@ -3661,11 +5958,108 @@
     ]
    },
    {
+    "Id": "2515698252",
+    "Type": "Event",
+    "GUID": "{56CAABDC-83A4-48A3-94F4-F0C5654233D4}",
+    "Language": "SFX",
+    "Hash": "{B852D8D0-3BAE-D018-83F9-0D007ABDE03B}",
+    "ObjectPath": "Play_Player2_Jump",
+    "ShortName": "Play_Player2_Jump",
+    "Path": "Event/Play_Player2_Jump.bnk",
+    "Media": [
+     {
+      "Id": "38970517",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_jump_06.wav",
+      "Path": "Media/38970517.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_jump_06_10C4C929.wem"
+     },
+     {
+      "Id": "85352697",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_jump_01.wav",
+      "Path": "Media/85352697.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_jump_01_10C4C929.wem"
+     },
+     {
+      "Id": "445769901",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_jump_05.wav",
+      "Path": "Media/445769901.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_jump_05_10C4C929.wem"
+     },
+     {
+      "Id": "468309020",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_jump_04.wav",
+      "Path": "Media/468309020.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_jump_04_10C4C929.wem"
+     },
+     {
+      "Id": "858322442",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_jump_03.wav",
+      "Path": "Media/858322442.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_jump_03_10C4C929.wem"
+     },
+     {
+      "Id": "931526503",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_jump_02.wav",
+      "Path": "Media/931526503.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_jump_02_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2515698252",
+      "Name": "Play_Player2_Jump",
+      "ObjectPath": "\\Events\\Player2\\Player2Locomotion\\Play_Player2_Jump",
+      "GUID": "{56CAABDC-83A4-48A3-94F4-F0C5654233D4}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.36094677",
+      "DurationMax": "0.5081386",
+      "MediaRefs": [
+       {
+        "Id": "38970517"
+       },
+       {
+        "Id": "85352697"
+       },
+       {
+        "Id": "445769901"
+       },
+       {
+        "Id": "468309020"
+       },
+       {
+        "Id": "858322442"
+       },
+       {
+        "Id": "931526503"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "2518864784",
     "Type": "Event",
     "GUID": "{5B16E403-94D2-446D-9060-3E385BA132ED}",
     "Language": "SFX",
-    "Hash": "{F3F03F35-3D5C-DE65-78F5-165DBF51DAD8}",
+    "Hash": "{0B822E26-15BA-D7D9-1F7E-2710CDB21256}",
     "ObjectPath": "Play_Select_Fighter",
     "ShortName": "Play_Select_Fighter",
     "Path": "Event/Play_Select_Fighter.bnk",
@@ -3698,11 +6092,108 @@
     ]
    },
    {
+    "Id": "2526534989",
+    "Type": "Event",
+    "GUID": "{9E15B848-01A3-4C12-AC8F-935B3047AD4C}",
+    "Language": "SFX",
+    "Hash": "{E269456E-BC7F-F7BE-2852-01F0E29200CD}",
+    "ObjectPath": "Play_Player2_Punch_Light",
+    "ShortName": "Play_Player2_Punch_Light",
+    "Path": "Event/Play_Player2_Punch_Light.bnk",
+    "Media": [
+     {
+      "Id": "36846148",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_lightattack_04.wav",
+      "Path": "Media/36846148.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_lightattack_04_10C4C929.wem"
+     },
+     {
+      "Id": "394313105",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_lightattack_02.wav",
+      "Path": "Media/394313105.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_lightattack_02_10C4C929.wem"
+     },
+     {
+      "Id": "613516675",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_lightattack_05.wav",
+      "Path": "Media/613516675.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_lightattack_05_10C4C929.wem"
+     },
+     {
+      "Id": "664493311",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_lightattack_01.wav",
+      "Path": "Media/664493311.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_lightattack_01_10C4C929.wem"
+     },
+     {
+      "Id": "764079962",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_lightattack_06.wav",
+      "Path": "Media/764079962.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_lightattack_06_10C4C929.wem"
+     },
+     {
+      "Id": "1064103838",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_combat_lightattack_03.wav",
+      "Path": "Media/1064103838.wem",
+      "CachePath": "SFX/sfx_fighter2_combat_lightattack_03_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2526534989",
+      "Name": "Play_Player2_Punch_Light",
+      "ObjectPath": "\\Events\\Player2\\Player2Combat\\Play_Player2_Punch_Light",
+      "GUID": "{9E15B848-01A3-4C12-AC8F-935B3047AD4C}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.26745078",
+      "DurationMax": "0.4436073",
+      "MediaRefs": [
+       {
+        "Id": "36846148"
+       },
+       {
+        "Id": "394313105"
+       },
+       {
+        "Id": "613516675"
+       },
+       {
+        "Id": "664493311"
+       },
+       {
+        "Id": "764079962"
+       },
+       {
+        "Id": "1064103838"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "2555223343",
     "Type": "Event",
     "GUID": "{756383C1-840D-41DF-B7D5-98E46E2560D4}",
     "Language": "SFX",
-    "Hash": "{96692B0F-AB13-BB5C-50EC-822247644B69}",
+    "Hash": "{3645C584-4507-A5EA-1C86-B84BCCEF5341}",
     "ObjectPath": "Play_Player_Crouch_Out",
     "ShortName": "Play_Player_Crouch_Out",
     "Path": "Event/Play_Player_Crouch_Out.bnk",
@@ -3769,8 +6260,8 @@
       "ObjectPath": "\\Events\\Player\\PlayerLocomotion\\Play_Player_Crouch_Out",
       "GUID": "{756383C1-840D-41DF-B7D5-98E46E2560D4}",
       "DurationType": "OneShot",
-      "DurationMin": "0.3327285",
-      "DurationMax": "0.56416494",
+      "DurationMin": "0.36368236",
+      "DurationMax": "0.5236551",
       "MediaRefs": [
        {
         "Id": "242429337"
@@ -3799,7 +6290,7 @@
     "Type": "Event",
     "GUID": "{09907A82-0543-4AC4-8673-B8CE02D2AA76}",
     "Language": "SFX",
-    "Hash": "{618884F4-CE53-A658-519B-187CC406B555}",
+    "Hash": "{910F97F3-0486-5922-32A2-24B287125D9C}",
     "ObjectPath": "Plyr2_Movement_Rollbackward",
     "ShortName": "Plyr2_Movement_Rollbackward",
     "Path": "Event/Plyr2_Movement_Rollbackward.bnk",
@@ -3884,7 +6375,7 @@
     "Type": "Event",
     "GUID": "{6909B8C2-6D58-49AD-9B0C-ECB42CC550E2}",
     "Language": "SFX",
-    "Hash": "{6AD697B3-B688-BF2B-6A59-A8C09115199E}",
+    "Hash": "{621F64FE-6867-D4F7-93BE-E41A6082F63D}",
     "ObjectPath": "Play_Player_Punch_Heavy",
     "ShortName": "Play_Player_Punch_Heavy",
     "Path": "Event/Play_Player_Punch_Heavy.bnk",
@@ -3951,8 +6442,8 @@
       "ObjectPath": "\\Events\\Player\\PlayerCombat\\Play_Player_Punch_Heavy",
       "GUID": "{6909B8C2-6D58-49AD-9B0C-ECB42CC550E2}",
       "DurationType": "OneShot",
-      "DurationMin": "0.583875",
-      "DurationMax": "0.68789583",
+      "DurationMin": "0.3487932",
+      "DurationMax": "0.56508785",
       "MediaRefs": [
        {
         "Id": "56341530"
@@ -3977,48 +6468,11 @@
     ]
    },
    {
-    "Id": "2777511740",
-    "Type": "Event",
-    "GUID": "{3D69D6CA-7817-48AC-A481-26DD99F18E67}",
-    "Language": "SFX",
-    "Hash": "{17FF85FB-224C-FC1D-9C56-3358DBA91034}",
-    "ObjectPath": "Com_Choose",
-    "ShortName": "Com_Choose",
-    "Path": "Event/Com_Choose.bnk",
-    "Media": [
-     {
-      "Id": "653837993",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "vo_commentator_choose_fighter_01.wav",
-      "Path": "Media/653837993.wem",
-      "CachePath": "SFX/vo_commentator_choose_fighter_01_10C4C929.wem"
-     }
-    ],
-    "Events": [
-     {
-      "Id": "2777511740",
-      "Name": "Com_Choose",
-      "ObjectPath": "\\Events\\Commentator_Voices\\Com_Choose",
-      "GUID": "{3D69D6CA-7817-48AC-A481-26DD99F18E67}",
-      "DurationType": "OneShot",
-      "DurationMin": "1.8125",
-      "DurationMax": "1.8125",
-      "MediaRefs": [
-       {
-        "Id": "653837993"
-       }
-      ]
-     }
-    ]
-   },
-   {
     "Id": "2799667633",
     "Type": "Event",
     "GUID": "{18AC3747-1B0B-4F57-9307-A7FEBA0ADAC6}",
     "Language": "SFX",
-    "Hash": "{7A88C7E9-C51E-2C20-AA27-EDBBB2E866B1}",
+    "Hash": "{40B7B2AD-C5FC-B6A8-D830-50D6E4EEFD74}",
     "ObjectPath": "Plyr1_Dmg_Light",
     "ShortName": "Plyr1_Dmg_Light",
     "Path": "Event/Plyr1_Dmg_Light.bnk",
@@ -4103,7 +6557,7 @@
     "Type": "Event",
     "GUID": "{E001864B-1F09-432D-9769-CAA8112B432A}",
     "Language": "SFX",
-    "Hash": "{E564DEF2-9B7B-82FA-5EDD-F3AE0B64C4D0}",
+    "Hash": "{EBECED0C-FC4E-1B73-A9AE-A2CF65AADC49}",
     "ObjectPath": "Play_Move_Button",
     "ShortName": "Play_Move_Button",
     "Path": "Event/Play_Move_Button.bnk",
@@ -4136,33 +6590,11 @@
     ]
    },
    {
-    "Id": "2963813288",
-    "Type": "Event",
-    "GUID": "{A9A40CEC-4EF1-4D1A-8CB5-6FA8E96D85AB}",
-    "Language": "SFX",
-    "Hash": "{BD73CB33-5D25-E152-E109-83D30E91A21A}",
-    "ObjectPath": "Play_Stop_TestBeep_lp",
-    "ShortName": "Play_Stop_TestBeep_lp",
-    "Path": "Event/Play_Stop_TestBeep_lp.bnk",
-    "Events": [
-     {
-      "Id": "2963813288",
-      "Name": "Play_Stop_TestBeep_lp",
-      "ObjectPath": "\\Events\\TestEvents\\Play_Stop_TestBeep_lp",
-      "GUID": "{A9A40CEC-4EF1-4D1A-8CB5-6FA8E96D85AB}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     }
-    ]
-   },
-   {
     "Id": "3021177893",
     "Type": "Event",
     "GUID": "{DC4135FD-87EC-41A5-84C3-E1F70FC2699C}",
     "Language": "SFX",
-    "Hash": "{AE3A5B70-471F-3232-8F11-9EDC6C4A19A6}",
+    "Hash": "{BCD1DBE2-99B9-C3E1-34D1-B147DC8DC500}",
     "ObjectPath": "Play_Player_Punsh_Woosh",
     "ShortName": "Play_Player_Punsh_Woosh",
     "Path": "Event/Play_Player_Punsh_Woosh.bnk",
@@ -4229,8 +6661,8 @@
       "ObjectPath": "\\Events\\Player\\PlayerCombat\\Play_Player_Punsh_Woosh",
       "GUID": "{DC4135FD-87EC-41A5-84C3-E1F70FC2699C}",
       "DurationType": "OneShot",
-      "DurationMin": "0.25119513",
-      "DurationMax": "0.47743717",
+      "DurationMin": "0.26674756",
+      "DurationMax": "0.44960067",
       "MediaRefs": [
        {
         "Id": "266191415"
@@ -4255,11 +6687,408 @@
     ]
    },
    {
+    "Id": "3074061029",
+    "Type": "Event",
+    "GUID": "{62D78041-F9D1-4419-AE06-E663C92CE753}",
+    "Language": "SFX",
+    "Hash": "{2C30B08A-4937-43D7-09C9-F61A16740159}",
+    "ObjectPath": "Play_Music_Stage_1a",
+    "ShortName": "Play_Music_Stage_1a",
+    "Path": "Event/Play_Music_Stage_1a.bnk",
+    "Media": [
+     {
+      "Id": "25179338",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-C-Chorus_Drums_125bpm5-4_L13M_P0.wav",
+      "Path": "Media/25179338.wem",
+      "CachePath": "SFX/Stage-C-Chorus_Drums_125bpm5-4_L13M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "64850139",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Chorus_Cymbals_125bpm3-4_L10M_P0.wav",
+      "Path": "Media/64850139.wem",
+      "CachePath": "SFX/Stage-A-Chorus_Cymbals_125bpm3-4_L10M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "119545211",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Chorus_Bells_125bpm3-4_L6M_P1.wav",
+      "Path": "Media/119545211.wem",
+      "CachePath": "SFX/Stage-A-Chorus_Bells_125bpm3-4_L6M_P1_D79FB2B7.wem"
+     },
+     {
+      "Id": "146942744",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-C-Chorus_Pauken_125bpm5-4_L13M_P0.wav",
+      "Path": "Media/146942744.wem",
+      "CachePath": "SFX/Stage-C-Chorus_Pauken_125bpm5-4_L13M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "162058052",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-B-Chorus_Cymbals_125bpm5-4_L10M_P0.wav",
+      "Path": "Media/162058052.wem",
+      "CachePath": "SFX/Stage-B-Chorus_Cymbals_125bpm5-4_L10M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "173519150",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Chorus_Orchestra_125bpm3-4_L6M_P1.wav",
+      "Path": "Media/173519150.wem",
+      "CachePath": "SFX/Stage-A-Chorus_Orchestra_125bpm3-4_L6M_P1_D79FB2B7.wem"
+     },
+     {
+      "Id": "193786671",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-C-Chorus_Gitarre_125bpm5-4_L13M_P0.wav",
+      "Path": "Media/193786671.wem",
+      "CachePath": "SFX/Stage-C-Chorus_Gitarre_125bpm5-4_L13M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "201603707",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Bridge_Orchestra_125bpm4-4_L10M_P0.wav",
+      "Path": "Media/201603707.wem",
+      "CachePath": "SFX/Stage-A-Bridge_Orchestra_125bpm4-4_L10M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "238425668",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Bridge_Gitarre2_125bpm4-4_L10M_P0.wav",
+      "Path": "Media/238425668.wem",
+      "CachePath": "SFX/Stage-A-Bridge_Gitarre2_125bpm4-4_L10M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "286218474",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Chorus_Orchestra_125bpm3-4_L10M_P0.wav",
+      "Path": "Media/286218474.wem",
+      "CachePath": "SFX/Stage-A-Chorus_Orchestra_125bpm3-4_L10M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "287428225",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-B-Chorus_Gitarre_125bpm5-4_L10M_P0.wav",
+      "Path": "Media/287428225.wem",
+      "CachePath": "SFX/Stage-B-Chorus_Gitarre_125bpm5-4_L10M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "328658872",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-C-Chorus_PaukenRolls_125bpm5-4_L13M_P0.wav",
+      "Path": "Media/328658872.wem",
+      "CachePath": "SFX/Stage-C-Chorus_PaukenRolls_125bpm5-4_L13M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "336656664",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-B-Chorus_Orchestra_125bpm5-4_L10M_P0.wav",
+      "Path": "Media/336656664.wem",
+      "CachePath": "SFX/Stage-B-Chorus_Orchestra_125bpm5-4_L10M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "360105705",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Strophe_Drums_125bpm3-4_L6M_P1.wav",
+      "Path": "Media/360105705.wem",
+      "CachePath": "SFX/Stage-A-Strophe_Drums_125bpm3-4_L6M_P1_D79FB2B7.wem"
+     },
+     {
+      "Id": "363701330",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Chorus_PaukenRolls_125bpm3-4_L6M_P1.wav",
+      "Path": "Media/363701330.wem",
+      "CachePath": "SFX/Stage-A-Chorus_PaukenRolls_125bpm3-4_L6M_P1_D79FB2B7.wem"
+     },
+     {
+      "Id": "423817697",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-C-Chorus_Cymbals_125bpm5-4_L13M_P0.wav",
+      "Path": "Media/423817697.wem",
+      "CachePath": "SFX/Stage-C-Chorus_Cymbals_125bpm5-4_L13M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "427259993",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Chorus_Pauken_125bpm3-4_L6M_P1.wav",
+      "Path": "Media/427259993.wem",
+      "CachePath": "SFX/Stage-A-Chorus_Pauken_125bpm3-4_L6M_P1_D79FB2B7.wem"
+     },
+     {
+      "Id": "486159630",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-B-Chorus_Drums_125bpm5-4_L10M_P0.wav",
+      "Path": "Media/486159630.wem",
+      "CachePath": "SFX/Stage-B-Chorus_Drums_125bpm5-4_L10M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "530924770",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-B-Strophe_Orchestra_125bpm3-4_L11M_P1.wav",
+      "Path": "Media/530924770.wem",
+      "CachePath": "SFX/Stage-B-Strophe_Orchestra_125bpm3-4_L11M_P1_D79FB2B7.wem"
+     },
+     {
+      "Id": "603726870",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-C-Chorus_Orchestra_125bpm5-4_L13M_P0.wav",
+      "Path": "Media/603726870.wem",
+      "CachePath": "SFX/Stage-C-Chorus_Orchestra_125bpm5-4_L13M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "610212862",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Chorus_Drums_125bpm3-4_L10M_P0.wav",
+      "Path": "Media/610212862.wem",
+      "CachePath": "SFX/Stage-A-Chorus_Drums_125bpm3-4_L10M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "627391774",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Chorus_Gitarre_125bpm3-4_L10M_P0.wav",
+      "Path": "Media/627391774.wem",
+      "CachePath": "SFX/Stage-A-Chorus_Gitarre_125bpm3-4_L10M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "703627334",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Chorus_Gitarre_125bpm3-4_L6M_P1.wav",
+      "Path": "Media/703627334.wem",
+      "CachePath": "SFX/Stage-A-Chorus_Gitarre_125bpm3-4_L6M_P1_D79FB2B7.wem"
+     },
+     {
+      "Id": "802536315",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Bridge_Gitarre_125bpm4-4_L10M_P0.wav",
+      "Path": "Media/802536315.wem",
+      "CachePath": "SFX/Stage-A-Bridge_Gitarre_125bpm4-4_L10M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "859888067",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-B-Strophe_PaukenRolls_125bpm3-4_L11M_P1.wav",
+      "Path": "Media/859888067.wem",
+      "CachePath": "SFX/Stage-B-Strophe_PaukenRolls_125bpm3-4_L11M_P1_D79FB2B7.wem"
+     },
+     {
+      "Id": "889077021",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-B-Strophe_Drums_125bpm3-4_L11M_P1.wav",
+      "Path": "Media/889077021.wem",
+      "CachePath": "SFX/Stage-B-Strophe_Drums_125bpm3-4_L11M_P1_D79FB2B7.wem"
+     },
+     {
+      "Id": "906855380",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Bridge_Pauken_125bpm4-4_L10M_P0.wav",
+      "Path": "Media/906855380.wem",
+      "CachePath": "SFX/Stage-A-Bridge_Pauken_125bpm4-4_L10M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "991543477",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-B-Strophe_Cymbals_125bpm3-4_L11M_P1.wav",
+      "Path": "Media/991543477.wem",
+      "CachePath": "SFX/Stage-B-Strophe_Cymbals_125bpm3-4_L11M_P1_D79FB2B7.wem"
+     },
+     {
+      "Id": "1013507187",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Chorus_Drums_125bpm3-4_L6M_P1.wav",
+      "Path": "Media/1013507187.wem",
+      "CachePath": "SFX/Stage-A-Chorus_Drums_125bpm3-4_L6M_P1_D79FB2B7.wem"
+     },
+     {
+      "Id": "1026727903",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-B-Strophe_Gitarre_125bpm3-4_L11M_P1.wav",
+      "Path": "Media/1026727903.wem",
+      "CachePath": "SFX/Stage-B-Strophe_Gitarre_125bpm3-4_L11M_P1_D79FB2B7.wem"
+     },
+     {
+      "Id": "1059559132",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-B-Strophe_Pauken_125bpm3-4_L11M_P1.wav",
+      "Path": "Media/1059559132.wem",
+      "CachePath": "SFX/Stage-B-Strophe_Pauken_125bpm3-4_L11M_P1_D79FB2B7.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3074061029",
+      "Name": "Play_Music_Stage_1a",
+      "ObjectPath": "\\Events\\Music\\Play_Music_Stage_1a",
+      "GUID": "{62D78041-F9D1-4419-AE06-E663C92CE753}",
+      "DurationType": "OneShot",
+      "DurationMin": "135.84",
+      "DurationMax": "135.84",
+      "MediaRefs": [
+       {
+        "Id": "25179338"
+       },
+       {
+        "Id": "64850139"
+       },
+       {
+        "Id": "119545211"
+       },
+       {
+        "Id": "146942744"
+       },
+       {
+        "Id": "162058052"
+       },
+       {
+        "Id": "173519150"
+       },
+       {
+        "Id": "193786671"
+       },
+       {
+        "Id": "201603707"
+       },
+       {
+        "Id": "238425668"
+       },
+       {
+        "Id": "286218474"
+       },
+       {
+        "Id": "287428225"
+       },
+       {
+        "Id": "328658872"
+       },
+       {
+        "Id": "336656664"
+       },
+       {
+        "Id": "360105705"
+       },
+       {
+        "Id": "363701330"
+       },
+       {
+        "Id": "423817697"
+       },
+       {
+        "Id": "427259993"
+       },
+       {
+        "Id": "486159630"
+       },
+       {
+        "Id": "530924770"
+       },
+       {
+        "Id": "603726870"
+       },
+       {
+        "Id": "610212862"
+       },
+       {
+        "Id": "627391774"
+       },
+       {
+        "Id": "703627334"
+       },
+       {
+        "Id": "802536315"
+       },
+       {
+        "Id": "859888067"
+       },
+       {
+        "Id": "889077021"
+       },
+       {
+        "Id": "906855380"
+       },
+       {
+        "Id": "991543477"
+       },
+       {
+        "Id": "1013507187"
+       },
+       {
+        "Id": "1026727903"
+       },
+       {
+        "Id": "1059559132"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "3101111843",
     "Type": "Event",
     "GUID": "{8701634F-24B1-44A7-A660-19C90F0851B0}",
     "Language": "SFX",
-    "Hash": "{D1094781-3471-4CBB-B4E4-5C79A0B9C9D4}",
+    "Hash": "{D978CEB0-DC0D-88C9-FEFD-972F6FB873B6}",
     "ObjectPath": "Com_Round_2_Start",
     "ShortName": "Com_Round_2_Start",
     "Path": "Event/Com_Round_2_Start.bnk",
@@ -4326,8 +7155,8 @@
       "ObjectPath": "\\Events\\Commentator_Voices\\Com_Round_2_Start",
       "GUID": "{8701634F-24B1-44A7-A660-19C90F0851B0}",
       "DurationType": "OneShot",
-      "DurationMin": "2.3125",
-      "DurationMax": "2.625",
+      "DurationMin": "5.8125",
+      "DurationMax": "6.125",
       "MediaRefs": [
        {
         "Id": "115684259"
@@ -4352,11 +7181,344 @@
     ]
    },
    {
+    "Id": "3108408445",
+    "Type": "Event",
+    "GUID": "{8C35D4D8-352D-4B69-B8D7-904A894A69E4}",
+    "Language": "SFX",
+    "Hash": "{C82103D3-9A2C-9AA9-7C92-007B9A5ECE34}",
+    "ObjectPath": "Play_Player2_Footsteps",
+    "ShortName": "Play_Player2_Footsteps",
+    "Path": "Event/Play_Player2_Footsteps.bnk",
+    "Media": [
+     {
+      "Id": "67593857",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_footsteps_puddle_04.wav",
+      "Path": "Media/67593857.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_footsteps_puddle_04_10C4C929.wem"
+     },
+     {
+      "Id": "301027720",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_footsteps_concrete_04.wav",
+      "Path": "Media/301027720.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_footsteps_concrete_04_10C4C929.wem"
+     },
+     {
+      "Id": "330289375",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_footsteps_concrete_02.wav",
+      "Path": "Media/330289375.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_footsteps_concrete_02_10C4C929.wem"
+     },
+     {
+      "Id": "406092065",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_footsteps_puddle_05.wav",
+      "Path": "Media/406092065.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_footsteps_puddle_05_10C4C929.wem"
+     },
+     {
+      "Id": "445959598",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_footsteps_concrete_06.wav",
+      "Path": "Media/445959598.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_footsteps_concrete_06_10C4C929.wem"
+     },
+     {
+      "Id": "632561365",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_footsteps_puddle_02.wav",
+      "Path": "Media/632561365.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_footsteps_puddle_02_10C4C929.wem"
+     },
+     {
+      "Id": "659928428",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_footsteps_concrete_01.wav",
+      "Path": "Media/659928428.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_footsteps_concrete_01_10C4C929.wem"
+     },
+     {
+      "Id": "695830248",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_footsteps_concrete_03.wav",
+      "Path": "Media/695830248.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_footsteps_concrete_03_10C4C929.wem"
+     },
+     {
+      "Id": "745414471",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_footsteps_puddle_01.wav",
+      "Path": "Media/745414471.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_footsteps_puddle_01_10C4C929.wem"
+     },
+     {
+      "Id": "759945326",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_footsteps_concrete_05.wav",
+      "Path": "Media/759945326.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_footsteps_concrete_05_10C4C929.wem"
+     },
+     {
+      "Id": "899471618",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_footsteps_puddle_06.wav",
+      "Path": "Media/899471618.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_footsteps_puddle_06_10C4C929.wem"
+     },
+     {
+      "Id": "985855415",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_footsteps_puddle_03.wav",
+      "Path": "Media/985855415.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_footsteps_puddle_03_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3108408445",
+      "Name": "Play_Player2_Footsteps",
+      "ObjectPath": "\\Events\\Player2\\Player2Locomotion\\Play_Player2_Footsteps",
+      "GUID": "{8C35D4D8-352D-4B69-B8D7-904A894A69E4}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.17020415",
+      "DurationMax": "0.30219695",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1044534455",
+         "Id": "2003927601",
+         "GUID": "{1EA3450A-CCE0-4188-A244-C7704C707E90}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "67593857"
+         },
+         {
+          "Id": "406092065"
+         },
+         {
+          "Id": "632561365"
+         },
+         {
+          "Id": "745414471"
+         },
+         {
+          "Id": "899471618"
+         },
+         {
+          "Id": "985855415"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1044534455",
+         "Id": "841620460",
+         "GUID": "{E812C4B3-3DB5-42FD-9C23-3A9B3A798CE7}",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "301027720"
+         },
+         {
+          "Id": "330289375"
+         },
+         {
+          "Id": "445959598"
+         },
+         {
+          "Id": "659928428"
+         },
+         {
+          "Id": "695830248"
+         },
+         {
+          "Id": "759945326"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "1044534455",
+      "Name": "GroundMaterialSwitch",
+      "ObjectPath": "\\Switches\\Default Work Unit\\GroundMaterialSwitch",
+      "GUID": "{837C1AB4-47B2-4EFB-B32C-0C393B49C2F7}",
+      "Switches": [
+       {
+        "Id": "841620460",
+        "Name": "Concrete",
+        "ObjectPath": "\\Switches\\Default Work Unit\\GroundMaterialSwitch\\Concrete",
+        "GUID": "{E812C4B3-3DB5-42FD-9C23-3A9B3A798CE7}"
+       },
+       {
+        "Id": "1216965916",
+        "Name": "Stone",
+        "ObjectPath": "\\Switches\\Default Work Unit\\GroundMaterialSwitch\\Stone",
+        "GUID": "{3C15D331-3AD8-4BFA-BA9A-E01D9D580F12}"
+       },
+       {
+        "Id": "2003927601",
+        "Name": "Puddle",
+        "ObjectPath": "\\Switches\\Default Work Unit\\GroundMaterialSwitch\\Puddle",
+        "GUID": "{1EA3450A-CCE0-4188-A244-C7704C707E90}"
+       },
+       {
+        "Id": "2185786256",
+        "Name": "Gravel",
+        "ObjectPath": "\\Switches\\Default Work Unit\\GroundMaterialSwitch\\Gravel",
+        "GUID": "{9464961A-39D2-4071-82AB-1C7E868448AA}"
+       },
+       {
+        "Id": "2195636714",
+        "Name": "Dirt",
+        "ObjectPath": "\\Switches\\Default Work Unit\\GroundMaterialSwitch\\Dirt",
+        "GUID": "{8BBE48CE-F73E-4AA9-B1FA-E4F009E5DEBD}"
+       },
+       {
+        "Id": "2654748154",
+        "Name": "Water",
+        "ObjectPath": "\\Switches\\Default Work Unit\\GroundMaterialSwitch\\Water",
+        "GUID": "{87606646-0DDD-4539-8AC3-7DD81A1DC005}"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "3165952497",
+    "Type": "Event",
+    "GUID": "{E600404F-4142-4E2D-B7A6-D5AEE9951BBF}",
+    "Language": "SFX",
+    "Hash": "{20942FA4-43C1-7BD0-02D6-671608F3A827}",
+    "ObjectPath": "Play_Player2_Landing",
+    "ShortName": "Play_Player2_Landing",
+    "Path": "Event/Play_Player2_Landing.bnk",
+    "Media": [
+     {
+      "Id": "242860944",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_landing_05.wav",
+      "Path": "Media/242860944.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_landing_05_10C4C929.wem"
+     },
+     {
+      "Id": "285999037",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_landing_06.wav",
+      "Path": "Media/285999037.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_landing_06_10C4C929.wem"
+     },
+     {
+      "Id": "344642312",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_landing_01.wav",
+      "Path": "Media/344642312.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_landing_01_10C4C929.wem"
+     },
+     {
+      "Id": "662348136",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_landing_04.wav",
+      "Path": "Media/662348136.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_landing_04_10C4C929.wem"
+     },
+     {
+      "Id": "846625063",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_landing_03.wav",
+      "Path": "Media/846625063.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_landing_03_10C4C929.wem"
+     },
+     {
+      "Id": "934277310",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_landing_02.wav",
+      "Path": "Media/934277310.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_landing_02_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3165952497",
+      "Name": "Play_Player2_Landing",
+      "ObjectPath": "\\Events\\Player2\\Player2Locomotion\\Play_Player2_Landing",
+      "GUID": "{E600404F-4142-4E2D-B7A6-D5AEE9951BBF}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.1477543",
+      "DurationMax": "0.2710024",
+      "MediaRefs": [
+       {
+        "Id": "242860944"
+       },
+       {
+        "Id": "285999037"
+       },
+       {
+        "Id": "344642312"
+       },
+       {
+        "Id": "662348136"
+       },
+       {
+        "Id": "846625063"
+       },
+       {
+        "Id": "934277310"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "3235113002",
     "Type": "Event",
     "GUID": "{7A8FD551-211D-449D-89BF-34E067A83438}",
     "Language": "SFX",
-    "Hash": "{B377A433-7B7A-2A25-F204-87D7E0BE9ACE}",
+    "Hash": "{5E9F9232-5829-47D2-A44A-CD0915C993B3}",
     "ObjectPath": "Plyr1_Movement_Rollforward",
     "ShortName": "Plyr1_Movement_Rollforward",
     "Path": "Event/Plyr1_Movement_Rollforward.bnk",
@@ -4441,7 +7603,7 @@
     "Type": "Event",
     "GUID": "{26AB0E9E-6FC9-4D4C-98BC-CDD120436275}",
     "Language": "SFX",
-    "Hash": "{F52BDD86-16DF-E5D5-D083-DAE715B56FFA}",
+    "Hash": "{BAC0E671-1DEA-CAA1-1BA2-846EF0549DCF}",
     "ObjectPath": "Plyr1_Attack_Light",
     "ShortName": "Plyr1_Attack_Light",
     "Path": "Event/Plyr1_Attack_Light.bnk",
@@ -4526,7 +7688,7 @@
     "Type": "Bus",
     "GUID": "{6BE3BED4-0EDC-4674-80E4-B77F6F0EDD9B}",
     "Language": "SFX",
-    "Hash": "{CE46620C-58DD-93B1-6318-AA7CD5C7C39D}",
+    "Hash": "{8AD9903B-82DC-5076-FF9D-1C4D84C73F21}",
     "ObjectPath": "Reverbs",
     "ShortName": "Reverbs",
     "Path": "Bus/Reverbs.bnk",
@@ -4540,97 +7702,194 @@
     ]
    },
    {
-    "Id": "3586072739",
+    "Id": "3578780510",
     "Type": "Event",
-    "GUID": "{683A1ECC-1199-45F8-A261-2323D2B70EFD}",
+    "GUID": "{D206E6DA-2A4C-4D0B-8966-B05C93D177C2}",
     "Language": "SFX",
-    "Hash": "{7F3E6B65-9111-B746-C6A1-C9C652FC52CE}",
-    "ObjectPath": "Play_Player_Block_Heavy",
-    "ShortName": "Play_Player_Block_Heavy",
-    "Path": "Event/Play_Player_Block_Heavy.bnk",
+    "Hash": "{818B66C4-01F3-B95E-F653-05D41AAB811D}",
+    "ObjectPath": "Play_Player_Grab",
+    "ShortName": "Play_Player_Grab",
+    "Path": "Event/Play_Player_Grab.bnk",
     "Media": [
      {
-      "Id": "5381631",
+      "Id": "39881578",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "sfx_fighter1_combat_blocking_heavy_03.wav",
-      "Path": "Media/5381631.wem",
-      "CachePath": "SFX/sfx_fighter1_combat_blocking_heavy_03_10C4C929.wem"
+      "ShortName": "sfx_fighter1_combat_grab_03.wav",
+      "Path": "Media/39881578.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_grab_03_D781298C.wem"
      },
      {
-      "Id": "400315865",
+      "Id": "44041106",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "sfx_fighter1_combat_blocking_heavy_04.wav",
-      "Path": "Media/400315865.wem",
-      "CachePath": "SFX/sfx_fighter1_combat_blocking_heavy_04_10C4C929.wem"
+      "ShortName": "sfx_fighter1_combat_grab_05.wav",
+      "Path": "Media/44041106.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_grab_05_30D2FAC9.wem"
      },
      {
-      "Id": "550444828",
+      "Id": "267095414",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "sfx_fighter1_combat_blocking_heavy_06.wav",
-      "Path": "Media/550444828.wem",
-      "CachePath": "SFX/sfx_fighter1_combat_blocking_heavy_06_10C4C929.wem"
+      "ShortName": "sfx_fighter1_combat_grab_04.wav",
+      "Path": "Media/267095414.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_grab_04_E032D44E.wem"
      },
      {
-      "Id": "816558127",
+      "Id": "479957170",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "sfx_fighter1_combat_blocking_heavy_02.wav",
-      "Path": "Media/816558127.wem",
-      "CachePath": "SFX/sfx_fighter1_combat_blocking_heavy_02_10C4C929.wem"
+      "ShortName": "sfx_fighter1_combat_grab_02.wav",
+      "Path": "Media/479957170.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_grab_02_D347F1CF.wem"
      },
      {
-      "Id": "831203608",
+      "Id": "873811437",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "sfx_fighter1_combat_blocking_heavy_05.wav",
-      "Path": "Media/831203608.wem",
-      "CachePath": "SFX/sfx_fighter1_combat_blocking_heavy_05_10C4C929.wem"
+      "ShortName": "sfx_fighter1_combat_grab_06.wav",
+      "Path": "Media/873811437.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_grab_06_C08603B1.wem"
      },
      {
-      "Id": "986418821",
+      "Id": "900255278",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "sfx_fighter1_combat_blocking_heavy_01.wav",
-      "Path": "Media/986418821.wem",
-      "CachePath": "SFX/sfx_fighter1_combat_blocking_heavy_01_DCCB649D.wem"
+      "ShortName": "sfx_fighter1_combat_grab_01.wav",
+      "Path": "Media/900255278.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_grab_01_BAA8360E.wem"
      }
     ],
     "Events": [
      {
-      "Id": "3586072739",
-      "Name": "Play_Player_Block_Heavy",
-      "ObjectPath": "\\Events\\Player\\PlayerCombat\\Play_Player_Block_Heavy",
-      "GUID": "{683A1ECC-1199-45F8-A261-2323D2B70EFD}",
+      "Id": "3578780510",
+      "Name": "Play_Player_Grab",
+      "ObjectPath": "\\Events\\Player\\PlayerCombat\\Play_Player_Grab",
+      "GUID": "{D206E6DA-2A4C-4D0B-8966-B05C93D177C2}",
       "DurationType": "OneShot",
-      "DurationMin": "0.22027083",
-      "DurationMax": "0.24925",
+      "DurationMin": "0.19733883",
+      "DurationMax": "0.36008063",
       "MediaRefs": [
        {
-        "Id": "5381631"
+        "Id": "39881578"
        },
        {
-        "Id": "400315865"
+        "Id": "44041106"
        },
        {
-        "Id": "550444828"
+        "Id": "267095414"
        },
        {
-        "Id": "816558127"
+        "Id": "479957170"
        },
        {
-        "Id": "831203608"
+        "Id": "873811437"
        },
        {
-        "Id": "986418821"
+        "Id": "900255278"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "3596877596",
+    "Type": "Event",
+    "GUID": "{CC124DD1-467A-465A-9000-547582091E96}",
+    "Language": "SFX",
+    "Hash": "{91BA80F1-76C5-78F7-DBBA-717037326110}",
+    "ObjectPath": "Play_Player2_Dash",
+    "ShortName": "Play_Player2_Dash",
+    "Path": "Event/Play_Player2_Dash.bnk",
+    "Media": [
+     {
+      "Id": "9770278",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_dash_06.wav",
+      "Path": "Media/9770278.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_dash_06_10C4C929.wem"
+     },
+     {
+      "Id": "13032332",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_dash_04.wav",
+      "Path": "Media/13032332.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_dash_04_10C4C929.wem"
+     },
+     {
+      "Id": "147580599",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_dash_01.wav",
+      "Path": "Media/147580599.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_dash_01_10C4C929.wem"
+     },
+     {
+      "Id": "229900453",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_dash_03.wav",
+      "Path": "Media/229900453.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_dash_03_10C4C929.wem"
+     },
+     {
+      "Id": "621916710",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_dash_02.wav",
+      "Path": "Media/621916710.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_dash_02_10C4C929.wem"
+     },
+     {
+      "Id": "868614108",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_dash_05.wav",
+      "Path": "Media/868614108.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_dash_05_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3596877596",
+      "Name": "Play_Player2_Dash",
+      "ObjectPath": "\\Events\\Player2\\Player2Locomotion\\Play_Player2_Dash",
+      "GUID": "{CC124DD1-467A-465A-9000-547582091E96}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.46244898",
+      "DurationMax": "0.71405613",
+      "MediaRefs": [
+       {
+        "Id": "9770278"
+       },
+       {
+        "Id": "13032332"
+       },
+       {
+        "Id": "147580599"
+       },
+       {
+        "Id": "229900453"
+       },
+       {
+        "Id": "621916710"
+       },
+       {
+        "Id": "868614108"
        }
       ]
      }
@@ -4641,7 +7900,7 @@
     "Type": "Event",
     "GUID": "{4DDF616B-CE7F-4803-9C49-4378BAFA5BD4}",
     "Language": "SFX",
-    "Hash": "{6CC4F864-2317-85AA-78C5-3A088512B133}",
+    "Hash": "{7D8825F4-308A-4B50-ABDB-E65474CBACC1}",
     "ObjectPath": "Com_Round_Fight",
     "ShortName": "Com_Round_Fight",
     "Path": "Event/Com_Round_Fight.bnk",
@@ -4722,11 +7981,108 @@
     ]
    },
    {
+    "Id": "3695062128",
+    "Type": "Event",
+    "GUID": "{2FBB1439-6358-4311-AFDC-3DA2726483D3}",
+    "Language": "SFX",
+    "Hash": "{C7CDBC83-D4BA-844C-C9E4-74CB645BB56B}",
+    "ObjectPath": "Play_Player2_Crouch_In",
+    "ShortName": "Play_Player2_Crouch_In",
+    "Path": "Event/Play_Player2_Crouch_In.bnk",
+    "Media": [
+     {
+      "Id": "117224640",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_crouchdown_04.wav",
+      "Path": "Media/117224640.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_crouchdown_04_10C4C929.wem"
+     },
+     {
+      "Id": "137871176",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_crouchdown_02.wav",
+      "Path": "Media/137871176.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_crouchdown_02_10C4C929.wem"
+     },
+     {
+      "Id": "192500971",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_crouchdown_06.wav",
+      "Path": "Media/192500971.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_crouchdown_06_10C4C929.wem"
+     },
+     {
+      "Id": "633461965",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_crouchdown_05.wav",
+      "Path": "Media/633461965.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_crouchdown_05_10C4C929.wem"
+     },
+     {
+      "Id": "748042722",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_crouchdown_01.wav",
+      "Path": "Media/748042722.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_crouchdown_01_10C4C929.wem"
+     },
+     {
+      "Id": "1033057339",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_crouchdown_03.wav",
+      "Path": "Media/1033057339.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_crouchdown_03_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3695062128",
+      "Name": "Play_Player2_Crouch_In",
+      "ObjectPath": "\\Events\\Player2\\Player2Locomotion\\Play_Player2_Crouch_In",
+      "GUID": "{2FBB1439-6358-4311-AFDC-3DA2726483D3}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.362191",
+      "DurationMax": "0.587545",
+      "MediaRefs": [
+       {
+        "Id": "117224640"
+       },
+       {
+        "Id": "137871176"
+       },
+       {
+        "Id": "192500971"
+       },
+       {
+        "Id": "633461965"
+       },
+       {
+        "Id": "748042722"
+       },
+       {
+        "Id": "1033057339"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "3729567056",
     "Type": "Event",
     "GUID": "{C57354E5-1D79-43A6-9596-3AAD8A7B58E7}",
     "Language": "English(US)",
-    "Hash": "{71C5E17A-CDA4-B843-FFC6-F37AA47CE650}",
+    "Hash": "{DC311F94-602A-1B82-5034-64C6A059EF38}",
     "ObjectPath": "Com_Char_Select_Jack",
     "ShortName": "Com_Char_Select_Jack",
     "Path": "Event/English(US)/Com_Char_Select_Jack.bnk",
@@ -4763,7 +8119,7 @@
     "Type": "Event",
     "GUID": "{40E09523-C912-41B2-8E87-1A5554483779}",
     "Language": "SFX",
-    "Hash": "{6AA53D9A-A110-B222-945D-8179D905FB22}",
+    "Hash": "{BBE1049D-6AD4-BD44-6017-6699391AF95F}",
     "ObjectPath": "Play_Pause_In",
     "ShortName": "Play_Pause_In",
     "Path": "Event/Play_Pause_In.bnk",
@@ -4800,7 +8156,7 @@
     "Type": "Event",
     "GUID": "{926D2531-1E72-4E5D-9E0A-DF6DC68D4CD2}",
     "Language": "SFX",
-    "Hash": "{957478AD-FAC1-9AE4-7DFA-1A8BB78BA774}",
+    "Hash": "{9EA2CEDC-985F-2A40-371B-15ED69A3D2FA}",
     "ObjectPath": "Plyr2_Dmg_Heavy",
     "ShortName": "Plyr2_Dmg_Heavy",
     "Path": "Event/Plyr2_Dmg_Heavy.bnk",
@@ -4881,11 +8237,108 @@
     ]
    },
    {
+    "Id": "3797728615",
+    "Type": "Event",
+    "GUID": "{D5493C59-9017-4BB4-A89D-77446FB05B0A}",
+    "Language": "SFX",
+    "Hash": "{3528B320-20BC-B35F-F6C9-A412FD153F27}",
+    "ObjectPath": "Play_Player2_Bodyfall",
+    "ShortName": "Play_Player2_Bodyfall",
+    "Path": "Event/Play_Player2_Bodyfall.bnk",
+    "Media": [
+     {
+      "Id": "30487593",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_bodyfall_04.wav",
+      "Path": "Media/30487593.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_bodyfall_04_10C4C929.wem"
+     },
+     {
+      "Id": "120487873",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_bodyfall_01.wav",
+      "Path": "Media/120487873.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_bodyfall_01_10C4C929.wem"
+     },
+     {
+      "Id": "535278952",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_bodyfall_06.wav",
+      "Path": "Media/535278952.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_bodyfall_06_10C4C929.wem"
+     },
+     {
+      "Id": "553762238",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_bodyfall_03.wav",
+      "Path": "Media/553762238.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_bodyfall_03_10C4C929.wem"
+     },
+     {
+      "Id": "709615145",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_bodyfall_02.wav",
+      "Path": "Media/709615145.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_bodyfall_02_10C4C929.wem"
+     },
+     {
+      "Id": "810746233",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter2_movement_bodyfall_05.wav",
+      "Path": "Media/810746233.wem",
+      "CachePath": "SFX/sfx_fighter2_movement_bodyfall_05_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3797728615",
+      "Name": "Play_Player2_Bodyfall",
+      "ObjectPath": "\\Events\\Player2\\Player2Locomotion\\Play_Player2_Bodyfall",
+      "GUID": "{D5493C59-9017-4BB4-A89D-77446FB05B0A}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.34376228",
+      "DurationMax": "0.6436037",
+      "MediaRefs": [
+       {
+        "Id": "30487593"
+       },
+       {
+        "Id": "120487873"
+       },
+       {
+        "Id": "535278952"
+       },
+       {
+        "Id": "553762238"
+       },
+       {
+        "Id": "709615145"
+       },
+       {
+        "Id": "810746233"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "3812289192",
     "Type": "Event",
     "GUID": "{82962F56-8362-4D21-8FE6-A98FF8901AE9}",
     "Language": "SFX",
-    "Hash": "{5937CF6E-6618-96A9-18B0-FCBEE378F541}",
+    "Hash": "{B473F2EE-E060-8671-53AC-D8FCB79356E7}",
     "ObjectPath": "Ambi_1_Loop_Start",
     "ShortName": "Ambi_1_Loop_Start",
     "Path": "Event/Ambi_1_Loop_Start.bnk",
@@ -4942,7 +8395,7 @@
       "Location": "Loose",
       "ShortName": "Ambi_1_Loop_01.wav",
       "Path": "Media/673665466.wem",
-      "CachePath": "SFX/Ambi_1_Loop_01_3E33C035.wem"
+      "CachePath": "SFX/Ambi_1_Loop_01_4DF62C0D.wem"
      },
      {
       "Id": "927375782",
@@ -4988,11 +8441,108 @@
     ]
    },
    {
+    "Id": "3883776002",
+    "Type": "Event",
+    "GUID": "{D23E66E6-43DA-4114-901C-C8A2B0828697}",
+    "Language": "SFX",
+    "Hash": "{A07E04B3-6126-7034-2738-5B09C95C4831}",
+    "ObjectPath": "Play_Player_Blockhit",
+    "ShortName": "Play_Player_Blockhit",
+    "Path": "Event/Play_Player_Blockhit.bnk",
+    "Media": [
+     {
+      "Id": "157762813",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_blockhit_03.wav",
+      "Path": "Media/157762813.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_blockhit_03_D134634E.wem"
+     },
+     {
+      "Id": "403585098",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_blockhit_06.wav",
+      "Path": "Media/403585098.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_blockhit_06_6F00982E.wem"
+     },
+     {
+      "Id": "455990501",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_blockhit_02.wav",
+      "Path": "Media/455990501.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_blockhit_02_10C4C929.wem"
+     },
+     {
+      "Id": "890575564",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_blockhit_05.wav",
+      "Path": "Media/890575564.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_blockhit_05_E7CBD34A.wem"
+     },
+     {
+      "Id": "929725287",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_blockhit_01.wav",
+      "Path": "Media/929725287.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_blockhit_01_10C4C929.wem"
+     },
+     {
+      "Id": "1005950471",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_blockhit_04.wav",
+      "Path": "Media/1005950471.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_blockhit_04_39B7015B.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3883776002",
+      "Name": "Play_Player_Blockhit",
+      "ObjectPath": "\\Events\\Player\\PlayerCombat\\Play_Player_Blockhit",
+      "GUID": "{D23E66E6-43DA-4114-901C-C8A2B0828697}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.17583014",
+      "DurationMax": "0.32133114",
+      "MediaRefs": [
+       {
+        "Id": "157762813"
+       },
+       {
+        "Id": "403585098"
+       },
+       {
+        "Id": "455990501"
+       },
+       {
+        "Id": "890575564"
+       },
+       {
+        "Id": "929725287"
+       },
+       {
+        "Id": "1005950471"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "3940439968",
     "Type": "Event",
     "GUID": "{79551593-FDCB-4471-8056-ED953CE28502}",
     "Language": "SFX",
-    "Hash": "{7833D618-3CB8-AF2A-1963-9E0E4CD6F30B}",
+    "Hash": "{DFB173C9-DACB-8CA1-D383-D0EEE49BABF8}",
     "ObjectPath": "Plyr1_Movement_Rollbackward",
     "ShortName": "Plyr1_Movement_Rollbackward",
     "Path": "Event/Plyr1_Movement_Rollbackward.bnk",
@@ -5077,7 +8627,7 @@
     "Type": "Event",
     "GUID": "{ECEA2C89-2161-42CE-A22A-B435716282B2}",
     "Language": "SFX",
-    "Hash": "{D85D84CB-6721-9966-62DE-FB0D7FA4EA67}",
+    "Hash": "{CF5E70B8-D92C-6EA4-151D-EAA352D55623}",
     "ObjectPath": "Ambi_1_Loop_Stop",
     "ShortName": "Ambi_1_Loop_Stop",
     "Path": "Event/Ambi_1_Loop_Stop.bnk",
@@ -5099,7 +8649,7 @@
     "Type": "Event",
     "GUID": "{C6F7CB46-440E-4309-90C2-B62B6502AD3E}",
     "Language": "SFX",
-    "Hash": "{5F30397D-5550-72E7-ED9C-7A99FFE0A377}",
+    "Hash": "{866D7247-18C4-3088-73A1-7EF0A523DE5D}",
     "ObjectPath": "Plyr2_Dmg_Special",
     "ShortName": "Plyr2_Dmg_Special",
     "Path": "Event/Plyr2_Dmg_Special.bnk",
@@ -5184,7 +8734,7 @@
     "Type": "Event",
     "GUID": "{7BD3B646-2657-40FF-9C97-391A4B37380E}",
     "Language": "SFX",
-    "Hash": "{6A7614C9-1443-3119-A220-5EE0972A5268}",
+    "Hash": "{09104747-E3A1-2504-158F-ACF2B0EED792}",
     "ObjectPath": "Plyr1_Dmg_Special",
     "ShortName": "Plyr1_Dmg_Special",
     "Path": "Event/Plyr1_Dmg_Special.bnk",
@@ -5269,7 +8819,7 @@
     "Type": "Event",
     "GUID": "{91E57EC6-14BF-4999-BD5E-402DE08241C4}",
     "Language": "English(US)",
-    "Hash": "{B37CCB87-D8ED-C07F-F596-5465AEC5F02B}",
+    "Hash": "{7AB87B26-2459-464A-C11B-1715D27A7F61}",
     "ObjectPath": "Com_Char_Select_Lauren",
     "ShortName": "Com_Char_Select_Lauren",
     "Path": "Event/English(US)/Com_Char_Select_Lauren.bnk",
@@ -5302,6 +8852,6 @@
     ]
    }
   ],
-  "FileHash": "{D870C421-5292-B8A5-0CF4-9F9917004CD9}"
+  "FileHash": "{108F2D58-EE71-8D80-3A54-D7DADCF4ADA3}"
  }
 }

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="3797728615" Type="Event" GUID="{D5493C59-9017-4BB4-A89D-77446FB05B0A}" Language="SFX" Hash="{3528B320-20BC-B35F-F6C9-A412FD153F27}">
+			<ObjectPath>Play_Player2_Bodyfall</ObjectPath>
+			<ShortName>Play_Player2_Bodyfall</ShortName>
+			<Path>Event/Play_Player2_Bodyfall.bnk</Path>
+			<Media>
+				<File Id="30487593" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_bodyfall_04.wav</ShortName>
+					<Path>Media/30487593.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_bodyfall_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="120487873" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_bodyfall_01.wav</ShortName>
+					<Path>Media/120487873.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_bodyfall_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="535278952" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_bodyfall_06.wav</ShortName>
+					<Path>Media/535278952.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_bodyfall_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="553762238" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_bodyfall_03.wav</ShortName>
+					<Path>Media/553762238.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_bodyfall_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="709615145" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_bodyfall_02.wav</ShortName>
+					<Path>Media/709615145.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_bodyfall_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="810746233" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_bodyfall_05.wav</ShortName>
+					<Path>Media/810746233.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_bodyfall_05_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3797728615" Name="Play_Player2_Bodyfall" ObjectPath="\Events\Player2\Player2Locomotion\Play_Player2_Bodyfall" GUID="{D5493C59-9017-4BB4-A89D-77446FB05B0A}" DurationType="OneShot" DurationMin="0.34376228" DurationMax="0.6436037">
+					<MediaRefs>
+						<MediaRef Id="30487593"/>
+						<MediaRef Id="120487873"/>
+						<MediaRef Id="535278952"/>
+						<MediaRef Id="553762238"/>
+						<MediaRef Id="709615145"/>
+						<MediaRef Id="810746233"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{B590D040-5538-6067-F1C1-7851DB87AAA6}</FileHash>
+</SoundBanksInfo>

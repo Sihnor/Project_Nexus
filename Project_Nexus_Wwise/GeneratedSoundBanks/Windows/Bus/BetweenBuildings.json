@@ -10,7 +10,7 @@
     "Type": "Bus",
     "GUID": "{44E599A3-1CE2-49AF-8FBC-737785A8D7B8}",
     "Language": "SFX",
-    "Hash": "{9DF95DBF-16DE-24D4-5EF4-8EA0422E6328}",
+    "Hash": "{C06B6E40-3E1C-58A7-9966-ECE8D2207F01}",
     "ObjectPath": "BetweenBuildings",
     "ShortName": "BetweenBuildings",
     "Path": "Bus/BetweenBuildings.bnk",
@@ -51,6 +51,6 @@
     ]
    }
   ],
-  "FileHash": "{23D34135-64CA-003B-5912-A529C2A258AC}"
+  "FileHash": "{C3FD6B95-2166-F151-1B79-7E80C8543182}"
  }
 }

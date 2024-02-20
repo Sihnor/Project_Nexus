@@ -1,0 +1,408 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "3074061029",
+    "Type": "Event",
+    "GUID": "{62D78041-F9D1-4419-AE06-E663C92CE753}",
+    "Language": "SFX",
+    "Hash": "{2C30B08A-4937-43D7-09C9-F61A16740159}",
+    "ObjectPath": "Play_Music_Stage_1a",
+    "ShortName": "Play_Music_Stage_1a",
+    "Path": "Event/Play_Music_Stage_1a.bnk",
+    "Media": [
+     {
+      "Id": "25179338",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-C-Chorus_Drums_125bpm5-4_L13M_P0.wav",
+      "Path": "Media/25179338.wem",
+      "CachePath": "SFX/Stage-C-Chorus_Drums_125bpm5-4_L13M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "64850139",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Chorus_Cymbals_125bpm3-4_L10M_P0.wav",
+      "Path": "Media/64850139.wem",
+      "CachePath": "SFX/Stage-A-Chorus_Cymbals_125bpm3-4_L10M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "119545211",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Chorus_Bells_125bpm3-4_L6M_P1.wav",
+      "Path": "Media/119545211.wem",
+      "CachePath": "SFX/Stage-A-Chorus_Bells_125bpm3-4_L6M_P1_D79FB2B7.wem"
+     },
+     {
+      "Id": "146942744",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-C-Chorus_Pauken_125bpm5-4_L13M_P0.wav",
+      "Path": "Media/146942744.wem",
+      "CachePath": "SFX/Stage-C-Chorus_Pauken_125bpm5-4_L13M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "162058052",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-B-Chorus_Cymbals_125bpm5-4_L10M_P0.wav",
+      "Path": "Media/162058052.wem",
+      "CachePath": "SFX/Stage-B-Chorus_Cymbals_125bpm5-4_L10M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "173519150",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Chorus_Orchestra_125bpm3-4_L6M_P1.wav",
+      "Path": "Media/173519150.wem",
+      "CachePath": "SFX/Stage-A-Chorus_Orchestra_125bpm3-4_L6M_P1_D79FB2B7.wem"
+     },
+     {
+      "Id": "193786671",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-C-Chorus_Gitarre_125bpm5-4_L13M_P0.wav",
+      "Path": "Media/193786671.wem",
+      "CachePath": "SFX/Stage-C-Chorus_Gitarre_125bpm5-4_L13M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "201603707",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Bridge_Orchestra_125bpm4-4_L10M_P0.wav",
+      "Path": "Media/201603707.wem",
+      "CachePath": "SFX/Stage-A-Bridge_Orchestra_125bpm4-4_L10M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "238425668",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Bridge_Gitarre2_125bpm4-4_L10M_P0.wav",
+      "Path": "Media/238425668.wem",
+      "CachePath": "SFX/Stage-A-Bridge_Gitarre2_125bpm4-4_L10M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "286218474",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Chorus_Orchestra_125bpm3-4_L10M_P0.wav",
+      "Path": "Media/286218474.wem",
+      "CachePath": "SFX/Stage-A-Chorus_Orchestra_125bpm3-4_L10M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "287428225",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-B-Chorus_Gitarre_125bpm5-4_L10M_P0.wav",
+      "Path": "Media/287428225.wem",
+      "CachePath": "SFX/Stage-B-Chorus_Gitarre_125bpm5-4_L10M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "328658872",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-C-Chorus_PaukenRolls_125bpm5-4_L13M_P0.wav",
+      "Path": "Media/328658872.wem",
+      "CachePath": "SFX/Stage-C-Chorus_PaukenRolls_125bpm5-4_L13M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "336656664",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-B-Chorus_Orchestra_125bpm5-4_L10M_P0.wav",
+      "Path": "Media/336656664.wem",
+      "CachePath": "SFX/Stage-B-Chorus_Orchestra_125bpm5-4_L10M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "360105705",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Strophe_Drums_125bpm3-4_L6M_P1.wav",
+      "Path": "Media/360105705.wem",
+      "CachePath": "SFX/Stage-A-Strophe_Drums_125bpm3-4_L6M_P1_D79FB2B7.wem"
+     },
+     {
+      "Id": "363701330",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Chorus_PaukenRolls_125bpm3-4_L6M_P1.wav",
+      "Path": "Media/363701330.wem",
+      "CachePath": "SFX/Stage-A-Chorus_PaukenRolls_125bpm3-4_L6M_P1_D79FB2B7.wem"
+     },
+     {
+      "Id": "423817697",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-C-Chorus_Cymbals_125bpm5-4_L13M_P0.wav",
+      "Path": "Media/423817697.wem",
+      "CachePath": "SFX/Stage-C-Chorus_Cymbals_125bpm5-4_L13M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "427259993",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Chorus_Pauken_125bpm3-4_L6M_P1.wav",
+      "Path": "Media/427259993.wem",
+      "CachePath": "SFX/Stage-A-Chorus_Pauken_125bpm3-4_L6M_P1_D79FB2B7.wem"
+     },
+     {
+      "Id": "486159630",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-B-Chorus_Drums_125bpm5-4_L10M_P0.wav",
+      "Path": "Media/486159630.wem",
+      "CachePath": "SFX/Stage-B-Chorus_Drums_125bpm5-4_L10M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "530924770",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-B-Strophe_Orchestra_125bpm3-4_L11M_P1.wav",
+      "Path": "Media/530924770.wem",
+      "CachePath": "SFX/Stage-B-Strophe_Orchestra_125bpm3-4_L11M_P1_D79FB2B7.wem"
+     },
+     {
+      "Id": "603726870",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-C-Chorus_Orchestra_125bpm5-4_L13M_P0.wav",
+      "Path": "Media/603726870.wem",
+      "CachePath": "SFX/Stage-C-Chorus_Orchestra_125bpm5-4_L13M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "610212862",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Chorus_Drums_125bpm3-4_L10M_P0.wav",
+      "Path": "Media/610212862.wem",
+      "CachePath": "SFX/Stage-A-Chorus_Drums_125bpm3-4_L10M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "627391774",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Chorus_Gitarre_125bpm3-4_L10M_P0.wav",
+      "Path": "Media/627391774.wem",
+      "CachePath": "SFX/Stage-A-Chorus_Gitarre_125bpm3-4_L10M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "703627334",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Chorus_Gitarre_125bpm3-4_L6M_P1.wav",
+      "Path": "Media/703627334.wem",
+      "CachePath": "SFX/Stage-A-Chorus_Gitarre_125bpm3-4_L6M_P1_D79FB2B7.wem"
+     },
+     {
+      "Id": "802536315",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Bridge_Gitarre_125bpm4-4_L10M_P0.wav",
+      "Path": "Media/802536315.wem",
+      "CachePath": "SFX/Stage-A-Bridge_Gitarre_125bpm4-4_L10M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "859888067",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-B-Strophe_PaukenRolls_125bpm3-4_L11M_P1.wav",
+      "Path": "Media/859888067.wem",
+      "CachePath": "SFX/Stage-B-Strophe_PaukenRolls_125bpm3-4_L11M_P1_D79FB2B7.wem"
+     },
+     {
+      "Id": "889077021",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-B-Strophe_Drums_125bpm3-4_L11M_P1.wav",
+      "Path": "Media/889077021.wem",
+      "CachePath": "SFX/Stage-B-Strophe_Drums_125bpm3-4_L11M_P1_D79FB2B7.wem"
+     },
+     {
+      "Id": "906855380",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Bridge_Pauken_125bpm4-4_L10M_P0.wav",
+      "Path": "Media/906855380.wem",
+      "CachePath": "SFX/Stage-A-Bridge_Pauken_125bpm4-4_L10M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "991543477",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-B-Strophe_Cymbals_125bpm3-4_L11M_P1.wav",
+      "Path": "Media/991543477.wem",
+      "CachePath": "SFX/Stage-B-Strophe_Cymbals_125bpm3-4_L11M_P1_D79FB2B7.wem"
+     },
+     {
+      "Id": "1013507187",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-A-Chorus_Drums_125bpm3-4_L6M_P1.wav",
+      "Path": "Media/1013507187.wem",
+      "CachePath": "SFX/Stage-A-Chorus_Drums_125bpm3-4_L6M_P1_D79FB2B7.wem"
+     },
+     {
+      "Id": "1026727903",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-B-Strophe_Gitarre_125bpm3-4_L11M_P1.wav",
+      "Path": "Media/1026727903.wem",
+      "CachePath": "SFX/Stage-B-Strophe_Gitarre_125bpm3-4_L11M_P1_D79FB2B7.wem"
+     },
+     {
+      "Id": "1059559132",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Stage-B-Strophe_Pauken_125bpm3-4_L11M_P1.wav",
+      "Path": "Media/1059559132.wem",
+      "CachePath": "SFX/Stage-B-Strophe_Pauken_125bpm3-4_L11M_P1_D79FB2B7.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3074061029",
+      "Name": "Play_Music_Stage_1a",
+      "ObjectPath": "\\Events\\Music\\Play_Music_Stage_1a",
+      "GUID": "{62D78041-F9D1-4419-AE06-E663C92CE753}",
+      "DurationType": "OneShot",
+      "DurationMin": "135.84",
+      "DurationMax": "135.84",
+      "MediaRefs": [
+       {
+        "Id": "25179338"
+       },
+       {
+        "Id": "64850139"
+       },
+       {
+        "Id": "119545211"
+       },
+       {
+        "Id": "146942744"
+       },
+       {
+        "Id": "162058052"
+       },
+       {
+        "Id": "173519150"
+       },
+       {
+        "Id": "193786671"
+       },
+       {
+        "Id": "201603707"
+       },
+       {
+        "Id": "238425668"
+       },
+       {
+        "Id": "286218474"
+       },
+       {
+        "Id": "287428225"
+       },
+       {
+        "Id": "328658872"
+       },
+       {
+        "Id": "336656664"
+       },
+       {
+        "Id": "360105705"
+       },
+       {
+        "Id": "363701330"
+       },
+       {
+        "Id": "423817697"
+       },
+       {
+        "Id": "427259993"
+       },
+       {
+        "Id": "486159630"
+       },
+       {
+        "Id": "530924770"
+       },
+       {
+        "Id": "603726870"
+       },
+       {
+        "Id": "610212862"
+       },
+       {
+        "Id": "627391774"
+       },
+       {
+        "Id": "703627334"
+       },
+       {
+        "Id": "802536315"
+       },
+       {
+        "Id": "859888067"
+       },
+       {
+        "Id": "889077021"
+       },
+       {
+        "Id": "906855380"
+       },
+       {
+        "Id": "991543477"
+       },
+       {
+        "Id": "1013507187"
+       },
+       {
+        "Id": "1026727903"
+       },
+       {
+        "Id": "1059559132"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{BE869158-D111-6EBB-7F28-0A8486070AE3}"
+ }
+}

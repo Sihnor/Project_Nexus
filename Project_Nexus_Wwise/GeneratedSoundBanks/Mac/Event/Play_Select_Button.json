@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{5A6C30F2-2944-40B2-A4D9-1A142FBE1444}",
     "Language": "SFX",
-    "Hash": "{42B01F05-EF82-4EA4-3CDB-878A9DCEEEE8}",
+    "Hash": "{8C91BE4F-D76D-4CCC-728F-BC464A67AE3C}",
     "ObjectPath": "Play_Select_Button",
     "ShortName": "Play_Select_Button",
     "Path": "Event/Play_Select_Button.bnk",
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{90B6D4CC-5BDF-7478-FD2B-17909241A688}"
+  "FileHash": "{7AB664CC-B7D2-DF0F-44E7-BBD8CD891E47}"
  }
 }

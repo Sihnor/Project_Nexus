@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{27E85706-E807-4F1E-A42D-5B83ED9D03A3}",
     "Language": "SFX",
-    "Hash": "{6FF2DB43-736D-9593-BA5E-AFD5B6F0797B}",
+    "Hash": "{67E36742-4075-1684-8592-91DF71446F0E}",
     "ObjectPath": "Play_Player_Footsteps",
     "ShortName": "Play_Player_Footsteps",
     "Path": "Event/Play_Player_Footsteps.bnk",
@@ -131,8 +131,8 @@
       "ObjectPath": "\\Events\\Player\\PlayerLocomotion\\Play_Player_Footsteps",
       "GUID": "{27E85706-E807-4F1E-A42D-5B83ED9D03A3}",
       "DurationType": "OneShot",
-      "DurationMin": "0.17385939",
-      "DurationMax": "0.5671767",
+      "DurationMin": "0.21993658",
+      "DurationMax": "0.4501684",
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -242,6 +242,6 @@
     ]
    }
   ],
-  "FileHash": "{12908FC9-A173-FC9B-6FA2-EFCF5727375A}"
+  "FileHash": "{B84469EB-610C-CE47-C385-4F6DF7A0386A}"
  }
 }

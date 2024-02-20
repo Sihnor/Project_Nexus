@@ -1,0 +1,492 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "1699343283",
+    "Type": "Event",
+    "GUID": "{1CC99C31-E23D-4648-94D8-90671E36B4EB}",
+    "Language": "SFX",
+    "Hash": "{6AB1E238-D0DC-10EA-1BD4-407FFC4752CC}",
+    "ObjectPath": "Play_Music_Menu",
+    "ShortName": "Play_Music_Menu",
+    "Path": "Event/Play_Music_Menu.bnk",
+    "Media": [
+     {
+      "Id": "2521971",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-E-Chorus_Horn_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/2521971.wem",
+      "CachePath": "SFX/Menu-E-Chorus_Horn_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "28058448",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-F-Chorus_Flute_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/28058448.wem",
+      "CachePath": "SFX/Menu-F-Chorus_Flute_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "79959033",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Strophe-Ende_Orchestra_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/79959033.wem",
+      "CachePath": "SFX/Menu-A-Strophe-Ende_Orchestra_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "80446344",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Break_Orchestra_88bpm4-4_L8M_P0.wav",
+      "Path": "Media/80446344.wem",
+      "CachePath": "SFX/Menu-A-Break_Orchestra_88bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "145497044",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-B-Chorus_Bass_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/145497044.wem",
+      "CachePath": "SFX/Menu-B-Chorus_Bass_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "145558699",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Strophe_Bass_88bpm4-4_L3M_P0.wav",
+      "Path": "Media/145558699.wem",
+      "CachePath": "SFX/Menu-A-Strophe_Bass_88bpm4-4_L3M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "145888327",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Break_Lead-Violin_88bpm4-4_L8M_P0.wav",
+      "Path": "Media/145888327.wem",
+      "CachePath": "SFX/Menu-A-Break_Lead-Violin_88bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "146366110",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-F-Chorus_Lead-Violin_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/146366110.wem",
+      "CachePath": "SFX/Menu-F-Chorus_Lead-Violin_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "183094554",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Pre-Break_Orchestra_88bpm4-4_L3M_P0.wav",
+      "Path": "Media/183094554.wem",
+      "CachePath": "SFX/Menu-A-Pre-Break_Orchestra_88bpm4-4_L3M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "191413141",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-E-Chorus_Flute_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/191413141.wem",
+      "CachePath": "SFX/Menu-E-Chorus_Flute_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "209674026",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Pre-Break_Bass_88bpm4-4_L3M_P0.wav",
+      "Path": "Media/209674026.wem",
+      "CachePath": "SFX/Menu-A-Pre-Break_Bass_88bpm4-4_L3M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "211503943",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-B-Strophe_Orchestra_88bpm4-4_L4M_P0.wav",
+      "Path": "Media/211503943.wem",
+      "CachePath": "SFX/Menu-B-Strophe_Orchestra_88bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "273125985",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Break_Bass_88bpm4-4_L8M_P0.wav",
+      "Path": "Media/273125985.wem",
+      "CachePath": "SFX/Menu-A-Break_Bass_88bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "350392181",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-C-Chorus_Horn_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/350392181.wem",
+      "CachePath": "SFX/Menu-C-Chorus_Horn_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "355767013",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-C-Chorus_Bass_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/355767013.wem",
+      "CachePath": "SFX/Menu-C-Chorus_Bass_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "365768873",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-C-Chorus_Orchestra_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/365768873.wem",
+      "CachePath": "SFX/Menu-C-Chorus_Orchestra_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "383319973",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Chorus_Horn_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/383319973.wem",
+      "CachePath": "SFX/Menu-A-Chorus_Horn_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "391926307",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-B-Strophe_Bass_88bpm4-4_L4M_P0.wav",
+      "Path": "Media/391926307.wem",
+      "CachePath": "SFX/Menu-B-Strophe_Bass_88bpm4-4_L4M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "450420091",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Break_Horn_88bpm4-4_L8M_P0.wav",
+      "Path": "Media/450420091.wem",
+      "CachePath": "SFX/Menu-A-Break_Horn_88bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "481187531",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-C-Chorus_Flute_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/481187531.wem",
+      "CachePath": "SFX/Menu-C-Chorus_Flute_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "574637584",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-E-Chorus_Lead-Violin_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/574637584.wem",
+      "CachePath": "SFX/Menu-E-Chorus_Lead-Violin_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "633935857",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-B-Chorus_Orchestra_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/633935857.wem",
+      "CachePath": "SFX/Menu-B-Chorus_Orchestra_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "709954021",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-C-Strophe_Bass_88bpm4-4_L5M_P0.wav",
+      "Path": "Media/709954021.wem",
+      "CachePath": "SFX/Menu-C-Strophe_Bass_88bpm4-4_L5M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "725629222",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Chorus_Orchestra_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/725629222.wem",
+      "CachePath": "SFX/Menu-A-Chorus_Orchestra_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "734937015",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Break_Flute_88bpm4-4_L8M_P0.wav",
+      "Path": "Media/734937015.wem",
+      "CachePath": "SFX/Menu-A-Break_Flute_88bpm4-4_L8M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "737061799",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-B-Chorus_Horn_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/737061799.wem",
+      "CachePath": "SFX/Menu-B-Chorus_Horn_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "740693526",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-C-Strophe_Orchestra_88bpm4-4_L5M_P0.wav",
+      "Path": "Media/740693526.wem",
+      "CachePath": "SFX/Menu-C-Strophe_Orchestra_88bpm4-4_L5M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "740759816",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-C-Chorus_Lead-Violin_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/740759816.wem",
+      "CachePath": "SFX/Menu-C-Chorus_Lead-Violin_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "747661577",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Strophe_Orchestra_88bpm4-4_L3M_P0.wav",
+      "Path": "Media/747661577.wem",
+      "CachePath": "SFX/Menu-A-Strophe_Orchestra_88bpm4-4_L3M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "848738650",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-F-Chorus_Horn_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/848738650.wem",
+      "CachePath": "SFX/Menu-F-Chorus_Horn_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "874650496",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-B-Chorus_Flute_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/874650496.wem",
+      "CachePath": "SFX/Menu-B-Chorus_Flute_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "886259219",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Chorus_Lead-Violin_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/886259219.wem",
+      "CachePath": "SFX/Menu-A-Chorus_Lead-Violin_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "901962940",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Chorus_Flute_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/901962940.wem",
+      "CachePath": "SFX/Menu-A-Chorus_Flute_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "967133822",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Pre-Break_Horn_88bpm4-4_L3M_P0.wav",
+      "Path": "Media/967133822.wem",
+      "CachePath": "SFX/Menu-A-Pre-Break_Horn_88bpm4-4_L3M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "1004708010",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-B-Chorus_Lead-Violin_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/1004708010.wem",
+      "CachePath": "SFX/Menu-B-Chorus_Lead-Violin_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "1008613782",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Chorus_Bass_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/1008613782.wem",
+      "CachePath": "SFX/Menu-A-Chorus_Bass_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "1013844771",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Menu-A-Strophe-Ende_Bass_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/1013844771.wem",
+      "CachePath": "SFX/Menu-A-Strophe-Ende_Bass_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     },
+     {
+      "Id": "1056010784",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Chorus-B\\Menu-B-Chorus_Flute_88bpm4-4_L2M_P0.wav",
+      "Path": "Media/1056010784.wem",
+      "CachePath": "SFX/Chorus-B/Menu-B-Chorus_Flute_88bpm4-4_L2M_P0_D79FB2B7.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1699343283",
+      "Name": "Play_Music_Menu",
+      "ObjectPath": "\\Events\\Music\\Play_Music_Menu",
+      "GUID": "{1CC99C31-E23D-4648-94D8-90671E36B4EB}",
+      "DurationType": "OneShot",
+      "DurationMin": "174.20454",
+      "DurationMax": "231.13635",
+      "MediaRefs": [
+       {
+        "Id": "2521971"
+       },
+       {
+        "Id": "28058448"
+       },
+       {
+        "Id": "79959033"
+       },
+       {
+        "Id": "80446344"
+       },
+       {
+        "Id": "145497044"
+       },
+       {
+        "Id": "145558699"
+       },
+       {
+        "Id": "145888327"
+       },
+       {
+        "Id": "146366110"
+       },
+       {
+        "Id": "183094554"
+       },
+       {
+        "Id": "191413141"
+       },
+       {
+        "Id": "209674026"
+       },
+       {
+        "Id": "211503943"
+       },
+       {
+        "Id": "273125985"
+       },
+       {
+        "Id": "350392181"
+       },
+       {
+        "Id": "355767013"
+       },
+       {
+        "Id": "365768873"
+       },
+       {
+        "Id": "383319973"
+       },
+       {
+        "Id": "391926307"
+       },
+       {
+        "Id": "450420091"
+       },
+       {
+        "Id": "481187531"
+       },
+       {
+        "Id": "574637584"
+       },
+       {
+        "Id": "633935857"
+       },
+       {
+        "Id": "709954021"
+       },
+       {
+        "Id": "725629222"
+       },
+       {
+        "Id": "734937015"
+       },
+       {
+        "Id": "737061799"
+       },
+       {
+        "Id": "740693526"
+       },
+       {
+        "Id": "740759816"
+       },
+       {
+        "Id": "747661577"
+       },
+       {
+        "Id": "848738650"
+       },
+       {
+        "Id": "874650496"
+       },
+       {
+        "Id": "886259219"
+       },
+       {
+        "Id": "901962940"
+       },
+       {
+        "Id": "967133822"
+       },
+       {
+        "Id": "1004708010"
+       },
+       {
+        "Id": "1008613782"
+       },
+       {
+        "Id": "1013844771"
+       },
+       {
+        "Id": "1056010784"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{EF2A010A-CFB6-7FDB-C025-F6079B3C98B0}"
+ }
+}
