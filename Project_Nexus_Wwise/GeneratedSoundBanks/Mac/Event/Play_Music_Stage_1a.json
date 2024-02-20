@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{62D78041-F9D1-4419-AE06-E663C92CE753}",
     "Language": "SFX",
-    "Hash": "{2C30B08A-4937-43D7-09C9-F61A16740159}",
+    "Hash": "{97236034-A7E0-8BC2-741C-FC12AB3782E4}",
     "ObjectPath": "Play_Music_Stage_1a",
     "ShortName": "Play_Music_Stage_1a",
     "Path": "Event/Play_Music_Stage_1a.bnk",
@@ -403,6 +403,6 @@
     ]
    }
   ],
-  "FileHash": "{BE869158-D111-6EBB-7F28-0A8486070AE3}"
+  "FileHash": "{D0B6AA1F-FFDC-6578-AED7-B2696E5A65A9}"
  }
 }

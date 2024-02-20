@@ -14,7 +14,7 @@
 						<Property Name="Tempo" Type="Real64" Value="88"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-15</Value>
+								<Value>-96</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -5705,7 +5705,7 @@
 						<Property Name="Tempo" Type="Real64" Value="127"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-22</Value>
+								<Value>-96</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -16485,7 +16485,7 @@
 						<Property Name="Tempo" Type="Real64" Value="125"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-22</Value>
+								<Value>-96</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
