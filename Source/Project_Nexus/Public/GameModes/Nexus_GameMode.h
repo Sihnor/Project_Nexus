@@ -98,6 +98,8 @@ protected:
 
 	UFUNCTION(BlueprintCallable, meta=(AllowPrivateAccess = "true"))
 	void StopTimer();
+
+	bool PlayerIsDeadFlag = false;
 };
 
 
