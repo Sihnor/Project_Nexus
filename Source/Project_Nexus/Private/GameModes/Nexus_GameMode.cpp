@@ -49,10 +49,7 @@ void ANexus_GameMode::StartMatch()
 
 void ANexus_GameMode::OnStartMatch_Implementation()
 {
-	if (GEngine)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("OnStart Match")));
-	}
+	this->PlayerIsDeadFlag = false;
 
 	if (this->GameState)
 	{
@@ -111,6 +108,10 @@ void ANexus_GameMode::OnPlayerIsDead_Implementation(EPlayerEnum Player)
 
 void ANexus_GameMode::PlayerIsDead(EPlayerEnum Player)
 {
+	// Avoid calling this function multiple times
+	if (this->PlayerIsDeadFlag) return;
+	this->PlayerIsDeadFlag = true;
+	
 	this->StopTimer();
 
 	switch (Player)
