@@ -19,7 +19,7 @@ void UNexus_StartBase::OpenMainMenu()
 {
 	this->MainMenu = this->MenuStack->AddWidget<UNexus_MainMenu>(this->MainMenuClass);
 	this->MainMenu->PassStackVariable(this->MenuStack);
-	this->MainMenu->OnChangeToLobby.AddUniqueDynamic(this, &UNexus_StartBase::OpenLobby);
+	this->MainMenu->OnChangeToLobby.AddDynamic(this, &UNexus_StartBase::OpenLobby);
 	this->MainMenu->SetIsFocusable(true);
 }
 
