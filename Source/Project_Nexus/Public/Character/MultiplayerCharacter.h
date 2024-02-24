@@ -10,6 +10,19 @@
 class UInputMappingContext;
 class UInputAction;
 
+UENUM(BlueprintType)
+enum class EMCharacterState : uint8
+{
+	MC_Default UMETA(DisplayName = "Idle"),
+    MC_MovingForward UMETA(DisplayName = "Moving_Forward"),
+	MC_Jumping UMETA(DisplayName = "Jumping"),
+	MC_Gesture1 UMETA(DisplayName = "Angry"),
+	MC_Gesture2 UMETA(DisplayName = "Happy"),
+	MC_Gesture3 UMETA(DisplayName = "Dance"),
+	MC_Gesture4 UMETA(DisplayName = "Greet")
+	//more...
+};
+
 UCLASS()
 class PROJECT_NEXUS_API AMultiplayerCharacter : public ACharacter
 {
@@ -24,6 +37,10 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>&OutLifetimeProps) const override;
+
+
 
 protected:
 	// Called when the game starts or when spawned
@@ -41,6 +58,20 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 		UInputAction* LookControllerAction;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+		UInputAction* Gesture1Action;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+		UInputAction* Gesture2Action;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+		UInputAction* Gesture3Action;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+		UInputAction* Gesture4Action;
+
+	UFUNCTION(Server, Reliable, BlueprintCallable)
+		void SvrRPCCharacterState(EMCharacterState _MCharacterState);
 
 private:
 
@@ -49,6 +80,14 @@ private:
 	void LookForMouse(const FInputActionValue& Value);
 
 	void LookForController(const FInputActionValue& Value);
+
+	void Gesture1(const FInputActionValue& Value);
+
+	void Gesture2(const FInputActionValue& Value);
+
+	void Gesture3(const FInputActionValue& Value);
+
+	void Gesture4(const FInputActionValue& Value);
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components", meta = (AllowPrivateAccess = "true"))
 		class USpringArmComponent* SpringArmComp;
@@ -61,5 +100,8 @@ private:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement", meta = (AllowPrivateAccess = "true"))
 		float RotationRate = 10;
+
+	UPROPERTY(Replicated, EditAnywhere, BlueprintReadWrite, Category = "Emotes", meta = (AllowPrivateAccess = "true"))
+		EMCharacterState MCharacterState;
 
 };

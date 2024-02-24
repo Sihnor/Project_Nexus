@@ -3,8 +3,11 @@
 /Platforms
 /Project_Nexus_Wwise
 /.vscode
+/.vs
+/.idea
 /Intermediate
 /Saved
+/DerivedDataCache
 /Plugins/CommonUser/Intermediate
 /Plugins/Wwise/Content
 /Plugins/Wwise/ThirdParty

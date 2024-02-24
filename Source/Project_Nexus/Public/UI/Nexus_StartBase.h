@@ -34,6 +34,10 @@ public:
 	UFUNCTION()
 	void OpenLobby();
 
+	//me
+	UFUNCTION()
+	void OpenOnlineLobby();
+
 	UFUNCTION(BlueprintCallable)
 	void PushMenu(TSubclassOf<UNexus_CommonActivatableWidget> ActivatableWidgetClass);
 };
