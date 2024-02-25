@@ -1,10 +1,10 @@
 // Copyright 2018-2024 In Series Studio GmbH
+#include "Character/MultiplayerCharacter.h"
 #include "EnhancedInputSubsystems.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystemInterface.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
-#include "Character/MultiplayerCharacter.h"
 #include "Net/UnrealNetwork.h"
 
 // Sets default values
@@ -40,7 +40,6 @@ void AMultiplayerCharacter::BeginPlay()
 		if (UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PlayerController->GetLocalPlayer())) {
 			Subsystem->AddMappingContext(GameplayMappingContext, 0);
 		}
-
 	}
 	
 }

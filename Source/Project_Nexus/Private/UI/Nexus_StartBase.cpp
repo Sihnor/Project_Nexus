@@ -35,7 +35,7 @@ void UNexus_StartBase::OpenLobby()
 
 void UNexus_StartBase::OpenOnlineLobby()
 {
-	this->MenuStack->SetVisibility(ESlateVisibility::Hidden);
+	//this->MenuStack->SetVisibility(ESlateVisibility::Hidden);
 
 	FString MapName = "MultiplayerLobbyLevel";
 
