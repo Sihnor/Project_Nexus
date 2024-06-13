@@ -58,6 +58,7 @@ public:
 
 	FOnLobbySelect OnChangeToLobby;
 	
+	//me
 	UFUNCTION()
 	void OpenOnlineMode();
 

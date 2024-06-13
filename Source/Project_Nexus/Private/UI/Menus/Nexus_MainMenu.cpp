@@ -28,7 +28,12 @@ void UNexus_MainMenu::NativeConstruct()
 
 void UNexus_MainMenu::OpenOnlineMode()
 {
-	this->OpenChampSelect();
+	//this->OpenChampSelect();
+
+	//this->OpenLevel()
+
+	//me
+	//this->OnChangeToLobby.Broadcast();
 }
 
 void UNexus_MainMenu::OpenOfflineMode()
@@ -68,6 +73,4 @@ void UNexus_MainMenu::OpenChampSelect()
 {
 	this->OnChangeToLobby.Broadcast();
 }
-
-
 

@@ -228,7 +228,12 @@ void AFightingCharacter::Tick(float DeltaTime)
 
 	//UE_LOG(LogTemp, Error, TEXT("0-> Player %i IsCombatReady: %i Launched: %i Stunned: %i KnockedDown: %i IsRecovery: %i IsOnGround: %i IsWallBounce: %i IsGroundBounce: %i"), PlayerIndex, IsCombatReady, WasLaunched, WasStunned, IsKnockedDown, IsRecovery, GetCharacterMovement()->IsMovingOnGround(), IsWallBounce, IsGroundBounce);
 
+
 	//UE_LOG(LogTemp, Error, TEXT("Player %i IsCombatReady: %i IsBlocking: %i HavyAttack: %i LightAttack: %i, IsSideStepNY: %i, IsSideStepPY: %i IsCrouched: %i Launched: %i Stunned: %i KnockedDown: %i IsRecovery: %i IsOnGround: %i"), PlayerIndex, IsCombatReady, IsBlocking, WasHeavyAttackUsed, WasLightAttackUsed,IsSideStepNY ,IsSideStepPY, this->bIsCrouched, WasLaunched, WasStunned, IsKnockedDown, IsRecovery, GetCharacterMovement()->IsMovingOnGround());
+	//UE_LOG(LogTemp, Error, TEXT("Player %i HAsLanded A Hit: %i, Has Landed a Throw: %i"), PlayerIndex, HasLandedHit, HasLandedThrow);
+	
+
+	//UE_LOG(LogTemp, Warning, TEXT("Player %i State: %s"), PlayerIndex, CharacterState.toString())
 
 	//UE_LOG(LogTemp, Warning, TEXT("Player %i Launched: %i Stunned: %i KnockedDown: %i IsRecovery: %i IsOnGround: %i"), PlayerIndex, WasLaunched, WasStunned, IsKnockedDown, IsRecovery, GetCharacterMovement()->IsMovingOnGround());
 	//UE_LOG(LogTemp, Warning, TEXT("Player %i NotLaunched: %i NotStunned: %i NotKnockedDown: %i NotIsRecovery: %i IsOnGround: %i"), PlayerIndex, !WasLaunched, !WasStunned, !IsKnockedDown, !IsRecovery, GetCharacterMovement()->IsMovingOnGround());
@@ -243,7 +248,11 @@ void AFightingCharacter::Tick(float DeltaTime)
 void AFightingCharacter::DoMoveFwd(const FInputActionValue& Value){
 	const FVector Forward = GetActorForwardVector();
 
-	if (GetController() && IsCombatReady && !IsBlocking && !WasHeavyAttackUsed && !WasLightAttackUsed && !IsSideStepNY && !IsSideStepPY && !this->bIsCrouched && !WasLaunched && !WasStunned && !IsKnockedDown && !IsRecovery && GetCharacterMovement()->IsMovingOnGround() && !IsWallBounce && !IsGroundBounce) {
+	if (
+		(GetController() && IsCombatReady && !WasHeavyAttackUsed && !WasLightAttackUsed && !IsSideStepNY && !IsSideStepPY && CharacterState == ECharacterState::FC_Default && GetCharacterMovement()->IsMovingOnGround()) ||
+		(GetController() && IsCombatReady && !WasHeavyAttackUsed && !WasLightAttackUsed && !IsSideStepNY && !IsSideStepPY && CharacterState == ECharacterState::FC_MovingForward && GetCharacterMovement()->IsMovingOnGround()) ||
+		(GetController() && IsCombatReady && !WasHeavyAttackUsed && !WasLightAttackUsed && !IsSideStepNY && !IsSideStepPY && CharacterState == ECharacterState::FC_RunningForward && GetCharacterMovement()->IsMovingOnGround())
+	) {
 		UpdateCharacterRotation();
 
 		if(CharacterState != ECharacterState::FC_DashForward && CharacterState != ECharacterState::FC_RunningForward){
@@ -262,7 +271,10 @@ void AFightingCharacter::DoMoveFwd(const FInputActionValue& Value){
 void AFightingCharacter::DoMoveBwd(const FInputActionValue& Value){
 	const FVector Forward = GetActorForwardVector();
 
-	if (GetController() && IsCombatReady && !IsBlocking && !WasHeavyAttackUsed && !WasLightAttackUsed && !IsSideStepNY && !IsSideStepPY && !this->bIsCrouched && !WasLaunched && !WasStunned && !IsKnockedDown && !IsRecovery && GetCharacterMovement()->IsMovingOnGround() && !IsWallBounce && !IsGroundBounce) {
+	if (
+		(GetController() && IsCombatReady && !WasHeavyAttackUsed && !WasLightAttackUsed && !IsSideStepNY && !IsSideStepPY && CharacterState == ECharacterState::FC_Default && GetCharacterMovement()->IsMovingOnGround()) ||
+		(GetController() && IsCombatReady && !WasHeavyAttackUsed && !WasLightAttackUsed && !IsSideStepNY && !IsSideStepPY && CharacterState == ECharacterState::FC_MovingBackward && GetCharacterMovement()->IsMovingOnGround())
+	) {
 		UpdateCharacterRotation();
 
 		float CurrentDistanceApart = abs(OtherCharacter->GetActorLocation().X - GetActorLocation().X);
@@ -336,7 +348,7 @@ void AFightingCharacter::UnBlock(const FInputActionValue& Value){
 }
 
 void AFightingCharacter::DoJump(const FInputActionValue& Value){
-	if (GetController() && IsCombatReady && this->CanJump() && !WasStunned && !WasLaunched && !IsKnockedDown && !IsRecovery && !IsWallBounce && !IsGroundBounce) {
+	if ((GetController() && IsCombatReady && this->CanJump() && CharacterState == ECharacterState::FC_Default) || (GetController() && IsCombatReady && this->CanJump() && CharacterState == ECharacterState::FC_MovingForward) || (GetController() && IsCombatReady && this->CanJump() && CharacterState == ECharacterState::FC_MovingBackward)) {
 		//UE_LOG(LogTemp, Warning, TEXT("Jump"));
 		this->Jump();
 		CharacterState = ECharacterState::FC_Jumping;
@@ -371,7 +383,13 @@ void AFightingCharacter::UnDuck(const FInputActionValue& Value){
 void AFightingCharacter::SideStepNY(const FInputActionValue& Value){
     const FVector SideStep = GetActorRightVector();
 
-    if (GetController() && IsCombatReady && !IsBlocking && !IsSideStepPY && !this->bIsCrouched && GetVelocity().Z == 0 && !MoveFwd && !MoveBwd && !WasHeavyAttackUsed && !WasLightAttackUsed && !WasLaunched && !WasStunned && !IsKnockedDown && !IsRecovery && GetCharacterMovement()->IsMovingOnGround()) {
+    //if (GetController() && IsCombatReady && !IsBlocking && !IsSideStepPY && !this->bIsCrouched && GetVelocity().Z == 0 && !MoveFwd && !MoveBwd && !WasHeavyAttackUsed && !WasLightAttackUsed && !WasLaunched && !WasStunned && !IsKnockedDown && !IsRecovery && GetCharacterMovement()->IsMovingOnGround()) {
+    //if ((GetController() && IsCombatReady && !WasHeavyAttackUsed && !WasLightAttackUsed && !IsSideStepPY && CharacterState == ECharacterState::FC_Default && GetCharacterMovement()->IsMovingOnGround()) || (GetController() && IsCombatReady && !WasHeavyAttackUsed && !WasLightAttackUsed && !IsSideStepPY && CharacterState == ECharacterState::FC_MovingForward && GetCharacterMovement()->IsMovingOnGround())) {
+	    if (
+		(GetController() && IsCombatReady && !WasHeavyAttackUsed && !WasLightAttackUsed && !IsSideStepPY && CharacterState == ECharacterState::FC_Default && GetCharacterMovement()->IsMovingOnGround()) //||
+		//(GetController() && IsCombatReady && !WasHeavyAttackUsed && !WasLightAttackUsed && !IsSideStepPY && CharacterState == ECharacterState::FC_MovingForward && GetCharacterMovement()->IsMovingOnGround()) ||
+		//(GetController() && IsCombatReady && !WasHeavyAttackUsed && !WasLightAttackUsed && !IsSideStepPY && CharacterState == ECharacterState::FC_MovingBackward && GetCharacterMovement()->IsMovingOnGround())
+	) {	
 		UpdateCharacterRotation();	
 		IsSideStepNY = true;
 
@@ -384,7 +402,11 @@ void AFightingCharacter::SideStepNY(const FInputActionValue& Value){
 void AFightingCharacter::SideStepPY(const FInputActionValue& Value){
     const FVector SideStep = GetActorRightVector();
 
-    if (GetController() && IsCombatReady && !IsBlocking && !IsSideStepNY && !this->bIsCrouched && GetVelocity().Z == 0 && !MoveFwd && !MoveBwd  && !WasHeavyAttackUsed && !WasLightAttackUsed && !WasLaunched && !WasStunned && !IsKnockedDown && !IsRecovery && GetCharacterMovement()->IsMovingOnGround()) {	
+    if (
+		(GetController() && IsCombatReady && !WasHeavyAttackUsed && !WasLightAttackUsed && !IsSideStepNY && CharacterState == ECharacterState::FC_Default && GetCharacterMovement()->IsMovingOnGround()) //||
+		//(GetController() && IsCombatReady && !WasHeavyAttackUsed && !WasLightAttackUsed && !IsSideStepNY && CharacterState == ECharacterState::FC_MovingForward && GetCharacterMovement()->IsMovingOnGround()) ||
+		//(GetController() && IsCombatReady && !WasHeavyAttackUsed && !WasLightAttackUsed && !IsSideStepNY && CharacterState == ECharacterState::FC_MovingBackward && GetCharacterMovement()->IsMovingOnGround())
+	) {	
 		UpdateCharacterRotation();	
 		IsSideStepPY = true;
 
@@ -396,7 +418,7 @@ void AFightingCharacter::SideStepPY(const FInputActionValue& Value){
 }
 
 void AFightingCharacter::ClearSideStep(const FInputActionValue& Value){
-	if (GetController() && IsCombatReady) {
+	if (GetController() && IsCombatReady && CharacterState != ECharacterState::FC_Launched && CharacterState != ECharacterState::FC_KockedDown && CharacterState != ECharacterState::FC_Recovery) {
 		UpdateCharacterRotation();
 		//IsSideStepNY = false;
 		//IsSideStepPY = false;
@@ -460,7 +482,7 @@ void AFightingCharacter::GetStunned(float HitStunTime, float BlockStunTime, floa
 	if(CharacterState != ECharacterState::FC_Blocking && CharacterState != ECharacterState::FC_CrouchBlocking){
 		StunTime= HitStunTime;
 
-		if(StunTime > 0.f){
+		if(StunTime > 0.001f){
 			if(HasLandedThrow){
 				CharacterState = ECharacterState::FC_ThrowStunned;
 			}else if(StunTime > 0.5f){
@@ -473,7 +495,7 @@ void AFightingCharacter::GetStunned(float HitStunTime, float BlockStunTime, floa
 			BeginStun();
 		}
 
-		if(HitStopDamageAmount > 0.f){
+		if(HitStopDamageAmount > 0.001f){
 			BeginHitsop(HitStopDamageAmount);
 		}
 
@@ -499,8 +521,10 @@ void AFightingCharacter::GetStunned(float HitStunTime, float BlockStunTime, floa
 			WasStunned = true;
 			BeginStun();
 		} else {
-			CharacterState = ECharacterState::FC_Default;
-			WasStunned = false;
+			if(CharacterState != ECharacterState::FC_Death){
+				CharacterState = ECharacterState::FC_Default;
+				WasStunned = false;
+			}
 		}
 
 		if(HitStopDamageAmount > 0.f){
@@ -509,21 +533,21 @@ void AFightingCharacter::GetStunned(float HitStunTime, float BlockStunTime, floa
 		}
 		if(OtherCharacter){
 			OtherCharacter->HasLandedHit = false;
-			OtherCharacter->PerformPushBack(PushbackAmount, LaunchAmount, false, false);
+			OtherCharacter->PerformPushBack(PushbackAmount/2, 0.f, false, false);
 			//OtherCharacter->PerformPushBack(PushbackAmount, 0.f, false, IsNeutral);
 		}
 
-		PerformPushBack(PushbackAmount, 0.f, true, false);
+		PerformPushBack(PushbackAmount/2, 0.f, true, false);
 	}
 }
 
 void AFightingCharacter::PerformPushBack(float PushbackAmount, float LaunchAmount, bool HasBlocked, bool IsNeutral){
 	if(HasBlocked){
 		if(OtherCharacter->GetActorForwardVector().X < 0.f){
-			LaunchCharacter(FVector( -PushbackAmount*2.f, 0.f,0.f), false, false);
+			LaunchCharacter(FVector( -PushbackAmount/2.f, 0.f,0.f), false, false);
 			//UE_LOG(LogTemp, Warning, TEXT("1 Push Amount: %f"), -PushbackAmount*2.f);
 		}else {
-			LaunchCharacter(FVector(PushbackAmount*2.f, 0.f,0.f), false, false);
+			LaunchCharacter(FVector(PushbackAmount/2.f, 0.f,0.f), false, false);
 			//UE_LOG(LogTemp, Warning, TEXT("2 Push Amount: %f"), PushbackAmount*2.f);
 		}
 		
@@ -531,9 +555,10 @@ void AFightingCharacter::PerformPushBack(float PushbackAmount, float LaunchAmoun
 		if(LaunchAmount>0.f || IsNeutral && !GetCharacterMovement()->IsMovingOnGround()){
 				GetCharacterMovement()->GravityScale = DefaultGravityScale * GravityScaleModifier;
 				GravityScaleModifier += 0.1f;
-				WasLaunched = true;
 				CharacterState = ECharacterState::FC_Launched;
-				UE_LOG(LogTemp, Warning, TEXT("0-> Player %i IsCombatReady: %i Launched: %i Stunned: %i KnockedDown: %i IsRecovery: %i IsOnGround: %i IsWallBounce: %i IsGroundBounce: %i"), PlayerIndex, IsCombatReady, WasLaunched, WasStunned, IsKnockedDown, IsRecovery, GetCharacterMovement()->IsMovingOnGround(), IsWallBounce, IsGroundBounce);
+				WasLaunched = true;
+				
+				//UE_LOG(LogTemp, Warning, TEXT("0-> Player %i IsCombatReady: %i Launched: %i Stunned: %i KnockedDown: %i IsRecovery: %i IsOnGround: %i IsWallBounce: %i IsGroundBounce: %i"), PlayerIndex, IsCombatReady, WasLaunched, WasStunned, IsKnockedDown, IsRecovery, GetCharacterMovement()->IsMovingOnGround(), IsWallBounce, IsGroundBounce);
 		}
 		
 		if(OtherCharacter->GetActorForwardVector().X < 0.f || OtherCharacter->GetActorForwardVector().Y < 0.f){
@@ -556,6 +581,8 @@ void AFightingCharacter::PerformPushBack(float PushbackAmount, float LaunchAmoun
 				LaunchCharacter(FVector(PushbackAmount, PushbackAmount, LaunchAmount), false, false);
 			}
 		}
+		HasLandedHit = false;
+
 	}
 }
 
@@ -569,11 +596,12 @@ void AFightingCharacter::BeginStun(){
 
 void AFightingCharacter::EndStun(){
 	if(!WasLaunched && !IsKnockedDown && !IsRecovery && !IsWallBounce && !IsGroundBounce){
-		CharacterState = ECharacterState::FC_Default;
 		IsCombatReady = true;
 		WasStunned= false;
 		
+		
 	}
+		HasLandedHit = false;
 }
 
 void AFightingCharacter::BeginHitsop(float _DamageAmount){
@@ -627,10 +655,12 @@ void AFightingCharacter::Landed(const FHitResult& Hit){
 			UE_LOG(LogTemp, Warning, TEXT("No Actors were hit"));
 	}*/
 
+	
+
 
 	if(LTHit.GetActor()==OtherCharacter){
-		UE_LOG(LogTemp, Error, TEXT("Junping state"));
-		
+		//UE_LOG(LogTemp, Error, TEXT("Junping state"));
+			
 
 		if(OtherCharacter && Hit.GetActor() == OtherCharacter){
 			/*UE_LOG(LogTemp, Error, TEXT("A Character has landedn on top of other character (offset to the right)."));
@@ -646,7 +676,9 @@ void AFightingCharacter::Landed(const FHitResult& Hit){
 			GetCharacterMovement()->GravityScale = DefaultGravityScale;
 			GravityScaleModifier = 0.8f;
 			IsKnockedDown = false;
-			CharacterState = ECharacterState::FC_Default;
+			if(CharacterState != ECharacterState::FC_Death){
+				CharacterState = ECharacterState::FC_Default;
+			}
 		}
 		
 	} else if((WasLaunched && !IsGroundBounce) || IsWallBounce ||  IsGroundBounce){
@@ -663,10 +695,14 @@ void AFightingCharacter::Landed(const FHitResult& Hit){
 	else if(IsGroundBounce){
 		IsGroundBounce = true;
 		CharacterState = ECharacterState::FC_GroundBounce;
-	} 
+	} else{
+		if(CharacterState != ECharacterState::FC_Death){
+			CharacterState = ECharacterState::FC_Default;
+		}
+	}
 
-	WasLaunched = false;
-	IsWallBounce = false;
+	//WasLaunched = false;
+	//IsWallBounce = false;
 	
 }
 
@@ -803,6 +839,8 @@ void AFightingCharacter::CheckInputBufferForCommandUsingType(){
 }*/
 
 void AFightingCharacter::DetermineCommandToUse(){
+
+
 	if(MoveBuffer.Num() > 0){
 
 		FCommand MoveToUse = MoveBuffer[0];
@@ -820,12 +858,12 @@ void AFightingCharacter::DetermineCommandToUse(){
 }
 
 void AFightingCharacter::StartCommand(FString CommandName){
-	if(CharacterState != ECharacterState::FC_Blocking && CharacterState != ECharacterState::FC_KockedDown && CharacterState != ECharacterState::FC_Recovery && !OtherCharacter->HasLandedThrow && !HasLandedThrow){
+	if(CharacterState != ECharacterState::FC_Recovery && CharacterState != ECharacterState::FC_Launched && CharacterState != ECharacterState::FC_HeavyStunned && CharacterState != ECharacterState::FC_LightStunned && CharacterState != ECharacterState::FC_Blocking && CharacterState != ECharacterState::FC_KockedDown){
 		for(int CurrentCommand = 0; CurrentCommand < PlayerCommand.Num(); ++CurrentCommand){
 
 			if(CommandName.Compare(PlayerCommand[CurrentCommand].CommandName) == 0){
 			
-				UE_LOG(LogTemp, Error, TEXT("The Character is using the command: %s."), *CommandName);
+				//UE_LOG(LogTemp, Error, TEXT("The Character is using the command: %s."), *CommandName);
 				PlayerCommand[CurrentCommand].HasUsedCommand = true;
 
 				//check if the character state is not default state

@@ -34,10 +34,10 @@ void ANexus_GameMode::BeginPlay()
 	this->PlayerOneRoundWon = 0;
 	this->PlayerTwoRoundWon = 0;
 
-	if (GEngine)
+	/*if (GEngine)
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("BeginPlay")));
-	}
+	}*/
 }
 
 void ANexus_GameMode::StartMatch()
@@ -97,9 +97,9 @@ void ANexus_GameMode::CountDown()
 
 void ANexus_GameMode::UpdateHealthBar_Implementation(EPlayerEnum HitEnemy, float DamageValue)
 {
-	if (GEngine) {
+	/*if (GEngine) {
 		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("->PlayerTwo.CurrentPoint %f"), DamageValue));
-	}
+	}*/
 }
 
 void ANexus_GameMode::OnPlayerIsDead_Implementation(EPlayerEnum Player)
