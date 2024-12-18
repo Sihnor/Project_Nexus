@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "2170617613",
+    "Type": "Event",
+    "GUID": "{6B678688-889A-448F-8387-4F2BA8FB80C2}",
+    "Language": "SFX",
+    "Hash": "{4DE7E382-95E9-56B8-0FD6-714F23D544FC}",
+    "ObjectPath": "Com_Welcome",
+    "ShortName": "Com_Welcome",
+    "Path": "Event/Com_Welcome.bnk",
+    "Media": [
+     {
+      "Id": "698339974",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_commentator_welcome_01.wav",
+      "Path": "Media/698339974.wem",
+      "CachePath": "SFX/vo_commentator_welcome_01_C08E6CF5.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2170617613",
+      "Name": "Com_Welcome",
+      "ObjectPath": "\\Events\\Commentator_Voices\\Com_Welcome",
+      "GUID": "{6B678688-889A-448F-8387-4F2BA8FB80C2}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.03125",
+      "DurationMax": "2.03125",
+      "MediaRefs": [
+       {
+        "Id": "698339974"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{F3D879F8-651E-B80C-C253-A8A0C9AF0D90}"
+ }
+}

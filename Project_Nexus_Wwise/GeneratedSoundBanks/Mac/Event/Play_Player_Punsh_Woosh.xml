@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="3021177893" Type="Event" GUID="{DC4135FD-87EC-41A5-84C3-E1F70FC2699C}" Language="SFX" Hash="{BCD1DBE2-99B9-C3E1-34D1-B147DC8DC500}">
+			<ObjectPath>Play_Player_Punsh_Woosh</ObjectPath>
+			<ShortName>Play_Player_Punsh_Woosh</ShortName>
+			<Path>Event/Play_Player_Punsh_Woosh.bnk</Path>
+			<Media>
+				<File Id="266191415" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_woosh_01.wav</ShortName>
+					<Path>Media/266191415.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_woosh_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="505491373" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_woosh_02.wav</ShortName>
+					<Path>Media/505491373.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_woosh_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="761483195" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_woosh_06.wav</ShortName>
+					<Path>Media/761483195.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_woosh_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="761832300" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_woosh_03.wav</ShortName>
+					<Path>Media/761832300.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_woosh_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1029515323" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_woosh_04.wav</ShortName>
+					<Path>Media/1029515323.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_woosh_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1072389693" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_combat_punch_woosh_05.wav</ShortName>
+					<Path>Media/1072389693.wem</Path>
+					<CachePath>SFX/sfx_fighter1_combat_punch_woosh_05_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3021177893" Name="Play_Player_Punsh_Woosh" ObjectPath="\Events\Player\PlayerCombat\Play_Player_Punsh_Woosh" GUID="{DC4135FD-87EC-41A5-84C3-E1F70FC2699C}" DurationType="OneShot" DurationMin="0.26674756" DurationMax="0.44960067">
+					<MediaRefs>
+						<MediaRef Id="266191415"/>
+						<MediaRef Id="505491373"/>
+						<MediaRef Id="761483195"/>
+						<MediaRef Id="761832300"/>
+						<MediaRef Id="1029515323"/>
+						<MediaRef Id="1072389693"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{715C1F24-9BDC-DFB8-B436-38E1A60AF9A7}</FileHash>
+</SoundBanksInfo>

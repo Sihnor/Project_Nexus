@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2663982528	Play_Player_Punch_Heavy			\Player\PlayerCombat\Play_Player_Punch_Heavy	
+

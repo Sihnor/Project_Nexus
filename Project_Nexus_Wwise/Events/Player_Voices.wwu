@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9E862803-B68C-481E-B1AE-338A40562A8D}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Player_Voices" ID="{9E862803-B68C-481E-B1AE-338A40562A8D}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="24"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Event Name="Plyr1_Attack_Light" ID="{26AB0E9E-6FC9-4D4C-98BC-CDD120436275}">
+					<ChildrenList>
+						<Action Name="" ID="{7494CD63-A7B9-4A12-8B74-732E11C63AF5}" ShortID="941169092">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Plyr_Attack_Light" ID="{AC0B648D-B8F6-4A72-84FC-A924907EA7EF}" WorkUnitID="{E5F57FEB-3DEE-451F-A6A7-6237024381AC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Plyr1_Attack_Heavy" ID="{99EBE9DA-2D4B-4E25-A1FD-CC1C387CC0C5}">
+					<ChildrenList>
+						<Action Name="" ID="{40081A8E-C8CF-4073-9BF2-36E52A6A0FBD}" ShortID="709634386">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Plyr_Attack_Heavy" ID="{706211CE-090E-41D9-97A6-435BC7E7D5FE}" WorkUnitID="{E5F57FEB-3DEE-451F-A6A7-6237024381AC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Plyr1_Dmg_Heavy" ID="{6FCF772D-550C-4F65-B592-DB8587BDF458}">
+					<ChildrenList>
+						<Action Name="" ID="{64FEA95A-68AF-4556-9404-189B939B2A95}" ShortID="431228872">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Plyr_Dmg_Heavy" ID="{BA28E740-0CB3-408C-B544-D6F13DA19F1F}" WorkUnitID="{E5F57FEB-3DEE-451F-A6A7-6237024381AC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Plyr1_Dmg_Light" ID="{18AC3747-1B0B-4F57-9307-A7FEBA0ADAC6}">
+					<ChildrenList>
+						<Action Name="" ID="{1181B5F8-1D47-47FC-87F8-B2FF32EA7E61}" ShortID="588143268">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Plyr_Dmg_Light" ID="{DC776D2A-3EFD-4843-BA7C-F3EBCE447162}" WorkUnitID="{E5F57FEB-3DEE-451F-A6A7-6237024381AC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Plyr1_Dmg_Special" ID="{7BD3B646-2657-40FF-9C97-391A4B37380E}">
+					<ChildrenList>
+						<Action Name="" ID="{C041BC1D-E254-4994-85CE-CE3D66EC383B}" ShortID="436562767">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Plyr_Dmg_Special" ID="{9DF06F46-C3FD-44EB-94A0-0F2C4F568EAF}" WorkUnitID="{E5F57FEB-3DEE-451F-A6A7-6237024381AC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Plyr1_Movement_Jump" ID="{D7BC3EB3-3F4C-4395-A786-93E524AB9064}">
+					<ChildrenList>
+						<Action Name="" ID="{EA058EB7-DCF7-4E87-8D7C-4ADF880CBE40}" ShortID="4223329">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Plyr_Movement_Jump" ID="{8BB3DDF6-BF9F-434E-8DFF-86DB856F6E8F}" WorkUnitID="{E5F57FEB-3DEE-451F-A6A7-6237024381AC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Plyr1_Movement_Rollbackward" ID="{79551593-FDCB-4471-8056-ED953CE28502}">
+					<ChildrenList>
+						<Action Name="" ID="{75C5AC24-C246-4428-BA7D-DA3C7ECC6545}" ShortID="1032282369">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Plyr_Movement_Rollbackward" ID="{09724083-9A85-43CA-9B2D-4592A2B3B7E6}" WorkUnitID="{E5F57FEB-3DEE-451F-A6A7-6237024381AC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Plyr1_Movement_Rollforward" ID="{7A8FD551-211D-449D-89BF-34E067A83438}">
+					<ChildrenList>
+						<Action Name="" ID="{916F6483-0017-477C-AC8F-F8A8A1127FEA}" ShortID="221402376">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Plyr_Movement_Rollforward" ID="{05A5A751-FCB7-4083-9EFF-7EFEE97C05B0}" WorkUnitID="{E5F57FEB-3DEE-451F-A6A7-6237024381AC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Plyr2_Attack_Heavy" ID="{50D65725-C02E-4F28-8D2E-1291893F7AA3}">
+					<ChildrenList>
+						<Action Name="" ID="{8E0A3B3B-4896-4A6C-8500-FD0FE3954A0E}" ShortID="196869536">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Plyr_Attack_Heavy" ID="{CBBA6D5C-0FC7-47BC-BE95-46C6EAFCB51F}" WorkUnitID="{E5F57FEB-3DEE-451F-A6A7-6237024381AC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Plyr2_Attack_Light" ID="{1D179E9F-6385-46AE-9BD6-B3918124CCD2}">
+					<ChildrenList>
+						<Action Name="" ID="{FE65FE77-7392-4B08-A1D3-43654EE04C45}" ShortID="845840806">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Plyr_Attack_Light" ID="{1B878667-F65C-4385-8372-AD6E193E7517}" WorkUnitID="{E5F57FEB-3DEE-451F-A6A7-6237024381AC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Plyr2_Dmg_Heavy" ID="{926D2531-1E72-4E5D-9E0A-DF6DC68D4CD2}">
+					<ChildrenList>
+						<Action Name="" ID="{7F3EB387-4F72-4DE5-87AF-EFA0D9561D6D}" ShortID="885253234">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Plyr_Dmg_Heavy" ID="{1C4F8620-F6CD-4A69-BC35-25E80467B190}" WorkUnitID="{E5F57FEB-3DEE-451F-A6A7-6237024381AC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Plyr2_Dmg_Light" ID="{B9C1CDAF-05EE-4DFB-85C0-573948B38A64}">
+					<ChildrenList>
+						<Action Name="" ID="{4BA7F850-DA54-4B20-A02A-D30D21145F68}" ShortID="230066245">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Plyr_Dmg_Light" ID="{14A97F85-4368-4367-B779-4EF12197BE63}" WorkUnitID="{E5F57FEB-3DEE-451F-A6A7-6237024381AC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Plyr2_Dmg_Special" ID="{C6F7CB46-440E-4309-90C2-B62B6502AD3E}">
+					<ChildrenList>
+						<Action Name="" ID="{9855FAA7-007B-499A-B3F1-CC1948087CF0}" ShortID="413241058">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Plyr_Dmg_Special" ID="{188E0ABF-9164-48E9-90E1-DE7EDEBFD43E}" WorkUnitID="{E5F57FEB-3DEE-451F-A6A7-6237024381AC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Plyr2_Movement_Jump" ID="{93953BBA-0842-4F85-96F8-FADB33FA970A}">
+					<ChildrenList>
+						<Action Name="" ID="{0EC194F2-5A88-446A-9703-5876E60564CB}" ShortID="86955995">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Plyr_Movement_Jump" ID="{3B59712D-45DE-4EFA-A986-94787DD8AB70}" WorkUnitID="{E5F57FEB-3DEE-451F-A6A7-6237024381AC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Plyr2_Movement_Rollbackward" ID="{09907A82-0543-4AC4-8673-B8CE02D2AA76}">
+					<ChildrenList>
+						<Action Name="" ID="{CC94434B-EEBE-4591-86D0-FC81D3CB439B}" ShortID="808697684">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Plyr_Movement_Rollbackward" ID="{EB280B08-C618-4F59-83F1-EF9C69288A3A}" WorkUnitID="{E5F57FEB-3DEE-451F-A6A7-6237024381AC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Plyr2_Movement_Rollforward" ID="{167A664F-1E14-4579-BD2F-8548BA86507A}">
+					<ChildrenList>
+						<Action Name="" ID="{799AAA89-17E0-4897-90A8-3D5AD4B9AB46}" ShortID="5504012">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Plyr_Movement_Rollforward" ID="{E681FF25-7493-4470-9513-82A32984DC0C}" WorkUnitID="{E5F57FEB-3DEE-451F-A6A7-6237024381AC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

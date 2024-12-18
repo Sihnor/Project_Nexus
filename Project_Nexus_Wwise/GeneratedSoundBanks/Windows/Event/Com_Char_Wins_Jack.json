@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "892499175",
+    "Type": "Event",
+    "GUID": "{3DE5C542-49C6-4EF5-B5BE-60CB49F75D00}",
+    "Language": "SFX",
+    "Hash": "{C05E9F92-5205-A9D6-1196-67B8A6E05824}",
+    "ObjectPath": "Com_Char_Wins_Jack",
+    "ShortName": "Com_Char_Wins_Jack",
+    "Path": "Event/Com_Char_Wins_Jack.bnk",
+    "Media": [
+     {
+      "Id": "857849938",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_commentator_chara_jack_wins_01.wav",
+      "Path": "Media/857849938.wem",
+      "CachePath": "SFX/vo_commentator_chara_jack_wins_01_F6D14344.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "892499175",
+      "Name": "Com_Char_Wins_Jack",
+      "ObjectPath": "\\Events\\Commentator_Voices\\Com_Char_Wins_Jack",
+      "GUID": "{3DE5C542-49C6-4EF5-B5BE-60CB49F75D00}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.125",
+      "DurationMax": "2.125",
+      "MediaRefs": [
+       {
+        "Id": "857849938"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{9FB82DB9-0B13-9717-36D5-5A891A64CD10}"
+ }
+}

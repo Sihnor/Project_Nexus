@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0A39D232-7C31-4FD2-8E4E-26A8E3E5EA62}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Ambience" ID="{0A39D232-7C31-4FD2-8E4E-26A8E3E5EA62}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="2"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Folder Name="2D" ID="{30EE110C-F609-4A78-BE68-A223FD99B75E}" ShortID="77810854">
+					<ChildrenList>
+						<Event Name="Ambi_1_Loop_Start" ID="{82962F56-8362-4D21-8FE6-A98FF8901AE9}">
+							<ChildrenList>
+								<Action Name="" ID="{C4575895-A1FD-4961-BB06-B3D09C67C9D3}" ShortID="78456719">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambi_1_Loop" ID="{CA53FAEB-F0B3-46FC-AB15-504494014CC3}" WorkUnitID="{6CBD71BE-A490-4796-9349-42BC7A29FBB7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ambi_1_Loop_Stop" ID="{ECEA2C89-2161-42CE-A22A-B435716282B2}">
+							<ChildrenList>
+								<Action Name="" ID="{5B766127-ED3F-4286-BD67-974988BB01A2}" ShortID="616881186">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambi_1_Loop" ID="{CA53FAEB-F0B3-46FC-AB15-504494014CC3}" WorkUnitID="{6CBD71BE-A490-4796-9349-42BC7A29FBB7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ambi_2_Loop_Start" ID="{6A3B97C4-67AE-45C1-A149-EBF2C7E68E30}">
+							<ChildrenList>
+								<Action Name="" ID="{B779630E-3E96-47A2-9727-E717CB0A0B19}" ShortID="783326185">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambi_2_Loop" ID="{9AF07092-28A2-438C-A574-5990907328C3}" WorkUnitID="{6CBD71BE-A490-4796-9349-42BC7A29FBB7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ambi_2_Loop_Stop" ID="{EEB1C8DC-2012-4465-B929-C73B463E3F63}">
+							<ChildrenList>
+								<Action Name="" ID="{1AD2B748-1D11-444C-BAC0-305DD674DC2B}" ShortID="317293504">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambi_2_Loop" ID="{9AF07092-28A2-438C-A574-5990907328C3}" WorkUnitID="{6CBD71BE-A490-4796-9349-42BC7A29FBB7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

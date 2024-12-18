@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "3729567056",
+    "Type": "Event",
+    "GUID": "{C57354E5-1D79-43A6-9596-3AAD8A7B58E7}",
+    "Language": "English(US)",
+    "Hash": "{DC311F94-602A-1B82-5034-64C6A059EF38}",
+    "ObjectPath": "Com_Char_Select_Jack",
+    "ShortName": "Com_Char_Select_Jack",
+    "Path": "Event/English(US)/Com_Char_Select_Jack.bnk",
+    "Media": [
+     {
+      "Id": "5541831",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_commentator_chara_select_jack_01.wav",
+      "Path": "Media/English(US)/5541831.wem",
+      "CachePath": "Voices/English(US)/vo_commentator_chara_select_jack_01_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3729567056",
+      "Name": "Com_Char_Select_Jack",
+      "ObjectPath": "\\Events\\Commentator_Voices\\Com_Char_Select_Jack",
+      "GUID": "{C57354E5-1D79-43A6-9596-3AAD8A7B58E7}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.5",
+      "DurationMax": "1.5",
+      "MediaRefs": [
+       {
+        "Id": "5541831"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{EFCAA6CB-5DA3-DC6F-EBF0-CBA0762C3045}"
+ }
+}

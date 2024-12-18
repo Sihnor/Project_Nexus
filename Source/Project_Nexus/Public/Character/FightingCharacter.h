@@ -6,11 +6,106 @@
 #include "GameFramework/Character.h"
 #include "InputActionValue.h"
 #include "Components/TimelineComponent.h"
+#include "Containers/CircularBuffer.h"
 #include "FightingCharacter.generated.h"
 
 class UInputMappingContext;
 class UInputAction;
 class UCurveFloat;
+class AHitBox;
+
+UENUM(BlueprintType)
+enum class ECharacterState : uint8
+{
+	FC_Default UMETA(DisplayName = "Not_Moving"),
+    FC_MovingForward UMETA(DisplayName = "Moving_Forward"),
+    FC_MovingBackward UMETA(DisplayName = "Moving_Backward"),
+	FC_RunningForward UMETA(DisplayName = "Running_Forward"),
+	FC_DashForward UMETA(DisplayName = "Dash_Forward"),
+	FC_DashBackward UMETA(DisplayName = "Dash_Backward"),
+	FC_Jumping UMETA(DisplayName = "Jumping"),
+	FC_LightStunned UMETA(DisplayName = "Light_Stunned"),
+	FC_HeavyStunned UMETA(DisplayName = "Heavy_Stunned"),
+	FC_ThrowStunned UMETA(DisplayName = "Throw_Stunned"),
+	FC_BlockStunned UMETA(DisplayName = "Block_Stunned"),
+	FC_BlockCrouchStunned UMETA(DisplayName = "Block_Crouch_Stunned"),
+	FC_Crouching UMETA(DisplayName = "Crouching"),
+	FC_Launched UMETA(DisplayName = "Launched"),
+	FC_Blocking UMETA(DisplayName = "Blocking"),
+	FC_CrouchBlocking UMETA(DisplayName = "Crouch_Blocking"),
+	FC_KockedDown UMETA(DisplayName = "Knocked_Down"),
+	FC_Recovery UMETA(DisplayName = "Recovery"),
+	FC_WallBounce UMETA(DisplayName = "Wall_Bounce"),
+	FC_GroundBounce UMETA(DisplayName = "Ground_Bounce"),
+	FC_Death UMETA(DisplayName = "Death"),
+	FC_Win UMETA(DisplayName = "Win"),
+	FC_Lose UMETA(DisplayName = "Lose")
+	//more...
+};
+
+UENUM(BlueprintType)
+enum class EInputType : uint8
+{
+	F_None UMETA(DisplayName = "None"),
+	F_Forward UMETA(DisplayName = "Forward"),
+	F_Backward UMETA(DisplayName = "Backward"),
+	F_Jump UMETA(DisplayName = "Jump"),
+	F_Crouch UMETA(DisplayName = "Crouch"),
+	F_Block UMETA(DisplayName = "Block"),
+	F_LightAttack UMETA(DisplayName = "Light_Attack"),
+	F_HeavyAttack UMETA(DisplayName = "Heavy_Attack"),
+	F_Throw UMETA(DisplayName = "Throw"),
+	F_SpecialAttack UMETA(DisplayName = "SpecialAttack")
+	//more...
+};
+
+USTRUCT(BlueprintType)
+struct FCommand{
+	GENERATED_BODY()
+
+public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input Data")
+	FString CommandName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input Data")
+	TArray<EInputType> InputTypes;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input Data")
+	ECharacterState RequireState;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input Data")
+	ECharacterState ResultingState;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input Data")
+	int64 MaxFramesBetweenInputs = 12;
+
+	/*UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+	TArray<FString> Inputs;*/
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input Data")
+	bool HasUsedCommand;
+};
+ 
+USTRUCT(BlueprintType)
+struct FInputInfo{
+	GENERATED_BODY()
+
+public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input Data")
+	EInputType InputType;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input Data")
+	FString InputName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input Data")
+	float TimeStamp;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input Data")
+	int64 Frame;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input Data")
+	bool WasUsed;
+};
 
 UCLASS()
 class PROJECT_NEXUS_API AFightingCharacter : public ACharacter
@@ -26,6 +121,8 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	virtual void Landed(const FHitResult& Hit) override;
 
 protected:
 	// Called when the game starts or when spawned
@@ -61,12 +158,82 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 		UInputAction* SideStepNegativeYAction;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+		UInputAction* ThrowAction;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+		UInputAction* AddToInputBufferAction;
+
 	// Expose OtherPlayerCharacter to Blueprint
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats")
     	AFightingCharacter* OtherPlayerCharacter;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
         UTimelineComponent* TimelineComp;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hurtboxes")
+		AActor* Hurtbox;
+
+	//Simple Hurtbox Array
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hurtboxes")
+		TArray<AHitBox*> SimpleHurtboxArray;
+
+	//Complex Hurtbox Array
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hurtboxes")
+		TArray<UStaticMeshComponent*> ComplexHurtboxArray;	
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hurtboxes")
+    	bool bUsingComplexHurtboxes;
+
+	UFUNCTION(BlueprintCallable, Category = "Hitbox")
+		void GetStunned(float HitStunTime, float BlockStunTime, float PushbackAmount, float LaunchAmount, bool IsNeutral, float HitStopDamageAmount);
+
+	UFUNCTION(BlueprintCallable, Category = "InputBuffer")
+		void AddToInputMap(FString _Input, EInputType _Type);
+
+	UFUNCTION(BlueprintCallable, Category = "InputBuffer")
+		void AddInputToInputBuffer(FInputInfo InputInfo);
+
+	UFUNCTION(BlueprintCallable, Category = "InputBuffer")
+		void CheckInputBufferForCommand();
+
+	UFUNCTION(BlueprintCallable, Category = "InputBuffer")
+		void CheckInputBufferForCommandUsingType();
+
+	//Determine command to use based off the criteria (exp. Move lenght, difficutly or relevance).
+	UFUNCTION(BlueprintCallable, Category = "InputBuffer")
+		void DetermineCommandToUse();
+
+	UFUNCTION(BlueprintCallable, Category = "InputBuffer")
+		void StartCommand(FString CommandName);
+
+	//Map of input types to determine the player controlling for this character
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "InputBuffer")
+		TMap<FString, EInputType> InputToInputTypeMap;
+
+	//Array of inputs that the player controls has performed
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "InputBuffer")
+		TArray<FInputInfo> InputBuffer;
+
+	//Array of inputs that the player controls has performed (Circular buffer)
+	//Circular array has a start and end point. Once it reaches the end point it rolls over to the next point
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "InputBuffer")
+	TCircularBuffer<FInputInfo> CircularInputBuffer = TCircularBuffer<FInputInfo>(60);
+
+	//Usable Commands getting when correct series of inputs has been pressed.
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "InputBuffer")
+		TArray<FCommand> PlayerCommand;
+
+	//Correct Command inputs can be activ on the next update (tick) or when animation/state is complete.
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "InputBuffer")
+		TArray<FCommand> MoveBuffer;
+
+	/*UFUNCTION(BlueprintCallable, Category = "InputBuffer")
+		void RemoveInputFromInputBuffer();*/
+
+	//Move Character off of other Hurtbox/collider smoothly
+	UFUNCTION(BlueprintImplementableEvent)
+	void MoveCharacterSmoothly(FVector _Start, FVector _End);
 
 	//Delegate signature for the function which will handle our Finished event.
 	
@@ -82,6 +249,12 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Timeline")
     	UCurveFloat* FloatCurve;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+		ECharacterState CharacterState;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+		FTransform Transform;
 
 private:
 
@@ -109,6 +282,28 @@ private:
 
 	void ClearSideStep(const FInputActionValue& Value);
 
+	void AttackThrow(const FInputActionValue& Value);
+
+	//void GetStunned(float HitStunTime, float BlockStunTime, float PushbackAmount, float LaunchAmount);
+
+	void PerformPushBack(float PushbackAmount, float LaunchAmount, bool HasBlocked, bool IsNeutral);
+
+	void BeginStun();
+
+	void EndStun();
+
+	void BeginHitsop(float _DamageAmount);
+
+	void EndHitstop();
+
+	void DoAddInputToInputBuffer(const FInputActionValue& Value);
+
+	FTimerHandle StunTimeHandle;
+
+	FTimerHandle HitstopTimeHandle;
+
+	//FTimerHandle InputBufferTimeHandle;
+
 	// Custom function for updating character rotation
 	UFUNCTION(BlueprintCallable, Category = "Custom Character Rotation", meta = (AllowPrivateAccess = "true"))
     	void UpdateCharacterRotation();
@@ -134,17 +329,73 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
 		bool IsBlocking = false;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
-		bool WasFirstLightAttackUsed = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attacks", meta = (AllowPrivateAccess = "true"))
+		bool WasLightAttackUsed = false;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
-		bool WasFirstHeavyAttackUsed = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attacks", meta = (AllowPrivateAccess = "true"))
+		bool WasHeavyAttackUsed = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attacks", meta = (AllowPrivateAccess = "true"))
+		bool WasThrowUsed = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
 		bool IsSideStepNY = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
 		bool IsSideStepPY = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool WasLaunched = false;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool WasStunned = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attacks", meta = (AllowPrivateAccess = "true"))
+		bool HasLandedHit = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attacks", meta = (AllowPrivateAccess = "true"))
+		bool HasLandedThrow = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool IsKnockedDown = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool IsRecovery = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool IsWallBounce = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "StateMachine", meta = (AllowPrivateAccess = "true"))
+		bool IsGroundBounce = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats", meta = (AllowPrivateAccess = "true"))
+		float StunTime;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats", meta = (AllowPrivateAccess = "true"))
+		float DefaultGravityScale;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats", meta = (AllowPrivateAccess = "true"))
+		float GravityScaleModifier;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats", meta = (AllowPrivateAccess = "true"))
+		float HitstopModifier;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats", meta = (AllowPrivateAccess = "true"))
+		float MaxDistanceApart;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement", meta = (AllowPrivateAccess = "true"))
+		float BackwardDashDistance;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement", meta = (AllowPrivateAccess = "true"))
+		float ForwardDashDistance;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement", meta = (AllowPrivateAccess = "true"))
+		float PushBackAmount;
+
+	int CurrentTick;
+	bool CaptureInputThisFrame;
+
+	//float RemoveInputFromInputBufferTime;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Stats", meta = (AllowPrivateAccess = "true"))
 		int PlayerIndex;
@@ -162,5 +413,7 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Custom Character Rotation")
     	bool bShowRotation;
+
+	
 
 };

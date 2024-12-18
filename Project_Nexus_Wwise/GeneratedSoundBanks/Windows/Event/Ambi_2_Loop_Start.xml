@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="466103037" Type="Event" GUID="{6A3B97C4-67AE-45C1-A149-EBF2C7E68E30}" Language="SFX" Hash="{C79A04EA-0ECC-3F5A-11C4-33C03C58D5AC}">
+			<ObjectPath>Ambi_2_Loop_Start</ObjectPath>
+			<ShortName>Ambi_2_Loop_Start</ShortName>
+			<Path>Event/Ambi_2_Loop_Start.bnk</Path>
+			<Media>
+				<File Id="95110852" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Ambi_2_Loop_02.wav</ShortName>
+					<Path>Media/95110852.wem</Path>
+					<CachePath>SFX/Ambi_2_Loop_02_94056928.wem</CachePath>
+				</File>
+				<File Id="628115851" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Ambi_2_Loop_03.wav</ShortName>
+					<Path>Media/628115851.wem</Path>
+					<CachePath>SFX/Ambi_2_Loop_03_11973477.wem</CachePath>
+				</File>
+				<File Id="884370771" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Ambi_2_Loop_01.wav</ShortName>
+					<Path>Media/884370771.wem</Path>
+					<CachePath>SFX/Ambi_2_Loop_01_43E6DBB1.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="466103037" Name="Ambi_2_Loop_Start" ObjectPath="\Events\Ambience\2D\Ambi_2_Loop_Start" GUID="{6A3B97C4-67AE-45C1-A149-EBF2C7E68E30}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="95110852"/>
+						<MediaRef Id="628115851"/>
+						<MediaRef Id="884370771"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{F4915EBC-ECA2-E644-BF08-52997B50B3C1}</FileHash>
+</SoundBanksInfo>

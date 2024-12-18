@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{53C9C1D6-B090-4D89-A122-DC46C0BF11CD}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Music" ID="{53C9C1D6-B090-4D89-A122-DC46C0BF11CD}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Music_Menu" ID="{1CC99C31-E23D-4648-94D8-90671E36B4EB}">
+					<ChildrenList>
+						<Action Name="" ID="{34BAA962-EC26-4FBC-B3B0-56D967570297}" ShortID="644229586">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Menu" ID="{815263B3-316B-4E7B-9237-1BA794DA8AB8}" WorkUnitID="{6620E9C0-70DC-4577-9232-ABC8365CEA5F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Music_Menu" ID="{AC432697-421D-452D-A0E0-ED705292EDA8}">
+					<ChildrenList>
+						<Action Name="" ID="{51088275-187D-44D6-902E-7B5C49D99DBE}" ShortID="201677115">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Menu" ID="{815263B3-316B-4E7B-9237-1BA794DA8AB8}" WorkUnitID="{6620E9C0-70DC-4577-9232-ABC8365CEA5F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Music_Stage_1a" ID="{AFE902AB-BBF9-4EB1-87AC-47A2C6AA76EC}">
+					<ChildrenList>
+						<Action Name="" ID="{647F21B1-7E12-47B4-A2DA-F7DD0384BA87}" ShortID="203163217">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Stage" ID="{D0704EEE-6855-46F4-8AB7-CA86ABBA8E28}" WorkUnitID="{6620E9C0-70DC-4577-9232-ABC8365CEA5F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Music_Stagw_1b" ID="{A9011CA4-F40B-415B-9C65-B4914BA1B74C}">
+					<ChildrenList>
+						<Action Name="" ID="{9DC5C32D-4B77-4340-A08E-16FACDE8FBD7}" ShortID="783401625">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Stage 1" ID="{58725EC0-95A7-46BF-A376-F5BA09D99E1A}" WorkUnitID="{6620E9C0-70DC-4577-9232-ABC8365CEA5F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Music_Stage_1a" ID="{62D78041-F9D1-4419-AE06-E663C92CE753}">
+					<ChildrenList>
+						<Action Name="" ID="{65AEDFD1-6D30-434E-9B2B-3BABCDADE7A0}" ShortID="41647530">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Stage" ID="{D0704EEE-6855-46F4-8AB7-CA86ABBA8E28}" WorkUnitID="{6620E9C0-70DC-4577-9232-ABC8365CEA5F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Music_Stage_1b" ID="{2D7537D9-B663-478E-A75B-D3B696CEA654}">
+					<ChildrenList>
+						<Action Name="" ID="{876C12AA-E821-4FC1-BDF3-CD606BC7D93A}" ShortID="337108555">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Stage 1" ID="{58725EC0-95A7-46BF-A376-F5BA09D99E1A}" WorkUnitID="{6620E9C0-70DC-4577-9232-ABC8365CEA5F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

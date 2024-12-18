@@ -1,0 +1,96 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "3518947313",
+    "Type": "Event",
+    "GUID": "{26AB0E9E-6FC9-4D4C-98BC-CDD120436275}",
+    "Language": "SFX",
+    "Hash": "{BAC0E671-1DEA-CAA1-1BA2-846EF0549DCF}",
+    "ObjectPath": "Plyr1_Attack_Light",
+    "ShortName": "Plyr1_Attack_Light",
+    "Path": "Event/Plyr1_Attack_Light.bnk",
+    "Media": [
+     {
+      "Id": "55257799",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_punch_light_05.wav",
+      "Path": "Media/55257799.wem",
+      "CachePath": "SFX/vo_fighter1_punch_light_05_10C4C929.wem"
+     },
+     {
+      "Id": "86967045",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_punch_light_03.wav",
+      "Path": "Media/86967045.wem",
+      "CachePath": "SFX/vo_fighter1_punch_light_03_10C4C929.wem"
+     },
+     {
+      "Id": "458298908",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_punch_light_01.wav",
+      "Path": "Media/458298908.wem",
+      "CachePath": "SFX/vo_fighter1_punch_light_01_10C4C929.wem"
+     },
+     {
+      "Id": "538408692",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_punch_light_04.wav",
+      "Path": "Media/538408692.wem",
+      "CachePath": "SFX/vo_fighter1_punch_light_04_10C4C929.wem"
+     },
+     {
+      "Id": "599159208",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_punch_light_02.wav",
+      "Path": "Media/599159208.wem",
+      "CachePath": "SFX/vo_fighter1_punch_light_02_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3518947313",
+      "Name": "Plyr1_Attack_Light",
+      "ObjectPath": "\\Events\\Player_Voices\\Plyr1_Attack_Light",
+      "GUID": "{26AB0E9E-6FC9-4D4C-98BC-CDD120436275}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.27291667",
+      "DurationMax": "0.4365",
+      "MediaRefs": [
+       {
+        "Id": "55257799"
+       },
+       {
+        "Id": "86967045"
+       },
+       {
+        "Id": "458298908"
+       },
+       {
+        "Id": "538408692"
+       },
+       {
+        "Id": "599159208"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{C6C12065-5ADD-2B56-F54D-5F260D0A1006}"
+ }
+}

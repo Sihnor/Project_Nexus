@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="986664061" Type="Event" GUID="{D586571B-518E-44CF-8A2E-6B68BFDB5D01}" Language="SFX" Hash="{09E087E1-A71E-9115-CAB6-0351A4636FEA}">
+			<ObjectPath>Play_Pause_Out</ObjectPath>
+			<ShortName>Play_Pause_Out</ShortName>
+			<Path>Event/Play_Pause_Out.bnk</Path>
+			<Media>
+				<File Id="658970362" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_menu_pause_deactivate.wav</ShortName>
+					<Path>Media/658970362.wem</Path>
+					<CachePath>SFX/sfx_menu_pause_deactivate_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="986664061" Name="Play_Pause_Out" ObjectPath="\Events\UI\Play_Pause_Out" GUID="{D586571B-518E-44CF-8A2E-6B68BFDB5D01}" DurationType="OneShot" DurationMin="0.40908334" DurationMax="0.40908334">
+					<MediaRefs>
+						<MediaRef Id="658970362"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{7A5C9933-5AF3-3538-86CE-8855218FF9B3}</FileHash>
+</SoundBanksInfo>

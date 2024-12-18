@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="1073355647" Type="Event" GUID="{EEB1C8DC-2012-4465-B929-C73B463E3F63}" Language="SFX" Hash="{A544CAB3-52CB-E240-2489-D25DB3E5405B}">
+			<ObjectPath>Ambi_2_Loop_Stop</ObjectPath>
+			<ShortName>Ambi_2_Loop_Stop</ShortName>
+			<Path>Event/Ambi_2_Loop_Stop.bnk</Path>
+			<Events>
+				<Event Id="1073355647" Name="Ambi_2_Loop_Stop" ObjectPath="\Events\Ambience\2D\Ambi_2_Loop_Stop" GUID="{EEB1C8DC-2012-4465-B929-C73B463E3F63}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{4E9FE9AF-8F1A-C640-6F52-F678CB03A747}</FileHash>
+</SoundBanksInfo>

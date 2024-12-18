@@ -1,0 +1,108 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "725346841",
+    "Type": "Event",
+    "GUID": "{BD4FEB80-88A8-45D8-9FBF-7EF06D02BC15}",
+    "Language": "SFX",
+    "Hash": "{382F2CCD-4014-3FD2-2B6A-66E5502FEBA9}",
+    "ObjectPath": "Play_Player_Landing",
+    "ShortName": "Play_Player_Landing",
+    "Path": "Event/Play_Player_Landing.bnk",
+    "Media": [
+     {
+      "Id": "606884774",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_landing__06.wav",
+      "Path": "Media/606884774.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_landing__06_10C4C929.wem"
+     },
+     {
+      "Id": "616693563",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_landing__02.wav",
+      "Path": "Media/616693563.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_landing__02_10C4C929.wem"
+     },
+     {
+      "Id": "653697011",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_landing__01.wav",
+      "Path": "Media/653697011.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_landing__01_10C4C929.wem"
+     },
+     {
+      "Id": "691248896",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_landing__05.wav",
+      "Path": "Media/691248896.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_landing__05_10C4C929.wem"
+     },
+     {
+      "Id": "774956098",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_landing__04.wav",
+      "Path": "Media/774956098.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_landing__04_10C4C929.wem"
+     },
+     {
+      "Id": "982992959",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_movement_landing__03.wav",
+      "Path": "Media/982992959.wem",
+      "CachePath": "SFX/sfx_fighter1_movement_landing__03_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "725346841",
+      "Name": "Play_Player_Landing",
+      "ObjectPath": "\\Events\\Player\\PlayerLocomotion\\Play_Player_Landing",
+      "GUID": "{BD4FEB80-88A8-45D8-9FBF-7EF06D02BC15}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.22211511",
+      "DurationMax": "0.39279372",
+      "MediaRefs": [
+       {
+        "Id": "606884774"
+       },
+       {
+        "Id": "616693563"
+       },
+       {
+        "Id": "653697011"
+       },
+       {
+        "Id": "691248896"
+       },
+       {
+        "Id": "774956098"
+       },
+       {
+        "Id": "982992959"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{F05D59EF-50D3-1307-10F2-E16AB7E71BF9}"
+ }
+}

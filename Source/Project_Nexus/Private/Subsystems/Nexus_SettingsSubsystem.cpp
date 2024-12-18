@@ -3,11 +3,13 @@
 
 #include "Subsystems/Nexus_SettingsSubsystem.h"
 
+#include "UENUMS/TimeLimits.h"
+
 void UNexus_SettingsSubsystem::Initialize(FSubsystemCollectionBase& Collection)
 {
 	Super::Initialize(Collection);
-	this->NumberOfRounds = 5;
-	this->TimeLimit = 90;
+	this->NumberOfRounds = 3;
+	this->TimeLimitIndex = 0;
 	this->ControllerVibration = ECheckBoxState::Checked;
 
 	this->ScreenModeIndex = 0;
@@ -38,12 +40,26 @@ int32 UNexus_SettingsSubsystem::GetNumberOfRoundsSetting()
 
 void UNexus_SettingsSubsystem::SetTimeLimitSetting(int32 NewLimit)
 {
-	this->TimeLimit = NewLimit;
+	this->TimeLimitIndex = NewLimit;
+}
+
+int32 UNexus_SettingsSubsystem::GetTimeLimitIndexSetting()
+{
+	return this->TimeLimitIndex;
 }
 
 int32 UNexus_SettingsSubsystem::GetTimeLimitSetting()
 {
-	return this->TimeLimit;
+	switch (this->TimeLimitIndex)
+	{
+		case 0: return 50;
+		case 1: return 60;
+		case 2: return 90;
+		case 3: return 120;
+		case 4: return 150;
+		
+		default: return 0;
+	}
 }
 
 void UNexus_SettingsSubsystem::SetControllerVibrationSetting(ECheckBoxState NewState)

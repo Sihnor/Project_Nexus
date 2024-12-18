@@ -1,0 +1,56 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "672587556",
+    "Type": "Bus",
+    "GUID": "{D0D5848F-8E0F-47CD-A3E5-17FA4D8E1C38}",
+    "Language": "SFX",
+    "Hash": "{B01E399E-E942-24C7-2440-674FBA92FC0D}",
+    "ObjectPath": "Alley",
+    "ShortName": "Alley",
+    "Path": "Bus/Alley.bnk",
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "2995775460",
+       "Name": "Room_Small",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Small",
+       "GUID": "{577F1466-A63B-47F7-98BD-C56E433F8B5D}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ]
+    },
+    "AuxBusses": [
+     {
+      "Id": "672587556",
+      "Name": "Alley",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverbs\\Alley",
+      "GUID": "{D0D5848F-8E0F-47CD-A3E5-17FA4D8E1C38}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2995775460"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "3545700988",
+        "Name": "Reverbs",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverbs",
+        "GUID": "{6BE3BED4-0EDC-4674-80E4-B77F6F0EDD9B}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{48FFF9D1-0DE1-144D-A3C1-ABDC81601BFE}"
+ }
+}

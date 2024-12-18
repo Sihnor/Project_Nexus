@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="2170617613" Type="Event" GUID="{6B678688-889A-448F-8387-4F2BA8FB80C2}" Language="SFX" Hash="{4DE7E382-95E9-56B8-0FD6-714F23D544FC}">
+			<ObjectPath>Com_Welcome</ObjectPath>
+			<ShortName>Com_Welcome</ShortName>
+			<Path>Event/Com_Welcome.bnk</Path>
+			<Media>
+				<File Id="698339974" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_welcome_01.wav</ShortName>
+					<Path>Media/698339974.wem</Path>
+					<CachePath>SFX/vo_commentator_welcome_01_C08E6CF5.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2170617613" Name="Com_Welcome" ObjectPath="\Events\Commentator_Voices\Com_Welcome" GUID="{6B678688-889A-448F-8387-4F2BA8FB80C2}" DurationType="OneShot" DurationMin="2.03125" DurationMax="2.03125">
+					<MediaRefs>
+						<MediaRef Id="698339974"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{A6D22813-2516-5185-E53C-9534E069CA91}</FileHash>
+</SoundBanksInfo>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="858506084" Type="Event" GUID="{BB6429FE-6011-4472-9010-9CAF484600A7}" Language="SFX" Hash="{866C9205-26B3-7D16-5C76-267264079839}">
+			<ObjectPath>Play_Settings_Select</ObjectPath>
+			<ShortName>Play_Settings_Select</ShortName>
+			<Path>Event/Play_Settings_Select.bnk</Path>
+			<Media>
+				<File Id="848092222" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_menu_settings_select.wav</ShortName>
+					<Path>Media/848092222.wem</Path>
+					<CachePath>SFX/sfx_menu_settings_select_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="858506084" Name="Play_Settings_Select" ObjectPath="\Events\UI\Play_Settings_Select" GUID="{BB6429FE-6011-4472-9010-9CAF484600A7}" DurationType="OneShot" DurationMin="0.1779375" DurationMax="0.1779375">
+					<MediaRefs>
+						<MediaRef Id="848092222"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{3E0B8501-54C1-FA7F-9500-48EAF90D6941}</FileHash>
+</SoundBanksInfo>

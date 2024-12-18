@@ -18,8 +18,8 @@ void UNexus_LobbyBase::NativeConstruct()
 void UNexus_LobbyBase::OpenChampSelection()
 {
 	this->ChampionMenu = this->SelectionStack->AddWidget<UNexus_ChampionSelection>(this->ChampionMenuClass);
-	this->ChampionMenu->COMPLETED->OnButtonClicked.AddUniqueDynamic(this, &UNexus_LobbyBase::StartGame);
-	this->ChampionMenu->CANCELED->OnButtonClicked.AddUniqueDynamic(this, &UNexus_LobbyBase::CloseChampSelection);
+	this->ChampionMenu->OnCompletedChampSelect.AddUniqueDynamic(this, &UNexus_LobbyBase::StartGame);
+	this->ChampionMenu->OnCanceledChampSelect.AddUniqueDynamic(this, &UNexus_LobbyBase::CloseChampSelection);
 	this->ChampionMenu->SetIsFocusable(true);
 }
 
@@ -36,7 +36,7 @@ void UNexus_LobbyBase::StartGame()
 {
 	this->SelectionStack->ClearWidgets();
 
-	FString MapName = "IzmirTest";
+	FString MapName = "GameplayLevelTest";
 
 	UGameplayStatics::OpenLevel(this, *MapName, true);
 }

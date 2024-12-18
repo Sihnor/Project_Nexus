@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1B758815-EC6C-4816-9AC1-38ECF233BB07}" SchemaVersion="110" RootDocumentID="{4229C9BB-951E-4D4C-93E6-C8C94CDEDCD0}" ParentDocumentID="{4229C9BB-951E-4D4C-93E6-C8C94CDEDCD0}">
+	<Events>
+		<WorkUnit Name="PlayerLocomotion" ID="{1B758815-EC6C-4816-9AC1-38ECF233BB07}" OwnerID="{4229C9BB-951E-4D4C-93E6-C8C94CDEDCD0}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Play_Player_Footsteps" ID="{27E85706-E807-4F1E-A42D-5B83ED9D03A3}">
+					<ChildrenList>
+						<Action Name="" ID="{18183AD9-2775-4983-8C86-E804DADBC42B}" ShortID="856630454">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player1_Footsteps" ID="{3D226559-44BC-4752-ABD8-AA8F19300E44}" WorkUnitID="{DAD6D8BA-01FF-4EA2-924D-8C59CACB0568}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Player_Bodyfall" ID="{2C86464F-2577-4636-99EE-045C1778A0B0}">
+					<ChildrenList>
+						<Action Name="" ID="{0834BAE5-D1A2-4BF5-AB6A-C5B2B298D1A5}" ShortID="725617756">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player1_Bodyfalls" ID="{BFD5B6AF-F28F-477F-A341-6C6D75153C65}" WorkUnitID="{DAD6D8BA-01FF-4EA2-924D-8C59CACB0568}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Player_Landing" ID="{BD4FEB80-88A8-45D8-9FBF-7EF06D02BC15}">
+					<ChildrenList>
+						<Action Name="" ID="{37B580C7-9759-4B3B-9465-161B06E0EFB9}" ShortID="54975364">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player1_Landing" ID="{BC63615F-8AAE-4D10-8052-97640654546B}" WorkUnitID="{DAD6D8BA-01FF-4EA2-924D-8C59CACB0568}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Player_Jump" ID="{237BD721-40C9-4B31-BDC1-78F59500DF4D}">
+					<ChildrenList>
+						<Action Name="" ID="{4FC06827-3EA4-40FE-B055-BB52EA744806}" ShortID="971969081">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player1_Jump" ID="{E9125266-8C21-4666-BB06-B77012054402}" WorkUnitID="{DAD6D8BA-01FF-4EA2-924D-8C59CACB0568}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Player_Crouch_In" ID="{52806D64-28C9-4DBD-9FA9-B19EFC1D9D2B}">
+					<ChildrenList>
+						<Action Name="" ID="{E3B59DFA-FF4D-4C4A-8E9A-66811B032089}" ShortID="387231657">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player1_Crouch_In" ID="{6D0277FB-D56E-4814-BAB1-B9A50C17B2EC}" WorkUnitID="{DAD6D8BA-01FF-4EA2-924D-8C59CACB0568}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Player_Crouch_Out" ID="{756383C1-840D-41DF-B7D5-98E46E2560D4}">
+					<ChildrenList>
+						<Action Name="" ID="{3CE0EF36-7076-4A20-8EA9-C3ECF4E5148E}" ShortID="181435704">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player1_Crouch_Out" ID="{E8B94CCA-D650-4B11-9DAA-97E8961D4FA7}" WorkUnitID="{DAD6D8BA-01FF-4EA2-924D-8C59CACB0568}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Player_Bounce" ID="{1C6F23AF-8E95-4E1E-8297-02B637218C6D}">
+					<ChildrenList>
+						<Action Name="" ID="{C04E94AB-8659-4E76-84E8-741D68AB3EA8}" ShortID="26624945">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player1_Bounce" ID="{5A501982-C8B5-4063-B68D-A757533623B0}" WorkUnitID="{DAD6D8BA-01FF-4EA2-924D-8C59CACB0568}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Player_Clothes_Long" ID="{05825B27-50D8-430E-9EFC-D8AD4D0DE1FE}">
+					<ChildrenList>
+						<Action Name="" ID="{B41443A2-6E1C-4323-BFC8-AEE1875BA28D}" ShortID="925669776">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player1_Clothes_Long" ID="{67884C30-A3D4-429F-87A6-1F5E8E5DCEE5}" WorkUnitID="{DAD6D8BA-01FF-4EA2-924D-8C59CACB0568}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Player_Clothes_Short" ID="{8B058E88-CC41-4F15-9236-96A38B65C4D8}">
+					<ChildrenList>
+						<Action Name="" ID="{AA3AB3EF-21C5-470F-ADB0-EA75725C9D8B}" ShortID="609022500">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player1_Clothes_Short" ID="{ABD9E36F-6176-4430-B960-05089B589A64}" WorkUnitID="{DAD6D8BA-01FF-4EA2-924D-8C59CACB0568}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Player_Dash" ID="{BA2D6A2D-F502-46EB-9C45-0EEE49BE465F}">
+					<ChildrenList>
+						<Action Name="" ID="{9397D39B-FC78-4D14-8F4E-4042FBC9C5A2}" ShortID="83263249">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player1_Dash" ID="{FA5F9C37-B5E4-4C08-9C1F-F17E9B733F65}" WorkUnitID="{DAD6D8BA-01FF-4EA2-924D-8C59CACB0568}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

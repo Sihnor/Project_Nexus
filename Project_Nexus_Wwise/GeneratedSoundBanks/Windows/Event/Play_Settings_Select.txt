@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	858506084	Play_Settings_Select			\UI\Play_Settings_Select	
+

@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "880454473",
+    "Type": "Event",
+    "GUID": "{5A6C30F2-2944-40B2-A4D9-1A142FBE1444}",
+    "Language": "SFX",
+    "Hash": "{8C91BE4F-D76D-4CCC-728F-BC464A67AE3C}",
+    "ObjectPath": "Play_Select_Button",
+    "ShortName": "Play_Select_Button",
+    "Path": "Event/Play_Select_Button.bnk",
+    "Media": [
+     {
+      "Id": "807290476",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_menu_button_select.wav",
+      "Path": "Media/807290476.wem",
+      "CachePath": "SFX/sfx_menu_button_select_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "880454473",
+      "Name": "Play_Select_Button",
+      "ObjectPath": "\\Events\\UI\\Play_Select_Button",
+      "GUID": "{5A6C30F2-2944-40B2-A4D9-1A142FBE1444}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.42941666",
+      "DurationMax": "0.42941666",
+      "MediaRefs": [
+       {
+        "Id": "807290476"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{6685AC53-3F44-682F-938C-21F9BA71A191}"
+ }
+}

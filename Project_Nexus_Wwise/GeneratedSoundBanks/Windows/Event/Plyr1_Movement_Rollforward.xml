@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="3235113002" Type="Event" GUID="{7A8FD551-211D-449D-89BF-34E067A83438}" Language="SFX" Hash="{5E9F9232-5829-47D2-A44A-CD0915C993B3}">
+			<ObjectPath>Plyr1_Movement_Rollforward</ObjectPath>
+			<ShortName>Plyr1_Movement_Rollforward</ShortName>
+			<Path>Event/Plyr1_Movement_Rollforward.bnk</Path>
+			<Media>
+				<File Id="37941523" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_rollfow_01.wav</ShortName>
+					<Path>Media/37941523.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_rollfow_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="672209282" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_rollfow_02.wav</ShortName>
+					<Path>Media/672209282.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_rollfow_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="759506578" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_rollfow_05.wav</ShortName>
+					<Path>Media/759506578.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_rollfow_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="846878257" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_rollfow_04.wav</ShortName>
+					<Path>Media/846878257.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_rollfow_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="909606879" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_rollfow_03.wav</ShortName>
+					<Path>Media/909606879.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_rollfow_03_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3235113002" Name="Plyr1_Movement_Rollforward" ObjectPath="\Events\Player_Voices\Plyr1_Movement_Rollforward" GUID="{7A8FD551-211D-449D-89BF-34E067A83438}" DurationType="OneShot" DurationMin="0.59166664" DurationMax="0.8541667">
+					<MediaRefs>
+						<MediaRef Id="37941523"/>
+						<MediaRef Id="672209282"/>
+						<MediaRef Id="759506578"/>
+						<MediaRef Id="846878257"/>
+						<MediaRef Id="909606879"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{50613550-BB3C-17E8-454C-CC0D6F92D19E}</FileHash>
+</SoundBanksInfo>

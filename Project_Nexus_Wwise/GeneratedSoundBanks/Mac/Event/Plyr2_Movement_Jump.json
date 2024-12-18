@@ -1,0 +1,96 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "1159457221",
+    "Type": "Event",
+    "GUID": "{93953BBA-0842-4F85-96F8-FADB33FA970A}",
+    "Language": "SFX",
+    "Hash": "{1685C68F-C0F2-4ABE-357C-BFDBF17AAA62}",
+    "ObjectPath": "Plyr2_Movement_Jump",
+    "ShortName": "Plyr2_Movement_Jump",
+    "Path": "Event/Plyr2_Movement_Jump.bnk",
+    "Media": [
+     {
+      "Id": "103359460",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter2_mov_jump_01.wav",
+      "Path": "Media/103359460.wem",
+      "CachePath": "SFX/vo_fighter2_mov_jump_01_10C4C929.wem"
+     },
+     {
+      "Id": "376315290",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter2_mov_jump_04.wav",
+      "Path": "Media/376315290.wem",
+      "CachePath": "SFX/vo_fighter2_mov_jump_04_10C4C929.wem"
+     },
+     {
+      "Id": "508221196",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter2_mov_jump_03.wav",
+      "Path": "Media/508221196.wem",
+      "CachePath": "SFX/vo_fighter2_mov_jump_03_10C4C929.wem"
+     },
+     {
+      "Id": "552469363",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter2_mov_jump_02.wav",
+      "Path": "Media/552469363.wem",
+      "CachePath": "SFX/vo_fighter2_mov_jump_02_10C4C929.wem"
+     },
+     {
+      "Id": "982484189",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter2_mov_jump_05.wav",
+      "Path": "Media/982484189.wem",
+      "CachePath": "SFX/vo_fighter2_mov_jump_05_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1159457221",
+      "Name": "Plyr2_Movement_Jump",
+      "ObjectPath": "\\Events\\Player_Voices\\Plyr2_Movement_Jump",
+      "GUID": "{93953BBA-0842-4F85-96F8-FADB33FA970A}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.3125",
+      "DurationMax": "0.40625",
+      "MediaRefs": [
+       {
+        "Id": "103359460"
+       },
+       {
+        "Id": "376315290"
+       },
+       {
+        "Id": "508221196"
+       },
+       {
+        "Id": "552469363"
+       },
+       {
+        "Id": "982484189"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{FDC57A80-CC76-6B2B-7A1D-3DBFCF2F0358}"
+ }
+}

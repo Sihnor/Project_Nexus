@@ -22,7 +22,7 @@ void UNexus_GameOverlay::NativeConstruct()
 	{
 		if (UNexus_SettingsSubsystem* SettingsSubsystem = GameInstance->GetSubsystem<UNexus_SettingsSubsystem>())
 		{
-			this->ActualTime->SetText(FText::FromString(FString::FromInt(SettingsSubsystem->GetTimeLimitSetting())));
+			this->ActualTime->SetText(FText::FromString(FString::FromInt(SettingsSubsystem->GetTimeLimitIndexSetting())));
 		}
 	}
 }

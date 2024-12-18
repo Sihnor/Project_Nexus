@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F1D85732-9B9D-4A1E-8A12-03103586EB56}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Commentator_Voices" ID="{F1D85732-9B9D-4A1E-8A12-03103586EB56}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="26"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Event Name="Com_Round_Fight" ID="{4DDF616B-CE7F-4803-9C49-4378BAFA5BD4}">
+					<ChildrenList>
+						<Action Name="" ID="{35C80F60-9479-4D40-803A-BE2FF465BDA4}" ShortID="187581829">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Com_Round_Fight" ID="{76079135-BB4F-446A-9ED7-6C1FEC196568}" WorkUnitID="{5BA06415-9A5F-4D77-9896-C2068BB4FFC9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Com_Round_1_Start" ID="{D240E461-1973-4A2A-922A-01651A67602B}">
+					<ChildrenList>
+						<Action Name="" ID="{F0F9F5EA-7C23-47FD-8B0F-7227F27E7E82}" ShortID="398661967">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Com_Round1_Start" ID="{1CFD6ECD-2BF8-4EBC-8DEB-3B443F255327}" WorkUnitID="{5BA06415-9A5F-4D77-9896-C2068BB4FFC9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Com_Round_2_Start" ID="{8701634F-24B1-44A7-A660-19C90F0851B0}">
+					<ChildrenList>
+						<Action Name="" ID="{ED9B1420-E72F-458B-8E06-98C381E3C3EA}" ShortID="178526423">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Com_Round2_Start" ID="{A7FE0187-C110-41A1-B408-22C24D1B0DFD}" WorkUnitID="{5BA06415-9A5F-4D77-9896-C2068BB4FFC9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Com_Round_3_Start" ID="{64BA2DC8-AF54-4E1A-AEF6-60694538C48B}">
+					<ChildrenList>
+						<Action Name="" ID="{DB3E96B4-F154-49E3-B311-513394FD8751}" ShortID="961488196">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Com_Round3_Start" ID="{1F29ACC1-9E58-4EFF-BED4-74E5A70F4967}" WorkUnitID="{5BA06415-9A5F-4D77-9896-C2068BB4FFC9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Com_Round_4_Start" ID="{36113D1F-1DF9-4707-9998-76CB9E7E679F}">
+					<ChildrenList>
+						<Action Name="" ID="{C91F7FD6-68D2-446C-B6D7-E7EB7860B5EA}" ShortID="1071653488">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Com_Round4_Start" ID="{73E24738-8364-42B9-99A7-C58773744D79}" WorkUnitID="{5BA06415-9A5F-4D77-9896-C2068BB4FFC9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Com_Char_Select_Jack" ID="{C57354E5-1D79-43A6-9596-3AAD8A7B58E7}">
+					<ChildrenList>
+						<Action Name="" ID="{747AECF5-B229-456E-B905-DE9CA5C033A3}" ShortID="223457415">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="vo_commentator_chara_select_jack_01" ID="{60A88425-3286-40AD-AD30-B4CFADCE77BA}" WorkUnitID="{5BA06415-9A5F-4D77-9896-C2068BB4FFC9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Com_Char_Select_Lauren" ID="{91E57EC6-14BF-4999-BD5E-402DE08241C4}">
+					<ChildrenList>
+						<Action Name="" ID="{B167CD28-F0D7-4BA6-9239-B097CC0A6E73}" ShortID="99318803">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="vo_commentator_chara_select_lauren_01" ID="{BD954070-DA3B-4120-8E5A-764B18B04D67}" WorkUnitID="{5BA06415-9A5F-4D77-9896-C2068BB4FFC9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Com_Char_Wins_Jack" ID="{3DE5C542-49C6-4EF5-B5BE-60CB49F75D00}">
+					<ChildrenList>
+						<Action Name="" ID="{8B52CCFC-2D7F-4009-A2F2-8E166E3272C9}" ShortID="687420763">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="vo_commentator_chara_jack_wins_01" ID="{C43C668C-1723-450B-BD44-70E5F6F6DF8F}" WorkUnitID="{5BA06415-9A5F-4D77-9896-C2068BB4FFC9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Com_Char_Wins_Lauren" ID="{820228B7-CD1A-459B-A81C-F381CF138931}">
+					<ChildrenList>
+						<Action Name="" ID="{CC9B809C-9FD6-46B4-A01C-78B8B1C72263}" ShortID="924776202">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="vo_commentator_chara_lauren_wins_01" ID="{CD364034-C72F-4411-BC6D-618BE1FF5A0E}" WorkUnitID="{5BA06415-9A5F-4D77-9896-C2068BB4FFC9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Com_Welcome" ID="{6B678688-889A-448F-8387-4F2BA8FB80C2}">
+					<ChildrenList>
+						<Action Name="" ID="{279E3DDB-19FA-4258-A926-6687F516716D}" ShortID="354198627">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="vo_commentator_welcome_01" ID="{03873243-4933-4930-A2C5-A842A41111EB}" WorkUnitID="{5BA06415-9A5F-4D77-9896-C2068BB4FFC9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="1912703074" Type="Event" GUID="{D7BC3EB3-3F4C-4395-A786-93E524AB9064}" Language="SFX" Hash="{4753212D-1F60-BBA8-E30F-560EC8017615}">
+			<ObjectPath>Plyr1_Movement_Jump</ObjectPath>
+			<ShortName>Plyr1_Movement_Jump</ShortName>
+			<Path>Event/Plyr1_Movement_Jump.bnk</Path>
+			<Media>
+				<File Id="59019535" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_jump_02.wav</ShortName>
+					<Path>Media/59019535.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_jump_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="78153664" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_jump_01.wav</ShortName>
+					<Path>Media/78153664.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_jump_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="760823714" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_jump_03.wav</ShortName>
+					<Path>Media/760823714.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_jump_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="783155984" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_jump_05.wav</ShortName>
+					<Path>Media/783155984.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_jump_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1018912342" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_fighter1_mov_jump_04.wav</ShortName>
+					<Path>Media/1018912342.wem</Path>
+					<CachePath>SFX/vo_fighter1_mov_jump_04_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1912703074" Name="Plyr1_Movement_Jump" ObjectPath="\Events\Player_Voices\Plyr1_Movement_Jump" GUID="{D7BC3EB3-3F4C-4395-A786-93E524AB9064}" DurationType="OneShot" DurationMin="0.34375" DurationMax="0.5625">
+					<MediaRefs>
+						<MediaRef Id="59019535"/>
+						<MediaRef Id="78153664"/>
+						<MediaRef Id="760823714"/>
+						<MediaRef Id="783155984"/>
+						<MediaRef Id="1018912342"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{3D302E52-2A61-332A-DBD5-394DF10F2FCD}</FileHash>
+</SoundBanksInfo>

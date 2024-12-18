@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="2555223343" Type="Event" GUID="{756383C1-840D-41DF-B7D5-98E46E2560D4}" Language="SFX" Hash="{3645C584-4507-A5EA-1C86-B84BCCEF5341}">
+			<ObjectPath>Play_Player_Crouch_Out</ObjectPath>
+			<ShortName>Play_Player_Crouch_Out</ShortName>
+			<Path>Event/Play_Player_Crouch_Out.bnk</Path>
+			<Media>
+				<File Id="242429337" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_crouch_out_06.wav</ShortName>
+					<Path>Media/242429337.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_crouch_out_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="408344611" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_crouch_out_03.wav</ShortName>
+					<Path>Media/408344611.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_crouch_out_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="475058918" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_crouch_out_01.wav</ShortName>
+					<Path>Media/475058918.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_crouch_out_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="703951287" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_crouch_out_04.wav</ShortName>
+					<Path>Media/703951287.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_crouch_out_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1016905659" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_crouch_out_02.wav</ShortName>
+					<Path>Media/1016905659.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_crouch_out_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1037379880" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter1_movement_crouch_out_05.wav</ShortName>
+					<Path>Media/1037379880.wem</Path>
+					<CachePath>SFX/sfx_fighter1_movement_crouch_out_05_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2555223343" Name="Play_Player_Crouch_Out" ObjectPath="\Events\Player\PlayerLocomotion\Play_Player_Crouch_Out" GUID="{756383C1-840D-41DF-B7D5-98E46E2560D4}" DurationType="OneShot" DurationMin="0.36368236" DurationMax="0.5236551">
+					<MediaRefs>
+						<MediaRef Id="242429337"/>
+						<MediaRef Id="408344611"/>
+						<MediaRef Id="475058918"/>
+						<MediaRef Id="703951287"/>
+						<MediaRef Id="1016905659"/>
+						<MediaRef Id="1037379880"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{944CAC3C-5B45-65E7-829B-7CC387D26D3A}</FileHash>
+</SoundBanksInfo>

@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="1053701372" Type="Event" GUID="{A9011CA4-F40B-415B-9C65-B4914BA1B74C}" Language="SFX" Hash="{11638EB0-88D9-8704-DE37-E5343C03F606}">
+			<ObjectPath>Play_Music_Stagw_1b</ObjectPath>
+			<ShortName>Play_Music_Stagw_1b</ShortName>
+			<Path>Event/Play_Music_Stagw_1b.bnk</Path>
+			<Media>
+				<File Id="1836545" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-B-Chorus_Male-Oh-Chor_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/1836545.wem</Path>
+					<CachePath>SFX/Stage2-B-Chorus_Male-Oh-Chor_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="4274385" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-B-Strophe_Guitar1_127bpm4-4_L4M_P0.wav</ShortName>
+					<Path>Media/4274385.wem</Path>
+					<CachePath>SFX/Stage2-B-Strophe_Guitar1_127bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="19018753" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-A-Bridge_Drums_127bpm4-4_L4M_P0.wav</ShortName>
+					<Path>Media/19018753.wem</Path>
+					<CachePath>SFX/Stage2-A-Bridge_Drums_127bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="25747088" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-B-Chorus_Orchestra_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/25747088.wem</Path>
+					<CachePath>SFX/Stage2-B-Chorus_Orchestra_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="34748751" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-D-Chorus_Male-Ah-Chor_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/34748751.wem</Path>
+					<CachePath>SFX/Stage2-D-Chorus_Male-Ah-Chor_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="59894170" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-B-Chorus_Brass_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/59894170.wem</Path>
+					<CachePath>SFX/Stage2-B-Chorus_Brass_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="69677015" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-B-Chorus_Guitar2_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/69677015.wem</Path>
+					<CachePath>SFX/Stage2-B-Chorus_Guitar2_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="91720265" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-D-Chorus_Drums_127bpm4-4_L8M_P0 .wav</ShortName>
+					<Path>Media/91720265.wem</Path>
+					<CachePath>SFX/Stage2-D-Chorus_Drums_127bpm4-4_L8M_P0 _D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="98717790" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-B-Strophe_Drums_127bpm4-4_L4M_P0.wav</ShortName>
+					<Path>Media/98717790.wem</Path>
+					<CachePath>SFX/Stage2-B-Strophe_Drums_127bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="109332476" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-B-Chorus_Lead-Viola_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/109332476.wem</Path>
+					<CachePath>SFX/Stage2-B-Chorus_Lead-Viola_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="144038015" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-C-Chorus_Back-Viola-R_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/144038015.wem</Path>
+					<CachePath>SFX/Stage2-C-Chorus_Back-Viola-R_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="184904425" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-A-Strophe_Guitar1_127bpm4-4_L4M_P0.wav</ShortName>
+					<Path>Media/184904425.wem</Path>
+					<CachePath>SFX/Stage2-A-Strophe_Guitar1_127bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="207434630" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-B-Strophe_Back-Viola-R_127bpm4-4_L4M_P0.wav</ShortName>
+					<Path>Media/207434630.wem</Path>
+					<CachePath>SFX/Stage2-B-Strophe_Back-Viola-R_127bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="210383655" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-B-Strophe_Guitar2_127bpm4-4_L4M_P0.wav</ShortName>
+					<Path>Media/210383655.wem</Path>
+					<CachePath>SFX/Stage2-B-Strophe_Guitar2_127bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="223375965" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-D-Chorus_Female-Ah-Chor_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/223375965.wem</Path>
+					<CachePath>SFX/Stage2-D-Chorus_Female-Ah-Chor_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="276493761" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-C-Strophe_Back-Viola-R_127bpm4-4_L4M_P0.wav</ShortName>
+					<Path>Media/276493761.wem</Path>
+					<CachePath>SFX/Stage2-C-Strophe_Back-Viola-R_127bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="318182342" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-A-Chorus_Drums_127bpm4-4_L8M_P1.wav</ShortName>
+					<Path>Media/318182342.wem</Path>
+					<CachePath>SFX/Stage2-A-Chorus_Drums_127bpm4-4_L8M_P1_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="353737771" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-A-Chorus_Guitar2_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/353737771.wem</Path>
+					<CachePath>SFX/Stage2-A-Chorus_Guitar2_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="376806526" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-B-Strophe_Back-Viola-L_127bpm4-4_L4M_P0.wav</ShortName>
+					<Path>Media/376806526.wem</Path>
+					<CachePath>SFX/Stage2-B-Strophe_Back-Viola-L_127bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="382278126" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-A-Chorus_Female-Ah-Chor_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/382278126.wem</Path>
+					<CachePath>SFX/Stage2-A-Chorus_Female-Ah-Chor_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="392364824" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-A-Chorus_Lead-Viola_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/392364824.wem</Path>
+					<CachePath>SFX/Stage2-A-Chorus_Lead-Viola_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="419655799" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-B-Chorus_Female-Ah-Chor_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/419655799.wem</Path>
+					<CachePath>SFX/Stage2-B-Chorus_Female-Ah-Chor_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="423319925" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-E-Chorus_Drums_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/423319925.wem</Path>
+					<CachePath>SFX/Stage2-E-Chorus_Drums_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="427398205" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-B-Bridge_Orchestra_127bpm4-4_L4M_P0.wav</ShortName>
+					<Path>Media/427398205.wem</Path>
+					<CachePath>SFX/Stage2-B-Bridge_Orchestra_127bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="469833479" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-A-Chorus_Brass_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/469833479.wem</Path>
+					<CachePath>SFX/Stage2-A-Chorus_Brass_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="472710795" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-C-Strophe_Guitar2_127bpm4-4_L4M_P0.wav</ShortName>
+					<Path>Media/472710795.wem</Path>
+					<CachePath>SFX/Stage2-C-Strophe_Guitar2_127bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="478590222" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-B-Strophe_Brass_127bpm4-4_L4M_P0.wav</ShortName>
+					<Path>Media/478590222.wem</Path>
+					<CachePath>SFX/Stage2-B-Strophe_Brass_127bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="487471458" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-C-Strophe_Guitar1_127bpm4-4_L4M_P0.wav</ShortName>
+					<Path>Media/487471458.wem</Path>
+					<CachePath>SFX/Stage2-C-Strophe_Guitar1_127bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="498416247" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-C-Strophe_Lead-Viola_127bpm4-4_L4M_P0.wav</ShortName>
+					<Path>Media/498416247.wem</Path>
+					<CachePath>SFX/Stage2-C-Strophe_Lead-Viola_127bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="510868377" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-A-Chorus_BackGuitar_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/510868377.wem</Path>
+					<CachePath>SFX/Stage2-A-Chorus_BackGuitar_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="538071305" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-C-Chorus_Male-Ah-Chor_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/538071305.wem</Path>
+					<CachePath>SFX/Stage2-C-Chorus_Male-Ah-Chor_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="544032170" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-B-Chorus_Back-Viola-R_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/544032170.wem</Path>
+					<CachePath>SFX/Stage2-B-Chorus_Back-Viola-R_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="549679855" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-A-Strophe_Brass_127bpm4-4_L4M_P0.wav</ShortName>
+					<Path>Media/549679855.wem</Path>
+					<CachePath>SFX/Stage2-A-Strophe_Brass_127bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="557567604" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-C-Chorus_Drums_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/557567604.wem</Path>
+					<CachePath>SFX/Stage2-C-Chorus_Drums_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="559057821" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-B-Bridge_Drums_127bpm4-4_L4M_P0.wav</ShortName>
+					<Path>Media/559057821.wem</Path>
+					<CachePath>SFX/Stage2-B-Bridge_Drums_127bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="582945150" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-A-Bridge_Orchestra_127bpm4-4_L4M_P0.wav</ShortName>
+					<Path>Media/582945150.wem</Path>
+					<CachePath>SFX/Stage2-A-Bridge_Orchestra_127bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="600807486" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-A-Chorus_Male-Ah-Chor_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/600807486.wem</Path>
+					<CachePath>SFX/Stage2-A-Chorus_Male-Ah-Chor_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="633452290" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-D-Chorus_Drums_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/633452290.wem</Path>
+					<CachePath>SFX/Stage2-D-Chorus_Drums_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="634944310" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-C-Strophe_Drums_127bpm4-4_L4M_P0.wav</ShortName>
+					<Path>Media/634944310.wem</Path>
+					<CachePath>SFX/Stage2-C-Strophe_Drums_127bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="634986360" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-B-Chorus_BackGuitar_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/634986360.wem</Path>
+					<CachePath>SFX/Stage2-B-Chorus_BackGuitar_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="639073552" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-D-Chorus_Female-Oh-Chor_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/639073552.wem</Path>
+					<CachePath>SFX/Stage2-D-Chorus_Female-Oh-Chor_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="652878662" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-B-Chorus_Guitar1_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/652878662.wem</Path>
+					<CachePath>SFX/Stage2-B-Chorus_Guitar1_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="662078818" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-A-Chorus_Orchestra_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/662078818.wem</Path>
+					<CachePath>SFX/Stage2-A-Chorus_Orchestra_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="712437315" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-B-Chorus_Back-Viola-L_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/712437315.wem</Path>
+					<CachePath>SFX/Stage2-B-Chorus_Back-Viola-L_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="713283304" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-A-Strophe_Guitar2_127bpm4-4_L4M_P0.wav</ShortName>
+					<Path>Media/713283304.wem</Path>
+					<CachePath>SFX/Stage2-A-Strophe_Guitar2_127bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="719066797" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-C-Chorus_Male-Oh-Chor_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/719066797.wem</Path>
+					<CachePath>SFX/Stage2-C-Chorus_Male-Oh-Chor_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="719977428" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-A-Strophe_Oboe_127bpm4-4_L4M_P0.wav</ShortName>
+					<Path>Media/719977428.wem</Path>
+					<CachePath>SFX/Stage2-A-Strophe_Oboe_127bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="733862812" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-C-Chorus_Back-Viola-L_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/733862812.wem</Path>
+					<CachePath>SFX/Stage2-C-Chorus_Back-Viola-L_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="748340040" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-A-Chorus_Male-Oh-Chor_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/748340040.wem</Path>
+					<CachePath>SFX/Stage2-A-Chorus_Male-Oh-Chor_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="760853440" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-A-Strophe_Drums_127bpm4-4_L4M_P0.wav</ShortName>
+					<Path>Media/760853440.wem</Path>
+					<CachePath>SFX/Stage2-A-Strophe_Drums_127bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="792632883" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-A-Chorus_Guitar1_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/792632883.wem</Path>
+					<CachePath>SFX/Stage2-A-Chorus_Guitar1_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="793566019" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-C-Strophe_Back-Viola-L_127bpm4-4_L4M_P0.wav</ShortName>
+					<Path>Media/793566019.wem</Path>
+					<CachePath>SFX/Stage2-C-Strophe_Back-Viola-L_127bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="799664391" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-C-Chorus_Lead-Viola_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/799664391.wem</Path>
+					<CachePath>SFX/Stage2-C-Chorus_Lead-Viola_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="803939716" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-B-Chorus_Drums_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/803939716.wem</Path>
+					<CachePath>SFX/Stage2-B-Chorus_Drums_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="817764818" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-B-Strophe_Oboe_127bpm4-4_L4M_P0.wav</ShortName>
+					<Path>Media/817764818.wem</Path>
+					<CachePath>SFX/Stage2-B-Strophe_Oboe_127bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="907489735" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-B-Chorus_Lead-Viola_127bpm4-4_L4M_P0.wav</ShortName>
+					<Path>Media/907489735.wem</Path>
+					<CachePath>SFX/Stage2-B-Chorus_Lead-Viola_127bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="925531371" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-A-Strophe_Lead-Viola_127bpm4-4_L4M_P0.wav</ShortName>
+					<Path>Media/925531371.wem</Path>
+					<CachePath>SFX/Stage2-A-Strophe_Lead-Viola_127bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="929859593" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-C-Chorus_Orchestra_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/929859593.wem</Path>
+					<CachePath>SFX/Stage2-C-Chorus_Orchestra_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="933251036" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-B-Chorus_Male-Ah-Chor_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/933251036.wem</Path>
+					<CachePath>SFX/Stage2-B-Chorus_Male-Ah-Chor_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="952661471" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-C-Chorus_Guitar2_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/952661471.wem</Path>
+					<CachePath>SFX/Stage2-C-Chorus_Guitar2_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="954514733" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-C-Chorus_Brass_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/954514733.wem</Path>
+					<CachePath>SFX/Stage2-C-Chorus_Brass_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="1040270206" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-B-Strophe_Lead-Viola_127bpm4-4_L4M_P0.wav</ShortName>
+					<Path>Media/1040270206.wem</Path>
+					<CachePath>SFX/Stage2-B-Strophe_Lead-Viola_127bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="1040429922" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-C-Chorus_Female-Oh-Chor_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/1040429922.wem</Path>
+					<CachePath>SFX/Stage2-C-Chorus_Female-Oh-Chor_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="1062710133" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-C-Chorus_Back-Viola-L_127bpm4-4_L4M_P0.wav</ShortName>
+					<Path>Media/1062710133.wem</Path>
+					<CachePath>SFX/Stage2-C-Chorus_Back-Viola-L_127bpm4-4_L4M_P0_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="1070007167" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Stage2-D-Chorus_Male-Oh-Chor_127bpm4-4_L8M_P0.wav</ShortName>
+					<Path>Media/1070007167.wem</Path>
+					<CachePath>SFX/Stage2-D-Chorus_Male-Oh-Chor_127bpm4-4_L8M_P0_D79FB2B7.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1053701372" Name="Play_Music_Stagw_1b" ObjectPath="\Events\Music\Play_Music_Stagw_1b" GUID="{A9011CA4-F40B-415B-9C65-B4914BA1B74C}" DurationType="OneShot" DurationMin="282.72952" DurationMax="282.72958">
+					<MediaRefs>
+						<MediaRef Id="1836545"/>
+						<MediaRef Id="4274385"/>
+						<MediaRef Id="19018753"/>
+						<MediaRef Id="25747088"/>
+						<MediaRef Id="34748751"/>
+						<MediaRef Id="59894170"/>
+						<MediaRef Id="69677015"/>
+						<MediaRef Id="91720265"/>
+						<MediaRef Id="98717790"/>
+						<MediaRef Id="109332476"/>
+						<MediaRef Id="144038015"/>
+						<MediaRef Id="184904425"/>
+						<MediaRef Id="207434630"/>
+						<MediaRef Id="210383655"/>
+						<MediaRef Id="223375965"/>
+						<MediaRef Id="276493761"/>
+						<MediaRef Id="318182342"/>
+						<MediaRef Id="353737771"/>
+						<MediaRef Id="376806526"/>
+						<MediaRef Id="382278126"/>
+						<MediaRef Id="392364824"/>
+						<MediaRef Id="419655799"/>
+						<MediaRef Id="423319925"/>
+						<MediaRef Id="427398205"/>
+						<MediaRef Id="469833479"/>
+						<MediaRef Id="472710795"/>
+						<MediaRef Id="478590222"/>
+						<MediaRef Id="487471458"/>
+						<MediaRef Id="498416247"/>
+						<MediaRef Id="510868377"/>
+						<MediaRef Id="538071305"/>
+						<MediaRef Id="544032170"/>
+						<MediaRef Id="549679855"/>
+						<MediaRef Id="557567604"/>
+						<MediaRef Id="559057821"/>
+						<MediaRef Id="582945150"/>
+						<MediaRef Id="600807486"/>
+						<MediaRef Id="633452290"/>
+						<MediaRef Id="634944310"/>
+						<MediaRef Id="634986360"/>
+						<MediaRef Id="639073552"/>
+						<MediaRef Id="652878662"/>
+						<MediaRef Id="662078818"/>
+						<MediaRef Id="712437315"/>
+						<MediaRef Id="713283304"/>
+						<MediaRef Id="719066797"/>
+						<MediaRef Id="719977428"/>
+						<MediaRef Id="733862812"/>
+						<MediaRef Id="748340040"/>
+						<MediaRef Id="760853440"/>
+						<MediaRef Id="792632883"/>
+						<MediaRef Id="793566019"/>
+						<MediaRef Id="799664391"/>
+						<MediaRef Id="803939716"/>
+						<MediaRef Id="817764818"/>
+						<MediaRef Id="907489735"/>
+						<MediaRef Id="925531371"/>
+						<MediaRef Id="929859593"/>
+						<MediaRef Id="933251036"/>
+						<MediaRef Id="952661471"/>
+						<MediaRef Id="954514733"/>
+						<MediaRef Id="1040270206"/>
+						<MediaRef Id="1040429922"/>
+						<MediaRef Id="1062710133"/>
+						<MediaRef Id="1070007167"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{B599E2EB-DDAE-3D96-2361-81B802F0630E}</FileHash>
+</SoundBanksInfo>

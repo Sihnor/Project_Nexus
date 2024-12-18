@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="4259150480" Type="Event" GUID="{91E57EC6-14BF-4999-BD5E-402DE08241C4}" Language="English(US)" Hash="{7AB87B26-2459-464A-C11B-1715D27A7F61}">
+			<ObjectPath>Com_Char_Select_Lauren</ObjectPath>
+			<ShortName>Com_Char_Select_Lauren</ShortName>
+			<Path>Event/English(US)/Com_Char_Select_Lauren.bnk</Path>
+			<Media>
+				<File Id="171327102" Language="English(US)" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_chara_select_lauren_01.wav</ShortName>
+					<Path>Media/English(US)/171327102.wem</Path>
+					<CachePath>Voices/English(US)/vo_commentator_chara_select_lauren_01_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="4259150480" Name="Com_Char_Select_Lauren" ObjectPath="\Events\Commentator_Voices\Com_Char_Select_Lauren" GUID="{91E57EC6-14BF-4999-BD5E-402DE08241C4}" DurationType="OneShot" DurationMin="1.375" DurationMax="1.375">
+					<MediaRefs>
+						<MediaRef Id="171327102"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{FEAA5B3F-8D9F-1B85-F577-1ABACE3DA2EB}</FileHash>
+</SoundBanksInfo>

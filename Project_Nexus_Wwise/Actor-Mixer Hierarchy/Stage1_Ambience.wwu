@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6CBD71BE-A490-4796-9349-42BC7A29FBB7}" SchemaVersion="110">
+	<AudioObjects>
+		<WorkUnit Name="Stage1_Ambience" ID="{6CBD71BE-A490-4796-9349-42BC7A29FBB7}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="4"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<ActorMixer Name="2D" ID="{1B58E26D-354F-4DE3-8C65-DF5601613ED0}" ShortID="1044329685">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Ambi_1_Loop" ID="{CA53FAEB-F0B3-46FC-AB15-504494014CC3}" ShortID="1011484580">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="4"/>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Ambi_1_Loop_01" ID="{B12B1E46-B26B-468C-98A9-8476A455B81B}" ShortID="645559838">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="LoopCount" Type="int32" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambi_1_Loop_01" ID="{DB91BA08-2735-4D41-B6D4-DF23A51AAC13}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.16947608200455"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Ambi_1_Loop_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="673665466"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambi_1_Loop_01" ID="{DB91BA08-2735-4D41-B6D4-DF23A51AAC13}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ambi_1_Loop_02" ID="{E67D33D5-15B1-4AAC-959E-18B563C900C4}" ShortID="456749483">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="LoopCount" Type="int32" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambi_1_Loop_02" ID="{05214CF5-F0FC-4F28-8EF3-FA8C795E5955}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.164009111617312"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0546697038724346"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.41002277904328"/>
+												<Property Name="TrimEnd" Type="Real64" Value="59.3166287015945"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Ambi_1_Loop_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="508725905"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambi_1_Loop_02" ID="{05214CF5-F0FC-4F28-8EF3-FA8C795E5955}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ambi_1_Loop_03" ID="{0233EB62-1E23-47A2-A297-C16FC4E2236C}" ShortID="235912848">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="LoopCount" Type="int32" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambi_1_Loop_03" ID="{7E6C226D-5310-4CEC-A952-9E59CE04762E}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.235990888382688"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.202277904328028"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.438268792710706"/>
+												<Property Name="TrimEnd" Type="Real64" Value="73.7640091116173"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Ambi_1_Loop_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="298534069"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambi_1_Loop_03" ID="{7E6C226D-5310-4CEC-A952-9E59CE04762E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ambi_3_Loop_03" ID="{1E9C441D-424A-47C0-A58C-C2377F68C0A1}" ShortID="689422636">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="LoopCount" Type="int32" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambi_3_Loop_03" ID="{D92960B6-8997-456D-8656-4E38C88C7FBC}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.135287819222993"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0948024948024937"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.158004158004158"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Ambi_3_Loop_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="327659410"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambi_3_Loop_03" ID="{D92960B6-8997-456D-8656-4E38C88C7FBC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ambi_3_Loop_01" ID="{725CDC0D-171E-4ACB-ACA4-2E0C3C1A7C8A}" ShortID="828368292">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="LoopCount" Type="int32" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambi_3_Loop_01" ID="{09388EB6-5034-4253-8395-39065F90F2A8}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.328018223234624"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.164009111617311"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Ambi_3_Loop_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="927375782"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambi_3_Loop_01" ID="{09388EB6-5034-4253-8395-39065F90F2A8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ambi_3_Loop_02" ID="{F067BC41-43A8-4803-B029-A00978819D64}" ShortID="311034740">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="LoopCount" Type="int32" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambi_3_Loop_02" ID="{FF486E3C-CBF5-4FAB-9BB7-746933976093}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.273348519362187"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.109339407744876"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Ambi_3_Loop_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="614566312"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambi_3_Loop_02" ID="{FF486E3C-CBF5-4FAB-9BB7-746933976093}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ambi_3_Loop_03_v2" ID="{606EBADB-D86F-4D05-93CE-47F829734215}" ShortID="778415106">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="LoopCount" Type="int32" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambi_3_Loop_03_v2" ID="{19EABBBD-3348-4571-A412-F54938101149}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0865603644646924"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0865603644646953"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.398177676537585"/>
+												<Property Name="TrimEnd" Type="Real64" Value="36.7535307517084"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Ambi_3_Loop_03_v2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="527739664"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambi_3_Loop_03_v2" ID="{19EABBBD-3348-4571-A412-F54938101149}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Ambi_2_Loop" ID="{9AF07092-28A2-438C-A574-5990907328C3}" ShortID="158861642">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="4"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Ambi_2_Loop_02" ID="{A857E27A-C343-4CE3-B0E0-C40150C2B155}" ShortID="989911736">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="LoopCount" Type="int32" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambi_2_Loop_02" ID="{A729C9C1-2A63-4009-8EA3-DD9B22237F72}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.254214123006834"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.112984054669703"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.169476082004556"/>
+												<Property Name="TrimEnd" Type="Real64" Value="61.9152619589977"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Ambi_2_Loop_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="95110852"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambi_2_Loop_02" ID="{A729C9C1-2A63-4009-8EA3-DD9B22237F72}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ambi_2_Loop_03" ID="{CDE874C7-33C6-411C-9C1C-6A144CA7D574}" ShortID="1000343820">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="LoopCount" Type="int32" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambi_2_Loop_03" ID="{2339AA3F-BCB7-483E-A6C8-AF199D74512C}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.262414578587699"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0874715261958983"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.204100227790433"/>
+												<Property Name="TrimEnd" Type="Real64" Value="63.8250569476082"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Ambi_2_Loop_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="628115851"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambi_2_Loop_03" ID="{2339AA3F-BCB7-483E-A6C8-AF199D74512C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ambi_2_Loop_01" ID="{C1B7581B-BF08-49EC-807B-07A585A99DEE}" ShortID="1006836187">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="LoopCount" Type="int32" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D9D33B3-80EE-4016-A8E3-7A356E27ECDD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambi_2_Loop_01" ID="{A049AD3A-D923-4865-9F5E-C70AA4D9F51F}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.254214123006834"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.14123006833713"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.338952164009112"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.79460580912864"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Ambi_2_Loop_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="884370771"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambi_2_Loop_01" ID="{A049AD3A-D923-4865-9F5E-C70AA4D9F51F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

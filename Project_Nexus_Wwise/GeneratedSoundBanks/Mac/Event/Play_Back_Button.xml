@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="182415898" Type="Event" GUID="{B62D6C1F-687C-48B5-81B8-7924344A1746}" Language="SFX" Hash="{79FE82BC-C8BC-387A-ABED-BDCA2AAE177E}">
+			<ObjectPath>Play_Back_Button</ObjectPath>
+			<ShortName>Play_Back_Button</ShortName>
+			<Path>Event/Play_Back_Button.bnk</Path>
+			<Media>
+				<File Id="892179397" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_menu_button_back.wav</ShortName>
+					<Path>Media/892179397.wem</Path>
+					<CachePath>SFX/sfx_menu_button_back_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="182415898" Name="Play_Back_Button" ObjectPath="\Events\UI\Play_Back_Button" GUID="{B62D6C1F-687C-48B5-81B8-7924344A1746}" DurationType="OneShot" DurationMin="0.5339792" DurationMax="0.5339792">
+					<MediaRefs>
+						<MediaRef Id="892179397"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{DBF6BD00-4441-2965-6A11-679651F01870}</FileHash>
+</SoundBanksInfo>

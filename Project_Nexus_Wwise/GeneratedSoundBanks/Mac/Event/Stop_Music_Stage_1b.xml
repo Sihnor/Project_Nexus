@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="1283053048" Type="Event" GUID="{2D7537D9-B663-478E-A75B-D3B696CEA654}" Language="SFX" Hash="{594059CC-21C4-0620-7ED9-EA636BA48830}">
+			<ObjectPath>Stop_Music_Stage_1b</ObjectPath>
+			<ShortName>Stop_Music_Stage_1b</ShortName>
+			<Path>Event/Stop_Music_Stage_1b.bnk</Path>
+			<Events>
+				<Event Id="1283053048" Name="Stop_Music_Stage_1b" ObjectPath="\Events\Music\Stop_Music_Stage_1b" GUID="{2D7537D9-B663-478E-A75B-D3B696CEA654}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{1B56334A-6031-BCDA-AF1D-25C3236CE1E5}</FileHash>
+</SoundBanksInfo>

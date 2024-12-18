@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}" SchemaVersion="110">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{4F143CBC-15B2-4BB3-9960-924D6AF693FE}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{8324AC08-7ADF-46A8-966C-246CDF6632D2}" WorkUnitID="{2A688843-4A2E-4D32-9BE4-7ECD54649E1E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="PlayerMaster" ID="{03CFB648-6D0F-4B7C-95EF-2EBB6477C3DE}">
+							<ChildrenList>
+								<Bus Name="PlayerLocomotion" ID="{453EB9EF-EA94-4320-8D14-C6DB0F33C43A}">
+									<ChildrenList>
+										<Bus Name="PlayerFootsteps" ID="{912D3752-5879-4854-ACC9-FC450A090313}"/>
+										<Bus Name="PlayerCloth" ID="{5DD5958D-EE04-4AE9-8FA6-B7C695C871A3}"/>
+										<Bus Name="PlayerJump" ID="{7959892C-0F68-4920-830A-3C20DBCA71FA}"/>
+										<Bus Name="PlayerFall" ID="{34647CC3-D420-4A96-A135-3DAD56D9A2C2}"/>
+									</ChildrenList>
+								</Bus>
+								<Bus Name="PlayerCombat" ID="{BF74B898-6CAC-462D-A863-E2386C0EFC18}">
+									<ChildrenList>
+										<Bus Name="PlayerHits" ID="{4679ABF7-6223-437B-8BDE-B28CF2DBBB2B}"/>
+										<Bus Name="PlayerBlock" ID="{D1004883-D187-4A07-B28D-C4B26AC308FB}"/>
+										<Bus Name="PlayerNeutral" ID="{FC88B0CE-8278-4DB5-AE33-451776F429D8}"/>
+										<Bus Name="PlayerSpezial" ID="{3443A831-6283-43A2-8E63-533005D2478D}"/>
+									</ChildrenList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="UIMaster" ID="{6999EF9D-06E8-4CC5-A3FD-2F338FD5E40E}"/>
+						<AuxBus Name="Reverbs" ID="{6BE3BED4-0EDC-4674-80E4-B77F6F0EDD9B}">
+							<ChildrenList>
+								<AuxBus Name="BetweenBuildings" ID="{44E599A3-1CE2-49AF-8FBC-737785A8D7B8}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+								<AuxBus Name="Alley" ID="{D0D5848F-8E0F-47CD-A3E5-17FA4D8E1C38}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+							</ChildrenList>
+						</AuxBus>
+						<Bus Name="AmbientMaster" ID="{A7D3F28C-C5E2-4AE3-8C5F-2BB0336E260E}">
+							<ChildrenList>
+								<Bus Name="2DAmbience" ID="{625E54FC-7A02-4118-9EA5-17FA49C27404}"/>
+								<Bus Name="3DAmbience" ID="{3BAD13F3-4615-4B9B-9BB5-3F7EDC0B4EB5}"/>
+								<Bus Name="AmbientBeds" ID="{19F64812-7AAC-49A2-A0D9-C17C6460A0C2}">
+									<ChildrenList>
+										<Bus Name="2DAmbientBeds" ID="{7652968F-D60E-4F94-8FDF-070121F0C4D5}"/>
+									</ChildrenList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

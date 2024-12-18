@@ -1,0 +1,96 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "3940439968",
+    "Type": "Event",
+    "GUID": "{79551593-FDCB-4471-8056-ED953CE28502}",
+    "Language": "SFX",
+    "Hash": "{DFB173C9-DACB-8CA1-D383-D0EEE49BABF8}",
+    "ObjectPath": "Plyr1_Movement_Rollbackward",
+    "ShortName": "Plyr1_Movement_Rollbackward",
+    "Path": "Event/Plyr1_Movement_Rollbackward.bnk",
+    "Media": [
+     {
+      "Id": "138100336",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_mov_rollbackw_03.wav",
+      "Path": "Media/138100336.wem",
+      "CachePath": "SFX/vo_fighter1_mov_rollbackw_03_10C4C929.wem"
+     },
+     {
+      "Id": "150659127",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_mov_rollbackw_02.wav",
+      "Path": "Media/150659127.wem",
+      "CachePath": "SFX/vo_fighter1_mov_rollbackw_02_10C4C929.wem"
+     },
+     {
+      "Id": "256831828",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_mov_rollbackw_05.wav",
+      "Path": "Media/256831828.wem",
+      "CachePath": "SFX/vo_fighter1_mov_rollbackw_05_10C4C929.wem"
+     },
+     {
+      "Id": "343273517",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_mov_rollbackw_01.wav",
+      "Path": "Media/343273517.wem",
+      "CachePath": "SFX/vo_fighter1_mov_rollbackw_01_10C4C929.wem"
+     },
+     {
+      "Id": "578215789",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_mov_rollbackw_04.wav",
+      "Path": "Media/578215789.wem",
+      "CachePath": "SFX/vo_fighter1_mov_rollbackw_04_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3940439968",
+      "Name": "Plyr1_Movement_Rollbackward",
+      "ObjectPath": "\\Events\\Player_Voices\\Plyr1_Movement_Rollbackward",
+      "GUID": "{79551593-FDCB-4471-8056-ED953CE28502}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.3125",
+      "DurationMax": "0.75",
+      "MediaRefs": [
+       {
+        "Id": "138100336"
+       },
+       {
+        "Id": "150659127"
+       },
+       {
+        "Id": "256831828"
+       },
+       {
+        "Id": "343273517"
+       },
+       {
+        "Id": "578215789"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{251406B3-FB49-11D8-7D3A-7988BBBCDD98}"
+ }
+}

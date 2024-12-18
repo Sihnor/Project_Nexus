@@ -29,7 +29,7 @@ public:
 	UFUNCTION()
 	void OpenChampSelection();
 	
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable)
 	void CloseChampSelection();
 
 	UFUNCTION()

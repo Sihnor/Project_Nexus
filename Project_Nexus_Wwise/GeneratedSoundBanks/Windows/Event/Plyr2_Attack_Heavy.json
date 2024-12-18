@@ -1,0 +1,96 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "667908117",
+    "Type": "Event",
+    "GUID": "{50D65725-C02E-4F28-8D2E-1291893F7AA3}",
+    "Language": "SFX",
+    "Hash": "{08F75B49-024B-4972-4B40-512D3D000C6B}",
+    "ObjectPath": "Plyr2_Attack_Heavy",
+    "ShortName": "Plyr2_Attack_Heavy",
+    "Path": "Event/Plyr2_Attack_Heavy.bnk",
+    "Media": [
+     {
+      "Id": "61961079",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter2_punch_heavy_03.wav",
+      "Path": "Media/61961079.wem",
+      "CachePath": "SFX/vo_fighter2_punch_heavy_03_10C4C929.wem"
+     },
+     {
+      "Id": "169474219",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter2_punch_heavy_01.wav",
+      "Path": "Media/169474219.wem",
+      "CachePath": "SFX/vo_fighter2_punch_heavy_01_10C4C929.wem"
+     },
+     {
+      "Id": "462175575",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter2_punch_heavy_05.wav",
+      "Path": "Media/462175575.wem",
+      "CachePath": "SFX/vo_fighter2_punch_heavy_05_10C4C929.wem"
+     },
+     {
+      "Id": "699677480",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter2_punch_heavy_02.wav",
+      "Path": "Media/699677480.wem",
+      "CachePath": "SFX/vo_fighter2_punch_heavy_02_10C4C929.wem"
+     },
+     {
+      "Id": "760044868",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter2_punch_heavy_04.wav",
+      "Path": "Media/760044868.wem",
+      "CachePath": "SFX/vo_fighter2_punch_heavy_04_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "667908117",
+      "Name": "Plyr2_Attack_Heavy",
+      "ObjectPath": "\\Events\\Player_Voices\\Plyr2_Attack_Heavy",
+      "GUID": "{50D65725-C02E-4F28-8D2E-1291893F7AA3}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.3125",
+      "DurationMax": "0.48060417",
+      "MediaRefs": [
+       {
+        "Id": "61961079"
+       },
+       {
+        "Id": "169474219"
+       },
+       {
+        "Id": "462175575"
+       },
+       {
+        "Id": "699677480"
+       },
+       {
+        "Id": "760044868"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{470C1BD8-DD0B-3810-2E8A-8067BD97A66E}"
+ }
+}

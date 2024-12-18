@@ -1,0 +1,56 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "1349836090",
+    "Type": "Bus",
+    "GUID": "{44E599A3-1CE2-49AF-8FBC-737785A8D7B8}",
+    "Language": "SFX",
+    "Hash": "{C06B6E40-3E1C-58A7-9966-ECE8D2207F01}",
+    "ObjectPath": "BetweenBuildings",
+    "ShortName": "BetweenBuildings",
+    "Path": "Bus/BetweenBuildings.bnk",
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "48620415",
+       "Name": "Have_U_Ever_Been_Outside",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Exteriors\\Have_U_Ever_Been_Outside",
+       "GUID": "{FE29AE8D-FD86-4652-A95D-68D32F5760EC}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ]
+    },
+    "AuxBusses": [
+     {
+      "Id": "1349836090",
+      "Name": "BetweenBuildings",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverbs\\BetweenBuildings",
+      "GUID": "{44E599A3-1CE2-49AF-8FBC-737785A8D7B8}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "48620415"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "3545700988",
+        "Name": "Reverbs",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverbs",
+        "GUID": "{6BE3BED4-0EDC-4674-80E4-B77F6F0EDD9B}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{102F3019-D7BF-39B0-536E-A2BB6B961373}"
+ }
+}

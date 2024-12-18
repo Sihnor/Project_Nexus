@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="3165952497" Type="Event" GUID="{E600404F-4142-4E2D-B7A6-D5AEE9951BBF}" Language="SFX" Hash="{20942FA4-43C1-7BD0-02D6-671608F3A827}">
+			<ObjectPath>Play_Player2_Landing</ObjectPath>
+			<ShortName>Play_Player2_Landing</ShortName>
+			<Path>Event/Play_Player2_Landing.bnk</Path>
+			<Media>
+				<File Id="242860944" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_landing_05.wav</ShortName>
+					<Path>Media/242860944.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_landing_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="285999037" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_landing_06.wav</ShortName>
+					<Path>Media/285999037.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_landing_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="344642312" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_landing_01.wav</ShortName>
+					<Path>Media/344642312.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_landing_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="662348136" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_landing_04.wav</ShortName>
+					<Path>Media/662348136.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_landing_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="846625063" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_landing_03.wav</ShortName>
+					<Path>Media/846625063.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_landing_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="934277310" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sfx_fighter2_movement_landing_02.wav</ShortName>
+					<Path>Media/934277310.wem</Path>
+					<CachePath>SFX/sfx_fighter2_movement_landing_02_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3165952497" Name="Play_Player2_Landing" ObjectPath="\Events\Player2\Player2Locomotion\Play_Player2_Landing" GUID="{E600404F-4142-4E2D-B7A6-D5AEE9951BBF}" DurationType="OneShot" DurationMin="0.1477543" DurationMax="0.2710024">
+					<MediaRefs>
+						<MediaRef Id="242860944"/>
+						<MediaRef Id="285999037"/>
+						<MediaRef Id="344642312"/>
+						<MediaRef Id="662348136"/>
+						<MediaRef Id="846625063"/>
+						<MediaRef Id="934277310"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{38766892-781A-A807-0E1C-6AB2E1A7C280}</FileHash>
+</SoundBanksInfo>

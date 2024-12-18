@@ -1,0 +1,96 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "4244936628",
+    "Type": "Event",
+    "GUID": "{7BD3B646-2657-40FF-9C97-391A4B37380E}",
+    "Language": "SFX",
+    "Hash": "{09104747-E3A1-2504-158F-ACF2B0EED792}",
+    "ObjectPath": "Plyr1_Dmg_Special",
+    "ShortName": "Plyr1_Dmg_Special",
+    "Path": "Event/Plyr1_Dmg_Special.bnk",
+    "Media": [
+     {
+      "Id": "49941704",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_damage_special_05.wav",
+      "Path": "Media/49941704.wem",
+      "CachePath": "SFX/vo_fighter1_damage_special_05_10C4C929.wem"
+     },
+     {
+      "Id": "515146572",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_damage_special_02.wav",
+      "Path": "Media/515146572.wem",
+      "CachePath": "SFX/vo_fighter1_damage_special_02_10C4C929.wem"
+     },
+     {
+      "Id": "651026145",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_damage_special_04.wav",
+      "Path": "Media/651026145.wem",
+      "CachePath": "SFX/vo_fighter1_damage_special_04_10C4C929.wem"
+     },
+     {
+      "Id": "955769142",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_damage_special_01.wav",
+      "Path": "Media/955769142.wem",
+      "CachePath": "SFX/vo_fighter1_damage_special_01_10C4C929.wem"
+     },
+     {
+      "Id": "1060805268",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_fighter1_damage_special_03.wav",
+      "Path": "Media/1060805268.wem",
+      "CachePath": "SFX/vo_fighter1_damage_special_03_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4244936628",
+      "Name": "Plyr1_Dmg_Special",
+      "ObjectPath": "\\Events\\Player_Voices\\Plyr1_Dmg_Special",
+      "GUID": "{7BD3B646-2657-40FF-9C97-391A4B37380E}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.80833334",
+      "DurationMax": "1.5958333",
+      "MediaRefs": [
+       {
+        "Id": "49941704"
+       },
+       {
+        "Id": "515146572"
+       },
+       {
+        "Id": "651026145"
+       },
+       {
+        "Id": "955769142"
+       },
+       {
+        "Id": "1060805268"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{BBC1D72C-2907-54CC-D008-766D77E306E8}"
+ }
+}

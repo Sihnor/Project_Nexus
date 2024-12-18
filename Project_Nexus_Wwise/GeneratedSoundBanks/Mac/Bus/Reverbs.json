@@ -1,0 +1,29 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "3545700988",
+    "Type": "Bus",
+    "GUID": "{6BE3BED4-0EDC-4674-80E4-B77F6F0EDD9B}",
+    "Language": "SFX",
+    "Hash": "{8AD9903B-82DC-5076-FF9D-1C4D84C73F21}",
+    "ObjectPath": "Reverbs",
+    "ShortName": "Reverbs",
+    "Path": "Bus/Reverbs.bnk",
+    "AuxBusses": [
+     {
+      "Id": "3545700988",
+      "Name": "Reverbs",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverbs",
+      "GUID": "{6BE3BED4-0EDC-4674-80E4-B77F6F0EDD9B}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{8CA6DA65-89F1-8ADE-BB95-04C530DCBECD}"
+ }
+}

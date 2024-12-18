@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "587623655",
+    "Type": "Event",
+    "GUID": "{820228B7-CD1A-459B-A81C-F381CF138931}",
+    "Language": "SFX",
+    "Hash": "{42654768-0EAB-4DFE-3DF9-842876AF060C}",
+    "ObjectPath": "Com_Char_Wins_Lauren",
+    "ShortName": "Com_Char_Wins_Lauren",
+    "Path": "Event/Com_Char_Wins_Lauren.bnk",
+    "Media": [
+     {
+      "Id": "478517942",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_commentator_chara_lauren_wins_01.wav",
+      "Path": "Media/478517942.wem",
+      "CachePath": "SFX/vo_commentator_chara_lauren_wins_01_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "587623655",
+      "Name": "Com_Char_Wins_Lauren",
+      "ObjectPath": "\\Events\\Commentator_Voices\\Com_Char_Wins_Lauren",
+      "GUID": "{820228B7-CD1A-459B-A81C-F381CF138931}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.1875",
+      "DurationMax": "2.1875",
+      "MediaRefs": [
+       {
+        "Id": "478517942"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{6B2A0AD4-3AA4-F744-E01A-C3C1CF19D89F}"
+ }
+}

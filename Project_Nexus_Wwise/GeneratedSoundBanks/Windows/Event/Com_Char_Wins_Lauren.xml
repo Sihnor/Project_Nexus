@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="587623655" Type="Event" GUID="{820228B7-CD1A-459B-A81C-F381CF138931}" Language="SFX" Hash="{42654768-0EAB-4DFE-3DF9-842876AF060C}">
+			<ObjectPath>Com_Char_Wins_Lauren</ObjectPath>
+			<ShortName>Com_Char_Wins_Lauren</ShortName>
+			<Path>Event/Com_Char_Wins_Lauren.bnk</Path>
+			<Media>
+				<File Id="478517942" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>vo_commentator_chara_lauren_wins_01.wav</ShortName>
+					<Path>Media/478517942.wem</Path>
+					<CachePath>SFX/vo_commentator_chara_lauren_wins_01_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="587623655" Name="Com_Char_Wins_Lauren" ObjectPath="\Events\Commentator_Voices\Com_Char_Wins_Lauren" GUID="{820228B7-CD1A-459B-A81C-F381CF138931}" DurationType="OneShot" DurationMin="2.1875" DurationMax="2.1875">
+					<MediaRefs>
+						<MediaRef Id="478517942"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{E78114F4-1560-A61E-F24C-FE5F105DACBB}</FileHash>
+</SoundBanksInfo>

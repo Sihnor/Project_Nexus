@@ -1,0 +1,70 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "466103037",
+    "Type": "Event",
+    "GUID": "{6A3B97C4-67AE-45C1-A149-EBF2C7E68E30}",
+    "Language": "SFX",
+    "Hash": "{C79A04EA-0ECC-3F5A-11C4-33C03C58D5AC}",
+    "ObjectPath": "Ambi_2_Loop_Start",
+    "ShortName": "Ambi_2_Loop_Start",
+    "Path": "Event/Ambi_2_Loop_Start.bnk",
+    "Media": [
+     {
+      "Id": "95110852",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Ambi_2_Loop_02.wav",
+      "Path": "Media/95110852.wem",
+      "CachePath": "SFX/Ambi_2_Loop_02_94056928.wem"
+     },
+     {
+      "Id": "628115851",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Ambi_2_Loop_03.wav",
+      "Path": "Media/628115851.wem",
+      "CachePath": "SFX/Ambi_2_Loop_03_11973477.wem"
+     },
+     {
+      "Id": "884370771",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Ambi_2_Loop_01.wav",
+      "Path": "Media/884370771.wem",
+      "CachePath": "SFX/Ambi_2_Loop_01_43E6DBB1.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "466103037",
+      "Name": "Ambi_2_Loop_Start",
+      "ObjectPath": "\\Events\\Ambience\\2D\\Ambi_2_Loop_Start",
+      "GUID": "{6A3B97C4-67AE-45C1-A149-EBF2C7E68E30}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "95110852"
+       },
+       {
+        "Id": "628115851"
+       },
+       {
+        "Id": "884370771"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{B642F614-EA58-DB92-D203-2212B82268EE}"
+ }
+}

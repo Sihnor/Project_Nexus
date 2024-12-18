@@ -1,0 +1,96 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2051106367	PlayerSpeedSwitch			\Default Work Unit\PlayerSpeedSwitch	
+	2569417515	RainTypeSwitch			\Default Work Unit\RainTypeSwitch	
+	2897384735	AmbThunderSwitch			\AmbienceSwitches\AmbThunderSwitch	
+	3968804893	GroundWetnessSwitch			\Default Work Unit\GroundWetnessSwitch	
+	4280509423	AmbTimeOfDay			\AmbienceSwitches\AmbTimeOfDay	
+
+Switch	ID	Name	Switch Group			Notes
+	712161704	Run	PlayerSpeedSwitch			
+	2108779966	Walk	PlayerSpeedSwitch			
+	2884887403	Sneak	PlayerSpeedSwitch			
+	614284249	Stormy	RainTypeSwitch			
+	991379416	FullRain	RainTypeSwitch			
+	1278453130	MediumRain	RainTypeSwitch			
+	2789071989	LightRain	RainTypeSwitch			
+	3569642402	Sunny	RainTypeSwitch			
+	1472920151	ThunderClose	AmbThunderSwitch			
+	2069415960	ThunderDistance	AmbThunderSwitch			
+	630539344	Dry	GroundWetnessSwitch			
+	1181096339	Wet	GroundWetnessSwitch			
+	1842026663	Damp	GroundWetnessSwitch			
+	1905651656	Soaked	GroundWetnessSwitch			
+	390531879	Afternoon	AmbTimeOfDay			
+	1011622525	Night	AmbTimeOfDay			
+	1211181101	Midday	AmbTimeOfDay			
+	1844596514	EarlyMorning	AmbTimeOfDay			
+	2009803003	Dawn	AmbTimeOfDay			
+	2348606646	Dusk	AmbTimeOfDay			
+	2905060079	Evening	AmbTimeOfDay			
+	3789021730	Nightfall	AmbTimeOfDay			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	185713839	RoomState			\Default Work Unit\RoomState	
+	1045871717	GameStatus			\Default Work Unit\GameStatus	
+	3285234865	PlayerState			\Default Work Unit\PlayerState	
+
+State	ID	Name	State Group			Notes
+	144697359	Outdoor	RoomState			
+	340398852	Indoor	RoomState			
+	748895195	None	RoomState			
+	748895195	None	GameStatus			
+	984691642	InGame	GameStatus			
+	3374585465	InMenu	GameStatus			
+	655265632	Alive	PlayerState			
+	748895195	None	PlayerState			
+	2044049779	Dead	PlayerState			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	
+	513139656	Mountain			\Factory Acoustic Textures\Textures\Mountain	
+	841620460	Concrete			\Factory Acoustic Textures\Textures\Concrete	
+	1755085759	Wood_Deep			\Factory Acoustic Textures\Textures\Wood_Deep	
+	1873957695	Anechoic			\Factory Acoustic Textures\Textures\Anechoic	
+	1970351858	Fabric			\Factory Acoustic Textures\Textures\Fabric	
+	2058049674	Wood			\Factory Acoustic Textures\Textures\Wood	
+	2412606308	Carpet			\Factory Acoustic Textures\Textures\Carpet	
+	2637588553	Tile			\Factory Acoustic Textures\Textures\Tile	
+	2928161104	Curtains			\Factory Acoustic Textures\Textures\Curtains	
+	3195498748	Cork_Tiles			\Factory Acoustic Textures\Textures\Cork_Tiles	
+	3670307564	Drywall			\Factory Acoustic Textures\Textures\Drywall	
+	4168643977	Acoustic_Banner			\Factory Acoustic Textures\Textures\Acoustic_Banner	
+	4262522749	Wood_Bright			\Factory Acoustic Textures\Textures\Wood_Bright	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	309309195	2DAmbience			\Default Work Unit\Master Audio Bus\AmbientMaster\2DAmbience	
+	566574112	PlayerSpezial			\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerCombat\PlayerSpezial	
+	765206498	PlayerCloth			\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerLocomotion\PlayerCloth	
+	1182634443	AmbientBeds			\Default Work Unit\Master Audio Bus\AmbientMaster\AmbientBeds	
+	1301074112	3DAmbience			\Default Work Unit\Master Audio Bus\AmbientMaster\3DAmbience	
+	1459460693	AmbientMaster			\Default Work Unit\Master Audio Bus\AmbientMaster	
+	1634810678	PlayerCombat			\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerCombat	
+	1681012287	PlayerFootsteps			\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerLocomotion\PlayerFootsteps	
+	1992125169	UIMaster			\Default Work Unit\Master Audio Bus\UIMaster	
+	2343802269	PlayerLocomotion			\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerLocomotion	
+	2425977305	PlayerBlock			\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerCombat\PlayerBlock	
+	2715294761	PlayerFall			\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerLocomotion\PlayerFall	
+	2966196035	PlayerNeutral			\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerCombat\PlayerNeutral	
+	3434944236	PlayerHits			\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerCombat\PlayerHits	
+	3538689948	PlayerMaster			\Default Work Unit\Master Audio Bus\PlayerMaster	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	4008126242	PlayerJump			\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerLocomotion\PlayerJump	
+	4152869693	2DAmbientBeds			\Default Work Unit\Master Audio Bus\AmbientMaster\AmbientBeds\2DAmbientBeds	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	672587556	Alley			\Default Work Unit\Master Audio Bus\Reverbs\Alley	
+	1349836090	BetweenBuildings			\Default Work Unit\Master Audio Bus\Reverbs\BetweenBuildings	
+	3545700988	Reverbs			\Default Work Unit\Master Audio Bus\Reverbs	
+
+Effect plug-ins	ID	Name	Type				Notes
+	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+	2995775460	Room_Small	Wwise RoomVerb			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

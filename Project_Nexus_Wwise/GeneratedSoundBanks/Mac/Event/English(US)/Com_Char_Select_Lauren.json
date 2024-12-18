@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "4259150480",
+    "Type": "Event",
+    "GUID": "{91E57EC6-14BF-4999-BD5E-402DE08241C4}",
+    "Language": "English(US)",
+    "Hash": "{7AB87B26-2459-464A-C11B-1715D27A7F61}",
+    "ObjectPath": "Com_Char_Select_Lauren",
+    "ShortName": "Com_Char_Select_Lauren",
+    "Path": "Event/English(US)/Com_Char_Select_Lauren.bnk",
+    "Media": [
+     {
+      "Id": "171327102",
+      "Language": "English(US)",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_commentator_chara_select_lauren_01.wav",
+      "Path": "Media/English(US)/171327102.wem",
+      "CachePath": "Voices/English(US)/vo_commentator_chara_select_lauren_01_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4259150480",
+      "Name": "Com_Char_Select_Lauren",
+      "ObjectPath": "\\Events\\Commentator_Voices\\Com_Char_Select_Lauren",
+      "GUID": "{91E57EC6-14BF-4999-BD5E-402DE08241C4}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.375",
+      "DurationMax": "1.375",
+      "MediaRefs": [
+       {
+        "Id": "171327102"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{949AEB18-26E7-18A6-03D4-362D57AE147D}"
+ }
+}

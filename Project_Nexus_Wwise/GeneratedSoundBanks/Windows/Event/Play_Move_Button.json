@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "2963316176",
+    "Type": "Event",
+    "GUID": "{E001864B-1F09-432D-9769-CAA8112B432A}",
+    "Language": "SFX",
+    "Hash": "{EBECED0C-FC4E-1B73-A9AE-A2CF65AADC49}",
+    "ObjectPath": "Play_Move_Button",
+    "ShortName": "Play_Move_Button",
+    "Path": "Event/Play_Move_Button.bnk",
+    "Media": [
+     {
+      "Id": "888749076",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_menu_move.wav",
+      "Path": "Media/888749076.wem",
+      "CachePath": "SFX/sfx_menu_move_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2963316176",
+      "Name": "Play_Move_Button",
+      "ObjectPath": "\\Events\\UI\\Play_Move_Button",
+      "GUID": "{E001864B-1F09-432D-9769-CAA8112B432A}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.14860417",
+      "DurationMax": "0.14860417",
+      "MediaRefs": [
+       {
+        "Id": "888749076"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{22153001-41E4-C0FF-A7D4-2D2B97A1425A}"
+ }
+}

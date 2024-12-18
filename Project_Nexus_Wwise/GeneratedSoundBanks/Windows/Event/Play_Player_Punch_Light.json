@@ -1,0 +1,108 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "2334765685",
+    "Type": "Event",
+    "GUID": "{F110A2AB-C527-4CD6-956A-320E06655E4E}",
+    "Language": "SFX",
+    "Hash": "{C790F221-0848-3A06-65F6-099845D908B8}",
+    "ObjectPath": "Play_Player_Punch_Light",
+    "ShortName": "Play_Player_Punch_Light",
+    "Path": "Event/Play_Player_Punch_Light.bnk",
+    "Media": [
+     {
+      "Id": "20389258",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_punch_light_02.wav",
+      "Path": "Media/20389258.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_punch_light_02_10C4C929.wem"
+     },
+     {
+      "Id": "161303902",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_punch_light_01.wav",
+      "Path": "Media/161303902.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_punch_light_01_10C4C929.wem"
+     },
+     {
+      "Id": "543785188",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_punch_light_05.wav",
+      "Path": "Media/543785188.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_punch_light_05_10C4C929.wem"
+     },
+     {
+      "Id": "588301371",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_punch_light_04.wav",
+      "Path": "Media/588301371.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_punch_light_04_10C4C929.wem"
+     },
+     {
+      "Id": "670658824",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_punch_light_06.wav",
+      "Path": "Media/670658824.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_punch_light_06_10C4C929.wem"
+     },
+     {
+      "Id": "996432136",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fighter1_combat_punch_light_03.wav",
+      "Path": "Media/996432136.wem",
+      "CachePath": "SFX/sfx_fighter1_combat_punch_light_03_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2334765685",
+      "Name": "Play_Player_Punch_Light",
+      "ObjectPath": "\\Events\\Player\\PlayerCombat\\Play_Player_Punch_Light",
+      "GUID": "{F110A2AB-C527-4CD6-956A-320E06655E4E}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.2440092",
+      "DurationMax": "0.40502334",
+      "MediaRefs": [
+       {
+        "Id": "20389258"
+       },
+       {
+        "Id": "161303902"
+       },
+       {
+        "Id": "543785188"
+       },
+       {
+        "Id": "588301371"
+       },
+       {
+        "Id": "670658824"
+       },
+       {
+        "Id": "996432136"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{9ACAC4CA-99DC-D804-747F-7935C7AA06FD}"
+ }
+}

@@ -1,0 +1,108 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "1447755480",
+    "Type": "Event",
+    "GUID": "{D240E461-1973-4A2A-922A-01651A67602B}",
+    "Language": "SFX",
+    "Hash": "{5D91FE1E-E56F-9D45-963B-E623FD17B6D4}",
+    "ObjectPath": "Com_Round_1_Start",
+    "ShortName": "Com_Round_1_Start",
+    "Path": "Event/Com_Round_1_Start.bnk",
+    "Media": [
+     {
+      "Id": "115684259",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_commentator_fight_05.wav",
+      "Path": "Media/115684259.wem",
+      "CachePath": "SFX/vo_commentator_fight_05_10C4C929.wem"
+     },
+     {
+      "Id": "200620881",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_commentator_round_01.wav",
+      "Path": "Media/200620881.wem",
+      "CachePath": "SFX/vo_commentator_round_01_10C4C929.wem"
+     },
+     {
+      "Id": "332544747",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_commentator_fight_02.wav",
+      "Path": "Media/332544747.wem",
+      "CachePath": "SFX/vo_commentator_fight_02_10C4C929.wem"
+     },
+     {
+      "Id": "565589375",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_commentator_fight_03.wav",
+      "Path": "Media/565589375.wem",
+      "CachePath": "SFX/vo_commentator_fight_03_10C4C929.wem"
+     },
+     {
+      "Id": "632686557",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_commentator_fight_04.wav",
+      "Path": "Media/632686557.wem",
+      "CachePath": "SFX/vo_commentator_fight_04_10C4C929.wem"
+     },
+     {
+      "Id": "950724125",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "vo_commentator_fight_01.wav",
+      "Path": "Media/950724125.wem",
+      "CachePath": "SFX/vo_commentator_fight_01_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1447755480",
+      "Name": "Com_Round_1_Start",
+      "ObjectPath": "\\Events\\Commentator_Voices\\Com_Round_1_Start",
+      "GUID": "{D240E461-1973-4A2A-922A-01651A67602B}",
+      "DurationType": "OneShot",
+      "DurationMin": "5.625",
+      "DurationMax": "5.9375",
+      "MediaRefs": [
+       {
+        "Id": "115684259"
+       },
+       {
+        "Id": "200620881"
+       },
+       {
+        "Id": "332544747"
+       },
+       {
+        "Id": "565589375"
+       },
+       {
+        "Id": "632686557"
+       },
+       {
+        "Id": "950724125"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{D1941574-C5CF-2BEB-A866-DB9101D88145}"
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "986664061",
+    "Type": "Event",
+    "GUID": "{D586571B-518E-44CF-8A2E-6B68BFDB5D01}",
+    "Language": "SFX",
+    "Hash": "{09E087E1-A71E-9115-CAB6-0351A4636FEA}",
+    "ObjectPath": "Play_Pause_Out",
+    "ShortName": "Play_Pause_Out",
+    "Path": "Event/Play_Pause_Out.bnk",
+    "Media": [
+     {
+      "Id": "658970362",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_menu_pause_deactivate.wav",
+      "Path": "Media/658970362.wem",
+      "CachePath": "SFX/sfx_menu_pause_deactivate_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "986664061",
+      "Name": "Play_Pause_Out",
+      "ObjectPath": "\\Events\\UI\\Play_Pause_Out",
+      "GUID": "{D586571B-518E-44CF-8A2E-6B68BFDB5D01}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.40908334",
+      "DurationMax": "0.40908334",
+      "MediaRefs": [
+       {
+        "Id": "658970362"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{2117E511-3987-FFDF-9503-89F454483FB1}"
+ }
+}

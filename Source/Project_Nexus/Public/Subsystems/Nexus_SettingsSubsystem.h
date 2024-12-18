@@ -28,7 +28,9 @@ public:
 	void SetTimeLimitSetting(int32 NewLimit);
 	
 	UFUNCTION(BlueprintCallable, Category="SettingSubsystem|Game")
-	int32 GetTimeLimitSetting();
+	int32 GetTimeLimitIndexSetting();
+
+	int GetTimeLimitSetting();
 
 	UFUNCTION(BlueprintCallable, Category="SettingSubsystem|Game")
 	void SetControllerVibrationSetting(ECheckBoxState NewState);
@@ -86,7 +88,7 @@ public:
 
 private:
 	int32 NumberOfRounds;
-	int32 TimeLimit;
+	int32 TimeLimitIndex;
 	ECheckBoxState ControllerVibration;
 	int32 ScreenModeIndex;
 	int32 ResolutionIndex;
